@@ -1,0 +1,179 @@
+/* Skinstencil Studio. All processing is in js/engine.js and runs in the browser; nothing is uploaded.
+   While a slider moves, a smaller copy is processed so it stays fast; when you stop, the full-resolution result replaces it.
+   Free downloads carry a watermark; a license key (js/unlock.js) removes it. */
+(function () {
+  'use strict';
+  var E = window.SkinEngine, U = window.SkinUnlock, C = window.SkinConfig || {}, T = window.I18N || {};
+  var $ = function (id) { return document.getElementById(id); };
+  function t(k, v) { var s = T[k] != null ? T[k] : k; if (v) for (var n in v) s = s.split('{' + n + '}').join(v[n]); return s; }
+  var cO = $('cOrig'), cS = $('cOut'), cD = $('cDrift'), stage = $('stage');
+  var FULL = null, SMALL = null, last = null;   // { canvas, gray, w, h }
+  var state = { mode: 'draw', skin: null, drift: false };
+  var SKINS = ['#F6DCC9', '#E8B98F', '#C98E5F', '#9A6240', '#6B4126', '#46281A'];
+  var MAX_SIDE = 1600, FAST_SIDE = 640, timer = null, rafBusy = false;
+
+  /* ---------- controls ---------- */
+  function bindRange(id, vid) { var e = $(id), v = $(vid); e.addEventListener('input', function () { v.textContent = e.value; schedule(); }); }
+  bindRange('sens', 'sensV'); bindRange('smooth', 'smoothV'); bindRange('weight', 'weightV'); bindRange('specks', 'specksV');
+  function setMode(m) { state.mode = m; [].forEach.call($('mode').querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', String(x.getAttribute('data-v') === m)); }); }
+  [].forEach.call($('mode').querySelectorAll('button'), function (b) { b.addEventListener('click', function () { setMode(b.getAttribute('data-v')); schedule(); }); });
+  var sk = $('skins'), swBtns = [];
+  var none = document.createElement('button'); none.type = 'button'; none.className = 'sw none'; none.setAttribute('aria-pressed', 'true'); none.setAttribute('aria-label', t('s.noSkin')); sk.appendChild(none); swBtns.push(none);
+  SKINS.forEach(function (c, i) { var b = document.createElement('button'); b.type = 'button'; b.className = 'sw'; b.style.background = c; b.setAttribute('aria-pressed', 'false'); b.setAttribute('aria-label', t('s.skinN') + ' ' + (i + 1)); sk.appendChild(b); swBtns.push(b); });
+  swBtns.forEach(function (b, i) { b.addEventListener('click', function () { swBtns.forEach(function (x) { x.setAttribute('aria-pressed', 'false'); }); b.setAttribute('aria-pressed', 'true'); state.skin = i === 0 ? null : SKINS[i - 1]; process(FULL); }); });
+  $('driftBtn').addEventListener('click', function () { state.drift = !state.drift; this.setAttribute('aria-pressed', String(state.drift)); this.textContent = state.drift ? t('s.driftHide') : t('s.driftShow'); process(FULL); });
+  $('split').addEventListener('input', applySplit);
+  $('mm').addEventListener('input', updateSize);
+
+  /* ---------- loading ---------- */
+  var drop = $('drop'), file = $('file');
+  drop.addEventListener('click', function () { file.click(); });
+  drop.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); file.click(); } });
+  ['dragover', 'dragenter'].forEach(function (ev) { drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.add('over'); }); });
+  ['dragleave', 'drop'].forEach(function (ev) { drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.remove('over'); }); });
+  drop.addEventListener('drop', function (e) { var f = e.dataTransfer && e.dataTransfer.files[0]; if (f) loadFile(f); });
+  file.addEventListener('change', function () { if (file.files[0]) loadFile(file.files[0]); });
+  function msg(k) { $('ph').hidden = false; $('ph').textContent = t(k); }
+  function loadFile(f) {
+    if (!/^image\/(png|jpeg|webp)$/.test(f.type)) { msg('s.errType'); return; }
+    var r = new FileReader();
+    r.onload = function () { var im = new Image(); im.onload = function () { setSource(im, im.naturalWidth, im.naturalHeight); }; im.onerror = function () { msg('s.errRead'); }; im.src = r.result; };
+    r.readAsDataURL(f);
+  }
+  var SB = $('samples');
+  Object.keys(E.samples).forEach(function (k) {
+    var s = E.samples[k], b = document.createElement('button');
+    b.type = 'button'; b.className = 'btn alt'; b.style.cssText = 'width:auto;padding:7px 11px;font-size:13px'; b.textContent = T['sample.' + k] || s.label;
+    b.addEventListener('click', function () { var c = s.draw(); setMode(s.mode); $('sens').value = s.mode === 'photo' ? 60 : 55; $('sensV').textContent = $('sens').value; setSource(c, c.width, c.height); });
+    SB.appendChild(b);
+  });
+
+  function prepare(img, iw, ih, maxSide) { var c = E.fitToCanvas(img, iw, ih, maxSide), g = E.grayFromCanvas(c); return { canvas: c, gray: g.gray, w: g.w, h: g.h }; }
+  function setSource(img, iw, ih) {
+    FULL = prepare(img, iw, ih, MAX_SIDE);
+    SMALL = prepare(FULL.canvas, FULL.w, FULL.h, FAST_SIDE);
+    last = null;
+    stage.style.aspectRatio = FULL.w + '/' + FULL.h;
+    $('ph').hidden = true; $('handle').hidden = false; $('tagL').hidden = false; $('tagR').hidden = false;
+    updateSize(); process(FULL);
+  }
+
+  /* ---------- processing ---------- */
+  function schedule() {
+    if (!FULL) return;
+    if (!rafBusy) { rafBusy = true; requestAnimationFrame(function () { rafBusy = false; process(SMALL); }); }
+    clearTimeout(timer); timer = setTimeout(function () { process(FULL); }, 220);
+  }
+  function opts(src) {
+    // pixel-based sliders are defined at full size; scale them for the small copy so both look alike
+    var k = src.w / FULL.w;
+    return { mode: state.mode, sens: +$('sens').value, smooth: Math.round(+$('smooth').value * k), weight: Math.max(1, Math.round(+$('weight').value * k)), specks: Math.round(+$('specks').value * k * k) };
+  }
+  function process(src) {
+    if (!src) return;
+    var o = opts(src), r = E.makeStencil(src.gray, src.w, src.h, o);
+    if (src === FULL) last = { src: src, r: r };
+    [cO, cS, cD].forEach(function (c) { if (c.width !== src.w || c.height !== src.h) { c.width = src.w; c.height = src.h; } });
+    cO.getContext('2d').drawImage(src.canvas, 0, 0);
+    E.renderStencil(cS, r.final, src.w, src.h, state.skin, null, r.alpha);
+    var dx = cD.getContext('2d'); dx.clearRect(0, 0, src.w, src.h);
+    var d = E.driftCheck(E.referenceMask(src.gray, src.w, src.h, state.mode), r.final, src.w, src.h, o.weight, state.drift);
+    if (state.drift && d.image) { var tc = document.createElement('canvas'); tc.width = src.w; tc.height = src.h; tc.getContext('2d').putImageData(d.image, 0, 0); dx.drawImage(tc, 0, 0); }
+    $('kept').textContent = d.kept.toFixed(1) + '%'; $('lost').textContent = d.lost.toFixed(1) + '%'; $('added').textContent = d.added.toFixed(1) + '%';
+    $('meterFill').style.width = d.kept + '%';
+    applySplit();
+  }
+  function applySplit() {
+    var p = +$('split').value;
+    cS.style.clipPath = 'inset(0 0 0 ' + p + '%)'; cD.style.clipPath = 'inset(0 0 0 ' + p + '%)';
+    $('handle').style.left = 'calc(' + p + '% - 1px)';
+  }
+
+  /* ---------- size and ruler ---------- */
+  function updateSize() {
+    var mm = Math.max(10, Math.min(600, +$('mm').value || 88));
+    if (!FULL) return;
+    var hmm = mm * FULL.h / FULL.w, px = Math.round(mm / 25.4 * 300), py = Math.round(hmm / 25.4 * 300);
+    $('sizeOut').textContent = mm.toFixed(0) + ' x ' + hmm.toFixed(0) + ' mm';
+    $('pxOut').textContent = px + ' x ' + py + ' px';
+    var r = $('ruler'); r.innerHTML = '';
+    var step = mm >= 200 ? 50 : mm >= 80 ? 10 : mm >= 40 ? 5 : 2;
+    for (var n = 0; n <= mm; n += step) {
+      var tick = document.createElement('span');
+      tick.style.cssText = 'position:absolute;bottom:0;left:' + (n / mm * 100) + '%;border-left:1px solid currentColor;height:' + (n % (step * 5) === 0 ? 12 : 7) + 'px;padding-left:2px';
+      if (n % (step * 5) === 0 || n === 0) { tick.textContent = n; tick.style.height = '18px'; }
+      r.appendChild(tick);
+    }
+    $('rulerNote').textContent = t('s.rulerNote', { mm: mm.toFixed(0) });
+  }
+
+  /* ---------- download, watermark, true-size PNG ---------- */
+  function crc32(buf) {
+    var tbl = crc32.t || (crc32.t = (function () { var a = [], c, n, k; for (n = 0; n < 256; n++) { c = n; for (k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; a[n] = c >>> 0; } return a; })());
+    var c = 0xFFFFFFFF; for (var i = 0; i < buf.length; i++) c = tbl[(c ^ buf[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0;
+  }
+  /* Insert a pHYs chunk so print software reads the file as 300 dpi, i.e. true size. */
+  function withDpi(bytes, dpi) {
+    var ppm = Math.round(dpi / 0.0254), chunk = new Uint8Array(21), dv = new DataView(chunk.buffer);
+    dv.setUint32(0, 9); chunk.set([0x70, 0x48, 0x59, 0x73], 4); dv.setUint32(8, ppm); dv.setUint32(12, ppm); chunk[16] = 1; dv.setUint32(17, crc32(chunk.subarray(4, 17)));
+    var out = new Uint8Array(bytes.length + 21); out.set(bytes.subarray(0, 33), 0); out.set(chunk, 33); out.set(bytes.subarray(33), 54); return out;
+  }
+  function watermark(x, w, h) {
+    var fs = Math.max(18, Math.round(Math.max(w, h) / 16)), txt = 'skinstencil.com', step = fs * 3.2, ext = Math.hypot(w, h);
+    x.save(); x.globalAlpha = 0.24; x.fillStyle = '#4F35C8'; x.font = '700 ' + fs + 'px Archivo, Arial, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    x.translate(w / 2, h / 2); x.rotate(-Math.PI / 6);
+    var row = 0; for (var yy = -ext; yy < ext; yy += step, row++) { for (var xx = -ext; xx < ext; xx += fs * 9) x.fillText(txt, xx + (row % 2 ? fs * 4.5 : 0), yy); }
+    x.restore();
+  }
+  function setDl(k, cls, vars) { var s = $('dlStatus'); s.textContent = t(k, vars); s.className = 'status' + (cls ? ' ' + cls : ''); }
+  function dlState() {
+    var un = U.isUnlocked(), px = un ? C.paidMaxPx : C.freeMaxPx;
+    setDl(un ? 's.dl.paid' : 's.dl.free', un ? 'ok' : '', { px: px });
+    $('plansBox').hidden = un; $('keyOut').hidden = !un;
+  }
+  function download() {
+    if (!FULL) return;
+    var btn = $('dlBtn'); btn.disabled = true; setDl('s.dl.busy');
+    if (!last || last.src !== FULL) process(FULL);
+    var un = U.isUnlocked(), maxPx = un ? C.paidMaxPx : C.freeMaxPx;
+    var mm = Math.max(10, Math.min(600, +$('mm').value || 88)), tw = Math.round(mm / 25.4 * 300), th = Math.round(tw * FULL.h / FULL.w);
+    var sc = Math.min(1, maxPx / Math.max(tw, th)); tw = Math.max(2, Math.round(tw * sc)); th = Math.max(2, Math.round(th * sc));
+    var tmp = document.createElement('canvas'); E.renderStencil(tmp, last.r.final, FULL.w, FULL.h, null, [23, 22, 28], last.r.alpha);
+    var out = document.createElement('canvas'); out.width = tw; out.height = th;
+    var x = out.getContext('2d'); x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high'; x.fillStyle = '#fff'; x.fillRect(0, 0, tw, th); x.drawImage(tmp, 0, 0, tw, th);
+    if (!un) watermark(x, tw, th);
+    out.toBlob(function (blob) {
+      blob.arrayBuffer().then(function (buf) {
+        var bytes = new Uint8Array(buf); if (un) bytes = withDpi(bytes, 300);
+        var url = URL.createObjectURL(new Blob([bytes], { type: 'image/png' })), a = document.createElement('a');
+        a.href = url; a.download = 'skinstencil-' + Math.round(mm) + 'mm' + (un ? '' : '-free') + '.png'; document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function () { URL.revokeObjectURL(url); }, 4000); btn.disabled = false; dlState();
+      });
+    }, 'image/png');
+  }
+  $('dlBtn').addEventListener('click', download);
+
+  /* checkout links: live when configured, otherwise an honest "opens soon" */
+  var anyLive = false;
+  [].forEach.call(document.querySelectorAll('a.buy'), function (a) {
+    var url = (C.checkout || {})[a.getAttribute('data-plan')];
+    if (url) { a.href = url; a.target = '_blank'; a.rel = 'noopener'; anyLive = true; }
+    else { a.href = 'mailto:' + (C.notifyEmail || '') + '?subject=Checkout%20interest%20' + a.getAttribute('data-plan'); }
+  });
+  if (!anyLive) $('soon').hidden = false;
+
+  /* license key */
+  $('keyBtn').addEventListener('click', function () {
+    var s = $('keyStatus'); s.className = 'status'; s.textContent = t('s.dl.checking');
+    U.activate($('keyIn').value).then(function (v) {
+      if (v.ok) { s.textContent = t('s.dl.ok'); s.className = 'status ok'; dlState(); return; }
+      var map = { invalid: 's.dl.invalid', expired: 's.dl.expired', network: 's.dl.network', notConfigured: 's.dl.notConfigured' };
+      s.textContent = t(map[v.reason] || 's.dl.invalid'); s.className = 'status err';
+    });
+  });
+  $('keyOut').addEventListener('click', function () { U.clear(); $('keyStatus').textContent = ''; dlState(); });
+  dlState(); U.refresh().then(dlState);
+
+  /* open in a working state so the stage is never empty */
+  var first = E.samples.dagger.draw(); setSource(first, first.width, first.height);
+})();

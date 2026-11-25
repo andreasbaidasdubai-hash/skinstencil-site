@@ -1,39 +1,90 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Skinstencil Studio | Free stencil tool</title>
 <meta name="description" content="Free browser tool: turn your own design into a clean line stencil, check drift, preview on skin tones and set the print size. Runs locally, nothing is uploaded.">
 <link rel="canonical" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-US" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-GB" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-AU" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-CA" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-AE" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-NG" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-IE" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-NZ" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/">
+<link rel="alternate" hreflang="de-DE" href="https://skinstencil.com/de/studio/">
+<link rel="alternate" hreflang="de-AT" href="https://skinstencil.com/de/studio/">
+<link rel="alternate" hreflang="de-CH" href="https://skinstencil.com/de/studio/">
+<link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/">
+<link rel="alternate" hreflang="fr-FR" href="https://skinstencil.com/fr/studio/">
+<link rel="alternate" hreflang="fr-BE" href="https://skinstencil.com/fr/studio/">
+<link rel="alternate" hreflang="fr-CH" href="https://skinstencil.com/fr/studio/">
+<link rel="alternate" hreflang="fr-CA" href="https://skinstencil.com/fr/studio/">
+<link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-ES" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-MX" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-AR" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-CO" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-CL" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-US" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/">
+<link rel="alternate" hreflang="pt-BR" href="https://skinstencil.com/pt/studio/">
+<link rel="alternate" hreflang="pt-PT" href="https://skinstencil.com/pt/studio/">
+<link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/">
+<link rel="alternate" hreflang="it-IT" href="https://skinstencil.com/it/studio/">
+<link rel="alternate" hreflang="it-CH" href="https://skinstencil.com/it/studio/">
+<link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/">
+<link rel="alternate" hreflang="nl-NL" href="https://skinstencil.com/nl/studio/">
+<link rel="alternate" hreflang="nl-BE" href="https://skinstencil.com/nl/studio/">
+<link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/">
+<link rel="alternate" hreflang="tr-TR" href="https://skinstencil.com/tr/studio/">
+<link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-AE" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-SA" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-QA" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-KW" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-BH" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-OM" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-EG" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/">
+<link rel="alternate" hreflang="pl-PL" href="https://skinstencil.com/pl/studio/">
+<link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317161C'/%3E%3Cpath d='M16 5 L21 18 L16 22 L11 18 Z M14 23 H18 V28 H14 Z' fill='none' stroke='%23A99BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
-<title>Skinstencil Studio | Free stencil tool</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: a drafting bench. Controls on the left, one large stage in the middle, measurements and notes on the right. Ink-purple is the stencil colour; red marks lost lines, blue marks added lines. */
+/* Layout: a drafting bench. Controls on the left, one large stage in the middle, measurements and notes on the right. Ink-purple is the stencil colour; red marks lost lines, blue marks added lines. Logical properties keep right-to-left languages correct. */
 :root{
   --paper:#F1F2EF; --card:#FAFAF8; --ink:#17161C; --muted:#5E5C68; --line:#D6D5DD;
-  --stencil:#4F35C8; --stencil-soft:#E6E2F8; --lost:#D2362B; --added:#1B6FE0; --ok:#1F7A4C; --warn:#9A5B00; --warn-bg:#FFF1D6;
+  --stencil:#4F35C8; --stencil-soft:#E6E2F8; --lost:#D2362B; --added:#1B6FE0; --ok:#1F7A4C; --warn:#9A5B00; --warn-bg:#FFF1D6; --bad:#B42318;
   --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
-  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; color-scheme:dark}}
+  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
-  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; color-scheme:dark}
+  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+html[lang="ar"] body,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
+.lostc{color:var(--lost)} .addc{color:var(--added)}
 .wrap{max-width:1280px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .banner{background:var(--warn-bg);color:var(--warn);font-size:13px;border-bottom:1px solid var(--line)}
 .banner .wrap{padding-block:8px}
 header .wrap{display:flex;align-items:center;gap:14px;padding-block:14px;flex-wrap:wrap}
-.mark{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:22px;letter-spacing:-.01em}
+.mark{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:inherit;direction:ltr}
 .mark span{color:var(--stencil)}
 .pill{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--stencil-soft);border-radius:6px;padding:3px 8px}
+.langsel{margin-inline-start:auto;font:500 13px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
 h2,h3{font-family:var(--display);font-stretch:84%;letter-spacing:-.01em;margin:0}
 h2{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-stretch:100%;color:var(--muted)}
+html[lang="ar"] h2{text-transform:none;letter-spacing:0}
 h3{font-size:18px;font-weight:700}
 .grid{display:grid;grid-template-columns:272px minmax(0,1fr) 288px;gap:18px;padding-block:6px 40px;align-items:start}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
@@ -42,10 +93,11 @@ label,.lab{display:block;font-weight:600;font-size:13px;margin-bottom:6px}
 .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
 .val{font:500 12px var(--mono);color:var(--muted)}
 input[type=range]{width:100%;accent-color:var(--stencil)}
-input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
-.btn{font:600 14px var(--body);border-radius:9px;padding:10px 14px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;width:100%}
+input[type=number],input[type=text]{width:100%;font:500 14px var(--mono);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;direction:ltr}
+.btn{font:600 14px var(--body);border-radius:9px;padding:10px 14px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;width:100%;text-align:center;text-decoration:none;display:block}
 .btn.alt{background:none;color:var(--ink);border-color:var(--line)}
-.btn:focus-visible,input:focus-visible,.seg button:focus-visible,.sw:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn:focus-visible,input:focus-visible,.seg button:focus-visible,.sw:focus-visible,.langsel:focus-visible,summary:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
 .drop{border:1.5px dashed var(--line);border-radius:10px;padding:16px;text-align:center;color:var(--muted);font-size:13px;cursor:pointer}
 .drop.over{border-color:var(--stencil);background:var(--stencil-soft)}
 .seg{display:flex;gap:3px;background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:3px}
@@ -56,29 +108,34 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
 .sw[aria-pressed="true"]{border-color:var(--stencil);box-shadow:0 0 0 2px var(--stencil-soft)}
 .sw.none{background:repeating-linear-gradient(45deg,var(--paper) 0 5px,var(--line) 5px 6px)}
 .stagebox{display:grid;gap:10px}
-.stage{position:relative;width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;touch-action:none}
+.stage{position:relative;width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;touch-action:none;direction:ltr}
 .stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.stage .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px;font-size:14px}
+.stage .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px;font-size:14px;direction:ltr}
 .handle{position:absolute;top:0;bottom:0;width:2px;background:var(--stencil);pointer-events:none;box-shadow:0 0 0 1px rgba(255,255,255,.7)}
 .tagL,.tagR{position:absolute;top:10px;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:rgba(20,19,24,.78);color:#fff;border-radius:5px;padding:3px 7px;pointer-events:none}
 .tagL{left:10px}.tagR{right:10px}
-.ruler{height:22px;border-bottom:1px solid var(--ink);position:relative;font:400 10px var(--mono);color:var(--muted)}
-.meter{height:8px;border-radius:5px;background:var(--line);overflow:hidden}
+.ruler{height:22px;border-bottom:1px solid var(--ink);position:relative;font:400 10px var(--mono);color:var(--muted);direction:ltr}
+.meter{height:8px;border-radius:5px;background:var(--line);overflow:hidden;direction:ltr}
 .meter i{display:block;height:100%;background:var(--ok);width:0}
 .stat{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px solid var(--line)}
-.stat b{font:500 13px var(--mono)}
-.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
-.tips{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:13px}
+.stat b{font:500 13px var(--mono);direction:ltr}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-inline-end:6px}
+.tips{margin:8px 0 0;padding-inline-start:18px;color:var(--muted);font-size:13px}
 .tips li{margin-bottom:6px}
 .fine{font-size:12px;color:var(--muted)}
+.status{font-size:12px;color:var(--muted);margin:0}
+.status.ok{color:var(--ok)} .status.err{color:var(--bad)}
+details.plans{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper)}
+details.plans summary{font-weight:600;font-size:13px;cursor:pointer}
+details.plans .btn{margin-top:8px}
 @media (max-width:1020px){.grid{grid-template-columns:minmax(0,1fr)}}
 [hidden]{display:none!important}
 </style>
 </head>
 <body>
 
-<div class="banner"><div class="wrap">Free early version. It runs in your browser with a classic image filter (edges and thresholds), not an AI model. Nothing you load is uploaded or stored.</div></div>
-<header><div class="wrap"><a class="mark" href="/" style="text-decoration:none;color:inherit">skin<span>stencil</span></a><span class="pill">Free early version</span></div></header>
+<div class="banner"><div class="wrap">Free early version. It runs in your browser with a classic image filter (edges and thresholds), not an AI model. Nothing you load is uploaded or stored. Downloads carry a watermark until you unlock them.</div></div>
+<header><div class="wrap"><a class="mark" href="/">skin<span>stencil</span></a><span class="pill">Free early version</span><select class="langsel" id="langSel" aria-label="Language"><option value="/studio/" selected lang="en">English</option><option value="/de/studio/" lang="de">Deutsch</option><option value="/fr/studio/" lang="fr">Français</option><option value="/es/studio/" lang="es">Español</option><option value="/pt/studio/" lang="pt">Português</option><option value="/it/studio/" lang="it">Italiano</option><option value="/nl/studio/" lang="nl">Nederlands</option><option value="/tr/studio/" lang="tr">Türkçe</option><option value="/ar/studio/" lang="ar">العربية</option><option value="/pl/studio/" lang="pl">Polski</option></select></div></header>
 
 <div class="wrap"><div class="grid">
 
@@ -96,7 +153,7 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
       <div><span class="lab">Source type</span>
         <div class="seg" id="mode"><button type="button" data-v="draw" aria-pressed="true">Drawing</button><button type="button" data-v="photo" aria-pressed="false">Photo</button></div></div>
       <div><div class="row"><label for="sens">Sensitivity</label><span class="val" id="sensV">55</span></div><input id="sens" type="range" min="1" max="100" value="55"></div>
-      <div><div class="row"><label for="smooth">Smoothing</label><span class="val" id="smoothV">1</span></div><input id="smooth" type="range" min="0" max="4" value="1"></div>
+      <div><div class="row"><label for="smooth">Smoothing</label><span class="val" id="smoothV">0</span></div><input id="smooth" type="range" min="0" max="4" value="0"></div>
       <div><div class="row"><label for="weight">Line weight</label><span class="val" id="weightV">2</span></div><input id="weight" type="range" min="1" max="6" value="2"></div>
       <div><div class="row"><label for="specks">Remove specks</label><span class="val" id="specksV">30</span></div><input id="specks" type="range" min="0" max="300" value="30"></div>
     </div>
@@ -116,18 +173,18 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
       <canvas id="cDrift"></canvas>
       <div class="handle" id="handle" hidden></div>
       <span class="tagL" id="tagL" hidden>Original</span><span class="tagR" id="tagR" hidden>Stencil</span>
-      <div class="ph" id="ph">Load a design or use the sample to see the stencil here.</div>
+      <div class="ph" id="ph">Load a design or use a sample to see the stencil here.</div>
     </div>
     <div><label for="split" class="fine" style="margin-bottom:2px">Slide to compare the original with the stencil</label><input id="split" type="range" min="0" max="100" value="50"></div>
     <div class="ruler" id="ruler" aria-hidden="true"></div>
-    <div class="fine" id="rulerNote">True-size ruler follows the print width you set on the right.</div>
+    <div class="fine" id="rulerNote">The true-size ruler follows the print width you set on the right.</div>
   </div>
 
-  <!-- RIGHT: measurements -->
+  <!-- RIGHT: measurements and download -->
   <div class="stack">
     <div class="card">
       <h2>Drift check</h2>
-      <p class="fine" style="margin:6px 0 10px">Compares the stencil with the lines found in your original, whatever your sliders are set to. <span style="color:var(--lost)">Red</span> is a line that was lost, <span style="color:var(--added)">blue</span> is a line that was added.</p>
+      <p class="fine" style="margin:6px 0 10px">Compares the stencil with the lines found in your original, whatever your sliders are set to. <span class="lostc">Red</span> is a line that was lost, <span class="addc">blue</span> is a line that was added.</p>
       <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
       <div class="stat"><span><span class="dot" style="background:var(--ok)"></span>Lines kept</span><b id="kept">-</b></div>
       <div class="stat"><span><span class="dot" style="background:var(--lost)"></span>Lines lost</span><b id="lost">-</b></div>
@@ -139,7 +196,27 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
       <div><label for="mm">Width on skin (mm)</label><input id="mm" type="number" min="10" max="600" step="1" value="88"></div>
       <div class="stat"><span>Size</span><b id="sizeOut">-</b></div>
       <div class="stat"><span>At 300 dpi</span><b id="pxOut">-</b></div>
-      <p class="fine" style="margin:0">To keep a copy, right-click the stencil and choose Save image. Print and thermal-printer export are planned.</p>
+    </div>
+    <div class="card stack" id="dlCard">
+      <h2>4. Download</h2>
+      <button class="btn" id="dlBtn" type="button">Download PNG</button>
+      <p class="status" id="dlStatus"></p>
+      <details class="plans" id="plansBox">
+        <summary>Remove the watermark</summary>
+        <p class="fine" style="margin:8px 0 0">Choose how long you need it</p>
+        <a class="btn alt buy" data-plan="day" href="#">Day pass, 24 hours - $4.99</a>
+        <a class="btn buy" data-plan="month" href="#">Pro, monthly - $12</a>
+        <a class="btn alt buy" data-plan="year" href="#">Pro, yearly - $79</a>
+        <p class="status" id="soon" hidden>Checkout is not open yet. Tell us and we will email you when it is.</p>
+      </details>
+      <details class="plans" id="keyBox">
+        <summary>I have a license key</summary>
+        <label for="keyIn" style="margin-top:8px">License key from your email</label>
+        <input id="keyIn" type="text" autocomplete="off" spellcheck="false">
+        <button class="btn" id="keyBtn" type="button" style="margin-top:8px">Activate</button>
+        <p class="status" id="keyStatus"></p>
+        <button class="btn alt" id="keyOut" type="button" hidden>Remove the key from this device</button>
+      </details>
     </div>
     <div class="card">
       <h2>Tips for cleaner stencils</h2>
@@ -153,200 +230,11 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
   </div>
 </div></div>
 
+<script>window.I18N={"sample.dagger":"Dagger","sample.mandala":"Mandala","sample.lettering":"Lettering","sample.orb":"Shaded orb","s.title":"Skinstencil Studio | Free stencil tool","s.desc":"Free browser tool: turn your own design into a clean line stencil, check drift, preview on skin tones and set the print size. Runs locally, nothing is uploaded.","s.banner":"Free early version. It runs in your browser with a classic image filter (edges and thresholds), not an AI model. Nothing you load is uploaded or stored. Downloads carry a watermark until you unlock them.","s.pill":"Free early version","s.c1":"1. Your design","s.drop":"Drop a JPG, PNG or WebP here, or click to choose.","s.dropRights":"Only designs you made or have the right to use.","s.dropAria":"Choose an image file","s.orSample":"Or start from a sample","s.c2":"2. Make the stencil","s.srcType":"Source type","s.draw":"Drawing","s.photo":"Photo","s.sens":"Sensitivity","s.smooth":"Smoothing","s.weight":"Line weight","s.specks":"Remove specks","s.c3":"3. Preview","s.skin":"Skin tone","s.noSkin":"No skin preview","s.skinN":"Skin tone","s.driftShow":"Show drift check on the stencil","s.driftHide":"Hide drift check","s.ph":"Load a design or use a sample to see the stencil here.","s.tagL":"Original","s.tagR":"Stencil","s.compare":"Slide to compare the original with the stencil","s.rulerNote":"Ruler spans the full width of the image: {mm} mm.","s.rulerHint":"The true-size ruler follows the print width you set on the right.","s.errType":"Please choose a JPG, PNG or WebP image.","s.errRead":"That file could not be read as an image.","s.drift":"Drift check","s.driftP":"Compares the stencil with the lines found in your original, whatever your sliders are set to. \u003cspan class=\"lostc\">Red\u003c/span> is a line that was lost, \u003cspan class=\"addc\">blue\u003c/span> is a line that was added.","s.kept":"Lines kept","s.lost":"Lines lost","s.added":"Lines added","s.driftNote":"The reference is a fixed, sensitive reading of your original. Lowering sensitivity or removing specks drops fine lines on purpose, and they show up here as lost.","s.sizeH":"Print size","s.width":"Width on skin (mm)","s.size":"Size","s.at300":"At 300 dpi","s.dl.h":"4. Download","s.dl.btn":"Download PNG","s.dl.free":"Free: watermark, up to {px} px.","s.dl.paid":"Unlocked: no watermark, up to {px} px, 300 dpi size inside the file.","s.dl.busy":"Preparing the file...","s.dl.remove":"Remove the watermark","s.dl.have":"I have a license key","s.dl.keyLabel":"License key from your email","s.dl.activate":"Activate","s.dl.checking":"Checking the key...","s.dl.ok":"Key accepted. The watermark is off on this device.","s.dl.invalid":"That key was not accepted. Check it and try again.","s.dl.expired":"That key has expired.","s.dl.network":"Could not reach the license server. Try again in a moment.","s.dl.notConfigured":"Checkout is not open yet. Tell us and we will email you when it is.","s.dl.plans":"Choose how long you need it","s.dl.day":"Day pass, 24 hours","s.dl.month":"Pro, monthly","s.dl.year":"Pro, yearly","s.dl.signout":"Remove the key from this device","s.dl.notify":"Tell me when it opens","s.tips.h":"Tips for cleaner stencils","s.tips.1":"Photograph or scan flat, in even light, with the design filling the frame.","s.tips.2":"Use Drawing for sketches and flash. Use Photo for pictures with soft shading.","s.tips.3":"Raise Remove specks to clean noise. Lower Sensitivity if shading turns into lines.","s.tips.4":"If lines look faint on your printer, try a heavier line weight and test on paper first."};</script>
+<script src="/js/config.js"></script>
 <script src="/js/engine.js"></script>
-<script>
-(function(){
-  var $=function(id){return document.getElementById(id)};
-  var cO=$('cOrig'),cS=$('cOut'),cD=$('cDrift'),stage=$('stage');
-  var W=0,H=0,gray=null,srcCanvas=null,final=null,ref=null,driftImg=null;
-  var state={mode:'draw',skin:null,drift:false};
-  var SKINS=['#F6DCC9','#E8B98F','#C98E5F','#9A6240','#6B4126','#46281A'];
-  var STENCIL_RGB=[79,53,200];
-
-  /* ---------- controls ---------- */
-  function bindRange(id,vid){var e=$(id),v=$(vid);e.addEventListener('input',function(){v.textContent=e.value;schedule();});}
-  bindRange('sens','sensV');bindRange('smooth','smoothV');bindRange('weight','weightV');bindRange('specks','specksV');
-  [].forEach.call($('mode').querySelectorAll('button'),function(b){b.addEventListener('click',function(){
-    [].forEach.call($('mode').querySelectorAll('button'),function(x){x.setAttribute('aria-pressed','false')});
-    b.setAttribute('aria-pressed','true');state.mode=b.getAttribute('data-v');schedule();});});
-  var sk=$('skins');
-  var none=document.createElement('button');none.type='button';none.className='sw none';none.setAttribute('aria-pressed','true');none.setAttribute('aria-label','No skin preview');sk.appendChild(none);
-  var swBtns=[none];
-  SKINS.forEach(function(c,i){var b=document.createElement('button');b.type='button';b.className='sw';b.style.background=c;b.setAttribute('aria-pressed','false');b.setAttribute('aria-label','Skin tone '+(i+1));sk.appendChild(b);swBtns.push(b);});
-  swBtns.forEach(function(b,i){b.addEventListener('click',function(){swBtns.forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');state.skin=i===0?null:SKINS[i-1];render();});});
-  $('driftBtn').addEventListener('click',function(){state.drift=!state.drift;this.setAttribute('aria-pressed',String(state.drift));this.textContent=state.drift?'Hide drift check':'Show drift check on the stencil';render();});
-  $('split').addEventListener('input',applySplit);
-  $('mm').addEventListener('input',updateSize);
-
-  /* ---------- loading ---------- */
-  var drop=$('drop'),file=$('file');
-  drop.addEventListener('click',function(){file.click()});
-  drop.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();file.click();}});
-  ['dragover','dragenter'].forEach(function(ev){drop.addEventListener(ev,function(e){e.preventDefault();drop.classList.add('over')})});
-  ['dragleave','drop'].forEach(function(ev){drop.addEventListener(ev,function(e){e.preventDefault();drop.classList.remove('over')})});
-  drop.addEventListener('drop',function(e){var f=e.dataTransfer&&e.dataTransfer.files[0];if(f)loadFile(f);});
-  file.addEventListener('change',function(){if(file.files[0])loadFile(file.files[0]);});
-  function loadFile(f){
-    if(!/^image\/(png|jpeg|webp)$/.test(f.type)){$('ph').hidden=false;$('ph').textContent='Please choose a JPG, PNG or WebP image.';return;}
-    var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){setSource(im,im.naturalWidth,im.naturalHeight)};im.onerror=function(){$('ph').hidden=false;$('ph').textContent='That file could not be read as an image.'};im.src=r.result;};
-    r.readAsDataURL(f);
-  }
-  function setMode(m){state.mode=m;[].forEach.call($('mode').querySelectorAll('button'),function(x){x.setAttribute('aria-pressed',String(x.getAttribute('data-v')===m))});}
-  var E=window.SkinEngine,SB=$('samples');
-  if(E){Object.keys(E.samples).forEach(function(k){var s=E.samples[k],b=document.createElement('button');b.type='button';b.className='btn alt';b.style.cssText='width:auto;padding:7px 11px;font-size:13px';b.textContent=s.label;
-    b.addEventListener('click',function(){var c=s.draw();setMode(s.mode);setSource(c,c.width,c.height);});SB.appendChild(b);});}
-
-  function setSource(img,iw,ih){
-    var maxS=900,s=Math.min(1,maxS/Math.max(iw,ih));
-    W=Math.max(2,Math.round(iw*s));H=Math.max(2,Math.round(ih*s));
-    srcCanvas=document.createElement('canvas');srcCanvas.width=W;srcCanvas.height=H;
-    var x=srcCanvas.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,W,H);x.drawImage(img,0,0,W,H);
-    var d=x.getImageData(0,0,W,H).data;gray=new Float32Array(W*H);
-    for(var i=0,p=0;i<d.length;i+=4,p++){gray[p]=0.299*d[i]+0.587*d[i+1]+0.114*d[i+2];}
-    [cO,cS,cD].forEach(function(c){c.width=W;c.height=H;});
-    stage.style.aspectRatio=W+'/'+H;
-    cO.getContext('2d').drawImage(srcCanvas,0,0);
-    $('ph').hidden=true;$('handle').hidden=false;$('tagL').hidden=false;$('tagR').hidden=false;
-    updateSize();schedule();
-  }
-
-  /* ---------- image processing ---------- */
-  function boxBlur(src,w,h,r){
-    if(r<1)return src;
-    var tmp=new Float32Array(w*h),out=new Float32Array(w*h),d=2*r+1,x,y,s,row;
-    for(y=0;y<h;y++){row=y*w;s=0;for(x=-r;x<=r;x++)s+=src[row+Math.min(w-1,Math.max(0,x))];
-      for(x=0;x<w;x++){tmp[row+x]=s/d;s+=src[row+Math.min(w-1,x+r+1)]-src[row+Math.max(0,x-r)];}}
-    for(x=0;x<w;x++){s=0;for(y=-r;y<=r;y++)s+=tmp[Math.min(h-1,Math.max(0,y))*w+x];
-      for(y=0;y<h;y++){out[y*w+x]=s/d;s+=tmp[Math.min(h-1,y+r+1)*w+x]-tmp[Math.max(0,y-r)*w+x];}}
-    return out;
-  }
-  function dilate(m,w,h,k){
-    if(k<1)return m;
-    var t=new Uint8Array(w*h),o=new Uint8Array(w*h),x,y,s,row,add,rem;
-    for(y=0;y<h;y++){row=y*w;s=0;for(x=0;x<=Math.min(k,w-1);x++)s+=m[row+x];
-      for(x=0;x<w;x++){t[row+x]=s>0?1:0;add=x+k+1;rem=x-k;if(add<w)s+=m[row+add];if(rem>=0)s-=m[row+rem];}}
-    for(x=0;x<w;x++){s=0;for(y=0;y<=Math.min(k,h-1);y++)s+=t[y*w+x];
-      for(y=0;y<h;y++){o[y*w+x]=s>0?1:0;add=y+k+1;rem=y-k;if(add<h)s+=t[add*w+x];if(rem>=0)s-=t[rem*w+x];}}
-    return o;
-  }
-  function removeSpecks(m,w,h,minSize){
-    if(minSize<2)return m;
-    var out=new Uint8Array(m),seen=new Uint8Array(w*h),stack=new Int32Array(w*h),buf=new Int32Array(w*h),i,sp,n,p,x,y,dx,dy,q;
-    for(i=0;i<w*h;i++){
-      if(!m[i]||seen[i])continue;
-      sp=0;n=0;stack[sp++]=i;seen[i]=1;
-      while(sp>0){p=stack[--sp];buf[n++]=p;x=p%w;y=(p/w)|0;
-        for(dy=-1;dy<=1;dy++){for(dx=-1;dx<=1;dx++){if(!dx&&!dy)continue;var nx=x+dx,ny=y+dy;if(nx<0||ny<0||nx>=w||ny>=h)continue;q=ny*w+nx;if(m[q]&&!seen[q]){seen[q]=1;stack[sp++]=q;}}}}
-      if(n<minSize){for(var j=0;j<n;j++)out[buf[j]]=0;}
-    }
-    return out;
-  }
-  function makeRef(g,w,h,mode,sens,smooth){
-    var sm=boxBlur(g,w,h,smooth),m=new Uint8Array(w*h),i;
-    if(mode==='draw'){
-      var lr=Math.max(6,Math.round(Math.min(w,h)/45)),local=boxBlur(sm,w,h,lr),c=46-0.43*sens;
-      for(i=0;i<w*h;i++)m[i]=(sm[i]<local[i]-c)?1:0;
-    }else{
-      var mag=new Float32Array(w*h),x,y,gx,gy,a,b,c2,d,e,f,gg,hh,ii;
-      for(y=1;y<h-1;y++){for(x=1;x<w-1;x++){i=y*w+x;
-        a=sm[i-w-1];b=sm[i-w];c2=sm[i-w+1];d=sm[i-1];f=sm[i+1];gg=sm[i+w-1];hh=sm[i+w];ii=sm[i+w+1];
-        gx=-a+c2-2*d+2*f-gg+ii;gy=-a-2*b-c2+gg+2*hh+ii;mag[i]=Math.sqrt(gx*gx+gy*gy);}}
-      var sample=[];for(i=0;i<mag.length;i+=7)sample.push(mag[i]);sample.sort(function(p,q){return p-q});
-      var norm=sample[Math.floor(sample.length*0.98)]||1,thr=norm*(0.62-0.0055*sens);
-      for(i=0;i<w*h;i++)m[i]=mag[i]>thr?1:0;
-    }
-    return m;
-  }
-
-  var pending=false;
-  function schedule(){if(!gray)return;if(pending)return;pending=true;requestAnimationFrame(function(){pending=false;process();});}
-  function process(){
-    var sens=+$('sens').value,smooth=+$('smooth').value,weight=+$('weight').value,specks=+$('specks').value;
-    ref=makeRef(gray,W,H,state.mode,sens,smooth);
-    var clean=removeSpecks(ref,W,H,specks);
-    final=dilate(clean,W,H,weight-1);
-    computeDrift();render();
-  }
-  function computeDrift(){
-    var n=W*H,i,refN=0,kept=0,finN=0,addedN=0,weight=+$('weight').value;
-    /* fixed, sensitive reading of the original: independent of the sliders, so dropped lines show up as lost */
-    var ref=window.SkinEngine?window.SkinEngine.referenceMask(gray,W,H,state.mode):window.__ref;
-    var tol=2,finD=dilate(final,W,H,tol),refD=dilate(ref,W,H,tol+weight-1);
-    var img=new ImageData(W,H),dd=img.data;
-    for(i=0;i<n;i++){
-      if(ref[i]){refN++;if(finD[i])kept++;else{dd[i*4]=210;dd[i*4+1]=54;dd[i*4+2]=43;dd[i*4+3]=235;}}
-      if(final[i]){finN++;if(!refD[i]){addedN++;dd[i*4]=27;dd[i*4+1]=111;dd[i*4+2]=224;dd[i*4+3]=235;}}
-    }
-    driftImg=img;
-    var kp=refN?kept/refN*100:100,lp=100-kp,ap=finN?addedN/finN*100:0;
-    $('kept').textContent=kp.toFixed(1)+'%';$('lost').textContent=lp.toFixed(1)+'%';$('added').textContent=ap.toFixed(1)+'%';
-    $('meterFill').style.width=kp+'%';
-  }
-  function render(){
-    if(!final)return;
-    var ctx=cS.getContext('2d');
-    ctx.globalCompositeOperation='source-over';
-    ctx.fillStyle=state.skin||'#ffffff';ctx.fillRect(0,0,W,H);
-    var lc=document.createElement('canvas');lc.width=W;lc.height=H;
-    var lx=lc.getContext('2d'),img=lx.createImageData(W,H),d=img.data,i;
-    for(i=0;i<final.length;i++){if(final[i]){d[i*4]=STENCIL_RGB[0];d[i*4+1]=STENCIL_RGB[1];d[i*4+2]=STENCIL_RGB[2];d[i*4+3]=255;}}
-    lx.putImageData(img,0,0);
-    ctx.globalCompositeOperation=state.skin?'multiply':'source-over';
-    ctx.drawImage(lc,0,0);ctx.globalCompositeOperation='source-over';
-    var dx=cD.getContext('2d');dx.clearRect(0,0,W,H);
-    if(state.drift&&driftImg)dx.putImageData(driftImg,0,0);
-    applySplit();
-  }
-  function applySplit(){
-    var p=+$('split').value;
-    cS.style.clipPath='inset(0 0 0 '+p+'%)';cD.style.clipPath='inset(0 0 0 '+p+'%)';
-    $('handle').style.left='calc('+p+'% - 1px)';
-  }
-
-  /* ---------- size and ruler ---------- */
-  function updateSize(){
-    var mm=Math.max(10,Math.min(600,+$('mm').value||88));
-    if(!W){return;}
-    var hmm=mm*H/W,px=Math.round(mm/25.4*300),py=Math.round(hmm/25.4*300);
-    $('sizeOut').textContent=mm.toFixed(0)+' x '+hmm.toFixed(0)+' mm';
-    $('pxOut').textContent=px+' x '+py+' px';
-    var r=$('ruler');r.innerHTML='';
-    var step=mm>=200?50:mm>=80?10:mm>=40?5:2;
-    for(var t=0;t<=mm;t+=step){
-      var tick=document.createElement('span');tick.style.cssText='position:absolute;bottom:0;left:'+(t/mm*100)+'%;border-left:1px solid currentColor;height:'+(t%(step*5)===0?12:7)+'px;padding-left:2px';
-      if(t%(step*5)===0||t===0){tick.textContent=t;tick.style.height='18px';}
-      r.appendChild(tick);
-    }
-    $('rulerNote').textContent='Ruler spans the full width of the image: '+mm.toFixed(0)+' mm.';
-  }
-
-  /* ---------- sample design ---------- */
-  function drawSample(){
-    var c=document.createElement('canvas');c.width=700;c.height=900;var x=c.getContext('2d');
-    x.fillStyle='#fff';x.fillRect(0,0,700,900);
-    x.lineJoin='round';x.lineCap='round';x.strokeStyle='#111';
-    function hatch(clip,ang,gap,alpha,w){x.save();clip();x.clip();x.strokeStyle='rgba(17,17,17,'+alpha+')';x.lineWidth=w;
-      x.translate(350,450);x.rotate(ang);for(var i=-700;i<700;i+=gap){x.beginPath();x.moveTo(i,-700);x.lineTo(i,700);x.stroke();}x.restore();}
-    function blade(){x.beginPath();x.moveTo(350,70);x.lineTo(430,520);x.lineTo(350,600);x.lineTo(270,520);x.closePath();}
-    function bladeHalf(){x.beginPath();x.moveTo(350,70);x.lineTo(430,520);x.lineTo(350,600);x.closePath();}
-    hatch(bladeHalf,Math.PI/4,9,.55,2);
-    x.lineWidth=7;blade();x.stroke();
-    x.lineWidth=4;x.beginPath();x.moveTo(350,70);x.lineTo(350,600);x.stroke();
-    x.lineWidth=7;x.beginPath();x.moveTo(190,600);x.quadraticCurveTo(350,570,510,600);x.quadraticCurveTo(350,650,190,600);x.stroke();
-    function grip(){x.beginPath();x.rect(326,640,48,170);}
-    hatch(grip,-Math.PI/4,10,.5,2);
-    x.lineWidth=7;grip();x.stroke();
-    x.lineWidth=3;for(var y=665;y<805;y+=22){x.beginPath();x.moveTo(326,y);x.lineTo(374,y+14);x.stroke();}
-    x.lineWidth=7;x.beginPath();x.arc(350,838,26,0,Math.PI*2);x.stroke();
-    x.lineWidth=4;x.beginPath();x.arc(350,838,12,0,Math.PI*2);x.stroke();
-    x.lineWidth=5;x.beginPath();x.moveTo(190,700);x.bezierCurveTo(120,640,130,560,200,540);x.stroke();
-    x.beginPath();x.moveTo(510,700);x.bezierCurveTo(580,640,570,560,500,540);x.stroke();
-    return c;
-  }
-  /* open in a working state: the first sample is loaded so the stage is never empty */
-  if(E){var first=E.samples.dagger.draw();setSource(first,first.width,first.height);}
-})();
-</script>
-
+<script src="/js/unlock.js"></script>
+<script src="/studio/app.js"></script>
+<script>var sel=document.getElementById('langSel'); if(sel) sel.addEventListener('change',function(){ location.href=sel.value; });</script>
 </body>
 </html>

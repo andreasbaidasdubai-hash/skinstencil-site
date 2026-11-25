@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.desc}}">
+<link rel="canonical" href="{{canonical}}">
+{{hreflang}}
+<meta property="og:title" content="{{meta.title}}">
+<meta property="og:description" content="{{meta.desc}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="{{ogLocale}}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317161C'/%3E%3Cpath d='M16 5 L21 18 L16 22 L11 18 Z M14 23 H18 V28 H14 Z' fill='none' stroke='%23A99BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a worksheet. Every picture on this page is real output of the free tool, drawn in your browser from sample designs. Ink-purple is the stencil colour; red marks lost lines and blue marks added lines in the drift check. Logical (inline-start/end) properties are used so right-to-left languages mirror correctly. */
+:root{
+  --paper:#F1F2EF; --card:#FAFAF8; --ink:#17161C; --muted:#5E5C68; --line:#D6D5DD;
+  --stencil:#4F35C8; --stencil-soft:#E6E2F8; --lost:#D2362B; --added:#1B6FE0; --ok:#1F7A4C; --warn:#9A5B00; --warn-bg:#FFF1D6; --good:#1F7A4C; --bad:#B42318;
+  --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
+  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --good:#6FD3A0; --bad:#FF8A80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
+  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --good:#6FD3A0; --bad:#FF8A80; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
+html[lang="ar"] body{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
+.lostc{color:var(--lost)} .addc{color:var(--added)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.preview{background:var(--warn-bg);color:var(--warn);font-size:13px;border-bottom:1px solid var(--line)}
+.preview .wrap{padding-block:8px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:inherit;direction:ltr}
+.mark span{color:var(--stencil)}
+.topnav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.topnav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+.topnav a:hover{color:var(--ink)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.langsel{font:500 13px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+nav.tabs{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:3px}
+nav.tabs button{font:500 14px var(--body);color:var(--muted);background:none;border:0;border-radius:7px;padding:7px 14px;cursor:pointer}
+nav.tabs button[aria-pressed="true"]{background:var(--stencil-soft);color:var(--ink)}
+nav.tabs button:focus-visible,.btn:focus-visible,summary:focus-visible,.chip:focus-visible,.langsel:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);font-stretch:84%;letter-spacing:-.012em;line-height:1.1;margin:0;text-wrap:balance}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif;font-stretch:100%;letter-spacing:0;line-height:1.3}
+h1{font-size:clamp(36px,6.2vw,64px);font-weight:800}
+h2{font-size:clamp(26px,3.8vw,38px);font-weight:700}
+h3{font-size:20px;font-weight:700;letter-spacing:-.01em}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;padding-block:40px 56px}
+.sub{font-size:19px;color:var(--muted);max-width:34em;margin:18px 0 26px}
+.lead{font-size:18px;color:var(--muted);max-width:40em;margin:12px 0 0}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-align:center;text-decoration:none;font:600 15px var(--body);border-radius:10px;padding:13px 20px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+.btn.alt{background:none;color:var(--ink)}
+.note{font-size:13px;color:var(--muted);margin-top:14px;font-family:var(--mono)}
+.facts{display:flex;gap:10px 18px;flex-wrap:wrap;margin:22px 0 0;padding:0;list-style:none;font-size:14px;color:var(--muted)}
+.facts li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--stencil);margin-inline-end:8px;vertical-align:middle}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.caption{font:400 12px var(--mono);color:var(--muted);margin:10px 2px 0}
+section{padding-block:56px}
+section+section{border-top:1px solid var(--line)}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--stencil);margin-bottom:10px}
+.stage{position:relative;width:100%;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;touch-action:none;direction:ltr}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.handle{position:absolute;top:0;bottom:0;width:2px;background:var(--stencil);pointer-events:none;box-shadow:0 0 0 1px rgba(255,255,255,.7)}
+.tagL,.tagR{position:absolute;top:8px;font:500 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:rgba(20,19,24,.78);color:#fff;border-radius:5px;padding:2px 6px;pointer-events:none}
+.tagL{left:8px}.tagR{right:8px}
+input[type=range]{width:100%;accent-color:var(--stencil)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 4px}
+.chip{font:500 13px var(--body);color:var(--muted);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:6px 11px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--stencil-soft);color:var(--ink);border-color:var(--stencil)}
+.ctl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.ctl label{display:flex;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:2px}
+.ctl label span{font:500 11px var(--mono);color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}
+.gcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.gcard .pr{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gcard canvas,.mini canvas{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:#fff}
+.gcard h3{font-size:16px;margin:10px 0 2px}
+.gcard p{margin:0;font-size:13px;color:var(--muted)}
+.cap2{font:500 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.feat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;margin-top:44px}
+.feat.rev .ftext{order:2}
+.ftext p{color:var(--muted);margin:10px 0 0}
+.ftext ul{margin:12px 0 0;padding-inline-start:18px;color:var(--muted)}
+.ftext li{margin-bottom:4px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.stat b{display:block;font:600 18px var(--mono)}
+.stat span{font-size:12px;color:var(--muted)}
+.skins{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.dd{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
+.ddc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.ddc h3{font-size:16px;margin-bottom:10px}
+.pair2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cell .tg{font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.cell.do .tg{color:var(--good)}.cell.dont .tg{color:var(--bad)}
+.cell .two{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.cell p{font-size:12px;color:var(--muted);margin:6px 0 0}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:10px;height:8px;background:repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 12px);}
+.step{padding-top:30px}
+.step .tick{font:500 12px var(--mono);color:var(--stencil)}
+.step p{color:var(--muted);margin:8px 0 0}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:26px}
+.three div{border-inline-start:2px solid var(--stencil);padding-inline-start:16px}
+.three p{color:var(--muted);margin:8px 0 0}
+.tag{display:inline-block;font:500 11px var(--mono);background:var(--stencil-soft);color:var(--ink);border-radius:5px;padding:2px 7px;margin-inline-start:6px;vertical-align:middle}
+.road{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:26px}
+.road .col{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.road ul{margin:10px 0 0;padding:0;list-style:none;color:var(--muted)}
+.road li{padding:5px 0;padding-inline-start:22px;position:relative}
+.road .now li::before{content:"";position:absolute;inset-inline-start:3px;top:11px;width:10px;height:6px;border-inline-start:2px solid var(--good);border-bottom:2px solid var(--good);transform:rotate(-45deg)}
+.road .next li::before{content:"";position:absolute;inset-inline-start:3px;top:11px;width:9px;height:9px;border:2px dashed var(--muted);border-radius:50%}
+.plans4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:26px}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column}
+.plan.hl{border-color:var(--stencil);box-shadow:0 0 0 2px var(--stencil-soft)}
+.plan .price{font:700 32px var(--display);letter-spacing:-.02em;margin:10px 0 2px;direction:ltr;text-align:start}
+.plan .per{font-size:14px;color:var(--muted)}
+.plan .alt{font-size:13px;color:var(--muted);margin-top:2px}
+.plan ul{margin:14px 0 18px;padding-inline-start:18px;color:var(--muted);flex:1}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{font-weight:600;cursor:pointer}
+details p{color:var(--muted);margin:8px 0 0;max-width:46em}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer a{color:inherit}
+footer .wrap{padding-block:28px}
+.view[hidden]{display:none!important}
+@media (max-width:1000px){.plans4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){
+  .hero .wrap,.feat{grid-template-columns:minmax(0,1fr);gap:28px}
+  .feat.rev .ftext{order:0}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dd,.road{grid-template-columns:minmax(0,1fr)}
+  .steps,.three{grid-template-columns:minmax(0,1fr)}
+  .steps::before{display:none}.step{padding-top:0}
+}
+@media (max-width:560px){.plans4{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:no-preference){nav.tabs button{transition:background .15s}}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div class="preview"><div class="wrap">{{banner}}</div></div>
+
+<header><div class="wrap">
+  <a class="mark" href="{{base}}">skin<span>stencil</span></a>
+  <div class="topnav">
+    <a href="#examples">{{nav.examples}}</a><a href="#pricing">{{nav.pricing}}</a><a href="#faq">{{nav.faq}}</a>
+    <label class="vh" for="langSel">{{lang.label}}</label>
+    {{langSelect}}
+    <nav class="tabs" aria-label="Product">
+      <button id="t-tattoo" aria-pressed="true" type="button">{{tab.tattoo}}</button>
+      <button id="t-brow" aria-pressed="false" type="button">{{tab.brow}}</button>
+    </nav>
+  </div>
+</div></header>
+
+<!-- ============ TATTOO ============ -->
+<main id="v-tattoo" class="view">
+<div class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow">{{hero.eyebrow}}</div>
+    <h1>{{hero.h1}}</h1>
+    <p class="sub">{{hero.sub}}</p>
+    <div class="ctas">
+      <a class="btn" href="{{base}}studio/">{{hero.ctaOpen}}</a>
+      <a class="btn alt" href="#pricing">{{hero.ctaPricing}}</a>
+    </div>
+    <ul class="facts"><li>{{hero.f1}}</li><li>{{hero.f2}}</li><li>{{hero.f3}}</li></ul>
+  </div>
+  <div class="panel" id="demo">
+    <div class="stage" id="dStage" style="aspect-ratio:7/9">
+      <canvas id="dOrig"></canvas><canvas id="dOut"></canvas>
+      <div class="handle" id="dHandle" style="left:calc(50% - 1px)"></div>
+      <span class="tagL">{{demo.tagL}}</span><span class="tagR">{{demo.tagR}}</span>
+    </div>
+    <input id="dSplit" type="range" min="0" max="100" value="50" aria-label="{{demo.aria.split}}">
+    <div class="chips" id="dChips" role="group" aria-label="{{demo.aria.samples}}"></div>
+    <div class="ctl">
+      <div><label for="dWeight">{{demo.weight}} <span id="dWeightV">2</span></label><input id="dWeight" type="range" min="1" max="6" value="2"></div>
+      <div><label for="dSens">{{demo.sens}} <span id="dSensV">55</span></label><input id="dSens" type="range" min="1" max="100" value="55"></div>
+    </div>
+    <p class="caption">{{demo.caption}}</p>
+  </div>
+</div></div>
+
+<section id="examples"><div class="wrap">
+  <div class="eyebrow">{{ex.eyebrow}}</div>
+  <h2>{{ex.h2}}</h2>
+  <p class="lead">{{ex.lead}}</p>
+  <div class="gallery" id="gallery"></div>
+  <p class="note">{{ex.note}}</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">{{f.eyebrow}}</div>
+  <h2>{{f.h2}}</h2>
+
+  <div class="feat">
+    <div class="ftext">
+      <h3>{{f.drift.h3}}</h3>
+      <p>{{f.drift.p}}</p>
+      <ul><li>{{f.drift.l1}}</li><li>{{f.drift.l2}}</li><li>{{f.drift.l3}}</li></ul>
+    </div>
+    <div class="panel"><div class="mini"><canvas id="driftC"></canvas></div>
+      <div class="stats"><div class="stat"><b id="dKept">-</b><span>{{f.drift.kept}}</span></div><div class="stat"><b id="dLost">-</b><span>{{f.drift.lost}}</span></div><div class="stat"><b id="dAdded">-</b><span>{{f.drift.added}}</span></div></div>
+      <p class="caption">{{f.drift.cap}}</p></div>
+  </div>
+
+  <div class="feat rev">
+    <div class="ftext">
+      <h3>{{f.skin.h3}}</h3>
+      <p>{{f.skin.p}}</p>
+      <ul><li>{{f.skin.l1}}</li><li>{{f.skin.l2}}</li></ul>
+    </div>
+    <div class="panel"><div class="skins" id="skins"></div><p class="caption">{{f.skin.cap}}</p></div>
+  </div>
+
+  <div class="feat">
+    <div class="ftext">
+      <h3>{{f.size.h3}}</h3>
+      <p>{{f.size.p}}</p>
+      <ul><li>{{f.size.l1}}</li><li>{{f.size.l2}}</li></ul>
+    </div>
+    <div class="panel">
+      <svg viewBox="0 0 360 250" role="img" aria-label="{{f.size.aria}}" style="display:block;width:100%;height:auto;direction:ltr">
+        <g fill="none" stroke="var(--stencil)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M180 20 L200 110 L180 132 L160 110 Z"/><path d="M180 20 V132" stroke-width="1.6"/><rect x="146" y="132" width="68" height="9" rx="4"/><rect x="174" y="141" width="12" height="50" rx="3"/><circle cx="180" cy="203" r="10"/></g>
+        <g stroke="currentColor" fill="none" stroke-width="1"><path d="M40 226 H320"/></g>
+        <g id="rl" stroke="currentColor" stroke-width="1"></g>
+        <text x="180" y="246" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" text-anchor="middle">88 mm</text>
+        <g stroke="currentColor" opacity=".7" stroke-width="1"><path d="M270 20 V214 M265 20 H275 M265 214 H275"/></g>
+        <text x="284" y="120" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" transform="rotate(90 284 120)" text-anchor="middle">113 mm</text>
+      </svg>
+      <p class="caption">{{f.size.cap}}</p>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">{{d.eyebrow}}</div>
+  <h2>{{d.h2}}</h2>
+  <p class="lead">{{d.lead}}</p>
+  <div class="dd" id="dd"></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">{{h.eyebrow}}</div>
+  <h2>{{h.h2}}</h2>
+  <div class="steps">
+    <div class="step"><div class="tick">0 mm</div><h3>{{h.s1.h}}</h3><p>{{h.s1.p}}</p></div>
+    <div class="step"><div class="tick">40 mm</div><h3>{{h.s2.h}}</h3><p>{{h.s2.p}}</p></div>
+    <div class="step"><div class="tick">88 mm</div><h3>{{h.s3.h}}</h3><p>{{h.s3.p}}</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">{{o.eyebrow}}</div>
+  <h2>{{o.h2}}</h2>
+  <div class="three">
+    <div><h3>{{o.1.h}}</h3><p>{{o.1.p}}</p></div>
+    <div><h3>{{o.2.h}}</h3><p>{{o.2.p}}</p></div>
+    <div><h3>{{o.3.h}} <span class="tag">{{tag.dev}}</span></h3><p>{{o.3.p}}</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">{{r.eyebrow}}</div>
+  <h2>{{r.h2}}</h2>
+  <div class="road">
+    <div class="col now"><h3>{{r.now}}</h3><ul><li>{{r.n1}}</li><li>{{r.n2}}</li><li>{{r.n3}}</li><li>{{r.n4}}</li><li>{{r.n5}}</li><li>{{r.n6}}</li></ul></div>
+    <div class="col next"><h3>{{r.next}}</h3><ul><li>{{r.x1}}</li><li>{{r.x2}}</li><li>{{r.x3}}</li><li>{{r.x4}}</li><li>{{r.x5}}</li></ul></div>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <div class="eyebrow">{{p.eyebrow}}</div>
+  <h2>{{p.h2}}</h2>
+  <p class="lead">{{p.lead}}</p>
+  <div class="plans4">
+    <div class="plan"><h3>{{p.free.h}}</h3><div class="price">{{p.free.price}}</div><div class="per">&nbsp;</div>
+      <ul><li>{{p.free.l1}}</li><li>{{p.free.l2}}</li><li>{{p.free.l3}}</li></ul>
+      <a class="btn" href="{{base}}studio/">{{p.free.cta}}</a></div>
+    <div class="plan"><h3>{{p.day.h}}</h3><div class="price">{{p.day.price}}</div><div class="per">{{p.day.per}}</div>
+      <ul><li>{{p.day.l1}}</li><li>{{p.day.l2}}</li><li>{{p.day.l3}}</li></ul>
+      <a class="btn alt buy" data-plan="day" href="#">{{p.day.cta}}</a></div>
+    <div class="plan hl"><h3>{{p.pro.h}}</h3><div class="price">{{p.pro.price}}</div><div class="per">{{p.pro.per}}</div><div class="alt">{{p.pro.alt}}</div>
+      <ul><li>{{p.pro.l1}}</li><li>{{p.pro.l2}}</li><li>{{p.pro.l3}}</li></ul>
+      <a class="btn buy" data-plan="month" href="#">{{p.pro.cta}}</a>
+      <a class="btn alt buy" data-plan="year" href="#" style="margin-top:8px">{{p.pro.cta2}}</a></div>
+    <div class="plan"><h3>{{p.studio.h}} <span class="tag">{{tag.dev}}</span></h3><div class="price">{{p.studio.price}}</div><div class="per">{{p.studio.per}}</div>
+      <ul><li>{{p.studio.l1}}</li><li>{{p.studio.l2}}</li></ul>
+      <a class="btn alt" href="mailto:{{notifyEmail}}?subject=Studio%20pricing%20interest">{{p.studio.cta}}</a></div>
+  </div>
+  <p class="note">{{p.note}}</p>
+  <p class="note" id="soonNote" hidden>{{p.soon}}</p>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="eyebrow">{{q.eyebrow}}</div>
+  <h2>{{q.h2}}</h2>
+  <div style="margin-top:18px">
+    <details><summary>{{q1.h}}</summary><p>{{q1.p}}</p></details>
+    <details><summary>{{q2.h}}</summary><p>{{q2.p}}</p></details>
+    <details><summary>{{q3.h}}</summary><p>{{q3.p}}</p></details>
+    <details><summary>{{q4.h}}</summary><p>{{q4.p}}</p></details>
+    <details><summary>{{q5.h}}</summary><p>{{q5.p}}</p></details>
+    <details><summary>{{q6.h}}</summary><p>{{q6.p}}</p></details>
+    <details><summary>{{q7.h}}</summary><p>{{q7.p}}</p></details>
+    <details><summary>{{q8.h}}</summary><p>{{q8.p}}</p></details>
+    <details><summary>{{q9.h}}</summary><p>{{q9.p}}</p></details>
+    <details><summary>{{q10.h}}</summary><p>{{q10.p}}</p></details>
+    <details><summary>{{q11.h}}</summary><p>{{q11.p}}</p></details>
+  </div>
+</div></section>
+</main>
+
+<!-- ============ BROW ============ -->
+<main id="v-brow" class="view" hidden>
+<div class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow">{{b.eyebrow}}</div>
+    <h1>{{b.h1}}</h1>
+    <p class="sub">{{b.sub}}</p>
+    <div class="ctas">
+      <a class="btn" href="mailto:{{notifyEmail}}?subject=Brow%20mapping%20interest">{{b.cta1}}</a>
+      <a class="btn alt" href="mailto:{{notifyEmail}}?subject=Brow%20pricing%20interest">{{b.cta2}}</a>
+    </div>
+    <p class="note">{{b.note}}</p>
+  </div>
+  <div class="panel">
+    <svg viewBox="0 0 320 190" role="img" aria-label="{{b.aria}}" style="display:block;width:100%;height:auto;direction:ltr">
+      <g fill="none" stroke="currentColor" stroke-width="1" opacity=".35"><path d="M20 120 H300 M160 20 V170"/></g>
+      <g fill="none" stroke="var(--stencil)" stroke-width="2.2" stroke-linecap="round">
+        <path d="M34 98 C62 62 112 56 140 84"/>
+        <path d="M180 84 C208 56 258 62 286 98"/>
+        <path d="M34 98 L140 84 M180 84 L286 98" stroke-dasharray="3 5" stroke-width="1.2"/>
+      </g>
+      <g stroke="currentColor" stroke-width="1" opacity=".7"><path d="M34 150 H140 M34 145 V155 M140 145 V155"/></g>
+      <text x="87" y="170" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" text-anchor="middle">52 mm</text>
+    </svg>
+    <p class="caption">{{b.cap}}</p>
+  </div>
+</div></div>
+
+<section><div class="wrap">
+  <div class="eyebrow">{{h.eyebrow}}</div>
+  <h2>{{b.how.h2}}</h2>
+  <div class="steps">
+    <div class="step"><div class="tick">1</div><h3>{{b.s1h}}</h3><p>{{b.s1p}}</p></div>
+    <div class="step"><div class="tick">2</div><h3>{{b.s2h}}</h3><p>{{b.s2p}}</p></div>
+    <div class="step"><div class="tick">3</div><h3>{{b.s3h}}</h3><p>{{b.s3p}}</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">{{b.priv.eyebrow}}</div>
+  <h2>{{b.priv.h2}}</h2>
+  <p class="sub" style="margin-bottom:0">{{b.priv.p}}</p>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">{{p.eyebrow}}</div>
+  <h2>{{b.price.h2}}</h2>
+  <div class="plans4" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+    <div class="plan"><h3>{{b.price.free}}</h3><div class="price">$0</div><ul><li>{{b.price.freeL1}}</li><li>{{b.price.freeL2}}</li></ul></div>
+    <div class="plan"><h3>{{b.price.pro}}</h3><div class="price" style="font-size:26px">{{b.price.proPrice}}</div><div class="alt">{{b.price.proAlt}}</div>
+      <ul><li>{{b.price.proL1}}</li><li>{{b.price.proL2}}</li></ul>
+      <a class="btn alt" href="mailto:{{notifyEmail}}?subject=Brow%20pricing%20interest">{{b.price.cta}}</a></div>
+  </div>
+  <p class="note">{{b.price.note}}</p>
+</div></section>
+</main>
+
+<footer><div class="wrap"><a href="/privacy.html">{{ft.privacy}}</a> &middot; <a href="/terms.html">{{ft.terms}}</a> &middot; <a href="mailto:{{notifyEmail}}">{{notifyEmail}}</a><br>{{ft.note}}{{ftMt}}</div></footer>
+
+<script>window.I18N={{i18n_json}};</script>
+<script src="/js/config.js"></script>
+<script src="/js/engine.js"></script>
+<script>
+(function(){
+  var T=window.I18N||{}, C=window.SkinConfig||{};
+  /* ---------- tabs ---------- */
+  var views={tattoo:document.getElementById('v-tattoo'),brow:document.getElementById('v-brow')};
+  var tabs={tattoo:document.getElementById('t-tattoo'),brow:document.getElementById('t-brow')};
+  function show(n){ if(!views[n]) n='tattoo'; for(var k in views){ views[k].hidden=(k!==n); tabs[k].setAttribute('aria-pressed',String(k===n)); } }
+  function fromHash(){ var h=(location.hash||'').replace('#',''); if(h==='brow'||h==='tattoo') show(h); }
+  tabs.tattoo.addEventListener('click',function(){ show('tattoo'); history.replaceState(null,'','#tattoo'); });
+  tabs.brow.addEventListener('click',function(){ show('brow'); history.replaceState(null,'','#brow'); });
+  window.addEventListener('hashchange',fromHash); fromHash();
+  var sel=document.getElementById('langSel'); if(sel) sel.addEventListener('change',function(){ location.href=sel.value; });
+
+  /* ---------- checkout buttons: real links when configured, else "opens soon" ---------- */
+  var anyLive=false;
+  [].forEach.call(document.querySelectorAll('a.buy'),function(a){
+    var url=(C.checkout||{})[a.getAttribute('data-plan')];
+    if(url){ a.href=url; a.target='_blank'; a.rel='noopener'; anyLive=true; }
+    else { a.href='mailto:'+(C.notifyEmail||'')+'?subject=Checkout%20interest%20'+a.getAttribute('data-plan'); }
+  });
+  if(!anyLive){ var sn=document.getElementById('soonNote'); if(sn) sn.hidden=false; }
+
+  var E=window.SkinEngine; if(!E) return;
+  var ORDER=['dagger','mandala','lettering','orb'];
+  var cache={};
+  function label(n){ return T['sample.'+n]||E.samples[n].label; }
+  function prep(name,maxSide){
+    var key=name+'@'+maxSide; if(cache[key]) return cache[key];
+    var s=E.samples[name], big=s.draw(), c=E.fitToCanvas(big,big.width,big.height,maxSide), g=E.grayFromCanvas(c);
+    return (cache[key]={canvas:c,gray:g.gray,w:g.w,h:g.h,mode:s.mode});
+  }
+  function run(p,o){ return E.makeStencil(p.gray,p.w,p.h,o); }
+  function drawOrig(canvas,p){ canvas.width=p.w; canvas.height=p.h; canvas.getContext('2d').drawImage(p.canvas,0,0); }
+
+  /* ---------- hero demo ---------- */
+  var cur='dagger', dOrig=document.getElementById('dOrig'), dOut=document.getElementById('dOut'), dStage=document.getElementById('dStage');
+  var dW=document.getElementById('dWeight'), dS=document.getElementById('dSens'), dSplit=document.getElementById('dSplit'), chips=document.getElementById('dChips');
+  var busy=false;
+  function demo(){
+    var p=prep(cur,900); drawOrig(dOrig,p); dStage.style.aspectRatio=p.w+'/'+p.h;
+    var r=run(p,{mode:p.mode,sens:+dS.value,smooth:0,weight:+dW.value,specks:30}); E.renderStencil(dOut,r.final,p.w,p.h,null,null,r.alpha); split();
+  }
+  function split(){ var v=+dSplit.value; dOut.style.clipPath='inset(0 0 0 '+v+'%)'; document.getElementById('dHandle').style.left='calc('+v+'% - 1px)'; }
+  function sched(){ if(busy) return; busy=true; requestAnimationFrame(function(){ busy=false; demo(); }); }
+  ORDER.forEach(function(n,i){ var b=document.createElement('button'); b.type='button'; b.className='chip'; b.textContent=label(n); b.setAttribute('aria-pressed',String(i===0));
+    b.addEventListener('click',function(){ cur=n; [].forEach.call(chips.children,function(x){ x.setAttribute('aria-pressed','false'); }); b.setAttribute('aria-pressed','true');
+      dS.value=(E.samples[n].mode==='photo')?60:55; document.getElementById('dSensV').textContent=dS.value; sched(); }); chips.appendChild(b); });
+  dW.addEventListener('input',function(){ document.getElementById('dWeightV').textContent=dW.value; sched(); });
+  dS.addEventListener('input',function(){ document.getElementById('dSensV').textContent=dS.value; sched(); });
+  dSplit.addEventListener('input',split);
+  demo();
+
+  /* ---------- gallery ---------- */
+  var gal=document.getElementById('gallery');
+  ORDER.forEach(function(n){
+    var p=prep(n,640), r=run(p,{mode:p.mode,sens:p.mode==='photo'?60:55,smooth:p.mode==='photo'?1:0,weight:2,specks:40});
+    var card=document.createElement('div'); card.className='gcard';
+    card.innerHTML='<div class="pr"><div><div class="cap2"></div><canvas></canvas></div><div><div class="cap2"></div><canvas></canvas></div></div><h3></h3><p></p>';
+    var cs=card.querySelectorAll('canvas'), caps=card.querySelectorAll('.cap2'); drawOrig(cs[0],p); E.renderStencil(cs[1],r.final,p.w,p.h,null,null,r.alpha);
+    caps[0].textContent=T['g.design']||'Design'; caps[1].textContent=T['g.stencil']||'Stencil';
+    card.querySelector('h3').textContent=label(n)+' ('+(p.mode==='photo'?T['g.modePhoto']:T['g.modeDraw'])+')'; card.querySelector('p').textContent=T['g.n.'+n]||''; gal.appendChild(card);
+  });
+
+  /* ---------- drift check ---------- */
+  (function(){
+    var p=prep('dagger',700), o={mode:'draw',sens:22,smooth:0,weight:2,specks:140}, r=run(p,o), c=document.getElementById('driftC');
+    E.renderStencil(c,r.final,p.w,p.h,null,null,r.alpha);
+    var d=E.driftCheck(E.referenceMask(p.gray,p.w,p.h,'draw'),r.final,p.w,p.h,2,true), tmp=document.createElement('canvas'); tmp.width=p.w; tmp.height=p.h; tmp.getContext('2d').putImageData(d.image,0,0);
+    c.getContext('2d').drawImage(tmp,0,0);
+    document.getElementById('dKept').textContent=d.kept.toFixed(1)+'%'; document.getElementById('dLost').textContent=d.lost.toFixed(1)+'%'; document.getElementById('dAdded').textContent=d.added.toFixed(1)+'%';
+  })();
+
+  /* ---------- skin tones ---------- */
+  (function(){
+    var p=prep('dagger',420), r=run(p,{mode:'draw',sens:55,smooth:0,weight:2,specks:40}), box=document.getElementById('skins');
+    ['#F6DCC9','#E8B98F','#C98E5F','#9A6240','#6B4126','#46281A'].forEach(function(t){ var c=document.createElement('canvas'); c.style.cssText='width:100%;height:auto;border-radius:6px;border:1px solid var(--line)'; E.renderStencil(c,r.final,p.w,p.h,t,null,r.alpha); box.appendChild(c); });
+  })();
+
+  /* ---------- true-size ruler ticks ---------- */
+  (function(){
+    var g=document.getElementById('rl'), ns='http://www.w3.org/2000/svg';
+    for(var i=0;i<=28;i++){ var x=40+i*10, ln=document.createElementNS(ns,'path'); ln.setAttribute('d','M'+x+' 226 V'+(i%5===0?216:221)); g.appendChild(ln); }
+  })();
+
+  /* ---------- do and don't, made with the tool ---------- */
+  (function(){
+    var box=document.getElementById('dd'), base=prep('dagger',520);
+    var PAIRS=[['d.p1.do','d.p1.dont','blur','d.p1.note'],['d.p2.do','d.p2.dont','lowcontrast','d.p2.note'],['d.p3.do','d.p3.dont','padded','d.p3.note']];
+    PAIRS.forEach(function(P){
+      var bad=E.degrade(base.canvas,P[2]), bg=E.grayFromCanvas(bad), o={mode:'draw',sens:55,smooth:0,weight:2,specks:40};
+      var good=E.makeStencil(base.gray,base.w,base.h,o), poor=E.makeStencil(bg.gray,bg.w,bg.h,o);
+      var card=document.createElement('div'); card.className='ddc'; card.innerHTML='<h3></h3><div class="pair2"><div class="cell do"><div class="tg"></div><div class="two"><canvas></canvas><canvas></canvas></div><p></p></div><div class="cell dont"><div class="tg"></div><div class="two"><canvas></canvas><canvas></canvas></div><p></p></div></div>';
+      var cs=card.querySelectorAll('canvas'), tg=card.querySelectorAll('.tg'), ps=card.querySelectorAll('p');
+      drawOrig(cs[0],base); E.renderStencil(cs[1],good.final,base.w,base.h,null,null,good.alpha);
+      cs[2].width=bg.w; cs[2].height=bg.h; cs[2].getContext('2d').drawImage(bad,0,0); E.renderStencil(cs[3],poor.final,bg.w,bg.h,null,null,poor.alpha);
+      for(var k=0;k<4;k++){ cs[k].style.cssText='width:100%;height:auto;border:1px solid var(--line);border-radius:5px;background:#fff'; }
+      card.querySelector('h3').textContent=T[P[0]]+' / '+T[P[1]];
+      tg[0].textContent=T['d.do']; tg[1].textContent=T['d.dont']; ps[0].textContent=T[P[0]]; ps[1].textContent=T[P[1]]+'. '+T[P[3]]; box.appendChild(card);
+    });
+  })();
+})();
+</script>
+
+</body>
+</html>

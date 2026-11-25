@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="nl" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Skinstencil Studio | Gratis stenciltool</title>
+<meta name="description" content="Gratis browsertool: maak van je eigen ontwerp een schone lijnstencil, check de drift, bekijk het op huidtinten en stel de printmaat in. Draait lokaal, er wordt niets geüpload.">
+<link rel="canonical" href="https://skinstencil.com/nl/studio/">
+<link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-US" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-GB" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-AU" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-CA" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-AE" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-NG" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-IE" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="en-NZ" href="https://skinstencil.com/studio/">
+<link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/">
+<link rel="alternate" hreflang="de-DE" href="https://skinstencil.com/de/studio/">
+<link rel="alternate" hreflang="de-AT" href="https://skinstencil.com/de/studio/">
+<link rel="alternate" hreflang="de-CH" href="https://skinstencil.com/de/studio/">
+<link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/">
+<link rel="alternate" hreflang="fr-FR" href="https://skinstencil.com/fr/studio/">
+<link rel="alternate" hreflang="fr-BE" href="https://skinstencil.com/fr/studio/">
+<link rel="alternate" hreflang="fr-CH" href="https://skinstencil.com/fr/studio/">
+<link rel="alternate" hreflang="fr-CA" href="https://skinstencil.com/fr/studio/">
+<link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-ES" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-MX" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-AR" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-CO" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-CL" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="es-US" href="https://skinstencil.com/es/studio/">
+<link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/">
+<link rel="alternate" hreflang="pt-BR" href="https://skinstencil.com/pt/studio/">
+<link rel="alternate" hreflang="pt-PT" href="https://skinstencil.com/pt/studio/">
+<link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/">
+<link rel="alternate" hreflang="it-IT" href="https://skinstencil.com/it/studio/">
+<link rel="alternate" hreflang="it-CH" href="https://skinstencil.com/it/studio/">
+<link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/">
+<link rel="alternate" hreflang="nl-NL" href="https://skinstencil.com/nl/studio/">
+<link rel="alternate" hreflang="nl-BE" href="https://skinstencil.com/nl/studio/">
+<link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/">
+<link rel="alternate" hreflang="tr-TR" href="https://skinstencil.com/tr/studio/">
+<link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-AE" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-SA" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-QA" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-KW" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-BH" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-OM" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="ar-EG" href="https://skinstencil.com/ar/studio/">
+<link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/">
+<link rel="alternate" hreflang="pl-PL" href="https://skinstencil.com/pl/studio/">
+<link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317161C'/%3E%3Cpath d='M16 5 L21 18 L16 22 L11 18 Z M14 23 H18 V28 H14 Z' fill='none' stroke='%23A99BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a drafting bench. Controls on the left, one large stage in the middle, measurements and notes on the right. Ink-purple is the stencil colour; red marks lost lines, blue marks added lines. Logical properties keep right-to-left languages correct. */
+:root{
+  --paper:#F1F2EF; --card:#FAFAF8; --ink:#17161C; --muted:#5E5C68; --line:#D6D5DD;
+  --stencil:#4F35C8; --stencil-soft:#E6E2F8; --lost:#D2362B; --added:#1B6FE0; --ok:#1F7A4C; --warn:#9A5B00; --warn-bg:#FFF1D6; --bad:#B42318;
+  --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
+  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
+  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+html[lang="ar"] body,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
+.lostc{color:var(--lost)} .addc{color:var(--added)}
+.wrap{max-width:1280px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.banner{background:var(--warn-bg);color:var(--warn);font-size:13px;border-bottom:1px solid var(--line)}
+.banner .wrap{padding-block:8px}
+header .wrap{display:flex;align-items:center;gap:14px;padding-block:14px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:inherit;direction:ltr}
+.mark span{color:var(--stencil)}
+.pill{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--stencil-soft);border-radius:6px;padding:3px 8px}
+.langsel{margin-inline-start:auto;font:500 13px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+h2,h3{font-family:var(--display);font-stretch:84%;letter-spacing:-.01em;margin:0}
+h2{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-stretch:100%;color:var(--muted)}
+html[lang="ar"] h2{text-transform:none;letter-spacing:0}
+h3{font-size:18px;font-weight:700}
+.grid{display:grid;grid-template-columns:272px minmax(0,1fr) 288px;gap:18px;padding-block:6px 40px;align-items:start}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stack{display:grid;gap:14px}
+label,.lab{display:block;font-weight:600;font-size:13px;margin-bottom:6px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.val{font:500 12px var(--mono);color:var(--muted)}
+input[type=range]{width:100%;accent-color:var(--stencil)}
+input[type=number],input[type=text]{width:100%;font:500 14px var(--mono);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;direction:ltr}
+.btn{font:600 14px var(--body);border-radius:9px;padding:10px 14px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;width:100%;text-align:center;text-decoration:none;display:block}
+.btn.alt{background:none;color:var(--ink);border-color:var(--line)}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn:focus-visible,input:focus-visible,.seg button:focus-visible,.sw:focus-visible,.langsel:focus-visible,summary:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
+.drop{border:1.5px dashed var(--line);border-radius:10px;padding:16px;text-align:center;color:var(--muted);font-size:13px;cursor:pointer}
+.drop.over{border-color:var(--stencil);background:var(--stencil-soft)}
+.seg{display:flex;gap:3px;background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:3px}
+.seg button{flex:1;font:500 13px var(--body);color:var(--muted);background:none;border:0;border-radius:6px;padding:7px 8px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--stencil-soft);color:var(--ink)}
+.swatches{display:flex;gap:6px;flex-wrap:wrap}
+.sw{width:30px;height:30px;border-radius:8px;border:2px solid var(--line);cursor:pointer;padding:0}
+.sw[aria-pressed="true"]{border-color:var(--stencil);box-shadow:0 0 0 2px var(--stencil-soft)}
+.sw.none{background:repeating-linear-gradient(45deg,var(--paper) 0 5px,var(--line) 5px 6px)}
+.stagebox{display:grid;gap:10px}
+.stage{position:relative;width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;touch-action:none;direction:ltr}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px;font-size:14px;direction:ltr}
+.handle{position:absolute;top:0;bottom:0;width:2px;background:var(--stencil);pointer-events:none;box-shadow:0 0 0 1px rgba(255,255,255,.7)}
+.tagL,.tagR{position:absolute;top:10px;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:rgba(20,19,24,.78);color:#fff;border-radius:5px;padding:3px 7px;pointer-events:none}
+.tagL{left:10px}.tagR{right:10px}
+.ruler{height:22px;border-bottom:1px solid var(--ink);position:relative;font:400 10px var(--mono);color:var(--muted);direction:ltr}
+.meter{height:8px;border-radius:5px;background:var(--line);overflow:hidden;direction:ltr}
+.meter i{display:block;height:100%;background:var(--ok);width:0}
+.stat{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px solid var(--line)}
+.stat b{font:500 13px var(--mono);direction:ltr}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-inline-end:6px}
+.tips{margin:8px 0 0;padding-inline-start:18px;color:var(--muted);font-size:13px}
+.tips li{margin-bottom:6px}
+.fine{font-size:12px;color:var(--muted)}
+.status{font-size:12px;color:var(--muted);margin:0}
+.status.ok{color:var(--ok)} .status.err{color:var(--bad)}
+details.plans{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper)}
+details.plans summary{font-weight:600;font-size:13px;cursor:pointer}
+details.plans .btn{margin-top:8px}
+@media (max-width:1020px){.grid{grid-template-columns:minmax(0,1fr)}}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div class="banner"><div class="wrap">Gratis vroege versie. Het draait in je browser met een klassiek beeldfilter (randen en drempelwaarden), niet met een AI-model. Niets wat je laadt wordt geüpload of opgeslagen. Downloads hebben een watermerk totdat je ze ontgrendelt.</div></div>
+<header><div class="wrap"><a class="mark" href="/nl/">skin<span>stencil</span></a><span class="pill">Gratis vroege versie</span><select class="langsel" id="langSel" aria-label="Taal"><option value="/studio/" lang="en">English</option><option value="/de/studio/" lang="de">Deutsch</option><option value="/fr/studio/" lang="fr">Français</option><option value="/es/studio/" lang="es">Español</option><option value="/pt/studio/" lang="pt">Português</option><option value="/it/studio/" lang="it">Italiano</option><option value="/nl/studio/" selected lang="nl">Nederlands</option><option value="/tr/studio/" lang="tr">Türkçe</option><option value="/ar/studio/" lang="ar">العربية</option><option value="/pl/studio/" lang="pl">Polski</option></select></div></header>
+
+<div class="wrap"><div class="grid">
+
+  <!-- LEFT: controls -->
+  <div class="stack">
+    <div class="card stack">
+      <h2>1. Je ontwerp</h2>
+      <div class="drop" id="drop" tabindex="0" role="button" aria-label="Kies een afbeeldingsbestand">Sleep hier een JPG, PNG of WebP heen, of klik om te kiezen.<br><span class="fine">Alleen ontwerpen die je zelf hebt gemaakt of mag gebruiken.</span></div>
+      <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
+      <div class="lab" style="margin:4px 0 0">Of begin met een voorbeeld</div>
+      <div id="samples" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+    </div>
+    <div class="card stack">
+      <h2>2. Maak de stencil</h2>
+      <div><span class="lab">Soort bron</span>
+        <div class="seg" id="mode"><button type="button" data-v="draw" aria-pressed="true">Tekening</button><button type="button" data-v="photo" aria-pressed="false">Foto</button></div></div>
+      <div><div class="row"><label for="sens">Gevoeligheid</label><span class="val" id="sensV">55</span></div><input id="sens" type="range" min="1" max="100" value="55"></div>
+      <div><div class="row"><label for="smooth">Gladmaken</label><span class="val" id="smoothV">0</span></div><input id="smooth" type="range" min="0" max="4" value="0"></div>
+      <div><div class="row"><label for="weight">Lijndikte</label><span class="val" id="weightV">2</span></div><input id="weight" type="range" min="1" max="6" value="2"></div>
+      <div><div class="row"><label for="specks">Vlekjes verwijderen</label><span class="val" id="specksV">30</span></div><input id="specks" type="range" min="0" max="300" value="30"></div>
+    </div>
+    <div class="card stack">
+      <h2>3. Voorbeeld</h2>
+      <div><span class="lab">Huidtint</span>
+        <div class="swatches" id="skins"></div></div>
+      <button class="btn alt" id="driftBtn" type="button" aria-pressed="false">Toon driftcontrole op de stencil</button>
+    </div>
+  </div>
+
+  <!-- CENTER: stage -->
+  <div class="stagebox">
+    <div class="stage" id="stage" style="aspect-ratio:7/9">
+      <canvas id="cOrig"></canvas>
+      <canvas id="cOut"></canvas>
+      <canvas id="cDrift"></canvas>
+      <div class="handle" id="handle" hidden></div>
+      <span class="tagL" id="tagL" hidden>Origineel</span><span class="tagR" id="tagR" hidden>Stencil</span>
+      <div class="ph" id="ph">Laad een ontwerp of gebruik een voorbeeld om hier de stencil te zien.</div>
+    </div>
+    <div><label for="split" class="fine" style="margin-bottom:2px">Schuif om het origineel met de stencil te vergelijken</label><input id="split" type="range" min="0" max="100" value="50"></div>
+    <div class="ruler" id="ruler" aria-hidden="true"></div>
+    <div class="fine" id="rulerNote">De liniaal op ware grootte volgt de printbreedte die je rechts instelt.</div>
+  </div>
+
+  <!-- RIGHT: measurements and download -->
+  <div class="stack">
+    <div class="card">
+      <h2>Driftcontrole</h2>
+      <p class="fine" style="margin:6px 0 10px">Vergelijkt de stencil met de lijnen in je origineel, ongeacht je schuifjes. <span class="lostc">Rood</span> is een lijn die verloren is gegaan, <span class="addc">blauw</span> is een lijn die is toegevoegd.</p>
+      <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
+      <div class="stat"><span><span class="dot" style="background:var(--ok)"></span>Lijnen behouden</span><b id="kept">-</b></div>
+      <div class="stat"><span><span class="dot" style="background:var(--lost)"></span>Lijnen verloren</span><b id="lost">-</b></div>
+      <div class="stat"><span><span class="dot" style="background:var(--added)"></span>Lijnen toegevoegd</span><b id="added">-</b></div>
+      <p class="fine" style="margin:10px 0 0">De referentie is een vaste, gevoelige lezing van je origineel. Lagere gevoeligheid of vlekjes verwijderen laat fijne lijnen met opzet weg, en ze verschijnen hier als verloren.</p>
+    </div>
+    <div class="card stack">
+      <h2>Printmaat</h2>
+      <div><label for="mm">Breedte op de huid (mm)</label><input id="mm" type="number" min="10" max="600" step="1" value="88"></div>
+      <div class="stat"><span>Maat</span><b id="sizeOut">-</b></div>
+      <div class="stat"><span>Bij 300 dpi</span><b id="pxOut">-</b></div>
+    </div>
+    <div class="card stack" id="dlCard">
+      <h2>4. Download</h2>
+      <button class="btn" id="dlBtn" type="button">Download PNG</button>
+      <p class="status" id="dlStatus"></p>
+      <details class="plans" id="plansBox">
+        <summary>Verwijder het watermerk</summary>
+        <p class="fine" style="margin:8px 0 0">Kies hoe lang je het nodig hebt</p>
+        <a class="btn alt buy" data-plan="day" href="#">Dagpas, 24 uur - $4.99</a>
+        <a class="btn buy" data-plan="month" href="#">Pro, maandelijks - $12</a>
+        <a class="btn alt buy" data-plan="year" href="#">Pro, jaarlijks - $79</a>
+        <p class="status" id="soon" hidden>Afrekenen is nog niet open. Laat het ons weten, dan mailen we je als het zover is.</p>
+      </details>
+      <details class="plans" id="keyBox">
+        <summary>Ik heb een licentiesleutel</summary>
+        <label for="keyIn" style="margin-top:8px">Licentiesleutel uit je e-mail</label>
+        <input id="keyIn" type="text" autocomplete="off" spellcheck="false">
+        <button class="btn" id="keyBtn" type="button" style="margin-top:8px">Activeren</button>
+        <p class="status" id="keyStatus"></p>
+        <button class="btn alt" id="keyOut" type="button" hidden>Verwijder de sleutel van dit apparaat</button>
+      </details>
+    </div>
+    <div class="card">
+      <h2>Tips voor schonere stencils</h2>
+      <ul class="tips">
+        <li>Fotografeer of scan vlak, in gelijkmatig licht, met het ontwerp beeldvullend.</li>
+        <li>Gebruik Tekening voor schetsen en flash. Gebruik Foto voor beelden met zachte schaduw.</li>
+        <li>Verhoog Vlekjes verwijderen om ruis op te ruimen. Verlaag Gevoeligheid als schaduw lijnen wordt.</li>
+        <li>Als lijnen er zwak uitzien op je printer, probeer een dikkere lijn en test eerst op papier.</li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+
+<script>window.I18N={"sample.dagger":"Dolk","sample.mandala":"Mandala","sample.lettering":"Lettering","sample.orb":"Geschaduwde bol","s.title":"Skinstencil Studio | Gratis stenciltool","s.desc":"Gratis browsertool: maak van je eigen ontwerp een schone lijnstencil, check de drift, bekijk het op huidtinten en stel de printmaat in. Draait lokaal, er wordt niets geüpload.","s.banner":"Gratis vroege versie. Het draait in je browser met een klassiek beeldfilter (randen en drempelwaarden), niet met een AI-model. Niets wat je laadt wordt geüpload of opgeslagen. Downloads hebben een watermerk totdat je ze ontgrendelt.","s.pill":"Gratis vroege versie","s.c1":"1. Je ontwerp","s.drop":"Sleep hier een JPG, PNG of WebP heen, of klik om te kiezen.","s.dropRights":"Alleen ontwerpen die je zelf hebt gemaakt of mag gebruiken.","s.dropAria":"Kies een afbeeldingsbestand","s.orSample":"Of begin met een voorbeeld","s.c2":"2. Maak de stencil","s.srcType":"Soort bron","s.draw":"Tekening","s.photo":"Foto","s.sens":"Gevoeligheid","s.smooth":"Gladmaken","s.weight":"Lijndikte","s.specks":"Vlekjes verwijderen","s.c3":"3. Voorbeeld","s.skin":"Huidtint","s.noSkin":"Geen huidvoorbeeld","s.skinN":"Huidtint","s.driftShow":"Toon driftcontrole op de stencil","s.driftHide":"Verberg driftcontrole","s.ph":"Laad een ontwerp of gebruik een voorbeeld om hier de stencil te zien.","s.tagL":"Origineel","s.tagR":"Stencil","s.compare":"Schuif om het origineel met de stencil te vergelijken","s.rulerNote":"De liniaal beslaat de volle breedte van het beeld: {mm} mm.","s.rulerHint":"De liniaal op ware grootte volgt de printbreedte die je rechts instelt.","s.errType":"Kies een JPG-, PNG- of WebP-afbeelding.","s.errRead":"Dat bestand kon niet als afbeelding worden gelezen.","s.drift":"Driftcontrole","s.driftP":"Vergelijkt de stencil met de lijnen in je origineel, ongeacht je schuifjes. \u003cspan class=\"lostc\">Rood\u003c/span> is een lijn die verloren is gegaan, \u003cspan class=\"addc\">blauw\u003c/span> is een lijn die is toegevoegd.","s.kept":"Lijnen behouden","s.lost":"Lijnen verloren","s.added":"Lijnen toegevoegd","s.driftNote":"De referentie is een vaste, gevoelige lezing van je origineel. Lagere gevoeligheid of vlekjes verwijderen laat fijne lijnen met opzet weg, en ze verschijnen hier als verloren.","s.sizeH":"Printmaat","s.width":"Breedte op de huid (mm)","s.size":"Maat","s.at300":"Bij 300 dpi","s.dl.h":"4. Download","s.dl.btn":"Download PNG","s.dl.free":"Gratis: watermerk, tot {px} px.","s.dl.paid":"Ontgrendeld: geen watermerk, tot {px} px, 300 dpi-maat in het bestand.","s.dl.busy":"Bestand wordt voorbereid...","s.dl.remove":"Verwijder het watermerk","s.dl.have":"Ik heb een licentiesleutel","s.dl.keyLabel":"Licentiesleutel uit je e-mail","s.dl.activate":"Activeren","s.dl.checking":"Sleutel wordt gecontroleerd...","s.dl.ok":"Sleutel geaccepteerd. Het watermerk is uit op dit apparaat.","s.dl.invalid":"Die sleutel is niet geaccepteerd. Controleer hem en probeer opnieuw.","s.dl.expired":"Die sleutel is verlopen.","s.dl.network":"Kon de licentieserver niet bereiken. Probeer het zo opnieuw.","s.dl.notConfigured":"Afrekenen is nog niet open. Laat het ons weten, dan mailen we je als het zover is.","s.dl.plans":"Kies hoe lang je het nodig hebt","s.dl.day":"Dagpas, 24 uur","s.dl.month":"Pro, maandelijks","s.dl.year":"Pro, jaarlijks","s.dl.signout":"Verwijder de sleutel van dit apparaat","s.dl.notify":"Laat het me weten als het opent","s.tips.h":"Tips voor schonere stencils","s.tips.1":"Fotografeer of scan vlak, in gelijkmatig licht, met het ontwerp beeldvullend.","s.tips.2":"Gebruik Tekening voor schetsen en flash. Gebruik Foto voor beelden met zachte schaduw.","s.tips.3":"Verhoog Vlekjes verwijderen om ruis op te ruimen. Verlaag Gevoeligheid als schaduw lijnen wordt.","s.tips.4":"Als lijnen er zwak uitzien op je printer, probeer een dikkere lijn en test eerst op papier."};</script>
+<script src="/js/config.js"></script>
+<script src="/js/engine.js"></script>
+<script src="/js/unlock.js"></script>
+<script src="/studio/app.js"></script>
+<script>var sel=document.getElementById('langSel'); if(sel) sel.addEventListener('change',function(){ location.href=sel.value; });</script>
+</body>
+</html>

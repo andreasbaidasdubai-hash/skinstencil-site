@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{s.title}}</title>
+<meta name="description" content="{{s.desc}}">
+<link rel="canonical" href="{{canonical}}">
+{{hreflang}}
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317161C'/%3E%3Cpath d='M16 5 L21 18 L16 22 L11 18 Z M14 23 H18 V28 H14 Z' fill='none' stroke='%23A99BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a drafting bench. Controls on the left, one large stage in the middle, measurements and notes on the right. Ink-purple is the stencil colour; red marks lost lines, blue marks added lines. Logical properties keep right-to-left languages correct. */
+:root{
+  --paper:#F1F2EF; --card:#FAFAF8; --ink:#17161C; --muted:#5E5C68; --line:#D6D5DD;
+  --stencil:#4F35C8; --stencil-soft:#E6E2F8; --lost:#D2362B; --added:#1B6FE0; --ok:#1F7A4C; --warn:#9A5B00; --warn-bg:#FFF1D6; --bad:#B42318;
+  --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
+  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
+  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+html[lang="ar"] body,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
+.lostc{color:var(--lost)} .addc{color:var(--added)}
+.wrap{max-width:1280px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.banner{background:var(--warn-bg);color:var(--warn);font-size:13px;border-bottom:1px solid var(--line)}
+.banner .wrap{padding-block:8px}
+header .wrap{display:flex;align-items:center;gap:14px;padding-block:14px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:inherit;direction:ltr}
+.mark span{color:var(--stencil)}
+.pill{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--stencil-soft);border-radius:6px;padding:3px 8px}
+.langsel{margin-inline-start:auto;font:500 13px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+h2,h3{font-family:var(--display);font-stretch:84%;letter-spacing:-.01em;margin:0}
+h2{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-stretch:100%;color:var(--muted)}
+html[lang="ar"] h2{text-transform:none;letter-spacing:0}
+h3{font-size:18px;font-weight:700}
+.grid{display:grid;grid-template-columns:272px minmax(0,1fr) 288px;gap:18px;padding-block:6px 40px;align-items:start}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stack{display:grid;gap:14px}
+label,.lab{display:block;font-weight:600;font-size:13px;margin-bottom:6px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.val{font:500 12px var(--mono);color:var(--muted)}
+input[type=range]{width:100%;accent-color:var(--stencil)}
+input[type=number],input[type=text]{width:100%;font:500 14px var(--mono);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;direction:ltr}
+.btn{font:600 14px var(--body);border-radius:9px;padding:10px 14px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;width:100%;text-align:center;text-decoration:none;display:block}
+.btn.alt{background:none;color:var(--ink);border-color:var(--line)}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn:focus-visible,input:focus-visible,.seg button:focus-visible,.sw:focus-visible,.langsel:focus-visible,summary:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
+.drop{border:1.5px dashed var(--line);border-radius:10px;padding:16px;text-align:center;color:var(--muted);font-size:13px;cursor:pointer}
+.drop.over{border-color:var(--stencil);background:var(--stencil-soft)}
+.seg{display:flex;gap:3px;background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:3px}
+.seg button{flex:1;font:500 13px var(--body);color:var(--muted);background:none;border:0;border-radius:6px;padding:7px 8px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--stencil-soft);color:var(--ink)}
+.swatches{display:flex;gap:6px;flex-wrap:wrap}
+.sw{width:30px;height:30px;border-radius:8px;border:2px solid var(--line);cursor:pointer;padding:0}
+.sw[aria-pressed="true"]{border-color:var(--stencil);box-shadow:0 0 0 2px var(--stencil-soft)}
+.sw.none{background:repeating-linear-gradient(45deg,var(--paper) 0 5px,var(--line) 5px 6px)}
+.stagebox{display:grid;gap:10px}
+.stage{position:relative;width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;touch-action:none;direction:ltr}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px;font-size:14px;direction:{{dir}}}
+.handle{position:absolute;top:0;bottom:0;width:2px;background:var(--stencil);pointer-events:none;box-shadow:0 0 0 1px rgba(255,255,255,.7)}
+.tagL,.tagR{position:absolute;top:10px;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:rgba(20,19,24,.78);color:#fff;border-radius:5px;padding:3px 7px;pointer-events:none}
+.tagL{left:10px}.tagR{right:10px}
+.ruler{height:22px;border-bottom:1px solid var(--ink);position:relative;font:400 10px var(--mono);color:var(--muted);direction:ltr}
+.meter{height:8px;border-radius:5px;background:var(--line);overflow:hidden;direction:ltr}
+.meter i{display:block;height:100%;background:var(--ok);width:0}
+.stat{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-bottom:1px solid var(--line)}
+.stat b{font:500 13px var(--mono);direction:ltr}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-inline-end:6px}
+.tips{margin:8px 0 0;padding-inline-start:18px;color:var(--muted);font-size:13px}
+.tips li{margin-bottom:6px}
+.fine{font-size:12px;color:var(--muted)}
+.status{font-size:12px;color:var(--muted);margin:0}
+.status.ok{color:var(--ok)} .status.err{color:var(--bad)}
+details.plans{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper)}
+details.plans summary{font-weight:600;font-size:13px;cursor:pointer}
+details.plans .btn{margin-top:8px}
+@media (max-width:1020px){.grid{grid-template-columns:minmax(0,1fr)}}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div class="banner"><div class="wrap">{{s.banner}}</div></div>
+<header><div class="wrap"><a class="mark" href="{{base}}">skin<span>stencil</span></a><span class="pill">{{s.pill}}</span>{{langSelect}}</div></header>
+
+<div class="wrap"><div class="grid">
+
+  <!-- LEFT: controls -->
+  <div class="stack">
+    <div class="card stack">
+      <h2>{{s.c1}}</h2>
+      <div class="drop" id="drop" tabindex="0" role="button" aria-label="{{s.dropAria}}">{{s.drop}}<br><span class="fine">{{s.dropRights}}</span></div>
+      <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
+      <div class="lab" style="margin:4px 0 0">{{s.orSample}}</div>
+      <div id="samples" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+    </div>
+    <div class="card stack">
+      <h2>{{s.c2}}</h2>
+      <div><span class="lab">{{s.srcType}}</span>
+        <div class="seg" id="mode"><button type="button" data-v="draw" aria-pressed="true">{{s.draw}}</button><button type="button" data-v="photo" aria-pressed="false">{{s.photo}}</button></div></div>
+      <div><div class="row"><label for="sens">{{s.sens}}</label><span class="val" id="sensV">55</span></div><input id="sens" type="range" min="1" max="100" value="55"></div>
+      <div><div class="row"><label for="smooth">{{s.smooth}}</label><span class="val" id="smoothV">0</span></div><input id="smooth" type="range" min="0" max="4" value="0"></div>
+      <div><div class="row"><label for="weight">{{s.weight}}</label><span class="val" id="weightV">2</span></div><input id="weight" type="range" min="1" max="6" value="2"></div>
+      <div><div class="row"><label for="specks">{{s.specks}}</label><span class="val" id="specksV">30</span></div><input id="specks" type="range" min="0" max="300" value="30"></div>
+    </div>
+    <div class="card stack">
+      <h2>{{s.c3}}</h2>
+      <div><span class="lab">{{s.skin}}</span>
+        <div class="swatches" id="skins"></div></div>
+      <button class="btn alt" id="driftBtn" type="button" aria-pressed="false">{{s.driftShow}}</button>
+    </div>
+  </div>
+
+  <!-- CENTER: stage -->
+  <div class="stagebox">
+    <div class="stage" id="stage" style="aspect-ratio:7/9">
+      <canvas id="cOrig"></canvas>
+      <canvas id="cOut"></canvas>
+      <canvas id="cDrift"></canvas>
+      <div class="handle" id="handle" hidden></div>
+      <span class="tagL" id="tagL" hidden>{{s.tagL}}</span><span class="tagR" id="tagR" hidden>{{s.tagR}}</span>
+      <div class="ph" id="ph">{{s.ph}}</div>
+    </div>
+    <div><label for="split" class="fine" style="margin-bottom:2px">{{s.compare}}</label><input id="split" type="range" min="0" max="100" value="50"></div>
+    <div class="ruler" id="ruler" aria-hidden="true"></div>
+    <div class="fine" id="rulerNote">{{s.rulerHint}}</div>
+  </div>
+
+  <!-- RIGHT: measurements and download -->
+  <div class="stack">
+    <div class="card">
+      <h2>{{s.drift}}</h2>
+      <p class="fine" style="margin:6px 0 10px">{{s.driftP}}</p>
+      <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
+      <div class="stat"><span><span class="dot" style="background:var(--ok)"></span>{{s.kept}}</span><b id="kept">-</b></div>
+      <div class="stat"><span><span class="dot" style="background:var(--lost)"></span>{{s.lost}}</span><b id="lost">-</b></div>
+      <div class="stat"><span><span class="dot" style="background:var(--added)"></span>{{s.added}}</span><b id="added">-</b></div>
+      <p class="fine" style="margin:10px 0 0">{{s.driftNote}}</p>
+    </div>
+    <div class="card stack">
+      <h2>{{s.sizeH}}</h2>
+      <div><label for="mm">{{s.width}}</label><input id="mm" type="number" min="10" max="600" step="1" value="88"></div>
+      <div class="stat"><span>{{s.size}}</span><b id="sizeOut">-</b></div>
+      <div class="stat"><span>{{s.at300}}</span><b id="pxOut">-</b></div>
+    </div>
+    <div class="card stack" id="dlCard">
+      <h2>{{s.dl.h}}</h2>
+      <button class="btn" id="dlBtn" type="button">{{s.dl.btn}}</button>
+      <p class="status" id="dlStatus"></p>
+      <details class="plans" id="plansBox">
+        <summary>{{s.dl.remove}}</summary>
+        <p class="fine" style="margin:8px 0 0">{{s.dl.plans}}</p>
+        <a class="btn alt buy" data-plan="day" href="#">{{s.dl.day}} - {{p.day.price}}</a>
+        <a class="btn buy" data-plan="month" href="#">{{s.dl.month}} - {{p.pro.price}}</a>
+        <a class="btn alt buy" data-plan="year" href="#">{{s.dl.year}} - $79</a>
+        <p class="status" id="soon" hidden>{{s.dl.notConfigured}}</p>
+      </details>
+      <details class="plans" id="keyBox">
+        <summary>{{s.dl.have}}</summary>
+        <label for="keyIn" style="margin-top:8px">{{s.dl.keyLabel}}</label>
+        <input id="keyIn" type="text" autocomplete="off" spellcheck="false">
+        <button class="btn" id="keyBtn" type="button" style="margin-top:8px">{{s.dl.activate}}</button>
+        <p class="status" id="keyStatus"></p>
+        <button class="btn alt" id="keyOut" type="button" hidden>{{s.dl.signout}}</button>
+      </details>
+    </div>
+    <div class="card">
+      <h2>{{s.tips.h}}</h2>
+      <ul class="tips">
+        <li>{{s.tips.1}}</li>
+        <li>{{s.tips.2}}</li>
+        <li>{{s.tips.3}}</li>
+        <li>{{s.tips.4}}</li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+
+<script>window.I18N={{i18n_json}};</script>
+<script src="/js/config.js"></script>
+<script src="/js/engine.js"></script>
+<script src="/js/unlock.js"></script>
+<script src="/studio/app.js"></script>
+<script>var sel=document.getElementById('langSel'); if(sel) sel.addEventListener('change',function(){ location.href=sel.value; });</script>
+</body>
+</html>

@@ -1,5 +1,283 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://skinstencil.com/</loc></url>
-  <url><loc>https://skinstencil.com/studio/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://skinstencil.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/pl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/de/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/fr/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/es/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/pt/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/it/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/nl/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/tr/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/ar/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/pl/studio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/studio/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://skinstencil.com/de/studio/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skinstencil.com/fr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://skinstencil.com/es/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://skinstencil.com/pt/studio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://skinstencil.com/it/studio/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://skinstencil.com/nl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://skinstencil.com/tr/studio/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skinstencil.com/ar/studio/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
+  </url>
 </urlset>
