@@ -126,10 +126,10 @@ input[type=range]{width:100%;accent-color:var(--stencil)}
 .ctl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
 .ctl label{display:flex;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:2px}
 .ctl label span{font:500 11px var(--mono);color:var(--muted)}
-.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:28px}
 .gcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
-.gcard .pr{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.gcard canvas,.mini canvas{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:#fff}
+.gcard .pr{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.gcard canvas,.mini canvas{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:#fff;image-rendering:auto}
 .gcard h3{font-size:16px;margin:10px 0 2px}
 .gcard p{margin:0;font-size:13px;color:var(--muted)}
 .cap2{font:500 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
@@ -195,7 +195,7 @@ footer .wrap{padding-block:28px}
 [hidden]{display:none!important}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/pt/","inLanguage":"pt","description":"Gerador grátis de stencil de tatuagem no navegador. Transforme desenho ou foto em decalque limpo e imprima em tamanho real. Nada é enviado.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"12","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"79","priceCurrency":"USD"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"É grátis mesmo?","acceptedAnswer":{"@type":"Answer","text":"Sim. A ferramenta do estúdio é grátis e não tem cadastro. Os downloads da ferramenta grátis têm uma pequena marca d'água e são limitados a 800 pixels. Um passe diário ou o Pro remove a marca d'água e libera o tamanho completo."}},{"@type":"Question","name":"Como removo a marca d'água?","acceptedAnswer":{"@type":"Answer","text":"Escolha um passe diário ou o Pro e pague no checkout seguro. Você recebe uma chave de licença por e-mail. Cole a chave no estúdio e a marca d'água some. A chave é verificada com o nosso provedor de pagamento e fica guardada só no seu navegador."}},{"@type":"Question","name":"Isso é IA?","acceptedAnswer":{"@type":"Answer","text":"Ainda não. Hoje é um filtro de imagem clássico: ele encontra as linhas por bordas e brilho, remove pontinhos e define a espessura da linha. Isso o mantém rápido, privado e previsível em desenhos limpos. A limpeza com IA para fotos está planejada e ficará atrás da verificação de desvio."}},{"@type":"Question","name":"Vocês guardam meus desenhos?","acceptedAnswer":{"@type":"Answer","text":"Não. A ferramenta grátis roda no seu navegador e não envia suas imagens. Ao fechar a página, elas são descartadas."}},{"@type":"Question","name":"Posso enviar qualquer tatuagem?","acceptedAnswer":{"@type":"Answer","text":"Só desenhos que você fez ou que tem direito de usar. Removemos o material quando o titular dos direitos pede."}},{"@type":"Question","name":"Quais arquivos funcionam?","acceptedAnswer":{"@type":"Answer","text":"JPG, PNG e WebP. Imagens grandes são reduzidas para manter a ferramenta rápida. Uma foto reta e bem iluminada de um desenho funciona bem."}},{"@type":"Question","name":"Como imprimo um stencil?","acceptedAnswer":{"@type":"Answer","text":"Baixe o PNG e imprima no tamanho que você definiu. Os arquivos pagos levam o tamanho de 300 dpi, então o software de impressão usa o tamanho real. Impressoras térmicas de stencil imprimem em papel de transferência térmico. Impressoras jato de tinta precisam de tinta para stencil e papel de transferência para jato de tinta."}},{"@type":"Question","name":"E um fechamento de braço ou uma peça grande?","acceptedAnswer":{"@type":"Answer","text":"Trabalhe motivo por motivo. Partes menores mantêm muito mais detalhe do que uma imagem enorme."}},{"@type":"Question","name":"Funciona no tablet ou no celular?","acceptedAnswer":{"@type":"Answer","text":"Sim, no navegador. Um app para celular pode vir depois."}},{"@type":"Question","name":"Por que ele descarta minha hachura fina?","acceptedAnswer":{"@type":"Answer","text":"Sensibilidade baixa e remoção de pontinhos alta descartam linhas finas de propósito. Aumente a sensibilidade, diminua a remoção de pontinhos e veja a sobreposição de desvio para saber o que se perdeu."}},{"@type":"Question","name":"Posso pedir reembolso?","acceptedAnswer":{"@type":"Answer","text":"O passe de um dia não é reembolsável, porque a chave de licença funciona assim que você a recebe. O Pro é reembolsado integralmente em até 14 dias após o primeiro pagamento: escreva para hello@skinstencil.com. Renovações não são reembolsadas, e você pode cancelar antes da próxima a qualquer momento. Seus direitos legais não são afetados."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"É grátis mesmo?","acceptedAnswer":{"@type":"Answer","text":"Sim. A ferramenta do estúdio é grátis e não tem cadastro. Os downloads da ferramenta grátis têm uma pequena marca d'água e são limitados a 800 pixels. Um passe diário ou o Pro remove a marca d'água e libera o tamanho completo."}},{"@type":"Question","name":"Como removo a marca d'água?","acceptedAnswer":{"@type":"Answer","text":"Escolha um passe diário ou o Pro e pague no checkout seguro. Você recebe uma chave de licença por e-mail. Cole a chave no estúdio e a marca d'água some. A chave é verificada com o nosso provedor de pagamento e fica guardada só no seu navegador."}},{"@type":"Question","name":"Isso é IA?","acceptedAnswer":{"@type":"Answer","text":"O filtro do decalque é processamento de imagem clássico: encontra as linhas por bordas e brilho, remove pontinhos e define a espessura do traço. Assim é rápido, privado e previsível em desenhos limpos."}},{"@type":"Question","name":"Vocês guardam meus desenhos?","acceptedAnswer":{"@type":"Answer","text":"Não. A ferramenta grátis roda no seu navegador e não envia suas imagens. Ao fechar a página, elas são descartadas."}},{"@type":"Question","name":"Posso enviar qualquer tatuagem?","acceptedAnswer":{"@type":"Answer","text":"Só desenhos que você fez ou que tem direito de usar. Removemos o material quando o titular dos direitos pede."}},{"@type":"Question","name":"Quais arquivos funcionam?","acceptedAnswer":{"@type":"Answer","text":"JPG, PNG e WebP. Imagens grandes são reduzidas para manter a ferramenta rápida. Uma foto reta e bem iluminada de um desenho funciona bem."}},{"@type":"Question","name":"Como imprimo um stencil?","acceptedAnswer":{"@type":"Answer","text":"Baixe o PNG e imprima no tamanho que você definiu. Os arquivos pagos levam o tamanho de 300 dpi, então o software de impressão usa o tamanho real. Impressoras térmicas de stencil imprimem em papel de transferência térmico. Impressoras jato de tinta precisam de tinta para stencil e papel de transferência para jato de tinta."}},{"@type":"Question","name":"E um fechamento de braço ou uma peça grande?","acceptedAnswer":{"@type":"Answer","text":"Trabalhe motivo por motivo. Partes menores mantêm muito mais detalhe do que uma imagem enorme."}},{"@type":"Question","name":"Funciona no tablet ou no celular?","acceptedAnswer":{"@type":"Answer","text":"Sim, no navegador. Um app para celular pode vir depois."}},{"@type":"Question","name":"Por que ele descarta minha hachura fina?","acceptedAnswer":{"@type":"Answer","text":"Sensibilidade baixa e remoção de pontinhos alta descartam linhas finas de propósito. Aumente a sensibilidade, diminua a remoção de pontinhos e veja a sobreposição de desvio para saber o que se perdeu."}},{"@type":"Question","name":"Posso pedir reembolso?","acceptedAnswer":{"@type":"Answer","text":"O passe de um dia não é reembolsável, porque a chave de licença funciona assim que você a recebe. O Pro é reembolsado integralmente em até 14 dias após o primeiro pagamento: escreva para hello@skinstencil.com. Renovações não são reembolsadas, e você pode cancelar antes da próxima a qualquer momento. Seus direitos legais não são afetados."}}]}</script>
 </head>
 <body>
 
@@ -247,7 +247,7 @@ footer .wrap{padding-block:28px}
   <h2>Nada de mockup. Cada imagem aqui é feita pela ferramenta, agora, no seu navegador.</h2>
   <p class="lead">Quatro desenhos de exemplo, criados em código para que qualquer pessoa possa usá-los, passados pelo mesmo filtro que você tem no estúdio. À esquerda está o desenho, à direita o stencil.</p>
   <div class="gallery" id="gallery"></div>
-  <p class="note">O filtro é processamento de imagem clássico (bordas e limiares), não um modelo de IA. Ele funciona bem em desenhos limpos e pior em fotos com sombreado suave. A limpeza com IA está no roteiro abaixo.</p>
+  <p class="note">O filtro é processamento de imagem clássico (bordas e limiares), não um modelo de IA. É forte em desenhos limpos e mais fraco em fotos com sombras suaves.</p>
 </div></section>
 
 <section><div class="wrap">
@@ -278,7 +278,7 @@ footer .wrap{padding-block:28px}
     <div class="ftext">
       <h3>Tamanho real, em milímetros</h3>
       <p>Defina a largura na pele e a ferramenta mostra o tamanho exato e os pixels necessários a 300 dpi, com uma régua ao longo da imagem. Os downloads pagos levam o tamanho de 300 dpi dentro do arquivo, então o seu software de impressão imprime no tamanho planejado.</p>
-      <ul><li>Você informa a largura em mm, e recebe a altura e o tamanho em pixels.</li><li>Download em PNG hoje. Exportação em PDF e layouts de impressão estão planejados.</li></ul>
+      <ul><li>Você informa a largura em mm, e recebe a altura e o tamanho em pixels.</li><li>Download em PNG e impressão em tamanho real.</li></ul>
     </div>
     <div class="panel">
       <svg viewBox="0 0 360 250" role="img" aria-label="Um stencil com uma régua marcada em milímetros e o tamanho de 88 por 113 milímetros" style="display:block;width:100%;height:auto;direction:ltr">
@@ -318,15 +318,6 @@ footer .wrap{padding-block:28px}
     <div><h3>Fiel ao seu desenho</h3><p>A verificação de desvio mostra o que mudou, então um stencil nunca adiciona nem tira uma linha em silêncio.</p></div>
     <div><h3>Você vê o preço primeiro</h3><p>A marca d'água é a única coisa que o plano grátis custa a você. Os preços aparecem antes de você pagar, e você pode cancelar quando quiser.</p></div>
     <div><h3>Feito para estúdios <span class="tag">em desenvolvimento</span></h3><p>Vários artistas, uma assinatura, e aprovação e consentimento do cliente salvos com cada stencil.</p></div>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Roteiro</div>
-  <h2>O que funciona hoje e o que vem a seguir.</h2>
-  <div class="road">
-    <div class="col now"><h3>Funciona hoje</h3><ul><li>Modos desenho e foto</li><li>Espessura da linha, sensibilidade, suavização, remoção de pontinhos</li><li>Verificação de desvio com sobreposição vermelha e azul</li><li>Prévia em tom de pele</li><li>Download em PNG no seu tamanho em milímetros</li><li>Tudo roda no seu navegador</li></ul></div>
-    <div class="col next"><h3>A seguir</h3><ul><li>Limpeza com IA para fotos e sketches sombreados, sempre atrás da verificação de desvio</li><li>Exportação em PDF e layouts de impressão em tamanho real</li><li>Contas de estúdio com aprovação e consentimento do cliente</li><li>Mapeamento de sobrancelhas</li><li>Mais idiomas e formas de pagamento locais</li></ul></div>
   </div>
 </div></section>
 
@@ -370,7 +361,7 @@ footer .wrap{padding-block:28px}
   <div style="margin-top:18px">
     <details><summary>É grátis mesmo?</summary><p>Sim. A ferramenta do estúdio é grátis e não tem cadastro. Os downloads da ferramenta grátis têm uma pequena marca d'água e são limitados a 800 pixels. Um passe diário ou o Pro remove a marca d'água e libera o tamanho completo.</p></details>
     <details><summary>Como removo a marca d'água?</summary><p>Escolha um passe diário ou o Pro e pague no checkout seguro. Você recebe uma chave de licença por e-mail. Cole a chave no estúdio e a marca d'água some. A chave é verificada com o nosso provedor de pagamento e fica guardada só no seu navegador.</p></details>
-    <details><summary>Isso é IA?</summary><p>Ainda não. Hoje é um filtro de imagem clássico: ele encontra as linhas por bordas e brilho, remove pontinhos e define a espessura da linha. Isso o mantém rápido, privado e previsível em desenhos limpos. A limpeza com IA para fotos está planejada e ficará atrás da verificação de desvio.</p></details>
+    <details><summary>Isso é IA?</summary><p>O filtro do decalque é processamento de imagem clássico: encontra as linhas por bordas e brilho, remove pontinhos e define a espessura do traço. Assim é rápido, privado e previsível em desenhos limpos.</p></details>
     <details><summary>Vocês guardam meus desenhos?</summary><p>Não. A ferramenta grátis roda no seu navegador e não envia suas imagens. Ao fechar a página, elas são descartadas.</p></details>
     <details><summary>Posso enviar qualquer tatuagem?</summary><p>Só desenhos que você fez ou que tem direito de usar. Removemos o material quando o titular dos direitos pede.</p></details>
     <details><summary>Quais arquivos funcionam?</summary><p>JPG, PNG e WebP. Imagens grandes são reduzidas para manter a ferramenta rápida. Uma foto reta e bem iluminada de um desenho funciona bem.</p></details>
@@ -520,7 +511,7 @@ footer .wrap{padding-block:28px}
   /* ---------- gallery ---------- */
   var gal=document.getElementById('gallery');
   ORDER.forEach(function(n){
-    var p=prep(n,640), r=run(p,{mode:p.mode,sens:p.mode==='photo'?60:55,smooth:p.mode==='photo'?1:0,weight:2,specks:40});
+    var p=prep(n,1000), r=run(p,{mode:p.mode,sens:p.mode==='photo'?60:55,smooth:p.mode==='photo'?1:0,weight:3,specks:60});
     var card=document.createElement('div'); card.className='gcard';
     card.innerHTML='<div class="pr"><div><div class="cap2"></div><canvas></canvas></div><div><div class="cap2"></div><canvas></canvas></div></div><h3></h3><p></p>';
     var cs=card.querySelectorAll('canvas'), caps=card.querySelectorAll('.cap2'); drawOrig(cs[0],p); E.renderStencil(cs[1],r.final,p.w,p.h,null,null,r.alpha);
