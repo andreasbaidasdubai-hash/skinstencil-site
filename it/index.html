@@ -389,57 +389,77 @@ footer .wrap{padding-block:28px}
 <main id="v-brow" class="view" hidden>
 <div class="hero"><div class="wrap">
   <div>
-    <div class="eyebrow">Per artisti di sopracciglia e trucco permanente</div>
-    <h1>Mappa le sopracciglia a misura reale, poi stampa la guida.</h1>
-    <p class="sub">Carica una foto frontale, regola le guide di simmetria e stampa una sovrapposizione a misura reale per la pelle. Le foto dei tuoi clienti non vengono salvate.</p>
+    <div class="eyebrow">Per professionisti di sopracciglia e trucco permanente</div>
+    <h1>Mappa le sopracciglia sulla foto della cliente e stampa la guida a grandezza reale.</h1>
+    <p class="sub">Carica una foto frontale. Il viso viene trovato sul tuo dispositivo e compaiono le guide di inizio, arco e fine da trascinare al loro posto. Leggi le misure in millimetri e stampa la guida a grandezza reale.</p>
     <div class="ctas">
-      <a class="btn" href="mailto:hello@skinstencil.com?subject=Brow%20mapping%20interest">Ottieni l'accesso anticipato al brow mapping</a>
-      <a class="btn alt" href="mailto:hello@skinstencil.com?subject=Brow%20pricing%20interest">Parlami dei prezzi</a>
+      <a class="btn" href="/it/brow/">Apri la mappatura sopracciglia</a>
+      <a class="btn alt" href="#brow-how">Come funziona</a>
     </div>
-    <p class="note">Il brow mapping non è ancora pronto. Dicci se lo vuoi.</p>
+    <p class="note">Gratis da provare. Le foto restano sul tuo dispositivo.</p>
   </div>
   <div class="panel">
-    <svg viewBox="0 0 320 190" role="img" aria-label="Illustrazione di una sovrapposizione di brow mapping con linee guida e segni in millimetri" style="display:block;width:100%;height:auto;direction:ltr">
-      <g fill="none" stroke="currentColor" stroke-width="1" opacity=".35"><path d="M20 120 H300 M160 20 V170"/></g>
-      <g fill="none" stroke="var(--stencil)" stroke-width="2.2" stroke-linecap="round">
-        <path d="M34 98 C62 62 112 56 140 84"/>
-        <path d="M180 84 C208 56 258 62 286 98"/>
-        <path d="M34 98 L140 84 M180 84 L286 98" stroke-dasharray="3 5" stroke-width="1.2"/>
+    <svg viewBox="0 0 400 300" role="img" aria-label="Illustrazione: le tre linee della mappatura sopracciglia tracciate dall'ala del naso su un contorno semplificato di occhio e sopracciglio, con inizio, arco e fine segnati S, A ed E." style="display:block;width:100%;height:auto;direction:ltr">
+      <title>Illustrazione: le tre linee della mappatura sopracciglia tracciate dall'ala del naso su un contorno semplificato di occhio e sopracciglio, con inizio, arco e fine segnati S, A ed E.</title>
+      <g fill="none" stroke="currentColor" stroke-width="1" opacity=".3"><path d="M20 150 H380" stroke-dasharray="2 5"/><path d="M200 60 V282"/></g>
+      <g id="brow-half" fill="none">
+        <g stroke="currentColor" stroke-width="1.6" opacity=".7">
+          <path d="M62 150 Q107 122 152 150 Q107 172 62 150 Z"/>
+          <circle cx="108" cy="150" r="12"/>
+          <path d="M152 252 Q176 270 200 264"/>
+        </g>
+        <g stroke="currentColor" stroke-width="1.4" opacity=".8"><path d="M101 150 H115 M108 143 V157"/></g>
+        <path d="M152 252 V90" stroke="#1B6FE0" stroke-width="2"/>
+        <path d="M152 252 L63 90" stroke="#D2362B" stroke-width="2" stroke-dasharray="9 5"/>
+        <path d="M152 252 L9 90" stroke="#1F7A4C" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"/>
+        <path d="M168 111 H12" stroke="var(--stencil)" stroke-width="1.4" stroke-dasharray="2 4" stroke-linecap="round"/>
+        <path d="M152 111 Q100 90 65 93 Q42 96 28 111" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="152" cy="252" r="4.5" fill="var(--card)" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="152" cy="111" r="9" fill="#1B6FE0"/><circle cx="65" cy="93" r="9" fill="#D2362B"/><circle cx="28" cy="111" r="9" fill="#1F7A4C"/>
       </g>
-      <g stroke="currentColor" stroke-width="1" opacity=".7"><path d="M34 150 H140 M34 145 V155 M140 145 V155"/></g>
-      <text x="87" y="170" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" text-anchor="middle">52 mm</text>
+      <use href="#brow-half" transform="translate(400 0) scale(-1 1)"/>
+      <g font-family="IBM Plex Mono, monospace" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">
+        <text x="152" y="115">S</text><text x="65" y="97">A</text><text x="28" y="115">E</text>
+        <text x="248" y="115">S</text><text x="335" y="97">A</text><text x="372" y="115">E</text>
+      </g>
+      <g font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" text-anchor="middle">
+        <text x="152" y="80" fill="#1B6FE0">1</text><text x="63" y="80" fill="#D2362B">2</text><text x="9" y="80" fill="#1F7A4C">3</text>
+        <text x="248" y="80" fill="#1B6FE0">1</text><text x="337" y="80" fill="#D2362B">2</text><text x="391" y="80" fill="#1F7A4C">3</text>
+      </g>
     </svg>
-    <p class="caption">Illustrazione dell'idea, non un risultato reale.</p>
+    <p class="caption"><b>Illustrazione.</b> Le linee guida su un contorno semplificato, non una foto reale di una cliente.</p>
   </div>
 </div></div>
 
-<section><div class="wrap">
+<section id="brow-how"><div class="wrap">
   <div class="eyebrow">Come funziona</div>
   <h2>Foto, regola, stampa.</h2>
   <div class="steps">
-    <div class="step"><div class="tick">1</div><h3>Carica una foto frontale</h3><p>Il cliente deve dare il consenso. Ti chiediamo di confermarlo.</p></div>
-    <div class="step"><div class="tick">2</div><h3>Regola le guide</h3><p>Sposta i punti di riferimento e le linee di simmetria finché la sovrapposizione combacia.</p></div>
-    <div class="step"><div class="tick">3</div><h3>Stampa a misura reale</h3><p>Stampa la sovrapposizione o salva la guida per la seduta.</p></div>
+    <div class="step"><div class="tick">1</div><h3>Carica una foto frontale</h3><p>Conferma che il cliente ha acconsentito. Il viso viene trovato sul tuo dispositivo e le guide vengono disegnate sopra.</p></div>
+    <div class="step"><div class="tick">2</div><h3>Trascina i punti</h3><p>Sposta inizio, arco e fine, o qualsiasi punto di riferimento, e linee e misure ti seguono.</p></div>
+    <div class="step"><div class="tick">3</div><h3>Stampa a grandezza reale</h3><p>Inserisci la distanza pupillare o appoggia una carta, poi scarica un PNG o stampa la guida alla sua larghezza in millimetri.</p></div>
   </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Le linee classiche, misurate.</h2>
+  <p class="sub" style="margin-bottom:0">Tre linee dall'ala del naso: dritta verso l'alto per l'inizio, attraverso il bordo esterno dell'iride per l'arco e attraverso l'angolo esterno dell'occhio per la fine. Lo strumento mostra larghezza, altezza dell'arco, angolo della coda e differenza di livello in millimetri. Sono guide di disegno standard e decidi tu.</p>
 </div></section>
 
 <section><div class="wrap">
   <div class="eyebrow">Privacy</div>
-  <h2>Le foto servono per la sovrapposizione, poi vengono eliminate.</h2>
-  <p class="sub" style="margin-bottom:0">Eliminiamo la foto quando finisce la tua sessione. Non facciamo promesse mediche né sui risultati. La mappatura è un aiuto al disegno, non una consulenza.</p>
+  <h2>La foto resta sul tuo dispositivo.</h2>
+  <p class="sub" style="margin-bottom:0">Il modello del viso gira nel tuo browser e viene servito da questo sito. La foto non viene caricata né salvata e non ci sono cookie. Ti chiediamo di confermare che il cliente ha accettato l'uso della foto. Non facciamo affermazioni mediche né di risultato: la mappatura è un aiuto al disegno.</p>
 </div></section>
 
 <section><div class="wrap">
   <div class="eyebrow">Prezzi</div>
-  <h2>Prezzi previsti per il brow mapping.</h2>
-  <div class="plans4" style="grid-template-columns:repeat(2,minmax(0,1fr))">
-    <div class="plan"><h3>Gratis</h3><div class="price">$0</div><ul><li>Mappatura di base</li><li>Stampa con filigrana</li></ul></div>
-    <div class="plan"><h3>Artista</h3><div class="price" style="font-size:26px">$19 / mese</div><div class="alt">oppure $99 per il primo anno</div>
-      <ul><li>Stampa a misura reale, senza filigrana</li><li>Guide salvate</li></ul>
-      <a class="btn alt" href="mailto:hello@skinstencil.com?subject=Brow%20pricing%20interest">Avvisami quando apre</a></div>
-  </div>
-  <p class="note">Il brow mapping non è ancora pronto. I prezzi sono piani e possono cambiare.</p>
+  <h2>Un solo piano per entrambi gli strumenti.</h2>
+  <p class="sub">La mappatura sopracciglia è gratuita da provare. I download gratuiti hanno una filigrana e dimensioni limitate. Un pass giornaliero o Pro rimuove la filigrana, in questo strumento e in quello per stencil da tatuaggio.</p>
+  <div class="ctas"><a class="btn alt" href="#pricing">Vedi i piani</a><a class="btn" href="/it/brow/">Apri la mappatura sopracciglia</a></div>
 </div></section>
+
+
 </main>
 
 <footer><div class="wrap"><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Termini</a> &middot; <a href="mailto:hello@skinstencil.com">hello@skinstencil.com</a><br>Privacy e termini sono in inglese.<br>Questa pagina è stata tradotta automaticamente. Se qualcosa non torna, faccelo sapere.</div></footer>
@@ -455,7 +475,7 @@ footer .wrap{padding-block:28px}
   var views={tattoo:document.getElementById('v-tattoo'),brow:document.getElementById('v-brow')};
   var tabs={tattoo:document.getElementById('t-tattoo'),brow:document.getElementById('t-brow')};
   function show(n){ if(!views[n]) n='tattoo'; for(var k in views){ views[k].hidden=(k!==n); tabs[k].setAttribute('aria-pressed',String(k===n)); } }
-  function fromHash(){ var h=(location.hash||'').replace('#',''); if(h==='brow'||h==='tattoo') show(h); }
+  function fromHash(){ var h=(location.hash||'').replace('#',''); if(h==='brow'||h==='tattoo'){ show(h); return; } var el=h&&document.getElementById(h); if(!el) return; for(var k in views){ if(views[k].contains(el)){ show(k); el.scrollIntoView(); } } }
   tabs.tattoo.addEventListener('click',function(){ show('tattoo'); history.replaceState(null,'','#tattoo'); });
   tabs.brow.addEventListener('click',function(){ show('brow'); history.replaceState(null,'','#brow'); });
   window.addEventListener('hashchange',fromHash); fromHash();

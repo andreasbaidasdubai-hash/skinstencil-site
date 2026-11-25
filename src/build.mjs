@@ -1,5 +1,5 @@
 // Builds the static site from templates and string files. Run: node src/build.mjs
-// English lives at the site root; every other language lives under /<code>/ (home and studio).
+// English lives at the site root; every other language lives under /<code>/ (home, studio and brow mapping).
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -23,7 +23,12 @@ const LANGS = [
 
 const read = p => readFileSync(path.join(ROOT, p), 'utf8');
 const en = JSON.parse(read('src/strings/en.json'));
-const TPL = { index: read('src/index.tpl.html'), studio: read('src/studio.tpl.html'), guide: read('src/guide.tpl.html') };
+const TPL = { index: read('src/index.tpl.html'), studio: read('src/studio.tpl.html'), brow: read('src/brow.tpl.html'), guide: read('src/guide.tpl.html') };
+
+// Brow mapping strings live in their own files, src/brow/<code>.json (keys without prefix); they reach the templates as {{brow.<key>}}.
+// A key missing in a language falls back to English, with a warning.
+const browOf = code => { const f = path.join(ROOT, 'src/brow', code + '.json'); return existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : null; };
+const enBrow = browOf('en');
 
 // Guides: one JSON per language in src/guides/<code>.json. A language without a file is skipped silently.
 const GUIDES = {};
@@ -38,16 +43,21 @@ for (const l of LANGS) {
 const guideLangs = slug => LANGS.filter(l => GUIDES[l.code] && (slug === null || GUIDES[l.code].guides[slug]));
 
 const baseOf = l => (l.code === 'en' ? '/' : `/${l.code}/`);
-const urlOf = (l, page) => baseOf(l) + (page === 'studio' ? 'studio/' : page === 'guides' ? 'guides/' : page.startsWith('guide:') ? 'guides/' + page.slice(6) + '/' : '');
+const urlOf = (l, page) => baseOf(l) + (page === 'studio' ? 'studio/' : page === 'brow' ? 'brow/' : page === 'guides' ? 'guides/' : page.startsWith('guide:') ? 'guides/' + page.slice(6) + '/' : '');
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
+function browStrings(l) {
+  const own = browOf(l.code) || {}, out = {};
+  for (const k of Object.keys(enBrow)) { if (!(k in own) && l.code !== 'en') console.warn(`[${l.code}] missing brow key ${k}, using English`); out['brow.' + k] = k in own ? own[k] : enBrow[k]; }
+  return out;
+}
 function strings(l) {
-  if (l.code === 'en') return en;
+  if (l.code === 'en') return { ...en, ...browStrings(l) };
   const f = path.join(ROOT, 'src/strings', l.code + '.json');
-  if (!existsSync(f)) { console.warn('missing strings for', l.code, '- falling back to English'); return en; }
+  if (!existsSync(f)) { console.warn('missing strings for', l.code, '- falling back to English'); return { ...en, ...browStrings(l) }; }
   const own = JSON.parse(readFileSync(f, 'utf8'));
   for (const k of Object.keys(en)) if (!(k in own)) console.warn(`[${l.code}] missing key ${k}, using English`);
-  return { ...en, ...own };
+  return { ...en, ...own, ...browStrings(l) };
 }
 function hreflang(page, only) {
   const out = [];
@@ -68,11 +78,23 @@ function i18nJson(S, prefixes) {
 }
 
 const plain = s => String(s).replace(/<[^>]+>/g, '');
+const OFFERS = [{ '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Day pass', price: '4.99', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro monthly', price: '12', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro yearly', price: '79', priceCurrency: 'USD' }];
+function ldjsonBrow(S, l) {
+  const faq = []; for (let i = 1; i <= 5; i++) if (S['brow.q' + i + '.h']) faq.push({ '@type': 'Question', name: plain(S['brow.q' + i + '.h']), acceptedAnswer: { '@type': 'Answer', text: plain(S['brow.q' + i + '.p']) } });
+  const url = SITE + urlOf(l, 'brow');
+  const app = { '@context': 'https://schema.org', '@type': 'WebApplication', name: plain(S['brow.appName']), applicationCategory: 'DesignApplication', operatingSystem: 'Any (web browser)', browserRequirements: 'Requires JavaScript and WebAssembly', url, inLanguage: l.code,
+    description: plain(S['brow.desc']), isAccessibleForFree: true, offers: OFFERS, publisher: orgRef, isPartOf: { '@type': 'WebSite', name: 'Skinstencil', url: SITE + '/' } };
+  const crumbs = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: plain(S['brow.bc.home']), item: SITE + baseOf(l) },
+    { '@type': 'ListItem', position: 2, name: plain(S['brow.bc.name']), item: url }] };
+  return [app, { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: l.code, mainEntity: faq }, crumbs].map(ldWrap).join('\n');
+}
 function ldjson(S, l, page) {
+  if (page === 'brow') return ldjsonBrow(S, l);
   if (page !== 'index') return '';
   const faq = []; for (let i = 1; i <= 11; i++) if (S['q' + i + '.h']) faq.push({ '@type': 'Question', name: plain(S['q' + i + '.h']), acceptedAnswer: { '@type': 'Answer', text: plain(S['q' + i + '.p']) } });
   const app = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: 'Skinstencil', applicationCategory: 'DesignApplication', operatingSystem: 'Any (web browser)', url: SITE + urlOf(l, 'index'), inLanguage: l.code, description: plain(S['meta.desc']),
-    offers: [{ '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Day pass', price: '4.99', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro monthly', price: '12', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro yearly', price: '79', priceCurrency: 'USD' }] };
+    offers: OFFERS };
   const wrap = o => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, '\\u003c') + '</script>';
   return wrap(app) + '\n' + wrap({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq });
 }
@@ -82,7 +104,7 @@ const ent = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 function inl(text, l) {
   return ent(text)
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\[([^\]]+)\]\((guide:[a-z0-9-]+|studio)\)/g, (m, t, target) => `<a href="${urlOf(l, target)}">${t}</a>`);
+    .replace(/\[([^\]]+)\]\((guide:[a-z0-9-]+|studio|brow)\)/g, (m, t, target) => `<a href="${urlOf(l, target)}">${t}</a>`);
 }
 const dateOf = (iso, l) => { try { return new Date(iso + 'T00:00:00Z').toLocaleDateString(l.locale.replace('_', '-'), { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }); } catch { return iso; } };
 const ldWrap = o => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, '\\u003c') + '</script>';
@@ -94,7 +116,7 @@ const crumbLd = (l, G, g) => ({ '@context': 'https://schema.org', '@type': 'Brea
 const crumbHtml = (l, G, g) => `<nav class="crumbs" aria-label="${ent(G.ui.breadcrumbLabel)}"><ol><li><a href="${baseOf(l)}">${ent(G.ui.home)}</a></li>` +
   (g ? `<li><a href="${urlOf(l, 'guides')}">${ent(G.ui.guides)}</a></li><li aria-current="page">${ent(g.short || g.title)}</li>` : `<li aria-current="page">${ent(G.ui.guides)}</li>`) + '</ol></nav>';
 
-function renderGuide(l, G, slug) {
+function renderGuide(l, G, slug, S) {
   const g = { ...G.guides[slug], slug };
   const blocks = [];
   const steps = [];
@@ -121,7 +143,7 @@ function renderGuide(l, G, slug) {
 <div class="answer"><b>${ent(G.ui.answerLabel)}</b><p>${inl(g.answer, l)}</p></div>
 ${blocks.join('\n')}
 <h2>${ent(G.ui.faq)}</h2><div>${faq}</div>
-<div class="cta"><p>${inl(g.cta, l)}</p><a class="btn" href="${urlOf(l, 'studio')}">${ent(G.ui.openTool)}</a><p class="fine">${ent(G.ui.toolNote)}</p></div>
+<div class="cta"><p>${inl(g.cta, l)}</p>${g.tool === 'brow' ? `<a class="btn" href="${urlOf(l, 'brow')}">${ent(S['brow.guideCta'])}</a><p class="fine">${ent(S['brow.guideNote'])}</p>` : `<a class="btn" href="${urlOf(l, 'studio')}">${ent(G.ui.openTool)}</a><p class="fine">${ent(G.ui.toolNote)}</p>`}</div>
 </article>
 ${related ? `<div class="related"><h2>${ent(G.ui.related)}</h2><div class="cards">${related}</div></div>` : ''}`;
   const url = SITE + urlOf(l, 'guide:' + slug);
@@ -142,34 +164,44 @@ function renderGuideIndex(l, G) {
 }
 // Landing page: nav link and a compact section, both empty when the language has no guides.
 function guidesNav(l) { const G = GUIDES[l.code]; return G ? `<a href="#guides">${ent(G.ui.guides)}</a>` : ''; }
-function guidesSection(l) {
+const guideTool = g => (g.tool === 'brow' ? 'brow' : 'tattoo');
+function guidesSection(l, tool, S) {
   const G = GUIDES[l.code]; if (!G) return '';
-  const cards = G.order.map(s => `<a class="glink" href="${urlOf(l, 'guide:' + s)}"><h3>${ent(G.guides[s].short || G.guides[s].title)}</h3><p>${ent(G.guides[s].blurb || '')}</p></a>`).join('');
-  return `<section id="guides"><div class="wrap">
-  <h2>${ent(G.ui.homeSectionTitle)}</h2>
-  <p class="lead">${ent(G.ui.homeSectionLead)}</p>
+  const slugs = G.order.filter(s => guideTool(G.guides[s]) === tool); if (!slugs.length) return '';
+  const cards = slugs.map(s => `<a class="glink" href="${urlOf(l, 'guide:' + s)}"><h3>${ent(G.guides[s].short || G.guides[s].title)}</h3><p>${ent(G.guides[s].blurb || '')}</p></a>`).join('');
+  return `<section id="${tool === 'brow' ? 'guides-brow' : 'guides'}"><div class="wrap">
+  <h2>${ent(tool === 'brow' ? S['brow.l.guides.h'] : G.ui.homeSectionTitle)}</h2>
+  <p class="lead">${ent(tool === 'brow' ? S['brow.l.guides.lead'] : G.ui.homeSectionLead)}</p>
   <div class="gl">${cards}</div>
   <p class="note"><a href="${urlOf(l, 'guides')}">${ent(G.ui.guides)}</a></p>
 </div></section>`;
 }
 
+// The brow tool page lists its own guides (only the languages that have them).
+function browGuidesBlock(l, S) {
+  const G = GUIDES[l.code]; if (!G) return '';
+  const slugs = G.order.filter(s => guideTool(G.guides[s]) === 'brow'); if (!slugs.length) return '';
+  return `<h2>${ent(S['brow.guides.h'])}</h2><div class="glist">` + slugs.map(s => `<a href="${urlOf(l, 'guide:' + s)}"><b>${ent(G.guides[s].short || G.guides[s].title)}</b><span>${ent(G.guides[s].blurb || '')}</span></a>`).join('') + '</div>';
+}
+
 let count = 0;
 for (const l of LANGS) {
   const S = strings(l);
-  for (const page of ['index', 'studio']) {
+  for (const page of ['index', 'studio', 'brow']) {
     const vars = {
       ...S, lang: l.code, dir: l.dir, base: baseOf(l), canonical: SITE + urlOf(l, page), ogLocale: l.locale,
       hreflang: hreflang(page), langSelect: langSelect(l, page, S), notifyEmail: NOTIFY,
       ftMt: l.code === 'en' ? '' : `<br>${S['ft.mt']}`,
       ldjson: ldjson(S, l, page),
-      guidesNav: page === 'index' ? guidesNav(l) : '', guidesSection: page === 'index' ? guidesSection(l) : '',
-      i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.'] : ['s.', 'sample.']),
+      guidesNav: page === 'index' ? guidesNav(l) : '', guidesSection: page === 'index' ? guidesSection(l, 'tattoo', S) : '', guidesSectionBrow: page === 'index' ? guidesSection(l, 'brow', S) : '',
+      browGuides: page === 'brow' ? browGuidesBlock(l, S) : '',
+      i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.'] : page === 'brow' ? ['brow.', 's.dl.', 's.thanks', 'theme.'] : ['s.', 'sample.']),
     };
     let html = TPL[page].replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {
       if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in ${page} template`);
       return vars[k];
     });
-    const dir = path.join(ROOT, l.code === 'en' ? '' : l.code, page === 'studio' ? 'studio' : '');
+    const dir = path.join(ROOT, l.code === 'en' ? '' : l.code, page === 'studio' ? 'studio' : page === 'brow' ? 'brow' : '');
     mkdirSync(dir, { recursive: true });
     writeFileSync(path.join(dir, 'index.html'), html);
     count++;
@@ -181,7 +213,7 @@ const guidePages = [];
 for (const l of LANGS) {
   const G = GUIDES[l.code]; if (!G) continue;
   const S = strings(l);
-  for (const r of [renderGuideIndex(l, G), ...G.order.map(s => renderGuide(l, G, s))]) {
+  for (const r of [renderGuideIndex(l, G), ...G.order.map(s => renderGuide(l, G, s, S))]) {
     const vars = {
       ...S, lang: l.code, dir: l.dir, base: baseOf(l), canonical: SITE + urlOf(l, r.page), ogLocale: l.locale,
       hreflang: hreflang(r.page, r.langs), langSelect: langSelect(l, r.page, S, r.langs, G.ui.language), notifyEmail: NOTIFY,
@@ -208,7 +240,7 @@ const entry = (l, page, langs) => {
     `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${urlOf(langs[0], page)}"/>`;
   return `  <url>\n    <loc>${SITE}${urlOf(l, page)}</loc>\n${alts}\n  </url>`;
 };
-for (const page of ['index', 'studio']) for (const l of LANGS) urls.push(entry(l, page, LANGS));
+for (const page of ['index', 'studio', 'brow']) for (const l of LANGS) urls.push(entry(l, page, LANGS));
 for (const { l, r } of guidePages) urls.push(entry(l, r.page, r.langs));
 writeFileSync(path.join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`);
 console.log(`built ${count} pages in ${LANGS.length} languages (${Object.keys(GUIDES).length} with guides), plus sitemap.xml`);

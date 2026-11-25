@@ -389,57 +389,77 @@ footer .wrap{padding-block:28px}
 <main id="v-brow" class="view" hidden>
 <div class="hero"><div class="wrap">
   <div>
-    <div class="eyebrow">Para artistas de cejas y maquillaje permanente</div>
-    <h1>Mapea cejas a tamaño real y luego imprime la guía.</h1>
-    <p class="sub">Sube una foto de frente, ajusta las guías de simetría e imprime una capa a tamaño real para la piel. Las fotos de tus clientes no se guardan.</p>
+    <div class="eyebrow">Para profesionales de cejas y micropigmentación</div>
+    <h1>Mapea las cejas sobre la foto de la clienta e imprime la guía a tamaño real.</h1>
+    <p class="sub">Carga una foto de frente. El rostro se detecta en tu dispositivo y aparecen las guías de inicio, arco y final para que las arrastres a su sitio. Lee las medidas en milímetros e imprime la guía a tamaño real.</p>
     <div class="ctas">
-      <a class="btn" href="mailto:hello@skinstencil.com?subject=Brow%20mapping%20interest">Acceso anticipado al mapeo de cejas</a>
-      <a class="btn alt" href="mailto:hello@skinstencil.com?subject=Brow%20pricing%20interest">Cuéntame sobre los precios</a>
+      <a class="btn" href="/es/brow/">Abrir el mapeo de cejas</a>
+      <a class="btn alt" href="#brow-how">Cómo funciona</a>
     </div>
-    <p class="note">El mapeo de cejas aún no está hecho. Dinos si lo quieres.</p>
+    <p class="note">Gratis para probar. Las fotos se quedan en tu dispositivo.</p>
   </div>
   <div class="panel">
-    <svg viewBox="0 0 320 190" role="img" aria-label="Ilustración de una capa de mapeo de cejas con líneas guía y marcas en milímetros" style="display:block;width:100%;height:auto;direction:ltr">
-      <g fill="none" stroke="currentColor" stroke-width="1" opacity=".35"><path d="M20 120 H300 M160 20 V170"/></g>
-      <g fill="none" stroke="var(--stencil)" stroke-width="2.2" stroke-linecap="round">
-        <path d="M34 98 C62 62 112 56 140 84"/>
-        <path d="M180 84 C208 56 258 62 286 98"/>
-        <path d="M34 98 L140 84 M180 84 L286 98" stroke-dasharray="3 5" stroke-width="1.2"/>
+    <svg viewBox="0 0 400 300" role="img" aria-label="Ilustración: las tres líneas del mapeo de cejas trazadas desde el ala de la nariz sobre un contorno simplificado de ojo y ceja, con el inicio, el arco y el final marcados como S, A y E." style="display:block;width:100%;height:auto;direction:ltr">
+      <title>Ilustración: las tres líneas del mapeo de cejas trazadas desde el ala de la nariz sobre un contorno simplificado de ojo y ceja, con el inicio, el arco y el final marcados como S, A y E.</title>
+      <g fill="none" stroke="currentColor" stroke-width="1" opacity=".3"><path d="M20 150 H380" stroke-dasharray="2 5"/><path d="M200 60 V282"/></g>
+      <g id="brow-half" fill="none">
+        <g stroke="currentColor" stroke-width="1.6" opacity=".7">
+          <path d="M62 150 Q107 122 152 150 Q107 172 62 150 Z"/>
+          <circle cx="108" cy="150" r="12"/>
+          <path d="M152 252 Q176 270 200 264"/>
+        </g>
+        <g stroke="currentColor" stroke-width="1.4" opacity=".8"><path d="M101 150 H115 M108 143 V157"/></g>
+        <path d="M152 252 V90" stroke="#1B6FE0" stroke-width="2"/>
+        <path d="M152 252 L63 90" stroke="#D2362B" stroke-width="2" stroke-dasharray="9 5"/>
+        <path d="M152 252 L9 90" stroke="#1F7A4C" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"/>
+        <path d="M168 111 H12" stroke="var(--stencil)" stroke-width="1.4" stroke-dasharray="2 4" stroke-linecap="round"/>
+        <path d="M152 111 Q100 90 65 93 Q42 96 28 111" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="152" cy="252" r="4.5" fill="var(--card)" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="152" cy="111" r="9" fill="#1B6FE0"/><circle cx="65" cy="93" r="9" fill="#D2362B"/><circle cx="28" cy="111" r="9" fill="#1F7A4C"/>
       </g>
-      <g stroke="currentColor" stroke-width="1" opacity=".7"><path d="M34 150 H140 M34 145 V155 M140 145 V155"/></g>
-      <text x="87" y="170" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" text-anchor="middle">52 mm</text>
+      <use href="#brow-half" transform="translate(400 0) scale(-1 1)"/>
+      <g font-family="IBM Plex Mono, monospace" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">
+        <text x="152" y="115">S</text><text x="65" y="97">A</text><text x="28" y="115">E</text>
+        <text x="248" y="115">S</text><text x="335" y="97">A</text><text x="372" y="115">E</text>
+      </g>
+      <g font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" text-anchor="middle">
+        <text x="152" y="80" fill="#1B6FE0">1</text><text x="63" y="80" fill="#D2362B">2</text><text x="9" y="80" fill="#1F7A4C">3</text>
+        <text x="248" y="80" fill="#1B6FE0">1</text><text x="337" y="80" fill="#D2362B">2</text><text x="391" y="80" fill="#1F7A4C">3</text>
+      </g>
     </svg>
-    <p class="caption">Ilustración de la idea, no un resultado real.</p>
+    <p class="caption"><b>Ilustración.</b> Las líneas guía sobre un contorno simplificado, no una foto real de una clienta.</p>
   </div>
 </div></div>
 
-<section><div class="wrap">
+<section id="brow-how"><div class="wrap">
   <div class="eyebrow">Cómo funciona</div>
-  <h2>Foto, ajusta, imprime.</h2>
+  <h2>Foto, ajustar, imprimir.</h2>
   <div class="steps">
-    <div class="step"><div class="tick">1</div><h3>Sube una foto de frente</h3><p>El cliente debe dar su consentimiento. Te pedimos que lo confirmes.</p></div>
-    <div class="step"><div class="tick">2</div><h3>Ajusta las guías</h3><p>Mueve los puntos de referencia y las líneas de simetría hasta que la capa encaje.</p></div>
-    <div class="step"><div class="tick">3</div><h3>Imprime a tamaño real</h3><p>Imprime la capa o guarda la guía para la sesión.</p></div>
+    <div class="step"><div class="tick">1</div><h3>Cargar una foto de frente</h3><p>Confirma que el cliente dio su consentimiento. El rostro se detecta en tu dispositivo y las guías se dibujan encima.</p></div>
+    <div class="step"><div class="tick">2</div><h3>Arrastrar los puntos</h3><p>Mueve el inicio, el arco y el final, o cualquier punto de referencia, y las líneas y medidas te siguen.</p></div>
+    <div class="step"><div class="tick">3</div><h3>Imprimir a tamaño real</h3><p>Introduce la distancia pupilar o coloca una tarjeta, y descarga un PNG o imprime la guía con su ancho en milímetros.</p></div>
   </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Las líneas clásicas, medidas.</h2>
+  <p class="sub" style="margin-bottom:0">Tres líneas desde el ala de la nariz: recta hacia arriba para el inicio, por el borde externo del iris para el arco y por la comisura externa del ojo para el final. La herramienta muestra ancho, altura del arco, ángulo de la cola y diferencia de nivel en milímetros. Son guías de dibujo estándar y decides tú.</p>
 </div></section>
 
 <section><div class="wrap">
   <div class="eyebrow">Privacidad</div>
-  <h2>Las fotos se usan para la capa y luego se borran.</h2>
-  <p class="sub" style="margin-bottom:0">Borramos la foto cuando termina tu sesión. No hacemos afirmaciones médicas ni de resultados. El mapeo es una ayuda de dibujo, no un consejo.</p>
+  <h2>La foto se queda en tu dispositivo.</h2>
+  <p class="sub" style="margin-bottom:0">El modelo de rostro se ejecuta en tu navegador y lo sirve este sitio. La foto no se sube ni se guarda, y no hay cookies. Te pedimos que confirmes que el cliente aceptó que se use la foto. No hacemos afirmaciones médicas ni de resultados: el mapeo es una ayuda de dibujo.</p>
 </div></section>
 
 <section><div class="wrap">
   <div class="eyebrow">Precios</div>
-  <h2>Precios previstos para el mapeo de cejas.</h2>
-  <div class="plans4" style="grid-template-columns:repeat(2,minmax(0,1fr))">
-    <div class="plan"><h3>Gratis</h3><div class="price">$0</div><ul><li>Mapeo básico</li><li>Impresión con marca de agua</li></ul></div>
-    <div class="plan"><h3>Artista</h3><div class="price" style="font-size:26px">$19 / mes</div><div class="alt">o $99 el primer año</div>
-      <ul><li>Impresión a tamaño real, sin marca de agua</li><li>Guías guardadas</li></ul>
-      <a class="btn alt" href="mailto:hello@skinstencil.com?subject=Brow%20pricing%20interest">Avísame cuando abra</a></div>
-  </div>
-  <p class="note">El mapeo de cejas aún no está hecho. Los precios son planes y pueden cambiar.</p>
+  <h2>Un solo plan para las dos herramientas.</h2>
+  <p class="sub">El mapeo de cejas es gratis para probar. Las descargas gratuitas llevan marca de agua y tienen un tamaño limitado. Un pase de un día o Pro quita la marca de agua, en esta herramienta y en la de plantillas de tatuaje.</p>
+  <div class="ctas"><a class="btn alt" href="#pricing">Ver los planes</a><a class="btn" href="/es/brow/">Abrir el mapeo de cejas</a></div>
 </div></section>
+
+
 </main>
 
 <footer><div class="wrap"><a href="/privacy.html">Privacidad</a> &middot; <a href="/terms.html">Términos</a> &middot; <a href="mailto:hello@skinstencil.com">hello@skinstencil.com</a><br>La privacidad y los términos están en inglés.<br>Esta página se tradujo automáticamente. Si algo se lee mal, avísanos.</div></footer>
@@ -455,7 +475,7 @@ footer .wrap{padding-block:28px}
   var views={tattoo:document.getElementById('v-tattoo'),brow:document.getElementById('v-brow')};
   var tabs={tattoo:document.getElementById('t-tattoo'),brow:document.getElementById('t-brow')};
   function show(n){ if(!views[n]) n='tattoo'; for(var k in views){ views[k].hidden=(k!==n); tabs[k].setAttribute('aria-pressed',String(k===n)); } }
-  function fromHash(){ var h=(location.hash||'').replace('#',''); if(h==='brow'||h==='tattoo') show(h); }
+  function fromHash(){ var h=(location.hash||'').replace('#',''); if(h==='brow'||h==='tattoo'){ show(h); return; } var el=h&&document.getElementById(h); if(!el) return; for(var k in views){ if(views[k].contains(el)){ show(k); el.scrollIntoView(); } } }
   tabs.tattoo.addEventListener('click',function(){ show('tattoo'); history.replaceState(null,'','#tattoo'); });
   tabs.brow.addEventListener('click',function(){ show('brow'); history.replaceState(null,'','#brow'); });
   window.addEventListener('hashchange',fromHash); fromHash();

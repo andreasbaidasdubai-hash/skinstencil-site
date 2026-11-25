@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{brow.title}}</title>
+<meta name="description" content="{{brow.desc}}">
+<link rel="canonical" href="{{canonical}}">
+{{hreflang}}
+<script src="/js/theme.js"></script>
+<meta property="og:title" content="{{brow.title}}">
+<meta property="og:description" content="{{brow.desc}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="{{ogLocale}}">
+<meta property="og:site_name" content="Skinstencil">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317161C'/%3E%3Cpath d='M16 5 L21 18 L16 22 L11 18 Z M14 23 H18 V28 H14 Z' fill='none' stroke='%23A99BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<style>
+/* Same drafting-bench look as the tattoo studio. Brow guide colours: blue = line 1 (start), red = line 2 (arch), green = line 3 (end). Logical properties keep right-to-left languages correct. */
+:root{
+  --paper:#F1F2EF; --card:#FAFAF8; --ink:#17161C; --muted:#5E5C68; --line:#D6D5DD;
+  --stencil:#4F35C8; --stencil-soft:#E6E2F8; --c1:#1B6FE0; --c2:#D2362B; --c3:#1F7A4C; --ok:#1F7A4C; --warn:#9A5B00; --warn-bg:#FFF1D6; --bad:#B42318;
+  --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
+  --stencil:#A99BFF; --stencil-soft:#2A2547; --c1:#6FA8FF; --c2:#FF7A6E; --c3:#6FD3A0; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
+  --stencil:#A99BFF; --stencil-soft:#2A2547; --c1:#6FA8FF; --c2:#FF7A6E; --c3:#6FD3A0; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}
+.themebtn{font:500 15px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 9px;cursor:pointer;line-height:1.2}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+html[lang="ar"] body,html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
+.wrap{max-width:1280px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header .wrap{display:flex;align-items:center;gap:14px;padding-block:14px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:inherit;direction:ltr}
+.mark span{color:var(--stencil)}
+.langsel{width:auto;margin-inline-start:auto;font:500 13px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+h1,h2,h3{font-family:var(--display);font-stretch:84%;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(28px,4.4vw,42px);font-weight:800;line-height:1.1;text-wrap:balance}
+h2{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-stretch:100%;color:var(--muted)}
+html[lang="ar"] h2{text-transform:none;letter-spacing:0}
+.crumbs{font-size:13px;color:var(--muted);margin:2px 0 10px}
+.crumbs ol{list-style:none;margin:0;padding:0;display:flex;gap:4px 8px;flex-wrap:wrap}
+.crumbs li+li::before{content:"/";margin-inline-end:8px;color:var(--line)}
+.crumbs a{color:var(--muted)}
+.intro{padding-block:6px 18px;max-width:900px}
+.lead{color:var(--muted);font-size:17px;margin:10px 0 0}
+.grid{display:grid;grid-template-columns:272px minmax(0,1fr) 304px;gap:18px;padding-block:6px 40px;align-items:start}
+.col{display:grid;gap:14px;align-content:start}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stack{display:grid;gap:12px}
+label,.lab{display:block;font-weight:600;font-size:13px;margin-bottom:6px}
+.chk{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:14px;margin:0;cursor:pointer}
+.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--stencil);flex:none}
+.chk.small{font-weight:500;font-size:13px;margin:0}
+input[type=number],input[type=text],select{width:100%;font:500 14px var(--mono);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;direction:ltr}
+.btn{font:600 14px var(--body);border-radius:9px;padding:10px 14px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer;width:100%;text-align:center;text-decoration:none;display:block}
+.btn.alt{background:none;color:var(--ink);border-color:var(--line)}
+.btn.sm{width:auto;padding:7px 11px;font-size:13px}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.btn:focus-visible,input:focus-visible,select:focus-visible,.seg button:focus-visible,.langsel:focus-visible,summary:focus-visible,.drop:focus-visible,.pt:focus-visible,a:focus-visible,.themebtn:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
+.drop{border:1.5px dashed var(--line);border-radius:10px;padding:16px;text-align:center;color:var(--ink);font-size:13px;cursor:pointer}
+.drop.locked{color:var(--muted);cursor:not-allowed;opacity:.8}
+.drop.over{border-color:var(--stencil);background:var(--stencil-soft)}
+.seg{display:flex;gap:3px;background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:3px}
+.seg button{flex:1;font:500 13px var(--body);color:var(--muted);background:none;border:0;border-radius:6px;padding:7px 8px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--stencil-soft);color:var(--ink)}
+.stage{position:relative;width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;touch-action:none;direction:ltr;aspect-ratio:7/5}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#5E5C68;padding:24px;font-size:14px;direction:{{dir}}}
+.handles{position:absolute;inset:0}
+.pt{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;cursor:grab;touch-action:none;background:transparent}
+.pt-pt{width:26px;height:26px;margin:-13px 0 0 -13px}
+.pt:hover,.pt.drag{outline:2px dashed var(--stencil);outline-offset:-2px}
+.pt.drag{cursor:grabbing}
+.stat{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:5px 0;border-bottom:1px solid var(--line)}
+.stat b{font:500 13px var(--mono);direction:ltr;text-align:end}
+table.m{width:100%;border-collapse:collapse;font-size:13px}
+table.m th,table.m td{padding:5px 0;border-bottom:1px solid var(--line);text-align:start}
+table.m thead th{font:500 11px var(--mono);letter-spacing:.04em;color:var(--muted);text-transform:uppercase;text-align:end}
+table.m thead th:first-child{text-align:start}
+table.m td{font:500 13px var(--mono);direction:ltr;text-align:end}
+html[lang="ar"] table.m thead th{text-transform:none}
+.legend{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:13px}
+.legend li{display:flex;gap:10px;align-items:flex-start}
+.legend i{flex:none;width:26px;height:0;border-top:3px solid;margin-top:9px}
+.legend .d2{border-top-style:dashed}.legend .d3{border-top-style:dotted}
+.fine{font-size:12px;color:var(--muted)}
+.status{font-size:12px;color:var(--muted);margin:0;min-height:1.4em}
+.status.ok{color:var(--ok)} .status.err{color:var(--bad)}
+.warn{background:var(--warn-bg);color:var(--warn);border-radius:10px;padding:10px 12px;font-size:13px}
+.warn p{margin:0}.warn p+p{margin-top:6px}
+.tips{margin:8px 0 0;padding-inline-start:18px;color:var(--muted);font-size:13px}.tips li{margin-bottom:6px}
+details.plans{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper)}
+details.plans summary{font-weight:600;font-size:13px;cursor:pointer}
+details.plans .btn{margin-top:8px}
+.plansbox{display:grid;gap:8px}
+.thanks{background:var(--stencil-soft);border-radius:8px;padding:8px 10px;font-size:13px;margin:0}
+.priv{background:var(--stencil-soft);border-radius:10px;padding:10px 12px;font-size:13px;margin:0}
+.content{max-width:900px;padding-block:8px 24px}
+.content h2{margin-top:34px}
+.content p,.content li{font-size:16px;color:var(--ink)}
+.content ul{padding-inline-start:20px}.content li{margin-top:6px}
+.content a{color:var(--stencil)}
+details.q{border-bottom:1px solid var(--line);padding:12px 0}details.q summary{font-weight:600;cursor:pointer;font-size:16px}details.q p{margin:8px 0 0;color:var(--muted)}
+.glist{display:grid;gap:10px;margin-top:12px}
+.glist a{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.glist a:hover{border-color:var(--stencil)}.glist b{display:block;font-family:var(--display);font-stretch:84%;font-size:18px}.glist span{font-size:14px;color:var(--muted)}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}footer a{color:inherit}footer .wrap{padding-block:26px}
+@media (max-width:1020px){
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .col{display:contents}
+  .o1{order:1}.o2{order:2}.o3{order:3}.o4{order:4}.o5{order:5}.o6{order:6}.o7{order:7}.o8{order:8}
+}
+[hidden]{display:none!important}
+</style>
+{{ldjson}}
+</head>
+<body>
+
+<header><div class="wrap"><a class="mark" href="{{base}}">skin<span>stencil</span></a><label class="vh" for="langSel">{{lang.label}}</label>{{langSelect}}</div></header>
+
+<main>
+<div class="wrap">
+  <nav class="crumbs" aria-label="{{brow.bc.label}}"><ol><li><a href="{{base}}#brow">{{brow.bc.home}}</a></li><li aria-current="page">{{brow.bc.name}}</li></ol></nav>
+  <div class="intro">
+    <h1>{{brow.h1}}</h1>
+    <p class="lead">{{brow.lead}}</p>
+  </div>
+
+  <div class="grid">
+    <!-- LEFT: photo, scale, view -->
+    <div class="col">
+      <div class="card stack o1">
+        <h2>{{brow.c1}}</h2>
+        <label class="chk" for="consent"><input type="checkbox" id="consent"><span>{{brow.consent.label}}</span></label>
+        <p class="fine" style="margin:0">{{brow.consent.note}}</p>
+        <div class="drop locked" id="drop" tabindex="-1" role="button" aria-disabled="true" aria-label="{{brow.dropAria}}"><span id="dropText">{{brow.dropLocked}}</span><br><span class="fine">{{brow.dropHint}}</span></div>
+        <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn alt sm" id="manualBtn" type="button" disabled>{{brow.manual}}</button>
+          <button class="btn alt sm" id="resetBtn" type="button" disabled>{{brow.reset}}</button>
+          <button class="btn alt sm" id="clearBtn" type="button" disabled>{{brow.clear}}</button>
+        </div>
+      </div>
+      <div class="card stack o3">
+        <h2>{{brow.c2}}</h2>
+        <div class="seg" id="scaleMode" role="group" aria-label="{{brow.c2}}"><button type="button" data-v="ipd" aria-pressed="true">{{brow.scale.ipd}}</button><button type="button" data-v="card" aria-pressed="false">{{brow.scale.card}}</button></div>
+        <div id="ipdBox"><label for="ipd">{{brow.ipd.label}}</label><input id="ipd" type="number" min="40" max="90" step="0.5" value="63" inputmode="decimal"><p class="fine" style="margin:6px 0 0">{{brow.ipd.hint}}</p></div>
+        <div id="cardBox" hidden><p class="fine" style="margin:0">{{brow.card.hint}}</p></div>
+      </div>
+      <div class="card stack o5">
+        <h2>{{brow.v.h}}</h2>
+        <label class="chk small" for="vOutline"><input type="checkbox" id="vOutline" checked><span>{{brow.v.outline}}</span></label>
+        <label class="chk small" for="vLevel"><input type="checkbox" id="vLevel" checked><span>{{brow.v.level}}</span></label>
+        <label class="chk small" for="vLetters"><input type="checkbox" id="vLetters" checked><span>{{brow.v.letters}}</span></label>
+      </div>
+    </div>
+
+    <!-- CENTRE: stage -->
+    <div class="col">
+      <div class="o2" style="display:grid;gap:10px">
+        <div class="stage" id="stage" style="aspect-ratio:7/5">
+          <canvas id="cv" role="img" aria-label="{{brow.stage.aria}}"></canvas>
+          <div class="handles" id="handles" hidden></div>
+          <div class="ph" id="ph">{{brow.ph}}</div>
+        </div>
+        <p class="fine" id="kbHint" style="margin:0">{{brow.kbHint}}</p>
+        <div class="warn" id="warn" role="status" hidden></div>
+      </div>
+      <div class="card o6">
+        <h2>{{brow.lg.h}}</h2>
+        <ul class="legend" style="margin-top:10px">
+          <li><i style="border-color:var(--c1)"></i><span>{{brow.lg.1}}</span></li>
+          <li><i class="d2" style="border-color:var(--c2)"></i><span>{{brow.lg.2}}</span></li>
+          <li><i class="d3" style="border-color:var(--c3)"></i><span>{{brow.lg.3}}</span></li>
+          <li><i class="d3" style="border-color:var(--stencil)"></i><span>{{brow.lg.4}}</span></li>
+        </ul>
+        <p class="fine" style="margin:10px 0 0">{{brow.lg.note}}</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: measurements, download -->
+    <div class="col">
+      <div class="card o4">
+        <h2>{{brow.m.h}}</h2>
+        <table class="m" style="margin-top:8px"><thead><tr><th scope="col"><span class="vh">{{brow.m.h}}</span></th><th scope="col">{{brow.m.r}}</th><th scope="col">{{brow.m.l}}</th></tr></thead><tbody id="mBody"></tbody></table>
+        <div class="stat"><span>{{brow.m.starts}}</span><b id="m-starts">-</b></div>
+        <div class="stat"><span>{{brow.m.startlevel}}</span><b id="m-startlevel">-</b></div>
+        <div class="stat"><span>{{brow.m.roll}}</span><b id="m-roll">-</b></div>
+        <div class="stat"><span>{{brow.m.scale}}</span><b id="m-scale">-</b></div>
+        <p class="fine" style="margin:10px 0 0">{{brow.m.note}}</p>
+      </div>
+      <div class="card stack o7" id="dlCard">
+        <h2>{{brow.dl.h}}</h2>
+        <div><label for="ground">{{brow.dl.ground}}</label><select id="ground"><option value="white">{{brow.dl.white}}</option><option value="transparent">{{brow.dl.transparent}}</option></select></div>
+        <button class="btn" id="dlGuides" type="button" disabled>{{brow.dl.guides}}</button>
+        <button class="btn" id="dlPhoto" type="button" disabled>{{brow.dl.photo}}</button>
+        <button class="btn alt" id="printBtn" type="button" disabled>{{brow.dl.print}}</button>
+        <p class="status" id="dlStatus"></p>
+        <button class="btn" id="unlockBtn" type="button" style="background:var(--stencil);border-color:var(--stencil);color:#fff">{{s.dl.remove}}</button>
+        <div class="plansbox" id="plansBox" hidden>
+          <p class="fine" style="margin:0 0 4px">{{s.dl.plans}}</p>
+          <a class="btn alt buy" data-plan="day" href="#"></a>
+          <a class="btn buy" data-plan="month" href="#"></a>
+          <a class="btn alt buy" data-plan="year" href="#"></a>
+          <p class="status" id="soon" hidden>{{s.dl.notConfigured}}</p>
+        </div>
+        <p class="thanks" id="thanks" hidden>{{s.thanks}}</p>
+        <details class="plans" id="keyBox">
+          <summary>{{s.dl.have}}</summary>
+          <label for="keyIn" style="margin-top:8px">{{s.dl.keyLabel}}</label>
+          <input id="keyIn" type="text" autocomplete="off" spellcheck="false">
+          <button class="btn" id="keyBtn" type="button" style="margin-top:8px">{{s.dl.activate}}</button>
+          <p class="status" id="keyStatus"></p>
+          <button class="btn alt" id="keyOut" type="button" hidden>{{s.dl.signout}}</button>
+        </details>
+        <p class="fine" style="margin:0">{{brow.dl.same}}</p>
+      </div>
+      <div class="card o8">
+        <h2>{{brow.priv.h}}</h2>
+        <p class="priv" style="margin-top:10px">{{brow.priv.p}}</p>
+        <h2 style="margin-top:16px">{{brow.tips.h}}</h2>
+        <ul class="tips">
+          <li>{{brow.tips.1}}</li>
+          <li>{{brow.tips.2}}</li>
+          <li>{{brow.tips.3}}</li>
+          <li>{{brow.tips.4}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <h2>{{brow.about.h}}</h2>
+    <p>{{brow.about.p1}}</p>
+    <p>{{brow.about.p2}}</p>
+    <h2>{{brow.lines.h}}</h2>
+    <ul>
+      <li>{{brow.lines.1}}</li>
+      <li>{{brow.lines.2}}</li>
+      <li>{{brow.lines.3}}</li>
+      <li>{{brow.lines.4}}</li>
+    </ul>
+    <h2>{{brow.limits.h}}</h2>
+    <ul>
+      <li>{{brow.limits.1}}</li>
+      <li>{{brow.limits.2}}</li>
+      <li>{{brow.limits.3}}</li>
+    </ul>
+    <h2>{{brow.faq.h}}</h2>
+    <div>
+      <details class="q"><summary>{{brow.q1.h}}</summary><p>{{brow.q1.p}}</p></details>
+      <details class="q"><summary>{{brow.q2.h}}</summary><p>{{brow.q2.p}}</p></details>
+      <details class="q"><summary>{{brow.q3.h}}</summary><p>{{brow.q3.p}}</p></details>
+      <details class="q"><summary>{{brow.q4.h}}</summary><p>{{brow.q4.p}}</p></details>
+      <details class="q"><summary>{{brow.q5.h}}</summary><p>{{brow.q5.p}}</p></details>
+    </div>
+    {{browGuides}}
+    <p style="margin-top:28px"><a href="{{base}}studio/">{{brow.otherTool}}</a></p>
+  </section>
+</div>
+</main>
+
+<footer><div class="wrap"><a href="/privacy.html">{{ft.privacy}}</a> &middot; <a href="/terms.html">{{ft.terms}}</a> &middot; <a href="mailto:{{notifyEmail}}">{{notifyEmail}}</a><br>{{ft.note}}{{ftMt}}</div></footer>
+
+<script>window.I18N={{i18n_json}};</script>
+<script src="/js/config.js"></script>
+<script src="/js/png-util.js"></script>
+<script src="/js/unlock.js"></script>
+<script src="/js/brow-geometry.js"></script>
+<script src="/js/brow-render.js"></script>
+<script src="/brow/app.js"></script>
+<script>var sel=document.getElementById('langSel'); if(sel) sel.addEventListener('change',function(){ location.href=sel.value; });</script>
+</body>
+</html>
