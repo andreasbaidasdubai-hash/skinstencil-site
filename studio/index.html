@@ -88,7 +88,8 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
       <h2>1. Your design</h2>
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose an image file">Drop a JPG, PNG or WebP here, or click to choose.<br><span class="fine">Only designs you made or have the right to use.</span></div>
       <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
-      <button class="btn alt" id="sample" type="button">Use a sample design</button>
+      <div class="lab" style="margin:4px 0 0">Or start from a sample</div>
+      <div id="samples" style="display:flex;gap:6px;flex-wrap:wrap"></div>
     </div>
     <div class="card stack">
       <h2>2. Make the stencil</h2>
@@ -126,12 +127,12 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
   <div class="stack">
     <div class="card">
       <h2>Drift check</h2>
-      <p class="fine" style="margin:6px 0 10px">Compares the stencil with the lines found in your original. <span style="color:var(--lost)">Red</span> is a line that was lost, <span style="color:var(--added)">blue</span> is a line that was added.</p>
+      <p class="fine" style="margin:6px 0 10px">Compares the stencil with the lines found in your original, whatever your sliders are set to. <span style="color:var(--lost)">Red</span> is a line that was lost, <span style="color:var(--added)">blue</span> is a line that was added.</p>
       <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
       <div class="stat"><span><span class="dot" style="background:var(--ok)"></span>Lines kept</span><b id="kept">-</b></div>
       <div class="stat"><span><span class="dot" style="background:var(--lost)"></span>Lines lost</span><b id="lost">-</b></div>
       <div class="stat"><span><span class="dot" style="background:var(--added)"></span>Lines added</span><b id="added">-</b></div>
-      <p class="fine" style="margin:10px 0 0">With this classic filter the result stays close to 100%. The check is built for the AI step, where it matters.</p>
+      <p class="fine" style="margin:10px 0 0">The reference is a fixed, sensitive reading of your original. Lowering sensitivity or removing specks drops fine lines on purpose, and they show up here as lost.</p>
     </div>
     <div class="card stack">
       <h2>Print size</h2>
@@ -152,6 +153,7 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
   </div>
 </div></div>
 
+<script src="/js/engine.js"></script>
 <script>
 (function(){
   var $=function(id){return document.getElementById(id)};
@@ -189,7 +191,10 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
     var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){setSource(im,im.naturalWidth,im.naturalHeight)};im.onerror=function(){$('ph').hidden=false;$('ph').textContent='That file could not be read as an image.'};im.src=r.result;};
     r.readAsDataURL(f);
   }
-  $('sample').addEventListener('click',function(){var c=drawSample();setSource(c,c.width,c.height);});
+  function setMode(m){state.mode=m;[].forEach.call($('mode').querySelectorAll('button'),function(x){x.setAttribute('aria-pressed',String(x.getAttribute('data-v')===m))});}
+  var E=window.SkinEngine,SB=$('samples');
+  if(E){Object.keys(E.samples).forEach(function(k){var s=E.samples[k],b=document.createElement('button');b.type='button';b.className='btn alt';b.style.cssText='width:auto;padding:7px 11px;font-size:13px';b.textContent=s.label;
+    b.addEventListener('click',function(){var c=s.draw();setMode(s.mode);setSource(c,c.width,c.height);});SB.appendChild(b);});}
 
   function setSource(img,iw,ih){
     var maxS=900,s=Math.min(1,maxS/Math.max(iw,ih));
@@ -264,6 +269,8 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
   }
   function computeDrift(){
     var n=W*H,i,refN=0,kept=0,finN=0,addedN=0,weight=+$('weight').value;
+    /* fixed, sensitive reading of the original: independent of the sliders, so dropped lines show up as lost */
+    var ref=window.SkinEngine?window.SkinEngine.referenceMask(gray,W,H,state.mode):window.__ref;
     var tol=2,finD=dilate(final,W,H,tol),refD=dilate(ref,W,H,tol+weight-1);
     var img=new ImageData(W,H),dd=img.data;
     for(i=0;i<n;i++){
@@ -336,6 +343,8 @@ input[type=number]{width:100%;font:500 14px var(--mono);background:var(--paper);
     x.beginPath();x.moveTo(510,700);x.bezierCurveTo(580,640,570,560,500,540);x.stroke();
     return c;
   }
+  /* open in a working state: the first sample is loaded so the stage is never empty */
+  if(E){var first=E.samples.dagger.draw();setSource(first,first.width,first.height);}
 })();
 </script>
 
