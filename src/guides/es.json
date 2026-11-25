@@ -8,10 +8,10 @@
     "updated": "Última actualización",
     "answerLabel": "La respuesta corta",
     "faq": "Preguntas",
-    "indexTitle": "Guías de stencil de tatuaje",
-    "indexMetaTitle": "Plantilla de tatuaje: guías prácticas | Skinstencil",
-    "indexMetaDesc": "Guías prácticas para tatuadores: hacer un stencil de tatuaje desde una foto o dibujo, imprimir a tamaño real y pasarlo al papel.",
-    "indexLead": "Guías cortas y prácticas para tatuadores que hacen sus propios stencils. Cada una termina con la herramienta gratuita, que funciona en tu navegador y no sube nada.",
+    "indexTitle": "Guías de stencil de tatuaje y mapeo de cejas",
+    "indexMetaTitle": "Guías: stencil de tatuaje y mapeo de cejas | Skinstencil",
+    "indexMetaDesc": "Guías prácticas para tatuadores y artistas de cejas: stencil desde una foto, mapeo de cejas sobre la foto de la clienta e impresión a tamaño real.",
+    "indexLead": "Guías cortas y prácticas para artistas. Cada una termina con la herramienta gratuita correspondiente, que funciona en tu navegador y no sube nada.",
     "readGuide": "Leer la guía",
     "homeSectionTitle": "Guías de stencil de tatuaje",
     "homeSectionLead": "Cómo hacer un stencil, imprimirlo a tamaño real y pasarlo al papel.",
@@ -19,7 +19,13 @@
     "theme": "Claro u oscuro",
     "language": "Idioma"
   },
-  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods"],
+  "order": [
+    "tattoo-stencil-from-photo",
+    "tattoo-stencil-size-true-size-print",
+    "tattoo-stencil-transfer-methods",
+    "brow-mapping-on-a-photo-start-arch-end",
+    "brow-mapping-measurements-scale-and-print-true-size"
+  ],
   "guides": {
     "tattoo-stencil-from-photo": {
       "howto": true,
@@ -34,85 +40,167 @@
         {
           "h2": "Qué hace en realidad un generador de stencils de tatuaje",
           "blocks": [
-            { "p": "Un stencil es el contorno de un diseño, reducido a líneas limpias para poder pasarlo a la piel. Un generador de stencils de tatuaje toma una imagen y conserva los bordes que importan, descartando el tono, la textura del papel y el ruido. El resultado son líneas oscuras sobre fondo blanco, la forma que necesitan la mayoría de los métodos de transferencia." },
-            { "p": "Skinstencil lo hace con procesamiento de imagen corriente en tu navegador. Tu archivo se lee en tu propio dispositivo y no se sube. Eso importa cuando un diseño es de un cliente. Además, la herramienta funciona en cuanto carga la página, sin cuenta." }
+            {
+              "p": "Un stencil es el contorno de un diseño, reducido a líneas limpias para poder pasarlo a la piel. Un generador de stencils de tatuaje toma una imagen y conserva los bordes que importan, descartando el tono, la textura del papel y el ruido. El resultado son líneas oscuras sobre fondo blanco, la forma que necesitan la mayoría de los métodos de transferencia."
+            },
+            {
+              "p": "Skinstencil lo hace con procesamiento de imagen corriente en tu navegador. Tu archivo se lee en tu propio dispositivo y no se sube. Eso importa cuando un diseño es de un cliente. Además, la herramienta funciona en cuanto carga la página, sin cuenta."
+            }
           ]
         },
         {
           "h2": "Elige una fuente que se convierta bien",
           "blocks": [
-            { "p": "Las buenas fuentes comparten algunos rasgos. Usa una que cumpla cuantos más mejor:" },
-            { "ul": [
-              "Contraste claro entre las líneas y el fondo, como tinta sobre papel blanco.",
-              "El diseño llena el encuadre en lugar de quedar pequeño en una esquina.",
-              "Plano y paralelo a la cámara o al escáner, sin dobleces ni perspectiva.",
-              "Luz uniforme, sin la sombra de tu mano o tu móvil sobre la hoja.",
-              "Resolución suficiente para que las líneas finas sigan midiendo varios píxeles de ancho."
-            ] },
-            { "p": "Un escaneo en plano es la forma más fácil de conseguir todo eso. Si fotografías, trabaja junto a una ventana con luz de día, sujeta el móvil paralelo a la hoja y evita el flash, que deja una mancha brillante en el centro. Usa solo diseños que hayas hecho tú o que tengas derecho a usar." }
+            {
+              "p": "Las buenas fuentes comparten algunos rasgos. Usa una que cumpla cuantos más mejor:"
+            },
+            {
+              "ul": [
+                "Contraste claro entre las líneas y el fondo, como tinta sobre papel blanco.",
+                "El diseño llena el encuadre en lugar de quedar pequeño en una esquina.",
+                "Plano y paralelo a la cámara o al escáner, sin dobleces ni perspectiva.",
+                "Luz uniforme, sin la sombra de tu mano o tu móvil sobre la hoja.",
+                "Resolución suficiente para que las líneas finas sigan midiendo varios píxeles de ancho."
+              ]
+            },
+            {
+              "p": "Un escaneo en plano es la forma más fácil de conseguir todo eso. Si fotografías, trabaja junto a una ventana con luz de día, sujeta el móvil paralelo a la hoja y evita el flash, que deja una mancha brillante en el centro. Usa solo diseños que hayas hecho tú o que tengas derecho a usar."
+            }
           ]
         },
         {
           "h2": "Modo Dibujo o modo Foto",
           "blocks": [
-            { "p": "La herramienta pregunta qué tipo de fuente cargas, porque un dibujo de líneas y una fotografía necesitan un tratamiento distinto." },
-            { "h3": "Dibujo" },
-            { "p": "Usa Dibujo para bocetos, flash, lettering y todo lo que ya está hecho de líneas. Las marcas oscuras sobre una hoja clara son el diseño, y el objetivo es mantenerlas lo más cerca posible de cómo las dibujaste." },
-            { "h3": "Foto" },
-            { "p": "Usa Foto para imágenes con sombreado suave, como un retrato o un animal. Una foto no tiene un contorno que conservar, así que los bordes donde cambia el tono tienen que hacer de líneas. Con fotos, cuenta con dedicar más tiempo a los controles y con decidir qué detalles prefieres dibujar a mano." }
+            {
+              "p": "La herramienta pregunta qué tipo de fuente cargas, porque un dibujo de líneas y una fotografía necesitan un tratamiento distinto."
+            },
+            {
+              "h3": "Dibujo"
+            },
+            {
+              "p": "Usa Dibujo para bocetos, flash, lettering y todo lo que ya está hecho de líneas. Las marcas oscuras sobre una hoja clara son el diseño, y el objetivo es mantenerlas lo más cerca posible de cómo las dibujaste."
+            },
+            {
+              "h3": "Foto"
+            },
+            {
+              "p": "Usa Foto para imágenes con sombreado suave, como un retrato o un animal. Una foto no tiene un contorno que conservar, así que los bordes donde cambia el tono tienen que hacer de líneas. Con fotos, cuenta con dedicar más tiempo a los controles y con decidir qué detalles prefieres dibujar a mano."
+            }
           ]
         },
         {
           "h2": "Cómo hacer un stencil de tatuaje online, paso a paso",
           "stepsIntro": "Estos son los pasos en orden. Las secciones siguientes explican los controles con más detalle.",
           "steps": [
-            { "name": "Elige una fuente nítida", "text": "Escoge el dibujo o la foto con mejor contraste y menos ruido. Si tienes dos versiones, usa la dibujada con un bolígrafo más oscuro y uniforme." },
-            { "name": "Escanéala o fotografíala con luz uniforme", "text": "Escanea en plano si puedes. Si no, fotografía con luz de día, paralelo a la hoja, con el diseño llenando el encuadre y sin sombras ni flash." },
-            { "name": "Cárgala en la herramienta", "text": "Abre la herramienta gratuita y suelta un archivo JPG, PNG o WebP, o haz clic para elegir uno. Se procesa en tu navegador y no se sube." },
-            { "name": "Elige el modo Dibujo o Foto", "text": "Elige Dibujo para arte de línea y flash, Foto para imágenes con sombreado suave." },
-            { "name": "Ajusta la sensibilidad", "text": "La sensibilidad decide cuán tenue puede ser una marca y aun así convertirse en línea. Bájala si el sombreado se vuelve líneas. Súbela si faltan líneas finas." },
-            { "name": "Ajusta el suavizado y el grosor de línea", "text": "El suavizado redondea los bordes dentados de los píxeles. El grosor de línea engrosa o afina las líneas. Si las líneas se ven tenues al imprimir, un grosor mayor suele ayudar." },
-            { "name": "Quita las motas", "text": "Sube Quitar motas para eliminar los puntos pequeños del grano del papel o del polvo, hasta que solo queden las marcas deliberadas." },
-            { "name": "Revisa lo perdido con el control de desvío", "text": "Activa el control de desvío. Las líneas perdidas se ven en rojo y las añadidas en azul, así ves qué cambiaron tus ajustes frente a una lectura fija y sensible de tu original." },
-            { "name": "Fija el ancho en milímetros", "text": "Introduce el ancho que quieres en la piel. La herramienta muestra el tamaño equivalente a 300 dpi y una regla a tamaño real." },
-            { "name": "Descarga o imprime a tamaño real", "text": "Descarga el PNG e imprímelo para que la hoja mida el ancho que fijaste. Compruébalo con una regla antes de acercarlo a nadie." }
+            {
+              "name": "Elige una fuente nítida",
+              "text": "Escoge el dibujo o la foto con mejor contraste y menos ruido. Si tienes dos versiones, usa la dibujada con un bolígrafo más oscuro y uniforme."
+            },
+            {
+              "name": "Escanéala o fotografíala con luz uniforme",
+              "text": "Escanea en plano si puedes. Si no, fotografía con luz de día, paralelo a la hoja, con el diseño llenando el encuadre y sin sombras ni flash."
+            },
+            {
+              "name": "Cárgala en la herramienta",
+              "text": "Abre la herramienta gratuita y suelta un archivo JPG, PNG o WebP, o haz clic para elegir uno. Se procesa en tu navegador y no se sube."
+            },
+            {
+              "name": "Elige el modo Dibujo o Foto",
+              "text": "Elige Dibujo para arte de línea y flash, Foto para imágenes con sombreado suave."
+            },
+            {
+              "name": "Ajusta la sensibilidad",
+              "text": "La sensibilidad decide cuán tenue puede ser una marca y aun así convertirse en línea. Bájala si el sombreado se vuelve líneas. Súbela si faltan líneas finas."
+            },
+            {
+              "name": "Ajusta el suavizado y el grosor de línea",
+              "text": "El suavizado redondea los bordes dentados de los píxeles. El grosor de línea engrosa o afina las líneas. Si las líneas se ven tenues al imprimir, un grosor mayor suele ayudar."
+            },
+            {
+              "name": "Quita las motas",
+              "text": "Sube Quitar motas para eliminar los puntos pequeños del grano del papel o del polvo, hasta que solo queden las marcas deliberadas."
+            },
+            {
+              "name": "Revisa lo perdido con el control de desvío",
+              "text": "Activa el control de desvío. Las líneas perdidas se ven en rojo y las añadidas en azul, así ves qué cambiaron tus ajustes frente a una lectura fija y sensible de tu original."
+            },
+            {
+              "name": "Fija el ancho en milímetros",
+              "text": "Introduce el ancho que quieres en la piel. La herramienta muestra el tamaño equivalente a 300 dpi y una regla a tamaño real."
+            },
+            {
+              "name": "Descarga o imprime a tamaño real",
+              "text": "Descarga el PNG e imprímelo para que la hoja mida el ancho que fijaste. Compruébalo con una regla antes de acercarlo a nadie."
+            }
           ]
         },
         {
           "h2": "Usar los controles sin perder el diseño",
           "blocks": [
-            { "p": "Trata los controles como una conversación, no como una receta. Cambia uno, mira y deshazlo si perjudicó más de lo que ayudó." },
-            { "ul": [
-              "La sensibilidad es la palanca principal. Demasiado alta, y cada mancha se vuelve línea. Demasiado baja, y el detalle fino desaparece.",
-              "El suavizado ayuda sobre todo en escaneos de dibujos pequeños, cuyas líneas se ven escalonadas al ampliar. Demasiado suavizado redondea las esquinas vivas y los huecos pequeños.",
-              "El grosor de línea es cuestión de gusto y de tu método de transferencia. Las líneas muy finas pueden desaparecer al imprimir o transferir, así que prueba antes en papel.",
-              "Quitar motas es el control de limpieza. Súbelo hasta que se vaya el polvo y para antes de que empiece a quitar puntos que forman parte del diseño, como el punteado."
-            ] },
-            { "p": "El punteado y el dotwork diminuto son las bajas habituales. Si tu diseño depende de ellos, mantén las motas bajas y revisa el resultado de cerca." }
+            {
+              "p": "Trata los controles como una conversación, no como una receta. Cambia uno, mira y deshazlo si perjudicó más de lo que ayudó."
+            },
+            {
+              "ul": [
+                "La sensibilidad es la palanca principal. Demasiado alta, y cada mancha se vuelve línea. Demasiado baja, y el detalle fino desaparece.",
+                "El suavizado ayuda sobre todo en escaneos de dibujos pequeños, cuyas líneas se ven escalonadas al ampliar. Demasiado suavizado redondea las esquinas vivas y los huecos pequeños.",
+                "El grosor de línea es cuestión de gusto y de tu método de transferencia. Las líneas muy finas pueden desaparecer al imprimir o transferir, así que prueba antes en papel.",
+                "Quitar motas es el control de limpieza. Súbelo hasta que se vaya el polvo y para antes de que empiece a quitar puntos que forman parte del diseño, como el punteado."
+              ]
+            },
+            {
+              "p": "El punteado y el dotwork diminuto son las bajas habituales. Si tu diseño depende de ellos, mantén las motas bajas y revisa el resultado de cerca."
+            }
           ]
         },
         {
           "h2": "Por qué importa el control de desvío",
           "blocks": [
-            { "p": "Un stencil que se ve limpio aún puede carecer de algo. Es fácil sacrificar una línea fina al perseguir un resultado ordenado, y fácil que se te escape en una pantalla pequeña." },
-            { "p": "El control de desvío compara el stencil con las líneas encontradas en tu original. El rojo marca una línea perdida y el azul una línea añadida. La referencia es una lectura fija y sensible del original, así que bajar la sensibilidad o subir Quitar motas mostrará rojo a propósito. El rojo no siempre es un error, pero siempre merece una mirada antes de comprometerte con un tamaño." }
+            {
+              "p": "Un stencil que se ve limpio aún puede carecer de algo. Es fácil sacrificar una línea fina al perseguir un resultado ordenado, y fácil que se te escape en una pantalla pequeña."
+            },
+            {
+              "p": "El control de desvío compara el stencil con las líneas encontradas en tu original. El rojo marca una línea perdida y el azul una línea añadida. La referencia es una lectura fija y sensible del original, así que bajar la sensibilidad o subir Quitar motas mostrará rojo a propósito. El rojo no siempre es un error, pero siempre merece una mirada antes de comprometerte con un tamaño."
+            }
           ]
         },
         {
           "h2": "Tamaño, descarga e impresión",
           "blocks": [
-            { "p": "Fija el ancho en milímetros antes de descargar, porque el mismo diseño a 60 mm y a 200 mm necesita un número distinto de píxeles para seguir nítido. Nuestra guía complementaria sobre el [tamaño de impresión](guide:tattoo-stencil-size-true-size-print) tiene las cifras." },
-            { "p": "Las descargas gratuitas llevan marca de agua y están limitadas a 800 px. Un pase de un día o Pro quita la marca de agua, permite hasta 4000 px y guarda el tamaño de 300 dpi dentro del PNG para que el programa de impresión lo abra al ancho que elegiste. Cuando tengas el archivo, [formas de pasar un stencil al papel](guide:tattoo-stencil-transfer-methods) explica lo que sigue." }
+            {
+              "p": "Fija el ancho en milímetros antes de descargar, porque el mismo diseño a 60 mm y a 200 mm necesita un número distinto de píxeles para seguir nítido. Nuestra guía complementaria sobre el [tamaño de impresión](guide:tattoo-stencil-size-true-size-print) tiene las cifras."
+            },
+            {
+              "p": "Las descargas gratuitas llevan marca de agua y están limitadas a 800 px. Un pase de un día o Pro quita la marca de agua, permite hasta 4000 px y guarda el tamaño de 300 dpi dentro del PNG para que el programa de impresión lo abra al ancho que elegiste. Cuando tengas el archivo, [formas de pasar un stencil al papel](guide:tattoo-stencil-transfer-methods) explica lo que sigue."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "¿Puedo hacer una plantilla de tatuaje desde una foto?", "a": "Sí. Carga una foto, elige el modo Foto y ajusta la sensibilidad hasta que los bordes que quieres se vuelvan líneas. Las fotos con sombreado suave necesitan más ajuste que los dibujos de línea, y quizá prefieras dibujar a mano algún detalle." },
-        { "q": "¿Es gratis el creador de stencils de tatuaje?", "a": "Sí. Es gratis en el navegador. Las descargas gratuitas llevan marca de agua y están limitadas a 800 px. Un pase de un día o Pro quita la marca de agua y permite hasta 4000 px." },
-        { "q": "¿Mi diseño se sube a algún sitio?", "a": "No. La imagen se procesa en tu navegador, en tu propio dispositivo, y no se sube nada." },
-        { "q": "¿Qué tipos de archivo puedo usar?", "a": "Imágenes JPG, PNG y WebP. Usa la versión más nítida y mejor iluminada que tengas." },
-        { "q": "¿Por qué faltan líneas en mi stencil?", "a": "Puede que la sensibilidad sea demasiado baja o Quitar motas demasiado alto, y las líneas tenues se trataron como ruido. Activa el control de desvío: las líneas perdidas salen en rojo. Sube la sensibilidad o baja Quitar motas y revisa de nuevo." },
-        { "q": "¿Cómo imprimo el stencil al tamaño correcto?", "a": "Fija el ancho en milímetros en la herramienta, descarga el PNG e imprime al 100 por ciento sin ajustar a la página. Comprueba la impresión con una regla." }
+        {
+          "q": "¿Puedo hacer una plantilla de tatuaje desde una foto?",
+          "a": "Sí. Carga una foto, elige el modo Foto y ajusta la sensibilidad hasta que los bordes que quieres se vuelvan líneas. Las fotos con sombreado suave necesitan más ajuste que los dibujos de línea, y quizá prefieras dibujar a mano algún detalle."
+        },
+        {
+          "q": "¿Es gratis el creador de stencils de tatuaje?",
+          "a": "Sí. Es gratis en el navegador. Las descargas gratuitas llevan marca de agua y están limitadas a 800 px. Un pase de un día o Pro quita la marca de agua y permite hasta 4000 px."
+        },
+        {
+          "q": "¿Mi diseño se sube a algún sitio?",
+          "a": "No. La imagen se procesa en tu navegador, en tu propio dispositivo, y no se sube nada."
+        },
+        {
+          "q": "¿Qué tipos de archivo puedo usar?",
+          "a": "Imágenes JPG, PNG y WebP. Usa la versión más nítida y mejor iluminada que tengas."
+        },
+        {
+          "q": "¿Por qué faltan líneas en mi stencil?",
+          "a": "Puede que la sensibilidad sea demasiado baja o Quitar motas demasiado alto, y las líneas tenues se trataron como ruido. Activa el control de desvío: las líneas perdidas salen en rojo. Sube la sensibilidad o baja Quitar motas y revisa de nuevo."
+        },
+        {
+          "q": "¿Cómo imprimo el stencil al tamaño correcto?",
+          "a": "Fija el ancho en milímetros en la herramienta, descarga el PNG e imprime al 100 por ciento sin ajustar a la página. Comprueba la impresión con una regla."
+        }
       ],
       "cta": "Pruébalo con tu propio diseño. Funciona en tu navegador y no se sube nada."
     },
@@ -128,79 +216,167 @@
         {
           "h2": "Por qué es fácil equivocarse con el tamaño del stencil",
           "blocks": [
-            { "p": "Una imagen digital no tiene un tamaño físico propio. Es una cuadrícula de píxeles, y el tamaño en papel depende de cuántos píxeles se colocan en cada pulgada. Eso es el dpi, siglas de puntos por pulgada. El mismo archivo puede imprimirse como un sello o como un cartel." },
-            { "p": "Para un stencil de tatuaje eso es un problema, porque el diseño tiene que llegar a la piel exactamente al tamaño pactado con el cliente. Los programas de impresión a menudo adivinan, escalan la imagen a la página o abren el archivo a 72 o 96 dpi y lo hacen mucho más grande de lo esperado. Acertar con el tamaño significa fijarlo una vez en milímetros y asegurarse de que el archivo lo lleve hasta la impresora." }
+            {
+              "p": "Una imagen digital no tiene un tamaño físico propio. Es una cuadrícula de píxeles, y el tamaño en papel depende de cuántos píxeles se colocan en cada pulgada. Eso es el dpi, siglas de puntos por pulgada. El mismo archivo puede imprimirse como un sello o como un cartel."
+            },
+            {
+              "p": "Para un stencil de tatuaje eso es un problema, porque el diseño tiene que llegar a la piel exactamente al tamaño pactado con el cliente. Los programas de impresión a menudo adivinan, escalan la imagen a la página o abren el archivo a 72 o 96 dpi y lo hacen mucho más grande de lo esperado. Acertar con el tamaño significa fijarlo una vez en milímetros y asegurarse de que el archivo lo lleve hasta la impresora."
+            }
           ]
         },
         {
           "h2": "De milímetros a píxeles a 300 dpi",
           "blocks": [
-            { "p": "Una pulgada tiene 25,4 milímetros. Así que el ancho en píxeles que necesitas es:" },
-            { "p": "**píxeles = milímetros ÷ 25,4 × 300**" },
-            { "p": "Este es el resultado para anchos habituales, redondeado al píxel más cercano:" },
-            { "table": {
-              "head": ["Ancho en la piel", "Píxeles a 300 dpi"],
-              "rows": [
-                ["50 mm", "591 px"],
-                ["80 mm", "945 px"],
-                ["100 mm", "1181 px"],
-                ["150 mm", "1772 px"],
-                ["200 mm", "2362 px"],
-                ["250 mm", "2953 px"],
-                ["300 mm", "3543 px"]
-              ]
-            } },
-            { "p": "No hace falta calcularlo a mano. En la herramienta escribes el ancho en milímetros y muestra al lado el tamaño a 300 dpi. La tabla está para que veas por qué un archivo pequeño no puede imprimirse en grande sin verse borroso." }
+            {
+              "p": "Una pulgada tiene 25,4 milímetros. Así que el ancho en píxeles que necesitas es:"
+            },
+            {
+              "p": "**píxeles = milímetros ÷ 25,4 × 300**"
+            },
+            {
+              "p": "Este es el resultado para anchos habituales, redondeado al píxel más cercano:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Ancho en la piel",
+                  "Píxeles a 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "50 mm",
+                    "591 px"
+                  ],
+                  [
+                    "80 mm",
+                    "945 px"
+                  ],
+                  [
+                    "100 mm",
+                    "1181 px"
+                  ],
+                  [
+                    "150 mm",
+                    "1772 px"
+                  ],
+                  [
+                    "200 mm",
+                    "2362 px"
+                  ],
+                  [
+                    "250 mm",
+                    "2953 px"
+                  ],
+                  [
+                    "300 mm",
+                    "3543 px"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "No hace falta calcularlo a mano. En la herramienta escribes el ancho en milímetros y muestra al lado el tamaño a 300 dpi. La tabla está para que veas por qué un archivo pequeño no puede imprimirse en grande sin verse borroso."
+            }
           ]
         },
         {
           "h2": "Por qué 300 dpi",
           "blocks": [
-            { "p": "300 dpi es el objetivo habitual para imágenes impresas que se miran de cerca. A esa densidad una línea fina sigue saliendo como un trazo limpio y continuo. A densidades menores las curvas muestran bordes escalonados, y un stencil son casi todo curvas." },
-            { "p": "Más no siempre es mejor. Los archivos más grandes tardan más en abrirse e imprimirse, y una línea fina de stencil no sale más nítida de lo que tu impresora puede dibujar. 300 dpi es un equilibrio razonable para el trabajo con stencils y es lo que usa Skinstencil para su salida a tamaño real." }
+            {
+              "p": "300 dpi es el objetivo habitual para imágenes impresas que se miran de cerca. A esa densidad una línea fina sigue saliendo como un trazo limpio y continuo. A densidades menores las curvas muestran bordes escalonados, y un stencil son casi todo curvas."
+            },
+            {
+              "p": "Más no siempre es mejor. Los archivos más grandes tardan más en abrirse e imprimirse, y una línea fina de stencil no sale más nítida de lo que tu impresora puede dibujar. 300 dpi es un equilibrio razonable para el trabajo con stencils y es lo que usa Skinstencil para su salida a tamaño real."
+            }
           ]
         },
         {
           "h2": "Cómo ayuda el valor de 300 dpi dentro del PNG",
           "blocks": [
-            { "p": "Un archivo PNG puede llevar un tamaño físico, guardado como píxeles por metro en un pequeño bloque de datos. Muchos programas lo leen y abren la imagen a ese tamaño. Si el valor dice 300 dpi, una imagen de 1181 px de ancho se abre con unos 100 mm de ancho, sin redimensionar a mano." },
-            { "p": "Cuando falta el valor, los programas recurren a uno por defecto, a menudo 72 o 96 dpi. A 72 dpi esa misma imagen de 1181 px se abriría con unos 416 mm de ancho, más de cuatro veces mayor. Es un motivo frecuente de que un stencil salga de la impresora mucho más grande." },
-            { "p": "Con un pase de un día o Pro, Skinstencil guarda el tamaño de 300 dpi dentro del PNG, para que el software de impresión pueda abrirlo al ancho que fijaste. Con una descarga gratuita, fija tú el ancho de impresión en el cuadro de diálogo." }
+            {
+              "p": "Un archivo PNG puede llevar un tamaño físico, guardado como píxeles por metro en un pequeño bloque de datos. Muchos programas lo leen y abren la imagen a ese tamaño. Si el valor dice 300 dpi, una imagen de 1181 px de ancho se abre con unos 100 mm de ancho, sin redimensionar a mano."
+            },
+            {
+              "p": "Cuando falta el valor, los programas recurren a uno por defecto, a menudo 72 o 96 dpi. A 72 dpi esa misma imagen de 1181 px se abriría con unos 416 mm de ancho, más de cuatro veces mayor. Es un motivo frecuente de que un stencil salga de la impresora mucho más grande."
+            },
+            {
+              "p": "Con un pase de un día o Pro, Skinstencil guarda el tamaño de 300 dpi dentro del PNG, para que el software de impresión pueda abrirlo al ancho que fijaste. Con una descarga gratuita, fija tú el ancho de impresión en el cuadro de diálogo."
+            }
           ]
         },
         {
           "h2": "Imprimir a tamaño real",
           "stepsIntro": "Una rutina corta que evita sorpresas:",
           "steps": [
-            { "name": "Fija el ancho en la herramienta", "text": "Introduce el ancho en la piel en milímetros. La herramienta muestra el tamaño equivalente a 300 dpi." },
-            { "name": "Descarga el PNG", "text": "Con un pase de un día o Pro, el archivo guarda el tamaño de 300 dpi, así que la mayoría de los programas lo abren al ancho correcto." },
-            { "name": "Ábrelo en el cuadro de impresión", "text": "Elige tamaño real o 100 por ciento. Desactiva ajustar a la página, reducir para ajustar y rellenar página." },
-            { "name": "Imprime una prueba en papel normal", "text": "Usa papel corriente para la prueba, no tu material de transferencia." },
-            { "name": "Mide la impresión", "text": "Coloca una regla sobre la parte más ancha y compárala con el ancho que fijaste. Ajusta e imprime de nuevo si hay diferencia." }
+            {
+              "name": "Fija el ancho en la herramienta",
+              "text": "Introduce el ancho en la piel en milímetros. La herramienta muestra el tamaño equivalente a 300 dpi."
+            },
+            {
+              "name": "Descarga el PNG",
+              "text": "Con un pase de un día o Pro, el archivo guarda el tamaño de 300 dpi, así que la mayoría de los programas lo abren al ancho correcto."
+            },
+            {
+              "name": "Ábrelo en el cuadro de impresión",
+              "text": "Elige tamaño real o 100 por ciento. Desactiva ajustar a la página, reducir para ajustar y rellenar página."
+            },
+            {
+              "name": "Imprime una prueba en papel normal",
+              "text": "Usa papel corriente para la prueba, no tu material de transferencia."
+            },
+            {
+              "name": "Mide la impresión",
+              "text": "Coloca una regla sobre la parte más ancha y compárala con el ancho que fijaste. Ajusta e imprime de nuevo si hay diferencia."
+            }
           ]
         },
         {
           "h2": "Comprueba con una regla, siempre",
           "blocks": [
-            { "p": "Las impresoras y los controladores cambian ajustes sin avisar, sobre todo tras una actualización o en un ordenador compartido. Una regla elimina las dudas. Mide el ancho completo del diseño en la impresión, de borde a borde del dibujo y no del papel, y compáralo con los milímetros que fijaste." },
-            { "p": "La herramienta también dibuja una regla a tamaño real que sigue el ancho de impresión que fijaste, para que veas la escala prevista en pantalla. Las pantallas varían, así que esa regla es solo una guía, y la que cuenta es la regla sobre la impresión." },
-            { "p": "Si la impresión se desvía en un porcentaje constante, probablemente hay una opción de escalado activada. Si se desvía en un factor grande, el programa seguramente abrió el archivo a 72 o 96 dpi." }
+            {
+              "p": "Las impresoras y los controladores cambian ajustes sin avisar, sobre todo tras una actualización o en un ordenador compartido. Una regla elimina las dudas. Mide el ancho completo del diseño en la impresión, de borde a borde del dibujo y no del papel, y compáralo con los milímetros que fijaste."
+            },
+            {
+              "p": "La herramienta también dibuja una regla a tamaño real que sigue el ancho de impresión que fijaste, para que veas la escala prevista en pantalla. Las pantallas varían, así que esa regla es solo una guía, y la que cuenta es la regla sobre la impresión."
+            },
+            {
+              "p": "Si la impresión se desvía en un porcentaje constante, probablemente hay una opción de escalado activada. Si se desvía en un factor grande, el programa seguramente abrió el archivo a 72 o 96 dpi."
+            }
           ]
         },
         {
           "h2": "Por qué las descargas gratuitas están limitadas a 800 px",
           "blocks": [
-            { "p": "Las descargas gratuitas llevan marca de agua y están limitadas a 800 px. A 300 dpi, 800 px son unos 68 mm, suficiente para juzgar un diseño pero pequeño para un stencil en la piel. Los stencils más grandes necesitan más píxeles para seguir nítidos, y eso es lo que desbloquea un pase de un día o Pro: sin marca de agua, hasta 4000 px, unos 339 mm de ancho a 300 dpi, y el tamaño de 300 dpi guardado en el archivo." },
-            { "p": "La herramienta gratuita sigue siendo útil para revisar las líneas y el control de desvío antes de decidir desbloquear un tamaño. Nuestra guía para [hacer un stencil desde una foto o dibujo](guide:tattoo-stencil-from-photo) cubre esa parte." }
+            {
+              "p": "Las descargas gratuitas llevan marca de agua y están limitadas a 800 px. A 300 dpi, 800 px son unos 68 mm, suficiente para juzgar un diseño pero pequeño para un stencil en la piel. Los stencils más grandes necesitan más píxeles para seguir nítidos, y eso es lo que desbloquea un pase de un día o Pro: sin marca de agua, hasta 4000 px, unos 339 mm de ancho a 300 dpi, y el tamaño de 300 dpi guardado en el archivo."
+            },
+            {
+              "p": "La herramienta gratuita sigue siendo útil para revisar las líneas y el control de desvío antes de decidir desbloquear un tamaño. Nuestra guía para [hacer un stencil desde una foto o dibujo](guide:tattoo-stencil-from-photo) cubre esa parte."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "¿Cuántos píxeles necesito para un stencil de 100 mm?", "a": "Unos 1181 píxeles de ancho a 300 dpi. La fórmula es milímetros divididos entre 25,4, multiplicados por 300." },
-        { "q": "¿Por qué mi stencil sale demasiado grande?", "a": "A menudo el programa abrió el PNG a 72 o 96 dpi porque no había tamaño guardado en el archivo, o una opción de ajustar a la página lo amplió. Imprime al 100 por ciento y fija tú el ancho, o usa un archivo con el tamaño de 300 dpi guardado." },
-        { "q": "¿Para qué sirve el valor de 300 dpi dentro del PNG?", "a": "Le dice al software de impresión el tamaño físico de la imagen, para que se abra al ancho que fijaste en lugar de adivinar. Las descargas con pase de un día y Pro lo incluyen." },
-        { "q": "¿Cuál es el stencil más grande que puedo descargar?", "a": "Las descargas gratuitas están limitadas a 800 px. Un pase de un día o Pro permite hasta 4000 px, unos 339 mm de ancho a 300 dpi." },
-        { "q": "¿Debo comprobar la impresión con una regla?", "a": "Sí, siempre. Mide el dibujo de borde a borde y compáralo con el ancho que fijaste antes de usar el stencil." }
+        {
+          "q": "¿Cuántos píxeles necesito para un stencil de 100 mm?",
+          "a": "Unos 1181 píxeles de ancho a 300 dpi. La fórmula es milímetros divididos entre 25,4, multiplicados por 300."
+        },
+        {
+          "q": "¿Por qué mi stencil sale demasiado grande?",
+          "a": "A menudo el programa abrió el PNG a 72 o 96 dpi porque no había tamaño guardado en el archivo, o una opción de ajustar a la página lo amplió. Imprime al 100 por ciento y fija tú el ancho, o usa un archivo con el tamaño de 300 dpi guardado."
+        },
+        {
+          "q": "¿Para qué sirve el valor de 300 dpi dentro del PNG?",
+          "a": "Le dice al software de impresión el tamaño físico de la imagen, para que se abra al ancho que fijaste en lugar de adivinar. Las descargas con pase de un día y Pro lo incluyen."
+        },
+        {
+          "q": "¿Cuál es el stencil más grande que puedo descargar?",
+          "a": "Las descargas gratuitas están limitadas a 800 px. Un pase de un día o Pro permite hasta 4000 px, unos 339 mm de ancho a 300 dpi."
+        },
+        {
+          "q": "¿Debo comprobar la impresión con una regla?",
+          "a": "Sí, siempre. Mide el dibujo de borde a borde y compáralo con el ancho que fijaste antes de usar el stencil."
+        }
       ],
       "cta": "Fija un ancho en milímetros y mira el tamaño a 300 dpi."
     },
@@ -216,88 +392,457 @@
         {
           "h2": "Tres enfoques habituales",
           "blocks": [
-            { "p": "Un stencil de tatuaje empieza como un dibujo y termina como un patrón de líneas en una hoja de transferencia que se puede presionar sobre la piel. Hay varias formas de ir de uno a otro. Esta guía describe tres habituales en términos neutrales. No las clasifica, porque la elección correcta depende de tu volumen, tu presupuesto, tu estudio y tus propias costumbres." },
-            { "p": "Tampoco cubre la aplicación ni los cuidados posteriores. Uses el método que uses, sigue las normas de higiene de tu estudio." }
+            {
+              "p": "Un stencil de tatuaje empieza como un dibujo y termina como un patrón de líneas en una hoja de transferencia que se puede presionar sobre la piel. Hay varias formas de ir de uno a otro. Esta guía describe tres habituales en términos neutrales. No las clasifica, porque la elección correcta depende de tu volumen, tu presupuesto, tu estudio y tus propias costumbres."
+            },
+            {
+              "p": "Tampoco cubre la aplicación ni los cuidados posteriores. Uses el método que uses, sigue las normas de higiene de tu estudio."
+            }
           ]
         },
         {
           "h2": "Calcar a mano",
           "blocks": [
-            { "p": "El método más antiguo es calcar el diseño tú mismo. Pones papel de calco, o una hoja de transferencia pensada para dibujo a mano, sobre la obra y sigues las líneas con un bolígrafo. Algunos artistas dibujan directamente sobre el material de transferencia. Otros usan una mesa de luz o una ventana para ver la obra a través del papel." },
-            { "ul": [
-              "Necesita: el dibujo original, el material de transferencia y un bolígrafo adecuado.",
-              "Fortaleza: ningún equipo aparte de papel y bolígrafos, y cada línea pasa por tu propia mano, así que tomas pequeñas decisiones sobre la marcha.",
-              "Límite: lleva tiempo, ampliar o reducir el diseño exige un paso aparte y repetir un diseño es lento."
-            ] },
-            { "p": "Un archivo de línea limpio sigue ayudando aquí. Puedes imprimir una copia suave en papel normal al tamaño correcto y calcar encima, lo que fija el tamaño sin una segunda herramienta." }
+            {
+              "p": "El método más antiguo es calcar el diseño tú mismo. Pones papel de calco, o una hoja de transferencia pensada para dibujo a mano, sobre la obra y sigues las líneas con un bolígrafo. Algunos artistas dibujan directamente sobre el material de transferencia. Otros usan una mesa de luz o una ventana para ver la obra a través del papel."
+            },
+            {
+              "ul": [
+                "Necesita: el dibujo original, el material de transferencia y un bolígrafo adecuado.",
+                "Fortaleza: ningún equipo aparte de papel y bolígrafos, y cada línea pasa por tu propia mano, así que tomas pequeñas decisiones sobre la marcha.",
+                "Límite: lleva tiempo, ampliar o reducir el diseño exige un paso aparte y repetir un diseño es lento."
+              ]
+            },
+            {
+              "p": "Un archivo de línea limpio sigue ayudando aquí. Puedes imprimir una copia suave en papel normal al tamaño correcto y calcar encima, lo que fija el tamaño sin una segunda herramienta."
+            }
           ]
         },
         {
           "h2": "Impresoras térmicas",
           "blocks": [
-            { "p": "Las impresoras térmicas de stencils usan calor, no tinta, para formar el patrón sobre un papel de transferencia especial de varias capas. La impresora lee una imagen digital o un original en papel y produce el stencil de una pasada. Los modelos difieren en cómo se conectan, así que comprueba qué admite la tuya, sea un cable USB, un ordenador conectado o una app de móvil." },
-            { "ul": [
-              "Necesita: una impresora térmica, papel de transferencia térmico compatible y un archivo u original desde el que imprimir.",
-              "Fortaleza: rápida y constante una vez configurada, y las copias del mismo diseño son fáciles.",
-              "Límite: la impresora y el papel son un coste, y un archivo algo tenue, demasiado cargado o del tamaño equivocado se imprime exactamente así."
-            ] },
-            { "p": "Aquí es donde más importa un archivo de stencil de línea limpio. Una impresora térmica imprime las líneas que se le dan. Los grises, la textura del fondo y las líneas muy finas pueden imprimirse mal o no imprimirse, y un archivo abierto al tamaño equivocado se imprime al tamaño equivocado. Líneas negras sobre fondo blanco liso, a un ancho conocido, dejan a la impresora lo mínimo en lo que equivocarse." }
+            {
+              "p": "Las impresoras térmicas de stencils usan calor, no tinta, para formar el patrón sobre un papel de transferencia especial de varias capas. La impresora lee una imagen digital o un original en papel y produce el stencil de una pasada. Los modelos difieren en cómo se conectan, así que comprueba qué admite la tuya, sea un cable USB, un ordenador conectado o una app de móvil."
+            },
+            {
+              "ul": [
+                "Necesita: una impresora térmica, papel de transferencia térmico compatible y un archivo u original desde el que imprimir.",
+                "Fortaleza: rápida y constante una vez configurada, y las copias del mismo diseño son fáciles.",
+                "Límite: la impresora y el papel son un coste, y un archivo algo tenue, demasiado cargado o del tamaño equivocado se imprime exactamente así."
+              ]
+            },
+            {
+              "p": "Aquí es donde más importa un archivo de stencil de línea limpio. Una impresora térmica imprime las líneas que se le dan. Los grises, la textura del fondo y las líneas muy finas pueden imprimirse mal o no imprimirse, y un archivo abierto al tamaño equivocado se imprime al tamaño equivocado. Líneas negras sobre fondo blanco liso, a un ancho conocido, dejan a la impresora lo mínimo en lo que equivocarse."
+            }
           ]
         },
         {
           "h2": "Impresiones de transferencia en impresoras normales",
           "blocks": [
-            { "p": "Algunos artistas imprimen el stencil con una impresora de inyección o láser estándar sobre papel hecho para funcionar como capa de transferencia, o imprimen en papel normal y lo usan como referencia o base para calcar. Lo que funciona depende del tipo de impresora y del papel, así que sigue las instrucciones del material y prueba una hoja antes de usarla de verdad." },
-            { "ul": [
-              "Necesita: una impresora normal, papel apto para transferencia si quieres transferir directamente y un archivo al tamaño correcto.",
-              "Fortaleza: puede que ya tengas la impresora, e imprime en alta resolución.",
-              "Límite: el material debe estar hecho para este uso, el papel de oficina normal no es material de transferencia, y ajustes de la impresora como el escalado pueden cambiar el tamaño."
-            ] },
-            { "p": "Como con cualquier método digital, pon el cuadro de impresión en tamaño real y mide el resultado. La guía para [imprimir a tamaño real](guide:tattoo-stencil-size-true-size-print) explica cómo." }
+            {
+              "p": "Algunos artistas imprimen el stencil con una impresora de inyección o láser estándar sobre papel hecho para funcionar como capa de transferencia, o imprimen en papel normal y lo usan como referencia o base para calcar. Lo que funciona depende del tipo de impresora y del papel, así que sigue las instrucciones del material y prueba una hoja antes de usarla de verdad."
+            },
+            {
+              "ul": [
+                "Necesita: una impresora normal, papel apto para transferencia si quieres transferir directamente y un archivo al tamaño correcto.",
+                "Fortaleza: puede que ya tengas la impresora, e imprime en alta resolución.",
+                "Límite: el material debe estar hecho para este uso, el papel de oficina normal no es material de transferencia, y ajustes de la impresora como el escalado pueden cambiar el tamaño."
+              ]
+            },
+            {
+              "p": "Como con cualquier método digital, pon el cuadro de impresión en tamaño real y mide el resultado. La guía para [imprimir a tamaño real](guide:tattoo-stencil-size-true-size-print) explica cómo."
+            }
           ]
         },
         {
           "h2": "Cuándo importa un archivo de stencil de línea limpio",
           "blocks": [
-            { "p": "Cualquier método que parta de un archivo digital se beneficia de un archivo hecho para el trabajo. Un archivo de stencil se diferencia de una foto en varios puntos:" },
-            { "ul": [
-              "Está hecho solo de líneas, sin sombreado, textura de papel ni fondo.",
-              "Las líneas son oscuras y continuas, para que el calor o la tinta tengan algo sólido que reproducir.",
-              "Tiene un ancho conocido, así que se imprime al tamaño acordado con el cliente.",
-              "Las motas tenues se eliminan, para que no se conviertan en marcas en la transferencia."
-            ] },
-            { "p": "Un creador de stencils de tatuaje produce ese tipo de archivo a partir de una foto o un dibujo. Nuestra guía para [hacer un stencil desde una foto o dibujo](guide:tattoo-stencil-from-photo) recorre los controles." }
+            {
+              "p": "Cualquier método que parta de un archivo digital se beneficia de un archivo hecho para el trabajo. Un archivo de stencil se diferencia de una foto en varios puntos:"
+            },
+            {
+              "ul": [
+                "Está hecho solo de líneas, sin sombreado, textura de papel ni fondo.",
+                "Las líneas son oscuras y continuas, para que el calor o la tinta tengan algo sólido que reproducir.",
+                "Tiene un ancho conocido, así que se imprime al tamaño acordado con el cliente.",
+                "Las motas tenues se eliminan, para que no se conviertan en marcas en la transferencia."
+              ]
+            },
+            {
+              "p": "Un creador de stencils de tatuaje produce ese tipo de archivo a partir de una foto o un dibujo. Nuestra guía para [hacer un stencil desde una foto o dibujo](guide:tattoo-stencil-from-photo) recorre los controles."
+            }
           ]
         },
         {
           "h2": "Elegir entre ellos",
           "blocks": [
-            { "p": "Unas pocas preguntas suelen decidirlo:" },
-            { "ul": [
-              "¿Cuántos stencils haces a la semana? Más volumen favorece el equipo que repite rápido.",
-              "¿Cada cuánto cambias el tamaño de un diseño? Los métodos digitales facilitan los cambios de tamaño, y el calco a mano los convierte en un trabajo aparte.",
-              "¿Cuánto del trabajo de línea quieres redibujar tú? El calco te lo da por defecto.",
-              "¿Qué tienes ya? Una impresora existente es el punto de partida más barato, siempre que el papel le sirva."
-            ] },
-            { "p": "Muchos artistas usan más de un método, por ejemplo un contorno impreso para las formas principales y calco a mano para el detalle fino. Nada aquí exige elegir una cosa u otra." }
+            {
+              "p": "Unas pocas preguntas suelen decidirlo:"
+            },
+            {
+              "ul": [
+                "¿Cuántos stencils haces a la semana? Más volumen favorece el equipo que repite rápido.",
+                "¿Cada cuánto cambias el tamaño de un diseño? Los métodos digitales facilitan los cambios de tamaño, y el calco a mano los convierte en un trabajo aparte.",
+                "¿Cuánto del trabajo de línea quieres redibujar tú? El calco te lo da por defecto.",
+                "¿Qué tienes ya? Una impresora existente es el punto de partida más barato, siempre que el papel le sirva."
+              ]
+            },
+            {
+              "p": "Muchos artistas usan más de un método, por ejemplo un contorno impreso para las formas principales y calco a mano para el detalle fino. Nada aquí exige elegir una cosa u otra."
+            }
           ]
         },
         {
           "h2": "Preparar el archivo, elijas el método que elijas",
           "blocks": [
-            { "p": "Sea cual sea la ruta, la preparación del archivo es la misma. Haz una versión de línea limpia, fija el ancho en milímetros, descárgala a un tamaño suficientemente nítido para ese ancho e imprime una prueba en papel normal. Skinstencil es gratis en el navegador y no se sube nada. Las descargas gratuitas llevan marca de agua y están limitadas a 800 px. Un pase de un día o Pro quita la marca de agua, permite hasta 4000 px y guarda el tamaño de 300 dpi en el PNG." },
-            { "p": "Después mide la prueba con una regla antes de usar tu material de transferencia." }
+            {
+              "p": "Sea cual sea la ruta, la preparación del archivo es la misma. Haz una versión de línea limpia, fija el ancho en milímetros, descárgala a un tamaño suficientemente nítido para ese ancho e imprime una prueba en papel normal. Skinstencil es gratis en el navegador y no se sube nada. Las descargas gratuitas llevan marca de agua y están limitadas a 800 px. Un pase de un día o Pro quita la marca de agua, permite hasta 4000 px y guarda el tamaño de 300 dpi en el PNG."
+            },
+            {
+              "p": "Después mide la prueba con una regla antes de usar tu material de transferencia."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "¿Qué diferencia hay entre un archivo de stencil y una foto?", "a": "Un archivo de stencil contiene solo líneas oscuras limpias sobre un fondo liso, a un tamaño conocido. Una foto tiene tonos, textura y fondo que la mayoría de los métodos de transferencia no pueden usar." },
-        { "q": "¿Necesito una impresora térmica para usar un archivo de stencil?", "a": "No. Un archivo puede imprimirse en papel normal y calcarse a mano, o imprimirse en papel apto para transferencia con una impresora normal. Una impresora térmica es una opción entre varias." },
-        { "q": "¿Puedo imprimir un stencil en papel normal y calcarlo?", "a": "Sí. Una impresión suave a tamaño real es una forma habitual de calcar, porque el tamaño ya está resuelto." },
-        { "q": "¿Qué método debo usar?", "a": "Depende de cuántos stencils haces, del equipo que tienes y de cómo te gusta trabajar. Muchos artistas combinan métodos." },
-        { "q": "¿El archivo debe tener un tamaño determinado?", "a": "Debe ser lo bastante nítido para el ancho que imprimes. A 300 dpi, un stencil de 100 mm necesita unos 1181 píxeles. Fija el ancho en milímetros en la herramienta y muestra el tamaño en píxeles." }
+        {
+          "q": "¿Qué diferencia hay entre un archivo de stencil y una foto?",
+          "a": "Un archivo de stencil contiene solo líneas oscuras limpias sobre un fondo liso, a un tamaño conocido. Una foto tiene tonos, textura y fondo que la mayoría de los métodos de transferencia no pueden usar."
+        },
+        {
+          "q": "¿Necesito una impresora térmica para usar un archivo de stencil?",
+          "a": "No. Un archivo puede imprimirse en papel normal y calcarse a mano, o imprimirse en papel apto para transferencia con una impresora normal. Una impresora térmica es una opción entre varias."
+        },
+        {
+          "q": "¿Puedo imprimir un stencil en papel normal y calcarlo?",
+          "a": "Sí. Una impresión suave a tamaño real es una forma habitual de calcar, porque el tamaño ya está resuelto."
+        },
+        {
+          "q": "¿Qué método debo usar?",
+          "a": "Depende de cuántos stencils haces, del equipo que tienes y de cómo te gusta trabajar. Muchos artistas combinan métodos."
+        },
+        {
+          "q": "¿El archivo debe tener un tamaño determinado?",
+          "a": "Debe ser lo bastante nítido para el ancho que imprimes. A 300 dpi, un stencil de 100 mm necesita unos 1181 píxeles. Fija el ancho en milímetros en la herramienta y muestra el tamaño en píxeles."
+        }
       ],
       "cta": "Crea un archivo de stencil de línea limpio y luego imprímelo con el método que uses."
+    },
+    "brow-mapping-on-a-photo-start-arch-end": {
+      "tool": "brow",
+      "howto": true,
+      "title": "Mapeo de cejas sobre una foto: inicio, arco y final",
+      "short": "Mapeo de cejas sobre una foto",
+      "blurb": "Las tres líneas clásicas desde la fosa nasal y cómo colocar inicio, arco y final sobre la foto de una clienta.",
+      "metaTitle": "Mapeo de cejas sobre una foto: inicio, arco y final",
+      "metaDesc": "Paso a paso: mapeo de cejas sobre la foto de una clienta con las líneas de la nariz para inicio, arco y final, y la guía impresa a tamaño real.",
+      "updated": "2026-11-25",
+      "answer": "Para hacer un mapeo de cejas sobre una foto, carga una foto frontal de la clienta y traza tres líneas desde el lateral de la nariz: recta hacia arriba para el inicio de la ceja, por el borde externo del iris para el arco y por la comisura externa del ojo para el final. El inicio y el final quedan a la misma altura.",
+      "sections": [
+        {
+          "h2": "Qué es el mapeo de cejas",
+          "blocks": [
+            {
+              "p": "El mapeo de cejas, o mapping de cejas microblading, es el paso previo a cualquier trabajo de cejas: marcar dónde debe empezar una ceja, dónde está su punto más alto y dónde debe terminar. Le da a la artista una referencia sacada del propio rostro de la clienta en lugar de un cálculo a ojo."
+            },
+            {
+              "p": "El método clásico usa una regla o un lápiz apoyado en la cara. Las mismas tres líneas se pueden dibujar sobre una foto, donde es fácil ajustarlas, medirlas e imprimirlas. Sirven como diseño de cejas de apoyo: son guías de dibujo habituales, no reglas. La artista decide cada punto, y la forma final depende de su criterio y de lo que quiera la clienta."
+            }
+          ]
+        },
+        {
+          "h2": "Las tres líneas desde la fosa nasal",
+          "blocks": [
+            {
+              "p": "Las tres líneas parten del lateral de la nariz, del borde externo del ala nasal. Cada una sube por la cara y termina donde encuentra la zona de la ceja."
+            },
+            {
+              "h3": "Línea 1: el inicio"
+            },
+            {
+              "p": "Una línea que sube recta desde la fosa nasal. El punto donde cruza la ceja marca dónde debe empezar. Suele pasar cerca de la comisura interna del ojo, pero los rostros son distintos: toma la comisura como comprobación y no como regla."
+            },
+            {
+              "h3": "Línea 2: el arco"
+            },
+            {
+              "p": "Una línea desde la fosa nasal que pasa por el borde externo del iris. El punto más alto del arco queda cerca de donde esta línea encuentra la ceja."
+            },
+            {
+              "h3": "Línea 3: el final"
+            },
+            {
+              "p": "Una línea desde la fosa nasal que pasa por la comisura externa del ojo. La cola de la ceja termina donde esta línea la encuentra, a la misma altura que el inicio."
+            },
+            {
+              "h3": "El nivel"
+            },
+            {
+              "p": "El inicio y el final están a la misma altura, medida a lo largo de la cara y no a lo largo del borde de la foto. Si la cabeza está inclinada, una línea horizontal en la foto no es horizontal en la cara, por eso la herramienta mide a lo largo de la línea entre las dos pupilas."
+            }
+          ]
+        },
+        {
+          "h2": "Cómo mapear una ceja sobre una foto, paso a paso",
+          "stepsIntro": "Estos son los pasos de la herramienta de mapeo de cejas de Skinstencil, en orden.",
+          "steps": [
+            {
+              "name": "Haz una foto frontal",
+              "text": "Cabeza recta, cámara a la altura de los ojos, cara neutra, ojos abiertos y mirando a la cámara. Pelo y maquillaje fuera de las cejas, luz uniforme."
+            },
+            {
+              "name": "Confirma el consentimiento y carga la foto",
+              "text": "Marca la casilla de consentimiento y suelta la foto. La cara se detecta en tu dispositivo y no se sube nada."
+            },
+            {
+              "name": "Revisa los puntos de la cara",
+              "text": "La herramienta coloca las pupilas, los puntos de la nariz, el borde externo de cada iris y las comisuras de los ojos. Arrastra cualquier punto mal colocado. Si no se detecta ninguna cara, coloca los puntos a mano."
+            },
+            {
+              "name": "Ajusta la escala",
+              "text": "Introduce la distancia entre las pupilas de la clienta en milímetros, o coloca una tarjeta estándar junto a la cara y marca su lado largo."
+            },
+            {
+              "name": "Lee inicio, arco y final",
+              "text": "Las tres líneas se dibujan para ambas cejas con los marcadores S, A y E. El contorno fino es la ceja actual según los puntos de la cara."
+            },
+            {
+              "name": "Ajusta los marcadores",
+              "text": "Arrastra S, A y E donde quieras. Las líneas, la línea de nivel y las medidas se actualizan al instante."
+            },
+            {
+              "name": "Descarga o imprime",
+              "text": "Guarda las guías como PNG, con o sin la foto, o imprímelas a tamaño real con la barra de regla para comprobar la escala."
+            }
+          ]
+        },
+        {
+          "h2": "Comprueba el nivel y la simetría",
+          "blocks": [
+            {
+              "p": "Una vez colocados los marcadores, fíjate en tres cosas. Primero, el inicio y el final de cada ceja deben estar a la misma altura, y la herramienta muestra cualquier diferencia en milímetros. Segundo, compara las dos cejas: anchura, longitud y altura del arco aparecen una al lado de la otra. Tercero, mira la distancia entre los dos inicios, que debería ser acorde al ancho de la nariz y a la separación entre los ojos."
+            },
+            {
+              "p": "Los rostros rara vez son simétricos, así que las pequeñas diferencias son normales. Los números te ayudan a verlas. Qué hacer con ellas lo decides tú."
+            }
+          ]
+        },
+        {
+          "h2": "Lo que una foto puede y no puede decirte",
+          "blocks": [
+            {
+              "p": "Una foto es plana. Una cabeza un poco girada, una barbilla inclinada o un gran angular muy cerca de la cara cambian las distancias. La herramienta avisa cuando la línea de los ojos está inclinada más de 5 grados o la cara parece girada, pero no puede eliminar el efecto. Para un resultado más fiable, usa una foto frontal y comprueba las guías sobre la clienta antes de empezar."
+            },
+            {
+              "p": "La herramienta no hace afirmaciones médicas ni estéticas y no predice resultados."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Dónde empieza una ceja?",
+          "a": "En el mapeo clásico, el inicio está donde una línea trazada recta hacia arriba desde el lateral de la fosa nasal encuentra la ceja. A menudo pasa cerca de la comisura interna del ojo, pero es una guía y la artista decide."
+        },
+        {
+          "q": "¿Cómo se encuentra el arco?",
+          "a": "Traza una línea desde la fosa nasal por el borde externo del iris. El punto más alto del arco queda cerca de donde esa línea encuentra la ceja."
+        },
+        {
+          "q": "¿La herramienta decide la forma de la ceja?",
+          "a": "No. Dibuja las líneas guía habituales y las medidas. Cada punto se puede arrastrar y la artista decide la forma final."
+        },
+        {
+          "q": "¿Se sube la foto de la clienta?",
+          "a": "No. La cara la detecta un modelo que funciona en tu navegador y se sirve desde el mismo sitio. La foto no se envía a ningún lado y no se guarda."
+        }
+      ],
+      "cta": "Pruébalo con la foto de una clienta. La herramienta detecta la cara en tu dispositivo, dibuja las tres líneas y te deja arrastrar cada punto. [Abrir el mapeo de cejas](brow)."
+    },
+    "brow-mapping-measurements-scale-and-print-true-size": {
+      "tool": "brow",
+      "howto": false,
+      "title": "Medidas del mapeo de cejas: escalar una foto e imprimir a tamaño real",
+      "short": "Medidas del mapeo de cejas e impresión a tamaño real",
+      "blurb": "La distancia entre pupilas o una tarjeta para la escala, qué significa cada medida y cómo imprimir la guía a su tamaño real.",
+      "metaTitle": "Medidas del mapeo de cejas: escala y tamaño real",
+      "metaDesc": "Una foto de cara no tiene escala. Con la distancia entre pupilas o una tarjeta, los píxeles pasan a milímetros: lee las medidas e imprime la guía real.",
+      "updated": "2026-11-25",
+      "answer": "Una foto de cara no tiene escala real, así que las medidas del mapeo de cejas necesitan una longitud conocida. Introduce la distancia entre las pupilas de la clienta en milímetros, o coloca una tarjeta estándar de 85,6 mm como referencia, y la herramienta convierte los píxeles en milímetros. Luego imprime al 100 por ciento y comprueba la barra de regla en la hoja.",
+      "sections": [
+        {
+          "h2": "Por qué una foto no tiene escala",
+          "blocks": [
+            {
+              "p": "Una foto es una cuadrícula de píxeles. La misma cara puede ocupar 800 píxeles o 4000, así que la distancia en píxeles entre dos puntos no dice nada de milímetros hasta que le indicas a la herramienta una longitud real. Todo lo demás sale de ese único número: cada píxel vale una cantidad fija de milímetros, y cada medida es una distancia en píxeles multiplicada por ese valor."
+            }
+          ]
+        },
+        {
+          "h2": "Opción 1: la distancia entre pupilas",
+          "blocks": [
+            {
+              "p": "Mide con una regla la distancia entre las pupilas de la clienta, mirando al frente, e introdúcela. La herramienta encuentra el centro de las dos pupilas en la foto y calcula:"
+            },
+            {
+              "p": "**milímetros por píxel = distancia entre pupilas en mm ÷ distancia entre pupilas en píxeles**"
+            },
+            {
+              "p": "La herramienta empieza en 63 mm, un valor típico en adultos. Los adultos varían, así que un valor medido en tu clienta es más fiable que el predeterminado. Si introduces 66 en lugar de 63, todas las medidas aumentan en torno a un 5 por ciento."
+            }
+          ]
+        },
+        {
+          "h2": "Opción 2: una tarjeta como referencia",
+          "blocks": [
+            {
+              "p": "Una tarjeta bancaria o de identidad estándar mide 85,6 mm de ancho. Sujeta una plana contra la frente, en el mismo plano que la cara, y fotografíala con la clienta. En la herramienta, cambia a la opción de tarjeta y arrastra los dos puntos a los extremos del lado largo de la tarjeta. La herramienta divide 85,6 mm entre la distancia en píxeles que hay entre ellos."
+            },
+            {
+              "p": "Mantén la tarjeta plana y paralela a la cámara. Una tarjeta más cerca del objetivo que la cara, o inclinada, da una escala equivocada."
+            }
+          ]
+        },
+        {
+          "h2": "Qué significa cada medida",
+          "blocks": [
+            {
+              "p": "La herramienta mide a lo largo de la cara, usando la línea entre las pupilas como horizontal, así que una cabeza algo inclinada no distorsiona los números. Los valores están en milímetros salvo que se indique otra cosa."
+            },
+            {
+              "table": {
+                "head": [
+                  "Medida",
+                  "Qué es"
+                ],
+                "rows": [
+                  [
+                    "Anchura de inicio a final",
+                    "La distancia del inicio S al final E, medida a lo largo de la horizontal de la cara."
+                  ],
+                  [
+                    "Longitud S, A, E",
+                    "La longitud del recorrido de la guía de la ceja por el inicio, el arco y el final."
+                  ],
+                  [
+                    "Altura del arco sobre S-E",
+                    "Cuánto queda el arco A por encima de la recta de S a E."
+                  ],
+                  [
+                    "Ángulo de la cola (A a E)",
+                    "El ángulo de la línea del arco al final, en grados respecto a la horizontal. Positivo significa que el final apunta hacia abajo."
+                  ],
+                  [
+                    "Diferencia de nivel inicio-final",
+                    "La diferencia de altura entre S y E. Cero significa que están a la misma altura."
+                  ],
+                  [
+                    "Grosor de la ceja actual",
+                    "El grosor medio del contorno de la ceja actual según los puntos de la cara."
+                  ],
+                  [
+                    "Entre los dos inicios",
+                    "La distancia horizontal entre el inicio izquierdo y el derecho."
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "h2": "Qué precisión se puede esperar",
+          "blocks": [
+            {
+              "p": "Los números valen lo que valgan la foto y la escala. Tres cosas importan sobre todo:"
+            },
+            {
+              "ul": [
+                "Una foto frontal. La herramienta avisa cuando la línea de los ojos está inclinada más de 5 grados o la cara parece girada.",
+                "Una escala correcta. Una distancia entre pupilas equivocada, o una tarjeta en un plano distinto al de la cara, escala mal todos los números.",
+                "Resolución suficiente. Una cara pequeña en la foto deja pocos píxeles por milímetro."
+              ]
+            },
+            {
+              "p": "La herramienta aún no se ha validado con mediciones en clientas reales. Toma los números como una ayuda de dibujo y comprueba la guía sobre la clienta."
+            }
+          ]
+        },
+        {
+          "h2": "Imprimir a tamaño real",
+          "stepsIntro": "La opción de impresión ajusta la página al ancho real de la guía en milímetros y añade una barra de regla.",
+          "steps": [
+            {
+              "name": "Ajusta la escala",
+              "text": "Introduce la distancia entre pupilas o coloca la tarjeta."
+            },
+            {
+              "name": "Imprime la guía",
+              "text": "Usa la opción de impresión. La guía se imprime con su ancho en milímetros."
+            },
+            {
+              "name": "Imprime al 100 por ciento",
+              "text": "En el cuadro de impresión elige tamaño real. Desactiva ajustar a la página y reducir."
+            },
+            {
+              "name": "Comprueba la barra de regla",
+              "text": "Apoya una regla real sobre la barra de la hoja. Si no mide lo que indica, hay una opción de escalado activada. Corrígela y vuelve a imprimir."
+            }
+          ],
+          "blocks": [
+            {
+              "p": "Una descarga en PNG funciona igual cuando lleva su tamaño a 300 dpi, que un pase de un día o Pro guarda en el archivo. A 300 dpi, un ancho en milímetros necesita esta cantidad de píxeles:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Ancho de la guía",
+                  "Píxeles a 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "100 mm",
+                    "1181 px"
+                  ],
+                  [
+                    "120 mm",
+                    "1417 px"
+                  ],
+                  [
+                    "140 mm",
+                    "1654 px"
+                  ],
+                  [
+                    "160 mm",
+                    "1890 px"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Las descargas gratuitas llevan marca de agua y tienen un tamaño limitado, así que ajusta tú el ancho de impresión en el cuadro de impresión, o usa la opción de impresión, que siempre imprime al ancho real."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Son 63 mm lo correcto para todas las clientas?",
+          "a": "No. Es un valor típico en adultos que sirve de punto de partida. Los adultos son distintos, así que mide la distancia entre pupilas de tu clienta e introdúcela para una escala más fiable."
+        },
+        {
+          "q": "¿Puedo usar una tarjeta en lugar de la distancia entre pupilas?",
+          "a": "Sí. Sujeta una tarjeta estándar de 85,6 mm de ancho plana contra la frente, en el mismo plano que la cara, y arrastra los dos puntos de referencia a los extremos de su lado largo."
+        },
+        {
+          "q": "¿Por qué avisa la herramienta de la inclinación de la cabeza?",
+          "a": "Una cabeza inclinada cambia los ángulos y las distancias en una foto plana. La herramienta sigue la línea de los ojos, pero una foto frontal da líneas más fiables. Avisa cuando la inclinación supera los 5 grados."
+        },
+        {
+          "q": "¿La hoja impresa sale a tamaño real?",
+          "a": "Sí, cuando imprimes al 100 por ciento. La opción de impresión ajusta el ancho de la página en milímetros y añade una barra de regla para que compruebes la escala con una regla real."
+        }
+      ],
+      "cta": "Ajusta la escala, lee las medidas e imprime la guía a tamaño real. [Abrir el mapeo de cejas](brow)."
     }
   }
 }

@@ -8,10 +8,10 @@
     "updated": "Dernière mise à jour",
     "answerLabel": "La réponse courte",
     "faq": "Questions",
-    "indexTitle": "Guides du pochoir de tatouage",
-    "indexMetaTitle": "Pochoir tatouage : guides pratiques | Skinstencil",
-    "indexMetaDesc": "Guides pratiques pour tatoueurs : créer un pochoir de tatouage depuis une photo ou un dessin, l'imprimer à taille réelle et le transférer sur papier.",
-    "indexLead": "Des guides courts et pratiques pour les tatoueurs qui fabriquent leurs propres pochoirs. Chacun se termine par l'outil gratuit, qui tourne dans votre navigateur et ne téléverse rien.",
+    "indexTitle": "Guides du pochoir de tatouage et de la cartographie des sourcils",
+    "indexMetaTitle": "Guides : pochoir tatouage et mapping sourcils | Skinstencil",
+    "indexMetaDesc": "Guides pratiques pour tatoueurs et artistes sourcils : pochoir depuis une photo, cartographie des sourcils sur photo, impression à taille réelle.",
+    "indexLead": "Des guides courts et pratiques pour les artistes. Chacun se termine par l'outil gratuit correspondant, qui tourne dans votre navigateur et ne téléverse rien.",
     "readGuide": "Lire le guide",
     "homeSectionTitle": "Guides du pochoir de tatouage",
     "homeSectionLead": "Comment créer un pochoir, l'imprimer à taille réelle et le mettre sur papier.",
@@ -19,7 +19,13 @@
     "theme": "Clair ou sombre",
     "language": "Langue"
   },
-  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods"],
+  "order": [
+    "tattoo-stencil-from-photo",
+    "tattoo-stencil-size-true-size-print",
+    "tattoo-stencil-transfer-methods",
+    "brow-mapping-on-a-photo-start-arch-end",
+    "brow-mapping-measurements-scale-and-print-true-size"
+  ],
   "guides": {
     "tattoo-stencil-from-photo": {
       "howto": true,
@@ -34,85 +40,167 @@
         {
           "h2": "Ce que fait vraiment un générateur de pochoir de tatouage",
           "blocks": [
-            { "p": "Un pochoir est le contour d'un motif, réduit à des lignes nettes pour pouvoir être transféré sur la peau. Un générateur de pochoir de tatouage prend une image et garde les contours qui comptent, en écartant les tons, le grain du papier et le bruit. Le résultat : des lignes sombres sur fond blanc, la forme dont la plupart des méthodes de transfert ont besoin." },
-            { "p": "Skinstencil fait cela avec un traitement d'image ordinaire dans votre navigateur. Votre fichier est lu sur votre propre appareil et n'est pas téléversé. C'est important quand un motif appartient à un client. L'outil fonctionne aussi dès que la page est chargée, sans compte." }
+            {
+              "p": "Un pochoir est le contour d'un motif, réduit à des lignes nettes pour pouvoir être transféré sur la peau. Un générateur de pochoir de tatouage prend une image et garde les contours qui comptent, en écartant les tons, le grain du papier et le bruit. Le résultat : des lignes sombres sur fond blanc, la forme dont la plupart des méthodes de transfert ont besoin."
+            },
+            {
+              "p": "Skinstencil fait cela avec un traitement d'image ordinaire dans votre navigateur. Votre fichier est lu sur votre propre appareil et n'est pas téléversé. C'est important quand un motif appartient à un client. L'outil fonctionne aussi dès que la page est chargée, sans compte."
+            }
           ]
         },
         {
           "h2": "Choisir une source qui se convertit proprement",
           "blocks": [
-            { "p": "Les bonnes sources ont quelques points communs. Prenez-en une qui en réunit le plus possible :" },
-            { "ul": [
-              "Un contraste net entre les lignes et le fond, par exemple de l'encre sur papier blanc.",
-              "Le motif remplit le cadre au lieu de se nicher dans un coin.",
-              "À plat et bien face à l'appareil ou au scanner, sans courbure ni perspective.",
-              "Une lumière uniforme, sans l'ombre de votre main ou de votre téléphone sur la feuille.",
-              "Assez de résolution pour que les lignes fines fassent encore plusieurs pixels de large."
-            ] },
-            { "p": "Un scan à plat est le moyen le plus simple d'obtenir tout cela. Si vous photographiez, travaillez près d'une fenêtre en lumière du jour, tenez le téléphone parallèle à la feuille et évitez le flash, qui laisse une tache claire au milieu. N'utilisez que des motifs que vous avez créés ou que vous avez le droit d'utiliser." }
+            {
+              "p": "Les bonnes sources ont quelques points communs. Prenez-en une qui en réunit le plus possible :"
+            },
+            {
+              "ul": [
+                "Un contraste net entre les lignes et le fond, par exemple de l'encre sur papier blanc.",
+                "Le motif remplit le cadre au lieu de se nicher dans un coin.",
+                "À plat et bien face à l'appareil ou au scanner, sans courbure ni perspective.",
+                "Une lumière uniforme, sans l'ombre de votre main ou de votre téléphone sur la feuille.",
+                "Assez de résolution pour que les lignes fines fassent encore plusieurs pixels de large."
+              ]
+            },
+            {
+              "p": "Un scan à plat est le moyen le plus simple d'obtenir tout cela. Si vous photographiez, travaillez près d'une fenêtre en lumière du jour, tenez le téléphone parallèle à la feuille et évitez le flash, qui laisse une tache claire au milieu. N'utilisez que des motifs que vous avez créés ou que vous avez le droit d'utiliser."
+            }
           ]
         },
         {
           "h2": "Mode Dessin ou mode Photo",
           "blocks": [
-            { "p": "L'outil demande quel type de source vous chargez, car un dessin au trait et une photographie n'appellent pas le même traitement." },
-            { "h3": "Dessin" },
-            { "p": "Utilisez Dessin pour les croquis, les flashs, les lettrages et tout ce qui est déjà fait de lignes. Les traits sombres sur page claire sont le motif, et le but est de les garder au plus près de votre dessin." },
-            { "h3": "Photo" },
-            { "p": "Utilisez Photo pour les images aux dégradés doux, comme un portrait ou un animal. Une photo n'a pas de contour à conserver : ce sont les bords où le ton change qui tiennent lieu de lignes. Prévoyez de passer plus de temps sur les curseurs avec les photos, et de décider quels détails vous préférez dessiner à la main." }
+            {
+              "p": "L'outil demande quel type de source vous chargez, car un dessin au trait et une photographie n'appellent pas le même traitement."
+            },
+            {
+              "h3": "Dessin"
+            },
+            {
+              "p": "Utilisez Dessin pour les croquis, les flashs, les lettrages et tout ce qui est déjà fait de lignes. Les traits sombres sur page claire sont le motif, et le but est de les garder au plus près de votre dessin."
+            },
+            {
+              "h3": "Photo"
+            },
+            {
+              "p": "Utilisez Photo pour les images aux dégradés doux, comme un portrait ou un animal. Une photo n'a pas de contour à conserver : ce sont les bords où le ton change qui tiennent lieu de lignes. Prévoyez de passer plus de temps sur les curseurs avec les photos, et de décider quels détails vous préférez dessiner à la main."
+            }
           ]
         },
         {
           "h2": "Comment créer un pochoir de tatouage en ligne, pas à pas",
           "stepsIntro": "Voici les étapes dans l'ordre. Les sections suivantes détaillent les réglages.",
           "steps": [
-            { "name": "Choisir une source nette", "text": "Prenez le dessin ou la photo avec le meilleur contraste et le moins de parasites. Si vous avez deux versions, utilisez celle tracée avec un stylo plus foncé et plus régulier." },
-            { "name": "La scanner ou la photographier en lumière uniforme", "text": "Scannez à plat si possible. Sinon, photographiez en lumière du jour, parallèlement à la feuille, avec le motif qui remplit le cadre, sans ombres ni flash." },
-            { "name": "La charger dans l'outil", "text": "Ouvrez l'outil gratuit et déposez un fichier JPG, PNG ou WebP, ou cliquez pour en choisir un. Il est traité dans votre navigateur et n'est pas téléversé." },
-            { "name": "Choisir le mode Dessin ou Photo", "text": "Choisissez Dessin pour le trait et les flashs, Photo pour les images aux dégradés doux." },
-            { "name": "Régler la sensibilité", "text": "La sensibilité décide jusqu'où une marque peut être faible tout en devenant une ligne. Baissez-la si les ombrages se transforment en lignes. Montez-la s'il manque des lignes fines." },
-            { "name": "Régler le lissage et l'épaisseur du trait", "text": "Le lissage arrondit les bords crénelés. L'épaisseur du trait épaissit ou affine les lignes. Si les lignes paraissent pâles à l'impression, un trait plus épais aide en général." },
-            { "name": "Retirer les points parasites", "text": "Augmentez Retirer les points parasites pour effacer les petits points dus au grain du papier ou à la poussière, jusqu'à ne garder que les marques voulues." },
-            { "name": "Vérifier ce qui a été perdu avec le contrôle d'écart", "text": "Activez le contrôle d'écart. Les lignes perdues apparaissent en rouge et les lignes ajoutées en bleu : vous voyez ce que vos réglages ont changé par rapport à une lecture fixe et sensible de votre original." },
-            { "name": "Fixer la largeur en millimètres", "text": "Saisissez la largeur voulue sur la peau. L'outil affiche la taille correspondante à 300 dpi et une règle à taille réelle." },
-            { "name": "Télécharger ou imprimer à taille réelle", "text": "Téléchargez le PNG et imprimez-le pour que la feuille mesure la largeur choisie. Vérifiez à la règle avant qu'il approche quiconque." }
+            {
+              "name": "Choisir une source nette",
+              "text": "Prenez le dessin ou la photo avec le meilleur contraste et le moins de parasites. Si vous avez deux versions, utilisez celle tracée avec un stylo plus foncé et plus régulier."
+            },
+            {
+              "name": "La scanner ou la photographier en lumière uniforme",
+              "text": "Scannez à plat si possible. Sinon, photographiez en lumière du jour, parallèlement à la feuille, avec le motif qui remplit le cadre, sans ombres ni flash."
+            },
+            {
+              "name": "La charger dans l'outil",
+              "text": "Ouvrez l'outil gratuit et déposez un fichier JPG, PNG ou WebP, ou cliquez pour en choisir un. Il est traité dans votre navigateur et n'est pas téléversé."
+            },
+            {
+              "name": "Choisir le mode Dessin ou Photo",
+              "text": "Choisissez Dessin pour le trait et les flashs, Photo pour les images aux dégradés doux."
+            },
+            {
+              "name": "Régler la sensibilité",
+              "text": "La sensibilité décide jusqu'où une marque peut être faible tout en devenant une ligne. Baissez-la si les ombrages se transforment en lignes. Montez-la s'il manque des lignes fines."
+            },
+            {
+              "name": "Régler le lissage et l'épaisseur du trait",
+              "text": "Le lissage arrondit les bords crénelés. L'épaisseur du trait épaissit ou affine les lignes. Si les lignes paraissent pâles à l'impression, un trait plus épais aide en général."
+            },
+            {
+              "name": "Retirer les points parasites",
+              "text": "Augmentez Retirer les points parasites pour effacer les petits points dus au grain du papier ou à la poussière, jusqu'à ne garder que les marques voulues."
+            },
+            {
+              "name": "Vérifier ce qui a été perdu avec le contrôle d'écart",
+              "text": "Activez le contrôle d'écart. Les lignes perdues apparaissent en rouge et les lignes ajoutées en bleu : vous voyez ce que vos réglages ont changé par rapport à une lecture fixe et sensible de votre original."
+            },
+            {
+              "name": "Fixer la largeur en millimètres",
+              "text": "Saisissez la largeur voulue sur la peau. L'outil affiche la taille correspondante à 300 dpi et une règle à taille réelle."
+            },
+            {
+              "name": "Télécharger ou imprimer à taille réelle",
+              "text": "Téléchargez le PNG et imprimez-le pour que la feuille mesure la largeur choisie. Vérifiez à la règle avant qu'il approche quiconque."
+            }
           ]
         },
         {
           "h2": "Utiliser les réglages sans perdre le motif",
           "blocks": [
-            { "p": "Voyez les curseurs comme une conversation, pas comme une recette. Changez-en un, regardez, et revenez en arrière si cela a fait plus de mal que de bien." },
-            { "ul": [
-              "La sensibilité est le levier principal. Trop haute, chaque tache devient une ligne. Trop basse, les détails fins disparaissent.",
-              "Le lissage aide surtout sur les scans de petits dessins, dont les lignes semblent en escalier une fois agrandies. Trop de lissage arrondit les angles vifs et les petits espaces.",
-              "L'épaisseur du trait est affaire de goût et de méthode de transfert. Les traits très fins peuvent disparaître à l'impression ou au transfert, alors testez d'abord sur papier.",
-              "Retirer les points parasites sert au nettoyage. Montez-le jusqu'à ce que la poussière disparaisse, et arrêtez-vous avant qu'il n'enlève des points qui font partie du motif, comme le pointillisme."
-            ] },
-            { "p": "Le pointillisme et les tout petits points de dotwork sont les victimes habituelles. Si votre motif en dépend, gardez les points parasites bas et examinez le résultat de près." }
+            {
+              "p": "Voyez les curseurs comme une conversation, pas comme une recette. Changez-en un, regardez, et revenez en arrière si cela a fait plus de mal que de bien."
+            },
+            {
+              "ul": [
+                "La sensibilité est le levier principal. Trop haute, chaque tache devient une ligne. Trop basse, les détails fins disparaissent.",
+                "Le lissage aide surtout sur les scans de petits dessins, dont les lignes semblent en escalier une fois agrandies. Trop de lissage arrondit les angles vifs et les petits espaces.",
+                "L'épaisseur du trait est affaire de goût et de méthode de transfert. Les traits très fins peuvent disparaître à l'impression ou au transfert, alors testez d'abord sur papier.",
+                "Retirer les points parasites sert au nettoyage. Montez-le jusqu'à ce que la poussière disparaisse, et arrêtez-vous avant qu'il n'enlève des points qui font partie du motif, comme le pointillisme."
+              ]
+            },
+            {
+              "p": "Le pointillisme et les tout petits points de dotwork sont les victimes habituelles. Si votre motif en dépend, gardez les points parasites bas et examinez le résultat de près."
+            }
           ]
         },
         {
           "h2": "Pourquoi le contrôle d'écart compte",
           "blocks": [
-            { "p": "Un pochoir qui paraît propre peut quand même manquer de quelque chose. On sacrifie vite une ligne fine en cherchant un résultat net, et on la rate facilement sur un petit écran." },
-            { "p": "Le contrôle d'écart compare le pochoir aux lignes trouvées dans votre original. Le rouge marque une ligne perdue, le bleu une ligne ajoutée. La référence est une lecture fixe et sensible de l'original : baisser la sensibilité ou augmenter Retirer les points parasites fait donc apparaître du rouge, c'est voulu. Le rouge n'est pas toujours une erreur, mais il mérite toujours un coup d'œil avant de s'engager sur une taille." }
+            {
+              "p": "Un pochoir qui paraît propre peut quand même manquer de quelque chose. On sacrifie vite une ligne fine en cherchant un résultat net, et on la rate facilement sur un petit écran."
+            },
+            {
+              "p": "Le contrôle d'écart compare le pochoir aux lignes trouvées dans votre original. Le rouge marque une ligne perdue, le bleu une ligne ajoutée. La référence est une lecture fixe et sensible de l'original : baisser la sensibilité ou augmenter Retirer les points parasites fait donc apparaître du rouge, c'est voulu. Le rouge n'est pas toujours une erreur, mais il mérite toujours un coup d'œil avant de s'engager sur une taille."
+            }
           ]
         },
         {
           "h2": "Taille, téléchargement et impression",
           "blocks": [
-            { "p": "Fixez la largeur en millimètres avant de télécharger : le même motif à 60 mm et à 200 mm n'a pas besoin du même nombre de pixels pour rester net. Notre guide complémentaire sur la [taille d'impression](guide:tattoo-stencil-size-true-size-print) donne les chiffres." },
-            { "p": "Les téléchargements gratuits portent un filigrane et sont limités à 800 px. Un pass journée ou Pro retire le filigrane, autorise jusqu'à 4000 px et enregistre la taille de 300 dpi dans le PNG, pour que le logiciel d'impression l'ouvre à la largeur choisie. Une fois le fichier prêt, les [façons de mettre un pochoir sur papier](guide:tattoo-stencil-transfer-methods) expliquent la suite." }
+            {
+              "p": "Fixez la largeur en millimètres avant de télécharger : le même motif à 60 mm et à 200 mm n'a pas besoin du même nombre de pixels pour rester net. Notre guide complémentaire sur la [taille d'impression](guide:tattoo-stencil-size-true-size-print) donne les chiffres."
+            },
+            {
+              "p": "Les téléchargements gratuits portent un filigrane et sont limités à 800 px. Un pass journée ou Pro retire le filigrane, autorise jusqu'à 4000 px et enregistre la taille de 300 dpi dans le PNG, pour que le logiciel d'impression l'ouvre à la largeur choisie. Une fois le fichier prêt, les [façons de mettre un pochoir sur papier](guide:tattoo-stencil-transfer-methods) expliquent la suite."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Puis-je créer un pochoir de tatouage à partir d'une photo ?", "a": "Oui. Chargez une photo, choisissez le mode Photo et réglez la sensibilité jusqu'à ce que les contours voulus deviennent des lignes. Les photos aux dégradés doux demandent plus de réglages que les dessins au trait, et vous préférerez peut-être dessiner certains détails à la main." },
-        { "q": "Le créateur de pochoir de tatouage est-il gratuit ?", "a": "Oui. Il est gratuit dans le navigateur. Les téléchargements gratuits portent un filigrane et sont limités à 800 px. Un pass journée ou Pro retire le filigrane et autorise jusqu'à 4000 px." },
-        { "q": "Mon motif est-il téléversé quelque part ?", "a": "Non. L'image est traitée dans votre navigateur, sur votre propre appareil, et rien n'est téléversé." },
-        { "q": "Quels types de fichiers puis-je utiliser ?", "a": "Des images JPG, PNG et WebP. Prenez la version la plus nette et la mieux éclairée que vous ayez." },
-        { "q": "Pourquoi certaines lignes manquent-elles sur mon pochoir ?", "a": "La sensibilité est peut-être trop basse, ou Retirer les points parasites trop haut, et des lignes faibles ont été prises pour du bruit. Activez le contrôle d'écart : les lignes perdues sont en rouge. Montez la sensibilité ou baissez Retirer les points parasites, puis revérifiez." },
-        { "q": "Comment imprimer le pochoir à la bonne taille ?", "a": "Fixez la largeur en millimètres dans l'outil, téléchargez le PNG et imprimez à 100 pour cent, sans ajustement à la page. Vérifiez l'impression avec une règle." }
+        {
+          "q": "Puis-je créer un pochoir de tatouage à partir d'une photo ?",
+          "a": "Oui. Chargez une photo, choisissez le mode Photo et réglez la sensibilité jusqu'à ce que les contours voulus deviennent des lignes. Les photos aux dégradés doux demandent plus de réglages que les dessins au trait, et vous préférerez peut-être dessiner certains détails à la main."
+        },
+        {
+          "q": "Le créateur de pochoir de tatouage est-il gratuit ?",
+          "a": "Oui. Il est gratuit dans le navigateur. Les téléchargements gratuits portent un filigrane et sont limités à 800 px. Un pass journée ou Pro retire le filigrane et autorise jusqu'à 4000 px."
+        },
+        {
+          "q": "Mon motif est-il téléversé quelque part ?",
+          "a": "Non. L'image est traitée dans votre navigateur, sur votre propre appareil, et rien n'est téléversé."
+        },
+        {
+          "q": "Quels types de fichiers puis-je utiliser ?",
+          "a": "Des images JPG, PNG et WebP. Prenez la version la plus nette et la mieux éclairée que vous ayez."
+        },
+        {
+          "q": "Pourquoi certaines lignes manquent-elles sur mon pochoir ?",
+          "a": "La sensibilité est peut-être trop basse, ou Retirer les points parasites trop haut, et des lignes faibles ont été prises pour du bruit. Activez le contrôle d'écart : les lignes perdues sont en rouge. Montez la sensibilité ou baissez Retirer les points parasites, puis revérifiez."
+        },
+        {
+          "q": "Comment imprimer le pochoir à la bonne taille ?",
+          "a": "Fixez la largeur en millimètres dans l'outil, téléchargez le PNG et imprimez à 100 pour cent, sans ajustement à la page. Vérifiez l'impression avec une règle."
+        }
       ],
       "cta": "Essayez-le sur votre propre motif. Il tourne dans votre navigateur et rien n'est téléversé."
     },
@@ -128,79 +216,167 @@
         {
           "h2": "Pourquoi la taille d'un pochoir est facile à rater",
           "blocks": [
-            { "p": "Une image numérique n'a pas de taille physique propre. C'est une grille de pixels, et la taille sur papier dépend du nombre de pixels placés dans chaque pouce. C'est le dpi, pour dots per inch. Le même fichier peut sortir en timbre-poste ou en affiche." },
-            { "p": "Pour un pochoir de tatouage, c'est un problème, car le motif doit arriver sur la peau exactement à la taille convenue avec le client. Les logiciels d'impression devinent souvent, mettent l'image à l'échelle de la page, ou ouvrent le fichier à 72 ou 96 dpi et le rendent bien plus grand que prévu. Bien régler la taille, c'est la fixer une fois en millimètres et s'assurer que le fichier la transmet jusqu'à l'imprimante." }
+            {
+              "p": "Une image numérique n'a pas de taille physique propre. C'est une grille de pixels, et la taille sur papier dépend du nombre de pixels placés dans chaque pouce. C'est le dpi, pour dots per inch. Le même fichier peut sortir en timbre-poste ou en affiche."
+            },
+            {
+              "p": "Pour un pochoir de tatouage, c'est un problème, car le motif doit arriver sur la peau exactement à la taille convenue avec le client. Les logiciels d'impression devinent souvent, mettent l'image à l'échelle de la page, ou ouvrent le fichier à 72 ou 96 dpi et le rendent bien plus grand que prévu. Bien régler la taille, c'est la fixer une fois en millimètres et s'assurer que le fichier la transmet jusqu'à l'imprimante."
+            }
           ]
         },
         {
           "h2": "Des millimètres aux pixels à 300 dpi",
           "blocks": [
-            { "p": "Un pouce compte 25,4 millimètres. La largeur en pixels qu'il vous faut est donc :" },
-            { "p": "**pixels = millimètres ÷ 25,4 × 300**" },
-            { "p": "Voici le résultat pour des largeurs courantes, arrondi au pixel le plus proche :" },
-            { "table": {
-              "head": ["Largeur sur la peau", "Pixels à 300 dpi"],
-              "rows": [
-                ["50 mm", "591 px"],
-                ["80 mm", "945 px"],
-                ["100 mm", "1181 px"],
-                ["150 mm", "1772 px"],
-                ["200 mm", "2362 px"],
-                ["250 mm", "2953 px"],
-                ["300 mm", "3543 px"]
-              ]
-            } },
-            { "p": "Inutile de le calculer à la main. Dans l'outil, vous saisissez la largeur en millimètres et il affiche à côté la taille à 300 dpi. Le tableau montre pourquoi un petit fichier ne peut pas être imprimé en grand sans paraître flou." }
+            {
+              "p": "Un pouce compte 25,4 millimètres. La largeur en pixels qu'il vous faut est donc :"
+            },
+            {
+              "p": "**pixels = millimètres ÷ 25,4 × 300**"
+            },
+            {
+              "p": "Voici le résultat pour des largeurs courantes, arrondi au pixel le plus proche :"
+            },
+            {
+              "table": {
+                "head": [
+                  "Largeur sur la peau",
+                  "Pixels à 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "50 mm",
+                    "591 px"
+                  ],
+                  [
+                    "80 mm",
+                    "945 px"
+                  ],
+                  [
+                    "100 mm",
+                    "1181 px"
+                  ],
+                  [
+                    "150 mm",
+                    "1772 px"
+                  ],
+                  [
+                    "200 mm",
+                    "2362 px"
+                  ],
+                  [
+                    "250 mm",
+                    "2953 px"
+                  ],
+                  [
+                    "300 mm",
+                    "3543 px"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Inutile de le calculer à la main. Dans l'outil, vous saisissez la largeur en millimètres et il affiche à côté la taille à 300 dpi. Le tableau montre pourquoi un petit fichier ne peut pas être imprimé en grand sans paraître flou."
+            }
           ]
         },
         {
           "h2": "Pourquoi 300 dpi",
           "blocks": [
-            { "p": "300 dpi est la cible habituelle pour les images imprimées regardées de près. À cette densité, une ligne fine s'imprime encore comme un trait net et continu. À des densités plus basses, les courbes montrent des bords en escalier, et un pochoir est presque entièrement fait de courbes." },
-            { "p": "Plus n'est pas toujours mieux. Les fichiers plus lourds sont plus lents à ouvrir et à imprimer, et une ligne de pochoir fine ne devient pas plus nette que ce que votre imprimante sait tracer. 300 dpi est un bon équilibre pour le travail de pochoir et c'est ce que Skinstencil utilise pour sa sortie à taille réelle." }
+            {
+              "p": "300 dpi est la cible habituelle pour les images imprimées regardées de près. À cette densité, une ligne fine s'imprime encore comme un trait net et continu. À des densités plus basses, les courbes montrent des bords en escalier, et un pochoir est presque entièrement fait de courbes."
+            },
+            {
+              "p": "Plus n'est pas toujours mieux. Les fichiers plus lourds sont plus lents à ouvrir et à imprimer, et une ligne de pochoir fine ne devient pas plus nette que ce que votre imprimante sait tracer. 300 dpi est un bon équilibre pour le travail de pochoir et c'est ce que Skinstencil utilise pour sa sortie à taille réelle."
+            }
           ]
         },
         {
           "h2": "Ce que la valeur de 300 dpi dans le PNG change",
           "blocks": [
-            { "p": "Un fichier PNG peut porter une taille physique, stockée en pixels par mètre dans un petit bloc de données. De nombreux programmes la lisent et s'en servent pour ouvrir l'image à cette taille. Si la valeur indique 300 dpi, une image de 1181 px de large s'ouvre à environ 100 mm de large, sans redimensionnement manuel." },
-            { "p": "Quand la valeur manque, les programmes se rabattent sur un défaut, souvent 72 ou 96 dpi. À 72 dpi, cette même image de 1181 px s'ouvrirait à environ 416 mm de large, plus de quatre fois trop grande. C'est une cause fréquente de pochoir qui sort de l'imprimante bien trop grand." },
-            { "p": "Avec un pass journée ou Pro, Skinstencil enregistre la taille de 300 dpi dans le PNG, pour que le logiciel d'impression puisse l'ouvrir à la largeur choisie. Avec un téléchargement gratuit, réglez vous-même la largeur d'impression dans la boîte de dialogue." }
+            {
+              "p": "Un fichier PNG peut porter une taille physique, stockée en pixels par mètre dans un petit bloc de données. De nombreux programmes la lisent et s'en servent pour ouvrir l'image à cette taille. Si la valeur indique 300 dpi, une image de 1181 px de large s'ouvre à environ 100 mm de large, sans redimensionnement manuel."
+            },
+            {
+              "p": "Quand la valeur manque, les programmes se rabattent sur un défaut, souvent 72 ou 96 dpi. À 72 dpi, cette même image de 1181 px s'ouvrirait à environ 416 mm de large, plus de quatre fois trop grande. C'est une cause fréquente de pochoir qui sort de l'imprimante bien trop grand."
+            },
+            {
+              "p": "Avec un pass journée ou Pro, Skinstencil enregistre la taille de 300 dpi dans le PNG, pour que le logiciel d'impression puisse l'ouvrir à la largeur choisie. Avec un téléchargement gratuit, réglez vous-même la largeur d'impression dans la boîte de dialogue."
+            }
           ]
         },
         {
           "h2": "Imprimer à taille réelle",
           "stepsIntro": "Une courte routine qui évite les mauvaises surprises :",
           "steps": [
-            { "name": "Fixer la largeur dans l'outil", "text": "Saisissez la largeur sur la peau en millimètres. L'outil affiche la taille équivalente à 300 dpi." },
-            { "name": "Télécharger le PNG", "text": "Avec un pass journée ou Pro, le fichier enregistre la taille de 300 dpi, donc la plupart des programmes l'ouvrent à la bonne largeur." },
-            { "name": "L'ouvrir dans la boîte de dialogue d'impression", "text": "Choisissez taille réelle ou 100 pour cent. Désactivez ajuster à la page, réduire pour ajuster et remplir la page." },
-            { "name": "Imprimer un essai sur papier ordinaire", "text": "Utilisez du papier ordinaire pour l'essai, pas votre matériau de transfert." },
-            { "name": "Mesurer l'impression", "text": "Posez une règle sur la partie la plus large et comparez avec la largeur choisie. Corrigez et réimprimez en cas d'écart." }
+            {
+              "name": "Fixer la largeur dans l'outil",
+              "text": "Saisissez la largeur sur la peau en millimètres. L'outil affiche la taille équivalente à 300 dpi."
+            },
+            {
+              "name": "Télécharger le PNG",
+              "text": "Avec un pass journée ou Pro, le fichier enregistre la taille de 300 dpi, donc la plupart des programmes l'ouvrent à la bonne largeur."
+            },
+            {
+              "name": "L'ouvrir dans la boîte de dialogue d'impression",
+              "text": "Choisissez taille réelle ou 100 pour cent. Désactivez ajuster à la page, réduire pour ajuster et remplir la page."
+            },
+            {
+              "name": "Imprimer un essai sur papier ordinaire",
+              "text": "Utilisez du papier ordinaire pour l'essai, pas votre matériau de transfert."
+            },
+            {
+              "name": "Mesurer l'impression",
+              "text": "Posez une règle sur la partie la plus large et comparez avec la largeur choisie. Corrigez et réimprimez en cas d'écart."
+            }
           ]
         },
         {
           "h2": "Vérifier à la règle, à chaque fois",
           "blocks": [
-            { "p": "Les imprimantes et les pilotes changent des réglages sans prévenir, surtout après une mise à jour ou sur un ordinateur partagé. Une règle supprime les doutes. Mesurez toute la largeur du motif sur la feuille, d'un bord à l'autre du dessin et non du papier, et comparez avec les millimètres choisis." },
-            { "p": "L'outil trace aussi une règle à taille réelle qui suit la largeur d'impression choisie, pour voir l'échelle voulue à l'écran. Les écrans varient : cette règle n'est qu'un repère, et c'est la règle posée sur la feuille qui fait foi." },
-            { "p": "Si l'impression est décalée d'un pourcentage constant, une option de mise à l'échelle est probablement activée. Si l'écart est d'un grand facteur, le programme a sans doute ouvert le fichier à 72 ou 96 dpi." }
+            {
+              "p": "Les imprimantes et les pilotes changent des réglages sans prévenir, surtout après une mise à jour ou sur un ordinateur partagé. Une règle supprime les doutes. Mesurez toute la largeur du motif sur la feuille, d'un bord à l'autre du dessin et non du papier, et comparez avec les millimètres choisis."
+            },
+            {
+              "p": "L'outil trace aussi une règle à taille réelle qui suit la largeur d'impression choisie, pour voir l'échelle voulue à l'écran. Les écrans varient : cette règle n'est qu'un repère, et c'est la règle posée sur la feuille qui fait foi."
+            },
+            {
+              "p": "Si l'impression est décalée d'un pourcentage constant, une option de mise à l'échelle est probablement activée. Si l'écart est d'un grand facteur, le programme a sans doute ouvert le fichier à 72 ou 96 dpi."
+            }
           ]
         },
         {
           "h2": "Pourquoi les téléchargements gratuits sont limités à 800 px",
           "blocks": [
-            { "p": "Les téléchargements gratuits portent un filigrane et sont limités à 800 px. À 300 dpi, 800 px font environ 68 mm, ce qui suffit pour juger un motif mais reste petit pour un pochoir sur peau. Les pochoirs plus grands demandent plus de pixels pour rester nets, et c'est ce que débloque un pass journée ou Pro : pas de filigrane, jusqu'à 4000 px, soit environ 339 mm de large à 300 dpi, et la taille de 300 dpi enregistrée dans le fichier." },
-            { "p": "L'outil gratuit reste utile pour vérifier les lignes et le contrôle d'écart avant de débloquer une taille. Notre guide pour [créer un pochoir depuis une photo ou un dessin](guide:tattoo-stencil-from-photo) couvre cette partie." }
+            {
+              "p": "Les téléchargements gratuits portent un filigrane et sont limités à 800 px. À 300 dpi, 800 px font environ 68 mm, ce qui suffit pour juger un motif mais reste petit pour un pochoir sur peau. Les pochoirs plus grands demandent plus de pixels pour rester nets, et c'est ce que débloque un pass journée ou Pro : pas de filigrane, jusqu'à 4000 px, soit environ 339 mm de large à 300 dpi, et la taille de 300 dpi enregistrée dans le fichier."
+            },
+            {
+              "p": "L'outil gratuit reste utile pour vérifier les lignes et le contrôle d'écart avant de débloquer une taille. Notre guide pour [créer un pochoir depuis une photo ou un dessin](guide:tattoo-stencil-from-photo) couvre cette partie."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Combien de pixels faut-il pour un pochoir de 100 mm ?", "a": "Environ 1181 pixels de large à 300 dpi. La formule est millimètres divisés par 25,4, multipliés par 300." },
-        { "q": "Pourquoi mon pochoir s'imprime-t-il trop grand ?", "a": "Souvent, le programme a ouvert le PNG à 72 ou 96 dpi faute de taille enregistrée dans le fichier, ou une option d'ajustement à la page l'a agrandi. Imprimez à 100 pour cent et fixez la largeur vous-même, ou utilisez un fichier avec la taille de 300 dpi enregistrée." },
-        { "q": "À quoi sert la valeur de 300 dpi dans le PNG ?", "a": "Elle indique au logiciel d'impression la taille physique de l'image, pour qu'il l'ouvre à la largeur choisie au lieu de deviner. Les téléchargements avec pass journée et Pro l'incluent." },
-        { "q": "Quel est le plus grand pochoir que je puisse télécharger ?", "a": "Les téléchargements gratuits sont limités à 800 px. Un pass journée ou Pro autorise jusqu'à 4000 px, soit environ 339 mm de large à 300 dpi." },
-        { "q": "Dois-je vérifier l'impression à la règle ?", "a": "Oui, à chaque fois. Mesurez le dessin d'un bord à l'autre et comparez avec la largeur choisie avant d'utiliser le pochoir." }
+        {
+          "q": "Combien de pixels faut-il pour un pochoir de 100 mm ?",
+          "a": "Environ 1181 pixels de large à 300 dpi. La formule est millimètres divisés par 25,4, multipliés par 300."
+        },
+        {
+          "q": "Pourquoi mon pochoir s'imprime-t-il trop grand ?",
+          "a": "Souvent, le programme a ouvert le PNG à 72 ou 96 dpi faute de taille enregistrée dans le fichier, ou une option d'ajustement à la page l'a agrandi. Imprimez à 100 pour cent et fixez la largeur vous-même, ou utilisez un fichier avec la taille de 300 dpi enregistrée."
+        },
+        {
+          "q": "À quoi sert la valeur de 300 dpi dans le PNG ?",
+          "a": "Elle indique au logiciel d'impression la taille physique de l'image, pour qu'il l'ouvre à la largeur choisie au lieu de deviner. Les téléchargements avec pass journée et Pro l'incluent."
+        },
+        {
+          "q": "Quel est le plus grand pochoir que je puisse télécharger ?",
+          "a": "Les téléchargements gratuits sont limités à 800 px. Un pass journée ou Pro autorise jusqu'à 4000 px, soit environ 339 mm de large à 300 dpi."
+        },
+        {
+          "q": "Dois-je vérifier l'impression à la règle ?",
+          "a": "Oui, à chaque fois. Mesurez le dessin d'un bord à l'autre et comparez avec la largeur choisie avant d'utiliser le pochoir."
+        }
       ],
       "cta": "Fixez une largeur en millimètres et voyez la taille à 300 dpi."
     },
@@ -216,88 +392,457 @@
         {
           "h2": "Trois approches courantes",
           "blocks": [
-            { "p": "Un pochoir de tatouage commence comme un dessin et finit comme un motif de lignes sur une feuille de transfert qu'on peut appliquer sur la peau. Plusieurs chemins mènent de l'un à l'autre. Ce guide en décrit trois, en termes neutres. Il ne les classe pas, car le bon choix dépend de votre volume, de votre budget, de votre studio et de vos habitudes." },
-            { "p": "Il ne couvre pas non plus l'application ni les soins après tatouage. Quelle que soit la méthode, suivez les règles d'hygiène de votre studio." }
+            {
+              "p": "Un pochoir de tatouage commence comme un dessin et finit comme un motif de lignes sur une feuille de transfert qu'on peut appliquer sur la peau. Plusieurs chemins mènent de l'un à l'autre. Ce guide en décrit trois, en termes neutres. Il ne les classe pas, car le bon choix dépend de votre volume, de votre budget, de votre studio et de vos habitudes."
+            },
+            {
+              "p": "Il ne couvre pas non plus l'application ni les soins après tatouage. Quelle que soit la méthode, suivez les règles d'hygiène de votre studio."
+            }
           ]
         },
         {
           "h2": "Décalquer à la main",
           "blocks": [
-            { "p": "La plus ancienne méthode consiste à décalquer le motif soi-même. On place du papier calque, ou une feuille de transfert conçue pour le dessin à la main, sur l'original et on suit les lignes au stylo. Certains dessinent directement sur le matériau de transfert. D'autres utilisent une table lumineuse ou une fenêtre pour voir l'original à travers le papier." },
-            { "ul": [
-              "Il faut : le dessin original, le matériau de transfert et un stylo adapté.",
-              "Atout : aucun équipement hormis papier et stylos, et chaque ligne passe par votre main, donc vous prenez de petites décisions au fil du tracé.",
-              "Limite : c'est long, agrandir ou réduire le motif demande une étape séparée, et répéter un motif est lent."
-            ] },
-            { "p": "Un fichier au trait propre aide encore ici. Vous pouvez imprimer une copie légère sur papier ordinaire à la bonne taille et décalquer dessus, ce qui règle la taille sans second outil." }
+            {
+              "p": "La plus ancienne méthode consiste à décalquer le motif soi-même. On place du papier calque, ou une feuille de transfert conçue pour le dessin à la main, sur l'original et on suit les lignes au stylo. Certains dessinent directement sur le matériau de transfert. D'autres utilisent une table lumineuse ou une fenêtre pour voir l'original à travers le papier."
+            },
+            {
+              "ul": [
+                "Il faut : le dessin original, le matériau de transfert et un stylo adapté.",
+                "Atout : aucun équipement hormis papier et stylos, et chaque ligne passe par votre main, donc vous prenez de petites décisions au fil du tracé.",
+                "Limite : c'est long, agrandir ou réduire le motif demande une étape séparée, et répéter un motif est lent."
+              ]
+            },
+            {
+              "p": "Un fichier au trait propre aide encore ici. Vous pouvez imprimer une copie légère sur papier ordinaire à la bonne taille et décalquer dessus, ce qui règle la taille sans second outil."
+            }
           ]
         },
         {
           "h2": "Imprimantes thermiques",
           "blocks": [
-            { "p": "Les imprimantes thermiques pour pochoirs utilisent la chaleur, pas l'encre, pour former le motif sur un papier de transfert spécial multicouche. L'imprimante lit une image numérique ou un original papier et produit le pochoir en un passage. Les modèles diffèrent par leur connexion : vérifiez ce que la vôtre accepte, câble USB, ordinateur connecté ou application mobile." },
-            { "ul": [
-              "Il faut : une imprimante thermique, du papier de transfert thermique adapté et un fichier ou un original à imprimer.",
-              "Atout : rapide et régulier une fois réglé, et les copies d'un même motif sont faciles.",
-              "Limite : l'imprimante et le papier ont un coût, et un fichier un peu trop pâle, trop lourd ou à la mauvaise taille s'imprime exactement ainsi."
-            ] },
-            { "p": "C'est là qu'un fichier de pochoir au trait propre compte le plus. Une imprimante thermique imprime les lignes qu'on lui donne. Les tons de gris, la texture du fond et les traits très fins peuvent mal s'imprimer, voire pas du tout, et un fichier ouvert à la mauvaise taille s'imprime à la mauvaise taille. Des lignes noires sur fond blanc uni, à une largeur connue, laissent le moins de marge d'erreur à l'imprimante." }
+            {
+              "p": "Les imprimantes thermiques pour pochoirs utilisent la chaleur, pas l'encre, pour former le motif sur un papier de transfert spécial multicouche. L'imprimante lit une image numérique ou un original papier et produit le pochoir en un passage. Les modèles diffèrent par leur connexion : vérifiez ce que la vôtre accepte, câble USB, ordinateur connecté ou application mobile."
+            },
+            {
+              "ul": [
+                "Il faut : une imprimante thermique, du papier de transfert thermique adapté et un fichier ou un original à imprimer.",
+                "Atout : rapide et régulier une fois réglé, et les copies d'un même motif sont faciles.",
+                "Limite : l'imprimante et le papier ont un coût, et un fichier un peu trop pâle, trop lourd ou à la mauvaise taille s'imprime exactement ainsi."
+              ]
+            },
+            {
+              "p": "C'est là qu'un fichier de pochoir au trait propre compte le plus. Une imprimante thermique imprime les lignes qu'on lui donne. Les tons de gris, la texture du fond et les traits très fins peuvent mal s'imprimer, voire pas du tout, et un fichier ouvert à la mauvaise taille s'imprime à la mauvaise taille. Des lignes noires sur fond blanc uni, à une largeur connue, laissent le moins de marge d'erreur à l'imprimante."
+            }
           ]
         },
         {
           "h2": "Impressions de transfert sur imprimante ordinaire",
           "blocks": [
-            { "p": "Certains artistes impriment le pochoir avec une imprimante jet d'encre ou laser classique sur un papier conçu pour servir de couche de transfert, ou impriment sur papier ordinaire pour s'en servir de référence ou de base à décalquer. Ce qui marche dépend du type d'imprimante et du papier : suivez les instructions du matériau et testez une feuille avant de l'utiliser pour de vrai." },
-            { "ul": [
-              "Il faut : une imprimante ordinaire, du papier prêt pour le transfert si vous voulez transférer directement, et un fichier à la bonne taille.",
-              "Atout : vous possédez peut-être déjà l'imprimante, et elle imprime en haute résolution.",
-              "Limite : le matériau doit être conçu pour cet usage, le papier de bureau ordinaire n'est pas un matériau de transfert, et des réglages comme la mise à l'échelle peuvent changer la taille."
-            ] },
-            { "p": "Comme avec toute méthode numérique, réglez la boîte de dialogue sur taille réelle et mesurez le résultat. Le guide pour [imprimer à taille réelle](guide:tattoo-stencil-size-true-size-print) explique comment." }
+            {
+              "p": "Certains artistes impriment le pochoir avec une imprimante jet d'encre ou laser classique sur un papier conçu pour servir de couche de transfert, ou impriment sur papier ordinaire pour s'en servir de référence ou de base à décalquer. Ce qui marche dépend du type d'imprimante et du papier : suivez les instructions du matériau et testez une feuille avant de l'utiliser pour de vrai."
+            },
+            {
+              "ul": [
+                "Il faut : une imprimante ordinaire, du papier prêt pour le transfert si vous voulez transférer directement, et un fichier à la bonne taille.",
+                "Atout : vous possédez peut-être déjà l'imprimante, et elle imprime en haute résolution.",
+                "Limite : le matériau doit être conçu pour cet usage, le papier de bureau ordinaire n'est pas un matériau de transfert, et des réglages comme la mise à l'échelle peuvent changer la taille."
+              ]
+            },
+            {
+              "p": "Comme avec toute méthode numérique, réglez la boîte de dialogue sur taille réelle et mesurez le résultat. Le guide pour [imprimer à taille réelle](guide:tattoo-stencil-size-true-size-print) explique comment."
+            }
           ]
         },
         {
           "h2": "Quand un fichier de pochoir au trait propre compte",
           "blocks": [
-            { "p": "Toute méthode qui part d'un fichier numérique profite d'un fichier conçu pour la tâche. Un fichier de pochoir diffère d'une photo sur plusieurs points :" },
-            { "ul": [
-              "Il n'est fait que de lignes, sans ombrage, texture de papier ni fond.",
-              "Les lignes sont sombres et continues, pour que la chaleur ou l'encre ait quelque chose de solide à reproduire.",
-              "Il a une largeur connue et s'imprime à la taille convenue avec le client.",
-              "Les petits points parasites sont retirés, pour qu'ils ne deviennent pas des marques sur le transfert."
-            ] },
-            { "p": "Un créateur de pochoir de tatouage produit ce type de fichier à partir d'une photo ou d'un dessin. Notre guide pour [créer un pochoir depuis une photo ou un dessin](guide:tattoo-stencil-from-photo) détaille les réglages." }
+            {
+              "p": "Toute méthode qui part d'un fichier numérique profite d'un fichier conçu pour la tâche. Un fichier de pochoir diffère d'une photo sur plusieurs points :"
+            },
+            {
+              "ul": [
+                "Il n'est fait que de lignes, sans ombrage, texture de papier ni fond.",
+                "Les lignes sont sombres et continues, pour que la chaleur ou l'encre ait quelque chose de solide à reproduire.",
+                "Il a une largeur connue et s'imprime à la taille convenue avec le client.",
+                "Les petits points parasites sont retirés, pour qu'ils ne deviennent pas des marques sur le transfert."
+              ]
+            },
+            {
+              "p": "Un créateur de pochoir de tatouage produit ce type de fichier à partir d'une photo ou d'un dessin. Notre guide pour [créer un pochoir depuis une photo ou un dessin](guide:tattoo-stencil-from-photo) détaille les réglages."
+            }
           ]
         },
         {
           "h2": "Choisir entre elles",
           "blocks": [
-            { "p": "Quelques questions suffisent en général :" },
-            { "ul": [
-              "Combien de pochoirs faites-vous par semaine ? Un volume élevé favorise le matériel qui répète vite.",
-              "À quelle fréquence redimensionnez-vous un motif ? Les méthodes numériques facilitent les changements de taille, le calque à la main en fait un travail à part.",
-              "Quelle part du trait voulez-vous redessiner vous-même ? Le calque vous la donne d'office.",
-              "Que possédez-vous déjà ? Une imprimante existante est le départ le moins cher, si le papier lui convient."
-            ] },
-            { "p": "Beaucoup d'artistes combinent les méthodes, par exemple un contour imprimé pour les formes principales et du calque à la main pour les détails fins. Rien ici n'impose de choisir l'un ou l'autre." }
+            {
+              "p": "Quelques questions suffisent en général :"
+            },
+            {
+              "ul": [
+                "Combien de pochoirs faites-vous par semaine ? Un volume élevé favorise le matériel qui répète vite.",
+                "À quelle fréquence redimensionnez-vous un motif ? Les méthodes numériques facilitent les changements de taille, le calque à la main en fait un travail à part.",
+                "Quelle part du trait voulez-vous redessiner vous-même ? Le calque vous la donne d'office.",
+                "Que possédez-vous déjà ? Une imprimante existante est le départ le moins cher, si le papier lui convient."
+              ]
+            },
+            {
+              "p": "Beaucoup d'artistes combinent les méthodes, par exemple un contour imprimé pour les formes principales et du calque à la main pour les détails fins. Rien ici n'impose de choisir l'un ou l'autre."
+            }
           ]
         },
         {
           "h2": "Préparer le fichier, quelle que soit la méthode",
           "blocks": [
-            { "p": "Quelle que soit la voie choisie, la préparation du fichier est la même. Faites une version au trait propre, fixez la largeur en millimètres, téléchargez-la à une taille assez nette pour cette largeur et imprimez un essai sur papier ordinaire. Skinstencil est gratuit dans le navigateur et rien n'est téléversé. Les téléchargements gratuits portent un filigrane et sont limités à 800 px. Un pass journée ou Pro retire le filigrane, autorise jusqu'à 4000 px et enregistre la taille de 300 dpi dans le PNG." },
-            { "p": "Mesurez ensuite l'impression d'essai à la règle avant d'utiliser votre matériau de transfert." }
+            {
+              "p": "Quelle que soit la voie choisie, la préparation du fichier est la même. Faites une version au trait propre, fixez la largeur en millimètres, téléchargez-la à une taille assez nette pour cette largeur et imprimez un essai sur papier ordinaire. Skinstencil est gratuit dans le navigateur et rien n'est téléversé. Les téléchargements gratuits portent un filigrane et sont limités à 800 px. Un pass journée ou Pro retire le filigrane, autorise jusqu'à 4000 px et enregistre la taille de 300 dpi dans le PNG."
+            },
+            {
+              "p": "Mesurez ensuite l'impression d'essai à la règle avant d'utiliser votre matériau de transfert."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Quelle différence entre un fichier de pochoir et une photo ?", "a": "Un fichier de pochoir ne contient que des lignes sombres nettes sur fond uni, à une taille connue. Une photo a des tons, une texture et un fond que la plupart des méthodes de transfert ne peuvent pas utiliser." },
-        { "q": "Faut-il une imprimante thermique pour utiliser un fichier de pochoir ?", "a": "Non. Un fichier peut être imprimé sur papier ordinaire et décalqué à la main, ou imprimé sur papier prêt pour le transfert avec une imprimante ordinaire. L'imprimante thermique n'est qu'une option parmi d'autres." },
-        { "q": "Puis-je imprimer un pochoir sur papier ordinaire et le décalquer ?", "a": "Oui. Une impression légère à taille réelle est une façon courante de décalquer, car la taille est déjà réglée." },
-        { "q": "Quelle méthode choisir ?", "a": "Cela dépend du nombre de pochoirs que vous faites, du matériel que vous possédez et de votre façon de travailler. Beaucoup d'artistes combinent les méthodes." },
-        { "q": "Le fichier doit-il avoir une taille précise ?", "a": "Il doit être assez net pour la largeur imprimée. À 300 dpi, un pochoir de 100 mm demande environ 1181 pixels. Fixez la largeur en millimètres dans l'outil et il affiche la taille en pixels." }
+        {
+          "q": "Quelle différence entre un fichier de pochoir et une photo ?",
+          "a": "Un fichier de pochoir ne contient que des lignes sombres nettes sur fond uni, à une taille connue. Une photo a des tons, une texture et un fond que la plupart des méthodes de transfert ne peuvent pas utiliser."
+        },
+        {
+          "q": "Faut-il une imprimante thermique pour utiliser un fichier de pochoir ?",
+          "a": "Non. Un fichier peut être imprimé sur papier ordinaire et décalqué à la main, ou imprimé sur papier prêt pour le transfert avec une imprimante ordinaire. L'imprimante thermique n'est qu'une option parmi d'autres."
+        },
+        {
+          "q": "Puis-je imprimer un pochoir sur papier ordinaire et le décalquer ?",
+          "a": "Oui. Une impression légère à taille réelle est une façon courante de décalquer, car la taille est déjà réglée."
+        },
+        {
+          "q": "Quelle méthode choisir ?",
+          "a": "Cela dépend du nombre de pochoirs que vous faites, du matériel que vous possédez et de votre façon de travailler. Beaucoup d'artistes combinent les méthodes."
+        },
+        {
+          "q": "Le fichier doit-il avoir une taille précise ?",
+          "a": "Il doit être assez net pour la largeur imprimée. À 300 dpi, un pochoir de 100 mm demande environ 1181 pixels. Fixez la largeur en millimètres dans l'outil et il affiche la taille en pixels."
+        }
       ],
       "cta": "Créez un fichier de pochoir au trait propre, puis imprimez-le avec la méthode de votre choix."
+    },
+    "brow-mapping-on-a-photo-start-arch-end": {
+      "tool": "brow",
+      "howto": true,
+      "title": "Cartographie des sourcils sur photo : départ, arc et fin",
+      "short": "Cartographie des sourcils sur photo",
+      "blurb": "Les trois lignes classiques depuis la narine, et comment placer le départ, l'arc et la fin sur la photo d'une cliente.",
+      "metaTitle": "Mapping sourcils sur photo : départ, arc et fin",
+      "metaDesc": "Pas à pas : cartographie des sourcils sur la photo d'une cliente avec les lignes de la narine pour le départ, l'arc et la fin, puis impression à taille réelle.",
+      "updated": "2026-11-25",
+      "answer": "Pour faire la cartographie des sourcils sur une photo, chargez une photo de face de la cliente et tracez trois lignes depuis le côté du nez : droit vers le haut pour le départ du sourcil, par le bord externe de l'iris pour l'arc, et par le coin externe de l'œil pour la fin. Le départ et la fin restent à la même hauteur.",
+      "sections": [
+        {
+          "h2": "Ce qu'est la cartographie des sourcils",
+          "blocks": [
+            {
+              "p": "La cartographie des sourcils, ou mapping sourcils, est l'étape qui précède tout travail sur les sourcils : on marque où le sourcil doit commencer, où se trouve son point le plus haut et où il doit finir. L'artiste dispose ainsi d'un repère tiré du visage de la cliente plutôt que d'une estimation à l'œil. C'est aussi la base du mapping microblading."
+            },
+            {
+              "p": "La méthode classique utilise une règle ou un crayon posé contre le visage. Les mêmes trois lignes peuvent être tracées sur une photo, ce qui permet de les ajuster, de les mesurer et de les imprimer facilement. Ce sont des repères de dessin courants, pas des règles. L'artiste décide de chaque point, et la forme finale relève de son jugement et de ce que souhaite la cliente."
+            }
+          ]
+        },
+        {
+          "h2": "Les trois lignes depuis la narine",
+          "blocks": [
+            {
+              "p": "Les trois lignes partent du côté du nez, au bord externe de l'aile du nez. Chacune monte le long du visage et s'arrête là où elle rencontre la zone du sourcil."
+            },
+            {
+              "h3": "Ligne 1 : le départ"
+            },
+            {
+              "p": "Une ligne qui monte droit depuis la narine. Le point où elle croise le sourcil marque l'endroit où il doit commencer. Elle passe souvent près du coin interne de l'œil, mais les visages diffèrent : considérez le coin de l'œil comme un contrôle, pas comme une règle."
+            },
+            {
+              "h3": "Ligne 2 : l'arc"
+            },
+            {
+              "p": "Une ligne qui part de la narine et passe par le bord externe de l'iris. Le point le plus haut de l'arc se situe près de l'endroit où cette ligne rencontre le sourcil."
+            },
+            {
+              "h3": "Ligne 3 : la fin"
+            },
+            {
+              "p": "Une ligne qui part de la narine et passe par le coin externe de l'œil. La queue du sourcil se termine là où cette ligne le rencontre, à la même hauteur que le départ."
+            },
+            {
+              "h3": "Le niveau"
+            },
+            {
+              "p": "Le départ et la fin sont à la même hauteur, mesurée le long du visage et non le long du bord de la photo. Si la tête est inclinée, une ligne horizontale sur la photo n'est pas horizontale sur le visage : l'outil mesure donc le long de la ligne qui relie les deux pupilles."
+            }
+          ]
+        },
+        {
+          "h2": "Comment cartographier un sourcil sur une photo, pas à pas",
+          "stepsIntro": "Voici les étapes de l'outil de mapping sourcils de Skinstencil, dans l'ordre.",
+          "steps": [
+            {
+              "name": "Prendre une photo de face",
+              "text": "Tête droite, appareil à hauteur des yeux, visage neutre, yeux ouverts et tournés vers l'objectif. Cheveux et maquillage écartés des sourcils, lumière uniforme."
+            },
+            {
+              "name": "Confirmer l'accord de la cliente et charger la photo",
+              "text": "Cochez la case de consentement, puis déposez la photo. Le visage est détecté sur votre appareil et rien n'est téléversé."
+            },
+            {
+              "name": "Vérifier les points du visage",
+              "text": "L'outil place les pupilles, les points des narines, le bord externe de chaque iris et les coins des yeux. Déplacez tout point mal placé. Si aucun visage n'est trouvé, placez les points à la main."
+            },
+            {
+              "name": "Régler l'échelle",
+              "text": "Saisissez l'écart pupillaire de la cliente en millimètres, ou placez une carte standard à côté du visage et marquez son grand côté."
+            },
+            {
+              "name": "Lire le départ, l'arc et la fin",
+              "text": "Les trois lignes sont tracées pour les deux sourcils avec les repères S, A et E. Le contour fin est le sourcil existant, d'après les points du visage."
+            },
+            {
+              "name": "Ajuster les repères",
+              "text": "Faites glisser S, A et E à l'endroit voulu. Les lignes, la ligne de niveau et les mesures se mettent à jour aussitôt."
+            },
+            {
+              "name": "Télécharger ou imprimer",
+              "text": "Enregistrez les repères en PNG, avec ou sans la photo, ou imprimez-les à taille réelle avec la barre de règle pour vérifier l'échelle."
+            }
+          ]
+        },
+        {
+          "h2": "Vérifier le niveau et la symétrie",
+          "blocks": [
+            {
+              "p": "Une fois les repères placés, regardez trois choses. D'abord, le départ et la fin de chaque sourcil doivent être au même niveau : l'outil indique tout écart en millimètres. Ensuite, comparez les deux sourcils : largeur, longueur et hauteur de l'arc sont listées côte à côte. Enfin, regardez la distance entre les deux départs, qui doit convenir à la largeur du nez et à l'écart entre les yeux."
+            },
+            {
+              "p": "Les visages sont rarement symétriques, de petites différences sont donc normales. Les chiffres aident à les voir. Ce que vous en faites relève de votre décision."
+            }
+          ]
+        },
+        {
+          "h2": "Ce qu'une photo peut et ne peut pas montrer",
+          "blocks": [
+            {
+              "p": "Une photo est plate. Une tête légèrement tournée, un menton incliné ou un grand-angle trop près du visage modifient les distances. L'outil prévient lorsque la ligne des yeux est inclinée de plus de 5 degrés ou que le visage semble tourné, mais il ne peut pas supprimer l'effet. Pour un résultat plus fiable, utilisez une photo de face et vérifiez les repères sur la cliente avant de commencer."
+            },
+            {
+              "p": "L'outil ne fait aucune promesse médicale ou esthétique et ne prédit aucun résultat."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Où commence un sourcil ?",
+          "a": "Dans la cartographie classique, le départ se trouve là où une ligne tracée droit vers le haut depuis le côté de la narine rencontre le sourcil. Elle passe souvent près du coin interne de l'œil, mais c'est un repère et l'artiste décide."
+        },
+        {
+          "q": "Comment trouver l'arc ?",
+          "a": "Tracez une ligne depuis la narine par le bord externe de l'iris. Le point le plus haut de l'arc se situe près de l'endroit où cette ligne rencontre le sourcil."
+        },
+        {
+          "q": "L'outil décide-t-il de la forme du sourcil ?",
+          "a": "Non. Il trace les lignes de repère habituelles et les mesures. Chaque point peut être déplacé, et l'artiste décide de la forme finale."
+        },
+        {
+          "q": "La photo de la cliente est-elle téléversée ?",
+          "a": "Non. Le visage est détecté par un modèle qui tourne dans votre navigateur et qui est servi par le même site. La photo n'est envoyée nulle part et n'est pas conservée."
+        }
+      ],
+      "cta": "Essayez-le sur la photo d'une cliente. L'outil détecte le visage sur votre appareil, trace les trois lignes et vous laisse déplacer chaque point. [Ouvrir le mapping sourcils](brow)."
+    },
+    "brow-mapping-measurements-scale-and-print-true-size": {
+      "tool": "brow",
+      "howto": false,
+      "title": "Mesures du mapping sourcils : mettre une photo à l'échelle et imprimer à taille réelle",
+      "short": "Mesures du mapping sourcils et impression à taille réelle",
+      "blurb": "L'écart pupillaire ou une carte pour l'échelle, ce que signifie chaque mesure et comment imprimer le guide à sa taille réelle.",
+      "metaTitle": "Mesures du mapping sourcils : échelle et taille réelle",
+      "metaDesc": "Une photo de visage n'a pas d'échelle. Avec l'écart pupillaire ou une carte, les pixels deviennent des millimètres : lisez les mesures et imprimez le guide.",
+      "updated": "2026-11-25",
+      "answer": "Une photo de visage n'a pas d'échelle réelle : les mesures du mapping sourcils exigent donc une longueur connue. Saisissez l'écart pupillaire de la cliente en millimètres, ou placez une carte standard de 85,6 mm comme référence, et l'outil convertit les pixels en millimètres. Imprimez ensuite à 100 pour cent et vérifiez la barre de règle sur la feuille.",
+      "sections": [
+        {
+          "h2": "Pourquoi une photo n'a pas d'échelle",
+          "blocks": [
+            {
+              "p": "Une photo est une grille de pixels. Le même visage peut occuper 800 pixels ou 4000, donc la distance en pixels entre deux points ne dit rien des millimètres tant que vous n'indiquez pas à l'outil une longueur réelle. Tout le reste découle de ce seul nombre : chaque pixel vaut un nombre fixe de millimètres, et chaque mesure est une distance en pixels multipliée par cette valeur."
+            }
+          ]
+        },
+        {
+          "h2": "Option 1 : l'écart pupillaire",
+          "blocks": [
+            {
+              "p": "Mesurez à la règle l'écart pupillaire de la cliente, regard droit devant, et saisissez-le. L'outil repère les centres des deux pupilles sur la photo et calcule :"
+            },
+            {
+              "p": "**millimètres par pixel = écart pupillaire en mm ÷ écart pupillaire en pixels**"
+            },
+            {
+              "p": "L'outil part de 63 mm, une valeur typique chez l'adulte. Les adultes varient : une valeur mesurée sur votre cliente est plus fiable que celle par défaut. Si vous saisissez 66 au lieu de 63, chaque mesure augmente d'environ 5 pour cent."
+            }
+          ]
+        },
+        {
+          "h2": "Option 2 : une carte comme référence",
+          "blocks": [
+            {
+              "p": "Une carte bancaire ou d'identité standard mesure 85,6 mm de large. Tenez-en une à plat contre le front, dans le même plan que le visage, et photographiez-la avec la cliente. Dans l'outil, passez à l'option carte et faites glisser les deux points aux extrémités du grand côté de la carte. L'outil divise 85,6 mm par la distance en pixels entre eux."
+            },
+            {
+              "p": "Gardez la carte à plat et face à l'appareil. Une carte tenue plus près de l'objectif que le visage, ou en biais, donne une mauvaise échelle."
+            }
+          ]
+        },
+        {
+          "h2": "Ce que signifie chaque mesure",
+          "blocks": [
+            {
+              "p": "L'outil mesure le long du visage, en prenant la ligne entre les pupilles comme horizontale : une tête légèrement inclinée ne fausse donc pas les chiffres. Les valeurs sont en millimètres sauf indication contraire."
+            },
+            {
+              "table": {
+                "head": [
+                  "Mesure",
+                  "Ce que c'est"
+                ],
+                "rows": [
+                  [
+                    "Largeur départ à fin",
+                    "La distance entre le départ S et la fin E, mesurée selon l'horizontale du visage."
+                  ],
+                  [
+                    "Longueur S, A, E",
+                    "La longueur du tracé du guide de sourcil par le départ, l'arc et la fin."
+                  ],
+                  [
+                    "Hauteur de l'arc au-dessus de S-E",
+                    "La hauteur de l'arc A au-dessus de la droite qui va de S à E."
+                  ],
+                  [
+                    "Angle de la queue (A vers E)",
+                    "L'angle de la ligne qui va de l'arc à la fin, en degrés par rapport à l'horizontale. Positif signifie que la fin pointe vers le bas."
+                  ],
+                  [
+                    "Écart de niveau départ-fin",
+                    "La différence de hauteur entre S et E. Zéro signifie qu'ils sont au même niveau."
+                  ],
+                  [
+                    "Épaisseur du sourcil existant",
+                    "L'épaisseur moyenne du contour du sourcil actuel d'après les points du visage."
+                  ],
+                  [
+                    "Entre les deux départs",
+                    "La distance horizontale entre le départ gauche et le départ droit."
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "h2": "Quelle précision attendre",
+          "blocks": [
+            {
+              "p": "Les chiffres valent ce que valent la photo et l'échelle. Trois points comptent surtout :"
+            },
+            {
+              "ul": [
+                "Une photo de face. L'outil prévient lorsque la ligne des yeux est inclinée de plus de 5 degrés ou que le visage semble tourné.",
+                "Une échelle correcte. Un mauvais écart pupillaire, ou une carte dans un autre plan que le visage, fausse tous les chiffres.",
+                "Une résolution suffisante. Un visage petit sur la photo ne laisse que peu de pixels par millimètre."
+              ]
+            },
+            {
+              "p": "L'outil n'a pas encore été validé par des mesures sur de vraies clientes. Considérez les chiffres comme une aide au dessin et vérifiez le guide sur la cliente."
+            }
+          ]
+        },
+        {
+          "h2": "Imprimer à taille réelle",
+          "stepsIntro": "L'option d'impression règle la page sur la largeur réelle du guide en millimètres et ajoute une barre de règle.",
+          "steps": [
+            {
+              "name": "Régler l'échelle",
+              "text": "Saisissez l'écart pupillaire ou placez la carte."
+            },
+            {
+              "name": "Imprimer le guide",
+              "text": "Utilisez l'option d'impression. Le guide est imprimé à sa largeur en millimètres."
+            },
+            {
+              "name": "Imprimer à 100 pour cent",
+              "text": "Dans la boîte de dialogue d'impression, choisissez la taille réelle. Désactivez l'ajustement à la page et la réduction."
+            },
+            {
+              "name": "Vérifier la barre de règle",
+              "text": "Posez une vraie règle le long de la barre sur la feuille. Si elle n'a pas la longueur indiquée, une option de mise à l'échelle est active. Corrigez-la et réimprimez."
+            }
+          ],
+          "blocks": [
+            {
+              "p": "Un téléchargement PNG fonctionne de la même façon lorsqu'il contient sa taille à 300 dpi, qu'un pass journée ou Pro enregistre dans le fichier. À 300 dpi, une largeur en millimètres demande ce nombre de pixels :"
+            },
+            {
+              "table": {
+                "head": [
+                  "Largeur du guide",
+                  "Pixels à 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "100 mm",
+                    "1181 px"
+                  ],
+                  [
+                    "120 mm",
+                    "1417 px"
+                  ],
+                  [
+                    "140 mm",
+                    "1654 px"
+                  ],
+                  [
+                    "160 mm",
+                    "1890 px"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Les téléchargements gratuits portent un filigrane et sont limités en taille : réglez donc la largeur d'impression vous-même dans la boîte de dialogue, ou utilisez l'option d'impression, qui imprime toujours à la largeur réelle."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "63 mm convient-il à toutes les clientes ?",
+          "a": "Non. C'est une valeur typique chez l'adulte, utilisée comme point de départ. Les adultes diffèrent : mesurez l'écart pupillaire de votre cliente et saisissez-le pour une échelle plus fiable."
+        },
+        {
+          "q": "Puis-je utiliser une carte à la place de l'écart pupillaire ?",
+          "a": "Oui. Tenez à plat contre le front, dans le même plan que le visage, une carte standard de 85,6 mm de large, puis faites glisser les deux points de référence aux extrémités de son grand côté."
+        },
+        {
+          "q": "Pourquoi l'outil signale-t-il une tête inclinée ?",
+          "a": "Une tête inclinée modifie les angles et les distances sur une photo plate. L'outil suit la ligne des yeux, mais une photo de face donne des lignes plus fiables. Il prévient au-delà de 5 degrés d'inclinaison."
+        },
+        {
+          "q": "L'impression sort-elle à taille réelle ?",
+          "a": "Oui, lorsque vous imprimez à 100 pour cent. L'option d'impression règle la largeur de la page en millimètres et ajoute une barre de règle pour vérifier l'échelle avec une vraie règle."
+        }
+      ],
+      "cta": "Réglez l'échelle, lisez les mesures et imprimez le guide à taille réelle. [Ouvrir le mapping sourcils](brow)."
     }
   }
 }

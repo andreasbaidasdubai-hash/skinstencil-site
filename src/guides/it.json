@@ -8,10 +8,10 @@
     "updated": "Ultimo aggiornamento",
     "answerLabel": "La risposta breve",
     "faq": "Domande",
-    "indexTitle": "Guide agli stencil per tatuaggi",
-    "indexMetaTitle": "Guide allo stencil tatuaggio | Skinstencil",
-    "indexMetaDesc": "Guide pratiche per tatuatori: creare uno stencil per tatuaggi da foto o disegno, stamparlo a dimensione reale e scegliere come portarlo su carta.",
-    "indexLead": "Guide brevi e pratiche per chi prepara da sé i propri stencil. Ognuna termina con lo strumento gratuito, che funziona nel browser e non carica nulla.",
+    "indexTitle": "Guide a stencil per tatuaggi e mappatura sopracciglia",
+    "indexMetaTitle": "Guide: stencil tatuaggi e mappatura sopracciglia | Skinstencil",
+    "indexMetaDesc": "Guide pratiche per tatuatori e artisti delle sopracciglia: stencil da una foto, mappatura sopracciglia sulla foto della cliente e stampa a misura reale.",
+    "indexLead": "Guide brevi e pratiche per chi lavora con tatuaggi e sopracciglia. Ognuna termina con lo strumento gratuito, che funziona nel browser e non carica nulla.",
     "readGuide": "Leggi la guida",
     "homeSectionTitle": "Guide sullo stencil per tatuaggi",
     "homeSectionLead": "Come creare uno stencil, stamparlo a dimensione reale e portarlo su carta.",
@@ -19,7 +19,7 @@
     "theme": "Chiaro o scuro",
     "language": "Lingua"
   },
-  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods"],
+  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods", "brow-mapping-on-a-photo-start-arch-end", "brow-mapping-measurements-scale-and-print-true-size"],
   "guides": {
     "tattoo-stencil-from-photo": {
       "howto": true,
@@ -298,6 +298,322 @@
         { "q": "Il file deve avere una misura precisa?", "a": "Deve essere abbastanza nitido per la larghezza che stampi. A 300 dpi uno stencil da 100 mm richiede circa 1181 pixel. Imposta la larghezza in millimetri nello strumento e ti mostra la misura in pixel." }
       ],
       "cta": "Crea un file di stencil a linee pulite, poi stampalo con il metodo che usi."
+    },
+    "brow-mapping-on-a-photo-start-arch-end": {
+      "tool": "brow",
+      "howto": true,
+      "title": "Come fare la mappatura sopracciglia su una foto: inizio, arco e fine",
+      "short": "Come fare la mappatura sopracciglia su una foto",
+      "blurb": "Le tre linee classiche partendo dalla narice e come posizionare inizio, arco e fine sulla foto della cliente.",
+      "metaTitle": "Mappatura sopracciglia su foto: inizio, arco e fine",
+      "metaDesc": "Passo dopo passo: disegno sopracciglia sulla foto della cliente con le linee dalla narice, controllo del livello e stampa della guida a misura reale.",
+      "updated": "2026-11-25",
+      "answer": "Per fare la mappatura delle sopracciglia su una foto, carica una foto frontale della cliente e traccia tre linee dal lato del naso: dritta verso l'alto per l'inizio, passando per il bordo esterno dell'iride per l'arco e per l'angolo esterno dell'occhio per la fine. Tieni inizio e fine alla stessa altezza.",
+      "sections": [
+        {
+          "h2": "Che cos'è la mappatura delle sopracciglia",
+          "blocks": [
+            {
+              "p": "La mappatura delle sopracciglia è il passaggio che viene prima di qualsiasi lavoro sulle sopracciglia: segnare dove deve iniziare il sopracciglio, dove si trova il punto più alto e dove deve finire. Dà al professionista un riferimento tracciato sul viso della cliente invece di una stima a occhio."
+            },
+            {
+              "p": "Il metodo classico, usato anche nel mapping microblading, prevede un righello o una matita appoggiati sul viso. Le stesse tre linee si possono tracciare su una foto, così è facile regolarle, misurarle e stamparle. Sono guide di disegno standard, non regole. Il professionista decide ogni punto, e la forma finale dipende dal suo giudizio e da ciò che vuole la cliente."
+            }
+          ]
+        },
+        {
+          "h2": "Le tre linee dalla narice",
+          "blocks": [
+            {
+              "p": "Tutte e tre le linee partono dal lato del naso, sul bordo esterno della narice (l'ala). Ognuna sale lungo il viso e termina dove incontra la zona del sopracciglio."
+            },
+            {
+              "h3": "Linea 1: l'inizio"
+            },
+            {
+              "p": "Una linea dalla narice dritta verso l'alto. Il punto in cui incontra il sopracciglio è dove il sopracciglio deve iniziare. Di solito passa vicino all'angolo interno dell'occhio, ma i visi sono diversi: considera l'angolo dell'occhio un controllo, non la regola."
+            },
+            {
+              "h3": "Linea 2: l'arco"
+            },
+            {
+              "p": "Una linea dalla narice che passa per il bordo esterno dell'iride. Il punto più alto dell'arco si trova vicino a dove questa linea incontra il sopracciglio."
+            },
+            {
+              "h3": "Linea 3: la fine"
+            },
+            {
+              "p": "Una linea dalla narice che passa per l'angolo esterno dell'occhio. La coda del sopracciglio finisce dove questa linea lo incontra, alla stessa altezza dell'inizio."
+            },
+            {
+              "h3": "Il livello"
+            },
+            {
+              "p": "Inizio e fine stanno alla stessa altezza, misurata lungo il viso e non lungo il bordo della foto. Se la testa è inclinata, una linea orizzontale sulla foto non è orizzontale sul viso, perciò lo strumento misura lungo la linea tra le due pupille."
+            }
+          ]
+        },
+        {
+          "h2": "Come mappare un sopracciglio su una foto, passo dopo passo",
+          "stepsIntro": "Questi sono i passaggi dello strumento di mappatura sopracciglia di Skinstencil, in ordine.",
+          "steps": [
+            {
+              "name": "Scatta una foto frontale",
+              "text": "Testa dritta, fotocamera all'altezza degli occhi, viso neutro, occhi aperti che guardano l'obiettivo. Niente capelli né trucco sulle sopracciglia, luce uniforme."
+            },
+            {
+              "name": "Conferma il consenso della cliente e carica la foto",
+              "text": "Spunta la casella del consenso, poi trascina la foto. Il viso viene rilevato sul tuo dispositivo e non viene caricato nulla."
+            },
+            {
+              "name": "Controlla i punti del viso",
+              "text": "Lo strumento posiziona le pupille, i punti delle narici, il bordo esterno di ogni iride e gli angoli degli occhi. Trascina i punti fuori posto. Se non viene trovato nessun viso, posiziona i punti a mano."
+            },
+            {
+              "name": "Imposta la scala",
+              "text": "Inserisci la distanza tra le pupille della cliente in millimetri, oppure appoggia una carta standard accanto al viso e segna il suo lato lungo."
+            },
+            {
+              "name": "Leggi inizio, arco e fine",
+              "text": "Le tre linee vengono tracciate per entrambe le sopracciglia con i marcatori S, A ed E. Il contorno sottile è il sopracciglio attuale della cliente, ricavato dai punti del viso."
+            },
+            {
+              "name": "Regola i marcatori",
+              "text": "Trascina S, A ed E dove vuoi. Le linee, la linea di livello e le misure si aggiornano subito."
+            },
+            {
+              "name": "Scarica o stampa",
+              "text": "Salva le guide come PNG, con o senza la foto, oppure stampale a misura reale con la barra del righello per controllare la scala."
+            }
+          ]
+        },
+        {
+          "h2": "Controlla livello e simmetria",
+          "blocks": [
+            {
+              "p": "Una volta posizionati i marcatori, guarda tre cose. Primo, inizio e fine di ogni sopracciglio devono essere allo stesso livello, e lo strumento mostra l'eventuale differenza in millimetri. Secondo, confronta le due sopracciglia: larghezza, lunghezza e altezza dell'arco sono elencate affiancate. Terzo, guarda la distanza tra i due inizi, che deve essere adatta alla larghezza del naso e allo spazio tra gli occhi."
+            },
+            {
+              "p": "I visi sono raramente simmetrici, quindi piccole differenze sono normali. I numeri aiutano a vederle. Cosa farne lo decidi tu."
+            }
+          ]
+        },
+        {
+          "h2": "Cosa può e non può dirti una foto",
+          "blocks": [
+            {
+              "p": "Una foto è piatta. Una testa girata un poco, un mento inclinato o un grandangolo vicino al viso cambiano tutti le distanze. Lo strumento avvisa quando la linea degli occhi è inclinata di più di 5 gradi o il viso sembra girato, ma non può eliminare l'effetto. Per il risultato più affidabile usa una foto frontale e controlla le guide sulla cliente prima di iniziare."
+            },
+            {
+              "p": "Lo strumento non fa dichiarazioni mediche o estetiche e non prevede risultati."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Dove inizia un sopracciglio?",
+          "a": "Nella mappatura classica l'inizio è il punto in cui una linea dal lato della narice, tracciata dritta verso l'alto, incontra il sopracciglio. Spesso passa vicino all'angolo interno dell'occhio, ma è solo una guida e decide il professionista."
+        },
+        {
+          "q": "Come si trova l'arco?",
+          "a": "Traccia una linea dalla narice passando per il bordo esterno dell'iride. Il punto più alto dell'arco si trova vicino a dove quella linea incontra il sopracciglio."
+        },
+        {
+          "q": "Lo strumento decide la forma del sopracciglio?",
+          "a": "No. Traccia le linee guida standard e le misure. Ogni punto si può trascinare, e la forma finale la decide il professionista."
+        },
+        {
+          "q": "La foto della cliente viene caricata?",
+          "a": "No. Il viso viene trovato da un modello che gira nel tuo browser ed è servito dallo stesso sito. La foto non viene inviata da nessuna parte e non viene salvata."
+        }
+      ],
+      "cta": "Provalo su una foto della cliente. Lo strumento trova il viso sul tuo dispositivo, traccia le tre linee e ti lascia trascinare ogni punto. [Apri la mappatura sopracciglia](brow)."
+    },
+    "brow-mapping-measurements-scale-and-print-true-size": {
+      "tool": "brow",
+      "howto": false,
+      "title": "Misure della mappatura sopracciglia: come dare la scala a una foto e stampare a misura reale",
+      "short": "Misure della mappatura sopracciglia e stampa a misura reale",
+      "blurb": "Distanza tra le pupille o una carta per la scala, cosa significa ogni misura e come stampare la guida alla sua misura reale.",
+      "metaTitle": "Misure mappatura sopracciglia: scala e stampa a misura reale",
+      "metaDesc": "Una foto non ha scala. Usa la distanza tra le pupille o una carta per passare da pixel a millimetri, leggi le misure e stampa la guida a misura reale.",
+      "updated": "2026-11-25",
+      "answer": "Una foto del viso non ha una scala reale, quindi le misure della mappatura sopracciglia richiedono una lunghezza nota. Inserisci la distanza tra le pupille della cliente in millimetri, oppure appoggia come riferimento una carta standard da 85,6 mm, e lo strumento converte i pixel in millimetri. Poi stampa al 100 per cento e controlla la barra del righello sulla stampa.",
+      "sections": [
+        {
+          "h2": "Perché una foto non ha scala",
+          "blocks": [
+            {
+              "p": "Una foto è una griglia di pixel. Lo stesso viso può occupare 800 pixel o 4000, quindi la distanza in pixel tra due punti non dice nulla sui millimetri finché non indichi allo strumento una lunghezza reale. Tutto il resto deriva da quel numero: ogni pixel vale un numero fisso di millimetri e ogni misura è una distanza in pixel moltiplicata per esso."
+            }
+          ]
+        },
+        {
+          "h2": "Opzione 1: la distanza tra le pupille",
+          "blocks": [
+            {
+              "p": "Misura con un righello la distanza tra le pupille della cliente, con lo sguardo dritto davanti, e inseriscila. Lo strumento trova i centri delle due pupille nella foto e calcola:"
+            },
+            {
+              "p": "**millimetri per pixel = distanza tra le pupille in mm ÷ distanza tra le pupille in pixel**"
+            },
+            {
+              "p": "Lo strumento parte da 63 mm, un valore tipico per un adulto. Gli adulti variano, perciò un valore misurato sulla tua cliente è più affidabile di quello predefinito. Se inserisci 66 invece di 63, ogni misura cresce di circa il 5 per cento."
+            }
+          ]
+        },
+        {
+          "h2": "Opzione 2: una carta come riferimento",
+          "blocks": [
+            {
+              "p": "Una carta di credito o d'identità standard è larga 85,6 mm. Tienine una appoggiata alla fronte, sullo stesso piano del viso, e fotografala insieme alla cliente. Nello strumento passa all'opzione carta e trascina i due punti agli estremi del lato lungo della carta. Lo strumento divide 85,6 mm per la distanza in pixel tra i due punti."
+            },
+            {
+              "p": "Tieni la carta piatta e frontale rispetto alla fotocamera. Una carta più vicina all'obiettivo del viso, o inclinata, dà la scala sbagliata."
+            }
+          ]
+        },
+        {
+          "h2": "Cosa significa ogni misura",
+          "blocks": [
+            {
+              "p": "Lo strumento misura lungo il viso, usando la linea tra le pupille come orizzontale, quindi una testa leggermente inclinata non falsa i numeri. I valori sono in millimetri salvo diversa indicazione."
+            },
+            {
+              "table": {
+                "head": [
+                  "Misura",
+                  "Che cos'è"
+                ],
+                "rows": [
+                  [
+                    "Larghezza da inizio a fine",
+                    "La distanza dall'inizio S alla fine E, misurata lungo l'orizzontale del viso."
+                  ],
+                  [
+                    "Lunghezza S, A, E",
+                    "La lunghezza del percorso della guida del sopracciglio passando per inizio, arco e fine."
+                  ],
+                  [
+                    "Altezza dell'arco sopra S-E",
+                    "Di quanto l'arco A sta sopra la linea retta da S a E."
+                  ],
+                  [
+                    "Angolo della coda (da A a E)",
+                    "L'angolo della linea dall'arco alla fine, in gradi rispetto all'orizzontale. Positivo significa che la fine punta verso il basso."
+                  ],
+                  [
+                    "Differenza di livello tra inizio e fine",
+                    "La differenza di altezza tra S ed E. Zero significa che sono allo stesso livello."
+                  ],
+                  [
+                    "Spessore del sopracciglio attuale",
+                    "Lo spessore medio del contorno del sopracciglio attuale della cliente, ricavato dai punti del viso."
+                  ],
+                  [
+                    "Tra i due inizi",
+                    "La distanza orizzontale tra l'inizio sinistro e quello destro."
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "h2": "Quanto può essere precisa",
+          "blocks": [
+            {
+              "p": "I numeri valgono quanto la foto e la scala. Contano soprattutto tre cose:"
+            },
+            {
+              "ul": [
+                "Una foto frontale. Lo strumento avvisa quando la linea degli occhi è inclinata di più di 5 gradi o il viso sembra girato.",
+                "Una scala corretta. Una distanza tra le pupille sbagliata, o una carta su un piano diverso da quello del viso, falsa tutti i numeri.",
+                "Risoluzione sufficiente. Un viso piccolo nella foto lascia pochi pixel per millimetro."
+              ]
+            },
+            {
+              "p": "Lo strumento non è ancora stato validato con misure su clienti reali. Considera i numeri un aiuto al disegno e controlla la guida sulla cliente."
+            }
+          ]
+        },
+        {
+          "h2": "Stampa a misura reale",
+          "stepsIntro": "L'opzione di stampa imposta la pagina sulla larghezza reale della guida in millimetri e aggiunge una barra del righello.",
+          "steps": [
+            {
+              "name": "Imposta la scala",
+              "text": "Inserisci la distanza tra le pupille oppure posiziona la carta."
+            },
+            {
+              "name": "Stampa la guida",
+              "text": "Usa l'opzione di stampa. La guida viene stampata con la sua larghezza in millimetri."
+            },
+            {
+              "name": "Stampa al 100 per cento",
+              "text": "Nella finestra di stampa scegli dimensione effettiva. Disattiva adatta alla pagina e riduci per adattare."
+            },
+            {
+              "name": "Controlla la barra del righello",
+              "text": "Appoggia un righello vero lungo la barra sulla stampa. Se non è lunga quanto indicato, è attiva un'opzione di scala. Correggila e stampa di nuovo."
+            }
+          ],
+          "blocks": [
+            {
+              "p": "Un download PNG funziona allo stesso modo quando contiene la misura a 300 dpi, che un pass giornaliero o Pro salva nel file. A 300 dpi una larghezza in millimetri richiede questi pixel:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Larghezza della guida",
+                  "Pixel a 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "100 mm",
+                    "1181 px"
+                  ],
+                  [
+                    "120 mm",
+                    "1417 px"
+                  ],
+                  [
+                    "140 mm",
+                    "1654 px"
+                  ],
+                  [
+                    "160 mm",
+                    "1890 px"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "I download gratuiti hanno una filigrana e sono limitati nelle dimensioni, quindi imposta tu la larghezza di stampa nella finestra di stampa, oppure usa l'opzione di stampa, che stampa sempre alla larghezza reale."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "63 mm vanno bene per ogni cliente?",
+          "a": "No. È un valore tipico per un adulto, usato come punto di partenza. Gli adulti sono diversi, quindi misura la distanza tra le pupille della tua cliente e inseriscila per una scala più affidabile."
+        },
+        {
+          "q": "Posso usare una carta al posto della distanza tra le pupille?",
+          "a": "Sì. Tieni una carta standard larga 85,6 mm appoggiata alla fronte, sullo stesso piano del viso, poi trascina i due punti di riferimento agli estremi del suo lato lungo."
+        },
+        {
+          "q": "Perché lo strumento avvisa dell'inclinazione della testa?",
+          "a": "Una testa inclinata cambia angoli e distanze in una foto piatta. Lo strumento segue la linea degli occhi, ma una foto frontale dà linee più affidabili. L'avviso compare quando l'inclinazione supera i 5 gradi."
+        },
+        {
+          "q": "La stampa esce a misura reale?",
+          "a": "Sì, se stampata al 100 per cento. L'opzione di stampa imposta la larghezza della pagina in millimetri e aggiunge una barra del righello per controllare la scala con un righello vero."
+        }
+      ],
+      "cta": "Imposta la scala, leggi le misure e stampa la guida a misura reale. [Apri la mappatura sopracciglia](brow)."
     }
   }
 }
