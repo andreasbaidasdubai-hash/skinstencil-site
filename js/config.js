@@ -1,14 +1,17 @@
 /* Skinstencil configuration. Edit this file to change checkout; no other code changes are needed.
    Products live in Polar (organisation "Belline Technologies Limited"): Day pass, Pro monthly, Pro yearly, each with the
    "Skinstencil license key" benefit (day pass key expires after 1 day, 2 activations per key).
-   Leave a checkout value empty and the matching button shows "opens soon" instead of a broken link. */
+   Leave a checkout value empty and the matching button shows "opens soon" instead of a broken link.
+
+   CHECKOUT IS HELD OFF ON PURPOSE until Polar has approved the account (identity, payout, review). Before that, a live link
+   would send buyers to a checkout that cannot charge them. When Polar says approved, replace the three empty strings below
+   with these links, run a test order in Polar's sandbox or with a real USD 4.99 day pass, then push:
+     day:   https://buy.polar.sh/polar_cl_eYCpTIZMJdV1Hg8DtuQBDDustzUCEqY4JZ1za4SxBX7
+     month: https://buy.polar.sh/polar_cl_M548UXCzOIvSF2ns2K3POQKIEerMIGVogcOmh0WygHc
+     year:  https://buy.polar.sh/polar_cl_RtlAFQ4fBXdVCVJiYUtHcVmwqlGmTetAxMO8p1IRBAX */
 window.SkinConfig = {
   polarOrgId: "9ef14326-9d33-47d5-b4b8-17d92fd67b47",
-  checkout: {
-    day: "https://buy.polar.sh/polar_cl_eYCpTIZMJdV1Hg8DtuQBDDustzUCEqY4JZ1za4SxBX7",
-    month: "https://buy.polar.sh/polar_cl_M548UXCzOIvSF2ns2K3POQKIEerMIGVogcOmh0WygHc",
-    year: "https://buy.polar.sh/polar_cl_RtlAFQ4fBXdVCVJiYUtHcVmwqlGmTetAxMO8p1IRBAX"
-  },
+  checkout: { day: "", month: "", year: "" },
   prices: { currency: "USD", day: "4.99", month: "12", year: "79" },
   notifyEmail: "hello@skinstencil.com",
   freeMaxPx: 800,
