@@ -42,12 +42,36 @@
     return out;
   }
 
+  /* Flat-field: estimate the paper brightness (lighting, shadows) with a grey closing on a small copy, so dark lines vanish from it. */
+  function background(g, w, h) {
+    var f = Math.max(1, Math.round(Math.min(w, h) / 300)), wd = Math.ceil(w / f), hd = Math.ceil(h / f), small = new Float32Array(wd * hd), x, y, i, j, xx, yy, s, n;
+    for (y = 0; y < hd; y++) for (x = 0; x < wd; x++) { s = 0; n = 0; for (j = 0; j < f; j++) for (i = 0; i < f; i++) { xx = x * f + i; yy = y * f + j; if (xx < w && yy < h) { s += g[yy * w + xx]; n++; } } small[y * wd + x] = s / n; }
+    var rr = Math.max(4, Math.round(Math.min(wd, hd) / 10));
+    var d = maxFilter(small, wd, hd, rr, Float32Array), neg = new Float32Array(wd * hd);
+    for (i = 0; i < neg.length; i++) neg[i] = 255 - d[i];
+    var e = maxFilter(neg, wd, hd, rr, Float32Array), bgS = new Float32Array(wd * hd);
+    for (i = 0; i < bgS.length; i++) bgS[i] = 255 - e[i];
+    bgS = boxBlur(bgS, wd, hd, 2);
+    var out = new Float32Array(w * h);
+    for (y = 0; y < h; y++) { var fy = Math.min(hd - 1.001, y / f), y0 = Math.floor(fy), ty = fy - y0;
+      for (x = 0; x < w; x++) { var fx = Math.min(wd - 1.001, x / f), x0 = Math.floor(fx), tx = fx - x0, k = y0 * wd + x0;
+        out[y * w + x] = bgS[k] * (1 - tx) * (1 - ty) + bgS[k + 1] * tx * (1 - ty) + bgS[k + wd] * (1 - tx) * ty + bgS[k + wd + 1] * tx * ty; } }
+    return out;
+  }
+
   /* Soft ink in [0,1]: 0.5 sits exactly on the old hard threshold, and it ramps over a few grey levels so edges are anti-aliased. */
   function inkField(gray, w, h, mode, sens, smooth) {
     var sm = boxBlur(gray, w, h, smooth), out = new Float32Array(w * h), i;
     if (mode === 'draw') {
-      var lr = Math.max(6, Math.round(Math.min(w, h) / 45)), local = boxBlur(sm, w, h, lr), c = 46 - 0.43 * sens, soft = 20;
-      for (i = 0; i < w * h; i++) out[i] = clamp01((local[i] - sm[i] - c) / soft + 0.5);
+      var lr = Math.max(6, Math.round(Math.min(w, h) / 45)), c = 46 - 0.43 * sens, soft = 20;
+      var bg = background(sm, w, h), g2 = new Float32Array(w * h);
+      for (i = 0; i < w * h; i++) g2[i] = Math.min(255, sm[i] / Math.max(40, bg[i]) * 255);
+      var local = boxBlur(g2, w, h, lr);
+      for (i = 0; i < w * h; i++) out[i] = clamp01((local[i] - g2[i] - c) / soft + 0.5);
+      /* Solid dark areas become clean outlines: clear the ink deep inside them, where only noise would be left. */
+      var inv = new Uint8Array(w * h); for (i = 0; i < w * h; i++) inv[i] = g2[i] < 125 ? 0 : 1;
+      var near = dilate(inv, w, h, Math.max(2, Math.round(lr * 0.55)));
+      for (i = 0; i < w * h; i++) if (!near[i]) out[i] = 0;
     } else {
       var mag = new Float32Array(w * h), x, y, gx, gy, a, b, c2, d, f, gg, hh, ii;
       for (y = 1; y < h - 1; y++) for (x = 1; x < w - 1; x++) { i = y * w + x;
