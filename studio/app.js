@@ -6,7 +6,8 @@
   var E = window.SkinEngine, U = window.SkinUnlock, C = window.SkinConfig || {}, T = window.I18N || {};
   var $ = function (id) { return document.getElementById(id); };
   function t(k, v) { var s = T[k] != null ? T[k] : k; if (v) for (var n in v) s = s.split('{' + n + '}').join(v[n]); return s; }
-  var cO = $('cOrig'), cS = $('cOut'), cD = $('cDrift'), stage = $('stage');
+  var vO = $('cOrig'), vS = $('cOut'), vD = $('cDrift'), stage = $('stage');   // what the visitor sees, sized to the screen
+  var cO = document.createElement('canvas'), cS = document.createElement('canvas'), cD = document.createElement('canvas');   // full-resolution work canvases
   var FULL = null, SMALL = null, last = null;   // { canvas, gray, w, h }
   var state = { mode: 'draw', skin: null, drift: false };
   var SKINS = ['#F6DCC9', '#E8B98F', '#C98E5F', '#9A6240', '#6B4126', '#46281A'];
@@ -96,11 +97,25 @@
     if (state.drift && d.image) { var tc = document.createElement('canvas'); tc.width = src.w; tc.height = src.h; tc.getContext('2d').putImageData(d.image, 0, 0); dx.drawImage(tc, 0, 0); }
     $('kept').textContent = d.kept.toFixed(1) + '%'; $('lost').textContent = d.lost.toFixed(1) + '%'; $('added').textContent = d.added.toFixed(1) + '%';
     $('meterFill').style.width = d.kept + '%';
-    applySplit();
+    showView(); applySplit();
   }
+  /* The work canvases are larger than the screen. Letting the browser shrink them in CSS drops pixels and breaks thin hatching into
+     stair-steps, so the visible canvases are drawn at screen size (times the device pixel ratio) with halving steps and smooth scaling. */
+  function blit(dst, src) {
+    var w = dst.width, h = dst.height, cur = src;
+    while (cur.width / 2 >= w) { var t = document.createElement('canvas'); t.width = Math.ceil(cur.width / 2); t.height = Math.ceil(cur.height / 2); var tx = t.getContext('2d'); tx.imageSmoothingQuality = 'high'; tx.drawImage(cur, 0, 0, t.width, t.height); cur = t; }
+    var d = dst.getContext('2d'); d.clearRect(0, 0, w, h); d.imageSmoothingEnabled = true; d.imageSmoothingQuality = 'high'; d.drawImage(cur, 0, 0, w, h);
+  }
+  function showView() {
+    if (!cS.width) return;
+    var r = stage.getBoundingClientRect(), k = Math.min(2, window.devicePixelRatio || 1), w = Math.max(1, Math.round(r.width * k)), h = Math.max(1, Math.round(w * cS.height / cS.width));
+    [vO, vS, vD].forEach(function (c) { if (c.width !== w || c.height !== h) { c.width = w; c.height = h; } });
+    blit(vO, cO); blit(vS, cS); blit(vD, cD);
+  }
+  var resizeT = null; window.addEventListener('resize', function () { clearTimeout(resizeT); resizeT = setTimeout(showView, 120); });
   function applySplit() {
     var p = +$('split').value;
-    cS.style.clipPath = 'inset(0 0 0 ' + p + '%)'; cD.style.clipPath = 'inset(0 0 0 ' + p + '%)';
+    vS.style.clipPath = 'inset(0 0 0 ' + p + '%)'; vD.style.clipPath = 'inset(0 0 0 ' + p + '%)';
     $('handle').style.left = 'calc(' + p + '% - 1px)';
   }
 

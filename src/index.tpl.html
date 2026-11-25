@@ -473,7 +473,7 @@ footer .wrap{padding-block:28px}
   }
   function demo(){
     var p=photoLook(prep(cur,900)); drawOrig(dOrig,p); dStage.style.aspectRatio=p.w+'/'+p.h;
-    var r=run(p,{mode:p.mode,sens:+dS.value,smooth:0,weight:+dW.value,specks:30}); E.renderStencil(dOut,r.final,p.w,p.h,surface==='skin'?SKIN:null,null,r.alpha); split();
+    var r=run(p,{mode:p.mode,sens:+dS.value,smooth:0,weight:+dW.value,specks:30}); E.renderStencil(dOut,r.final,p.w,p.h,surface==='skin'?SKIN:null,null,r.alpha); E.crisp(dOrig); E.crisp(dOut); split();
   }
   var surf=document.getElementById('dSurface');
   [].forEach.call(surf.children,function(b){ b.addEventListener('click',function(){ surface=b.getAttribute('data-s'); [].forEach.call(surf.children,function(x){ x.setAttribute('aria-pressed',String(x===b)); }); sched(); }); });
@@ -535,6 +535,8 @@ footer .wrap{padding-block:28px}
       tg[0].textContent=T['d.do']; tg[1].textContent=T['d.dont']; ps[0].textContent=T[P[0]]; ps[1].textContent=T[P[1]]+'. '+T[P[3]]; box.appendChild(card);
     });
   })();
+  /* once the page has laid out, redraw every picture at the size it is shown (see SkinEngine.crisp) */
+  requestAnimationFrame(function(){ [].forEach.call(document.querySelectorAll('canvas'),function(c){ E.crisp(c); }); });
 })();
 </script>
 

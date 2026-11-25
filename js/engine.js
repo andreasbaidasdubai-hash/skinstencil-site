@@ -327,6 +327,17 @@
   /* Photo when there is continuous tone (shading) or the edges are soft; otherwise it is line art or a crisp flat design. */
   function decideMode(st) { return st.midTone > 0.035 || st.blurPx > 2.6 ? 'photo' : 'draw'; }
 
+  /* Redraw a canvas at the size it is shown (times the device pixel ratio), shrinking in halving steps with smooth scaling.
+     Left to CSS, a large canvas shown small loses pixels, and thin lines such as hatching turn into stair-steps. */
+  function crisp(c) {
+    var r = c.getBoundingClientRect(); if (!r.width || !c.width) return;
+    var k = Math.min(2, window.devicePixelRatio || 1), w = Math.round(r.width * k);
+    if (w >= c.width) return;
+    var h = Math.max(1, Math.round(w * c.height / c.width)), cur = document.createElement('canvas'); cur.width = c.width; cur.height = c.height; cur.getContext('2d').drawImage(c, 0, 0);
+    while (cur.width / 2 >= w) { var t = document.createElement('canvas'); t.width = Math.ceil(cur.width / 2); t.height = Math.ceil(cur.height / 2); var tx = t.getContext('2d'); tx.imageSmoothingQuality = 'high'; tx.drawImage(cur, 0, 0, t.width, t.height); cur = t; }
+    c.width = w; c.height = h; var x = c.getContext('2d'); x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high'; x.drawImage(cur, 0, 0, w, h);
+  }
+
   /* ---------- sample designs (drawn in code, free to use). Drawn at 2x so they stay crisp on sharp screens. ---------- */
   var S2 = 2;
   function newCanvas(w, h) { var c = document.createElement('canvas'); c.width = w * S2; c.height = h * S2; var x = c.getContext('2d'); x.scale(S2, S2); x.fillStyle = '#fff'; x.fillRect(0, 0, w, h); x.lineJoin = 'round'; x.lineCap = 'round'; x.strokeStyle = '#111'; return [c, x]; }
@@ -343,7 +354,6 @@
       x.lineWidth = 4; x.beginPath(); x.moveTo(350, 70); x.lineTo(350, 600); x.stroke();
       x.lineWidth = 7; x.beginPath(); x.moveTo(190, 600); x.quadraticCurveTo(350, 570, 510, 600); x.quadraticCurveTo(350, 650, 190, 600); x.stroke();
       function grip() { x.beginPath(); x.rect(326, 640, 48, 170); }
-      hatchFill(x, grip, -Math.PI / 4, 10, .5, 2, 350, 450, 700);
       x.lineWidth = 7; grip(); x.stroke();
       x.lineWidth = 3; for (var y = 665; y < 805; y += 22) { x.beginPath(); x.moveTo(326, y); x.lineTo(374, y + 14); x.stroke(); }
       x.lineWidth = 7; x.beginPath(); x.arc(350, 838, 26, 0, Math.PI * 2); x.stroke();
@@ -391,5 +401,5 @@
   }
 
   g.SkinEngine = { boxBlur: boxBlur, dilate: dilate, removeSpecks: removeSpecks, makeStencil: makeStencil, referenceMask: referenceMask, driftCheck: driftCheck,
-    grayFromCanvas: grayFromCanvas, canvasFromGray: canvasFromGray, renderStencil: renderStencil, fitToCanvas: fitToCanvas, samples: SAMPLES, degrade: degrade, recommend: recommend };
+    grayFromCanvas: grayFromCanvas, canvasFromGray: canvasFromGray, renderStencil: renderStencil, fitToCanvas: fitToCanvas, samples: SAMPLES, degrade: degrade, recommend: recommend, crisp: crisp };
 })(window);
