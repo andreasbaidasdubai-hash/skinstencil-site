@@ -15,11 +15,11 @@
   "hero.f1": "Działa w przeglądarce",
   "hero.f2": "Bez rejestracji",
   "hero.f3": "Twoje obrazy nie opuszczają urządzenia",
-  "demo.tagL": "Rysunek",
+  "demo.tagL": "Zdjęcie",
   "demo.tagR": "Stencil",
   "demo.weight": "Grubość linii",
   "demo.sens": "Czułość",
-  "demo.caption": "Na żywo: to darmowe narzędzie działające na przykładowym rysunku. Porusz suwakami.",
+  "demo.caption": "Na żywo: darmowe narzędzie na rysunku sfotografowanym przy nierównym świetle. Przesuń suwaki.",
   "demo.aria.split": "Przesuń, aby porównać rysunek ze stencilem",
   "demo.aria.samples": "Przykładowe projekty",
   "sample.dagger": "Sztylet",
@@ -273,5 +273,9 @@
   "seo.c.h": "Drukuj w rzeczywistym rozmiarze, na papierze termicznym lub zwykłym",
   "seo.c.p": "Podaj szerokość w milimetrach, a strona wydruku otworzy szablon tatuażu dokładnie w tym rozmiarze. Odblokowane pliki mają do 4000 px i niosą w PNG informację o 300 dpi, więc właściwy rozmiar trafia do programu drukującego. Użyj go z termiczną drukarką stencili albo wydrukuj i odrysuj na papier transferowy.",
   "seo.d.h": "Dla tatuatorów, uczniów i klientów z własnym wzorem",
-  "seo.d.p": "Używaj go do flashu, liternictwa, linework, mandali i wzorów tatuaży na zamówienie. Szablony powstają na Twoim urządzeniu, a obrazy nie są wysyłane. Wersja darmowa ma znak wodny i pobiera do 800 px; dniówka lub Pro usuwa znak wodny i zdejmuje limit rozmiaru."
+  "seo.d.p": "Używaj go do flashu, liternictwa, linework, mandali i wzorów tatuaży na zamówienie. Szablony powstają na Twoim urządzeniu, a obrazy nie są wysyłane. Wersja darmowa ma znak wodny i pobiera do 800 px; dniówka lub Pro usuwa znak wodny i zdejmuje limit rozmiaru.",
+  "demo.skin": "Na skórze",
+  "demo.paper": "Na papierze",
+  "demo.surface": "Pokaż szablon na",
+  "theme.label": "Jasny lub ciemny"
 }

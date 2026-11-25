@@ -7,6 +7,7 @@
 <meta name="description" content="{{s.desc}}">
 <link rel="canonical" href="{{canonical}}">
 {{hreflang}}
+<script src="/js/theme.js"></script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317161C'/%3E%3Cpath d='M16 5 L21 18 L16 22 L11 18 Z M14 23 H18 V28 H14 Z' fill='none' stroke='%23A99BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +25,8 @@
 :root[data-theme="dark"]{
   --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
   --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}
+.themebtn{font:500 15px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 9px;cursor:pointer;line-height:1.2}.themebtn:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
+.seg{display:flex;gap:6px;margin:12px 0 0}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
 html[lang="ar"] body,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}

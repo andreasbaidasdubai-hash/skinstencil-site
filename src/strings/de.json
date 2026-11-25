@@ -15,11 +15,11 @@
   "hero.f1": "Läuft in deinem Browser",
   "hero.f2": "Ohne Anmeldung",
   "hero.f3": "Deine Bilder verlassen nie dein Gerät",
-  "demo.tagL": "Zeichnung",
+  "demo.tagL": "Handyfoto",
   "demo.tagR": "Stencil",
   "demo.weight": "Linienstärke",
   "demo.sens": "Empfindlichkeit",
-  "demo.caption": "Live: Das ist das kostenlose Tool auf einer Beispielzeichnung. Bewege die Regler.",
+  "demo.caption": "Live: das kostenlose Tool an einer Beispielzeichnung, fotografiert bei ungleichmäßigem Licht. Bewege die Regler.",
   "demo.aria.split": "Schieben, um die Zeichnung mit dem Stencil zu vergleichen",
   "demo.aria.samples": "Beispielmotive",
   "sample.dagger": "Dolch",
@@ -273,5 +273,9 @@
   "seo.c.h": "In Originalgröße drucken, auf Thermopapier oder normalem Papier",
   "seo.c.p": "Gib die Breite in Millimetern an, und die Druckseite öffnet den Stencil in genau dieser Größe. Freigeschaltete Downloads haben bis zu 4000 px und tragen eine 300-dpi-Größenangabe in der PNG-Datei, sodass die richtige Größe in deiner Drucksoftware ankommt. Nutze ihn mit einem Thermodrucker für Stencils oder drucke ihn aus und pause ihn auf Transferpapier durch.",
   "seo.d.h": "Für Tätowierer, Lehrlinge und Kunden mit eigenem Motiv",
-  "seo.d.p": "Ob Flash, Lettering, Linework, Mandala oder individuelles Motiv: Der Tattoo Generator passt. Die Stencils entstehen auf deinem Gerät, deine Bilder werden nicht hochgeladen. Die kostenlose Version hat ein Wasserzeichen und lädt bis zu 800 px herunter. Mit Tagespass oder Pro entfallen Wasserzeichen und Größenlimit."
+  "seo.d.p": "Ob Flash, Lettering, Linework, Mandala oder individuelles Motiv: Der Tattoo Generator passt. Die Stencils entstehen auf deinem Gerät, deine Bilder werden nicht hochgeladen. Die kostenlose Version hat ein Wasserzeichen und lädt bis zu 800 px herunter. Mit Tagespass oder Pro entfallen Wasserzeichen und Größenlimit.",
+  "demo.skin": "Auf Haut",
+  "demo.paper": "Auf Papier",
+  "demo.surface": "Stencil anzeigen auf",
+  "theme.label": "Hell oder dunkel"
 }

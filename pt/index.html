@@ -53,6 +53,7 @@
 <link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/">
 <link rel="alternate" hreflang="pl-PL" href="https://skinstencil.com/pl/">
 <link rel="alternate" hreflang="x-default" href="https://skinstencil.com/">
+<script src="/js/theme.js"></script>
 <meta property="og:title" content="Stencil de tatuagem: desenho ou foto em decalque | Skinstencil">
 <meta property="og:description" content="Gerador grátis de stencil de tatuagem no navegador. Transforme desenho ou foto em decalque limpo e imprima em tamanho real. Nada é enviado.">
 <meta property="og:type" content="website">
@@ -75,6 +76,8 @@
 :root[data-theme="dark"]{
   --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
   --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --good:#6FD3A0; --bad:#FF8A80; color-scheme:dark}
+.themebtn{font:500 15px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 9px;cursor:pointer;line-height:1.2}.themebtn:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
+.seg{display:flex;gap:6px;margin:12px 0 0}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
 html[lang="ar"] body{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
@@ -228,15 +231,16 @@ footer .wrap{padding-block:28px}
     <div class="stage" id="dStage" style="aspect-ratio:7/9">
       <canvas id="dOrig"></canvas><canvas id="dOut"></canvas>
       <div class="handle" id="dHandle" style="left:calc(50% - 1px)"></div>
-      <span class="tagL">Desenho</span><span class="tagR">Stencil</span>
+      <span class="tagL">Foto</span><span class="tagR">Stencil</span>
     </div>
     <input id="dSplit" type="range" min="0" max="100" value="50" aria-label="Deslize para comparar o desenho com o stencil">
+    <div class="seg" id="dSurface" role="group" aria-label="Mostrar o decalque em"><button type="button" class="chip" data-s="skin" aria-pressed="true">Na pele</button><button type="button" class="chip" data-s="paper" aria-pressed="false">No papel</button></div>
     <div class="chips" id="dChips" role="group" aria-label="Desenhos de exemplo"></div>
     <div class="ctl">
       <div><label for="dWeight">Espessura da linha <span id="dWeightV">2</span></label><input id="dWeight" type="range" min="1" max="6" value="2"></div>
       <div><label for="dSens">Sensibilidade <span id="dSensV">55</span></label><input id="dSens" type="range" min="1" max="100" value="55"></div>
     </div>
-    <p class="caption">Ao vivo: esta é a ferramenta gratuita rodando em um desenho de exemplo. Mexa nos controles.</p>
+    <p class="caption">Ao vivo: a ferramenta gratuita num desenho fotografado com luz irregular. Mova os controles.</p>
   </div>
 </div></div>
 
@@ -478,13 +482,32 @@ footer .wrap{padding-block:28px}
   function drawOrig(canvas,p){ canvas.width=p.w; canvas.height=p.h; canvas.getContext('2d').drawImage(p.canvas,0,0); }
 
   /* ---------- hero demo ---------- */
-  var cur='dagger', dOrig=document.getElementById('dOrig'), dOut=document.getElementById('dOut'), dStage=document.getElementById('dStage');
+  /* The "before" is a sample drawing made to look like a phone photo (uneven light, tinted paper, grain), and the stencil is made from THAT image,
+     so the demo shows the engine coping with a real-world input rather than a perfect file. */
+  var cur='dagger', surface='skin', SKIN='#E2B08A', dOrig=document.getElementById('dOrig'), dOut=document.getElementById('dOut'), dStage=document.getElementById('dStage');
   var dW=document.getElementById('dWeight'), dS=document.getElementById('dSens'), dSplit=document.getElementById('dSplit'), chips=document.getElementById('dChips');
-  var busy=false;
-  function demo(){
-    var p=prep(cur,900); drawOrig(dOrig,p); dStage.style.aspectRatio=p.w+'/'+p.h;
-    var r=run(p,{mode:p.mode,sens:+dS.value,smooth:0,weight:+dW.value,specks:30}); E.renderStencil(dOut,r.final,p.w,p.h,null,null,r.alpha); split();
+  var busy=false, photoCache={};
+  function photoLook(p){
+    var key=cur+'@'+p.w+'x'+p.h; if(photoCache[key]) return photoCache[key];
+    var c=document.createElement('canvas'); c.width=p.w; c.height=p.h; var x=c.getContext('2d'); x.drawImage(p.canvas,0,0);
+    var im=x.getImageData(0,0,p.w,p.h), d=im.data, seed=12345;
+    for(var yy=0;yy<p.h;yy++) for(var xx=0;xx<p.w;xx++){
+      var i=(yy*p.w+xx)*4, u=xx/p.w, v=yy/p.h, light=0.80+0.20*u-0.10*v;
+      var dx=u-0.5, dy=v-0.5, vig=1-0.5*(dx*dx+dy*dy);
+      seed=(seed*1664525+1013904223)>>>0; var n=((seed>>>16)&255)/255-0.5;
+      var ink=(255-d[i])/255, base=232-ink*205; /* paper is off-white and ink is dark grey, not pure black */
+      var val=(base*light*vig)+n*9;
+      d[i]=Math.max(0,Math.min(255,val+6)); d[i+1]=Math.max(0,Math.min(255,val+1)); d[i+2]=Math.max(0,Math.min(255,val-10));
+    }
+    x.putImageData(im,0,0);
+    var g=E.grayFromCanvas(c); return (photoCache[key]={canvas:c,gray:g.gray,w:g.w,h:g.h,mode:p.mode});
   }
+  function demo(){
+    var p=photoLook(prep(cur,900)); drawOrig(dOrig,p); dStage.style.aspectRatio=p.w+'/'+p.h;
+    var r=run(p,{mode:p.mode,sens:+dS.value,smooth:0,weight:+dW.value,specks:30}); E.renderStencil(dOut,r.final,p.w,p.h,surface==='skin'?SKIN:null,null,r.alpha); split();
+  }
+  var surf=document.getElementById('dSurface');
+  [].forEach.call(surf.children,function(b){ b.addEventListener('click',function(){ surface=b.getAttribute('data-s'); [].forEach.call(surf.children,function(x){ x.setAttribute('aria-pressed',String(x===b)); }); sched(); }); });
   function split(){ var v=+dSplit.value; dOut.style.clipPath='inset(0 0 0 '+v+'%)'; document.getElementById('dHandle').style.left='calc('+v+'% - 1px)'; }
   function sched(){ if(busy) return; busy=true; requestAnimationFrame(function(){ busy=false; demo(); }); }
   ORDER.forEach(function(n,i){ var b=document.createElement('button'); b.type='button'; b.className='chip'; b.textContent=label(n); b.setAttribute('aria-pressed',String(i===0));

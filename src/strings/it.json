@@ -15,11 +15,11 @@
   "hero.f1": "Gira nel browser",
   "hero.f2": "Senza registrazione",
   "hero.f3": "Le tue immagini non lasciano mai il tuo dispositivo",
-  "demo.tagL": "Disegno",
+  "demo.tagL": "Foto",
   "demo.tagR": "Stencil",
   "demo.weight": "Spessore linea",
   "demo.sens": "Sensibilità",
-  "demo.caption": "In diretta: è lo strumento gratuito al lavoro su un disegno di esempio. Muovi i cursori.",
+  "demo.caption": "Dal vivo: lo strumento gratuito su un disegno fotografato con luce irregolare. Muovi i cursori.",
   "demo.aria.split": "Scorri per confrontare il disegno con lo stencil",
   "demo.aria.samples": "Disegni di esempio",
   "sample.dagger": "Pugnale",
@@ -273,5 +273,9 @@
   "seo.c.h": "Stampa il trasferello per tatuaggi a grandezza reale, su carta termica o normale",
   "seo.c.p": "Imposta la larghezza in millimetri e la pagina di stampa apre lo stencil esattamente a quella misura. I download sbloccati arrivano fino a 4000 px e contengono nel PNG una dimensione di 300 dpi, così la misura giusta arriva al tuo software di stampa. Usalo con una stampante termica per stencil, oppure stampa e ricalca su carta da trasferimento.",
   "seo.d.h": "Pensato per tatuatori, apprendisti e clienti con un disegno proprio",
-  "seo.d.p": "Usalo per flash, lettering, linework, mandala e lavori su misura. Gli stencil vengono creati sul tuo dispositivo e le tue immagini non vengono caricate. Lo strumento gratuito ha la filigrana e download fino a 800 px; il pass giornaliero o Pro toglie la filigrana e rimuove il limite di dimensione."
+  "seo.d.p": "Usalo per flash, lettering, linework, mandala e lavori su misura. Gli stencil vengono creati sul tuo dispositivo e le tue immagini non vengono caricate. Lo strumento gratuito ha la filigrana e download fino a 800 px; il pass giornaliero o Pro toglie la filigrana e rimuove il limite di dimensione.",
+  "demo.skin": "Sulla pelle",
+  "demo.paper": "Su carta",
+  "demo.surface": "Mostra lo stencil su",
+  "theme.label": "Chiaro o scuro"
 }

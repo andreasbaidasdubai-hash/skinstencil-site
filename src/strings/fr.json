@@ -15,11 +15,11 @@
   "hero.f1": "Fonctionne dans votre navigateur",
   "hero.f2": "Sans inscription",
   "hero.f3": "Vos images ne quittent jamais votre appareil",
-  "demo.tagL": "Dessin",
+  "demo.tagL": "Photo",
   "demo.tagR": "Stencil",
   "demo.weight": "Épaisseur du trait",
   "demo.sens": "Sensibilité",
-  "demo.caption": "En direct : voici l'outil gratuit sur un dessin d'exemple. Déplacez les curseurs.",
+  "demo.caption": "En direct : l'outil gratuit sur un dessin photographié sous une lumière inégale. Bougez les curseurs.",
   "demo.aria.split": "Faites glisser pour comparer le dessin et le stencil",
   "demo.aria.samples": "Dessins d'exemple",
   "sample.dagger": "Dague",
@@ -273,5 +273,9 @@
   "seo.c.h": "Imprimez en taille réelle, sur papier thermique ou classique",
   "seo.c.p": "Indiquez la largeur en millimètres et la page d'impression ouvre le calque exactement à cette taille. Les téléchargements débloqués vont jusqu'à 4000 px et portent une taille de 300 dpi dans le PNG, pour que la bonne taille arrive dans votre logiciel d'impression. Utilisez-le avec une imprimante thermique de pochoirs, ou imprimez-le et repassez-le sur du papier de transfert.",
   "seo.d.h": "Pour les tatoueurs, les apprentis et les clients qui ont leur propre dessin",
-  "seo.d.p": "Utilisez-le pour du flash, du lettering, du linework, des mandalas et des créations sur mesure. Les pochoirs sont créés sur votre appareil et vos images ne sont pas envoyées. L'outil gratuit ajoute un filigrane et télécharge jusqu'à 800 px. Un pass jour ou Pro retire le filigrane et lève la limite de taille."
+  "seo.d.p": "Utilisez-le pour du flash, du lettering, du linework, des mandalas et des créations sur mesure. Les pochoirs sont créés sur votre appareil et vos images ne sont pas envoyées. L'outil gratuit ajoute un filigrane et télécharge jusqu'à 800 px. Un pass jour ou Pro retire le filigrane et lève la limite de taille.",
+  "demo.skin": "Sur la peau",
+  "demo.paper": "Sur papier",
+  "demo.surface": "Afficher le pochoir sur",
+  "theme.label": "Clair ou sombre"
 }

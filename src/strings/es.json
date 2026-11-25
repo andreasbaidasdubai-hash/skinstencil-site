@@ -15,11 +15,11 @@
   "hero.f1": "Funciona en tu navegador",
   "hero.f2": "Sin registro",
   "hero.f3": "Tus imágenes no salen de tu dispositivo",
-  "demo.tagL": "Dibujo",
+  "demo.tagL": "Foto",
   "demo.tagR": "Stencil",
   "demo.weight": "Grosor de línea",
   "demo.sens": "Sensibilidad",
-  "demo.caption": "En vivo: esta es la herramienta gratuita sobre un dibujo de ejemplo. Mueve los controles.",
+  "demo.caption": "En vivo: la herramienta gratuita sobre un dibujo fotografiado con luz irregular. Mueve los controles.",
   "demo.aria.split": "Desliza para comparar el dibujo con el stencil",
   "demo.aria.samples": "Diseños de ejemplo",
   "sample.dagger": "Daga",
@@ -273,5 +273,9 @@
   "seo.c.h": "Imprime a tamaño real, en papel térmico o normal",
   "seo.c.p": "Indica el ancho en milímetros y la página de impresión abre el stencil exactamente a ese tamaño. Las descargas desbloqueadas llegan hasta 4000 px e incluyen un tamaño de 300 ppp dentro del PNG, así que el tamaño correcto llega a tu software de impresión. Úsalo con una impresora térmica de stencils o imprímelo y calca el diseño sobre papel de transferencia.",
   "seo.d.h": "Hecho para tatuadores, aprendices y clientes con su propio diseño",
-  "seo.d.p": "Úsalo para flash, lettering, linework, mandalas y piezas personalizadas. Los stencils se crean en tu dispositivo y tus imágenes no se suben. La herramienta gratuita lleva marca de agua y descarga hasta 800 px. Un pase de día o Pro quita la marca de agua y elimina el límite de tamaño."
+  "seo.d.p": "Úsalo para flash, lettering, linework, mandalas y piezas personalizadas. Los stencils se crean en tu dispositivo y tus imágenes no se suben. La herramienta gratuita lleva marca de agua y descarga hasta 800 px. Un pase de día o Pro quita la marca de agua y elimina el límite de tamaño.",
+  "demo.skin": "Sobre la piel",
+  "demo.paper": "Sobre papel",
+  "demo.surface": "Mostrar el stencil sobre",
+  "theme.label": "Claro u oscuro"
 }

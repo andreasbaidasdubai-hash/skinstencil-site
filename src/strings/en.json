@@ -15,11 +15,11 @@
   "hero.f1": "Runs in your browser",
   "hero.f2": "No sign-up",
   "hero.f3": "Your images never leave your device",
-  "demo.tagL": "Drawing",
+  "demo.tagL": "Phone photo",
   "demo.tagR": "Stencil",
   "demo.weight": "Line weight",
   "demo.sens": "Sensitivity",
-  "demo.caption": "Live: this is the free tool running on a sample drawing. Move the sliders.",
+  "demo.caption": "Live: the free tool on a sample drawing, photographed in uneven light. Move the sliders.",
   "demo.aria.split": "Slide to compare the drawing with the stencil",
   "demo.aria.samples": "Sample designs",
   "sample.dagger": "Dagger",
@@ -273,5 +273,9 @@
   "seo.c.h": "Print at true size, on thermal or regular paper",
   "seo.c.p": "Set the width in millimetres and the print page opens the stencil at exactly that size. Unlocked downloads are up to 4000 px and carry a 300 dpi size inside the PNG, so the right size comes through in your print software. Use it with a thermal stencil printer or print it and trace it onto transfer paper.",
   "seo.d.h": "Made for tattoo artists, apprentices and clients with their own design",
-  "seo.d.p": "Use it for flash, lettering, linework, mandalas and custom pieces. Stencils are made on your device and your images are not uploaded. The free tool carries a watermark and downloads up to 800 px; a day pass or Pro removes the watermark and lifts the size limit."
+  "seo.d.p": "Use it for flash, lettering, linework, mandalas and custom pieces. Stencils are made on your device and your images are not uploaded. The free tool carries a watermark and downloads up to 800 px; a day pass or Pro removes the watermark and lifts the size limit.",
+  "demo.skin": "On skin",
+  "demo.paper": "On paper",
+  "demo.surface": "Show the stencil on",
+  "theme.label": "Light or dark"
 }

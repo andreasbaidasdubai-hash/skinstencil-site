@@ -15,11 +15,11 @@
   "hero.f1": "Roda no seu navegador",
   "hero.f2": "Sem cadastro",
   "hero.f3": "Suas imagens nunca saem do seu aparelho",
-  "demo.tagL": "Desenho",
+  "demo.tagL": "Foto",
   "demo.tagR": "Stencil",
   "demo.weight": "Espessura da linha",
   "demo.sens": "Sensibilidade",
-  "demo.caption": "Ao vivo: esta é a ferramenta gratuita rodando em um desenho de exemplo. Mexa nos controles.",
+  "demo.caption": "Ao vivo: a ferramenta gratuita num desenho fotografado com luz irregular. Mova os controles.",
   "demo.aria.split": "Deslize para comparar o desenho com o stencil",
   "demo.aria.samples": "Desenhos de exemplo",
   "sample.dagger": "Adaga",
@@ -273,5 +273,9 @@
   "seo.c.h": "Imprima o molde de tatuagem em tamanho real, em papel térmico ou comum",
   "seo.c.p": "Defina a largura em milímetros e a página de impressão abre o stencil exatamente nesse tamanho. Os downloads liberados têm até 4000 px e levam um tamanho de 300 dpi dentro do PNG, então a medida certa chega ao seu software de impressão. Use com uma impressora térmica de stencil ou imprima e copie para o papel de decalque.",
   "seo.d.h": "Feito para tatuadores, aprendizes e clientes com o próprio desenho",
-  "seo.d.p": "Use para flash, lettering, linework, mandalas e trabalhos autorais. Os stencils são feitos no seu dispositivo e suas imagens não são enviadas. A ferramenta grátis tem marca d'água e downloads de até 800 px; o passe de um dia ou o Pro tira a marca d'água e remove o limite de tamanho."
+  "seo.d.p": "Use para flash, lettering, linework, mandalas e trabalhos autorais. Os stencils são feitos no seu dispositivo e suas imagens não são enviadas. A ferramenta grátis tem marca d'água e downloads de até 800 px; o passe de um dia ou o Pro tira a marca d'água e remove o limite de tamanho.",
+  "demo.skin": "Na pele",
+  "demo.paper": "No papel",
+  "demo.surface": "Mostrar o decalque em",
+  "theme.label": "Claro ou escuro"
 }

@@ -15,11 +15,11 @@
   "hero.f1": "Draait in je browser",
   "hero.f2": "Geen account nodig",
   "hero.f3": "Je afbeeldingen verlaten je apparaat nooit",
-  "demo.tagL": "Tekening",
+  "demo.tagL": "Foto",
   "demo.tagR": "Stencil",
   "demo.weight": "Lijndikte",
   "demo.sens": "Gevoeligheid",
-  "demo.caption": "Live: dit is de gratis tool op een voorbeeldtekening. Beweeg de schuifjes.",
+  "demo.caption": "Live: de gratis tool op een tekening die bij ongelijk licht is gefotografeerd. Verschuif de schuiven.",
   "demo.aria.split": "Schuif om de tekening met de stencil te vergelijken",
   "demo.aria.samples": "Voorbeeldontwerpen",
   "sample.dagger": "Dolk",
@@ -273,5 +273,9 @@
   "seo.c.h": "Print je tattoo voorbeeld op ware grootte, op thermisch of gewoon papier",
   "seo.c.p": "Stel de breedte in millimeters in en de printpagina opent de stencil precies op die maat. Ontgrendelde downloads zijn tot 4000 px en bevatten een grootte van 300 dpi in de PNG, zodat de juiste maat doorkomt in je printsoftware. Gebruik het met een thermische stencilprinter, of print het en trek het over op transferpapier.",
   "seo.d.h": "Gemaakt voor tatoeëerders, leerlingen en klanten met een eigen ontwerp",
-  "seo.d.p": "Gebruik het voor flash, lettering, linework, mandala's en maatwerk. Stencils worden op je eigen apparaat gemaakt en je beelden worden niet geüpload. De gratis tool heeft een watermerk en downloads tot 800 px; met een dagpas of Pro verdwijnt het watermerk en vervalt de groottelimiet."
+  "seo.d.p": "Gebruik het voor flash, lettering, linework, mandala's en maatwerk. Stencils worden op je eigen apparaat gemaakt en je beelden worden niet geüpload. De gratis tool heeft een watermerk en downloads tot 800 px; met een dagpas of Pro verdwijnt het watermerk en vervalt de groottelimiet.",
+  "demo.skin": "Op huid",
+  "demo.paper": "Op papier",
+  "demo.surface": "Toon de stencil op",
+  "theme.label": "Licht of donker"
 }

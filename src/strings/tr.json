@@ -15,11 +15,11 @@
   "hero.f1": "Tarayıcınızda çalışır",
   "hero.f2": "Kayıt gerekmez",
   "hero.f3": "Görselleriniz cihazınızdan çıkmaz",
-  "demo.tagL": "Çizim",
+  "demo.tagL": "Fotoğraf",
   "demo.tagR": "Stencil",
   "demo.weight": "Çizgi kalınlığı",
   "demo.sens": "Hassasiyet",
-  "demo.caption": "Canlı: ücretsiz araç bir örnek çizim üzerinde çalışıyor. Kaydırıcıları oynatın.",
+  "demo.caption": "Canlı: ücretsiz araç, düzensiz ışıkta fotoğraflanmış bir çizimde. Kaydırıcıları oynat.",
   "demo.aria.split": "Çizimi stencil ile karşılaştırmak için kaydırın",
   "demo.aria.samples": "Örnek tasarımlar",
   "sample.dagger": "Hançer",
@@ -273,5 +273,9 @@
   "seo.c.h": "Gerçek boyutta yazdır, termal ya da normal kâğıda",
   "seo.c.p": "Genişliği milimetre olarak gir, yazdırma sayfası dövme tasarımını tam o boyutta açar. Kilidi açılmış indirmeler 4000 piksele kadar çıkar ve PNG içinde 300 dpi boyut bilgisi taşır, böylece doğru ölçü yazdırma programına geçer. Termal stencil yazıcıyla kullan ya da yazdırıp transfer kâğıdına kalemle geçir.",
   "seo.d.h": "Dövmeciler, çıraklar ve kendi tasarımı olan müşteriler için",
-  "seo.d.p": "Flash, yazı, çizgi işi, mandala ve özel dövme tasarımları için kullanabilirsin. Şablonlar cihazında hazırlanır, görsellerin yüklenmez. Ücretsiz sürümde filigran vardır ve indirmeler 800 piksele kadardır; günlük geçiş veya Pro filigranı kaldırır ve boyut sınırını açar."
+  "seo.d.p": "Flash, yazı, çizgi işi, mandala ve özel dövme tasarımları için kullanabilirsin. Şablonlar cihazında hazırlanır, görsellerin yüklenmez. Ücretsiz sürümde filigran vardır ve indirmeler 800 piksele kadardır; günlük geçiş veya Pro filigranı kaldırır ve boyut sınırını açar.",
+  "demo.skin": "Ciltte",
+  "demo.paper": "Kağıtta",
+  "demo.surface": "Şablonu şurada göster",
+  "theme.label": "Açık veya koyu"
 }
