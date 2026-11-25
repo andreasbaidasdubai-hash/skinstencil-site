@@ -11,6 +11,7 @@ window.SkinConfig = {
     year: "https://buy.polar.sh/polar_cl_RtlAFQ4fBXdVCVJiYUtHcVmwqlGmTetAxMO8p1IRBAX"
   },
   prices: { currency: "USD", day: "4.99", month: "12", year: "79" },
+  analyticsToken: "",
   notifyEmail: "hello@skinstencil.com",
   freeMaxPx: 800,
   paidMaxPx: 4000
