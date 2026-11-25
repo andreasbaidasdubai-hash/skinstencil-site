@@ -146,6 +146,11 @@ footer .wrap{padding-block:28px}
 }
 @media (max-width:560px){.plans4{grid-template-columns:minmax(0,1fr)}.topnav{gap:8px;width:100%;justify-content:space-between}.topnav>a{display:none}header .wrap{padding-block:12px}.topnav{flex-wrap:nowrap}nav.tabs button{padding:7px 9px;font-size:13px}.langsel{max-width:96px}}
 @media (prefers-reduced-motion:no-preference){nav.tabs button{transition:background .15s}}
+.gl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px}
+.glink{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.glink:hover{border-color:var(--stencil)}.glink h3{font-size:17px}.glink p{margin:6px 0 0;font-size:14px;color:var(--muted)}
+#guides .note a{color:var(--stencil)}
+@media (max-width:900px){.gl{grid-template-columns:minmax(0,1fr)}}
 [hidden]{display:none!important}
 </style>
 {{ldjson}}
@@ -155,7 +160,7 @@ footer .wrap{padding-block:28px}
 <header><div class="wrap">
   <a class="mark" href="{{base}}">skin<span>stencil</span></a>
   <div class="topnav">
-    <a href="#examples">{{nav.examples}}</a><a href="#pricing">{{nav.pricing}}</a><a href="#faq">{{nav.faq}}</a>
+    <a href="#examples">{{nav.examples}}</a><a href="#pricing">{{nav.pricing}}</a>{{guidesNav}}<a href="#faq">{{nav.faq}}</a>
     <label class="vh" for="langSel">{{lang.label}}</label>
     {{langSelect}}
     <nav class="tabs" aria-label="Product">
@@ -308,6 +313,7 @@ footer .wrap{padding-block:28px}
   </div>
 </div></section>
 
+{{guidesSection}}
 <section id="faq"><div class="wrap">
   <div class="eyebrow">{{q.eyebrow}}</div>
   <h2>{{q.h2}}</h2>

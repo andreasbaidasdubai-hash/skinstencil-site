@@ -280,4 +280,24 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/studio/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/studio/"/>
   </url>
+  <url>
+    <loc>https://skinstencil.com/guides/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/guides/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/guides/tattoo-stencil-from-photo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/guides/tattoo-stencil-from-photo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/guides/tattoo-stencil-from-photo/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/guides/tattoo-stencil-size-true-size-print/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/guides/tattoo-stencil-size-true-size-print/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/guides/tattoo-stencil-size-true-size-print/"/>
+  </url>
+  <url>
+    <loc>https://skinstencil.com/guides/tattoo-stencil-transfer-methods/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skinstencil.com/guides/tattoo-stencil-transfer-methods/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skinstencil.com/guides/tattoo-stencil-transfer-methods/"/>
+  </url>
 </urlset>

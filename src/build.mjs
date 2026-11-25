@@ -23,10 +23,22 @@ const LANGS = [
 
 const read = p => readFileSync(path.join(ROOT, p), 'utf8');
 const en = JSON.parse(read('src/strings/en.json'));
-const TPL = { index: read('src/index.tpl.html'), studio: read('src/studio.tpl.html') };
+const TPL = { index: read('src/index.tpl.html'), studio: read('src/studio.tpl.html'), guide: read('src/guide.tpl.html') };
+
+// Guides: one JSON per language in src/guides/<code>.json. A language without a file is skipped silently.
+const GUIDES = {};
+for (const l of LANGS) {
+  const f = path.join(ROOT, 'src/guides', l.code + '.json');
+  if (!existsSync(f)) continue;
+  const g = JSON.parse(readFileSync(f, 'utf8'));
+  g.order = (g.order || Object.keys(g.guides)).filter(s => g.guides[s]);
+  if (g.order.length) GUIDES[l.code] = g;
+}
+// Languages that have a given guide (slug null = the guides index), in LANGS order; the first is the x-default.
+const guideLangs = slug => LANGS.filter(l => GUIDES[l.code] && (slug === null || GUIDES[l.code].guides[slug]));
 
 const baseOf = l => (l.code === 'en' ? '/' : `/${l.code}/`);
-const urlOf = (l, page) => baseOf(l) + (page === 'studio' ? 'studio/' : '');
+const urlOf = (l, page) => baseOf(l) + (page === 'studio' ? 'studio/' : page === 'guides' ? 'guides/' : page.startsWith('guide:') ? 'guides/' + page.slice(6) + '/' : '');
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
 function strings(l) {
@@ -37,18 +49,18 @@ function strings(l) {
   for (const k of Object.keys(en)) if (!(k in own)) console.warn(`[${l.code}] missing key ${k}, using English`);
   return { ...en, ...own };
 }
-function hreflang(page) {
+function hreflang(page, only) {
   const out = [];
-  for (const l of LANGS) {
+  for (const l of (only || LANGS)) {
     out.push(`<link rel="alternate" hreflang="${l.code}" href="${SITE}${urlOf(l, page)}">`);
     for (const r of l.regions) out.push(`<link rel="alternate" hreflang="${r}" href="${SITE}${urlOf(l, page)}">`);
   }
-  out.push(`<link rel="alternate" hreflang="x-default" href="${SITE}${urlOf(LANGS[0], page)}">`);
+  out.push(`<link rel="alternate" hreflang="x-default" href="${SITE}${urlOf((only || LANGS)[0], page)}">`);
   return out.join('\n');
 }
-function langSelect(cur, page, S) {
-  const opts = LANGS.map(l => `<option value="${urlOf(l, page)}"${l.code === cur.code ? ' selected' : ''} lang="${l.code}">${l.name}</option>`).join('');
-  return `<select class="langsel" id="langSel" aria-label="${esc(S['lang.label'])}">${opts}</select>`;
+function langSelect(cur, page, S, only, label) {
+  const opts = (only || LANGS).map(l => `<option value="${urlOf(l, page)}"${l.code === cur.code ? ' selected' : ''} lang="${l.code}">${l.name}</option>`).join('');
+  return `<select class="langsel" id="langSel" aria-label="${esc(label || S['lang.label'])}">${opts}</select>`;
 }
 function i18nJson(S, prefixes) {
   const o = {}; for (const k of Object.keys(S)) if (prefixes.some(p => k.startsWith(p))) o[k] = S[k];
@@ -64,6 +76,83 @@ function ldjson(S, l, page) {
   const wrap = o => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, '\\u003c') + '</script>';
   return wrap(app) + '\n' + wrap({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq });
 }
+// ---------- guides ----------
+const ent = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+// Inline text: escapes HTML, then **bold** and [text](guide:slug) / [text](studio) links.
+function inl(text, l) {
+  return ent(text)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\((guide:[a-z0-9-]+|studio)\)/g, (m, t, target) => `<a href="${urlOf(l, target)}">${t}</a>`);
+}
+const dateOf = (iso, l) => { try { return new Date(iso + 'T00:00:00Z').toLocaleDateString(l.locale.replace('_', '-'), { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }); } catch { return iso; } };
+const ldWrap = o => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, '\\u003c') + '</script>';
+const orgRef = { '@type': 'Organization', name: 'Skinstencil', url: SITE + '/' };
+const crumbLd = (l, G, g) => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: G.ui.home, item: SITE + baseOf(l) },
+  { '@type': 'ListItem', position: 2, name: G.ui.guides, item: SITE + urlOf(l, 'guides') },
+  ...(g ? [{ '@type': 'ListItem', position: 3, name: g.title, item: SITE + urlOf(l, 'guide:' + g.slug) }] : []) ] });
+const crumbHtml = (l, G, g) => `<nav class="crumbs" aria-label="${ent(G.ui.breadcrumbLabel)}"><ol><li><a href="${baseOf(l)}">${ent(G.ui.home)}</a></li>` +
+  (g ? `<li><a href="${urlOf(l, 'guides')}">${ent(G.ui.guides)}</a></li><li aria-current="page">${ent(g.short || g.title)}</li>` : `<li aria-current="page">${ent(G.ui.guides)}</li>`) + '</ol></nav>';
+
+function renderGuide(l, G, slug) {
+  const g = { ...G.guides[slug], slug };
+  const blocks = [];
+  const steps = [];
+  for (const s of g.sections) {
+    blocks.push(`<h2>${inl(s.h2, l)}</h2>`);
+    if (s.stepsIntro) blocks.push(`<p>${inl(s.stepsIntro, l)}</p>`);
+    if (s.steps) {
+      blocks.push('<ol class="how">' + s.steps.map(x => `<li><b>${inl(x.name, l)}.</b> ${inl(x.text, l)}</li>`).join('') + '</ol>');
+      if (g.howto) for (const x of s.steps) steps.push({ '@type': 'HowToStep', name: plain(x.name), text: plain(x.text) });
+    }
+    for (const b of s.blocks || []) {
+      if (b.p) blocks.push(`<p>${inl(b.p, l)}</p>`);
+      else if (b.h3) blocks.push(`<h3>${inl(b.h3, l)}</h3>`);
+      else if (b.ul) blocks.push('<ul>' + b.ul.map(x => `<li>${inl(x, l)}</li>`).join('') + '</ul>');
+      else if (b.ol) blocks.push('<ol>' + b.ol.map(x => `<li>${inl(x, l)}</li>`).join('') + '</ol>');
+      else if (b.table) blocks.push('<div class="tbl"><table><thead><tr>' + b.table.head.map(h => `<th scope="col">${inl(h, l)}</th>`).join('') + '</tr></thead><tbody>' +
+        b.table.rows.map(r => '<tr>' + r.map((c, i) => i === 0 ? `<th scope="row">${inl(c, l)}</th>` : `<td>${inl(c, l)}</td>`).join('') + '</tr>').join('') + '</tbody></table></div>');
+    }
+  }
+  const faq = (g.faq || []).map(f => `<details><summary>${inl(f.q, l)}</summary><p>${inl(f.a, l)}</p></details>`).join('');
+  const related = G.order.filter(s => s !== slug).map(s => `<a class="card" href="${urlOf(l, 'guide:' + s)}"><h3>${ent(G.guides[s].short || G.guides[s].title)}</h3><p>${ent(G.guides[s].blurb || '')}</p></a>`).join('');
+  const body = crumbHtml(l, G, g) + `<article><h1>${ent(g.title)}</h1>
+<p class="meta">${ent(G.ui.updated)}: <time datetime="${g.updated}">${ent(dateOf(g.updated, l))}</time></p>
+<div class="answer"><b>${ent(G.ui.answerLabel)}</b><p>${inl(g.answer, l)}</p></div>
+${blocks.join('\n')}
+<h2>${ent(G.ui.faq)}</h2><div>${faq}</div>
+<div class="cta"><p>${inl(g.cta, l)}</p><a class="btn" href="${urlOf(l, 'studio')}">${ent(G.ui.openTool)}</a><p class="fine">${ent(G.ui.toolNote)}</p></div>
+</article>
+${related ? `<div class="related"><h2>${ent(G.ui.related)}</h2><div class="cards">${related}</div></div>` : ''}`;
+  const url = SITE + urlOf(l, 'guide:' + slug);
+  const ld = [{ '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.metaDesc, inLanguage: l.code, datePublished: g.updated, dateModified: g.updated,
+      mainEntityOfPage: url, url, author: orgRef, publisher: orgRef },
+    ...(steps.length ? [{ '@context': 'https://schema.org', '@type': 'HowTo', name: g.title, description: plain(g.answer), inLanguage: l.code, step: steps }] : []),
+    { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: l.code, mainEntity: (g.faq || []).map(f => ({ '@type': 'Question', name: plain(f.q), acceptedAnswer: { '@type': 'Answer', text: plain(f.a) } })) },
+    crumbLd(l, G, g)].map(ldWrap).join('\n');
+  return { page: 'guide:' + slug, metaTitle: g.metaTitle, metaDesc: g.metaDesc, ogType: 'article', ld, body, langs: guideLangs(slug) };
+}
+function renderGuideIndex(l, G) {
+  const cards = G.order.map(s => `<a class="card" href="${urlOf(l, 'guide:' + s)}"><h2>${ent(G.guides[s].short || G.guides[s].title)}</h2><p>${ent(G.guides[s].blurb || '')}</p></a>`).join('');
+  const body = crumbHtml(l, G, null) + `<h1>${ent(G.ui.indexTitle)}</h1><p class="lead">${ent(G.ui.indexLead)}</p><div class="cards">${cards}</div>
+<div class="cta"><a class="btn" href="${urlOf(l, 'studio')}">${ent(G.ui.openTool)}</a><p class="fine">${ent(G.ui.toolNote)}</p></div>`;
+  const ld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: G.ui.indexTitle, description: G.ui.indexMetaDesc, inLanguage: l.code, url: SITE + urlOf(l, 'guides'),
+      hasPart: G.order.map(s => ({ '@type': 'Article', headline: G.guides[s].title, url: SITE + urlOf(l, 'guide:' + s) })) }, crumbLd(l, G, null)].map(ldWrap).join('\n');
+  return { page: 'guides', metaTitle: G.ui.indexMetaTitle, metaDesc: G.ui.indexMetaDesc, ogType: 'website', ld, body, langs: guideLangs(null) };
+}
+// Landing page: nav link and a compact section, both empty when the language has no guides.
+function guidesNav(l) { const G = GUIDES[l.code]; return G ? `<a href="#guides">${ent(G.ui.guides)}</a>` : ''; }
+function guidesSection(l) {
+  const G = GUIDES[l.code]; if (!G) return '';
+  const cards = G.order.map(s => `<a class="glink" href="${urlOf(l, 'guide:' + s)}"><h3>${ent(G.guides[s].short || G.guides[s].title)}</h3><p>${ent(G.guides[s].blurb || '')}</p></a>`).join('');
+  return `<section id="guides"><div class="wrap">
+  <h2>${ent(G.ui.homeSectionTitle)}</h2>
+  <p class="lead">${ent(G.ui.homeSectionLead)}</p>
+  <div class="gl">${cards}</div>
+  <p class="note"><a href="${urlOf(l, 'guides')}">${ent(G.ui.guides)}</a></p>
+</div></section>`;
+}
+
 let count = 0;
 for (const l of LANGS) {
   const S = strings(l);
@@ -73,6 +162,7 @@ for (const l of LANGS) {
       hreflang: hreflang(page), langSelect: langSelect(l, page, S), notifyEmail: NOTIFY,
       ftMt: l.code === 'en' ? '' : `<br>${S['ft.mt']}`,
       ldjson: ldjson(S, l, page),
+      guidesNav: page === 'index' ? guidesNav(l) : '', guidesSection: page === 'index' ? guidesSection(l) : '',
       i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.'] : ['s.', 'sample.']),
     };
     let html = TPL[page].replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {
@@ -86,14 +176,39 @@ for (const l of LANGS) {
   }
 }
 
-// sitemap with language alternates
-const urls = [];
-for (const page of ['index', 'studio']) {
-  for (const l of LANGS) {
-    const alts = LANGS.map(a => `    <xhtml:link rel="alternate" hreflang="${a.code}" href="${SITE}${urlOf(a, page)}"/>`).join('\n') +
-      `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${urlOf(LANGS[0], page)}"/>`;
-    urls.push(`  <url>\n    <loc>${SITE}${urlOf(l, page)}</loc>\n${alts}\n  </url>`);
+// guide pages
+const guidePages = [];
+for (const l of LANGS) {
+  const G = GUIDES[l.code]; if (!G) continue;
+  const S = strings(l);
+  for (const r of [renderGuideIndex(l, G), ...G.order.map(s => renderGuide(l, G, s))]) {
+    const vars = {
+      ...S, lang: l.code, dir: l.dir, base: baseOf(l), canonical: SITE + urlOf(l, r.page), ogLocale: l.locale,
+      hreflang: hreflang(r.page, r.langs), langSelect: langSelect(l, r.page, S, r.langs, G.ui.language), notifyEmail: NOTIFY,
+      ftMt: l.code === 'en' ? '' : `<br>${S['ft.mt']}`, ldjson: r.ld,
+      metaTitle: esc(r.metaTitle), metaDesc: esc(r.metaDesc), ogType: r.ogType, body: r.body,
+      guidesUrl: urlOf(l, 'guides'), guidesCurrent: r.page === 'guides' ? ' aria-current="page"' : '', uiGuides: ent(G.ui.guides), uiLanguage: ent(G.ui.language),
+      i18n_json: JSON.stringify({ 'theme.label': G.ui.theme }).replace(/</g, '\u003c'),
+    };
+    const html = TPL.guide.replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {
+      if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in guide template`);
+      return vars[k];
+    });
+    const dir = path.join(ROOT, l.code === 'en' ? '' : l.code, urlOf({ code: 'en' }, r.page));
+    mkdirSync(dir, { recursive: true });
+    writeFileSync(path.join(dir, 'index.html'), html);
+    guidePages.push({ l, r }); count++;
   }
 }
+
+// sitemap with language alternates
+const urls = [];
+const entry = (l, page, langs) => {
+  const alts = langs.map(a => `    <xhtml:link rel="alternate" hreflang="${a.code}" href="${SITE}${urlOf(a, page)}"/>`).join('\n') +
+    `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${urlOf(langs[0], page)}"/>`;
+  return `  <url>\n    <loc>${SITE}${urlOf(l, page)}</loc>\n${alts}\n  </url>`;
+};
+for (const page of ['index', 'studio']) for (const l of LANGS) urls.push(entry(l, page, LANGS));
+for (const { l, r } of guidePages) urls.push(entry(l, r.page, r.langs));
 writeFileSync(path.join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`);
-console.log(`built ${count} pages in ${LANGS.length} languages, plus sitemap.xml`);
+console.log(`built ${count} pages in ${LANGS.length} languages (${Object.keys(GUIDES).length} with guides), plus sitemap.xml`);

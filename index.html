@@ -192,6 +192,11 @@ footer .wrap{padding-block:28px}
 }
 @media (max-width:560px){.plans4{grid-template-columns:minmax(0,1fr)}.topnav{gap:8px;width:100%;justify-content:space-between}.topnav>a{display:none}header .wrap{padding-block:12px}.topnav{flex-wrap:nowrap}nav.tabs button{padding:7px 9px;font-size:13px}.langsel{max-width:96px}}
 @media (prefers-reduced-motion:no-preference){nav.tabs button{transition:background .15s}}
+.gl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px}
+.glink{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.glink:hover{border-color:var(--stencil)}.glink h3{font-size:17px}.glink p{margin:6px 0 0;font-size:14px;color:var(--muted)}
+#guides .note a{color:var(--stencil)}
+@media (max-width:900px){.gl{grid-template-columns:minmax(0,1fr)}}
 [hidden]{display:none!important}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/","inLanguage":"en","description":"Free tattoo stencil generator in your browser. Turn a drawing, flash or photo into a clean line stencil and print it at true size. Nothing is uploaded; remove the watermark with a day pass or Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"12","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"79","priceCurrency":"USD"}]}</script>
@@ -202,7 +207,7 @@ footer .wrap{padding-block:28px}
 <header><div class="wrap">
   <a class="mark" href="/">skin<span>stencil</span></a>
   <div class="topnav">
-    <a href="#examples">Examples</a><a href="#pricing">Pricing</a><a href="#faq">Questions</a>
+    <a href="#examples">Examples</a><a href="#pricing">Pricing</a><a href="#guides">Guides</a><a href="#faq">Questions</a>
     <label class="vh" for="langSel">Language</label>
     <select class="langsel" id="langSel" aria-label="Language"><option value="/" selected lang="en">English</option><option value="/de/" lang="de">Deutsch</option><option value="/fr/" lang="fr">Français</option><option value="/es/" lang="es">Español</option><option value="/pt/" lang="pt">Português</option><option value="/it/" lang="it">Italiano</option><option value="/nl/" lang="nl">Nederlands</option><option value="/tr/" lang="tr">Türkçe</option><option value="/ar/" lang="ar">العربية</option><option value="/pl/" lang="pl">Polski</option></select>
     <nav class="tabs" aria-label="Product">
@@ -355,6 +360,12 @@ footer .wrap{padding-block:28px}
   </div>
 </div></section>
 
+<section id="guides"><div class="wrap">
+  <h2>Guides for tattoo stencils</h2>
+  <p class="lead">How to make a stencil, print it at true size and get it onto paper.</p>
+  <div class="gl"><a class="glink" href="/guides/tattoo-stencil-from-photo/"><h3>How to make a tattoo stencil from a photo or drawing</h3><p>From a clear source to a clean line stencil, with the drift check to see what was lost.</p></a><a class="glink" href="/guides/tattoo-stencil-size-true-size-print/"><h3>Tattoo stencil size: how to print at true size</h3><p>Millimetres to pixels at 300 dpi, a small table, and how to check the printout.</p></a><a class="glink" href="/guides/tattoo-stencil-transfer-methods/"><h3>Ways to get a stencil onto paper: thermal, tracing, printed transfer</h3><p>A neutral overview of common transfer approaches and when a clean line file matters.</p></a></div>
+  <p class="note"><a href="/guides/">Guides</a></p>
+</div></section>
 <section id="faq"><div class="wrap">
   <div class="eyebrow">Questions</div>
   <h2>Before you try it.</h2>
