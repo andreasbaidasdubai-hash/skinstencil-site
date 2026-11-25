@@ -126,6 +126,7 @@ input[type=range]{width:100%;accent-color:var(--stencil)}
 .plan .per{font-size:14px;color:var(--muted)}
 .plan .alt{font-size:13px;color:var(--muted);margin-top:2px}
 .plan ul{margin:14px 0 18px;padding-inline-start:18px;color:var(--muted);flex:1}
+.seo{display:grid;gap:8px 40px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:18px}.seo h3{font-size:18px;margin:14px 0 0}.seo p{color:var(--muted);margin:6px 0 0}
 details{border-bottom:1px solid var(--line);padding:14px 0}
 summary{font-weight:600;cursor:pointer}
 details p{color:var(--muted);margin:8px 0 0;max-width:46em}
@@ -146,6 +147,7 @@ footer .wrap{padding-block:28px}
 @media (prefers-reduced-motion:no-preference){nav.tabs button{transition:background .15s}}
 [hidden]{display:none!important}
 </style>
+{{ldjson}}
 </head>
 <body>
 
@@ -300,6 +302,17 @@ footer .wrap{padding-block:28px}
   </div>
   <p class="note">{{p.note}}</p>
   <p class="note" id="soonNote" hidden>{{p.soon}}</p>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="eyebrow">{{seo.eyebrow}}</div>
+  <h2>{{seo.h2}}</h2>
+  <div class="seo">
+    <div><h3>{{seo.a.h}}</h3><p>{{seo.a.p}}</p></div>
+    <div><h3>{{seo.b.h}}</h3><p>{{seo.b.p}}</p></div>
+    <div><h3>{{seo.c.h}}</h3><p>{{seo.c.p}}</p></div>
+    <div><h3>{{seo.d.h}}</h3><p>{{seo.d.p}}</p></div>
+  </div>
 </div></section>
 
 <section id="faq"><div class="wrap">

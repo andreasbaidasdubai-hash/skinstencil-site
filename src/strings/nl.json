@@ -1,6 +1,6 @@
 {
-  "meta.title": "Skinstencil | Tattoo-stencils op ware grootte",
-  "meta.desc": "Maak van je eigen tattoo-ontwerp een schone, printklare stencil. Een gratis tool die in je browser draait: gratis downloads hebben een watermerk, en je verwijdert het met één klik.",
+  "meta.title": "Tattoo stencil maken van tekening of foto | Skinstencil",
+  "meta.desc": "Gratis tattoo stencil maken in je browser. Zet een tekening of foto om in een strakke lijnstencil en print op ware grootte. Niets wordt geüpload.",
   "nav.examples": "Voorbeelden",
   "nav.pricing": "Prijzen",
   "nav.faq": "Vragen",
@@ -263,5 +263,15 @@
   "s.tips.3": "Verhoog Vlekjes verwijderen om ruis op te ruimen. Verlaag Gevoeligheid als schaduw lijnen wordt.",
   "s.tips.4": "Als lijnen er zwak uitzien op je printer, probeer een dikkere lijn en test eerst op papier.",
   "s.dl.print": "Afdrukken op ware grootte",
-  "s.thanks": "Bedankt. Je licentiesleutel staat in je e-mail. Plak hem hieronder om het watermerk te verwijderen."
+  "s.thanks": "Bedankt. Je licentiesleutel staat in je e-mail. Plak hem hieronder om het watermerk te verwijderen.",
+  "seo.eyebrow": "Tattoo stencils, uitgelegd",
+  "seo.h2": "Tattoo stencil maken zonder je lijn te verliezen.",
+  "seo.a.h": "Wat is een tattoo stencil?",
+  "seo.a.p": "Een tattoo stencil, ook wel tattoo sjabloon of transfer genoemd, is de omtrek van een ontwerp, geprint zodat de tatoeëerder het op de huid kan plaatsen voordat de eerste naald de huid raakt. Een goede stencil behoudt de lijndikte van het origineel, laat de papiertextuur en schaduwen weg en heeft precies de grootte van de tattoo.",
+  "seo.b.h": "Tattoo stencil maken van een tekening of foto",
+  "seo.b.p": "Laad een scan, een flashvel of een foto van je ontwerp met je telefoon. Skinstencil trekt de lijnen over in je browser en jij past gevoeligheid, afvlakking en lijndikte aan tot de preview overeenkomt met je tekening. Wissel tussen tekenmodus voor inkt op papier en fotomodus voor beelden met tinten. Het resultaat is een strakke zwarte lijn op wit, klaar om te exporteren.",
+  "seo.c.h": "Print je tattoo voorbeeld op ware grootte, op thermisch of gewoon papier",
+  "seo.c.p": "Stel de breedte in millimeters in en de printpagina opent de stencil precies op die maat. Ontgrendelde downloads zijn tot 4000 px en bevatten een grootte van 300 dpi in de PNG, zodat de juiste maat doorkomt in je printsoftware. Gebruik het met een thermische stencilprinter, of print het en trek het over op transferpapier.",
+  "seo.d.h": "Gemaakt voor tatoeëerders, leerlingen en klanten met een eigen ontwerp",
+  "seo.d.p": "Gebruik het voor flash, lettering, linework, mandala's en maatwerk. Stencils worden op je eigen apparaat gemaakt en je beelden worden niet geüpload. De gratis tool heeft een watermerk en downloads tot 800 px; met een dagpas of Pro verdwijnt het watermerk en vervalt de groottelimiet."
 }

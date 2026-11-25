@@ -55,6 +55,15 @@ function i18nJson(S, prefixes) {
   return JSON.stringify(o).replace(/</g, '\\u003c');
 }
 
+const plain = s => String(s).replace(/<[^>]+>/g, '');
+function ldjson(S, l, page) {
+  if (page !== 'index') return '';
+  const faq = []; for (let i = 1; i <= 11; i++) if (S['q' + i + '.h']) faq.push({ '@type': 'Question', name: plain(S['q' + i + '.h']), acceptedAnswer: { '@type': 'Answer', text: plain(S['q' + i + '.p']) } });
+  const app = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: 'Skinstencil', applicationCategory: 'DesignApplication', operatingSystem: 'Any (web browser)', url: SITE + urlOf(l, 'index'), inLanguage: l.code, description: plain(S['meta.desc']),
+    offers: [{ '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Day pass', price: '4.99', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro monthly', price: '12', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro yearly', price: '79', priceCurrency: 'USD' }] };
+  const wrap = o => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, '\\u003c') + '</script>';
+  return wrap(app) + '\n' + wrap({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq });
+}
 let count = 0;
 for (const l of LANGS) {
   const S = strings(l);
@@ -63,6 +72,7 @@ for (const l of LANGS) {
       ...S, lang: l.code, dir: l.dir, base: baseOf(l), canonical: SITE + urlOf(l, page), ogLocale: l.locale,
       hreflang: hreflang(page), langSelect: langSelect(l, page, S), notifyEmail: NOTIFY,
       ftMt: l.code === 'en' ? '' : `<br>${S['ft.mt']}`,
+      ldjson: ldjson(S, l, page),
       i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.'] : ['s.', 'sample.']),
     };
     let html = TPL[page].replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {

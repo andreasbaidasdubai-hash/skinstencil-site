@@ -1,6 +1,6 @@
 {
-  "meta.title": "Skinstencil | Gerçek boyutta dövme stencil'i",
-  "meta.desc": "Kendi dövme tasarımınızı temiz, baskıya hazır bir stencil'e dönüştürün. Tarayıcınızda çalışan ücretsiz bir araç: ücretsiz indirmelerde filigran bulunur, tek tıkla kaldırabilirsiniz.",
+  "meta.title": "Dövme şablonu oluşturucu, gerçek boyutta | Skinstencil",
+  "meta.desc": "Tarayıcında ücretsiz dövme stencil oluşturucu. Çizimi veya fotoğrafı çizgi şablonuna çevir, gerçek boyutta yazdır. Hiçbir şey yüklenmez.",
   "nav.examples": "Örnekler",
   "nav.pricing": "Fiyatlar",
   "nav.faq": "Sorular",
@@ -263,5 +263,15 @@
   "s.tips.3": "Gürültüyü temizlemek için Lekeleri temizle'yi artırın. Gölgeler çizgiye dönüşüyorsa Hassasiyet'i düşürün.",
   "s.tips.4": "Çizgiler yazıcınızda soluk görünüyorsa daha kalın bir çizgi kalınlığı deneyin ve önce kağıtta test edin.",
   "s.dl.print": "Gerçek boyutta yazdır",
-  "s.thanks": "Teşekkürler. Lisans anahtarın e-postanda. Filigranı kaldırmak için aşağıya yapıştır."
+  "s.thanks": "Teşekkürler. Lisans anahtarın e-postanda. Filigranı kaldırmak için aşağıya yapıştır.",
+  "seo.eyebrow": "Dövme şablonu nedir, nasıl yapılır",
+  "seo.h2": "Çizgini bozmayan bir dövme şablonu oluşturucu.",
+  "seo.a.h": "Dövme şablonu (stencil) nedir?",
+  "seo.a.p": "Dövme şablonu, yani dövme stencil, bir dövme tasarımının dış hatlarının kâğıda basılmış halidir. Dövmeci ilk iğne deriye değmeden tasarımı cilde bu şablonla yerleştirir. İyi bir şablon orijinal çizginin kalınlığını korur, kâğıt dokusunu ve gölgeleri atar ve dövmenin olacağı boyutla birebir aynıdır.",
+  "seo.b.h": "Çizimi veya fotoğrafı dövme şablonuna çevirmek",
+  "seo.b.p": "Taranmış bir çizimi, flash sayfasını ya da tasarımının telefonla çekilmiş fotoğrafını yükle. Skinstencil çizgileri tarayıcında takip eder; önizleme çizimine uyana kadar hassasiyeti, yumuşatmayı ve çizgi kalınlığını ayarlarsın. Kâğıt üstüne mürekkep için çizim modu, tonlu görseller için fotoğraf modu var. Sonuç beyaz zemin üzerinde temiz siyah bir çizgi, dışa aktarmaya hazır.",
+  "seo.c.h": "Gerçek boyutta yazdır, termal ya da normal kâğıda",
+  "seo.c.p": "Genişliği milimetre olarak gir, yazdırma sayfası dövme tasarımını tam o boyutta açar. Kilidi açılmış indirmeler 4000 piksele kadar çıkar ve PNG içinde 300 dpi boyut bilgisi taşır, böylece doğru ölçü yazdırma programına geçer. Termal stencil yazıcıyla kullan ya da yazdırıp transfer kâğıdına kalemle geçir.",
+  "seo.d.h": "Dövmeciler, çıraklar ve kendi tasarımı olan müşteriler için",
+  "seo.d.p": "Flash, yazı, çizgi işi, mandala ve özel dövme tasarımları için kullanabilirsin. Şablonlar cihazında hazırlanır, görsellerin yüklenmez. Ücretsiz sürümde filigran vardır ve indirmeler 800 piksele kadardır; günlük geçiş veya Pro filigranı kaldırır ve boyut sınırını açar."
 }

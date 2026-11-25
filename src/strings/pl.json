@@ -1,6 +1,6 @@
 {
-  "meta.title": "Skinstencil | Stencile tatuażu w prawdziwym rozmiarze",
-  "meta.desc": "Zamień własny projekt tatuażu w czysty stencil gotowy do druku. Darmowe narzędzie działające w przeglądarce: darmowe pliki mają znak wodny, który usuniesz jednym kliknięciem.",
+  "meta.title": "Szablon tatuażu z rysunku lub zdjęcia | Skinstencil",
+  "meta.desc": "Darmowy stencil do tatuażu w przeglądarce. Zamień rysunek lub zdjęcie w szablon z linii i wydrukuj w rzeczywistym rozmiarze. Nic nie jest wysyłane.",
   "nav.examples": "Przykłady",
   "nav.pricing": "Cennik",
   "nav.faq": "Pytania",
@@ -263,5 +263,15 @@
   "s.tips.3": "Zwiększ Usuń kropki, żeby wyczyścić szum. Zmniejsz Czułość, jeśli cieniowanie zamienia się w linie.",
   "s.tips.4": "Jeśli linie wyglądają blado na twojej drukarce, spróbuj grubszej linii i najpierw przetestuj na papierze.",
   "s.dl.print": "Drukuj w rzeczywistym rozmiarze",
-  "s.thanks": "Dziękujemy. Klucz licencyjny jest w Twojej poczcie. Wklej go poniżej, aby usunąć znak wodny."
+  "s.thanks": "Dziękujemy. Klucz licencyjny jest w Twojej poczcie. Wklej go poniżej, aby usunąć znak wodny.",
+  "seo.eyebrow": "Szablon tatuażu, wyjaśniamy",
+  "seo.h2": "Generator szablonu tatuażu, który zachowuje Twoją linię.",
+  "seo.a.h": "Czym jest szablon tatuażu?",
+  "seo.a.p": "Szablon tatuażu, zwany też stencilem, to kontur wzoru tatuażu wydrukowany tak, by tatuator mógł przenieść go na skórę, zanim pierwsza igła jej dotknie. Dobry stencil zachowuje grubość linii oryginału, pozbywa się faktury papieru i cieni oraz ma dokładnie taki rozmiar, jaki będzie miał tatuaż.",
+  "seo.b.h": "Jak zamienić rysunek lub zdjęcie w stencil do tatuażu",
+  "seo.b.p": "Wczytaj skan, arkusz flash albo zdjęcie wzoru zrobione telefonem. Skinstencil śledzi linie w Twojej przeglądarce, a Ty ustawiasz czułość, wygładzanie i grubość linii, aż podgląd zgodzi się z rysunkiem. Przełączaj się między trybem rysunku dla tuszu na papierze a trybem zdjęcia dla obrazów z tonami. Wynik to czysta czarna linia na białym tle, gotowa do eksportu.",
+  "seo.c.h": "Drukuj w rzeczywistym rozmiarze, na papierze termicznym lub zwykłym",
+  "seo.c.p": "Podaj szerokość w milimetrach, a strona wydruku otworzy szablon tatuażu dokładnie w tym rozmiarze. Odblokowane pliki mają do 4000 px i niosą w PNG informację o 300 dpi, więc właściwy rozmiar trafia do programu drukującego. Użyj go z termiczną drukarką stencili albo wydrukuj i odrysuj na papier transferowy.",
+  "seo.d.h": "Dla tatuatorów, uczniów i klientów z własnym wzorem",
+  "seo.d.p": "Używaj go do flashu, liternictwa, linework, mandali i wzorów tatuaży na zamówienie. Szablony powstają na Twoim urządzeniu, a obrazy nie są wysyłane. Wersja darmowa ma znak wodny i pobiera do 800 px; dniówka lub Pro usuwa znak wodny i zdejmuje limit rozmiaru."
 }

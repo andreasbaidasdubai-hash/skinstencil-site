@@ -1,6 +1,6 @@
 {
-  "meta.title": "Skinstencil | Stencils de tatuagem em tamanho real",
-  "meta.desc": "Transforme seu próprio desenho de tatuagem em um stencil limpo, pronto para imprimir. Uma ferramenta gratuita que roda no navegador: os downloads grátis têm marca d'água, e você pode removê-la com um clique.",
+  "meta.title": "Stencil de tatuagem: desenho ou foto em decalque | Skinstencil",
+  "meta.desc": "Gerador grátis de stencil de tatuagem no navegador. Transforme desenho ou foto em decalque limpo e imprima em tamanho real. Nada é enviado.",
   "nav.examples": "Exemplos",
   "nav.pricing": "Preços",
   "nav.faq": "Perguntas",
@@ -263,5 +263,15 @@
   "s.tips.3": "Aumente Remover pontinhos para limpar ruído. Diminua a Sensibilidade se o sombreado virar linhas.",
   "s.tips.4": "Se as linhas ficarem fracas na sua impressora, tente uma linha mais grossa e teste primeiro no papel.",
   "s.dl.print": "Imprimir em tamanho real",
-  "s.thanks": "Obrigado. Sua chave de licença está no seu e-mail. Cole-a abaixo para remover a marca d'água."
+  "s.thanks": "Obrigado. Sua chave de licença está no seu e-mail. Cole-a abaixo para remover a marca d'água.",
+  "seo.eyebrow": "Stencil de tatuagem, explicado",
+  "seo.h2": "Um gerador de stencil de tatuagem que mantém o seu traço.",
+  "seo.a.h": "O que é um decalque de tatuagem?",
+  "seo.a.p": "O decalque de tatuagem, também chamado de stencil ou molde de tatuagem, é o contorno de um desenho impresso para o tatuador posicionar na pele antes da primeira agulhada. Um bom stencil mantém a espessura do traço original, elimina a textura do papel e as sombras, e tem exatamente o tamanho que a tatuagem terá.",
+  "seo.b.h": "Como transformar um desenho ou foto em stencil de tatuagem",
+  "seo.b.p": "Carregue um scan, uma folha de flash ou uma foto do desenho tirada com o celular. O Skinstencil traça as linhas no seu navegador, e você ajusta sensibilidade, suavização e espessura do traço até a prévia ficar igual ao seu desenho. Alterne entre o modo desenho, para tinta no papel, e o modo foto, para imagens com tons. O resultado é uma linha preta limpa sobre fundo branco, pronta para exportar.",
+  "seo.c.h": "Imprima o molde de tatuagem em tamanho real, em papel térmico ou comum",
+  "seo.c.p": "Defina a largura em milímetros e a página de impressão abre o stencil exatamente nesse tamanho. Os downloads liberados têm até 4000 px e levam um tamanho de 300 dpi dentro do PNG, então a medida certa chega ao seu software de impressão. Use com uma impressora térmica de stencil ou imprima e copie para o papel de decalque.",
+  "seo.d.h": "Feito para tatuadores, aprendizes e clientes com o próprio desenho",
+  "seo.d.p": "Use para flash, lettering, linework, mandalas e trabalhos autorais. Os stencils são feitos no seu dispositivo e suas imagens não são enviadas. A ferramenta grátis tem marca d'água e downloads de até 800 px; o passe de um dia ou o Pro tira a marca d'água e remove o limite de tamanho."
 }

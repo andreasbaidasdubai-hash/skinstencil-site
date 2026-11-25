@@ -1,6 +1,6 @@
 {
-  "meta.title": "Skinstencil | Tattoo-Stencils in Originalgröße",
-  "meta.desc": "Mach aus deinem eigenen Tattoo-Motiv einen sauberen, druckfertigen Stencil. Ein kostenloses Tool, das in deinem Browser läuft: Kostenlose Downloads tragen ein Wasserzeichen, das du mit einem Klick entfernen kannst.",
+  "meta.title": "Tattoo Vorlage erstellen: Stencil aus Foto | Skinstencil",
+  "meta.desc": "Tattoo Generator im Browser: Zeichnung oder Foto in eine saubere Tattoo Vorlage verwandeln und in Originalgröße drucken. Ohne Upload.",
   "nav.examples": "Beispiele",
   "nav.pricing": "Preise",
   "nav.faq": "Fragen",
@@ -263,5 +263,15 @@
   "s.tips.3": "Erhöhe Flecken entfernen, um Rauschen zu säubern. Senke die Empfindlichkeit, wenn Schattierung zu Linien wird.",
   "s.tips.4": "Wenn Linien auf deinem Drucker blass aussehen, probiere eine kräftigere Linienstärke und teste zuerst auf Papier.",
   "s.dl.print": "In Originalgröße drucken",
-  "s.thanks": "Danke. Dein Lizenzschlüssel ist in deinem Postfach. Füge ihn unten ein, um das Wasserzeichen zu entfernen."
+  "s.thanks": "Danke. Dein Lizenzschlüssel ist in deinem Postfach. Füge ihn unten ein, um das Wasserzeichen zu entfernen.",
+  "seo.eyebrow": "Tattoo Stencils einfach erklärt",
+  "seo.h2": "Tattoo Stencil erstellen, ohne dass die Linie leidet.",
+  "seo.a.h": "Was ist ein Tattoo Stencil?",
+  "seo.a.p": "Ein Tattoo Stencil, auch Tattoo Vorlage oder Transfer genannt, ist die gedruckte Kontur eines Motivs. Der Tätowierer überträgt sie auf die Haut, bevor die erste Nadel sticht. Ein guter Stencil behält die Linienstärke des Originals, lässt Papierstruktur und Schatten weg und hat genau die Größe des späteren Tattoos.",
+  "seo.b.h": "Tattoo Vorlagen erstellen: aus Zeichnung oder Foto zum Stencil",
+  "seo.b.p": "Lade einen Scan, ein Flash-Blatt oder ein Handyfoto deines Motivs hoch. Skinstencil zeichnet die Linien direkt in deinem Browser nach. Empfindlichkeit, Glättung und Linienstärke stellst du so ein, bis die Vorschau zu deiner Zeichnung passt. Wechsle zwischen Zeichnungsmodus für Tusche auf Papier und Fotomodus für Bilder mit Tonwerten. Das Ergebnis ist eine saubere schwarze Linie auf Weiß, bereit zum Export.",
+  "seo.c.h": "In Originalgröße drucken, auf Thermopapier oder normalem Papier",
+  "seo.c.p": "Gib die Breite in Millimetern an, und die Druckseite öffnet den Stencil in genau dieser Größe. Freigeschaltete Downloads haben bis zu 4000 px und tragen eine 300-dpi-Größenangabe in der PNG-Datei, sodass die richtige Größe in deiner Drucksoftware ankommt. Nutze ihn mit einem Thermodrucker für Stencils oder drucke ihn aus und pause ihn auf Transferpapier durch.",
+  "seo.d.h": "Für Tätowierer, Lehrlinge und Kunden mit eigenem Motiv",
+  "seo.d.p": "Ob Flash, Lettering, Linework, Mandala oder individuelles Motiv: Der Tattoo Generator passt. Die Stencils entstehen auf deinem Gerät, deine Bilder werden nicht hochgeladen. Die kostenlose Version hat ein Wasserzeichen und lädt bis zu 800 px herunter. Mit Tagespass oder Pro entfallen Wasserzeichen und Größenlimit."
 }

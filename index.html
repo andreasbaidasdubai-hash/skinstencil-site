@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Skinstencil | Tattoo stencils at true size</title>
-<meta name="description" content="Turn your own tattoo design into a clean, print-ready stencil. A free tool that runs in your browser: free downloads carry a watermark, and you can remove it in one click.">
+<title>Tattoo stencil maker: turn a design or photo into a printable stencil | Skinstencil</title>
+<meta name="description" content="Free tattoo stencil generator in your browser. Turn a drawing, flash or photo into a clean line stencil and print it at true size. Nothing is uploaded; remove the watermark with a day pass or Pro.">
 <link rel="canonical" href="https://skinstencil.com/">
 <link rel="alternate" hreflang="en" href="https://skinstencil.com/">
 <link rel="alternate" hreflang="en-US" href="https://skinstencil.com/">
@@ -53,8 +53,8 @@
 <link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/">
 <link rel="alternate" hreflang="pl-PL" href="https://skinstencil.com/pl/">
 <link rel="alternate" hreflang="x-default" href="https://skinstencil.com/">
-<meta property="og:title" content="Skinstencil | Tattoo stencils at true size">
-<meta property="og:description" content="Turn your own tattoo design into a clean, print-ready stencil. A free tool that runs in your browser: free downloads carry a watermark, and you can remove it in one click.">
+<meta property="og:title" content="Tattoo stencil maker: turn a design or photo into a printable stencil | Skinstencil">
+<meta property="og:description" content="Free tattoo stencil generator in your browser. Turn a drawing, flash or photo into a clean line stencil and print it at true size. Nothing is uploaded; remove the watermark with a day pass or Pro.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://skinstencil.com/">
 <meta property="og:locale" content="en_US">
@@ -172,6 +172,7 @@ input[type=range]{width:100%;accent-color:var(--stencil)}
 .plan .per{font-size:14px;color:var(--muted)}
 .plan .alt{font-size:13px;color:var(--muted);margin-top:2px}
 .plan ul{margin:14px 0 18px;padding-inline-start:18px;color:var(--muted);flex:1}
+.seo{display:grid;gap:8px 40px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:18px}.seo h3{font-size:18px;margin:14px 0 0}.seo p{color:var(--muted);margin:6px 0 0}
 details{border-bottom:1px solid var(--line);padding:14px 0}
 summary{font-weight:600;cursor:pointer}
 details p{color:var(--muted);margin:8px 0 0;max-width:46em}
@@ -192,6 +193,8 @@ footer .wrap{padding-block:28px}
 @media (prefers-reduced-motion:no-preference){nav.tabs button{transition:background .15s}}
 [hidden]{display:none!important}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/","inLanguage":"en","description":"Free tattoo stencil generator in your browser. Turn a drawing, flash or photo into a clean line stencil and print it at true size. Nothing is uploaded; remove the watermark with a day pass or Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"12","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"79","priceCurrency":"USD"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The tool in the studio is free and has no sign-up. Downloads from the free tool carry a small watermark and are limited to 800 pixels. A day pass or Pro removes the watermark and unlocks the full size."}},{"@type":"Question","name":"How do I remove the watermark?","acceptedAnswer":{"@type":"Answer","text":"Pick a day pass or Pro and pay at the secure checkout. You get a license key by email. Paste it into the studio and the watermark is gone. The key is checked with our payment provider and kept only in your browser."}},{"@type":"Question","name":"Is this AI?","acceptedAnswer":{"@type":"Answer","text":"Not yet. Today it is a classic image filter: it finds lines by edges and brightness, removes specks and sets the line weight. That keeps it fast, private and predictable on clean drawings. AI cleanup for photos is planned and will sit behind the drift check."}},{"@type":"Question","name":"Do you keep my designs?","acceptedAnswer":{"@type":"Answer","text":"No. The free tool runs in your browser and does not upload your images. Closing the page discards them."}},{"@type":"Question","name":"Can I upload any tattoo?","acceptedAnswer":{"@type":"Answer","text":"Only designs you made or have the right to use. We remove material when a rights holder asks."}},{"@type":"Question","name":"Which files work?","acceptedAnswer":{"@type":"Answer","text":"JPG, PNG and WebP. Large images are scaled down to keep the tool fast. A flat, well-lit photo of a drawing works well."}},{"@type":"Question","name":"How do I print a stencil?","acceptedAnswer":{"@type":"Answer","text":"Download the PNG and print it at the size you set. Paid files carry the 300 dpi size, so print software uses true size. Thermal stencil printers print onto thermal transfer paper. Inkjet printers need stencil ink and inkjet transfer paper."}},{"@type":"Question","name":"What about a full sleeve or a big piece?","acceptedAnswer":{"@type":"Answer","text":"Work motif by motif. Smaller parts keep their detail much better than one huge image."}},{"@type":"Question","name":"Does it work on a tablet or phone?","acceptedAnswer":{"@type":"Answer","text":"Yes, in the browser. A phone app may follow."}},{"@type":"Question","name":"Why does it drop my fine hatching?","acceptedAnswer":{"@type":"Answer","text":"Lower sensitivity and higher speck removal drop fine lines on purpose. Raise sensitivity, lower speck removal, and check the drift overlay to see what was lost."}},{"@type":"Question","name":"Can I get a refund?","acceptedAnswer":{"@type":"Answer","text":"Refund terms are shown at checkout before you pay."}}]}</script>
 </head>
 <body>
 
@@ -346,6 +349,17 @@ footer .wrap{padding-block:28px}
   </div>
   <p class="note">Prices are in US dollars. Tax is handled at checkout by our payment provider.</p>
   <p class="note" id="soonNote" hidden>Checkout opens soon. Tell me when it does.</p>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="eyebrow">Tattoo stencils, explained</div>
+  <h2>A tattoo stencil maker that keeps your line.</h2>
+  <div class="seo">
+    <div><h3>What is a tattoo stencil?</h3><p>A tattoo stencil, also called a tattoo transfer or tattoo template, is the outline of a design printed so the artist can place it on skin before the first needle touches it. A good stencil keeps the line weight of the original, drops the paper texture and shadows, and is exactly the size the tattoo will be.</p></div>
+    <div><h3>How to turn a drawing or photo into a tattoo stencil</h3><p>Load a scan, a flash sheet or a phone photo of your design. Skinstencil traces the lines in your browser, and you adjust sensitivity, smoothing and line weight until the preview matches your drawing. Switch between drawing mode for ink on paper and photo mode for pictures with tone. The result is a clean black line on white, ready to export.</p></div>
+    <div><h3>Print at true size, on thermal or regular paper</h3><p>Set the width in millimetres and the print page opens the stencil at exactly that size. Unlocked downloads are up to 4000 px and carry a 300 dpi size inside the PNG, so the right size comes through in your print software. Use it with a thermal stencil printer or print it and trace it onto transfer paper.</p></div>
+    <div><h3>Made for tattoo artists, apprentices and clients with their own design</h3><p>Use it for flash, lettering, linework, mandalas and custom pieces. Stencils are made on your device and your images are not uploaded. The free tool carries a watermark and downloads up to 800 px; a day pass or Pro removes the watermark and lifts the size limit.</p></div>
+  </div>
 </div></section>
 
 <section id="faq"><div class="wrap">

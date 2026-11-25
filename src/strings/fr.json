@@ -1,6 +1,6 @@
 {
-  "meta.title": "Skinstencil | Stencils de tatouage à taille réelle",
-  "meta.desc": "Transformez votre propre dessin de tatouage en stencil net, prêt à imprimer. Un outil gratuit qui tourne dans votre navigateur : les téléchargements gratuits portent un filigrane, que vous retirez en un clic.",
+  "meta.title": "Pochoir tatouage : dessin ou photo en calque | Skinstencil",
+  "meta.desc": "Générateur de pochoir gratuit dans votre navigateur. Transformez un dessin ou une photo en calque de tatouage net, imprimé en taille réelle. Rien n'est envoyé.",
   "nav.examples": "Exemples",
   "nav.pricing": "Tarifs",
   "nav.faq": "Questions",
@@ -263,5 +263,15 @@
   "s.tips.3": "Augmentez Supprimer les impuretés pour nettoyer le bruit. Baissez la Sensibilité si les ombres se transforment en lignes.",
   "s.tips.4": "Si les lignes paraissent pâles sur votre imprimante, essayez un trait plus épais et testez d'abord sur papier.",
   "s.dl.print": "Imprimer en taille réelle",
-  "s.thanks": "Merci. Votre clé de licence est dans votre boîte mail. Collez-la ci-dessous pour retirer le filigrane."
+  "s.thanks": "Merci. Votre clé de licence est dans votre boîte mail. Collez-la ci-dessous pour retirer le filigrane.",
+  "seo.eyebrow": "Le pochoir de tatouage, expliqué",
+  "seo.h2": "Un générateur de pochoir qui garde votre trait.",
+  "seo.a.h": "Qu'est-ce qu'un pochoir de tatouage ?",
+  "seo.a.p": "Un pochoir de tatouage, aussi appelé calque de tatouage ou transfert, est le contour d'un dessin imprimé pour que le tatoueur puisse le poser sur la peau avant la première aiguille. Un bon calque garde l'épaisseur de trait de l'original, supprime la texture du papier et les ombres, et fait exactement la taille du futur tatouage.",
+  "seo.b.h": "Comment transformer un dessin ou une photo en pochoir de tatouage",
+  "seo.b.p": "Importez un scan, une planche de flash ou une photo de votre dessin prise au téléphone. Skinstencil trace les lignes dans votre navigateur, et vous réglez la sensibilité, le lissage et l'épaisseur du trait jusqu'à ce que l'aperçu corresponde à votre dessin. Passez du mode dessin, pour l'encre sur papier, au mode photo, pour les images avec des tons. Le résultat est un trait noir net sur fond blanc, prêt à exporter.",
+  "seo.c.h": "Imprimez en taille réelle, sur papier thermique ou classique",
+  "seo.c.p": "Indiquez la largeur en millimètres et la page d'impression ouvre le calque exactement à cette taille. Les téléchargements débloqués vont jusqu'à 4000 px et portent une taille de 300 dpi dans le PNG, pour que la bonne taille arrive dans votre logiciel d'impression. Utilisez-le avec une imprimante thermique de pochoirs, ou imprimez-le et repassez-le sur du papier de transfert.",
+  "seo.d.h": "Pour les tatoueurs, les apprentis et les clients qui ont leur propre dessin",
+  "seo.d.p": "Utilisez-le pour du flash, du lettering, du linework, des mandalas et des créations sur mesure. Les pochoirs sont créés sur votre appareil et vos images ne sont pas envoyées. L'outil gratuit ajoute un filigrane et télécharge jusqu'à 800 px. Un pass jour ou Pro retire le filigrane et lève la limite de taille."
 }

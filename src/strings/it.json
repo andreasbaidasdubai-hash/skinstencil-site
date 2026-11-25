@@ -1,6 +1,6 @@
 {
-  "meta.title": "Skinstencil | Stencil per tatuaggi a misura reale",
-  "meta.desc": "Trasforma il tuo disegno per tatuaggio in uno stencil pulito, pronto da stampare. Uno strumento gratuito che gira nel browser: i download gratuiti hanno una filigrana e la togli con un clic.",
+  "meta.title": "Stencil tatuaggio: da disegno o foto a trasferello | Skinstencil",
+  "meta.desc": "Generatore gratuito di stencil tatuaggio nel browser. Trasforma disegno o foto in trasferello pulito e stampalo a misura reale. Nulla viene caricato.",
   "nav.examples": "Esempi",
   "nav.pricing": "Prezzi",
   "nav.faq": "Domande",
@@ -263,5 +263,15 @@
   "s.tips.3": "Alza Rimuovi puntini per pulire il rumore. Abbassa la Sensibilità se le ombre diventano linee.",
   "s.tips.4": "Se le linee sembrano deboli sulla tua stampante, prova uno spessore maggiore e fai prima una prova su carta.",
   "s.dl.print": "Stampa a grandezza reale",
-  "s.thanks": "Grazie. La tua chiave di licenza è nella tua email. Incollala qui sotto per rimuovere la filigrana."
+  "s.thanks": "Grazie. La tua chiave di licenza è nella tua email. Incollala qui sotto per rimuovere la filigrana.",
+  "seo.eyebrow": "Lo stencil per tatuaggi, spiegato",
+  "seo.h2": "Un generatore di stencil tatuaggio che mantiene il tuo tratto.",
+  "seo.a.h": "Che cos'è uno stencil per tatuaggio?",
+  "seo.a.p": "Lo stencil per tatuaggio, detto anche trasferello per tatuaggi o disegno per tatuaggio da trasferire, è il contorno di un disegno stampato perché il tatuatore lo applichi sulla pelle prima del primo colpo d'ago. Un buon stencil mantiene lo spessore della linea originale, elimina la grana della carta e le ombre, ed è esattamente grande quanto sarà il tatuaggio.",
+  "seo.b.h": "Come trasformare un disegno o una foto in uno stencil tatuaggio",
+  "seo.b.p": "Carica una scansione, un foglio di flash o una foto del tuo disegno fatta con il telefono. Skinstencil traccia le linee nel browser e tu regoli sensibilità, levigatura e spessore del tratto finché l'anteprima corrisponde al disegno. Passa dalla modalità disegno, per inchiostro su carta, alla modalità foto, per immagini con sfumature. Il risultato è una linea nera pulita su bianco, pronta da esportare.",
+  "seo.c.h": "Stampa il trasferello per tatuaggi a grandezza reale, su carta termica o normale",
+  "seo.c.p": "Imposta la larghezza in millimetri e la pagina di stampa apre lo stencil esattamente a quella misura. I download sbloccati arrivano fino a 4000 px e contengono nel PNG una dimensione di 300 dpi, così la misura giusta arriva al tuo software di stampa. Usalo con una stampante termica per stencil, oppure stampa e ricalca su carta da trasferimento.",
+  "seo.d.h": "Pensato per tatuatori, apprendisti e clienti con un disegno proprio",
+  "seo.d.p": "Usalo per flash, lettering, linework, mandala e lavori su misura. Gli stencil vengono creati sul tuo dispositivo e le tue immagini non vengono caricate. Lo strumento gratuito ha la filigrana e download fino a 800 px; il pass giornaliero o Pro toglie la filigrana e rimuove il limite di dimensione."
 }

@@ -1,6 +1,6 @@
 {
-  "meta.title": "Skinstencil | Stencils de tatuaje a tamaño real",
-  "meta.desc": "Convierte tu propio diseño de tatuaje en un stencil limpio, listo para imprimir. Una herramienta gratuita que funciona en tu navegador: las descargas gratuitas llevan marca de agua y puedes quitarla con un clic.",
+  "meta.title": "Plantilla de tatuaje: stencil desde un dibujo | Skinstencil",
+  "meta.desc": "Generador gratis de stencil de tatuaje en tu navegador. Convierte un dibujo o una foto en un calco limpio e imprímelo a tamaño real. No se sube nada.",
   "nav.examples": "Ejemplos",
   "nav.pricing": "Precios",
   "nav.faq": "Preguntas",
@@ -263,5 +263,15 @@
   "s.tips.3": "Sube Quitar motas para limpiar el ruido. Baja la Sensibilidad si el sombreado se convierte en líneas.",
   "s.tips.4": "Si las líneas se ven débiles en tu impresora, prueba un grosor de línea mayor y haz una prueba en papel primero.",
   "s.dl.print": "Imprimir a tamaño real",
-  "s.thanks": "Gracias. Tu clave de licencia está en tu correo. Pégala abajo para quitar la marca de agua."
+  "s.thanks": "Gracias. Tu clave de licencia está en tu correo. Pégala abajo para quitar la marca de agua.",
+  "seo.eyebrow": "El stencil de tatuaje, explicado",
+  "seo.h2": "Un creador de stencil que respeta tu línea.",
+  "seo.a.h": "¿Qué es un stencil de tatuaje?",
+  "seo.a.p": "Un stencil de tatuaje, también llamado calco para tatuaje o plantilla de tatuaje, es el contorno de un diseño impreso para que el tatuador pueda colocarlo sobre la piel antes de la primera aguja. Un buen stencil mantiene el grosor de línea del original, elimina la textura del papel y las sombras, y tiene exactamente el tamaño del tatuaje.",
+  "seo.b.h": "Cómo convertir un dibujo o una foto en una plantilla de tatuaje",
+  "seo.b.p": "Carga un escaneo, una hoja de flash o una foto de tu diseño hecha con el móvil. Skinstencil traza las líneas en tu navegador y tú ajustas la sensibilidad, el suavizado y el grosor de línea hasta que la vista previa coincida con tu dibujo. Cambia entre el modo dibujo, para tinta sobre papel, y el modo foto, para imágenes con tonos. El resultado es una línea negra limpia sobre blanco, lista para exportar.",
+  "seo.c.h": "Imprime a tamaño real, en papel térmico o normal",
+  "seo.c.p": "Indica el ancho en milímetros y la página de impresión abre el stencil exactamente a ese tamaño. Las descargas desbloqueadas llegan hasta 4000 px e incluyen un tamaño de 300 ppp dentro del PNG, así que el tamaño correcto llega a tu software de impresión. Úsalo con una impresora térmica de stencils o imprímelo y calca el diseño sobre papel de transferencia.",
+  "seo.d.h": "Hecho para tatuadores, aprendices y clientes con su propio diseño",
+  "seo.d.p": "Úsalo para flash, lettering, linework, mandalas y piezas personalizadas. Los stencils se crean en tu dispositivo y tus imágenes no se suben. La herramienta gratuita lleva marca de agua y descarga hasta 800 px. Un pase de día o Pro quita la marca de agua y elimina el límite de tamaño."
 }
