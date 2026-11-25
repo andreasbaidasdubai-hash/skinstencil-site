@@ -3,7 +3,7 @@
 The site is built so checkout can be switched on by editing ONE file: `js/config.js`. Until then every "buy" button honestly says checkout opens soon and offers an email link.
 
 ## The model
-- Free: unlimited stencils, all controls. Downloads carry a diagonal "skinstencil.com" watermark and are capped at 1200 px.
+- Free: unlimited stencils, all controls. Downloads carry a diagonal "skinstencil.com" watermark and are capped at 800 px.
 - Day pass (test price USD 4.99): 24 hours, no watermark, up to 4000 px, PNG carries 300 dpi so print software uses true size.
 - Pro (test prices USD 12 a month, USD 79 a year): same, for as long as the subscription runs.
 - Studio (from USD 49 a month): in development; email interest only.

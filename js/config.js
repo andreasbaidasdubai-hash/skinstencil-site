@@ -9,6 +9,6 @@ window.SkinConfig = {
   checkout: { day: "", month: "", year: "" },
   prices: { currency: "USD", day: "4.99", month: "12", year: "79" },
   notifyEmail: "hello@skinstencil.com",
-  freeMaxPx: 1200,
+  freeMaxPx: 800,
   paidMaxPx: 4000
 };

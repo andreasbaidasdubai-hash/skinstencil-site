@@ -76,7 +76,7 @@
     [cO, cS, cD].forEach(function (c) { if (c.width !== src.w || c.height !== src.h) { c.width = src.w; c.height = src.h; } });
     cO.getContext('2d').drawImage(src.canvas, 0, 0);
     E.renderStencil(cS, r.final, src.w, src.h, state.skin, null, r.alpha);
-    if (!U.isUnlocked()) watermark(cS.getContext('2d'), src.w, src.h, 0.16);
+    if (!U.isUnlocked()) watermark(cS.getContext('2d'), src.w, src.h, 0.3);
     var dx = cD.getContext('2d'); dx.clearRect(0, 0, src.w, src.h);
     var d = E.driftCheck(E.referenceMask(src.gray, src.w, src.h, state.mode), r.final, src.w, src.h, o.weight, state.drift);
     if (state.drift && d.image) { var tc = document.createElement('canvas'); tc.width = src.w; tc.height = src.h; tc.getContext('2d').putImageData(d.image, 0, 0); dx.drawImage(tc, 0, 0); }
@@ -120,8 +120,8 @@
     var out = new Uint8Array(bytes.length + 21); out.set(bytes.subarray(0, 33), 0); out.set(chunk, 33); out.set(bytes.subarray(33), 54); return out;
   }
   function watermark(x, w, h, a) {
-    var fs = Math.max(18, Math.round(Math.max(w, h) / 16)), txt = 'skinstencil.com', step = fs * 3.2, ext = Math.hypot(w, h);
-    x.save(); x.globalAlpha = a == null ? 0.24 : a; x.fillStyle = '#4F35C8'; x.font = '700 ' + fs + 'px Archivo, Arial, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    var fs = Math.max(18, Math.round(Math.max(w, h) / 13)), txt = 'skinstencil.com', step = fs * 2.1, ext = Math.hypot(w, h);
+    x.save(); x.globalAlpha = a == null ? 0.5 : a; x.fillStyle = '#4F35C8'; x.font = '700 ' + fs + 'px Archivo, Arial, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
     x.translate(w / 2, h / 2); x.rotate(-Math.PI / 6);
     var row = 0; for (var yy = -ext; yy < ext; yy += step, row++) { for (var xx = -ext; xx < ext; xx += fs * 9) x.fillText(txt, xx + (row % 2 ? fs * 4.5 : 0), yy); }
     x.restore();
