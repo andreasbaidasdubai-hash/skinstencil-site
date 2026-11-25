@@ -11,4 +11,4 @@ DAILY_BUDGET_USD = "10"
 # Create the namespace once with:  npx wrangler kv namespace create LIMITS   and paste the id it prints here.
 [[kv_namespaces]]
 binding = "LIMITS"
-id = "PASTE_KV_ID_HERE"
+id = "850a1d2baa8c415dba8131dfc1f18cf9"
