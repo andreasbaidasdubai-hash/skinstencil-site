@@ -237,7 +237,7 @@
   "s.tips.3": "Zwiększ Usuń kropki, żeby wyczyścić szum. Zmniejsz Czułość, jeśli cieniowanie zamienia się w linie.",
   "s.tips.4": "Jeśli linie wyglądają blado na twojej drukarce, spróbuj grubszej linii i najpierw przetestuj na papierze.",
   "s.dl.print": "Drukuj w rzeczywistym rozmiarze",
-  "s.thanks": "Dziękujemy. Klucz licencyjny jest w Twojej poczcie. Wklej go poniżej, aby usunąć znak wodny.",
+  "s.thanks": "Dziękujemy. Klucz licencyjny jest w Twojej poczcie. Wklej go tutaj lub w karcie z Twoim obrazem: odblokują się obie.",
   "seo.eyebrow": "Szablon tatuażu, wyjaśniamy",
   "seo.h2": "Generator szablonu tatuażu, który zachowuje Twoją linię.",
   "seo.a.h": "Czym jest szablon tatuażu?",
@@ -251,5 +251,8 @@
   "demo.skin": "Na skórze",
   "demo.paper": "Na papierze",
   "demo.surface": "Pokaż szablon na",
-  "theme.label": "Jasny lub ciemny"
+  "theme.label": "Jasny lub ciemny",
+  "s.dl.pdf": "Pobierz PDF w rzeczywistym rozmiarze",
+  "s.dl.paper": "Papier",
+  "s.dl.pdfHint": "PDF drukuje się w 100%. Większy szablon jest dzielony na kilka arkuszy z 10 mm zakładką, do sklejenia taśmą."
 }

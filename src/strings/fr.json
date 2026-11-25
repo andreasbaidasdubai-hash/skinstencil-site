@@ -237,7 +237,7 @@
   "s.tips.3": "Augmentez Supprimer les impuretés pour nettoyer le bruit. Baissez la Sensibilité si les ombres se transforment en lignes.",
   "s.tips.4": "Si les lignes paraissent pâles sur votre imprimante, essayez un trait plus épais et testez d'abord sur papier.",
   "s.dl.print": "Imprimer en taille réelle",
-  "s.thanks": "Merci. Votre clé de licence est dans votre boîte mail. Collez-la ci-dessous pour retirer le filigrane.",
+  "s.thanks": "Merci. Votre clé de licence est dans votre boîte mail. Collez-la ici ou dans l'onglet où se trouve votre image : les deux se débloquent.",
   "seo.eyebrow": "Le pochoir de tatouage, expliqué",
   "seo.h2": "Un générateur de pochoir qui garde votre trait.",
   "seo.a.h": "Qu'est-ce qu'un pochoir de tatouage ?",
@@ -251,5 +251,8 @@
   "demo.skin": "Sur la peau",
   "demo.paper": "Sur papier",
   "demo.surface": "Afficher le pochoir sur",
-  "theme.label": "Clair ou sombre"
+  "theme.label": "Clair ou sombre",
+  "s.dl.pdf": "Télécharger le PDF en taille réelle",
+  "s.dl.paper": "Papier",
+  "s.dl.pdfHint": "Le PDF s'imprime à 100 %. Un pochoir plus grand est réparti sur plusieurs feuilles avec 10 mm de recouvrement, pour les assembler au ruban."
 }

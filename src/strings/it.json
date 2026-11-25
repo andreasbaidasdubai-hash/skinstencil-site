@@ -237,7 +237,7 @@
   "s.tips.3": "Alza Rimuovi puntini per pulire il rumore. Abbassa la Sensibilità se le ombre diventano linee.",
   "s.tips.4": "Se le linee sembrano deboli sulla tua stampante, prova uno spessore maggiore e fai prima una prova su carta.",
   "s.dl.print": "Stampa a grandezza reale",
-  "s.thanks": "Grazie. La tua chiave di licenza è nella tua email. Incollala qui sotto per rimuovere la filigrana.",
+  "s.thanks": "Grazie. La tua chiave di licenza è nella tua email. Incollala qui o nella scheda dove si trova la tua immagine: si sbloccano entrambe.",
   "seo.eyebrow": "Lo stencil per tatuaggi, spiegato",
   "seo.h2": "Un generatore di stencil tatuaggio che mantiene il tuo tratto.",
   "seo.a.h": "Che cos'è uno stencil per tatuaggio?",
@@ -251,5 +251,8 @@
   "demo.skin": "Sulla pelle",
   "demo.paper": "Su carta",
   "demo.surface": "Mostra lo stencil su",
-  "theme.label": "Chiaro o scuro"
+  "theme.label": "Chiaro o scuro",
+  "s.dl.pdf": "Scarica il PDF a grandezza reale",
+  "s.dl.paper": "Carta",
+  "s.dl.pdfHint": "Il PDF si stampa al 100 %. Uno stencil più grande viene diviso su più fogli con 10 mm di sovrapposizione, da unire con il nastro."
 }

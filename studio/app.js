@@ -178,7 +178,19 @@
     w.document.write('<!doctype html><title>skinstencil ' + Math.round(o.mm) + ' mm</title><style>@page{margin:8mm}html,body{margin:0;background:#fff}img{display:block;width:' + o.mm + 'mm;height:auto}</style><img src="' + uri + '" onload="setTimeout(function(){window.print()},150)">');
     w.document.close();
   }
+  /* PDF at true size: one sheet, or several with a 10 mm overlap when the stencil is bigger than the paper (js/pdf-util.js) */
+  var pl = (navigator.language || '').toLowerCase(); if (/^(en-us|en-ca|es-mx|es-us)/.test(pl)) $('paper').value = 'letter';
+  function downloadPdf() {
+    var o = buildOutput(); if (!o) return;
+    var btn = $('pdfBtn'); btn.disabled = true; setDl('s.dl.busy');
+    window.SkinPdf.build(o.canvas, o.mm, $('paper').value).then(function (r) {
+      var url = URL.createObjectURL(r.blob), a = document.createElement('a');
+      a.href = url; a.download = 'skinstencil-' + Math.round(o.mm) + 'mm' + (o.un ? '' : '-free') + '.pdf'; document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+    }).catch(function () { setDl('s.dl.network', 'err'); }).then(function () { btn.disabled = false; dlState(); });
+  }
   $('dlBtn').addEventListener('click', download);
+  $('pdfBtn').addEventListener('click', downloadPdf);
   $('printBtn').addEventListener('click', printTrue);
   $('unlockBtn').addEventListener('click', function () { $('plansBox').hidden = !$('plansBox').hidden; });
 
@@ -202,6 +214,7 @@
   });
   $('keyOut').addEventListener('click', function () { U.clear(); $('keyStatus').textContent = ''; dlState(); process(FULL); });
   dlState(); U.refresh().then(function () { dlState(); process(FULL); });
+  window.addEventListener('storage', function (e) { if (e.key === 'skinstencil.license') { dlState(); process(FULL); } });
   if (/[?&]thanks=1/.test(location.search)) { $('thanks').hidden = false; $('keyBox').open = true; }
 
   /* open in a working state so the stage is never empty */

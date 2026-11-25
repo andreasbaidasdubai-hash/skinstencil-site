@@ -237,7 +237,7 @@
   "s.tips.3": "Raise Remove specks to clean noise. Lower Sensitivity if shading turns into lines.",
   "s.tips.4": "If lines look faint on your printer, try a heavier line weight and test on paper first.",
   "s.dl.print": "Print at true size",
-  "s.thanks": "Thank you. Your license key is in your email. Paste it below to remove the watermark.",
+  "s.thanks": "Thank you. Your license key is in your email. Paste it here, or in the tab where your image is: both unlock.",
   "seo.eyebrow": "Tattoo stencils, explained",
   "seo.h2": "A tattoo stencil maker that keeps your line.",
   "seo.a.h": "What is a tattoo stencil?",
@@ -251,5 +251,8 @@
   "demo.skin": "On skin",
   "demo.paper": "On paper",
   "demo.surface": "Show the stencil on",
-  "theme.label": "Light or dark"
+  "theme.label": "Light or dark",
+  "s.dl.pdf": "Download PDF at true size",
+  "s.dl.paper": "Paper",
+  "s.dl.pdfHint": "The PDF prints at 100%. A larger stencil is split over several sheets with a 10 mm overlap, so you can tape them together."
 }

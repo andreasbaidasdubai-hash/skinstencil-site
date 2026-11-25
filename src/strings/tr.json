@@ -237,7 +237,7 @@
   "s.tips.3": "Gürültüyü temizlemek için Lekeleri temizle'yi artırın. Gölgeler çizgiye dönüşüyorsa Hassasiyet'i düşürün.",
   "s.tips.4": "Çizgiler yazıcınızda soluk görünüyorsa daha kalın bir çizgi kalınlığı deneyin ve önce kağıtta test edin.",
   "s.dl.print": "Gerçek boyutta yazdır",
-  "s.thanks": "Teşekkürler. Lisans anahtarın e-postanda. Filigranı kaldırmak için aşağıya yapıştır.",
+  "s.thanks": "Teşekkürler. Lisans anahtarın e-postanda. Buraya ya da görselinin olduğu sekmeye yapıştır: ikisi de açılır.",
   "seo.eyebrow": "Dövme şablonu nedir, nasıl yapılır",
   "seo.h2": "Çizgini bozmayan bir dövme şablonu oluşturucu.",
   "seo.a.h": "Dövme şablonu (stencil) nedir?",
@@ -251,5 +251,8 @@
   "demo.skin": "Ciltte",
   "demo.paper": "Kağıtta",
   "demo.surface": "Şablonu şurada göster",
-  "theme.label": "Açık veya koyu"
+  "theme.label": "Açık veya koyu",
+  "s.dl.pdf": "PDF'yi gerçek boyutta indir",
+  "s.dl.paper": "Kâğıt",
+  "s.dl.pdfHint": "PDF %100 ölçekle yazdırılır. Daha büyük bir şablon, bantla birleştirmeniz için 10 mm bindirmeyle birkaç sayfaya bölünür."
 }

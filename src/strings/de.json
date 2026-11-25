@@ -237,7 +237,7 @@
   "s.tips.3": "Erhöhe Flecken entfernen, um Rauschen zu säubern. Senke die Empfindlichkeit, wenn Schattierung zu Linien wird.",
   "s.tips.4": "Wenn Linien auf deinem Drucker blass aussehen, probiere eine kräftigere Linienstärke und teste zuerst auf Papier.",
   "s.dl.print": "In Originalgröße drucken",
-  "s.thanks": "Danke. Dein Lizenzschlüssel ist in deinem Postfach. Füge ihn unten ein, um das Wasserzeichen zu entfernen.",
+  "s.thanks": "Danke. Dein Lizenzschlüssel ist in deinem Postfach. Füge ihn hier oder im Tab mit deinem Bild ein: beide werden freigeschaltet.",
   "seo.eyebrow": "Tattoo Stencils einfach erklärt",
   "seo.h2": "Tattoo Stencil erstellen, ohne dass die Linie leidet.",
   "seo.a.h": "Was ist ein Tattoo Stencil?",
@@ -251,5 +251,8 @@
   "demo.skin": "Auf Haut",
   "demo.paper": "Auf Papier",
   "demo.surface": "Stencil anzeigen auf",
-  "theme.label": "Hell oder dunkel"
+  "theme.label": "Hell oder dunkel",
+  "s.dl.pdf": "PDF in Originalgröße laden",
+  "s.dl.paper": "Papier",
+  "s.dl.pdfHint": "Das PDF druckt mit 100 %. Ein größerer Stencil wird auf mehrere Blätter mit 10 mm Überlappung verteilt, zum Zusammenkleben."
 }

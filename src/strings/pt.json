@@ -237,7 +237,7 @@
   "s.tips.3": "Aumente Remover pontinhos para limpar ruído. Diminua a Sensibilidade se o sombreado virar linhas.",
   "s.tips.4": "Se as linhas ficarem fracas na sua impressora, tente uma linha mais grossa e teste primeiro no papel.",
   "s.dl.print": "Imprimir em tamanho real",
-  "s.thanks": "Obrigado. Sua chave de licença está no seu e-mail. Cole-a abaixo para remover a marca d'água.",
+  "s.thanks": "Obrigado. Sua chave de licença está no seu e-mail. Cole-a aqui ou na aba onde está sua imagem: as duas são liberadas.",
   "seo.eyebrow": "Stencil de tatuagem, explicado",
   "seo.h2": "Um gerador de stencil de tatuagem que mantém o seu traço.",
   "seo.a.h": "O que é um decalque de tatuagem?",
@@ -251,5 +251,8 @@
   "demo.skin": "Na pele",
   "demo.paper": "No papel",
   "demo.surface": "Mostrar o decalque em",
-  "theme.label": "Claro ou escuro"
+  "theme.label": "Claro ou escuro",
+  "s.dl.pdf": "Baixar PDF em tamanho real",
+  "s.dl.paper": "Papel",
+  "s.dl.pdfHint": "O PDF imprime a 100 %. Um decalque maior é dividido em várias folhas com 10 mm de sobreposição, para unir com fita."
 }

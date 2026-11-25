@@ -237,7 +237,7 @@
   "s.tips.3": "Verhoog Vlekjes verwijderen om ruis op te ruimen. Verlaag Gevoeligheid als schaduw lijnen wordt.",
   "s.tips.4": "Als lijnen er zwak uitzien op je printer, probeer een dikkere lijn en test eerst op papier.",
   "s.dl.print": "Afdrukken op ware grootte",
-  "s.thanks": "Bedankt. Je licentiesleutel staat in je e-mail. Plak hem hieronder om het watermerk te verwijderen.",
+  "s.thanks": "Bedankt. Je licentiesleutel staat in je e-mail. Plak hem hier of in het tabblad met je afbeelding: beide worden ontgrendeld.",
   "seo.eyebrow": "Tattoo stencils, uitgelegd",
   "seo.h2": "Tattoo stencil maken zonder je lijn te verliezen.",
   "seo.a.h": "Wat is een tattoo stencil?",
@@ -251,5 +251,8 @@
   "demo.skin": "Op huid",
   "demo.paper": "Op papier",
   "demo.surface": "Toon de stencil op",
-  "theme.label": "Licht of donker"
+  "theme.label": "Licht of donker",
+  "s.dl.pdf": "PDF op ware grootte downloaden",
+  "s.dl.paper": "Papier",
+  "s.dl.pdfHint": "De pdf print op 100 %. Een grotere stencil wordt over meerdere vellen verdeeld met 10 mm overlap, om aan elkaar te plakken."
 }

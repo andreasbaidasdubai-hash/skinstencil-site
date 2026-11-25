@@ -158,6 +158,9 @@ details.plans .btn{margin-top:8px}
       <h2>{{s.dl.h}}</h2>
       <button class="btn" id="dlBtn" type="button">{{s.dl.btn}}</button>
       <button class="btn alt" id="printBtn" type="button">{{s.dl.print}}</button>
+      <button class="btn alt" id="pdfBtn" type="button">{{s.dl.pdf}}</button>
+      <div><label for="paper">{{s.dl.paper}}</label><select id="paper"><option value="a4">A4</option><option value="letter">Letter</option></select></div>
+      <p class="fine" style="margin:0">{{s.dl.pdfHint}}</p>
       <p class="status" id="dlStatus"></p>
       <button class="btn" id="unlockBtn" type="button" style="background:var(--stencil);border-color:var(--stencil);color:#fff">{{s.dl.remove}}</button>
       <div class="plansbox" id="plansBox" hidden>
@@ -194,6 +197,7 @@ details.plans .btn{margin-top:8px}
 <script src="/js/analytics.js"></script>
 <script src="/js/engine.js"></script>
 <script src="/js/unlock.js"></script>
+<script src="/js/pdf-util.js"></script>
 <script src="/studio/app.js"></script>
 <script>var sel=document.getElementById('langSel'); if(sel) sel.addEventListener('change',function(){ location.href=sel.value; });</script>
 </body>

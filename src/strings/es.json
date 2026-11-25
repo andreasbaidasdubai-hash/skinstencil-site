@@ -237,7 +237,7 @@
   "s.tips.3": "Sube Quitar motas para limpiar el ruido. Baja la Sensibilidad si el sombreado se convierte en líneas.",
   "s.tips.4": "Si las líneas se ven débiles en tu impresora, prueba un grosor de línea mayor y haz una prueba en papel primero.",
   "s.dl.print": "Imprimir a tamaño real",
-  "s.thanks": "Gracias. Tu clave de licencia está en tu correo. Pégala abajo para quitar la marca de agua.",
+  "s.thanks": "Gracias. Tu clave de licencia está en tu correo. Pégala aquí o en la pestaña donde está tu imagen: se desbloquean las dos.",
   "seo.eyebrow": "El stencil de tatuaje, explicado",
   "seo.h2": "Un creador de stencil que respeta tu línea.",
   "seo.a.h": "¿Qué es un stencil de tatuaje?",
@@ -251,5 +251,8 @@
   "demo.skin": "Sobre la piel",
   "demo.paper": "Sobre papel",
   "demo.surface": "Mostrar el stencil sobre",
-  "theme.label": "Claro u oscuro"
+  "theme.label": "Claro u oscuro",
+  "s.dl.pdf": "Descargar PDF a tamaño real",
+  "s.dl.paper": "Papel",
+  "s.dl.pdfHint": "El PDF se imprime al 100 %. Un stencil más grande se reparte en varias hojas con 10 mm de solape, para unirlas con cinta."
 }
