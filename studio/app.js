@@ -17,6 +17,19 @@
   bindRange('sens', 'sensV'); bindRange('smooth', 'smoothV'); bindRange('weight', 'weightV'); bindRange('specks', 'specksV');
   function setMode(m) { state.mode = m; [].forEach.call($('mode').querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', String(x.getAttribute('data-v') === m)); }); }
   [].forEach.call($('mode').querySelectorAll('button'), function (b) { b.addEventListener('click', function () { setMode(b.getAttribute('data-v')); schedule(); }); });
+  /* Recommended: SkinEngine.recommend reads the picture on this device and sets the controls; every control stays adjustable afterwards */
+  function setRange(id, vid, v) { var e = $(id); e.value = v; $(vid).textContent = e.value; }
+  $('recBtn').addEventListener('click', function () {
+    if (!FULL) return;
+    var b = this, st = $('recStatus'); b.disabled = true; st.textContent = '';
+    setTimeout(function () {
+      try {
+        var r = E.recommend(FULL.gray, FULL.w, FULL.h);
+        setMode(r.mode); setRange('sens', 'sensV', r.sens); setRange('smooth', 'smoothV', r.smooth); setRange('weight', 'weightV', r.weight); setRange('specks', 'specksV', r.specks);
+        process(FULL); st.textContent = t('s.recommendedDone');
+      } finally { b.disabled = false; }
+    }, 30);
+  });
   var sk = $('skins'), swBtns = [];
   var none = document.createElement('button'); none.type = 'button'; none.className = 'sw none'; none.setAttribute('aria-pressed', 'true'); none.setAttribute('aria-label', t('s.noSkin')); sk.appendChild(none); swBtns.push(none);
   SKINS.forEach(function (c, i) { var b = document.createElement('button'); b.type = 'button'; b.className = 'sw'; b.style.background = c; b.setAttribute('aria-pressed', 'false'); b.setAttribute('aria-label', t('s.skinN') + ' ' + (i + 1)); sk.appendChild(b); swBtns.push(b); });
@@ -61,6 +74,7 @@
   /* ---------- processing ---------- */
   function schedule() {
     if (!FULL) return;
+    $('recStatus').textContent = '';
     if (!rafBusy) { rafBusy = true; requestAnimationFrame(function () { rafBusy = false; process(SMALL); }); }
     clearTimeout(timer); timer = setTimeout(function () { process(FULL); }, 220);
   }
