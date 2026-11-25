@@ -69,3 +69,15 @@ Short answer: not Belline's account, and not directly with Polar.
 - Polar pays you out through its own Stripe-based payout account that Polar sets up for your organisation. You cannot plug Belline's existing Stripe account into it.
 - Using Belline's live Stripe account directly would make you the seller of record. Then you, not a provider, must register for and remit VAT, GST and US sales tax in every country where you sell, and Stripe has no license-key product, so you would also need a small server to issue keys. Selling a different product through Belline's account also mixes disputes and chargebacks into the account that runs your main business, and Belline's own rules say not to touch live providers lightly.
 - If you still prefer Stripe only: Stripe Payment Links plus Stripe Tax for calculation, a separate Stripe account for Skinstencil, and a small Cloudflare Worker that listens to the Stripe webhook, creates a key and emails it. That is more work and more tax responsibility than Polar for a global USD 5 to 12 product.
+
+## Signup and account review (read 25 Nov 2026 on polar.sh/docs/merchant-of-record)
+Polar will not accept real payments until it approves your account. Build first, submit second.
+1. Sign up at polar.sh and create the organisation. Add the website (https://skinstencil.com) and a support email on your domain. The support email is verified with a code, so hello@skinstencil.com must receive mail first.
+2. Create the three products and checkout links in Polar's sandbox (sandbox.polar.sh) and test them. The sandbox is a separate organisation.
+3. In the live organisation create the same products and attach the license key benefit. A reviewer wants to see a product, how checkout works and how the customer gets what they paid for.
+4. Finance, then Account: complete the checklist. Required: identity verification of the organisation owner (Stripe Identity, an ID document and a selfie), a payout account (Stripe Connect Express, your country of tax residency and a bank account), a verified support email, a product description and a reachable website. Social links speed things up.
+5. Before you submit, make sure the website shows what is sold, the prices, a working privacy page and terms with the operator name and address filled in, and the refund policy. Placeholders in square brackets will slow the review.
+6. Submit for review. Initial reviews can take up to 14 days. Polar may ask you to email a 100% discount code so they can test your flow. After approval, put the live checkout links into js/config.js and push.
+
+## Optional later: automatic unlock without pasting a key
+Polar can send the buyer back to https://skinstencil.com/studio/?checkout_id={CHECKOUT_ID} (the success URL supports this placeholder). A small Cloudflare Worker holding a Polar access token can confirm that checkout and return the unlock, so the buyer never sees a key. It needs a free Cloudflare account and a Worker; ask for it once the sandbox works.
