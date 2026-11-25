@@ -27,4 +27,4 @@ After paying, the customer gets a license key by email. In the studio they open 
 - This is a light lock for a low-priced tool, not copy protection: someone technical can bypass a watermark that is applied in the browser, and a key can be shared unless you limit activations.
 - It is two steps (pay, then paste the key), not literally one click. Checkout itself can be quick, but whether Apple Pay or Google Pay appear depends on Polar and your settings (unverified). A one-click return (a success page that unlocks automatically) needs a small server or Cloudflare Worker to read the key; add it later if conversion shows the paste step hurts.
 - The browser call to Polar's endpoint has not been tested against the live service. If the browser blocks it (CORS) the studio shows "could not reach the license server"; the fix is a small proxy.
-- Prices are tests. Watch conversion from "Remove the watermark" to checkout before changing anything.
+- Prices are launch prices. Watch conversion from "Remove the watermark" to checkout before changing anything.
