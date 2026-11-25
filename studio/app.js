@@ -241,6 +241,22 @@
     var style = 'bold', busy = false, st = $('genStatus');
     function say(k, cls, v) { st.textContent = k ? t(k, v) : ''; st.className = 'status' + (cls ? ' ' + cls : ''); }
     [].forEach.call($('genStyle').querySelectorAll('button'), function (b) { b.addEventListener('click', function () { style = b.getAttribute('data-v'); [].forEach.call($('genStyle').querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', String(x === b)); }); }); });
+    /* Cloudflare Turnstile (free bot check). Only when js/config.js has turnstileSiteKey. A fresh one-time token is fetched for every design;
+       the widget stays invisible unless Cloudflare wants the visitor to prove something. */
+    var tsKey = C.turnstileSiteKey || '', tsLoad = null;
+    function tsScript() {
+      if (!tsLoad) tsLoad = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'; s.async = true; s.onload = ok; s.onerror = no; document.head.appendChild(s); });
+      return tsLoad;
+    }
+    function humanToken() {
+      if (!tsKey) return Promise.resolve({ tok: '', id: null });
+      return tsScript().then(function () {
+        return new Promise(function (ok, no) {
+          var box = $('genTs'), id, done = false, to = setTimeout(function () { if (!done) { done = true; try { window.turnstile.remove(id); } catch (e) {} no(new Error('bot')); } }, 25000);
+          id = window.turnstile.render(box, { sitekey: tsKey, appearance: 'interaction-only', callback: function (tok) { if (done) return; done = true; clearTimeout(to); ok({ tok: tok, id: id }); }, 'error-callback': function () { if (done) return; done = true; clearTimeout(to); no(new Error('bot')); } });
+        });
+      });
+    }
     function licenseKey() { try { var s = JSON.parse(localStorage.getItem('skinstencil.license') || 'null'); return s && U.isUnlocked() ? s.key : ''; } catch (e) { return ''; } }
     function show(blob) {
       var u = URL.createObjectURL(blob), im = new Image();
@@ -258,15 +274,18 @@
       var p = $('genPrompt').value.replace(/\s+/g, ' ').trim(); if (p.length < 3) { say('s.gen.errShort', 'err'); return; }
       busy = true; $('genBtn').disabled = true; say('s.gen.busy');
       var h = { 'Content-Type': 'application/json' }, key = licenseKey(); if (key) h['X-License'] = key;
-      fetch(base + '/generate', { method: 'POST', headers: h, body: JSON.stringify({ prompt: p, style: style }) }).then(function (r) {
+      humanToken().then(function (hu) {
+        if (hu.id != null) { try { window.turnstile.remove(hu.id); } catch (e) {} }   // the token is single-use; the widget is not needed again
+        return fetch(base + '/generate', { method: 'POST', headers: h, body: JSON.stringify({ prompt: p, style: style, turnstile: hu.tok }) });
+      }).then(function (r) {
         if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) {
-          var map = { limit_free: 's.gen.errLimitFree', limit_paid: 's.gen.errLimitPaid', budget: 's.gen.errBudget' };
+          var map = { limit_free: 's.gen.errLimitFree', limit_paid: 's.gen.errLimitPaid', budget: 's.gen.errBudget', bot: 's.gen.errBot' };
           say(map[j.error] || 's.gen.errUpstream', 'err');
           if (j.error === 'limit_free') $('plansBox').hidden = false;   // the way to get more is right there
         });
         var left = r.headers.get('X-Remaining');
         return r.blob().then(function (b) { show(b); say(left != null ? 's.gen.left' : '', 'ok', { n: left }); });
-      }).catch(function () { say('s.gen.errNetwork', 'err'); }).then(function () { busy = false; $('genBtn').disabled = false; });
+      }).catch(function (e) { say(e && e.message === 'bot' ? 's.gen.errBot' : 's.gen.errNetwork', 'err'); }).then(function () { busy = false; $('genBtn').disabled = false; });
     });
   })();
 

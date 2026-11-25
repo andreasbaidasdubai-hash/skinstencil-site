@@ -269,5 +269,6 @@
   "s.gen.errLimitPaid": "Bugünkü sınıra ulaştın. Yarın yenilenir.",
   "s.gen.errBudget": "Oluşturucu bugünlük durduruldu. Yarın tekrar dene.",
   "s.gen.errUpstream": "Tasarım oluşturulamadı ve hakkından bir şey düşülmedi. Tekrar dene.",
-  "s.gen.errNetwork": "Oluşturucuya bağlanılamadı. Tekrar dene."
+  "s.gen.errNetwork": "Oluşturucuya bağlanılamadı. Tekrar dene.",
+  "s.gen.errBot": "Bir insan olduğunu doğrulayamadık. Sayfayı yenileyip tekrar dene."
 }

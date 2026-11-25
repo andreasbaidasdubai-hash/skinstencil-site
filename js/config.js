@@ -15,6 +15,8 @@ window.SkinConfig = {
   notifyEmail: "hello@skinstencil.com",
   /* Address of the design-generator Worker (worker/README.md). Empty = the generator is not drawn on the page. */
   generatorUrl: "https://skinstencil-generate.skinstencil.workers.dev",
+  /* Public site key of the Cloudflare Turnstile widget (the bot check on the generator). Empty = no check on the page; the Worker enforces it as soon as its TURNSTILE_SECRET is set. */
+  turnstileSiteKey: "",
   freeMaxPx: 800,
   paidMaxPx: 4000
 };

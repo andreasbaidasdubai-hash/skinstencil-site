@@ -269,5 +269,6 @@
   "s.gen.errLimitPaid": "Das Limit für heute ist erreicht. Morgen geht es wieder.",
   "s.gen.errBudget": "Der Generator pausiert für heute. Bitte versuche es morgen wieder.",
   "s.gen.errUpstream": "Das Motiv konnte nicht erstellt werden, es wurde nichts verbraucht. Bitte versuche es erneut.",
-  "s.gen.errNetwork": "Keine Verbindung zum Generator. Bitte versuche es erneut."
+  "s.gen.errNetwork": "Keine Verbindung zum Generator. Bitte versuche es erneut.",
+  "s.gen.errBot": "Wir konnten nicht bestätigen, dass du ein Mensch bist. Lade die Seite neu und versuche es erneut."
 }

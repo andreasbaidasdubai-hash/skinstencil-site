@@ -269,5 +269,6 @@
   "s.gen.errLimitPaid": "Osiągnięto dzisiejszy limit. Odnowi się jutro.",
   "s.gen.errBudget": "Generator jest dziś wstrzymany. Spróbuj jutro.",
   "s.gen.errUpstream": "Nie udało się stworzyć projektu i nic nie zostało zużyte. Spróbuj ponownie.",
-  "s.gen.errNetwork": "Brak połączenia z generatorem. Spróbuj ponownie."
+  "s.gen.errNetwork": "Brak połączenia z generatorem. Spróbuj ponownie.",
+  "s.gen.errBot": "Nie udało się potwierdzić, że jesteś człowiekiem. Odśwież stronę i spróbuj ponownie."
 }

@@ -269,5 +269,6 @@
   "s.gen.errLimitPaid": "You have reached today's limit. It resets tomorrow.",
   "s.gen.errBudget": "The generator is paused for today. Please try again tomorrow.",
   "s.gen.errUpstream": "The design could not be made and nothing was used. Please try again.",
-  "s.gen.errNetwork": "No connection to the generator. Please try again."
+  "s.gen.errNetwork": "No connection to the generator. Please try again.",
+  "s.gen.errBot": "We could not confirm you are a person. Reload the page and try again."
 }

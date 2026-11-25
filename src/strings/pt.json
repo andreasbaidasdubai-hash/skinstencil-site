@@ -269,5 +269,6 @@
   "s.gen.errLimitPaid": "Atingiu o limite de hoje. Renova amanhã.",
   "s.gen.errBudget": "O gerador está em pausa por hoje. Tente novamente amanhã.",
   "s.gen.errUpstream": "Não foi possível criar o desenho e nada foi descontado. Tente novamente.",
-  "s.gen.errNetwork": "Sem ligação ao gerador. Tente novamente."
+  "s.gen.errNetwork": "Sem ligação ao gerador. Tente novamente.",
+  "s.gen.errBot": "Não conseguimos confirmar que é uma pessoa. Recarregue a página e tente novamente."
 }

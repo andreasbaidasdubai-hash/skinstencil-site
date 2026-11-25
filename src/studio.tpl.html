@@ -104,6 +104,7 @@ details.plans .btn{margin-top:8px}
       <div><label for="genPrompt">{{s.gen.label}}</label><textarea id="genPrompt" rows="2" maxlength="200" placeholder="{{s.gen.ph}}"></textarea></div>
       <div class="seg" id="genStyle"><button type="button" data-v="bold" aria-pressed="true">{{s.gen.bold}}</button><button type="button" data-v="detail" aria-pressed="false">{{s.gen.detail}}</button></div>
       <button class="btn" id="genBtn" type="button" style="background:var(--stencil);border-color:var(--stencil);color:#fff">{{s.gen.btn}}</button>
+      <div id="genTs"></div>
       <p class="status" id="genStatus" role="status" aria-live="polite" style="margin:0"></p>
       <p class="fine" style="margin:0">{{s.gen.hint}}</p>
     </div>

@@ -269,5 +269,6 @@
   "s.gen.errLimitPaid": "Je hebt de limiet van vandaag bereikt. Morgen is die weer hersteld.",
   "s.gen.errBudget": "De generator is vandaag gepauzeerd. Probeer het morgen opnieuw.",
   "s.gen.errUpstream": "Het ontwerp kon niet worden gemaakt en er is niets afgetrokken. Probeer het opnieuw.",
-  "s.gen.errNetwork": "Geen verbinding met de generator. Probeer het opnieuw."
+  "s.gen.errNetwork": "Geen verbinding met de generator. Probeer het opnieuw.",
+  "s.gen.errBot": "We konden niet bevestigen dat je een mens bent. Laad de pagina opnieuw en probeer het nog eens."
 }

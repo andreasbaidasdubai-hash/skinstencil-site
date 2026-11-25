@@ -269,5 +269,6 @@
   "s.gen.errLimitPaid": "Hai raggiunto il limite di oggi. Si rinnova domani.",
   "s.gen.errBudget": "Il generatore è in pausa per oggi. Riprova domani.",
   "s.gen.errUpstream": "Non è stato possibile creare il disegno e non è stato scalato nulla. Riprova.",
-  "s.gen.errNetwork": "Nessuna connessione al generatore. Riprova."
+  "s.gen.errNetwork": "Nessuna connessione al generatore. Riprova.",
+  "s.gen.errBot": "Non siamo riusciti a confermare che sei una persona. Ricarica la pagina e riprova."
 }

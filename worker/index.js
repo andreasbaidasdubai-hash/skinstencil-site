@@ -29,6 +29,17 @@ async function licenseOk(env, key) {
   } catch (e) { return false; }
 }
 
+/* Cloudflare Turnstile: a free bot check. The page gets a one-time token from the visitor's browser; it is verified here before anything is counted or paid for.
+   Enforced whenever the TURNSTILE_SECRET secret is set (worker/README.md), so scripts that skip the page cannot reach the image provider. */
+async function humanOk(env, token, ip) {
+  if (!token || token.length > 2048) return false;
+  try {
+    const f = new URLSearchParams({ secret: env.TURNSTILE_SECRET, response: token }); if (ip) f.set('remoteip', ip);
+    const r = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body: f });
+    return r.ok && (await r.json()).success === true;
+  } catch (e) { return false; }
+}
+
 export default {
   async fetch(req, env) {
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors(req) });
@@ -41,6 +52,8 @@ export default {
     const prompt = String(b.prompt || '').replace(/\s+/g, ' ').trim();
     const style = STYLES[b.style] ? b.style : 'bold', S = STYLES[style];
     if (prompt.length < 3 || prompt.length > 200) return json(req, 400, { error: 'bad' });
+
+    if (env.TURNSTILE_SECRET && !(await humanOk(env, String(b.turnstile || ''), req.headers.get('CF-Connecting-IP')))) return json(req, 403, { error: 'bot' });
 
     const kv = env.LIMITS, d = day(), ip = req.headers.get('CF-Connecting-IP') || 'x';
     const lic = req.headers.get('X-License') || '', paid = await licenseOk(env, lic);

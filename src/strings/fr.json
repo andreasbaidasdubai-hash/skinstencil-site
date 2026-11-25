@@ -269,5 +269,6 @@
   "s.gen.errLimitPaid": "Tu as atteint la limite du jour. Elle se renouvelle demain.",
   "s.gen.errBudget": "Le générateur est en pause pour aujourd’hui. Réessaie demain.",
   "s.gen.errUpstream": "Le motif n’a pas pu être créé et rien n’a été décompté. Réessaie.",
-  "s.gen.errNetwork": "Pas de connexion au générateur. Réessaie."
+  "s.gen.errNetwork": "Pas de connexion au générateur. Réessaie.",
+  "s.gen.errBot": "Nous n’avons pas pu confirmer que tu es une personne. Recharge la page et réessaie."
 }
