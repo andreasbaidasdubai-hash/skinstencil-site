@@ -1,14 +1,12 @@
 {
   "meta.title": "Skinstencil | Tattoo stencils at true size",
   "meta.desc": "Turn your own tattoo design into a clean, print-ready stencil. A free tool that runs in your browser: free downloads carry a watermark, and you can remove it in one click.",
-  "banner": "Early build. The free tool works today. Paid plans are opening, and prices may change.",
   "nav.examples": "Examples",
   "nav.pricing": "Pricing",
   "nav.faq": "Questions",
   "tab.tattoo": "Tattoo",
   "tab.brow": "Brow mapping",
   "lang.label": "Language",
-
   "hero.eyebrow": "For tattoo artists and studios",
   "hero.h1": "Stencils that match your line, ready to print.",
   "hero.sub": "Turn your own design, sketch or flash into a clean stencil in seconds. Free to use, nothing to install, nothing uploaded. Downloads carry a small watermark until you remove it.",
@@ -28,7 +26,6 @@
   "sample.mandala": "Mandala",
   "sample.lettering": "Lettering",
   "sample.orb": "Shaded orb",
-
   "ex.eyebrow": "Real output",
   "ex.h2": "Not mock-ups. Every picture here is made by the tool, right now, in your browser.",
   "ex.lead": "Four sample designs, drawn in code so anyone can use them, run through the same filter you get in the studio. Left is the design, right is the stencil.",
@@ -41,7 +38,6 @@
   "g.n.mandala": "Fine petals and a hatched centre.",
   "g.n.lettering": "Script and swashes at a clean weight.",
   "g.n.orb": "Photo mode finds shape edges in soft shading.",
-
   "f.eyebrow": "What you get",
   "f.h2": "Tools that tell you what happened to your lines.",
   "f.drift.h3": "Drift check: see every line that changed",
@@ -64,7 +60,6 @@
   "f.size.l2": "PNG download today. PDF export and print layouts are planned.",
   "f.size.cap": "88 x 113 mm is 1039 x 1336 px at 300 dpi.",
   "f.size.aria": "A stencil with a ruler marked in millimetres and the size 88 by 113 millimetres",
-
   "d.eyebrow": "Better input, better stencil",
   "d.h2": "Do and don't, shown with the tool itself.",
   "d.lead": "Each pair feeds the tool a good and a poor version of the same design. The poor versions are made on purpose, so you can see what goes wrong.",
@@ -80,7 +75,6 @@
   "d.p3.do": "Tightly cropped",
   "d.p3.dont": "Lots of empty space",
   "d.p3.note": "Small subjects lose detail. Crop in.",
-
   "h.eyebrow": "How it works",
   "h.h2": "Upload, check, download.",
   "h.s1.h": "Upload your design",
@@ -89,7 +83,6 @@
   "h.s2.p": "Adjust line weight and sensitivity, check the drift, try a skin tone, set the size in millimetres.",
   "h.s3.h": "Download it",
   "h.s3.p": "Free downloads carry a watermark. Remove it in one click when you are ready to print for a client.",
-
   "o.eyebrow": "Built around what artists complain about",
   "o.h2": "Honest by design.",
   "o.1.h": "Faithful to your design",
@@ -99,7 +92,6 @@
   "o.3.h": "Built for studios",
   "o.3.p": "Several artists, one subscription, and client approval and consent saved with each stencil.",
   "tag.dev": "in development",
-
   "r.eyebrow": "Roadmap",
   "r.h2": "What works today and what is next.",
   "r.now": "Works today",
@@ -115,7 +107,6 @@
   "r.x3": "Studio accounts with client approval and consent",
   "r.x4": "Brow mapping",
   "r.x5": "More languages and local payment methods",
-
   "p.eyebrow": "Pricing",
   "p.h2": "Free with a watermark. Pay only to remove it.",
   "p.lead": "The tool is free. Free downloads carry a small watermark and stop at 1200 pixels. Pay to remove the watermark and get the full-size, true-size file.",
@@ -147,9 +138,8 @@
   "p.studio.l1": "Several artists, one bill",
   "p.studio.l2": "Client approval and consent",
   "p.studio.cta": "Tell me when it opens",
-  "p.note": "Prices are in US dollars and are test prices that may change. Tax is handled at checkout by our payment provider.",
+  "p.note": "Prices are in US dollars. Tax is handled at checkout by our payment provider.",
   "p.soon": "Checkout opens soon. Tell me when it does.",
-
   "q.eyebrow": "Questions",
   "q.h2": "Before you try it.",
   "q1.h": "Is it really free?",
@@ -174,7 +164,6 @@
   "q10.p": "Lower sensitivity and higher speck removal drop fine lines on purpose. Raise sensitivity, lower speck removal, and check the drift overlay to see what was lost.",
   "q11.h": "Can I get a refund?",
   "q11.p": "Refund terms are shown at checkout before you pay.",
-
   "b.eyebrow": "For brow and permanent-makeup artists",
   "b.h1": "Map brows at true size, then print the guide.",
   "b.sub": "Upload a front-facing photo, adjust the symmetry guides, and print a true-size overlay for the skin. Your client photos are not stored.",
@@ -204,16 +193,12 @@
   "b.price.proL2": "Saved guides",
   "b.price.cta": "Tell me when it opens",
   "b.price.note": "Brow mapping is not built yet. Prices are plans and may change.",
-
   "ft.privacy": "Privacy",
   "ft.terms": "Terms",
-  "ft.note": "Privacy and terms are in English. Prices on this page are US dollar test prices.",
+  "ft.note": "Privacy and terms are in English.",
   "ft.mt": "This page was translated automatically. If something reads wrongly, tell us.",
-
   "s.title": "Skinstencil Studio | Free stencil tool",
   "s.desc": "Free browser tool: turn your own design into a clean line stencil, check drift, preview on skin tones and set the print size. Runs locally, nothing is uploaded.",
-  "s.banner": "Free early version. It runs in your browser with a classic image filter (edges and thresholds), not an AI model. Nothing you load is uploaded or stored. Downloads carry a watermark until you unlock them.",
-  "s.pill": "Free early version",
   "s.c1": "1. Your design",
   "s.drop": "Drop a JPG, PNG or WebP here, or click to choose.",
   "s.dropRights": "Only designs you made or have the right to use.",
@@ -276,5 +261,7 @@
   "s.tips.1": "Photograph or scan flat, in even light, with the design filling the frame.",
   "s.tips.2": "Use Drawing for sketches and flash. Use Photo for pictures with soft shading.",
   "s.tips.3": "Raise Remove specks to clean noise. Lower Sensitivity if shading turns into lines.",
-  "s.tips.4": "If lines look faint on your printer, try a heavier line weight and test on paper first."
+  "s.tips.4": "If lines look faint on your printer, try a heavier line weight and test on paper first.",
+  "s.dl.print": "Print at true size",
+  "s.thanks": "Thank you. Your license key is in your email. Paste it below to remove the watermark."
 }

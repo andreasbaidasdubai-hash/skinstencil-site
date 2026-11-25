@@ -82,14 +82,15 @@ input[type=number],input[type=text]{width:100%;font:500 14px var(--mono);backgro
 details.plans{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper)}
 details.plans summary{font-weight:600;font-size:13px;cursor:pointer}
 details.plans .btn{margin-top:8px}
+.plansbox{display:grid;gap:8px}
+.thanks{background:var(--stencil-soft);border-radius:8px;padding:8px 10px;font-size:13px;margin:0}
 @media (max-width:1020px){.grid{grid-template-columns:minmax(0,1fr)}}
 [hidden]{display:none!important}
 </style>
 </head>
 <body>
 
-<div class="banner"><div class="wrap">{{s.banner}}</div></div>
-<header><div class="wrap"><a class="mark" href="{{base}}">skin<span>stencil</span></a><span class="pill">{{s.pill}}</span>{{langSelect}}</div></header>
+<header><div class="wrap"><a class="mark" href="{{base}}">skin<span>stencil</span></a>{{langSelect}}</div></header>
 
 <div class="wrap"><div class="grid">
 
@@ -154,15 +155,17 @@ details.plans .btn{margin-top:8px}
     <div class="card stack" id="dlCard">
       <h2>{{s.dl.h}}</h2>
       <button class="btn" id="dlBtn" type="button">{{s.dl.btn}}</button>
+      <button class="btn alt" id="printBtn" type="button">{{s.dl.print}}</button>
       <p class="status" id="dlStatus"></p>
-      <details class="plans" id="plansBox">
-        <summary>{{s.dl.remove}}</summary>
-        <p class="fine" style="margin:8px 0 0">{{s.dl.plans}}</p>
+      <button class="btn" id="unlockBtn" type="button" style="background:var(--stencil);border-color:var(--stencil);color:#fff">{{s.dl.remove}}</button>
+      <div class="plansbox" id="plansBox" hidden>
+        <p class="fine" style="margin:0 0 4px">{{s.dl.plans}}</p>
         <a class="btn alt buy" data-plan="day" href="#">{{s.dl.day}} - {{p.day.price}}</a>
         <a class="btn buy" data-plan="month" href="#">{{s.dl.month}} - {{p.pro.price}}</a>
         <a class="btn alt buy" data-plan="year" href="#">{{s.dl.year}} - $79</a>
         <p class="status" id="soon" hidden>{{s.dl.notConfigured}}</p>
-      </details>
+      </div>
+      <p class="thanks" id="thanks" hidden>{{s.thanks}}</p>
       <details class="plans" id="keyBox">
         <summary>{{s.dl.have}}</summary>
         <label for="keyIn" style="margin-top:8px">{{s.dl.keyLabel}}</label>

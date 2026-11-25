@@ -1,14 +1,12 @@
 {
   "meta.title": "Skinstencil | Stencil per tatuaggi a misura reale",
   "meta.desc": "Trasforma il tuo disegno per tatuaggio in uno stencil pulito, pronto da stampare. Uno strumento gratuito che gira nel browser: i download gratuiti hanno una filigrana e la togli con un clic.",
-  "banner": "Versione iniziale. Lo strumento gratuito funziona già oggi. I piani a pagamento stanno per aprire e i prezzi possono cambiare.",
   "nav.examples": "Esempi",
   "nav.pricing": "Prezzi",
   "nav.faq": "Domande",
   "tab.tattoo": "Tatuaggio",
   "tab.brow": "Brow mapping",
   "lang.label": "Lingua",
-
   "hero.eyebrow": "Per tatuatori e studi",
   "hero.h1": "Stencil fedeli al tuo tratto, pronti da stampare.",
   "hero.sub": "Trasforma il tuo disegno, schizzo o flash in uno stencil pulito in pochi secondi. Gratis, niente da installare, niente viene caricato. I download hanno una piccola filigrana finché non la togli.",
@@ -28,7 +26,6 @@
   "sample.mandala": "Mandala",
   "sample.lettering": "Lettering",
   "sample.orb": "Sfera sfumata",
-
   "ex.eyebrow": "Risultati reali",
   "ex.h2": "Non sono mock-up. Ogni immagine qui è creata dallo strumento, adesso, nel tuo browser.",
   "ex.lead": "Quattro disegni di esempio, creati nel codice così che chiunque possa usarli, passati nello stesso filtro che trovi nello studio. A sinistra il disegno, a destra lo stencil.",
@@ -41,7 +38,6 @@
   "g.n.mandala": "Petali sottili e centro tratteggiato.",
   "g.n.lettering": "Corsivo e svolazzi con uno spessore pulito.",
   "g.n.orb": "La modalità foto trova i bordi delle forme nelle ombre morbide.",
-
   "f.eyebrow": "Cosa ottieni",
   "f.h2": "Strumenti che ti dicono cosa è successo alle tue linee.",
   "f.drift.h3": "Controllo deriva: vedi ogni linea cambiata",
@@ -64,7 +60,6 @@
   "f.size.l2": "Download PNG oggi. Esportazione PDF e layout di stampa sono in programma.",
   "f.size.cap": "88 x 113 mm sono 1039 x 1336 px a 300 dpi.",
   "f.size.aria": "Uno stencil con un righello in millimetri e la misura 88 per 113 millimetri",
-
   "d.eyebrow": "Immagine migliore, stencil migliore",
   "d.h2": "Cosa fare e cosa no, mostrato con lo strumento stesso.",
   "d.lead": "Ogni coppia dà allo strumento una versione buona e una scadente dello stesso disegno. Le versioni scadenti sono fatte apposta, così vedi cosa va storto.",
@@ -80,7 +75,6 @@
   "d.p3.do": "Ritagliata stretta",
   "d.p3.dont": "Molto spazio vuoto",
   "d.p3.note": "I soggetti piccoli perdono dettaglio. Ritaglia.",
-
   "h.eyebrow": "Come funziona",
   "h.h2": "Carica, controlla, scarica.",
   "h.s1.h": "Carica il tuo disegno",
@@ -89,7 +83,6 @@
   "h.s2.p": "Regola spessore e sensibilità, controlla la deriva, prova un tono di pelle, imposta la misura in millimetri.",
   "h.s3.h": "Scaricalo",
   "h.s3.p": "I download gratuiti hanno una filigrana. Toglila con un clic quando sei pronto a stampare per un cliente.",
-
   "o.eyebrow": "Costruito attorno a ciò di cui si lamentano i tatuatori",
   "o.h2": "Onesto per progetto.",
   "o.1.h": "Fedele al tuo disegno",
@@ -99,7 +92,6 @@
   "o.3.h": "Pensato per gli studi",
   "o.3.p": "Più artisti, un solo abbonamento, e approvazione e consenso del cliente salvati con ogni stencil.",
   "tag.dev": "in sviluppo",
-
   "r.eyebrow": "Roadmap",
   "r.h2": "Cosa funziona oggi e cosa viene dopo.",
   "r.now": "Funziona oggi",
@@ -115,7 +107,6 @@
   "r.x3": "Account studio con approvazione e consenso del cliente",
   "r.x4": "Brow mapping",
   "r.x5": "Più lingue e metodi di pagamento locali",
-
   "p.eyebrow": "Prezzi",
   "p.h2": "Gratis con filigrana. Paghi solo per toglierla.",
   "p.lead": "Lo strumento è gratuito. I download gratuiti hanno una piccola filigrana e si fermano a 1200 pixel. Paga per togliere la filigrana e ottenere il file a piena risoluzione e misura reale.",
@@ -147,9 +138,8 @@
   "p.studio.l1": "Più artisti, un solo conto",
   "p.studio.l2": "Approvazione e consenso del cliente",
   "p.studio.cta": "Avvisami quando apre",
-  "p.note": "I prezzi sono in dollari USA e sono prezzi di prova che possono cambiare. Le imposte sono gestite al checkout dal nostro fornitore di pagamenti.",
+  "p.note": "Prezzi in dollari statunitensi. Le tasse sono gestite al pagamento dal nostro fornitore di pagamenti.",
   "p.soon": "Il checkout apre presto. Avvisami quando apre.",
-
   "q.eyebrow": "Domande",
   "q.h2": "Prima di provarlo.",
   "q1.h": "È davvero gratis?",
@@ -174,7 +164,6 @@
   "q10.p": "Una sensibilità più bassa e una rimozione puntini più alta scartano le linee sottili di proposito. Alza la sensibilità, abbassa la rimozione puntini e guarda la sovrapposizione della deriva per vedere cosa si è perso.",
   "q11.h": "Posso avere un rimborso?",
   "q11.p": "Le condizioni di rimborso sono mostrate al checkout prima di pagare.",
-
   "b.eyebrow": "Per artisti di sopracciglia e trucco permanente",
   "b.h1": "Mappa le sopracciglia a misura reale, poi stampa la guida.",
   "b.sub": "Carica una foto frontale, regola le guide di simmetria e stampa una sovrapposizione a misura reale per la pelle. Le foto dei tuoi clienti non vengono salvate.",
@@ -204,16 +193,12 @@
   "b.price.proL2": "Guide salvate",
   "b.price.cta": "Avvisami quando apre",
   "b.price.note": "Il brow mapping non è ancora pronto. I prezzi sono piani e possono cambiare.",
-
   "ft.privacy": "Privacy",
   "ft.terms": "Termini",
-  "ft.note": "Privacy e termini sono in inglese. I prezzi in questa pagina sono prezzi di prova in dollari USA.",
+  "ft.note": "Privacy e termini sono in inglese.",
   "ft.mt": "Questa pagina è stata tradotta automaticamente. Se qualcosa non torna, faccelo sapere.",
-
   "s.title": "Skinstencil Studio | Strumento stencil gratuito",
   "s.desc": "Strumento gratuito nel browser: trasforma il tuo disegno in uno stencil a linee pulito, controlla la deriva, guarda l'anteprima sui toni di pelle e imposta la misura di stampa. Gira in locale, non viene caricato nulla.",
-  "s.banner": "Versione iniziale gratuita. Gira nel browser con un filtro d'immagine classico (bordi e soglie), non con un modello di IA. Nulla di ciò che carichi viene inviato o salvato. I download hanno una filigrana finché non li sblocchi.",
-  "s.pill": "Versione iniziale gratuita",
   "s.c1": "1. Il tuo disegno",
   "s.drop": "Trascina qui un JPG, PNG o WebP, oppure clicca per sceglierlo.",
   "s.dropRights": "Solo disegni fatti da te o che hai il diritto di usare.",
@@ -276,5 +261,7 @@
   "s.tips.1": "Fotografa o scansiona in piano, con luce uniforme, con il disegno che riempie l'inquadratura.",
   "s.tips.2": "Usa Disegno per schizzi e flash. Usa Foto per immagini con ombreggiature morbide.",
   "s.tips.3": "Alza Rimuovi puntini per pulire il rumore. Abbassa la Sensibilità se le ombre diventano linee.",
-  "s.tips.4": "Se le linee sembrano deboli sulla tua stampante, prova uno spessore maggiore e fai prima una prova su carta."
+  "s.tips.4": "Se le linee sembrano deboli sulla tua stampante, prova uno spessore maggiore e fai prima una prova su carta.",
+  "s.dl.print": "Stampa a grandezza reale",
+  "s.thanks": "Grazie. La tua chiave di licenza è nella tua email. Incollala qui sotto per rimuovere la filigrana."
 }

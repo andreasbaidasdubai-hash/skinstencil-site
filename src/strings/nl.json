@@ -1,14 +1,12 @@
 {
   "meta.title": "Skinstencil | Tattoo-stencils op ware grootte",
   "meta.desc": "Maak van je eigen tattoo-ontwerp een schone, printklare stencil. Een gratis tool die in je browser draait: gratis downloads hebben een watermerk, en je verwijdert het met één klik.",
-  "banner": "Vroege versie. De gratis tool werkt nu al. Betaalde abonnementen gaan binnenkort open, en prijzen kunnen veranderen.",
   "nav.examples": "Voorbeelden",
   "nav.pricing": "Prijzen",
   "nav.faq": "Vragen",
   "tab.tattoo": "Tattoo",
   "tab.brow": "Brow mapping",
   "lang.label": "Taal",
-
   "hero.eyebrow": "Voor tattoo-artiesten en studio's",
   "hero.h1": "Stencils die bij jouw lijn passen, klaar om te printen.",
   "hero.sub": "Maak in een paar seconden een schone stencil van je eigen ontwerp, schets of flash. Gratis te gebruiken, niets te installeren, niets geüpload. Downloads hebben een klein watermerk totdat je het verwijdert.",
@@ -28,7 +26,6 @@
   "sample.mandala": "Mandala",
   "sample.lettering": "Lettering",
   "sample.orb": "Geschaduwde bol",
-
   "ex.eyebrow": "Echte output",
   "ex.h2": "Geen mock-ups. Elk plaatje hier is nu gemaakt door de tool, in je browser.",
   "ex.lead": "Vier voorbeeldontwerpen, in code getekend zodat iedereen ze mag gebruiken, door hetzelfde filter gehaald als in de studio. Links het ontwerp, rechts de stencil.",
@@ -41,7 +38,6 @@
   "g.n.mandala": "Fijne bloemblaadjes en een gearceerd midden.",
   "g.n.lettering": "Script en krullen in een schone lijndikte.",
   "g.n.orb": "Fotomodus vindt vormranden in zachte schaduw.",
-
   "f.eyebrow": "Wat je krijgt",
   "f.h2": "Tools die laten zien wat er met je lijnen is gebeurd.",
   "f.drift.h3": "Driftcontrole: zie elke lijn die veranderd is",
@@ -64,7 +60,6 @@
   "f.size.l2": "PNG-download nu al. PDF-export en printlay-outs staan gepland.",
   "f.size.cap": "88 x 113 mm is 1039 x 1336 px bij 300 dpi.",
   "f.size.aria": "Een stencil met een liniaal in millimeters en de maat 88 bij 113 millimeter",
-
   "d.eyebrow": "Betere input, betere stencil",
   "d.h2": "Wel en niet, getoond met de tool zelf.",
   "d.lead": "Elk paar geeft de tool een goede en een slechte versie van hetzelfde ontwerp. De slechte versies zijn met opzet gemaakt, zodat je ziet wat er misgaat.",
@@ -80,7 +75,6 @@
   "d.p3.do": "Strak bijgesneden",
   "d.p3.dont": "Veel lege ruimte",
   "d.p3.note": "Kleine onderwerpen verliezen detail. Snij bij.",
-
   "h.eyebrow": "Zo werkt het",
   "h.h2": "Uploaden, controleren, downloaden.",
   "h.s1.h": "Upload je ontwerp",
@@ -89,7 +83,6 @@
   "h.s2.p": "Pas lijndikte en gevoeligheid aan, check de drift, probeer een huidtint, stel de maat in millimeters in.",
   "h.s3.h": "Download het",
   "h.s3.p": "Gratis downloads hebben een watermerk. Verwijder het met één klik als je klaar bent om voor een klant te printen.",
-
   "o.eyebrow": "Gebouwd rond waar artiesten over klagen",
   "o.h2": "Eerlijk door ontwerp.",
   "o.1.h": "Trouw aan je ontwerp",
@@ -99,7 +92,6 @@
   "o.3.h": "Gebouwd voor studio's",
   "o.3.p": "Meerdere artiesten, één abonnement, en goedkeuring en toestemming van de klant opgeslagen bij elke stencil.",
   "tag.dev": "in ontwikkeling",
-
   "r.eyebrow": "Roadmap",
   "r.h2": "Wat nu werkt en wat er nog komt.",
   "r.now": "Werkt nu",
@@ -115,7 +107,6 @@
   "r.x3": "Studio-accounts met goedkeuring en toestemming van de klant",
   "r.x4": "Brow mapping",
   "r.x5": "Meer talen en lokale betaalmethoden",
-
   "p.eyebrow": "Prijzen",
   "p.h2": "Gratis met een watermerk. Betaal alleen om het te verwijderen.",
   "p.lead": "De tool is gratis. Gratis downloads hebben een klein watermerk en stoppen bij 1200 pixels. Betaal om het watermerk te verwijderen en het bestand op volle grootte en ware maat te krijgen.",
@@ -147,9 +138,8 @@
   "p.studio.l1": "Meerdere artiesten, één rekening",
   "p.studio.l2": "Goedkeuring en toestemming van de klant",
   "p.studio.cta": "Laat het me weten als het opent",
-  "p.note": "Prijzen zijn in Amerikaanse dollars en zijn testprijzen die kunnen veranderen. Belasting wordt bij het afrekenen geregeld door onze betaalprovider.",
+  "p.note": "Prijzen in Amerikaanse dollars. Belasting wordt bij het afrekenen afgehandeld door onze betaalprovider.",
   "p.soon": "Afrekenen opent binnenkort. Laat het me weten als het zover is.",
-
   "q.eyebrow": "Vragen",
   "q.h2": "Voordat je het probeert.",
   "q1.h": "Is het echt gratis?",
@@ -174,7 +164,6 @@
   "q10.p": "Lagere gevoeligheid en meer vlekjes verwijderen laten fijne lijnen met opzet weg. Verhoog de gevoeligheid, verlaag het verwijderen van vlekjes en bekijk de drift-overlay om te zien wat er verloren ging.",
   "q11.h": "Kan ik mijn geld terugkrijgen?",
   "q11.p": "De terugbetalingsvoorwaarden zie je bij het afrekenen, voordat je betaalt.",
-
   "b.eyebrow": "Voor brow- en permanente make-up-artiesten",
   "b.h1": "Map brows op ware grootte en print dan de gids.",
   "b.sub": "Upload een foto van voren, pas de symmetrielijnen aan en print een overlay op ware grootte voor de huid. De foto's van je klanten worden niet opgeslagen.",
@@ -204,16 +193,12 @@
   "b.price.proL2": "Opgeslagen gidsen",
   "b.price.cta": "Laat het me weten als het opent",
   "b.price.note": "Brow mapping is nog niet gebouwd. Prijzen zijn plannen en kunnen veranderen.",
-
   "ft.privacy": "Privacy",
   "ft.terms": "Voorwaarden",
-  "ft.note": "Privacy en voorwaarden zijn in het Engels. Prijzen op deze pagina zijn testprijzen in Amerikaanse dollars.",
+  "ft.note": "Privacy en voorwaarden zijn in het Engels.",
   "ft.mt": "Deze pagina is automatisch vertaald. Staat er iets verkeerd, laat het ons weten.",
-
   "s.title": "Skinstencil Studio | Gratis stenciltool",
   "s.desc": "Gratis browsertool: maak van je eigen ontwerp een schone lijnstencil, check de drift, bekijk het op huidtinten en stel de printmaat in. Draait lokaal, er wordt niets geüpload.",
-  "s.banner": "Gratis vroege versie. Het draait in je browser met een klassiek beeldfilter (randen en drempelwaarden), niet met een AI-model. Niets wat je laadt wordt geüpload of opgeslagen. Downloads hebben een watermerk totdat je ze ontgrendelt.",
-  "s.pill": "Gratis vroege versie",
   "s.c1": "1. Je ontwerp",
   "s.drop": "Sleep hier een JPG, PNG of WebP heen, of klik om te kiezen.",
   "s.dropRights": "Alleen ontwerpen die je zelf hebt gemaakt of mag gebruiken.",
@@ -276,5 +261,7 @@
   "s.tips.1": "Fotografeer of scan vlak, in gelijkmatig licht, met het ontwerp beeldvullend.",
   "s.tips.2": "Gebruik Tekening voor schetsen en flash. Gebruik Foto voor beelden met zachte schaduw.",
   "s.tips.3": "Verhoog Vlekjes verwijderen om ruis op te ruimen. Verlaag Gevoeligheid als schaduw lijnen wordt.",
-  "s.tips.4": "Als lijnen er zwak uitzien op je printer, probeer een dikkere lijn en test eerst op papier."
+  "s.tips.4": "Als lijnen er zwak uitzien op je printer, probeer een dikkere lijn en test eerst op papier.",
+  "s.dl.print": "Afdrukken op ware grootte",
+  "s.thanks": "Bedankt. Je licentiesleutel staat in je e-mail. Plak hem hieronder om het watermerk te verwijderen."
 }

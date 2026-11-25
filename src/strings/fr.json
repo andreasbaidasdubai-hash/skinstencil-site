@@ -1,14 +1,12 @@
 {
   "meta.title": "Skinstencil | Stencils de tatouage à taille réelle",
   "meta.desc": "Transformez votre propre dessin de tatouage en stencil net, prêt à imprimer. Un outil gratuit qui tourne dans votre navigateur : les téléchargements gratuits portent un filigrane, que vous retirez en un clic.",
-  "banner": "Version précoce. L'outil gratuit fonctionne dès aujourd'hui. Les offres payantes ouvrent bientôt, et les prix peuvent changer.",
   "nav.examples": "Exemples",
   "nav.pricing": "Tarifs",
   "nav.faq": "Questions",
   "tab.tattoo": "Tatouage",
   "tab.brow": "Mapping des sourcils",
   "lang.label": "Langue",
-
   "hero.eyebrow": "Pour les tatoueurs et les studios",
   "hero.h1": "Des stencils fidèles à votre trait, prêts à imprimer.",
   "hero.sub": "Transformez votre propre dessin, croquis ou flash en stencil net en quelques secondes. Gratuit, rien à installer, rien n'est envoyé. Les téléchargements portent un petit filigrane tant que vous ne le retirez pas.",
@@ -28,7 +26,6 @@
   "sample.mandala": "Mandala",
   "sample.lettering": "Lettering",
   "sample.orb": "Sphère ombrée",
-
   "ex.eyebrow": "Résultats réels",
   "ex.h2": "Pas de maquettes. Chaque image ici est produite par l'outil, maintenant, dans votre navigateur.",
   "ex.lead": "Quatre dessins d'exemple, créés en code pour que chacun puisse les utiliser, passés dans le même filtre que celui du studio. À gauche le dessin, à droite le stencil.",
@@ -41,7 +38,6 @@
   "g.n.mandala": "Pétales fins et centre hachuré.",
   "g.n.lettering": "Écriture et fioritures avec une épaisseur propre.",
   "g.n.orb": "Le mode Photo repère les contours des formes dans les ombres douces.",
-
   "f.eyebrow": "Ce que vous obtenez",
   "f.h2": "Des outils qui vous disent ce qui est arrivé à vos lignes.",
   "f.drift.h3": "Contrôle de dérive : voyez chaque ligne modifiée",
@@ -64,7 +60,6 @@
   "f.size.l2": "Téléchargement PNG aujourd'hui. Export PDF et mises en page d'impression prévus.",
   "f.size.cap": "88 x 113 mm font 1039 x 1336 px à 300 dpi.",
   "f.size.aria": "Un stencil avec une règle graduée en millimètres et la taille 88 par 113 millimètres",
-
   "d.eyebrow": "Meilleure source, meilleur stencil",
   "d.h2": "À faire et à éviter, montré avec l'outil lui-même.",
   "d.lead": "Chaque paire donne à l'outil une bonne et une mauvaise version du même dessin. Les mauvaises versions sont faites exprès, pour que vous voyiez ce qui se passe.",
@@ -80,7 +75,6 @@
   "d.p3.do": "Bien cadré",
   "d.p3.dont": "Beaucoup de vide",
   "d.p3.note": "Les petits sujets perdent du détail. Recadrez.",
-
   "h.eyebrow": "Comment ça marche",
   "h.h2": "Importer, vérifier, télécharger.",
   "h.s1.h": "Importez votre dessin",
@@ -89,7 +83,6 @@
   "h.s2.p": "Réglez l'épaisseur du trait et la sensibilité, contrôlez la dérive, essayez une carnation, fixez la taille en millimètres.",
   "h.s3.h": "Téléchargez",
   "h.s3.p": "Les téléchargements gratuits portent un filigrane. Retirez-le en un clic quand vous êtes prêt à imprimer pour un client.",
-
   "o.eyebrow": "Conçu autour de ce dont les artistes se plaignent",
   "o.h2": "Honnête par conception.",
   "o.1.h": "Fidèle à votre dessin",
@@ -99,7 +92,6 @@
   "o.3.h": "Pensé pour les studios",
   "o.3.p": "Plusieurs artistes, un seul abonnement, et l'accord du client et son consentement enregistrés avec chaque stencil.",
   "tag.dev": "en développement",
-
   "r.eyebrow": "Feuille de route",
   "r.h2": "Ce qui marche aujourd'hui et la suite.",
   "r.now": "Disponible aujourd'hui",
@@ -115,7 +107,6 @@
   "r.x3": "Comptes studio avec accord et consentement du client",
   "r.x4": "Mapping des sourcils",
   "r.x5": "Plus de langues et de moyens de paiement locaux",
-
   "p.eyebrow": "Tarifs",
   "p.h2": "Gratuit avec filigrane. Ne payez que pour le retirer.",
   "p.lead": "L'outil est gratuit. Les téléchargements gratuits portent un petit filigrane et s'arrêtent à 1200 pixels. Payez pour retirer le filigrane et obtenir le fichier pleine taille, à taille réelle.",
@@ -147,9 +138,8 @@
   "p.studio.l1": "Plusieurs artistes, une seule facture",
   "p.studio.l2": "Accord et consentement du client",
   "p.studio.cta": "Prévenez-moi à l'ouverture",
-  "p.note": "Les prix sont en dollars américains et sont des prix de test susceptibles de changer. La taxe est gérée au paiement par notre prestataire de paiement.",
+  "p.note": "Prix en dollars américains. Les taxes sont gérées au paiement par notre prestataire de paiement.",
   "p.soon": "Le paiement ouvre bientôt. Prévenez-moi quand ce sera le cas.",
-
   "q.eyebrow": "Questions",
   "q.h2": "Avant d'essayer.",
   "q1.h": "C'est vraiment gratuit ?",
@@ -174,7 +164,6 @@
   "q10.p": "Une sensibilité basse et une forte suppression des impuretés suppriment volontairement les lignes fines. Augmentez la sensibilité, réduisez la suppression des impuretés, et regardez le calque de dérive pour voir ce qui a été perdu.",
   "q11.h": "Puis-je être remboursé ?",
   "q11.p": "Les conditions de remboursement s'affichent au paiement, avant que vous ne payiez.",
-
   "b.eyebrow": "Pour les artistes sourcils et maquillage permanent",
   "b.h1": "Cartographiez les sourcils à taille réelle, puis imprimez le guide.",
   "b.sub": "Importez une photo de face, ajustez les guides de symétrie et imprimez un calque à taille réelle pour la peau. Les photos de vos clients ne sont pas conservées.",
@@ -204,16 +193,12 @@
   "b.price.proL2": "Guides enregistrés",
   "b.price.cta": "Prévenez-moi à l'ouverture",
   "b.price.note": "Le mapping des sourcils n'est pas encore développé. Les prix sont des projets et peuvent changer.",
-
   "ft.privacy": "Confidentialité",
   "ft.terms": "Conditions",
-  "ft.note": "La confidentialité et les conditions sont en anglais. Les prix de cette page sont des prix de test en dollars américains.",
+  "ft.note": "La confidentialité et les conditions sont en anglais.",
   "ft.mt": "Cette page a été traduite automatiquement. Si quelque chose se lit mal, dites-le-nous.",
-
   "s.title": "Skinstencil Studio | Outil de stencil gratuit",
   "s.desc": "Outil gratuit dans le navigateur : transformez votre propre dessin en stencil net, contrôlez la dérive, voyez l'aperçu sur carnation et réglez la taille d'impression. Fonctionne en local, rien n'est envoyé.",
-  "s.banner": "Version précoce gratuite. Elle fonctionne dans votre navigateur avec un filtre d'image classique (contours et seuils), pas un modèle d'IA. Rien de ce que vous chargez n'est envoyé ni conservé. Les téléchargements portent un filigrane tant que vous ne les débloquez pas.",
-  "s.pill": "Version précoce gratuite",
   "s.c1": "1. Votre dessin",
   "s.drop": "Déposez un JPG, PNG ou WebP ici, ou cliquez pour choisir.",
   "s.dropRights": "Seulement des dessins que vous avez réalisés ou dont vous avez le droit de vous servir.",
@@ -276,5 +261,7 @@
   "s.tips.1": "Photographiez ou scannez à plat, sous une lumière uniforme, avec le dessin qui remplit le cadre.",
   "s.tips.2": "Utilisez Dessin pour les croquis et les flashs. Utilisez Photo pour les images aux ombres douces.",
   "s.tips.3": "Augmentez Supprimer les impuretés pour nettoyer le bruit. Baissez la Sensibilité si les ombres se transforment en lignes.",
-  "s.tips.4": "Si les lignes paraissent pâles sur votre imprimante, essayez un trait plus épais et testez d'abord sur papier."
+  "s.tips.4": "Si les lignes paraissent pâles sur votre imprimante, essayez un trait plus épais et testez d'abord sur papier.",
+  "s.dl.print": "Imprimer en taille réelle",
+  "s.thanks": "Merci. Votre clé de licence est dans votre boîte mail. Collez-la ci-dessous pour retirer le filigrane."
 }

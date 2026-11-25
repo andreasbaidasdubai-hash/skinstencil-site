@@ -1,14 +1,12 @@
 {
   "meta.title": "Skinstencil | Stencile tatuażu w prawdziwym rozmiarze",
   "meta.desc": "Zamień własny projekt tatuażu w czysty stencil gotowy do druku. Darmowe narzędzie działające w przeglądarce: darmowe pliki mają znak wodny, który usuniesz jednym kliknięciem.",
-  "banner": "Wczesna wersja. Darmowe narzędzie działa już dziś. Płatne plany dopiero się otwierają, a ceny mogą się zmienić.",
   "nav.examples": "Przykłady",
   "nav.pricing": "Cennik",
   "nav.faq": "Pytania",
   "tab.tattoo": "Tatuaż",
   "tab.brow": "Mapowanie brwi",
   "lang.label": "Język",
-
   "hero.eyebrow": "Dla tatuatorów i studiów",
   "hero.h1": "Stencile zgodne z twoją kreską, gotowe do druku.",
   "hero.sub": "Zamień własny projekt, szkic lub flash w czysty stencil w kilka sekund. Za darmo, bez instalacji, nic nie jest wysyłane. Pliki mają mały znak wodny, dopóki go nie usuniesz.",
@@ -28,7 +26,6 @@
   "sample.mandala": "Mandala",
   "sample.lettering": "Lettering",
   "sample.orb": "Cieniowana kula",
-
   "ex.eyebrow": "Prawdziwy wynik",
   "ex.h2": "Żadnych makiet. Każdy obraz tutaj powstaje w narzędziu, teraz, w twojej przeglądarce.",
   "ex.lead": "Cztery przykładowe projekty, narysowane w kodzie, żeby każdy mógł z nich korzystać, przepuszczone przez ten sam filtr, który dostajesz w studio. Po lewej projekt, po prawej stencil.",
@@ -41,7 +38,6 @@
   "g.n.mandala": "Drobne płatki i kreskowany środek.",
   "g.n.lettering": "Pismo i zawijasy w czystej grubości.",
   "g.n.orb": "Tryb zdjęcia znajduje krawędzie kształtu w miękkim cieniowaniu.",
-
   "f.eyebrow": "Co dostajesz",
   "f.h2": "Narzędzia, które pokazują, co stało się z twoimi liniami.",
   "f.drift.h3": "Kontrola zmian: zobacz każdą zmienioną linię",
@@ -64,7 +60,6 @@
   "f.size.l2": "Dziś pobranie PNG. Eksport PDF i układy do druku są w planach.",
   "f.size.cap": "88 x 113 mm to 1039 x 1336 px przy 300 dpi.",
   "f.size.aria": "Stencil z linijką w milimetrach i rozmiarem 88 na 113 milimetrów",
-
   "d.eyebrow": "Lepszy plik, lepszy stencil",
   "d.h2": "Rób i nie rób, pokazane w samym narzędziu.",
   "d.lead": "Każda para pokazuje narzędziu dobrą i słabą wersję tego samego projektu. Słabe wersje są zrobione celowo, żebyś widział, co idzie nie tak.",
@@ -80,7 +75,6 @@
   "d.p3.do": "Ciasno przycięty",
   "d.p3.dont": "Dużo pustego miejsca",
   "d.p3.note": "Małe motywy tracą detale. Przytnij obraz.",
-
   "h.eyebrow": "Jak to działa",
   "h.h2": "Wgraj, sprawdź, pobierz.",
   "h.s1.h": "Wgraj swój projekt",
@@ -89,7 +83,6 @@
   "h.s2.p": "Ustaw grubość linii i czułość, sprawdź zmiany, wypróbuj odcień skóry, ustaw rozmiar w milimetrach.",
   "h.s3.h": "Pobierz",
   "h.s3.p": "Darmowe pliki mają znak wodny. Usuń go jednym kliknięciem, gdy będziesz gotowy drukować dla klienta.",
-
   "o.eyebrow": "Zbudowane wokół tego, na co narzekają tatuatorzy",
   "o.h2": "Uczciwie od podstaw.",
   "o.1.h": "Wierność twojemu projektowi",
@@ -99,7 +92,6 @@
   "o.3.h": "Z myślą o studiach",
   "o.3.p": "Kilku artystów, jedna subskrypcja, a zgoda i akceptacja klienta zapisane przy każdym stencilu.",
   "tag.dev": "w przygotowaniu",
-
   "r.eyebrow": "Plan rozwoju",
   "r.h2": "Co działa dziś i co będzie dalej.",
   "r.now": "Działa dziś",
@@ -115,7 +107,6 @@
   "r.x3": "Konta studiów ze zgodą i akceptacją klienta",
   "r.x4": "Mapowanie brwi",
   "r.x5": "Więcej języków i lokalne metody płatności",
-
   "p.eyebrow": "Cennik",
   "p.h2": "Za darmo ze znakiem wodnym. Płacisz tylko za jego usunięcie.",
   "p.lead": "Narzędzie jest darmowe. Darmowe pliki mają mały znak wodny i kończą się na 1200 pikselach. Zapłać, żeby usunąć znak wodny i dostać plik w pełnym rozmiarze, w prawdziwej skali.",
@@ -147,9 +138,8 @@
   "p.studio.l1": "Kilku artystów, jeden rachunek",
   "p.studio.l2": "Zgoda i akceptacja klienta",
   "p.studio.cta": "Daj mi znać, gdy ruszy",
-  "p.note": "Ceny są w dolarach amerykańskich i są cenami testowymi, które mogą się zmienić. Podatek obsługuje przy płatności nasz operator płatności.",
+  "p.note": "Ceny w dolarach amerykańskich. Podatek jest obsługiwany przy płatności przez naszego dostawcę płatności.",
   "p.soon": "Płatności ruszą wkrótce. Daj mi znać, gdy to nastąpi.",
-
   "q.eyebrow": "Pytania",
   "q.h2": "Zanim spróbujesz.",
   "q1.h": "Czy naprawdę jest za darmo?",
@@ -174,7 +164,6 @@
   "q10.p": "Niższa czułość i mocniejsze usuwanie kropek celowo pomijają drobne linie. Zwiększ czułość, zmniejsz usuwanie kropek i sprawdź nakładkę zmian, żeby zobaczyć, co zginęło.",
   "q11.h": "Czy mogę dostać zwrot pieniędzy?",
   "q11.p": "Warunki zwrotu widzisz w kasie, zanim zapłacisz.",
-
   "b.eyebrow": "Dla artystów brwi i makijażu permanentnego",
   "b.h1": "Mapuj brwi w prawdziwym rozmiarze, potem wydrukuj wzór.",
   "b.sub": "Wgraj zdjęcie twarzy z przodu, dopasuj linie symetrii i wydrukuj nakładkę w prawdziwym rozmiarze na skórę. Zdjęcia klientów nie są przechowywane.",
@@ -204,16 +193,12 @@
   "b.price.proL2": "Zapisane wzory",
   "b.price.cta": "Daj mi znać, gdy ruszy",
   "b.price.note": "Mapowanie brwi nie jest jeszcze gotowe. Ceny to plany i mogą się zmienić.",
-
   "ft.privacy": "Prywatność",
   "ft.terms": "Regulamin",
-  "ft.note": "Polityka prywatności i regulamin są po angielsku. Ceny na tej stronie to testowe ceny w dolarach amerykańskich.",
+  "ft.note": "Prywatność i regulamin są po angielsku.",
   "ft.mt": "Ta strona została przetłumaczona automatycznie. Jeśli coś brzmi źle, daj nam znać.",
-
   "s.title": "Skinstencil Studio | Darmowe narzędzie do stencili",
   "s.desc": "Darmowe narzędzie w przeglądarce: zamień własny projekt w czysty liniowy stencil, sprawdź zmiany, zobacz podgląd na odcieniach skóry i ustaw rozmiar wydruku. Działa lokalnie, nic nie jest wysyłane.",
-  "s.banner": "Darmowa wczesna wersja. Działa w przeglądarce na klasycznym filtrze obrazu (krawędzie i progi), a nie na modelu sztucznej inteligencji. Nic, co wgrasz, nie jest wysyłane ani zapisywane. Pliki mają znak wodny, dopóki ich nie odblokujesz.",
-  "s.pill": "Darmowa wczesna wersja",
   "s.c1": "1. Twój projekt",
   "s.drop": "Upuść tutaj plik JPG, PNG lub WebP albo kliknij, aby wybrać.",
   "s.dropRights": "Tylko projekty, które stworzyłeś lub masz prawo używać.",
@@ -276,5 +261,7 @@
   "s.tips.1": "Fotografuj lub skanuj płasko, przy równym świetle, tak aby projekt wypełniał kadr.",
   "s.tips.2": "Użyj Rysunku do szkiców i flashu. Użyj Zdjęcia do obrazów z miękkim cieniowaniem.",
   "s.tips.3": "Zwiększ Usuń kropki, żeby wyczyścić szum. Zmniejsz Czułość, jeśli cieniowanie zamienia się w linie.",
-  "s.tips.4": "Jeśli linie wyglądają blado na twojej drukarce, spróbuj grubszej linii i najpierw przetestuj na papierze."
+  "s.tips.4": "Jeśli linie wyglądają blado na twojej drukarce, spróbuj grubszej linii i najpierw przetestuj na papierze.",
+  "s.dl.print": "Drukuj w rzeczywistym rozmiarze",
+  "s.thanks": "Dziękujemy. Klucz licencyjny jest w Twojej poczcie. Wklej go poniżej, aby usunąć znak wodny."
 }

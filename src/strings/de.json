@@ -1,14 +1,12 @@
 {
   "meta.title": "Skinstencil | Tattoo-Stencils in Originalgröße",
   "meta.desc": "Mach aus deinem eigenen Tattoo-Motiv einen sauberen, druckfertigen Stencil. Ein kostenloses Tool, das in deinem Browser läuft: Kostenlose Downloads tragen ein Wasserzeichen, das du mit einem Klick entfernen kannst.",
-  "banner": "Frühe Version. Das kostenlose Tool funktioniert heute schon. Bezahlte Pläne öffnen bald, und die Preise können sich ändern.",
   "nav.examples": "Beispiele",
   "nav.pricing": "Preise",
   "nav.faq": "Fragen",
   "tab.tattoo": "Tattoo",
   "tab.brow": "Brauen-Mapping",
   "lang.label": "Sprache",
-
   "hero.eyebrow": "Für Tätowierer und Studios",
   "hero.h1": "Stencils, die zu deiner Linie passen, druckfertig.",
   "hero.sub": "Mach aus deinem eigenen Motiv, deiner Skizze oder deinem Flash in Sekunden einen sauberen Stencil. Kostenlos nutzbar, nichts zu installieren, nichts wird hochgeladen. Downloads tragen ein kleines Wasserzeichen, bis du es entfernst.",
@@ -28,7 +26,6 @@
   "sample.mandala": "Mandala",
   "sample.lettering": "Lettering",
   "sample.orb": "Schattierte Kugel",
-
   "ex.eyebrow": "Echtes Ergebnis",
   "ex.h2": "Keine Mock-ups. Jedes Bild hier macht das Tool jetzt gerade, in deinem Browser.",
   "ex.lead": "Vier Beispielmotive, im Code gezeichnet, damit sie jeder nutzen darf, durch denselben Filter geschickt, den du im Studio bekommst. Links ist das Motiv, rechts der Stencil.",
@@ -41,7 +38,6 @@
   "g.n.mandala": "Feine Blütenblätter und eine schraffierte Mitte.",
   "g.n.lettering": "Schrift und Schwünge in sauberer Stärke.",
   "g.n.orb": "Der Fotomodus findet Formkanten in weichen Schatten.",
-
   "f.eyebrow": "Das bekommst du",
   "f.h2": "Werkzeuge, die dir zeigen, was mit deinen Linien passiert ist.",
   "f.drift.h3": "Drift-Check: Sieh jede veränderte Linie",
@@ -64,7 +60,6 @@
   "f.size.l2": "PNG-Download heute. PDF-Export und Drucklayouts sind geplant.",
   "f.size.cap": "88 x 113 mm sind 1039 x 1336 px bei 300 dpi.",
   "f.size.aria": "Ein Stencil mit einem Lineal in Millimetern und der Größe 88 mal 113 Millimeter",
-
   "d.eyebrow": "Bessere Vorlage, besserer Stencil",
   "d.h2": "Richtig und falsch, gezeigt mit dem Tool selbst.",
   "d.lead": "Jedes Paar gibt dem Tool eine gute und eine schlechte Version desselben Motivs. Die schlechten Versionen sind mit Absicht gemacht, damit du siehst, was schiefgeht.",
@@ -80,7 +75,6 @@
   "d.p3.do": "Eng zugeschnitten",
   "d.p3.dont": "Viel leerer Raum",
   "d.p3.note": "Kleine Motive verlieren Details. Schneide enger zu.",
-
   "h.eyebrow": "So funktioniert's",
   "h.h2": "Hochladen, prüfen, herunterladen.",
   "h.s1.h": "Motiv hochladen",
@@ -89,7 +83,6 @@
   "h.s2.p": "Passe Linienstärke und Empfindlichkeit an, prüfe den Drift, probiere einen Hautton, lege die Größe in Millimetern fest.",
   "h.s3.h": "Herunterladen",
   "h.s3.p": "Kostenlose Downloads tragen ein Wasserzeichen. Entferne es mit einem Klick, wenn du für einen Kunden drucken willst.",
-
   "o.eyebrow": "Gebaut für das, worüber sich Tätowierer ärgern",
   "o.h2": "Ehrlich von Anfang an.",
   "o.1.h": "Treu zu deinem Motiv",
@@ -99,7 +92,6 @@
   "o.3.h": "Gebaut für Studios",
   "o.3.p": "Mehrere Tätowierer, ein Abo, und Kundenfreigabe und Einwilligung werden mit jedem Stencil gespeichert.",
   "tag.dev": "in Entwicklung",
-
   "r.eyebrow": "Roadmap",
   "r.h2": "Was heute funktioniert und was als Nächstes kommt.",
   "r.now": "Funktioniert heute",
@@ -115,7 +107,6 @@
   "r.x3": "Studio-Konten mit Kundenfreigabe und Einwilligung",
   "r.x4": "Brauen-Mapping",
   "r.x5": "Mehr Sprachen und lokale Zahlungsmethoden",
-
   "p.eyebrow": "Preise",
   "p.h2": "Kostenlos mit Wasserzeichen. Du zahlst nur, um es zu entfernen.",
   "p.lead": "Das Tool ist kostenlos. Kostenlose Downloads tragen ein kleines Wasserzeichen und enden bei 1200 Pixeln. Bezahle, um das Wasserzeichen zu entfernen und die Datei in voller Größe und Originalgröße zu bekommen.",
@@ -147,9 +138,8 @@
   "p.studio.l1": "Mehrere Tätowierer, eine Rechnung",
   "p.studio.l2": "Kundenfreigabe und Einwilligung",
   "p.studio.cta": "Sag mir Bescheid, wenn es startet",
-  "p.note": "Preise in US-Dollar und Testpreise, die sich ändern können. Die Steuer übernimmt beim Bezahlen unser Zahlungsanbieter.",
+  "p.note": "Preise in US-Dollar. Die Steuer übernimmt beim Bezahlen unser Zahlungsanbieter.",
   "p.soon": "Die Kasse öffnet bald. Sag mir Bescheid, wenn es so weit ist.",
-
   "q.eyebrow": "Fragen",
   "q.h2": "Bevor du es ausprobierst.",
   "q1.h": "Ist es wirklich kostenlos?",
@@ -174,7 +164,6 @@
   "q10.p": "Niedrigere Empfindlichkeit und stärkeres Entfernen von Flecken lassen feine Linien mit Absicht weg. Erhöhe die Empfindlichkeit, senke das Entfernen von Flecken und sieh dir das Drift-Overlay an, um zu sehen, was verloren ging.",
   "q11.h": "Bekomme ich eine Rückerstattung?",
   "q11.p": "Die Bedingungen für Rückerstattungen siehst du an der Kasse, bevor du bezahlst.",
-
   "b.eyebrow": "Für Brauen- und Permanent-Make-up-Artists",
   "b.h1": "Brauen in Originalgröße mappen, dann die Schablone drucken.",
   "b.sub": "Lade ein Frontalfoto hoch, passe die Symmetrie-Hilfslinien an und drucke ein Overlay in Originalgröße für die Haut. Die Fotos deiner Kunden werden nicht gespeichert.",
@@ -204,16 +193,12 @@
   "b.price.proL2": "Gespeicherte Schablonen",
   "b.price.cta": "Sag mir Bescheid, wenn es startet",
   "b.price.note": "Das Brauen-Mapping ist noch nicht gebaut. Preise sind Pläne und können sich ändern.",
-
   "ft.privacy": "Datenschutz",
   "ft.terms": "Bedingungen",
-  "ft.note": "Datenschutz und Bedingungen sind auf Englisch. Die Preise auf dieser Seite sind Testpreise in US-Dollar.",
+  "ft.note": "Datenschutz und Nutzungsbedingungen sind auf Englisch.",
   "ft.mt": "Diese Seite wurde automatisch übersetzt. Wenn etwas falsch klingt, sag es uns.",
-
   "s.title": "Skinstencil Studio | Kostenloses Stencil-Tool",
   "s.desc": "Kostenloses Browser-Tool: Mach aus deinem eigenen Motiv einen sauberen Linien-Stencil, prüfe den Drift, sieh die Vorschau auf Hauttönen und lege die Druckgröße fest. Läuft lokal, nichts wird hochgeladen.",
-  "s.banner": "Kostenlose frühe Version. Sie läuft in deinem Browser mit einem klassischen Bildfilter (Kanten und Schwellenwerte), nicht mit einem KI-Modell. Nichts, was du lädst, wird hochgeladen oder gespeichert. Downloads tragen ein Wasserzeichen, bis du sie freischaltest.",
-  "s.pill": "Kostenlose frühe Version",
   "s.c1": "1. Dein Motiv",
   "s.drop": "Zieh ein JPG, PNG oder WebP hierher, oder klicke zum Auswählen.",
   "s.dropRights": "Nur Motive, die du gemacht hast oder nutzen darfst.",
@@ -276,5 +261,7 @@
   "s.tips.1": "Fotografiere oder scanne flach, bei gleichmäßigem Licht, mit dem Motiv bildfüllend.",
   "s.tips.2": "Nimm Zeichnung für Skizzen und Flash. Nimm Foto für Bilder mit weichen Schatten.",
   "s.tips.3": "Erhöhe Flecken entfernen, um Rauschen zu säubern. Senke die Empfindlichkeit, wenn Schattierung zu Linien wird.",
-  "s.tips.4": "Wenn Linien auf deinem Drucker blass aussehen, probiere eine kräftigere Linienstärke und teste zuerst auf Papier."
+  "s.tips.4": "Wenn Linien auf deinem Drucker blass aussehen, probiere eine kräftigere Linienstärke und teste zuerst auf Papier.",
+  "s.dl.print": "In Originalgröße drucken",
+  "s.thanks": "Danke. Dein Lizenzschlüssel ist in deinem Postfach. Füge ihn unten ein, um das Wasserzeichen zu entfernen."
 }

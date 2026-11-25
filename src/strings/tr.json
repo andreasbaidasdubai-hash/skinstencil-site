@@ -1,14 +1,12 @@
 {
   "meta.title": "Skinstencil | Gerçek boyutta dövme stencil'i",
   "meta.desc": "Kendi dövme tasarımınızı temiz, baskıya hazır bir stencil'e dönüştürün. Tarayıcınızda çalışan ücretsiz bir araç: ücretsiz indirmelerde filigran bulunur, tek tıkla kaldırabilirsiniz.",
-  "banner": "Erken sürüm. Ücretsiz araç bugün çalışıyor. Ücretli planlar açılıyor ve fiyatlar değişebilir.",
   "nav.examples": "Örnekler",
   "nav.pricing": "Fiyatlar",
   "nav.faq": "Sorular",
   "tab.tattoo": "Dövme",
   "tab.brow": "Kaş haritalama",
   "lang.label": "Dil",
-
   "hero.eyebrow": "Dövme sanatçıları ve stüdyolar için",
   "hero.h1": "Çizgisine uyan, baskıya hazır stencil'ler.",
   "hero.sub": "Kendi tasarımınızı, eskizinizi veya flash'ınızı saniyeler içinde temiz bir stencil'e dönüştürün. Kullanımı ücretsiz, kurulum yok, hiçbir şey yüklenmez. Filigranı kaldırana kadar indirmelerde küçük bir filigran bulunur.",
@@ -28,7 +26,6 @@
   "sample.mandala": "Mandala",
   "sample.lettering": "Yazı",
   "sample.orb": "Gölgeli küre",
-
   "ex.eyebrow": "Gerçek çıktı",
   "ex.h2": "Maket değil. Buradaki her görsel, şu anda tarayıcınızda araç tarafından üretiliyor.",
   "ex.lead": "Kodla çizilmiş dört örnek tasarım, herkes kullanabilsin diye, stüdyoda aldığınız aynı filtreden geçiriliyor. Solda tasarım, sağda stencil var.",
@@ -41,7 +38,6 @@
   "g.n.mandala": "İnce yapraklar ve taranmış bir merkez.",
   "g.n.lettering": "Yazı ve süslemeler temiz bir kalınlıkta.",
   "g.n.orb": "Fotoğraf modu yumuşak gölgelerdeki form kenarlarını bulur.",
-
   "f.eyebrow": "Neler sunuyor",
   "f.h2": "Çizgilerinize ne olduğunu gösteren araçlar.",
   "f.drift.h3": "Sapma kontrolü: değişen her çizgiyi görün",
@@ -64,7 +60,6 @@
   "f.size.l2": "Bugün PNG indirme var. PDF dışa aktarma ve baskı düzenleri planlanıyor.",
   "f.size.cap": "88 x 113 mm, 300 dpi'da 1039 x 1336 px eder.",
   "f.size.aria": "Milimetre işaretli bir cetvelle birlikte 88 x 113 milimetre boyutunda bir stencil",
-
   "d.eyebrow": "Daha iyi girdi, daha iyi stencil",
   "d.h2": "Yapın ve yapmayın, aracın kendisiyle gösterildi.",
   "d.lead": "Her çift, araca aynı tasarımın iyi ve kötü bir sürümünü verir. Kötü sürümler bilerek hazırlandı, böylece neyin ters gittiğini görebilirsiniz.",
@@ -80,7 +75,6 @@
   "d.p3.do": "Sıkı kadraj",
   "d.p3.dont": "Çok boş alan",
   "d.p3.note": "Küçük konular ayrıntı kaybeder. Yakınlaştırarak kırpın.",
-
   "h.eyebrow": "Nasıl çalışır",
   "h.h2": "Yükleyin, kontrol edin, indirin.",
   "h.s1.h": "Tasarımınızı yükleyin",
@@ -89,7 +83,6 @@
   "h.s2.p": "Çizgi kalınlığını ve hassasiyeti ayarlayın, sapmayı kontrol edin, bir cilt tonu deneyin, boyutu milimetre olarak belirleyin.",
   "h.s3.h": "İndirin",
   "h.s3.p": "Ücretsiz indirmelerde filigran bulunur. Bir müşteri için yazdırmaya hazır olduğunuzda tek tıkla kaldırın.",
-
   "o.eyebrow": "Sanatçıların şikayet ettiği şeylere göre tasarlandı",
   "o.h2": "Tasarımdan gelen dürüstlük.",
   "o.1.h": "Tasarımınıza sadık",
@@ -99,7 +92,6 @@
   "o.3.h": "Stüdyolar için tasarlandı",
   "o.3.p": "Birkaç sanatçı, tek abonelik, her stencil ile birlikte kaydedilen müşteri onayı ve izni.",
   "tag.dev": "geliştirme aşamasında",
-
   "r.eyebrow": "Yol haritası",
   "r.h2": "Bugün çalışanlar ve sıradakiler.",
   "r.now": "Bugün çalışıyor",
@@ -115,7 +107,6 @@
   "r.x3": "Müşteri onayı ve izni olan stüdyo hesapları",
   "r.x4": "Kaş haritalama",
   "r.x5": "Daha fazla dil ve yerel ödeme yöntemleri",
-
   "p.eyebrow": "Fiyatlar",
   "p.h2": "Filigranlı ücretsiz. Yalnızca kaldırmak için ödeyin.",
   "p.lead": "Araç ücretsizdir. Ücretsiz indirmelerde küçük bir filigran bulunur ve 1200 pikselde durur. Filigranı kaldırmak ve tam boyutlu, gerçek boyutlu dosyayı almak için ödeyin.",
@@ -147,9 +138,8 @@
   "p.studio.l1": "Birkaç sanatçı, tek fatura",
   "p.studio.l2": "Müşteri onayı ve izni",
   "p.studio.cta": "Açıldığında haber verin",
-  "p.note": "Fiyatlar ABD doları cinsindendir, değişebilecek test fiyatlarıdır. Vergi, ödeme sağlayıcımız tarafından ödeme sırasında hesaplanır.",
+  "p.note": "Fiyatlar ABD doları cinsindendir. Vergi, ödeme sırasında ödeme sağlayıcımız tarafından halledilir.",
   "p.soon": "Ödeme yakında açılıyor. Açıldığında haber verin.",
-
   "q.eyebrow": "Sorular",
   "q.h2": "Denemeden önce.",
   "q1.h": "Gerçekten ücretsiz mi?",
@@ -174,7 +164,6 @@
   "q10.p": "Düşük hassasiyet ve yüksek leke temizleme, ince çizgileri bilerek düşürür. Hassasiyeti yükseltin, leke temizlemeyi düşürün ve neyin kaybolduğunu görmek için sapma bindirmesine bakın.",
   "q11.h": "İade alabilir miyim?",
   "q11.p": "İade koşulları, ödemeden önce ödeme sayfasında gösterilir.",
-
   "b.eyebrow": "Kaş ve kalıcı makyaj sanatçıları için",
   "b.h1": "Kaşları gerçek boyutta haritalayın, sonra kılavuzu yazdırın.",
   "b.sub": "Önden çekilmiş bir fotoğraf yükleyin, simetri kılavuzlarını ayarlayın ve cilt için gerçek boyutlu bir bindirme yazdırın. Müşteri fotoğraflarınız saklanmaz.",
@@ -204,16 +193,12 @@
   "b.price.proL2": "Kayıtlı kılavuzlar",
   "b.price.cta": "Açıldığında haber verin",
   "b.price.note": "Kaş haritalama henüz yapılmadı. Fiyatlar planlardır ve değişebilir.",
-
   "ft.privacy": "Gizlilik",
   "ft.terms": "Koşullar",
-  "ft.note": "Gizlilik ve koşullar İngilizcedir. Bu sayfadaki fiyatlar ABD doları cinsinden test fiyatlarıdır.",
+  "ft.note": "Gizlilik ve şartlar İngilizcedir.",
   "ft.mt": "Bu sayfa otomatik olarak çevrildi. Yanlış okunan bir yer olursa bize bildirin.",
-
   "s.title": "Skinstencil Studio | Ücretsiz stencil aracı",
   "s.desc": "Ücretsiz tarayıcı aracı: kendi tasarımınızı temiz bir çizgi stencil'ine dönüştürün, sapmayı kontrol edin, cilt tonlarında önizleyin ve baskı boyutunu ayarlayın. Yerelde çalışır, hiçbir şey yüklenmez.",
-  "s.banner": "Ücretsiz erken sürüm. Tarayıcınızda klasik bir görüntü filtresiyle (kenarlar ve eşikler) çalışır, yapay zeka modeli değildir. Yüklediğiniz hiçbir şey karşıya yüklenmez veya saklanmaz. Kilidi açana kadar indirmelerde filigran bulunur.",
-  "s.pill": "Ücretsiz erken sürüm",
   "s.c1": "1. Tasarımınız",
   "s.drop": "Buraya bir JPG, PNG veya WebP bırakın ya da seçmek için tıklayın.",
   "s.dropRights": "Yalnızca kendi yaptığınız veya kullanma hakkınız olan tasarımlar.",
@@ -276,5 +261,7 @@
   "s.tips.1": "Düz, eşit ışıkta fotoğraflayın veya tarayın, tasarım kareyi doldursun.",
   "s.tips.2": "Eskizler ve flash için Çizim'i kullanın. Yumuşak gölgeli resimler için Fotoğraf'ı kullanın.",
   "s.tips.3": "Gürültüyü temizlemek için Lekeleri temizle'yi artırın. Gölgeler çizgiye dönüşüyorsa Hassasiyet'i düşürün.",
-  "s.tips.4": "Çizgiler yazıcınızda soluk görünüyorsa daha kalın bir çizgi kalınlığı deneyin ve önce kağıtta test edin."
+  "s.tips.4": "Çizgiler yazıcınızda soluk görünüyorsa daha kalın bir çizgi kalınlığı deneyin ve önce kağıtta test edin.",
+  "s.dl.print": "Gerçek boyutta yazdır",
+  "s.thanks": "Teşekkürler. Lisans anahtarın e-postanda. Filigranı kaldırmak için aşağıya yapıştır."
 }

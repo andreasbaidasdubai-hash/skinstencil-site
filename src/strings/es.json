@@ -1,14 +1,12 @@
 {
   "meta.title": "Skinstencil | Stencils de tatuaje a tamaño real",
   "meta.desc": "Convierte tu propio diseño de tatuaje en un stencil limpio, listo para imprimir. Una herramienta gratuita que funciona en tu navegador: las descargas gratuitas llevan marca de agua y puedes quitarla con un clic.",
-  "banner": "Versión inicial. La herramienta gratuita funciona hoy. Los planes de pago se están abriendo y los precios pueden cambiar.",
   "nav.examples": "Ejemplos",
   "nav.pricing": "Precios",
   "nav.faq": "Preguntas",
   "tab.tattoo": "Tatuaje",
   "tab.brow": "Mapeo de cejas",
   "lang.label": "Idioma",
-
   "hero.eyebrow": "Para tatuadores y estudios",
   "hero.h1": "Stencils fieles a tu línea, listos para imprimir.",
   "hero.sub": "Convierte tu propio diseño, boceto o flash en un stencil limpio en segundos. Gratis, sin instalar nada y sin subir nada. Las descargas llevan una marca de agua pequeña hasta que la quitas.",
@@ -28,7 +26,6 @@
   "sample.mandala": "Mandala",
   "sample.lettering": "Lettering",
   "sample.orb": "Esfera sombreada",
-
   "ex.eyebrow": "Resultados reales",
   "ex.h2": "Nada de maquetas. Cada imagen la genera la herramienta, ahora mismo, en tu navegador.",
   "ex.lead": "Cuatro diseños de ejemplo, dibujados en código para que cualquiera pueda usarlos, pasados por el mismo filtro que tienes en el estudio. A la izquierda el diseño, a la derecha el stencil.",
@@ -41,7 +38,6 @@
   "g.n.mandala": "Pétalos finos y un centro con trama.",
   "g.n.lettering": "Letra caligráfica y adornos con un grosor limpio.",
   "g.n.orb": "El modo foto encuentra los bordes de las formas en el sombreado suave.",
-
   "f.eyebrow": "Qué obtienes",
   "f.h2": "Herramientas que te dicen qué pasó con tus líneas.",
   "f.drift.h3": "Control de desvío: ve cada línea que cambió",
@@ -64,7 +60,6 @@
   "f.size.l2": "Descarga en PNG hoy. La exportación a PDF y los diseños de impresión están previstos.",
   "f.size.cap": "88 x 113 mm son 1039 x 1336 px a 300 dpi.",
   "f.size.aria": "Un stencil con una regla marcada en milímetros y el tamaño 88 por 113 milímetros",
-
   "d.eyebrow": "Mejor imagen, mejor stencil",
   "d.h2": "Lo que sí y lo que no, mostrado con la propia herramienta.",
   "d.lead": "En cada par, la herramienta recibe una versión buena y una mala del mismo diseño. Las versiones malas están hechas a propósito para que veas qué sale mal.",
@@ -80,7 +75,6 @@
   "d.p3.do": "Bien recortada",
   "d.p3.dont": "Mucho espacio vacío",
   "d.p3.note": "Los motivos pequeños pierden detalle. Recorta.",
-
   "h.eyebrow": "Cómo funciona",
   "h.h2": "Sube, revisa, descarga.",
   "h.s1.h": "Sube tu diseño",
@@ -89,7 +83,6 @@
   "h.s2.p": "Ajusta el grosor de línea y la sensibilidad, revisa el desvío, prueba un tono de piel y fija el tamaño en milímetros.",
   "h.s3.h": "Descárgalo",
   "h.s3.p": "Las descargas gratuitas llevan marca de agua. Quítala con un clic cuando vayas a imprimir para un cliente.",
-
   "o.eyebrow": "Hecho a partir de lo que critican los artistas",
   "o.h2": "Honesto por diseño.",
   "o.1.h": "Fiel a tu diseño",
@@ -99,7 +92,6 @@
   "o.3.h": "Pensado para estudios",
   "o.3.p": "Varios artistas, una suscripción, y la aprobación y el consentimiento del cliente guardados con cada stencil.",
   "tag.dev": "en desarrollo",
-
   "r.eyebrow": "Hoja de ruta",
   "r.h2": "Lo que funciona hoy y lo que viene.",
   "r.now": "Funciona hoy",
@@ -115,7 +107,6 @@
   "r.x3": "Cuentas de estudio con aprobación y consentimiento del cliente",
   "r.x4": "Mapeo de cejas",
   "r.x5": "Más idiomas y métodos de pago locales",
-
   "p.eyebrow": "Precios",
   "p.h2": "Gratis con marca de agua. Pagas solo para quitarla.",
   "p.lead": "La herramienta es gratuita. Las descargas gratuitas llevan una marca de agua pequeña y llegan hasta 1200 píxeles. Paga para quitar la marca de agua y obtener el archivo completo, a tamaño real.",
@@ -147,9 +138,8 @@
   "p.studio.l1": "Varios artistas, una sola factura",
   "p.studio.l2": "Aprobación y consentimiento del cliente",
   "p.studio.cta": "Avísame cuando abra",
-  "p.note": "Los precios están en dólares estadounidenses y son precios de prueba que pueden cambiar. Nuestro proveedor de pagos gestiona los impuestos al pagar.",
+  "p.note": "Precios en dólares estadounidenses. Los impuestos se gestionan al pagar mediante nuestro proveedor de pagos.",
   "p.soon": "El pago abrirá pronto. Avísame cuando lo haga.",
-
   "q.eyebrow": "Preguntas",
   "q.h2": "Antes de probarla.",
   "q1.h": "¿Es gratis de verdad?",
@@ -174,7 +164,6 @@
   "q10.p": "Una sensibilidad baja y una eliminación de motas alta quitan las líneas finas a propósito. Sube la sensibilidad, baja la eliminación de motas y mira la capa de desvío para ver qué se perdió.",
   "q11.h": "¿Puedo pedir un reembolso?",
   "q11.p": "Las condiciones de reembolso se muestran al pagar, antes de que pagues.",
-
   "b.eyebrow": "Para artistas de cejas y maquillaje permanente",
   "b.h1": "Mapea cejas a tamaño real y luego imprime la guía.",
   "b.sub": "Sube una foto de frente, ajusta las guías de simetría e imprime una capa a tamaño real para la piel. Las fotos de tus clientes no se guardan.",
@@ -204,16 +193,12 @@
   "b.price.proL2": "Guías guardadas",
   "b.price.cta": "Avísame cuando abra",
   "b.price.note": "El mapeo de cejas aún no está hecho. Los precios son planes y pueden cambiar.",
-
   "ft.privacy": "Privacidad",
   "ft.terms": "Términos",
-  "ft.note": "La privacidad y los términos están en inglés. Los precios de esta página son precios de prueba en dólares estadounidenses.",
+  "ft.note": "La privacidad y los términos están en inglés.",
   "ft.mt": "Esta página se tradujo automáticamente. Si algo se lee mal, avísanos.",
-
   "s.title": "Skinstencil Studio | Herramienta de stencil gratuita",
   "s.desc": "Herramienta gratuita en el navegador: convierte tu propio diseño en un stencil de líneas limpio, revisa el desvío, prueba tonos de piel y fija el tamaño de impresión. Funciona en local, no se sube nada.",
-  "s.banner": "Versión inicial gratuita. Funciona en tu navegador con un filtro de imagen clásico (bordes y umbrales), no con un modelo de IA. Nada de lo que cargas se sube ni se guarda. Las descargas llevan marca de agua hasta que las desbloqueas.",
-  "s.pill": "Versión inicial gratuita",
   "s.c1": "1. Tu diseño",
   "s.drop": "Suelta aquí un JPG, PNG o WebP, o haz clic para elegir.",
   "s.dropRights": "Solo diseños hechos por ti o que tengas derecho a usar.",
@@ -276,5 +261,7 @@
   "s.tips.1": "Fotografía o escanea en plano, con luz uniforme y el diseño llenando el encuadre.",
   "s.tips.2": "Usa Dibujo para bocetos y flash. Usa Foto para imágenes con sombreado suave.",
   "s.tips.3": "Sube Quitar motas para limpiar el ruido. Baja la Sensibilidad si el sombreado se convierte en líneas.",
-  "s.tips.4": "Si las líneas se ven débiles en tu impresora, prueba un grosor de línea mayor y haz una prueba en papel primero."
+  "s.tips.4": "Si las líneas se ven débiles en tu impresora, prueba un grosor de línea mayor y haz una prueba en papel primero.",
+  "s.dl.print": "Imprimir a tamaño real",
+  "s.thanks": "Gracias. Tu clave de licencia está en tu correo. Pégala abajo para quitar la marca de agua."
 }

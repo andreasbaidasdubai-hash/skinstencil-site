@@ -1,14 +1,12 @@
 {
   "meta.title": "Skinstencil | Stencils de tatuagem em tamanho real",
   "meta.desc": "Transforme seu próprio desenho de tatuagem em um stencil limpo, pronto para imprimir. Uma ferramenta gratuita que roda no navegador: os downloads grátis têm marca d'água, e você pode removê-la com um clique.",
-  "banner": "Versão inicial. A ferramenta gratuita já funciona. Os planos pagos estão abrindo, e os preços podem mudar.",
   "nav.examples": "Exemplos",
   "nav.pricing": "Preços",
   "nav.faq": "Perguntas",
   "tab.tattoo": "Tatuagem",
   "tab.brow": "Mapeamento de sobrancelhas",
   "lang.label": "Idioma",
-
   "hero.eyebrow": "Para tatuadores e estúdios",
   "hero.h1": "Stencils que seguem o seu traço, prontos para imprimir.",
   "hero.sub": "Transforme seu desenho, sketch ou flash em um stencil limpo em segundos. Uso grátis, nada para instalar, nada enviado. Os downloads têm uma pequena marca d'água até você removê-la.",
@@ -28,7 +26,6 @@
   "sample.mandala": "Mandala",
   "sample.lettering": "Lettering",
   "sample.orb": "Esfera sombreada",
-
   "ex.eyebrow": "Resultado real",
   "ex.h2": "Nada de mockup. Cada imagem aqui é feita pela ferramenta, agora, no seu navegador.",
   "ex.lead": "Quatro desenhos de exemplo, criados em código para que qualquer pessoa possa usá-los, passados pelo mesmo filtro que você tem no estúdio. À esquerda está o desenho, à direita o stencil.",
@@ -41,7 +38,6 @@
   "g.n.mandala": "Pétalas finas e centro hachurado.",
   "g.n.lettering": "Letra cursiva e floreios com traço limpo.",
   "g.n.orb": "O modo foto encontra as bordas da forma no sombreado suave.",
-
   "f.eyebrow": "O que você recebe",
   "f.h2": "Ferramentas que mostram o que aconteceu com as suas linhas.",
   "f.drift.h3": "Verificação de desvio: veja cada linha que mudou",
@@ -64,7 +60,6 @@
   "f.size.l2": "Download em PNG hoje. Exportação em PDF e layouts de impressão estão planejados.",
   "f.size.cap": "88 x 113 mm são 1039 x 1336 px a 300 dpi.",
   "f.size.aria": "Um stencil com uma régua marcada em milímetros e o tamanho de 88 por 113 milímetros",
-
   "d.eyebrow": "Entrada melhor, stencil melhor",
   "d.h2": "O que fazer e o que evitar, mostrado com a própria ferramenta.",
   "d.lead": "Cada par dá à ferramenta uma versão boa e uma ruim do mesmo desenho. As versões ruins são feitas de propósito, para você ver o que dá errado.",
@@ -80,7 +75,6 @@
   "d.p3.do": "Bem enquadrado",
   "d.p3.dont": "Muito espaço vazio",
   "d.p3.note": "Elementos pequenos perdem detalhe. Aproxime o corte.",
-
   "h.eyebrow": "Como funciona",
   "h.h2": "Envie, confira, baixe.",
   "h.s1.h": "Envie o seu desenho",
@@ -89,7 +83,6 @@
   "h.s2.p": "Ajuste a espessura da linha e a sensibilidade, veja o desvio, teste um tom de pele, defina o tamanho em milímetros.",
   "h.s3.h": "Baixe",
   "h.s3.p": "Os downloads grátis têm marca d'água. Remova com um clique quando for imprimir para um cliente.",
-
   "o.eyebrow": "Feito a partir do que os tatuadores reclamam",
   "o.h2": "Honesto desde o projeto.",
   "o.1.h": "Fiel ao seu desenho",
@@ -99,7 +92,6 @@
   "o.3.h": "Feito para estúdios",
   "o.3.p": "Vários artistas, uma assinatura, e aprovação e consentimento do cliente salvos com cada stencil.",
   "tag.dev": "em desenvolvimento",
-
   "r.eyebrow": "Roteiro",
   "r.h2": "O que funciona hoje e o que vem a seguir.",
   "r.now": "Funciona hoje",
@@ -115,7 +107,6 @@
   "r.x3": "Contas de estúdio com aprovação e consentimento do cliente",
   "r.x4": "Mapeamento de sobrancelhas",
   "r.x5": "Mais idiomas e formas de pagamento locais",
-
   "p.eyebrow": "Preços",
   "p.h2": "Grátis com marca d'água. Pague só para removê-la.",
   "p.lead": "A ferramenta é grátis. Os downloads grátis têm uma pequena marca d'água e vão até 1200 pixels. Pague para remover a marca d'água e receber o arquivo completo, em tamanho real.",
@@ -147,9 +138,8 @@
   "p.studio.l1": "Vários artistas, uma cobrança",
   "p.studio.l2": "Aprovação e consentimento do cliente",
   "p.studio.cta": "Avise-me quando abrir",
-  "p.note": "Os preços estão em dólares americanos e são preços de teste que podem mudar. Os impostos são tratados no checkout pelo nosso provedor de pagamento.",
+  "p.note": "Preços em dólares americanos. Os impostos são tratados no pagamento pelo nosso provedor de pagamentos.",
   "p.soon": "O checkout abre em breve. Avise-me quando abrir.",
-
   "q.eyebrow": "Perguntas",
   "q.h2": "Antes de testar.",
   "q1.h": "É grátis mesmo?",
@@ -174,7 +164,6 @@
   "q10.p": "Sensibilidade baixa e remoção de pontinhos alta descartam linhas finas de propósito. Aumente a sensibilidade, diminua a remoção de pontinhos e veja a sobreposição de desvio para saber o que se perdeu.",
   "q11.h": "Posso pedir reembolso?",
   "q11.p": "As regras de reembolso aparecem no checkout antes de você pagar.",
-
   "b.eyebrow": "Para artistas de sobrancelha e maquiagem definitiva",
   "b.h1": "Mapeie sobrancelhas em tamanho real e imprima o guia.",
   "b.sub": "Envie uma foto de frente, ajuste as guias de simetria e imprima uma sobreposição em tamanho real para a pele. As fotos dos seus clientes não são guardadas.",
@@ -204,16 +193,12 @@
   "b.price.proL2": "Guias salvos",
   "b.price.cta": "Avise-me quando abrir",
   "b.price.note": "O mapeamento de sobrancelhas ainda não foi construído. Os preços são planos e podem mudar.",
-
   "ft.privacy": "Privacidade",
   "ft.terms": "Termos",
-  "ft.note": "A privacidade e os termos estão em inglês. Os preços desta página são preços de teste em dólares americanos.",
+  "ft.note": "Privacidade e termos estão em inglês.",
   "ft.mt": "Esta página foi traduzida automaticamente. Se algo parecer errado, avise-nos.",
-
   "s.title": "Skinstencil Studio | Ferramenta de stencil grátis",
   "s.desc": "Ferramenta grátis no navegador: transforme seu próprio desenho em um stencil de linhas limpo, verifique o desvio, veja a prévia em tons de pele e defina o tamanho de impressão. Roda localmente, nada é enviado.",
-  "s.banner": "Versão inicial grátis. Roda no seu navegador com um filtro de imagem clássico (bordas e limiares), não um modelo de IA. Nada do que você carrega é enviado ou guardado. Os downloads têm marca d'água até você desbloqueá-los.",
-  "s.pill": "Versão inicial grátis",
   "s.c1": "1. Seu desenho",
   "s.drop": "Solte um JPG, PNG ou WebP aqui, ou clique para escolher.",
   "s.dropRights": "Só desenhos que você fez ou que tem direito de usar.",
@@ -276,5 +261,7 @@
   "s.tips.1": "Fotografe ou escaneie reto, com luz uniforme, com o desenho preenchendo o quadro.",
   "s.tips.2": "Use Desenho para sketches e flash. Use Foto para imagens com sombreado suave.",
   "s.tips.3": "Aumente Remover pontinhos para limpar ruído. Diminua a Sensibilidade se o sombreado virar linhas.",
-  "s.tips.4": "Se as linhas ficarem fracas na sua impressora, tente uma linha mais grossa e teste primeiro no papel."
+  "s.tips.4": "Se as linhas ficarem fracas na sua impressora, tente uma linha mais grossa e teste primeiro no papel.",
+  "s.dl.print": "Imprimir em tamanho real",
+  "s.thanks": "Obrigado. Sua chave de licença está no seu e-mail. Cole-a abaixo para remover a marca d'água."
 }

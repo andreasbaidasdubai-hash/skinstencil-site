@@ -76,6 +76,7 @@
     [cO, cS, cD].forEach(function (c) { if (c.width !== src.w || c.height !== src.h) { c.width = src.w; c.height = src.h; } });
     cO.getContext('2d').drawImage(src.canvas, 0, 0);
     E.renderStencil(cS, r.final, src.w, src.h, state.skin, null, r.alpha);
+    if (!U.isUnlocked()) watermark(cS.getContext('2d'), src.w, src.h, 0.16);
     var dx = cD.getContext('2d'); dx.clearRect(0, 0, src.w, src.h);
     var d = E.driftCheck(E.referenceMask(src.gray, src.w, src.h, state.mode), r.final, src.w, src.h, o.weight, state.drift);
     if (state.drift && d.image) { var tc = document.createElement('canvas'); tc.width = src.w; tc.height = src.h; tc.getContext('2d').putImageData(d.image, 0, 0); dx.drawImage(tc, 0, 0); }
@@ -118,9 +119,9 @@
     dv.setUint32(0, 9); chunk.set([0x70, 0x48, 0x59, 0x73], 4); dv.setUint32(8, ppm); dv.setUint32(12, ppm); chunk[16] = 1; dv.setUint32(17, crc32(chunk.subarray(4, 17)));
     var out = new Uint8Array(bytes.length + 21); out.set(bytes.subarray(0, 33), 0); out.set(chunk, 33); out.set(bytes.subarray(33), 54); return out;
   }
-  function watermark(x, w, h) {
+  function watermark(x, w, h, a) {
     var fs = Math.max(18, Math.round(Math.max(w, h) / 16)), txt = 'skinstencil.com', step = fs * 3.2, ext = Math.hypot(w, h);
-    x.save(); x.globalAlpha = 0.24; x.fillStyle = '#4F35C8'; x.font = '700 ' + fs + 'px Archivo, Arial, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    x.save(); x.globalAlpha = a == null ? 0.24 : a; x.fillStyle = '#4F35C8'; x.font = '700 ' + fs + 'px Archivo, Arial, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
     x.translate(w / 2, h / 2); x.rotate(-Math.PI / 6);
     var row = 0; for (var yy = -ext; yy < ext; yy += step, row++) { for (var xx = -ext; xx < ext; xx += fs * 9) x.fillText(txt, xx + (row % 2 ? fs * 4.5 : 0), yy); }
     x.restore();
@@ -129,11 +130,10 @@
   function dlState() {
     var un = U.isUnlocked(), px = un ? C.paidMaxPx : C.freeMaxPx;
     setDl(un ? 's.dl.paid' : 's.dl.free', un ? 'ok' : '', { px: px });
-    $('plansBox').hidden = un; $('keyOut').hidden = !un;
+    $('unlockBtn').hidden = un; if (un) $('plansBox').hidden = true; $('keyOut').hidden = !un;
   }
-  function download() {
-    if (!FULL) return;
-    var btn = $('dlBtn'); btn.disabled = true; setDl('s.dl.busy');
+  function buildOutput() {
+    if (!FULL) return null;
     if (!last || last.src !== FULL) process(FULL);
     var un = U.isUnlocked(), maxPx = un ? C.paidMaxPx : C.freeMaxPx;
     var mm = Math.max(10, Math.min(600, +$('mm').value || 88)), tw = Math.round(mm / 25.4 * 300), th = Math.round(tw * FULL.h / FULL.w);
@@ -142,16 +142,31 @@
     var out = document.createElement('canvas'); out.width = tw; out.height = th;
     var x = out.getContext('2d'); x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high'; x.fillStyle = '#fff'; x.fillRect(0, 0, tw, th); x.drawImage(tmp, 0, 0, tw, th);
     if (!un) watermark(x, tw, th);
-    out.toBlob(function (blob) {
+    return { canvas: out, un: un, mm: mm };
+  }
+  function download() {
+    var o = buildOutput(); if (!o) return;
+    var btn = $('dlBtn'); btn.disabled = true; setDl('s.dl.busy');
+    o.canvas.toBlob(function (blob) {
       blob.arrayBuffer().then(function (buf) {
-        var bytes = new Uint8Array(buf); if (un) bytes = withDpi(bytes, 300);
+        var bytes = new Uint8Array(buf); if (o.un) bytes = withDpi(bytes, 300);
         var url = URL.createObjectURL(new Blob([bytes], { type: 'image/png' })), a = document.createElement('a');
-        a.href = url; a.download = 'skinstencil-' + Math.round(mm) + 'mm' + (un ? '' : '-free') + '.png'; document.body.appendChild(a); a.click(); a.remove();
+        a.href = url; a.download = 'skinstencil-' + Math.round(o.mm) + 'mm' + (o.un ? '' : '-free') + '.png'; document.body.appendChild(a); a.click(); a.remove();
         setTimeout(function () { URL.revokeObjectURL(url); }, 4000); btn.disabled = false; dlState();
       });
     }, 'image/png');
   }
+  /* Print: opens a clean page with the stencil at its true width in millimetres and starts the print dialog. Free prints carry the watermark. */
+  function printTrue() {
+    var o = buildOutput(); if (!o) return;
+    var w = window.open('', '_blank'); if (!w) { setDl('s.dl.network', 'err'); return; }
+    var uri = o.canvas.toDataURL('image/png');
+    w.document.write('<!doctype html><title>skinstencil ' + Math.round(o.mm) + ' mm</title><style>@page{margin:8mm}html,body{margin:0;background:#fff}img{display:block;width:' + o.mm + 'mm;height:auto}</style><img src="' + uri + '" onload="setTimeout(function(){window.print()},150)">');
+    w.document.close();
+  }
   $('dlBtn').addEventListener('click', download);
+  $('printBtn').addEventListener('click', printTrue);
+  $('unlockBtn').addEventListener('click', function () { $('plansBox').hidden = !$('plansBox').hidden; });
 
   /* checkout links: live when configured, otherwise an honest "opens soon" */
   var anyLive = false;
@@ -166,13 +181,14 @@
   $('keyBtn').addEventListener('click', function () {
     var s = $('keyStatus'); s.className = 'status'; s.textContent = t('s.dl.checking');
     U.activate($('keyIn').value).then(function (v) {
-      if (v.ok) { s.textContent = t('s.dl.ok'); s.className = 'status ok'; dlState(); return; }
+      if (v.ok) { s.textContent = t('s.dl.ok'); s.className = 'status ok'; dlState(); process(FULL); return; }
       var map = { invalid: 's.dl.invalid', expired: 's.dl.expired', network: 's.dl.network', notConfigured: 's.dl.notConfigured' };
       s.textContent = t(map[v.reason] || 's.dl.invalid'); s.className = 'status err';
     });
   });
-  $('keyOut').addEventListener('click', function () { U.clear(); $('keyStatus').textContent = ''; dlState(); });
-  dlState(); U.refresh().then(dlState);
+  $('keyOut').addEventListener('click', function () { U.clear(); $('keyStatus').textContent = ''; dlState(); process(FULL); });
+  dlState(); U.refresh().then(function () { dlState(); process(FULL); });
+  if (/[?&]thanks=1/.test(location.search)) { $('thanks').hidden = false; $('keyBox').open = true; }
 
   /* open in a working state so the stage is never empty */
   var first = E.samples.dagger.draw(); setSource(first, first.width, first.height);
