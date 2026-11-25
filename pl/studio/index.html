@@ -144,22 +144,13 @@ details.plans .btn{margin-top:8px}
 
   <!-- LEFT: controls -->
   <div class="stack">
-    <!-- Design generator: drawn only when js/config.js names a generator address (studio/app.js unhides it) -->
-    <div class="card stack" id="genCard" hidden>
-      <h2>Stwórz projekt</h2>
-      <div><label for="genPrompt">Opisz tatuaż</label><textarea id="genPrompt" rows="2" maxlength="200" placeholder="wilk cienką linią z półksiężycem"></textarea></div>
-      <div class="seg" id="genStyle"><button type="button" data-v="bold" aria-pressed="true">Wyrazisty</button><button type="button" data-v="detail" aria-pressed="false">Drobne detale</button></div>
-      <button class="btn" id="genBtn" type="button" style="background:var(--stencil);border-color:var(--stencil);color:#fff">Stwórz projekt</button>
-      <div id="genTs"></div>
-      <p class="status" id="genStatus" role="status" aria-live="polite" style="margin:0"></p>
-      <p class="fine" style="margin:0">Sztuczna inteligencja rysuje go z Twojego opisu, a tutaj zmienia się w szablon. Odwiedzający dostają kilka projektów dziennie; z karnetem dziennym lub Pro znacznie więcej.</p>
-    </div>
     <div class="card stack">
       <h2>1. Twój projekt</h2>
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Wybierz plik obrazu">Upuść tutaj plik JPG, PNG lub WebP albo kliknij, aby wybrać.<br><span class="fine">Tylko projekty, które stworzyłeś lub masz prawo używać.</span></div>
       <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
       <div class="lab" style="margin:4px 0 0">Albo zacznij od przykładu</div>
       <div id="samples" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+      <p class="fine" style="margin:6px 0 0"><a href="/pl/ai-tattoo-generator/" style="color:var(--stencil)">Nie masz jeszcze projektu? Stwórz go generatorem AI</a></p>
     </div>
     <div class="card stack">
       <h2>2. Zrób stencil</h2>

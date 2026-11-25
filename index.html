@@ -197,6 +197,14 @@ footer .wrap{padding-block:28px}
 .glink:hover{border-color:var(--stencil)}.glink h3{font-size:17px}.glink p{margin:6px 0 0;font-size:14px;color:var(--muted)}
 #guides .note a{color:var(--stencil)}
 @media (max-width:900px){.gl{grid-template-columns:minmax(0,1fr)}}
+.doors .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;padding-block:18px 0}
+.door{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.door:hover{border-color:var(--stencil)}
+.door h2{font-size:19px;margin:0;font-weight:700}
+.door p{margin:6px 0 10px;color:var(--muted);font-size:15px}
+.door .go{font-weight:600;font-size:14px;color:var(--stencil)}
+.door.ai{border-color:var(--stencil);background:var(--stencil-soft)}
+@media (max-width:760px){.doors .wrap{grid-template-columns:minmax(0,1fr)}}
 [hidden]{display:none!important}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/","inLanguage":"en","description":"Free tattoo stencil generator in your browser. Turn a drawing, flash or photo into a clean line stencil and print it at true size. Nothing is uploaded; remove the watermark with a day pass or Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"12","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"79","priceCurrency":"USD"}]}</script>
@@ -207,7 +215,7 @@ footer .wrap{padding-block:28px}
 <header><div class="wrap">
   <a class="mark" href="/">skin<span>stencil</span></a>
   <div class="topnav">
-    <a href="#examples">Examples</a><a href="#pricing">Pricing</a><a href="#guides">Guides</a><a href="#faq">Questions</a>
+    <a href="/ai-tattoo-generator/">AI generator</a><a href="#examples">Examples</a><a href="#pricing">Pricing</a><a href="#guides">Guides</a><a href="#faq">Questions</a>
     <label class="vh" for="langSel">Language</label>
     <select class="langsel" id="langSel" aria-label="Language"><option value="/" selected lang="en">English</option><option value="/de/" lang="de">Deutsch</option><option value="/fr/" lang="fr">Français</option><option value="/es/" lang="es">Español</option><option value="/pt/" lang="pt">Português</option><option value="/it/" lang="it">Italiano</option><option value="/nl/" lang="nl">Nederlands</option><option value="/tr/" lang="tr">Türkçe</option><option value="/ar/" lang="ar">العربية</option><option value="/pl/" lang="pl">Polski</option></select>
     <nav class="tabs" aria-label="Product">
@@ -219,6 +227,10 @@ footer .wrap{padding-block:28px}
 
 <!-- ============ TATTOO ============ -->
 <main id="v-tattoo" class="view">
+<div class="doors"><div class="wrap">
+  <a class="door ai" href="/ai-tattoo-generator/"><h2>Make a design with AI</h2><p>Describe the tattoo and get clean black line art in about 20 seconds.</p><span class="go">Open the AI generator &rarr;</span></a>
+  <a class="door" href="/studio/"><h2>Turn your drawing into a stencil</h2><p>Load a drawing, flash or photo, check what the stencil kept and print it at true size.</p><span class="go">Open the stencil Studio &rarr;</span></a>
+</div></div>
 <div class="hero"><div class="wrap">
   <div>
     <div class="eyebrow">For tattoo artists and studios</div>

@@ -151,6 +151,14 @@ footer .wrap{padding-block:28px}
 .glink:hover{border-color:var(--stencil)}.glink h3{font-size:17px}.glink p{margin:6px 0 0;font-size:14px;color:var(--muted)}
 #guides .note a{color:var(--stencil)}
 @media (max-width:900px){.gl{grid-template-columns:minmax(0,1fr)}}
+.doors .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;padding-block:18px 0}
+.door{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.door:hover{border-color:var(--stencil)}
+.door h2{font-size:19px;margin:0;font-weight:700}
+.door p{margin:6px 0 10px;color:var(--muted);font-size:15px}
+.door .go{font-weight:600;font-size:14px;color:var(--stencil)}
+.door.ai{border-color:var(--stencil);background:var(--stencil-soft)}
+@media (max-width:760px){.doors .wrap{grid-template-columns:minmax(0,1fr)}}
 [hidden]{display:none!important}
 </style>
 {{ldjson}}
@@ -160,7 +168,7 @@ footer .wrap{padding-block:28px}
 <header><div class="wrap">
   <a class="mark" href="{{base}}">skin<span>stencil</span></a>
   <div class="topnav">
-    <a href="#examples">{{nav.examples}}</a><a href="#pricing">{{nav.pricing}}</a>{{guidesNav}}<a href="#faq">{{nav.faq}}</a>
+    <a href="{{base}}ai-tattoo-generator/">{{gen.nav}}</a><a href="#examples">{{nav.examples}}</a><a href="#pricing">{{nav.pricing}}</a>{{guidesNav}}<a href="#faq">{{nav.faq}}</a>
     <label class="vh" for="langSel">{{lang.label}}</label>
     {{langSelect}}
     <nav class="tabs" aria-label="Product">
@@ -172,6 +180,10 @@ footer .wrap{padding-block:28px}
 
 <!-- ============ TATTOO ============ -->
 <main id="v-tattoo" class="view">
+<div class="doors"><div class="wrap">
+  <a class="door ai" href="{{base}}ai-tattoo-generator/"><h2>{{gen.doors.ai.h}}</h2><p>{{gen.doors.ai.p}}</p><span class="go">{{gen.doors.ai.cta}} &rarr;</span></a>
+  <a class="door" href="{{base}}studio/"><h2>{{gen.doors.st.h}}</h2><p>{{gen.doors.st.p}}</p><span class="go">{{gen.doors.st.cta}} &rarr;</span></a>
+</div></div>
 <div class="hero"><div class="wrap">
   <div>
     <div class="eyebrow">{{hero.eyebrow}}</div>

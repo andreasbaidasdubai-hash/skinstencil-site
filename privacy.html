@@ -14,6 +14,11 @@
 <h2>The free tool</h2>
 <p>The stencil tool at <a href="/studio/">/studio/</a> runs entirely in your browser. The images you load are processed on your device and are not uploaded to us or stored by us. Closing the page discards them.</p>
 
+<h2>The AI design generator</h2>
+<p>The generator at <a href="/ai-tattoo-generator/">/ai-tattoo-generator/</a> is the one part that is not local. The description you type (up to 200 characters) is sent to our generator service, which runs on Cloudflare and forwards it to an image provider (fal.ai, which runs the image models of Recraft and OpenAI) that draws the design. The picture comes back to your browser. We do not keep your description or the design; the providers handle them under their own terms, and we do not control how long they keep them. Do not put personal details, names or photos of people in a description.</p>
+<p>To enforce daily limits, the service keeps a counter next to a short one-way hash of your IP address (or of your license key, if you hold one) for up to two days. The hash cannot be turned back into the address. A visitor's license key is also sent to the payment provider's license service to check it is valid.</p>
+<p>To tell people from automated scripts, the generator uses Cloudflare Turnstile. It runs in your browser, and Cloudflare, Inc. processes the request, so it sees your IP address and browser signals as any website would. A design you turn into a stencil is handed to the stencil tool through your browser's session storage and is processed on your device from then on.</p>
+
 <h2>What we collect</h2>
 <p>This site does not set cookies. It counts page visits with Cloudflare Web Analytics, which uses no cookies and does not track individual visitors: we see totals such as visits, pages, countries, referrers and device types. Cloudflare, Inc. processes the request to load its counting script, so it sees your IP address as any website would. If we add accounts or other tracking, we will update this page first.</p>
 
@@ -30,7 +35,7 @@
 <p>Depending on where you live (for example the EU, UK or Switzerland), you may have rights to access, correct or delete your data. Write to the address above.</p>
 
 <h2>Future features</h2>
-<p>Planned features such as AI-based cleanup or brow mapping with face photos are not live. Before they are, we will describe exactly what is processed, who processes it, how long it is kept, and ask for consent where the law requires it.</p>
+<p>Planned features such as AI-based cleanup of your own images or brow mapping with face photos are not live. The design generator above works from a text description only. Before they are, we will describe exactly what is processed, who processes it, how long it is kept, and ask for consent where the law requires it.</p>
 <p><a href="/">Back to Skinstencil</a></p>
 </body>
 </html>

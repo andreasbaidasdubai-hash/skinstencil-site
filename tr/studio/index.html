@@ -144,22 +144,13 @@ details.plans .btn{margin-top:8px}
 
   <!-- LEFT: controls -->
   <div class="stack">
-    <!-- Design generator: drawn only when js/config.js names a generator address (studio/app.js unhides it) -->
-    <div class="card stack" id="genCard" hidden>
-      <h2>Tasarım oluştur</h2>
-      <div><label for="genPrompt">Dövmeyi anlat</label><textarea id="genPrompt" rows="2" maxlength="200" placeholder="ince çizgili, hilal aylı bir kurt"></textarea></div>
-      <div class="seg" id="genStyle"><button type="button" data-v="bold" aria-pressed="true">Belirgin</button><button type="button" data-v="detail" aria-pressed="false">İnce detay</button></div>
-      <button class="btn" id="genBtn" type="button" style="background:var(--stencil);border-color:var(--stencil);color:#fff">Tasarım oluştur</button>
-      <div id="genTs"></div>
-      <p class="status" id="genStatus" role="status" aria-live="polite" style="margin:0"></p>
-      <p class="fine" style="margin:0">Bir yapay zekâ sözlerinden çizer, burada şablona dönüşür. Ziyaretçilere günde birkaç tasarım verilir; günlük geçiş veya Pro ile çok daha fazlası.</p>
-    </div>
     <div class="card stack">
       <h2>1. Tasarımınız</h2>
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Bir görsel dosyası seçin">Buraya bir JPG, PNG veya WebP bırakın ya da seçmek için tıklayın.<br><span class="fine">Yalnızca kendi yaptığınız veya kullanma hakkınız olan tasarımlar.</span></div>
       <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
       <div class="lab" style="margin:4px 0 0">Veya bir örnekle başlayın</div>
       <div id="samples" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+      <p class="fine" style="margin:6px 0 0"><a href="/tr/ai-tattoo-generator/" style="color:var(--stencil)">Henüz tasarımın yok mu? Yapay zeka üreticiyle bir tane yap</a></p>
     </div>
     <div class="card stack">
       <h2>2. Stencil'i oluşturun</h2>

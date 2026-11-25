@@ -232,63 +232,11 @@
   window.addEventListener('storage', function (e) { if (e.key === 'skinstencil.license') { dlState(); process(FULL); } });
   if (/[?&]thanks=1/.test(location.search)) { $('thanks').hidden = false; $('keyBox').open = true; }
 
-  /* ---------- design generator ----------
-     Drawn only when js/config.js has generatorUrl (the Worker in /worker). The result, a vector or a picture, goes through the same
-     stencil engine as an upload, so every control, the drift check, the PDF and the print all work on it. */
-  (function () {
-    var base = (C.generatorUrl || '').replace(/\/$/, ''); if (!base) return;
-    $('genCard').hidden = false;
-    var style = 'bold', busy = false, st = $('genStatus');
-    function say(k, cls, v) { st.textContent = k ? t(k, v) : ''; st.className = 'status' + (cls ? ' ' + cls : ''); }
-    [].forEach.call($('genStyle').querySelectorAll('button'), function (b) { b.addEventListener('click', function () { style = b.getAttribute('data-v'); [].forEach.call($('genStyle').querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', String(x === b)); }); }); });
-    /* Cloudflare Turnstile (free bot check). Only when js/config.js has turnstileSiteKey. A fresh one-time token is fetched for every design;
-       the widget stays invisible unless Cloudflare wants the visitor to prove something. */
-    var tsKey = C.turnstileSiteKey || '', tsLoad = null;
-    function tsScript() {
-      if (!tsLoad) tsLoad = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'; s.async = true; s.onload = ok; s.onerror = no; document.head.appendChild(s); });
-      return tsLoad;
-    }
-    function humanToken() {
-      if (!tsKey) return Promise.resolve({ tok: '', id: null });
-      return tsScript().then(function () {
-        return new Promise(function (ok, no) {
-          var box = $('genTs'), id, done = false, to = setTimeout(function () { if (!done) { done = true; try { window.turnstile.remove(id); } catch (e) {} no(new Error('bot')); } }, 25000);
-          id = window.turnstile.render(box, { sitekey: tsKey, appearance: 'interaction-only', callback: function (tok) { if (done) return; done = true; clearTimeout(to); ok({ tok: tok, id: id }); }, 'error-callback': function () { if (done) return; done = true; clearTimeout(to); no(new Error('bot')); } });
-        });
-      });
-    }
-    function licenseKey() { try { var s = JSON.parse(localStorage.getItem('skinstencil.license') || 'null'); return s && U.isUnlocked() ? s.key : ''; } catch (e) { return ''; } }
-    function show(blob) {
-      var u = URL.createObjectURL(blob), im = new Image();
-      im.onload = function () {
-        var w = im.naturalWidth || 1024, h = im.naturalHeight || 1024, k = Math.min(1, MAX_SIDE / Math.max(w, h)) * (w < 1200 ? Math.min(2, 1200 / w) : 1);   // a vector is drawn at full size; a small picture is not blown up beyond 2x
-        var c = document.createElement('canvas'); c.width = Math.round(w * k); c.height = Math.round(h * k);
-        var x = c.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height); x.imageSmoothingQuality = 'high'; x.drawImage(im, 0, 0, c.width, c.height);
-        URL.revokeObjectURL(u); setMode('draw'); setSource(c, c.width, c.height); $('recBtn').click();
-      };
-      im.onerror = function () { URL.revokeObjectURL(u); say('s.gen.errUpstream', 'err'); };
-      im.src = u;
-    }
-    $('genBtn').addEventListener('click', function () {
-      if (busy) return;
-      var p = $('genPrompt').value.replace(/\s+/g, ' ').trim(); if (p.length < 3) { say('s.gen.errShort', 'err'); return; }
-      busy = true; $('genBtn').disabled = true; say('s.gen.busy');
-      var h = { 'Content-Type': 'application/json' }, key = licenseKey(); if (key) h['X-License'] = key;
-      humanToken().then(function (hu) {
-        if (hu.id != null) { try { window.turnstile.remove(hu.id); } catch (e) {} }   // the token is single-use; the widget is not needed again
-        return fetch(base + '/generate', { method: 'POST', headers: h, body: JSON.stringify({ prompt: p, style: style, turnstile: hu.tok }) });
-      }).then(function (r) {
-        if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) {
-          var map = { limit_free: 's.gen.errLimitFree', limit_paid: 's.gen.errLimitPaid', budget: 's.gen.errBudget', bot: 's.gen.errBot' };
-          say(map[j.error] || 's.gen.errUpstream', 'err');
-          if (j.error === 'limit_free') $('plansBox').hidden = false;   // the way to get more is right there
-        });
-        var left = r.headers.get('X-Remaining');
-        return r.blob().then(function (b) { show(b); say(left != null ? 's.gen.left' : '', 'ok', { n: left }); });
-      }).catch(function (e) { say(e && e.message === 'bot' ? 's.gen.errBot' : 's.gen.errNetwork', 'err'); }).then(function () { busy = false; $('genBtn').disabled = false; });
-    });
-  })();
-
   /* open in a working state so the stage is never empty */
   var first = E.samples.dagger.draw(); setSource(first, first.width, first.height);
+  /* A design made on the AI generator page arrives through session storage (same device, same browser tab) and replaces the sample. */
+  if (/[?&]from=ai/.test(location.search)) {
+    var handed = null; try { handed = sessionStorage.getItem('skinstencil.handoff'); sessionStorage.removeItem('skinstencil.handoff'); } catch (e) {}
+    if (handed) { var hi = new Image(); hi.onload = function () { setMode('draw'); setSource(hi, hi.naturalWidth, hi.naturalHeight); $('recBtn').click(); }; hi.src = handed; }
+  }
 })();

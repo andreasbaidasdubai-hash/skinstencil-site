@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{gen.title}}</title>
+<meta name="description" content="{{gen.desc}}">
+<link rel="canonical" href="{{canonical}}">
+{{hreflang}}
+<script src="/js/theme.js"></script>
+<meta property="og:title" content="{{gen.title}}">
+<meta property="og:description" content="{{gen.desc}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="{{ogLocale}}">
+<meta property="og:site_name" content="Skinstencil">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317161C'/%3E%3Cpath d='M16 5 L21 18 L16 22 L11 18 Z M14 23 H18 V28 H14 Z' fill='none' stroke='%23A99BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<style>
+/* The AI design generator page. Same tokens as the guides and the landing page so light and dark match; logical properties keep right-to-left languages correct. */
+:root{
+  --paper:#F1F2EF; --card:#FAFAF8; --ink:#17161C; --muted:#5E5C68; --line:#D6D5DD;
+  --stencil:#4F35C8; --stencil-soft:#E6E2F8; --ok:#1F7A4C; --bad:#B42318;
+  --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E; --stencil:#A99BFF; --stencil-soft:#2A2547; --ok:#6FD3A0; --bad:#FF8A80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E; --stencil:#A99BFF; --stencil-soft:#2A2547; --ok:#6FD3A0; --bad:#FF8A80; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;margin:0}
+html[lang="ar"] body{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:inherit;direction:ltr}
+.mark span{color:var(--stencil)}
+.topnav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.topnav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+.topnav a:hover,.topnav a[aria-current]{color:var(--ink)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.langsel{font:500 13px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.themebtn{font:500 15px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 9px;cursor:pointer;line-height:1.2}
+.themebtn:focus-visible,.btn:focus-visible,.langsel:focus-visible,a:focus-visible,textarea:focus-visible,.seg button:focus-visible,.chip:focus-visible,summary:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);font-stretch:84%;letter-spacing:-.012em;line-height:1.15;margin:0;text-wrap:balance}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif;font-stretch:100%;letter-spacing:0;line-height:1.35}
+h1{font-size:clamp(30px,5.4vw,50px);font-weight:800}
+h2{font-size:clamp(23px,3.4vw,31px);font-weight:700;margin-top:44px}
+main .wrap{max-width:760px;padding-block:8px 56px}
+.crumbs{font-size:13px;color:var(--muted);margin:18px 0 22px}
+.crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px}
+.crumbs li+li::before{content:"/";margin-inline-end:8px;color:var(--line)}
+.crumbs a{color:var(--muted)}
+p,ul,ol{margin:14px 0 0}
+a{color:var(--stencil)}
+.lead{color:var(--muted);font-size:18px;margin-top:12px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:24px;display:grid;gap:14px}
+.box label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
+textarea{width:100%;font:500 16px var(--body);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 12px;resize:vertical;min-height:70px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font:500 13px var(--body);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chip:hover{border-color:var(--stencil)}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.seg button{text-align:start;font:500 14px var(--body);color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer}
+.seg button b{display:block;font-weight:700}
+.seg button span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.seg button[aria-pressed="true"]{border-color:var(--stencil);background:var(--stencil-soft)}
+.btn{display:inline-block;text-align:center;text-decoration:none;font:600 15px var(--body);border-radius:10px;padding:13px 20px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+.btn.prime{background:var(--stencil);border-color:var(--stencil);color:#fff}
+.btn.alt{background:none;color:var(--ink);border-color:var(--line)}
+.btn:disabled{opacity:.6;cursor:wait}
+.status{font-size:14px;margin:0;min-height:1.4em;color:var(--muted)}
+.status.ok{color:var(--ok)}.status.err{color:var(--bad)}
+.fine{font-size:13px;color:var(--muted);margin:0}
+.result{margin-top:24px;display:grid;gap:14px;justify-items:start}
+.result canvas{width:100%;max-width:560px;height:auto;background:#fff;border:1px solid var(--line);border-radius:12px;display:block}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+ol.how{list-style:none;padding:0;counter-reset:s}
+ol.how li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-top:10px}
+ol.how li::before{content:counter(s);display:inline-block;font:600 13px var(--mono);color:var(--stencil);margin-inline-end:10px}
+ol.how b{font-weight:600}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{font-weight:600;cursor:pointer}
+details p{color:var(--muted);margin:8px 0 0}
+.cta{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:44px}
+.cta p{margin:0 0 14px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer a{color:inherit}
+footer .wrap{padding-block:28px}
+[hidden]{display:none!important}
+@media (max-width:560px){body{font-size:16px}.topnav{gap:10px}.langsel{max-width:110px}header .wrap{padding-block:12px}.seg{grid-template-columns:1fr}}
+</style>
+{{ldjson}}
+</head>
+<body>
+<header><div class="wrap">
+  <a class="mark" href="{{base}}">skin<span>stencil</span></a>
+  <div class="topnav">
+    <a href="{{base}}studio/">Studio</a>
+    <label class="vh" for="langSel">{{lang.label}}</label>
+    {{langSelect}}
+  </div>
+</div></header>
+<main><div class="wrap">
+<nav class="crumbs" aria-label="{{gen.bc.label}}"><ol><li><a href="{{base}}">{{gen.bc.home}}</a></li><li aria-current="page">{{gen.bc.name}}</li></ol></nav>
+<h1>{{gen.h1}}</h1>
+<p class="lead">{{gen.lead}}</p>
+
+<div class="box" id="genBox" data-studio="{{base}}studio/">
+  <div><label for="genPrompt">{{s.gen.label}}</label><textarea id="genPrompt" rows="2" maxlength="200" placeholder="{{s.gen.ph}}"></textarea></div>
+  <div><div class="fine" style="margin-bottom:6px">{{gen.ex.label}}</div>
+    <div class="chips" id="genChips"><button type="button" class="chip">{{gen.ex.1}}</button><button type="button" class="chip">{{gen.ex.2}}</button><button type="button" class="chip">{{gen.ex.3}}</button><button type="button" class="chip">{{gen.ex.4}}</button></div></div>
+  <div class="seg" id="genStyle"><button type="button" data-v="bold" aria-pressed="true"><b>{{s.gen.bold}}</b><span>{{gen.boldHint}}</span></button><button type="button" data-v="detail" aria-pressed="false"><b>{{s.gen.detail}}</b><span>{{gen.detailHint}}</span></button></div>
+  <button class="btn prime" id="genBtn" type="button">{{s.gen.btn}}</button>
+  <div id="genTs"></div>
+  <p class="status" id="genStatus" role="status" aria-live="polite"></p>
+  <p class="fine">{{s.gen.hint}}</p>
+</div>
+
+<div class="result" id="genResult" hidden>
+  <canvas id="genCanvas" role="img" aria-label="{{gen.resultAlt}}"></canvas>
+  <div class="actions"><button class="btn prime" id="genToStencil" type="button">{{gen.toStencil}}</button><button class="btn alt" id="genAgain" type="button">{{gen.again}}</button></div>
+</div>
+
+<h2>{{gen.how.h}}</h2>
+<ol class="how">
+  <li><b>{{gen.how.1.name}}.</b> {{gen.how.1.text}}</li>
+  <li><b>{{gen.how.2.name}}.</b> {{gen.how.2.text}}</li>
+  <li><b>{{gen.how.3.name}}.</b> {{gen.how.3.text}}</li>
+</ol>
+
+<h2>{{gen.faq.h}}</h2>
+<div>
+  <details><summary>{{gen.q1.h}}</summary><p>{{gen.q1.p}}</p></details>
+  <details><summary>{{gen.q2.h}}</summary><p>{{gen.q2.p}}</p></details>
+  <details><summary>{{gen.q3.h}}</summary><p>{{gen.q3.p}}</p></details>
+  <details><summary>{{gen.q4.h}}</summary><p>{{gen.q4.p}}</p></details>
+</div>
+
+<div class="cta"><p>{{gen.cta.p}}</p><a class="btn" href="{{base}}studio/">{{gen.cta.btn}}</a></div>
+</div></main>
+<footer><div class="wrap"><a href="/privacy.html">{{ft.privacy}}</a> &middot; <a href="/terms.html">{{ft.terms}}</a> &middot; <a href="mailto:{{notifyEmail}}">{{notifyEmail}}</a><br>{{ft.note}}{{ftMt}}</div></footer>
+<script>window.I18N={{i18n_json}};</script>
+<script src="/js/config.js"></script>
+<script src="/js/analytics.js"></script>
+<script src="/js/unlock.js"></script>
+<script src="/js/gen-page.js"></script>
+<script>var s=document.getElementById('langSel');if(s)s.addEventListener('change',function(){location.href=s.value;});</script>
+</body>
+</html>

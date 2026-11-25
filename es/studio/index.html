@@ -144,22 +144,13 @@ details.plans .btn{margin-top:8px}
 
   <!-- LEFT: controls -->
   <div class="stack">
-    <!-- Design generator: drawn only when js/config.js names a generator address (studio/app.js unhides it) -->
-    <div class="card stack" id="genCard" hidden>
-      <h2>Crear un diseño</h2>
-      <div><label for="genPrompt">Describe el tatuaje</label><textarea id="genPrompt" rows="2" maxlength="200" placeholder="un lobo de línea fina con una luna creciente"></textarea></div>
-      <div class="seg" id="genStyle"><button type="button" data-v="bold" aria-pressed="true">Marcado</button><button type="button" data-v="detail" aria-pressed="false">Detalle fino</button></div>
-      <button class="btn" id="genBtn" type="button" style="background:var(--stencil);border-color:var(--stencil);color:#fff">Crear diseño</button>
-      <div id="genTs"></div>
-      <p class="status" id="genStatus" role="status" aria-live="polite" style="margin:0"></p>
-      <p class="fine" style="margin:0">Una IA lo dibuja a partir de tus palabras y aquí se convierte en plantilla. Los visitantes tienen unos pocos diseños al día; con el pase de un día o Pro, muchos más.</p>
-    </div>
     <div class="card stack">
       <h2>1. Tu diseño</h2>
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Elegir un archivo de imagen">Suelta aquí un JPG, PNG o WebP, o haz clic para elegir.<br><span class="fine">Solo diseños hechos por ti o que tengas derecho a usar.</span></div>
       <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
       <div class="lab" style="margin:4px 0 0">O empieza con un ejemplo</div>
       <div id="samples" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+      <p class="fine" style="margin:6px 0 0"><a href="/es/ai-tattoo-generator/" style="color:var(--stencil)">¿Aún no tienes diseño? Crea uno con el generador IA</a></p>
     </div>
     <div class="card stack">
       <h2>2. Crea el stencil</h2>

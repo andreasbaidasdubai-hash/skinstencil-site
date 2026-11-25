@@ -197,6 +197,14 @@ footer .wrap{padding-block:28px}
 .glink:hover{border-color:var(--stencil)}.glink h3{font-size:17px}.glink p{margin:6px 0 0;font-size:14px;color:var(--muted)}
 #guides .note a{color:var(--stencil)}
 @media (max-width:900px){.gl{grid-template-columns:minmax(0,1fr)}}
+.doors .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;padding-block:18px 0}
+.door{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.door:hover{border-color:var(--stencil)}
+.door h2{font-size:19px;margin:0;font-weight:700}
+.door p{margin:6px 0 10px;color:var(--muted);font-size:15px}
+.door .go{font-weight:600;font-size:14px;color:var(--stencil)}
+.door.ai{border-color:var(--stencil);background:var(--stencil-soft)}
+@media (max-width:760px){.doors .wrap{grid-template-columns:minmax(0,1fr)}}
 [hidden]{display:none!important}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/de/","inLanguage":"de","description":"Tattoo Generator im Browser: Zeichnung oder Foto in eine saubere Tattoo Vorlage verwandeln und in Originalgröße drucken. Ohne Upload.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"12","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"79","priceCurrency":"USD"}]}</script>
@@ -207,7 +215,7 @@ footer .wrap{padding-block:28px}
 <header><div class="wrap">
   <a class="mark" href="/de/">skin<span>stencil</span></a>
   <div class="topnav">
-    <a href="#examples">Beispiele</a><a href="#pricing">Preise</a><a href="#guides">Anleitungen</a><a href="#faq">Fragen</a>
+    <a href="/de/ai-tattoo-generator/">KI-Generator</a><a href="#examples">Beispiele</a><a href="#pricing">Preise</a><a href="#guides">Anleitungen</a><a href="#faq">Fragen</a>
     <label class="vh" for="langSel">Sprache</label>
     <select class="langsel" id="langSel" aria-label="Sprache"><option value="/" lang="en">English</option><option value="/de/" selected lang="de">Deutsch</option><option value="/fr/" lang="fr">Français</option><option value="/es/" lang="es">Español</option><option value="/pt/" lang="pt">Português</option><option value="/it/" lang="it">Italiano</option><option value="/nl/" lang="nl">Nederlands</option><option value="/tr/" lang="tr">Türkçe</option><option value="/ar/" lang="ar">العربية</option><option value="/pl/" lang="pl">Polski</option></select>
     <nav class="tabs" aria-label="Product">
@@ -219,6 +227,10 @@ footer .wrap{padding-block:28px}
 
 <!-- ============ TATTOO ============ -->
 <main id="v-tattoo" class="view">
+<div class="doors"><div class="wrap">
+  <a class="door ai" href="/de/ai-tattoo-generator/"><h2>Motiv mit KI erstellen</h2><p>Beschreibe das Tattoo und erhalte in etwa 20 Sekunden saubere schwarze Linien.</p><span class="go">KI-Generator öffnen &rarr;</span></a>
+  <a class="door" href="/de/studio/"><h2>Zeichnung in ein Stencil verwandeln</h2><p>Lade eine Zeichnung, ein Flash oder ein Foto, prüfe, was das Stencil behalten hat, und drucke es in Originalgröße.</p><span class="go">Stencil-Studio öffnen &rarr;</span></a>
+</div></div>
 <div class="hero"><div class="wrap">
   <div>
     <div class="eyebrow">Für Tätowierer und Studios</div>

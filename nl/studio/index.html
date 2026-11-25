@@ -144,22 +144,13 @@ details.plans .btn{margin-top:8px}
 
   <!-- LEFT: controls -->
   <div class="stack">
-    <!-- Design generator: drawn only when js/config.js names a generator address (studio/app.js unhides it) -->
-    <div class="card stack" id="genCard" hidden>
-      <h2>Ontwerp maken</h2>
-      <div><label for="genPrompt">Beschrijf de tattoo</label><textarea id="genPrompt" rows="2" maxlength="200" placeholder="een wolf in fijne lijnen met een maansikkel"></textarea></div>
-      <div class="seg" id="genStyle"><button type="button" data-v="bold" aria-pressed="true">Krachtig</button><button type="button" data-v="detail" aria-pressed="false">Fijn detail</button></div>
-      <button class="btn" id="genBtn" type="button" style="background:var(--stencil);border-color:var(--stencil);color:#fff">Ontwerp maken</button>
-      <div id="genTs"></div>
-      <p class="status" id="genStatus" role="status" aria-live="polite" style="margin:0"></p>
-      <p class="fine" style="margin:0">Een AI tekent het op basis van je woorden en hier wordt het een stencil. Bezoekers krijgen een paar ontwerpen per dag; met een dagpas of Pro veel meer.</p>
-    </div>
     <div class="card stack">
       <h2>1. Je ontwerp</h2>
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Kies een afbeeldingsbestand">Sleep hier een JPG, PNG of WebP heen, of klik om te kiezen.<br><span class="fine">Alleen ontwerpen die je zelf hebt gemaakt of mag gebruiken.</span></div>
       <input type="file" id="file" accept="image/png,image/jpeg,image/webp" hidden>
       <div class="lab" style="margin:4px 0 0">Of begin met een voorbeeld</div>
       <div id="samples" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+      <p class="fine" style="margin:6px 0 0"><a href="/nl/ai-tattoo-generator/" style="color:var(--stencil)">Nog geen ontwerp? Maak er een met de AI-generator</a></p>
     </div>
     <div class="card stack">
       <h2>2. Maak de stencil</h2>

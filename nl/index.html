@@ -197,6 +197,14 @@ footer .wrap{padding-block:28px}
 .glink:hover{border-color:var(--stencil)}.glink h3{font-size:17px}.glink p{margin:6px 0 0;font-size:14px;color:var(--muted)}
 #guides .note a{color:var(--stencil)}
 @media (max-width:900px){.gl{grid-template-columns:minmax(0,1fr)}}
+.doors .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;padding-block:18px 0}
+.door{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.door:hover{border-color:var(--stencil)}
+.door h2{font-size:19px;margin:0;font-weight:700}
+.door p{margin:6px 0 10px;color:var(--muted);font-size:15px}
+.door .go{font-weight:600;font-size:14px;color:var(--stencil)}
+.door.ai{border-color:var(--stencil);background:var(--stencil-soft)}
+@media (max-width:760px){.doors .wrap{grid-template-columns:minmax(0,1fr)}}
 [hidden]{display:none!important}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/nl/","inLanguage":"nl","description":"Gratis tattoo stencil maken in je browser. Zet een tekening of foto om in een strakke lijnstencil en print op ware grootte. Niets wordt geüpload.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"12","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"79","priceCurrency":"USD"}]}</script>
@@ -207,7 +215,7 @@ footer .wrap{padding-block:28px}
 <header><div class="wrap">
   <a class="mark" href="/nl/">skin<span>stencil</span></a>
   <div class="topnav">
-    <a href="#examples">Voorbeelden</a><a href="#pricing">Prijzen</a><a href="#guides">Gidsen</a><a href="#faq">Vragen</a>
+    <a href="/nl/ai-tattoo-generator/">AI-generator</a><a href="#examples">Voorbeelden</a><a href="#pricing">Prijzen</a><a href="#guides">Gidsen</a><a href="#faq">Vragen</a>
     <label class="vh" for="langSel">Taal</label>
     <select class="langsel" id="langSel" aria-label="Taal"><option value="/" lang="en">English</option><option value="/de/" lang="de">Deutsch</option><option value="/fr/" lang="fr">Français</option><option value="/es/" lang="es">Español</option><option value="/pt/" lang="pt">Português</option><option value="/it/" lang="it">Italiano</option><option value="/nl/" selected lang="nl">Nederlands</option><option value="/tr/" lang="tr">Türkçe</option><option value="/ar/" lang="ar">العربية</option><option value="/pl/" lang="pl">Polski</option></select>
     <nav class="tabs" aria-label="Product">
@@ -219,6 +227,10 @@ footer .wrap{padding-block:28px}
 
 <!-- ============ TATTOO ============ -->
 <main id="v-tattoo" class="view">
+<div class="doors"><div class="wrap">
+  <a class="door ai" href="/nl/ai-tattoo-generator/"><h2>Maak een ontwerp met AI</h2><p>Beschrijf de tattoo en krijg in ongeveer 20 seconden strakke zwarte lijnen.</p><span class="go">Open de AI-generator &rarr;</span></a>
+  <a class="door" href="/nl/studio/"><h2>Maak van je tekening een stencil</h2><p>Laad een tekening, flash of foto, bekijk wat de stencil heeft behouden en print hem op ware grootte.</p><span class="go">Open de stencil-Studio &rarr;</span></a>
+</div></div>
 <div class="hero"><div class="wrap">
   <div>
     <div class="eyebrow">Voor tattoo-artiesten en studio's</div>

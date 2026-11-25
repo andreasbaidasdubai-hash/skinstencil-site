@@ -23,7 +23,7 @@ const LANGS = [
 
 const read = p => readFileSync(path.join(ROOT, p), 'utf8');
 const en = JSON.parse(read('src/strings/en.json'));
-const TPL = { index: read('src/index.tpl.html'), studio: read('src/studio.tpl.html'), brow: read('src/brow.tpl.html'), guide: read('src/guide.tpl.html') };
+const TPL = { index: read('src/index.tpl.html'), studio: read('src/studio.tpl.html'), brow: read('src/brow.tpl.html'), gen: read('src/generator.tpl.html'), guide: read('src/guide.tpl.html') };
 
 // Brow mapping strings live in their own files, src/brow/<code>.json (keys without prefix); they reach the templates as {{brow.<key>}}.
 // A key missing in a language falls back to English, with a warning.
@@ -42,8 +42,17 @@ for (const l of LANGS) {
 // Languages that have a given guide (slug null = the guides index), in LANGS order; the first is the x-default.
 const guideLangs = slug => LANGS.filter(l => GUIDES[l.code] && (slug === null || GUIDES[l.code].guides[slug]));
 
+// AI design generator page strings: src/gen/<code>.json (keys without prefix) reach every template as {{gen.<key>}}; missing keys fall back to English.
+const genOf = code => { const f = path.join(ROOT, 'src/gen', code + '.json'); return existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : null; };
+const enGen = genOf('en');
+function genStrings(l) {
+  const own = genOf(l.code) || {}, out = {};
+  for (const k of Object.keys(enGen)) { if (!(k in own) && l.code !== 'en') console.warn(`[${l.code}] missing gen key ${k}, using English`); out['gen.' + k] = k in own ? own[k] : enGen[k]; }
+  return out;
+}
+
 const baseOf = l => (l.code === 'en' ? '/' : `/${l.code}/`);
-const urlOf = (l, page) => baseOf(l) + (page === 'studio' ? 'studio/' : page === 'brow' ? 'brow/' : page === 'guides' ? 'guides/' : page.startsWith('guide:') ? 'guides/' + page.slice(6) + '/' : '');
+const urlOf = (l, page) => baseOf(l) + (page === 'studio' ? 'studio/' : page === 'brow' ? 'brow/' : page === 'gen' ? 'ai-tattoo-generator/' : page === 'guides' ? 'guides/' : page.startsWith('guide:') ? 'guides/' + page.slice(6) + '/' : '');
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
 function browStrings(l) {
@@ -52,12 +61,12 @@ function browStrings(l) {
   return out;
 }
 function strings(l) {
-  if (l.code === 'en') return { ...en, ...browStrings(l) };
+  if (l.code === 'en') return { ...en, ...browStrings(l), ...genStrings(l) };
   const f = path.join(ROOT, 'src/strings', l.code + '.json');
-  if (!existsSync(f)) { console.warn('missing strings for', l.code, '- falling back to English'); return { ...en, ...browStrings(l) }; }
+  if (!existsSync(f)) { console.warn('missing strings for', l.code, '- falling back to English'); return { ...en, ...browStrings(l), ...genStrings(l) }; }
   const own = JSON.parse(readFileSync(f, 'utf8'));
   for (const k of Object.keys(en)) if (!(k in own)) console.warn(`[${l.code}] missing key ${k}, using English`);
-  return { ...en, ...own, ...browStrings(l) };
+  return { ...en, ...own, ...browStrings(l), ...genStrings(l) };
 }
 function hreflang(page, only) {
   const out = [];
@@ -89,8 +98,19 @@ function ldjsonBrow(S, l) {
     { '@type': 'ListItem', position: 2, name: plain(S['brow.bc.name']), item: url }] };
   return [app, { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: l.code, mainEntity: faq }, crumbs].map(ldWrap).join('\n');
 }
+function ldjsonGen(S, l) {
+  const faq = []; for (let i = 1; i <= 4; i++) if (S['gen.q' + i + '.h']) faq.push({ '@type': 'Question', name: plain(S['gen.q' + i + '.h']), acceptedAnswer: { '@type': 'Answer', text: plain(S['gen.q' + i + '.p']) } });
+  const url = SITE + urlOf(l, 'gen');
+  const app = { '@context': 'https://schema.org', '@type': 'WebApplication', name: plain(S['gen.appName']), applicationCategory: 'DesignApplication', operatingSystem: 'Any (web browser)', browserRequirements: 'Requires JavaScript', url, inLanguage: l.code,
+    description: plain(S['gen.desc']), isAccessibleForFree: true, offers: OFFERS, publisher: orgRef, isPartOf: { '@type': 'WebSite', name: 'Skinstencil', url: SITE + '/' } };
+  const crumbs = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: plain(S['gen.bc.home']), item: SITE + baseOf(l) },
+    { '@type': 'ListItem', position: 2, name: plain(S['gen.bc.name']), item: url }] };
+  return [app, { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: l.code, mainEntity: faq }, crumbs].map(ldWrap).join('\n');
+}
 function ldjson(S, l, page) {
   if (page === 'brow') return ldjsonBrow(S, l);
+  if (page === 'gen') return ldjsonGen(S, l);
   if (page !== 'index') return '';
   const faq = []; for (let i = 1; i <= 11; i++) if (S['q' + i + '.h']) faq.push({ '@type': 'Question', name: plain(S['q' + i + '.h']), acceptedAnswer: { '@type': 'Answer', text: plain(S['q' + i + '.p']) } });
   const app = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: 'Skinstencil', applicationCategory: 'DesignApplication', operatingSystem: 'Any (web browser)', url: SITE + urlOf(l, 'index'), inLanguage: l.code, description: plain(S['meta.desc']),
@@ -187,7 +207,7 @@ function browGuidesBlock(l, S) {
 let count = 0;
 for (const l of LANGS) {
   const S = strings(l);
-  for (const page of ['index', 'studio', 'brow']) {
+  for (const page of ['index', 'studio', 'brow', 'gen']) {
     const vars = {
       ...S, lang: l.code, dir: l.dir, base: baseOf(l), canonical: SITE + urlOf(l, page), ogLocale: l.locale,
       hreflang: hreflang(page), langSelect: langSelect(l, page, S), notifyEmail: NOTIFY,
@@ -195,13 +215,13 @@ for (const l of LANGS) {
       ldjson: ldjson(S, l, page),
       guidesNav: page === 'index' ? guidesNav(l) : '', guidesSection: page === 'index' ? guidesSection(l, 'tattoo', S) : '', guidesSectionBrow: page === 'index' ? guidesSection(l, 'brow', S) : '',
       browGuides: page === 'brow' ? browGuidesBlock(l, S) : '',
-      i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.'] : page === 'brow' ? ['brow.', 's.dl.', 's.thanks', 'theme.'] : ['s.', 'sample.']),
+      i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.'] : page === 'brow' ? ['brow.', 's.dl.', 's.thanks', 'theme.'] : page === 'gen' ? ['s.gen.', 'theme.'] : ['s.', 'sample.']),
     };
     let html = TPL[page].replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {
       if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in ${page} template`);
       return vars[k];
     });
-    const dir = path.join(ROOT, l.code === 'en' ? '' : l.code, page === 'studio' ? 'studio' : page === 'brow' ? 'brow' : '');
+    const dir = path.join(ROOT, l.code === 'en' ? '' : l.code, page === 'studio' ? 'studio' : page === 'brow' ? 'brow' : page === 'gen' ? 'ai-tattoo-generator' : '');
     mkdirSync(dir, { recursive: true });
     writeFileSync(path.join(dir, 'index.html'), html);
     count++;
@@ -240,7 +260,7 @@ const entry = (l, page, langs) => {
     `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${urlOf(langs[0], page)}"/>`;
   return `  <url>\n    <loc>${SITE}${urlOf(l, page)}</loc>\n${alts}\n  </url>`;
 };
-for (const page of ['index', 'studio', 'brow']) for (const l of LANGS) urls.push(entry(l, page, LANGS));
+for (const page of ['index', 'studio', 'brow', 'gen']) for (const l of LANGS) urls.push(entry(l, page, LANGS));
 for (const { l, r } of guidePages) urls.push(entry(l, r.page, r.langs));
 writeFileSync(path.join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`);
 console.log(`built ${count} pages in ${LANGS.length} languages (${Object.keys(GUIDES).length} with guides), plus sitemap.xml`);
