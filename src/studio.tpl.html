@@ -25,6 +25,7 @@
   --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}
 .themebtn{font:500 15px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 9px;cursor:pointer;line-height:1.2}.themebtn:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
 .seg{display:flex;gap:6px;margin:12px 0 0}
+textarea{width:100%;font:500 14px var(--body);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;resize:vertical;min-height:56px}textarea:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
 html[lang="ar"] body,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
@@ -97,6 +98,15 @@ details.plans .btn{margin-top:8px}
 
   <!-- LEFT: controls -->
   <div class="stack">
+    <!-- Design generator: drawn only when js/config.js names a generator address (studio/app.js unhides it) -->
+    <div class="card stack" id="genCard" hidden>
+      <h2>{{s.gen.h}}</h2>
+      <div><label for="genPrompt">{{s.gen.label}}</label><textarea id="genPrompt" rows="2" maxlength="200" placeholder="{{s.gen.ph}}"></textarea></div>
+      <div class="seg" id="genStyle"><button type="button" data-v="bold" aria-pressed="true">{{s.gen.bold}}</button><button type="button" data-v="detail" aria-pressed="false">{{s.gen.detail}}</button></div>
+      <button class="btn" id="genBtn" type="button" style="background:var(--stencil);border-color:var(--stencil);color:#fff">{{s.gen.btn}}</button>
+      <p class="status" id="genStatus" role="status" aria-live="polite" style="margin:0"></p>
+      <p class="fine" style="margin:0">{{s.gen.hint}}</p>
+    </div>
     <div class="card stack">
       <h2>{{s.c1}}</h2>
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="{{s.dropAria}}">{{s.drop}}<br><span class="fine">{{s.dropRights}}</span></div>

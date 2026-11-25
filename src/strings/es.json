@@ -254,5 +254,20 @@
   "theme.label": "Claro u oscuro",
   "s.dl.pdf": "Descargar PDF a tamaño real",
   "s.dl.paper": "Papel",
-  "s.dl.pdfHint": "El PDF se imprime al 100 %. Un stencil más grande se reparte en varias hojas con 10 mm de solape, para unirlas con cinta."
+  "s.dl.pdfHint": "El PDF se imprime al 100 %. Un stencil más grande se reparte en varias hojas con 10 mm de solape, para unirlas con cinta.",
+  "s.gen.h": "Crear un diseño",
+  "s.gen.label": "Describe el tatuaje",
+  "s.gen.ph": "un lobo de línea fina con una luna creciente",
+  "s.gen.bold": "Marcado",
+  "s.gen.detail": "Detalle fino",
+  "s.gen.btn": "Crear diseño",
+  "s.gen.busy": "Dibujando tu diseño, unos 20 segundos...",
+  "s.gen.hint": "Una IA lo dibuja a partir de tus palabras y aquí se convierte en plantilla. Los visitantes tienen unos pocos diseños al día; con el pase de un día o Pro, muchos más.",
+  "s.gen.left": "Te quedan {n} hoy",
+  "s.gen.errShort": "Primero descríbelo con unas pocas palabras.",
+  "s.gen.errLimitFree": "Has usado los diseños gratuitos de hoy. El pase de un día o Pro da muchos más.",
+  "s.gen.errLimitPaid": "Has llegado al límite de hoy. Se renueva mañana.",
+  "s.gen.errBudget": "El generador está en pausa por hoy. Inténtalo de nuevo mañana.",
+  "s.gen.errUpstream": "No se pudo crear el diseño y no se descontó nada. Inténtalo de nuevo.",
+  "s.gen.errNetwork": "Sin conexión con el generador. Inténtalo de nuevo."
 }

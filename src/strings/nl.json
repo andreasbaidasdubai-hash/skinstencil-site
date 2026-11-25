@@ -254,5 +254,20 @@
   "theme.label": "Licht of donker",
   "s.dl.pdf": "PDF op ware grootte downloaden",
   "s.dl.paper": "Papier",
-  "s.dl.pdfHint": "De pdf print op 100 %. Een grotere stencil wordt over meerdere vellen verdeeld met 10 mm overlap, om aan elkaar te plakken."
+  "s.dl.pdfHint": "De pdf print op 100 %. Een grotere stencil wordt over meerdere vellen verdeeld met 10 mm overlap, om aan elkaar te plakken.",
+  "s.gen.h": "Ontwerp maken",
+  "s.gen.label": "Beschrijf de tattoo",
+  "s.gen.ph": "een wolf in fijne lijnen met een maansikkel",
+  "s.gen.bold": "Krachtig",
+  "s.gen.detail": "Fijn detail",
+  "s.gen.btn": "Ontwerp maken",
+  "s.gen.busy": "Je ontwerp wordt getekend, ongeveer 20 seconden...",
+  "s.gen.hint": "Een AI tekent het op basis van je woorden en hier wordt het een stencil. Bezoekers krijgen een paar ontwerpen per dag; met een dagpas of Pro veel meer.",
+  "s.gen.left": "Nog {n} vandaag",
+  "s.gen.errShort": "Beschrijf het eerst in een paar woorden.",
+  "s.gen.errLimitFree": "Je gratis ontwerpen van vandaag zijn op. Met een dagpas of Pro krijg je er veel meer.",
+  "s.gen.errLimitPaid": "Je hebt de limiet van vandaag bereikt. Morgen is die weer hersteld.",
+  "s.gen.errBudget": "De generator is vandaag gepauzeerd. Probeer het morgen opnieuw.",
+  "s.gen.errUpstream": "Het ontwerp kon niet worden gemaakt en er is niets afgetrokken. Probeer het opnieuw.",
+  "s.gen.errNetwork": "Geen verbinding met de generator. Probeer het opnieuw."
 }

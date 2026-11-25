@@ -254,5 +254,20 @@
   "theme.label": "Claro ou escuro",
   "s.dl.pdf": "Baixar PDF em tamanho real",
   "s.dl.paper": "Papel",
-  "s.dl.pdfHint": "O PDF imprime a 100 %. Um decalque maior é dividido em várias folhas com 10 mm de sobreposição, para unir com fita."
+  "s.dl.pdfHint": "O PDF imprime a 100 %. Um decalque maior é dividido em várias folhas com 10 mm de sobreposição, para unir com fita.",
+  "s.gen.h": "Criar um desenho",
+  "s.gen.label": "Descreva a tatuagem",
+  "s.gen.ph": "um lobo de traço fino com uma lua crescente",
+  "s.gen.bold": "Marcante",
+  "s.gen.detail": "Detalhe fino",
+  "s.gen.btn": "Criar desenho",
+  "s.gen.busy": "A desenhar, cerca de 20 segundos...",
+  "s.gen.hint": "Uma IA desenha a partir das suas palavras e aqui vira um estêncil. Os visitantes têm alguns desenhos por dia; com o passe de um dia ou Pro, muito mais.",
+  "s.gen.left": "Restam {n} hoje",
+  "s.gen.errShort": "Primeiro descreva em poucas palavras.",
+  "s.gen.errLimitFree": "Usou os desenhos gratuitos de hoje. O passe de um dia ou Pro dá muito mais.",
+  "s.gen.errLimitPaid": "Atingiu o limite de hoje. Renova amanhã.",
+  "s.gen.errBudget": "O gerador está em pausa por hoje. Tente novamente amanhã.",
+  "s.gen.errUpstream": "Não foi possível criar o desenho e nada foi descontado. Tente novamente.",
+  "s.gen.errNetwork": "Sem ligação ao gerador. Tente novamente."
 }

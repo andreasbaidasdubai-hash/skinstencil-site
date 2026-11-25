@@ -254,5 +254,20 @@
   "theme.label": "Açık veya koyu",
   "s.dl.pdf": "PDF'yi gerçek boyutta indir",
   "s.dl.paper": "Kâğıt",
-  "s.dl.pdfHint": "PDF %100 ölçekle yazdırılır. Daha büyük bir şablon, bantla birleştirmeniz için 10 mm bindirmeyle birkaç sayfaya bölünür."
+  "s.dl.pdfHint": "PDF %100 ölçekle yazdırılır. Daha büyük bir şablon, bantla birleştirmeniz için 10 mm bindirmeyle birkaç sayfaya bölünür.",
+  "s.gen.h": "Tasarım oluştur",
+  "s.gen.label": "Dövmeyi anlat",
+  "s.gen.ph": "ince çizgili, hilal aylı bir kurt",
+  "s.gen.bold": "Belirgin",
+  "s.gen.detail": "İnce detay",
+  "s.gen.btn": "Tasarım oluştur",
+  "s.gen.busy": "Tasarımın çiziliyor, yaklaşık 20 saniye...",
+  "s.gen.hint": "Bir yapay zekâ sözlerinden çizer, burada şablona dönüşür. Ziyaretçilere günde birkaç tasarım verilir; günlük geçiş veya Pro ile çok daha fazlası.",
+  "s.gen.left": "Bugün {n} hakkın kaldı",
+  "s.gen.errShort": "Önce birkaç kelimeyle anlat.",
+  "s.gen.errLimitFree": "Bugünkü ücretsiz tasarımlarını kullandın. Günlük geçiş veya Pro çok daha fazlasını verir.",
+  "s.gen.errLimitPaid": "Bugünkü sınıra ulaştın. Yarın yenilenir.",
+  "s.gen.errBudget": "Oluşturucu bugünlük durduruldu. Yarın tekrar dene.",
+  "s.gen.errUpstream": "Tasarım oluşturulamadı ve hakkından bir şey düşülmedi. Tekrar dene.",
+  "s.gen.errNetwork": "Oluşturucuya bağlanılamadı. Tekrar dene."
 }

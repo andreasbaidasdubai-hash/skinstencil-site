@@ -254,5 +254,20 @@
   "theme.label": "Chiaro o scuro",
   "s.dl.pdf": "Scarica il PDF a grandezza reale",
   "s.dl.paper": "Carta",
-  "s.dl.pdfHint": "Il PDF si stampa al 100 %. Uno stencil più grande viene diviso su più fogli con 10 mm di sovrapposizione, da unire con il nastro."
+  "s.dl.pdfHint": "Il PDF si stampa al 100 %. Uno stencil più grande viene diviso su più fogli con 10 mm di sovrapposizione, da unire con il nastro.",
+  "s.gen.h": "Crea un disegno",
+  "s.gen.label": "Descrivi il tatuaggio",
+  "s.gen.ph": "un lupo a tratto fine con una luna crescente",
+  "s.gen.bold": "Deciso",
+  "s.gen.detail": "Dettaglio fine",
+  "s.gen.btn": "Crea il disegno",
+  "s.gen.busy": "Sto disegnando, circa 20 secondi...",
+  "s.gen.hint": "Un’IA lo disegna dalle tue parole, poi qui diventa uno stencil. I visitatori hanno qualche disegno al giorno; con il pass giornaliero o Pro molti di più.",
+  "s.gen.left": "Ancora {n} oggi",
+  "s.gen.errShort": "Prima descrivilo in poche parole.",
+  "s.gen.errLimitFree": "Hai usato i disegni gratuiti di oggi. Il pass giornaliero o Pro ne dà molti di più.",
+  "s.gen.errLimitPaid": "Hai raggiunto il limite di oggi. Si rinnova domani.",
+  "s.gen.errBudget": "Il generatore è in pausa per oggi. Riprova domani.",
+  "s.gen.errUpstream": "Non è stato possibile creare il disegno e non è stato scalato nulla. Riprova.",
+  "s.gen.errNetwork": "Nessuna connessione al generatore. Riprova."
 }

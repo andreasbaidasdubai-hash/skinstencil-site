@@ -254,5 +254,20 @@
   "theme.label": "Light or dark",
   "s.dl.pdf": "Download PDF at true size",
   "s.dl.paper": "Paper",
-  "s.dl.pdfHint": "The PDF prints at 100%. A larger stencil is split over several sheets with a 10 mm overlap, so you can tape them together."
+  "s.dl.pdfHint": "The PDF prints at 100%. A larger stencil is split over several sheets with a 10 mm overlap, so you can tape them together.",
+  "s.gen.h": "Make a design",
+  "s.gen.label": "Describe the tattoo",
+  "s.gen.ph": "a fine-line wolf with a crescent moon",
+  "s.gen.bold": "Bold",
+  "s.gen.detail": "Fine detail",
+  "s.gen.btn": "Create design",
+  "s.gen.busy": "Drawing your design, about 20 seconds...",
+  "s.gen.hint": "An AI draws it from your words, then it becomes a stencil here. Visitors get a few designs a day; a day pass or Pro gives many more.",
+  "s.gen.left": "{n} left today",
+  "s.gen.errShort": "Describe it in a few words first.",
+  "s.gen.errLimitFree": "You have used today's free designs. A day pass or Pro gives many more.",
+  "s.gen.errLimitPaid": "You have reached today's limit. It resets tomorrow.",
+  "s.gen.errBudget": "The generator is paused for today. Please try again tomorrow.",
+  "s.gen.errUpstream": "The design could not be made and nothing was used. Please try again.",
+  "s.gen.errNetwork": "No connection to the generator. Please try again."
 }

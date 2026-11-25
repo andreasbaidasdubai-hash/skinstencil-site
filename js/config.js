@@ -13,6 +13,8 @@ window.SkinConfig = {
   prices: { currency: "USD", day: "4.99", month: "12", year: "79" },
   analyticsToken: "87fa69765dd849aaa207fe3e48dfd3e8",
   notifyEmail: "hello@skinstencil.com",
+  /* Address of the design-generator Worker (worker/README.md). Empty = the generator is not drawn on the page. */
+  generatorUrl: "",
   freeMaxPx: 800,
   paidMaxPx: 4000
 };

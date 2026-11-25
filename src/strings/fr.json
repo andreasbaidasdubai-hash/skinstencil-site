@@ -254,5 +254,20 @@
   "theme.label": "Clair ou sombre",
   "s.dl.pdf": "Télécharger le PDF en taille réelle",
   "s.dl.paper": "Papier",
-  "s.dl.pdfHint": "Le PDF s'imprime à 100 %. Un pochoir plus grand est réparti sur plusieurs feuilles avec 10 mm de recouvrement, pour les assembler au ruban."
+  "s.dl.pdfHint": "Le PDF s'imprime à 100 %. Un pochoir plus grand est réparti sur plusieurs feuilles avec 10 mm de recouvrement, pour les assembler au ruban.",
+  "s.gen.h": "Créer un motif",
+  "s.gen.label": "Décris le tatouage",
+  "s.gen.ph": "un loup au trait fin avec un croissant de lune",
+  "s.gen.bold": "Franc",
+  "s.gen.detail": "Détails fins",
+  "s.gen.btn": "Créer le motif",
+  "s.gen.busy": "Ton motif est en cours de dessin, environ 20 secondes...",
+  "s.gen.hint": "Une IA le dessine à partir de tes mots, puis il devient un pochoir ici. Les visiteurs ont quelques motifs par jour ; un pass jour ou Pro en donne bien plus.",
+  "s.gen.left": "Encore {n} aujourd’hui",
+  "s.gen.errShort": "Décris-le d’abord en quelques mots.",
+  "s.gen.errLimitFree": "Tu as utilisé les motifs gratuits du jour. Un pass jour ou Pro en donne bien plus.",
+  "s.gen.errLimitPaid": "Tu as atteint la limite du jour. Elle se renouvelle demain.",
+  "s.gen.errBudget": "Le générateur est en pause pour aujourd’hui. Réessaie demain.",
+  "s.gen.errUpstream": "Le motif n’a pas pu être créé et rien n’a été décompté. Réessaie.",
+  "s.gen.errNetwork": "Pas de connexion au générateur. Réessaie."
 }

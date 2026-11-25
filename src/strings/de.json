@@ -254,5 +254,20 @@
   "theme.label": "Hell oder dunkel",
   "s.dl.pdf": "PDF in Originalgröße laden",
   "s.dl.paper": "Papier",
-  "s.dl.pdfHint": "Das PDF druckt mit 100 %. Ein größerer Stencil wird auf mehrere Blätter mit 10 mm Überlappung verteilt, zum Zusammenkleben."
+  "s.dl.pdfHint": "Das PDF druckt mit 100 %. Ein größerer Stencil wird auf mehrere Blätter mit 10 mm Überlappung verteilt, zum Zusammenkleben.",
+  "s.gen.h": "Motiv erstellen",
+  "s.gen.label": "Beschreibe das Tattoo",
+  "s.gen.ph": "ein Wolf in feinen Linien mit Mondsichel",
+  "s.gen.bold": "Kräftig",
+  "s.gen.detail": "Feine Details",
+  "s.gen.btn": "Motiv erstellen",
+  "s.gen.busy": "Dein Motiv wird gezeichnet, etwa 20 Sekunden ...",
+  "s.gen.hint": "Eine KI zeichnet es nach deiner Beschreibung, danach wird es hier zum Stencil. Besucher bekommen pro Tag ein paar Motive; mit Tagespass oder Pro deutlich mehr.",
+  "s.gen.left": "Noch {n} heute",
+  "s.gen.errShort": "Beschreibe es zuerst in ein paar Worten.",
+  "s.gen.errLimitFree": "Die kostenlosen Motive für heute sind aufgebraucht. Mit Tagespass oder Pro gibt es deutlich mehr.",
+  "s.gen.errLimitPaid": "Das Limit für heute ist erreicht. Morgen geht es wieder.",
+  "s.gen.errBudget": "Der Generator pausiert für heute. Bitte versuche es morgen wieder.",
+  "s.gen.errUpstream": "Das Motiv konnte nicht erstellt werden, es wurde nichts verbraucht. Bitte versuche es erneut.",
+  "s.gen.errNetwork": "Keine Verbindung zum Generator. Bitte versuche es erneut."
 }

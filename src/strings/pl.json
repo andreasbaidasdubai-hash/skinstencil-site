@@ -254,5 +254,20 @@
   "theme.label": "Jasny lub ciemny",
   "s.dl.pdf": "Pobierz PDF w rzeczywistym rozmiarze",
   "s.dl.paper": "Papier",
-  "s.dl.pdfHint": "PDF drukuje się w 100%. Większy szablon jest dzielony na kilka arkuszy z 10 mm zakładką, do sklejenia taśmą."
+  "s.dl.pdfHint": "PDF drukuje się w 100%. Większy szablon jest dzielony na kilka arkuszy z 10 mm zakładką, do sklejenia taśmą.",
+  "s.gen.h": "Stwórz projekt",
+  "s.gen.label": "Opisz tatuaż",
+  "s.gen.ph": "wilk cienką linią z półksiężycem",
+  "s.gen.bold": "Wyrazisty",
+  "s.gen.detail": "Drobne detale",
+  "s.gen.btn": "Stwórz projekt",
+  "s.gen.busy": "Rysuję projekt, około 20 sekund...",
+  "s.gen.hint": "Sztuczna inteligencja rysuje go z Twojego opisu, a tutaj zmienia się w szablon. Odwiedzający dostają kilka projektów dziennie; z karnetem dziennym lub Pro znacznie więcej.",
+  "s.gen.left": "Zostało {n} na dziś",
+  "s.gen.errShort": "Najpierw opisz to kilkoma słowami.",
+  "s.gen.errLimitFree": "Wykorzystano dzisiejsze darmowe projekty. Karnet dzienny lub Pro daje ich znacznie więcej.",
+  "s.gen.errLimitPaid": "Osiągnięto dzisiejszy limit. Odnowi się jutro.",
+  "s.gen.errBudget": "Generator jest dziś wstrzymany. Spróbuj jutro.",
+  "s.gen.errUpstream": "Nie udało się stworzyć projektu i nic nie zostało zużyte. Spróbuj ponownie.",
+  "s.gen.errNetwork": "Brak połączenia z generatorem. Spróbuj ponownie."
 }

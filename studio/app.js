@@ -232,6 +232,44 @@
   window.addEventListener('storage', function (e) { if (e.key === 'skinstencil.license') { dlState(); process(FULL); } });
   if (/[?&]thanks=1/.test(location.search)) { $('thanks').hidden = false; $('keyBox').open = true; }
 
+  /* ---------- design generator ----------
+     Drawn only when js/config.js has generatorUrl (the Worker in /worker). The result, a vector or a picture, goes through the same
+     stencil engine as an upload, so every control, the drift check, the PDF and the print all work on it. */
+  (function () {
+    var base = (C.generatorUrl || '').replace(/\/$/, ''); if (!base) return;
+    $('genCard').hidden = false;
+    var style = 'bold', busy = false, st = $('genStatus');
+    function say(k, cls, v) { st.textContent = k ? t(k, v) : ''; st.className = 'status' + (cls ? ' ' + cls : ''); }
+    [].forEach.call($('genStyle').querySelectorAll('button'), function (b) { b.addEventListener('click', function () { style = b.getAttribute('data-v'); [].forEach.call($('genStyle').querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', String(x === b)); }); }); });
+    function licenseKey() { try { var s = JSON.parse(localStorage.getItem('skinstencil.license') || 'null'); return s && U.isUnlocked() ? s.key : ''; } catch (e) { return ''; } }
+    function show(blob) {
+      var u = URL.createObjectURL(blob), im = new Image();
+      im.onload = function () {
+        var w = im.naturalWidth || 1024, h = im.naturalHeight || 1024, k = Math.min(1, MAX_SIDE / Math.max(w, h)) * (w < 1200 ? Math.min(2, 1200 / w) : 1);   // a vector is drawn at full size; a small picture is not blown up beyond 2x
+        var c = document.createElement('canvas'); c.width = Math.round(w * k); c.height = Math.round(h * k);
+        var x = c.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height); x.imageSmoothingQuality = 'high'; x.drawImage(im, 0, 0, c.width, c.height);
+        URL.revokeObjectURL(u); setMode('draw'); setSource(c, c.width, c.height); $('recBtn').click();
+      };
+      im.onerror = function () { URL.revokeObjectURL(u); say('s.gen.errUpstream', 'err'); };
+      im.src = u;
+    }
+    $('genBtn').addEventListener('click', function () {
+      if (busy) return;
+      var p = $('genPrompt').value.replace(/\s+/g, ' ').trim(); if (p.length < 3) { say('s.gen.errShort', 'err'); return; }
+      busy = true; $('genBtn').disabled = true; say('s.gen.busy');
+      var h = { 'Content-Type': 'application/json' }, key = licenseKey(); if (key) h['X-License'] = key;
+      fetch(base + '/generate', { method: 'POST', headers: h, body: JSON.stringify({ prompt: p, style: style }) }).then(function (r) {
+        if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) {
+          var map = { limit_free: 's.gen.errLimitFree', limit_paid: 's.gen.errLimitPaid', budget: 's.gen.errBudget' };
+          say(map[j.error] || 's.gen.errUpstream', 'err');
+          if (j.error === 'limit_free') $('plansBox').hidden = false;   // the way to get more is right there
+        });
+        var left = r.headers.get('X-Remaining');
+        return r.blob().then(function (b) { show(b); say(left != null ? 's.gen.left' : '', 'ok', { n: left }); });
+      }).catch(function () { say('s.gen.errNetwork', 'err'); }).then(function () { busy = false; $('genBtn').disabled = false; });
+    });
+  })();
+
   /* open in a working state so the stage is never empty */
   var first = E.samples.dagger.draw(); setSource(first, first.width, first.height);
 })();
