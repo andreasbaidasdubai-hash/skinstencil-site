@@ -1,0 +1,303 @@
+{
+  "ui": {
+    "guides": "Guide",
+    "home": "Skinstencil",
+    "breadcrumbLabel": "Percorso di navigazione",
+    "openTool": "Apri lo strumento gratuito",
+    "related": "Guide correlate",
+    "updated": "Ultimo aggiornamento",
+    "answerLabel": "La risposta breve",
+    "faq": "Domande",
+    "indexTitle": "Guide agli stencil per tatuaggi",
+    "indexMetaTitle": "Guide allo stencil tatuaggio | Skinstencil",
+    "indexMetaDesc": "Guide pratiche per tatuatori: creare uno stencil per tatuaggi da foto o disegno, stamparlo a dimensione reale e scegliere come portarlo su carta.",
+    "indexLead": "Guide brevi e pratiche per chi prepara da sé i propri stencil. Ognuna termina con lo strumento gratuito, che funziona nel browser e non carica nulla.",
+    "readGuide": "Leggi la guida",
+    "homeSectionTitle": "Guide sullo stencil per tatuaggi",
+    "homeSectionLead": "Come creare uno stencil, stamparlo a dimensione reale e portarlo su carta.",
+    "toolNote": "Skinstencil è gratuito nel browser e non viene caricato nulla. I download gratuiti hanno una filigrana e sono limitati a 800 px. Un pass giornaliero o Pro toglie la filigrana e consente fino a 4000 px, con la misura a 300 dpi salvata nel PNG.",
+    "theme": "Chiaro o scuro",
+    "language": "Lingua"
+  },
+  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods"],
+  "guides": {
+    "tattoo-stencil-from-photo": {
+      "howto": true,
+      "title": "Come creare uno stencil per tatuaggi da una foto o da un disegno",
+      "short": "Come creare uno stencil per tatuaggi da foto o disegno",
+      "blurb": "Da un'immagine nitida a uno stencil a linee pulite, con il controllo scostamento per vedere cosa si è perso.",
+      "metaTitle": "Stencil tatuaggio: creare uno stencil da foto o disegno",
+      "metaDesc": "Passo passo per creare uno stencil per tatuaggi online da foto o disegno, vedere cosa si è perso e stampare a dimensione reale.",
+      "updated": "2026-11-25",
+      "answer": "Per creare uno stencil per tatuaggi da una foto o da un disegno, carica un'immagine nitida in un generatore di stencil tatuaggio, scegli la modalità Disegno o Foto, regola sensibilità, levigatura e spessore della linea finché restano solo le linee volute, imposta la larghezza in millimetri, scarica il PNG e stampalo a dimensione reale.",
+      "sections": [
+        {
+          "h2": "Cosa fa davvero un generatore di stencil tatuaggio",
+          "blocks": [
+            { "p": "Uno stencil è il contorno di un disegno, ridotto a linee pulite per poter essere trasferito sulla pelle. Un generatore di stencil tatuaggio prende un'immagine e conserva i bordi che contano, scartando sfumature, texture della carta e rumore. Il risultato sono linee scure su sfondo bianco, che è la forma richiesta dalla maggior parte dei metodi di trasferimento." },
+            { "p": "Skinstencil lo fa con una normale elaborazione di immagini nel tuo browser. Il file viene letto sul tuo dispositivo e non viene caricato. Conta, quando il disegno appartiene a un cliente. Significa anche che lo strumento funziona appena la pagina è caricata, senza account." }
+          ]
+        },
+        {
+          "h2": "Scegli un originale che si converta bene",
+          "blocks": [
+            { "p": "Gli originali buoni hanno alcune caratteristiche in comune. Usa quello che ne ha più possibile:" },
+            { "ul": [
+              "Contrasto netto tra le linee e lo sfondo, come inchiostro su carta bianca.",
+              "Il disegno riempie l'inquadratura invece di restare piccolo in un angolo.",
+              "Piatto e frontale rispetto alla fotocamera o allo scanner, senza pieghe né prospettiva.",
+              "Luce uniforme, senza l'ombra della mano o del telefono sul foglio.",
+              "Risoluzione sufficiente perché le linee sottili siano ancora larghe diversi pixel."
+            ] },
+            { "p": "Lo scanner piano è il modo più semplice per ottenere tutto questo. Se fotografi, lavora vicino a una finestra con luce naturale, tieni il telefono parallelo al foglio ed evita il flash, che lascia una macchia chiara al centro. Usa solo disegni che hai realizzato tu o che hai il diritto di usare." }
+          ]
+        },
+        {
+          "h2": "Modalità Disegno o modalità Foto",
+          "blocks": [
+            { "p": "Lo strumento chiede che tipo di originale stai caricando, perché un disegno a linee e una fotografia richiedono trattamenti diversi." },
+            { "h3": "Disegno" },
+            { "p": "Usa Disegno per bozzetti, flash, lettering e tutto ciò che è già fatto di linee. I segni scuri sul foglio chiaro sono il disegno, e lo scopo è mantenerli il più vicino possibile a come li hai tracciati." },
+            { "h3": "Foto" },
+            { "p": "Usa Foto per immagini con ombreggiature morbide, come un ritratto o un animale. Una foto non ha un contorno da conservare, quindi i bordi dove cambia il tono devono fare da linee. Aspettati di passare più tempo sui cursori con le foto, e di dover decidere quali dettagli preferisci disegnare a mano." }
+          ]
+        },
+        {
+          "h2": "Come creare uno stencil per tatuaggi online, passo dopo passo",
+          "stepsIntro": "Ecco i passaggi in ordine. Le sezioni seguenti spiegano i controlli più nel dettaglio.",
+          "steps": [
+            { "name": "Scegli un originale nitido", "text": "Prendi il disegno o la foto con il contrasto migliore e meno elementi di disturbo. Se hai due versioni, usa quella tracciata con una penna più scura e uniforme." },
+            { "name": "Scansiona o fotografa con luce uniforme", "text": "Scansiona in piano, se puoi. Altrimenti fotografa con luce naturale, parallelo al foglio, con il disegno che riempie l'inquadratura e senza ombre né flash." },
+            { "name": "Caricalo nello strumento", "text": "Apri lo strumento gratuito e trascina un file JPG, PNG o WebP, oppure clicca per sceglierne uno. Viene elaborato nel tuo browser e non viene caricato." },
+            { "name": "Scegli la modalità Disegno o Foto", "text": "Scegli Disegno per line art e flash, Foto per immagini con ombreggiature morbide." },
+            { "name": "Regola la sensibilità", "text": "La sensibilità decide quanto può essere debole un segno per diventare comunque una linea. Abbassala se le ombreggiature diventano linee. Alzala se mancano le linee sottili." },
+            { "name": "Regola levigatura e spessore della linea", "text": "La levigatura arrotonda i bordi seghettati dei pixel. Lo spessore rende le linee più spesse o più sottili. Se le linee escono deboli in stampa, uno spessore maggiore di solito aiuta." },
+            { "name": "Rimuovi i puntini", "text": "Alza Rimuovi puntini per eliminare i puntini dovuti alla grana della carta o alla polvere, finché restano solo i segni voluti." },
+            { "name": "Controlla cosa si è perso con il controllo scostamento", "text": "Attiva il controllo scostamento. Le linee perse compaiono in rosso e quelle aggiunte in blu, così vedi cosa hanno cambiato le tue impostazioni rispetto a una lettura fissa e sensibile dell'originale." },
+            { "name": "Imposta la larghezza in millimetri", "text": "Inserisci la larghezza che vuoi sulla pelle. Lo strumento mostra la misura corrispondente a 300 dpi e un righello a dimensione reale." },
+            { "name": "Scarica o stampa a dimensione reale", "text": "Scarica il PNG e stampalo in modo che il foglio misuri la larghezza impostata. Verificalo con un righello prima di avvicinarlo a qualcuno." }
+          ]
+        },
+        {
+          "h2": "Usare i controlli senza perdere il disegno",
+          "blocks": [
+            { "p": "Considera i cursori una conversazione, non una ricetta. Cambiane uno, guarda e rimettilo com'era se ha fatto più danni che bene." },
+            { "ul": [
+              "La sensibilità è la leva più forte. Troppo alta, e ogni sbavatura diventa una linea. Troppo bassa, e i dettagli fini spariscono.",
+              "La levigatura aiuta di più sulle scansioni di disegni piccoli, dove le linee a scalini si notano da ingrandite. Troppa levigatura arrotonda gli angoli vivi e i piccoli spazi.",
+              "Lo spessore della linea è questione di gusto e del tuo metodo di trasferimento. Le linee sottilissime possono sparire in stampa o nel trasferimento, quindi prova prima su carta.",
+              "Rimuovi puntini è il controllo di pulizia. Alzalo finché la polvere sparisce e fermati prima che cominci a togliere punti che fanno parte del disegno, come il puntinismo."
+            ] },
+            { "p": "Il puntinismo e il dotwork minuto sono le vittime più comuni. Se il tuo disegno dipende da loro, tieni basso Rimuovi puntini e controlla il risultato da vicino." }
+          ]
+        },
+        {
+          "h2": "Perché il controllo scostamento conta",
+          "blocks": [
+            { "p": "Uno stencil dall'aspetto pulito può comunque mancare di qualcosa. Perdere una linea fine è facile quando si insegue un risultato ordinato, ed è facile non accorgersene su uno schermo piccolo." },
+            { "p": "Il controllo scostamento confronta lo stencil con le linee trovate nell'originale. Il rosso indica una linea persa. Il blu indica una linea aggiunta. Il riferimento è una lettura fissa e sensibile dell'originale, quindi abbassando la sensibilità o alzando Rimuovi puntini comparirà rosso di proposito. Il rosso non è sempre un errore, ma vale sempre un'occhiata prima di fissare una misura." }
+          ]
+        },
+        {
+          "h2": "Misura, download e stampa",
+          "blocks": [
+            { "p": "Imposta la larghezza in millimetri prima di scaricare, perché lo stesso disegno a 60 mm e a 200 mm ha bisogno di un numero diverso di pixel per restare nitido. La nostra guida gemella sulla [misura di stampa](guide:tattoo-stencil-size-true-size-print) riporta i numeri." },
+            { "p": "I download gratuiti hanno una filigrana e sono limitati a 800 px. Un pass giornaliero o Pro toglie la filigrana, consente fino a 4000 px e salva la misura a 300 dpi dentro il PNG, così il software di stampa lo apre alla larghezza scelta. Una volta ottenuto il file, [come portare uno stencil su carta](guide:tattoo-stencil-transfer-methods) spiega cosa succede dopo." }
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Posso creare uno stencil per tatuaggi da una foto?", "a": "Sì. Carica una foto, scegli la modalità Foto e regola la sensibilità finché i bordi che vuoi diventano linee. Le foto con ombreggiature morbide richiedono più regolazioni dei disegni a linee, e potresti voler disegnare a mano alcuni dettagli." },
+        { "q": "Lo strumento per stencil tatuaggio è gratuito?", "a": "Sì. È gratuito nel browser. I download gratuiti hanno una filigrana e sono limitati a 800 px. Un pass giornaliero o Pro toglie la filigrana e consente fino a 4000 px." },
+        { "q": "Il mio disegno viene caricato da qualche parte?", "a": "No. L'immagine viene elaborata nel tuo browser, sul tuo dispositivo, e non viene caricato nulla." },
+        { "q": "Che tipi di file posso usare?", "a": "Immagini JPG, PNG e WebP. Usa la versione più nitida e meglio illuminata che hai." },
+        { "q": "Perché mancano alcune linee nel mio stencil?", "a": "La sensibilità potrebbe essere troppo bassa, o Rimuovi puntini troppo alto, e le linee deboli sono state trattate come rumore. Attiva il controllo scostamento: le linee perse compaiono in rosso. Alza la sensibilità o abbassa Rimuovi puntini e ricontrolla." },
+        { "q": "Come stampo lo stencil alla misura giusta?", "a": "Imposta la larghezza in millimetri nello strumento, scarica il PNG e stampa al 100 per cento, senza adattare alla pagina. Verifica la stampa con un righello." }
+      ],
+      "cta": "Provalo sul tuo disegno. Funziona nel browser e non viene caricato nulla."
+    },
+    "tattoo-stencil-size-true-size-print": {
+      "title": "Misura dello stencil tatuaggio: come stampare a dimensione reale",
+      "short": "Misura dello stencil tatuaggio: stampare a dimensione reale",
+      "blurb": "Dai millimetri ai pixel a 300 dpi, una piccola tabella e come verificare la stampa.",
+      "metaTitle": "Stencil tatuaggio: stampare a dimensione reale in mm",
+      "metaDesc": "Converti i millimetri in pixel a 300 dpi, capisci perché conta il dpi dentro il PNG e verifica con un righello la stampa dello stencil tatuaggio.",
+      "updated": "2026-11-25",
+      "answer": "Per stampare a dimensione reale uno stencil tatuaggio, decidi la larghezza in millimetri, dividi per 25,4 e moltiplica per 300 per avere la larghezza in pixel a 300 dpi, poi stampa al 100 per cento senza ridimensionare. Uno stencil da 100 mm richiede circa 1181 pixel. Conferma il risultato con un righello sulla stampa.",
+      "sections": [
+        {
+          "h2": "Perché è facile sbagliare la misura dello stencil",
+          "blocks": [
+            { "p": "Un'immagine digitale non ha una misura fisica propria. È una griglia di pixel, e la misura sulla carta dipende da quanti pixel si mettono in ogni pollice. Questo è il dpi, da dots per inch, punti per pollice. Lo stesso file può uscire grande come un francobollo o come un poster." },
+            { "p": "Per uno stencil tatuaggio è un problema, perché il disegno deve arrivare sulla pelle esattamente alla misura concordata con il cliente. Il software di stampa spesso tira a indovinare, ridimensiona l'immagine per adattarla alla pagina, oppure apre il file a 72 o 96 dpi e lo rende molto più grande di quanto ti aspettavi. Azzeccare la misura dello stencil significa stabilirla una volta, in millimetri, e assicurarsi che il file la porti fino alla stampante." }
+          ]
+        },
+        {
+          "h2": "Dai millimetri ai pixel a 300 dpi",
+          "blocks": [
+            { "p": "Un pollice ha 25,4 millimetri. Quindi la larghezza in pixel che ti serve è:" },
+            { "p": "**pixel = millimetri ÷ 25,4 × 300**" },
+            { "p": "Ecco il risultato per le larghezze più comuni, arrotondato al pixel più vicino:" },
+            { "table": {
+              "head": ["Larghezza sulla pelle", "Pixel a 300 dpi"],
+              "rows": [
+                ["50 mm", "591 px"],
+                ["80 mm", "945 px"],
+                ["100 mm", "1181 px"],
+                ["150 mm", "1772 px"],
+                ["200 mm", "2362 px"],
+                ["250 mm", "2953 px"],
+                ["300 mm", "3543 px"]
+              ]
+            } },
+            { "p": "Non devi fare il calcolo a mano. Nello strumento scrivi la larghezza in millimetri e accanto compare la misura a 300 dpi. La tabella serve a mostrarti perché un file piccolo non può essere stampato grande senza risultare sfocato." }
+          ]
+        },
+        {
+          "h2": "Perché 300 dpi",
+          "blocks": [
+            { "p": "300 dpi è l'obiettivo abituale per le immagini stampate che verranno guardate da vicino. A questa densità una linea sottile esce ancora come un tratto pulito e continuo. Densità inferiori cominciano a mostrare bordi a scalini sulle curve, e uno stencil è fatto quasi solo di curve." },
+            { "p": "Di più non è sempre meglio. I file più grandi sono più lenti da aprire e stampare, e una linea sottile di stencil non diventa più nitida di quanto la tua stampante riesca a tracciarla. 300 dpi è un buon equilibrio per il lavoro sugli stencil ed è ciò che Skinstencil usa per l'output a dimensione reale." }
+          ]
+        },
+        {
+          "h2": "Come aiuta il valore a 300 dpi dentro il PNG",
+          "blocks": [
+            { "p": "Un file PNG può portare con sé una misura fisica, salvata come pixel per metro in un piccolo blocco di dati nel file. Molti programmi lo leggono e aprono l'immagine a quella misura. Se il valore dice 300 dpi, un'immagine larga 1181 px si apre larga circa 100 mm, senza ridimensionare a mano." },
+            { "p": "Quando il valore manca, i programmi ripiegano su un'impostazione predefinita, spesso 72 o 96 dpi. A 72 dpi la stessa immagine da 1181 px si aprirebbe larga circa 416 mm, più di quattro volte più grande. È un motivo frequente per cui uno stencil esce dalla stampante troppo grande." },
+            { "p": "Con un pass giornaliero o Pro, Skinstencil salva la misura a 300 dpi dentro il PNG, così il software di stampa può aprirlo alla larghezza che hai impostato. Con un download gratuito, imposta tu stesso la larghezza di stampa nella finestra di stampa." }
+          ]
+        },
+        {
+          "h2": "Stampare a dimensione reale",
+          "stepsIntro": "Una breve routine che evita sorprese:",
+          "steps": [
+            { "name": "Imposta la larghezza nello strumento", "text": "Inserisci la larghezza sulla pelle in millimetri. Lo strumento mostra la misura equivalente a 300 dpi." },
+            { "name": "Scarica il PNG", "text": "Con un pass giornaliero o Pro il file salva la misura a 300 dpi, così la maggior parte dei programmi lo apre alla larghezza giusta." },
+            { "name": "Aprilo nella finestra di stampa", "text": "Scegli dimensione reale o 100 per cento. Disattiva adatta alla pagina, riduci per adattare e riempi la pagina." },
+            { "name": "Stampa una prova su carta comune", "text": "Usa carta normale per la prova, non il tuo materiale di trasferimento." },
+            { "name": "Misura la stampa", "text": "Appoggia un righello sulla parte più larga e confrontalo con la larghezza che hai impostato. Correggi e ristampa se non coincide." }
+          ]
+        },
+        {
+          "h2": "Controlla con un righello, ogni volta",
+          "blocks": [
+            { "p": "Stampanti e driver cambiano le impostazioni senza avvisare, soprattutto dopo un aggiornamento o su un computer condiviso. Il righello toglie ogni dubbio. Misura la larghezza completa del disegno sulla stampa, da un bordo all'altro dell'immagine e non della carta, e confrontala con i millimetri che hai impostato." },
+            { "p": "Lo strumento disegna anche un righello a dimensione reale che segue la larghezza di stampa impostata, così vedi la scala prevista a schermo. Gli schermi sono diversi, quindi quel righello è solo una guida e conta quello sulla stampa." },
+            { "p": "Se la stampa sbaglia di una percentuale costante, probabilmente è attiva un'opzione di ridimensionamento. Se sbaglia di un fattore grande, il programma probabilmente ha aperto il file a 72 o 96 dpi." }
+          ]
+        },
+        {
+          "h2": "Perché i download gratuiti sono limitati a 800 px",
+          "blocks": [
+            { "p": "I download gratuiti hanno una filigrana e sono limitati a 800 px. A 300 dpi, 800 px sono circa 68 mm, che vanno bene per valutare un disegno ma sono pochi per uno stencil sulla pelle. Gli stencil più grandi richiedono più pixel per restare nitidi, ed è ciò che sblocca un pass giornaliero o Pro: niente filigrana, fino a 4000 px, cioè circa 339 mm di larghezza a 300 dpi, e la misura a 300 dpi salvata nel file." },
+            { "p": "Lo strumento gratuito resta utile per controllare le linee e il controllo scostamento prima di decidere se sbloccare una misura. La nostra guida su [come creare uno stencil da una foto o da un disegno](guide:tattoo-stencil-from-photo) copre questa parte." }
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Quanti pixel servono per uno stencil da 100 mm?", "a": "Circa 1181 pixel di larghezza a 300 dpi. La formula è millimetri divisi per 25,4, moltiplicati per 300." },
+        { "q": "Perché il mio stencil si stampa troppo grande?", "a": "Spesso il programma ha aperto il PNG a 72 o 96 dpi perché nel file non era salvata alcuna misura, oppure un'opzione adatta alla pagina lo ha ingrandito. Stampa al 100 per cento e imposta tu la larghezza, oppure usa un file con la misura a 300 dpi salvata." },
+        { "q": "A cosa serve il valore a 300 dpi dentro il PNG?", "a": "Dice al software di stampa la misura fisica dell'immagine, così si apre alla larghezza impostata invece di tirare a indovinare. I download con pass giornaliero e Pro lo includono." },
+        { "q": "Qual è lo stencil più grande che posso scaricare?", "a": "I download gratuiti sono limitati a 800 px. Un pass giornaliero o Pro consente fino a 4000 px, cioè circa 339 mm di larghezza a 300 dpi." },
+        { "q": "Devo verificare la stampa con un righello?", "a": "Sì, ogni volta. Misura il disegno da un bordo all'altro e confrontalo con la larghezza impostata prima di usare lo stencil." }
+      ],
+      "cta": "Imposta una larghezza in millimetri e guarda la misura a 300 dpi."
+    },
+    "tattoo-stencil-transfer-methods": {
+      "title": "Stampante termica, ricalco o stampa: come portare uno stencil su carta",
+      "short": "Come portare lo stencil su carta: termica, ricalco, stampa",
+      "blurb": "Una panoramica neutra dei metodi di trasferimento più diffusi e di quando conta un file a linee pulite.",
+      "metaTitle": "Trasferello per tatuaggi: termica, ricalco, stampa",
+      "metaDesc": "Come i tatuatori portano uno stencil sul trasferello per tatuaggi: ricalco a mano, stampante termica o stampa comune, e cosa richiede ciascun metodo.",
+      "updated": "2026-11-25",
+      "answer": "I tatuatori portano di solito uno stencil su trasferello per tatuaggi in uno di tre modi: ricalcando il disegno a mano, stampandolo con una stampante termica o stampandolo con una stampante comune su carta adatta al trasferimento. I metodi digitali richiedono un file a linee pulite alla misura giusta. Il ricalco a mano richiede solo il disegno.",
+      "sections": [
+        {
+          "h2": "Tre approcci comuni",
+          "blocks": [
+            { "p": "Uno stencil per tatuaggi nasce come disegno e finisce come un disegno di linee su un foglio di trasferimento che si può premere sulla pelle. Ci sono diversi modi per passare dall'uno all'altro. Questa guida ne descrive tre tra i più comuni in termini neutri. Non li mette in classifica, perché la scelta giusta dipende dal tuo volume di lavoro, dal budget, dallo studio e dalle tue abitudini." },
+            { "p": "Non tratta nemmeno l'applicazione né il post-trattamento. Qualunque metodo usi, segui le regole igieniche del tuo studio." }
+          ]
+        },
+        {
+          "h2": "Ricalco a mano",
+          "blocks": [
+            { "p": "Il metodo più antico è ricalcare il disegno da sé. Si mette carta da lucido, o un foglio di trasferimento pensato per il disegno a mano, sopra l'originale e si seguono le linee con una penna. Alcuni tatuatori disegnano direttamente sul materiale di trasferimento. Altri usano un tavolo luminoso o una finestra per vedere il disegno attraverso la carta." },
+            { "ul": [
+              "Serve: il disegno originale, il materiale di trasferimento e una penna adatta.",
+              "Punto di forza: nessuna attrezzatura oltre a carta e penne, e ogni linea passa dalla tua mano, quindi prendi piccole decisioni mentre procedi.",
+              "Limite: richiede tempo, ingrandire o ridurre il disegno richiede un passaggio a parte e ripetere un disegno è lento."
+            ] },
+            { "p": "Anche qui un file a linee pulite aiuta. Puoi stampare una copia leggera su carta comune alla misura giusta e ricalcare sopra, così la misura è stabilita senza un secondo strumento." }
+          ]
+        },
+        {
+          "h2": "Stampanti termiche",
+          "blocks": [
+            { "p": "Le stampanti termiche per stencil usano il calore, non l'inchiostro, per formare il disegno su una speciale carta di trasferimento a più strati. La stampante legge un'immagine digitale o un originale su carta e produce lo stencil in un solo passaggio. I modelli si collegano in modi diversi, quindi controlla cosa accetta il tuo, che sia un cavo USB, un computer collegato o un'app per telefono." },
+            { "ul": [
+              "Serve: una stampante termica, carta da trasferimento termico adatta e un file o un originale da stampare.",
+              "Punto di forza: veloce e costante una volta configurata, e le copie ripetute dello stesso disegno sono semplici.",
+              "Limite: stampante e carta hanno un costo, e un file un po' troppo debole, troppo pesante o della misura sbagliata viene stampato proprio così."
+            ] },
+            { "p": "Qui un file di stencil a linee pulite conta di più. Una stampante termica stampa le linee che riceve. Grigi, texture di sfondo e linee sottilissime possono stamparsi male o per niente, e un file aperto alla misura sbagliata viene stampato alla misura sbagliata. Linee nere su sfondo bianco uniforme, a una larghezza nota, lasciano alla stampante il minimo margine di errore." }
+          ]
+        },
+        {
+          "h2": "Stampa per trasferimento su stampanti comuni",
+          "blocks": [
+            { "p": "Alcuni tatuatori stampano lo stencil con una normale stampante a getto d'inchiostro o laser su carta fatta per funzionare da strato di trasferimento, oppure stampano su carta comune e la usano come riferimento o base da ricalcare. Cosa funziona dipende dal tipo di stampante e dalla carta, quindi segui le istruzioni del materiale e prova un foglio prima di usarlo sul serio." },
+            { "ul": [
+              "Serve: una stampante normale, carta adatta al trasferimento se vuoi trasferire direttamente, e un file alla misura giusta.",
+              "Punto di forza: la stampante potresti averla già, e stampa ad alta risoluzione.",
+              "Limite: il materiale deve essere fatto per questo uso, la carta da ufficio comune non è un materiale di trasferimento, e impostazioni della stampante come il ridimensionamento possono cambiare la misura."
+            ] },
+            { "p": "Come per ogni metodo digitale, imposta la finestra di stampa su dimensione reale e misura il risultato. La guida su [come stampare a dimensione reale](guide:tattoo-stencil-size-true-size-print) spiega come." }
+          ]
+        },
+        {
+          "h2": "Quando conta un file di stencil a linee pulite",
+          "blocks": [
+            { "p": "Qualsiasi metodo che parta da un file digitale trae vantaggio da un file fatto per lo scopo. Un file di stencil è diverso da una foto per alcuni aspetti:" },
+            { "ul": [
+              "È fatto solo di linee, senza ombreggiature, texture della carta o sfondo.",
+              "Le linee sono scure e continue, così calore o inchiostro hanno qualcosa di solido da riprodurre.",
+              "Ha una larghezza nota, quindi si stampa alla misura concordata con il cliente.",
+              "I puntini deboli sono rimossi, così non diventano segni sul trasferello."
+            ] },
+            { "p": "Un generatore di stencil tatuaggio produce questo tipo di file da una foto o da un disegno. La nostra guida su [come creare uno stencil da una foto o da un disegno](guide:tattoo-stencil-from-photo) illustra i controlli." }
+          ]
+        },
+        {
+          "h2": "Scegliere tra i metodi",
+          "blocks": [
+            { "p": "Di solito bastano poche domande:" },
+            { "ul": [
+              "Quanti stencil fai in una settimana? Un volume maggiore favorisce l'attrezzatura che ripete in fretta.",
+              "Con che frequenza ridimensioni un disegno? I metodi digitali rendono facili i cambi di misura, mentre il ricalco a mano ne fa un lavoro a parte.",
+              "Quanto del tratto vuoi ridisegnare tu? Il ricalco te lo dà di serie.",
+              "Cosa hai già? Una stampante che possiedi è il punto di partenza più economico, purché la carta le si adatti."
+            ] },
+            { "p": "Molti tatuatori usano più di un metodo, per esempio un contorno stampato per le forme principali e il ricalco a mano per i dettagli fini. Qui nulla richiede una scelta esclusiva." }
+          ]
+        },
+        {
+          "h2": "Preparare il file, qualunque metodo scegli",
+          "blocks": [
+            { "p": "Qualunque strada scegli, la preparazione del file è la stessa. Crea una versione a linee pulite, imposta la larghezza in millimetri, scaricala a una misura abbastanza nitida per quella larghezza e stampa una prova su carta comune. Skinstencil è gratuito nel browser e non viene caricato nulla. I download gratuiti hanno una filigrana e sono limitati a 800 px. Un pass giornaliero o Pro toglie la filigrana, consente fino a 4000 px e salva la misura a 300 dpi nel PNG." },
+            { "p": "Poi misura la stampa di prova con un righello prima di usare il tuo materiale di trasferimento." }
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Che differenza c'è tra un file di stencil e una foto?", "a": "Un file di stencil contiene solo linee scure e pulite su sfondo uniforme, a una misura nota. Una foto ha tono, texture e sfondo che la maggior parte dei metodi di trasferimento non può usare." },
+        { "q": "Mi serve una stampante termica per usare un file di stencil?", "a": "No. Un file può essere stampato su carta comune e ricalcato a mano, oppure stampato su carta adatta al trasferimento con una stampante normale. La stampante termica è una delle opzioni." },
+        { "q": "Posso stampare uno stencil su carta comune e ricalcarlo?", "a": "Sì. Una stampa leggera a dimensione reale è un modo diffuso di ricalcare, perché la misura è già stabilita." },
+        { "q": "Quale metodo devo usare?", "a": "Dipende da quanti stencil fai, dall'attrezzatura che hai e da come ti piace lavorare. Molti tatuatori combinano più metodi." },
+        { "q": "Il file deve avere una misura precisa?", "a": "Deve essere abbastanza nitido per la larghezza che stampi. A 300 dpi uno stencil da 100 mm richiede circa 1181 pixel. Imposta la larghezza in millimetri nello strumento e ti mostra la misura in pixel." }
+      ],
+      "cta": "Crea un file di stencil a linee pulite, poi stampalo con il metodo che usi."
+    }
+  }
+}

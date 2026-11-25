@@ -1,0 +1,303 @@
+{
+  "ui": {
+    "guides": "Anleitungen",
+    "home": "Skinstencil",
+    "breadcrumbLabel": "Brotkrumen-Navigation",
+    "openTool": "Kostenloses Tool öffnen",
+    "related": "Verwandte Anleitungen",
+    "updated": "Zuletzt aktualisiert",
+    "answerLabel": "Die kurze Antwort",
+    "faq": "Fragen",
+    "indexTitle": "Anleitungen für Tattoo Stencils",
+    "indexMetaTitle": "Tattoo Vorlage erstellen: Anleitungen | Skinstencil",
+    "indexMetaDesc": "Praxisnahe Anleitungen für Tätowierer: Tattoo Stencil erstellen, Vorlage aus Foto, in Originalgröße drucken und aufs Papier übertragen.",
+    "indexLead": "Kurze, praktische Anleitungen für Tätowierer, die ihre Stencils selbst machen. Jede endet mit dem kostenlosen Tool, das in deinem Browser läuft und nichts hochlädt.",
+    "readGuide": "Anleitung lesen",
+    "homeSectionTitle": "Anleitungen für Tattoo Stencils",
+    "homeSectionLead": "So erstellst du ein Stencil, druckst es in Originalgröße und bringst es aufs Papier.",
+    "toolNote": "Skinstencil ist im Browser kostenlos nutzbar, und es wird nichts hochgeladen. Kostenlose Downloads tragen ein Wasserzeichen und sind auf 800 px begrenzt. Ein Tagespass oder Pro entfernt das Wasserzeichen und erlaubt bis zu 4000 px, mit der Größe von 300 dpi im PNG gespeichert.",
+    "theme": "Hell oder dunkel",
+    "language": "Sprache"
+  },
+  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods"],
+  "guides": {
+    "tattoo-stencil-from-photo": {
+      "howto": true,
+      "title": "Tattoo Vorlage aus Foto oder Zeichnung erstellen",
+      "short": "Tattoo Vorlage aus Foto oder Zeichnung erstellen",
+      "blurb": "Von einer klaren Vorlage zum sauberen Linien-Stencil, mit der Abweichungsprüfung, die zeigt, was verloren ging.",
+      "metaTitle": "Tattoo Vorlage aus Foto oder Zeichnung erstellen",
+      "metaDesc": "Tattoo Stencil erstellen: Foto oder Zeichnung in saubere Linien verwandeln, Verluste prüfen, Größe in mm setzen und in Originalgröße drucken.",
+      "updated": "2026-11-25",
+      "answer": "Um eine Tattoo Vorlage aus einem Foto oder einer Zeichnung zu erstellen, lädst du ein klares Bild in einen Tattoo-Stencil-Generator, wählst den Modus Zeichnung oder Foto, stellst Empfindlichkeit, Glättung und Linienstärke so ein, dass nur die gewünschten Linien übrig bleiben, legst die Breite in Millimetern fest, lädst das PNG herunter und druckst es in Originalgröße.",
+      "sections": [
+        {
+          "h2": "Was ein Tattoo-Stencil-Generator eigentlich macht",
+          "blocks": [
+            { "p": "Ein Stencil ist die Umrisszeichnung eines Motivs, reduziert auf saubere Linien, damit es sich auf die Haut übertragen lässt. Ein Tattoo-Stencil-Generator nimmt ein Bild und behält die wichtigen Kanten, während Tonwerte, Papierstruktur und Rauschen wegfallen. Das Ergebnis sind dunkle Linien auf weißem Grund, die Form, die die meisten Übertragungsmethoden brauchen." },
+            { "p": "Skinstencil macht das mit gewöhnlicher Bildverarbeitung in deinem Browser. Deine Datei wird auf deinem eigenen Gerät gelesen und nicht hochgeladen. Das ist wichtig, wenn ein Motiv einem Kunden gehört. Außerdem funktioniert das Tool, sobald die Seite geladen ist, ganz ohne Konto." }
+          ]
+        },
+        {
+          "h2": "Eine Vorlage wählen, die sich sauber umwandeln lässt",
+          "blocks": [
+            { "p": "Gute Vorlagen haben ein paar Dinge gemeinsam. Nimm eine, die möglichst viele davon erfüllt:" },
+            { "ul": [
+              "Klarer Kontrast zwischen Linien und Hintergrund, zum Beispiel Tusche auf weißem Papier.",
+              "Das Motiv füllt das Bild, statt klein in einer Ecke zu sitzen.",
+              "Plan und gerade zur Kamera oder zum Scanner, ohne Wellen oder Perspektive.",
+              "Gleichmäßiges Licht ohne Schatten deiner Hand oder deines Handys auf dem Blatt.",
+              "Genug Auflösung, damit dünne Linien noch mehrere Pixel breit sind."
+            ] },
+            { "p": "Ein Flachbettscan ist der einfachste Weg, all das zu erreichen. Wenn du stattdessen fotografierst, arbeite am Fenster bei Tageslicht, halte das Handy parallel zum Blatt und verzichte auf den Blitz, der einen hellen Fleck in die Mitte setzt. Verwende nur Motive, die du selbst gemacht hast oder nutzen darfst." }
+          ]
+        },
+        {
+          "h2": "Zeichnungsmodus oder Fotomodus",
+          "blocks": [
+            { "p": "Das Tool fragt, was für eine Vorlage du lädst, denn eine Strichzeichnung und ein Foto brauchen eine unterschiedliche Behandlung." },
+            { "h3": "Zeichnung" },
+            { "p": "Nimm Zeichnung für Skizzen, Flash, Schriftzüge und alles, was schon aus Linien besteht. Dunkle Striche auf hellem Blatt sind das Motiv, und das Ziel ist, sie so nah wie möglich an deiner Zeichnung zu halten." },
+            { "h3": "Foto" },
+            { "p": "Nimm Foto für Bilder mit weichen Schattierungen, etwa ein Porträt oder ein Tier. Ein Foto hat keine Umrisslinie, die man behalten könnte, also müssen Kanten, an denen sich der Ton ändert, die Linien ersetzen. Rechne bei Fotos mit mehr Arbeit an den Reglern und damit, dass du manche Details lieber von Hand zeichnest." }
+          ]
+        },
+        {
+          "h2": "So erstellst du ein Tattoo Stencil online, Schritt für Schritt",
+          "stepsIntro": "Das sind die Schritte in der richtigen Reihenfolge. Die Abschnitte darunter erklären die Regler genauer.",
+          "steps": [
+            { "name": "Eine klare Vorlage wählen", "text": "Nimm die Zeichnung oder das Foto mit dem besten Kontrast und der geringsten Unruhe. Hast du zwei Fassungen, nimm die, die mit dem dunkleren, gleichmäßigeren Stift gezeichnet ist." },
+            { "name": "Bei gleichmäßigem Licht scannen oder fotografieren", "text": "Scanne wenn möglich flach. Sonst fotografiere bei Tageslicht, parallel zum Blatt, mit einem Motiv, das das Bild füllt, ohne Schatten und ohne Blitz." },
+            { "name": "In das Tool laden", "text": "Öffne das kostenlose Tool und ziehe eine JPG-, PNG- oder WebP-Datei hinein oder klicke, um eine auszuwählen. Sie wird in deinem Browser verarbeitet und nicht hochgeladen." },
+            { "name": "Zeichnungs- oder Fotomodus wählen", "text": "Wähle Zeichnung für Linienarbeiten und Flash, Foto für Bilder mit weichen Schattierungen." },
+            { "name": "Empfindlichkeit einstellen", "text": "Die Empfindlichkeit entscheidet, wie schwach eine Markierung sein darf, um noch zur Linie zu werden. Senke sie, wenn aus Schattierungen Linien werden. Erhöhe sie, wenn dünne Linien fehlen." },
+            { "name": "Glättung und Linienstärke einstellen", "text": "Die Glättung rundet gezackte Pixelkanten ab. Die Linienstärke macht Linien dicker oder dünner. Wirken Linien im Druck zu blass, hilft meist eine kräftigere Linienstärke." },
+            { "name": "Punkte entfernen", "text": "Erhöhe „Punkte entfernen“, um kleine Punkte durch Papierkorn oder Staub zu löschen, bis nur noch gewollte Markierungen übrig sind." },
+            { "name": "Mit der Abweichungsprüfung sehen, was verloren ging", "text": "Schalte die Abweichungsprüfung ein. Verlorene Linien erscheinen rot, hinzugekommene blau. So siehst du, was deine Einstellungen gegenüber einer festen, empfindlichen Auswertung deines Originals verändert haben." },
+            { "name": "Die Breite in Millimetern festlegen", "text": "Gib die gewünschte Breite auf der Haut ein. Das Tool zeigt die passende Größe bei 300 dpi und ein Lineal in Originalgröße." },
+            { "name": "Herunterladen oder in Originalgröße drucken", "text": "Lade das PNG herunter und drucke es so, dass der Ausdruck die eingestellte Breite hat. Miss mit einem Lineal nach, bevor es in die Nähe eines Menschen kommt." }
+          ]
+        },
+        {
+          "h2": "Die Regler nutzen, ohne das Motiv zu verlieren",
+          "blocks": [
+            { "p": "Sieh die Regler als Gespräch und nicht als Rezept. Ändere einen, schau hin und mach es rückgängig, wenn es mehr geschadet als genützt hat." },
+            { "ul": [
+              "Die Empfindlichkeit ist der wichtigste Hebel. Zu hoch, und jeder Fleck wird zur Linie. Zu niedrig, und feine Details verschwinden.",
+              "Die Glättung hilft am meisten bei Scans kleiner Zeichnungen, deren Linien beim Vergrößern treppenartig aussehen. Zu viel Glättung rundet scharfe Ecken und kleine Lücken ab.",
+              "Die Linienstärke ist Geschmackssache und hängt von deiner Übertragungsmethode ab. Dünne Haarlinien können beim Drucken oder Übertragen verschwinden, also teste zuerst auf Papier.",
+              "„Punkte entfernen“ ist der Aufräumregler. Erhöhe ihn, bis der Staub weg ist, und höre auf, bevor er Punkte löscht, die zum Motiv gehören, etwa beim Stippling."
+            ] },
+            { "p": "Stippling und winzige Dotwork-Punkte sind die üblichen Opfer. Hängt dein Motiv davon ab, halte „Punkte entfernen“ niedrig und prüfe das Ergebnis genau." }
+          ]
+        },
+        {
+          "h2": "Warum die Abweichungsprüfung wichtig ist",
+          "blocks": [
+            { "p": "Ein Stencil, das sauber aussieht, kann trotzdem etwas vermissen lassen. Eine feine Linie ist schnell geopfert, wenn man ein aufgeräumtes Ergebnis jagt, und auf einem kleinen Bildschirm leicht übersehen." },
+            { "p": "Die Abweichungsprüfung vergleicht das Stencil mit den Linien, die in deinem Original gefunden wurden. Rot markiert eine verlorene Linie, Blau eine hinzugefügte. Als Referenz dient eine feste, empfindliche Auswertung des Originals. Wenn du also die Empfindlichkeit senkst oder „Punkte entfernen“ erhöhst, erscheint absichtlich Rot. Rot ist nicht immer ein Fehler, aber immer einen Blick wert, bevor du dich auf eine Größe festlegst." }
+          ]
+        },
+        {
+          "h2": "Größe, Download und Druck",
+          "blocks": [
+            { "p": "Lege die Breite in Millimetern fest, bevor du herunterlädst, denn dasselbe Motiv bei 60 mm und bei 200 mm braucht unterschiedlich viele Pixel, um scharf zu bleiben. Unsere Begleitanleitung zur [Druckgröße](guide:tattoo-stencil-size-true-size-print) hat die Zahlen." },
+            { "p": "Kostenlose Downloads tragen ein Wasserzeichen und sind auf 800 px begrenzt. Ein Tagespass oder Pro entfernt das Wasserzeichen, erlaubt bis zu 4000 px und speichert die Größe von 300 dpi im PNG, damit Druckprogramme es in der gewählten Breite öffnen. Wenn du die Datei hast, zeigt [Wege, ein Stencil aufs Papier zu bringen](guide:tattoo-stencil-transfer-methods), wie es weitergeht." }
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Kann ich eine Tattoo Vorlage aus einem Foto erstellen?", "a": "Ja. Lade ein Foto, wähle den Fotomodus und stelle die Empfindlichkeit so ein, dass die gewünschten Kanten zu Linien werden. Fotos mit weichen Schattierungen brauchen mehr Feinarbeit als Strichzeichnungen, und manche Details zeichnest du vielleicht besser von Hand." },
+        { "q": "Ist der Tattoo-Stencil-Maker kostenlos?", "a": "Ja. Er ist im Browser kostenlos nutzbar. Kostenlose Downloads tragen ein Wasserzeichen und sind auf 800 px begrenzt. Ein Tagespass oder Pro entfernt das Wasserzeichen und erlaubt bis zu 4000 px." },
+        { "q": "Wird mein Motiv irgendwohin hochgeladen?", "a": "Nein. Das Bild wird in deinem Browser auf deinem eigenen Gerät verarbeitet, und es wird nichts hochgeladen." },
+        { "q": "Welche Dateitypen kann ich verwenden?", "a": "JPG-, PNG- und WebP-Bilder. Nimm die schärfste, am besten beleuchtete Fassung, die du hast." },
+        { "q": "Warum fehlen Linien in meinem Stencil?", "a": "Vielleicht ist die Empfindlichkeit zu niedrig oder „Punkte entfernen“ zu hoch, sodass schwache Linien als Rauschen galten. Schalte die Abweichungsprüfung ein: Verlorene Linien erscheinen rot. Erhöhe die Empfindlichkeit oder senke „Punkte entfernen“ und prüfe erneut." },
+        { "q": "Wie drucke ich das Stencil in Originalgröße?", "a": "Lege die Breite in Millimetern im Tool fest, lade das PNG herunter und drucke mit 100 Prozent ohne Anpassung an die Seite. Prüfe den Ausdruck mit einem Lineal." }
+      ],
+      "cta": "Probiere es an deinem eigenen Motiv aus. Es läuft in deinem Browser und nichts wird hochgeladen."
+    },
+    "tattoo-stencil-size-true-size-print": {
+      "title": "Stencil in Originalgröße drucken: Tattoo-Stencil-Größe richtig einstellen",
+      "short": "Stencil in Originalgröße drucken",
+      "blurb": "Millimeter in Pixel bei 300 dpi, eine kleine Tabelle und wie du den Ausdruck prüfst.",
+      "metaTitle": "Stencil in Originalgröße drucken: Größe in mm",
+      "metaDesc": "Millimeter in Pixel bei 300 dpi umrechnen, verstehen, warum der dpi-Wert im PNG zählt, und den Stencil-Ausdruck mit einem Lineal prüfen.",
+      "updated": "2026-11-25",
+      "answer": "Um ein Tattoo Stencil in Originalgröße zu drucken, legst du die Breite in Millimetern fest, teilst durch 25,4 und multiplizierst mit 300, um die Pixelbreite bei 300 dpi zu erhalten, und druckst mit 100 Prozent ohne Skalierung. Ein Stencil von 100 mm braucht etwa 1181 Pixel. Bestätige das Ergebnis mit einem Lineal auf dem Ausdruck.",
+      "sections": [
+        {
+          "h2": "Warum die Stencil-Größe leicht schiefgeht",
+          "blocks": [
+            { "p": "Ein digitales Bild hat keine eigene physische Größe. Es ist ein Raster aus Pixeln, und die Größe auf dem Papier hängt davon ab, wie viele Pixel auf einen Zoll kommen. Das ist die dpi, kurz für Dots per Inch. Dieselbe Datei kann als Briefmarke oder als Plakat gedruckt werden." },
+            { "p": "Für ein Tattoo Stencil ist das ein Problem, denn das Motiv muss exakt in der mit dem Kunden vereinbarten Größe auf der Haut landen. Druckprogramme raten oft, skalieren das Bild auf die Seite oder öffnen die Datei mit 72 oder 96 dpi und machen sie viel größer als erwartet. Die richtige Größe heißt: einmal in Millimetern festlegen und dafür sorgen, dass die Datei sie bis zum Drucker mitträgt." }
+          ]
+        },
+        {
+          "h2": "Millimeter in Pixel bei 300 dpi",
+          "blocks": [
+            { "p": "Ein Zoll hat 25,4 Millimeter. Die benötigte Pixelbreite ist also:" },
+            { "p": "**Pixel = Millimeter ÷ 25,4 × 300**" },
+            { "p": "Hier das Ergebnis für gängige Breiten, auf den nächsten Pixel gerundet:" },
+            { "table": {
+              "head": ["Breite auf der Haut", "Pixel bei 300 dpi"],
+              "rows": [
+                ["50 mm", "591 px"],
+                ["80 mm", "945 px"],
+                ["100 mm", "1181 px"],
+                ["150 mm", "1772 px"],
+                ["200 mm", "2362 px"],
+                ["250 mm", "2953 px"],
+                ["300 mm", "3543 px"]
+              ]
+            } },
+            { "p": "Du musst das nicht von Hand rechnen. Im Tool gibst du die Breite in Millimetern ein, und es zeigt daneben die Größe bei 300 dpi. Die Tabelle zeigt, warum eine kleine Datei nicht groß gedruckt werden kann, ohne weich zu wirken." }
+          ]
+        },
+        {
+          "h2": "Warum 300 dpi",
+          "blocks": [
+            { "p": "300 dpi ist das übliche Ziel für gedruckte Bilder, die aus der Nähe betrachtet werden. Bei dieser Dichte wird eine dünne Linie noch als saubere, durchgehende Linie gedruckt. Bei geringerer Dichte zeigen Kurven treppenartige Kanten, und ein Stencil besteht fast nur aus Kurven." },
+            { "p": "Mehr ist nicht immer besser. Größere Dateien öffnen und drucken langsamer, und eine dünne Stencil-Linie wird nicht schärfer, als dein Drucker sie zeichnen kann. 300 dpi ist ein sinnvoller Kompromiss für die Stencil-Arbeit und der Wert, den Skinstencil für die Ausgabe in Originalgröße nutzt." }
+          ]
+        },
+        {
+          "h2": "Wie der 300-dpi-Wert im PNG hilft",
+          "blocks": [
+            { "p": "Eine PNG-Datei kann eine physische Größe tragen, gespeichert als Pixel pro Meter in einem kleinen Datenblock. Viele Programme lesen sie und öffnen das Bild in dieser Größe. Steht dort 300 dpi, öffnet sich ein Bild mit 1181 px Breite mit etwa 100 mm Breite, ohne manuelles Skalieren." },
+            { "p": "Fehlt der Wert, greifen Programme auf einen Standard zurück, oft 72 oder 96 dpi. Bei 72 dpi würde dasselbe Bild mit 1181 px etwa 416 mm breit geöffnet, mehr als viermal so groß. Das ist ein häufiger Grund, warum ein Stencil viel zu groß aus dem Drucker kommt." },
+            { "p": "Mit einem Tagespass oder Pro speichert Skinstencil die Größe von 300 dpi im PNG, damit Druckprogramme es in der eingestellten Breite öffnen können. Bei einem kostenlosen Download stellst du die Druckbreite selbst im Druckdialog ein." }
+          ]
+        },
+        {
+          "h2": "In Originalgröße drucken",
+          "stepsIntro": "Ein kurzer Ablauf, der Überraschungen vermeidet:",
+          "steps": [
+            { "name": "Die Breite im Tool festlegen", "text": "Gib die Breite auf der Haut in Millimetern ein. Das Tool zeigt die entsprechende Größe bei 300 dpi." },
+            { "name": "Das PNG herunterladen", "text": "Mit einem Tagespass oder Pro speichert die Datei die Größe von 300 dpi, sodass die meisten Programme sie in der richtigen Breite öffnen." },
+            { "name": "Im Druckdialog öffnen", "text": "Wähle tatsächliche Größe oder 100 Prozent. Schalte „An Seite anpassen“, „Verkleinern“ und „Seite füllen“ aus." },
+            { "name": "Einen Test auf normalem Papier drucken", "text": "Nimm für den Test gewöhnliches Papier, nicht dein Transfermaterial." },
+            { "name": "Den Ausdruck messen", "text": "Lege ein Lineal über die breiteste Stelle und vergleiche mit der eingestellten Breite. Korrigiere und drucke neu, wenn es abweicht." }
+          ]
+        },
+        {
+          "h2": "Immer mit dem Lineal prüfen",
+          "blocks": [
+            { "p": "Drucker und Treiber ändern Einstellungen, ohne es zu sagen, besonders nach einem Update oder auf einem geteilten Rechner. Ein Lineal beendet das Rätselraten. Miss die volle Breite des Motivs auf dem Ausdruck, von Rand zu Rand der Zeichnung und nicht des Papiers, und vergleiche sie mit den Millimetern, die du eingestellt hast." },
+            { "p": "Das Tool zeichnet außerdem ein Lineal in Originalgröße, das der eingestellten Druckbreite folgt, damit du den gewünschten Maßstab am Bildschirm siehst. Bildschirme unterscheiden sich, daher ist dieses Lineal nur ein Anhaltspunkt, und es zählt das Lineal am Ausdruck." },
+            { "p": "Weicht der Ausdruck um einen gleichbleibenden Prozentsatz ab, ist wahrscheinlich eine Skalierungsoption aktiv. Weicht er um einen großen Faktor ab, hat das Programm die Datei wohl mit 72 oder 96 dpi geöffnet." }
+          ]
+        },
+        {
+          "h2": "Warum kostenlose Downloads auf 800 px begrenzt sind",
+          "blocks": [
+            { "p": "Kostenlose Downloads tragen ein Wasserzeichen und sind auf 800 px begrenzt. Bei 300 dpi sind 800 px etwa 68 mm, genug, um ein Motiv zu beurteilen, aber klein für ein Stencil auf der Haut. Größere Stencils brauchen mehr Pixel, um scharf zu bleiben, und genau das schaltet ein Tagespass oder Pro frei: kein Wasserzeichen, bis zu 4000 px, bei 300 dpi etwa 339 mm Breite, und die Größe von 300 dpi in der Datei gespeichert." },
+            { "p": "Das kostenlose Tool ist trotzdem nützlich, um Linien und Abweichungsprüfung zu checken, bevor du eine Größe freischaltest. Unsere Anleitung zum [Tattoo Stencil aus Foto oder Zeichnung erstellen](guide:tattoo-stencil-from-photo) behandelt diesen Teil." }
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Wie viele Pixel brauche ich für ein Stencil von 100 mm?", "a": "Etwa 1181 Pixel Breite bei 300 dpi. Die Formel lautet Millimeter geteilt durch 25,4, mal 300." },
+        { "q": "Warum wird mein Stencil zu groß gedruckt?", "a": "Oft hat das Programm das PNG mit 72 oder 96 dpi geöffnet, weil keine Größe in der Datei gespeichert war, oder eine Option „An Seite anpassen“ hat es hochskaliert. Drucke mit 100 Prozent und stelle die Breite selbst ein, oder nutze eine Datei mit gespeicherter Größe von 300 dpi." },
+        { "q": "Was bewirkt der 300-dpi-Wert im PNG?", "a": "Er teilt der Druck-Software die physische Größe des Bildes mit, damit es in der eingestellten Breite öffnet, statt zu raten. Downloads mit Tagespass und Pro enthalten ihn." },
+        { "q": "Was ist das größte Stencil, das ich herunterladen kann?", "a": "Kostenlose Downloads sind auf 800 px begrenzt. Ein Tagespass oder Pro erlaubt bis zu 4000 px, bei 300 dpi etwa 339 mm Breite." },
+        { "q": "Sollte ich den Ausdruck mit einem Lineal prüfen?", "a": "Ja, jedes Mal. Miss das Motiv von Rand zu Rand und vergleiche es mit der eingestellten Breite, bevor das Stencil benutzt wird." }
+      ],
+      "cta": "Lege eine Breite in Millimetern fest und sieh die Größe bei 300 dpi."
+    },
+    "tattoo-stencil-transfer-methods": {
+      "title": "Thermodrucker, Pausen oder Druck: Wege, ein Stencil aufs Papier zu bringen",
+      "short": "Wege, ein Stencil aufs Papier zu bringen: Thermo, Pausen, Druck",
+      "blurb": "Ein neutraler Überblick über gängige Übertragungswege und wann eine saubere Linien-Datei zählt.",
+      "metaTitle": "Tattoo Stencil übertragen: Thermo, Pausen, Druck",
+      "metaDesc": "Neutraler Überblick, wie Tätowierer ein Stencil aufs Transferpapier bringen: von Hand pausen, Thermodrucker oder Druck, und was jede Methode braucht.",
+      "updated": "2026-11-25",
+      "answer": "Tätowierer bringen ein Tattoo-Stencil meist auf eine von drei Arten aufs Papier: das Motiv von Hand durchpausen, mit einem Thermodrucker drucken oder mit einem normalen Drucker auf transferfähiges Papier drucken. Digitale Methoden brauchen eine saubere Linien-Datei in der richtigen Größe. Das Pausen von Hand braucht nur die Zeichnung.",
+      "sections": [
+        {
+          "h2": "Drei gängige Wege",
+          "blocks": [
+            { "p": "Ein Tattoo Stencil beginnt als Zeichnung und endet als Linienmuster auf einem Transferblatt, das auf die Haut gedrückt werden kann. Es gibt mehrere Wege vom einen zum anderen. Diese Anleitung beschreibt drei gängige neutral. Sie reiht sie nicht, denn die richtige Wahl hängt von deinem Volumen, deinem Budget, deinem Studio und deinen Gewohnheiten ab." },
+            { "p": "Sie behandelt auch weder das Auftragen noch die Nachsorge. Welche Methode du auch nutzt, halte die Hygieneregeln deines Studios ein." }
+          ]
+        },
+        {
+          "h2": "Von Hand pausen",
+          "blocks": [
+            { "p": "Die älteste Methode ist, das Motiv selbst durchzupausen. Du legst Pauspapier oder ein Transferblatt für Handzeichnungen über die Vorlage und fährst die Linien mit einem Stift nach. Manche zeichnen direkt auf dem Transfermaterial. Andere nutzen einen Leuchttisch oder ein Fenster, um die Vorlage durch das Papier zu sehen." },
+            { "ul": [
+              "Braucht: die Originalzeichnung, das Transfermaterial und einen dazu passenden Stift.",
+              "Stärke: keine Ausrüstung außer Papier und Stiften, und jede Linie geht durch deine eigene Hand, sodass du unterwegs kleine Entscheidungen triffst.",
+              "Grenze: Es dauert, das Vergrößern oder Verkleinern des Motivs ist ein eigener Schritt, und ein Motiv zu wiederholen geht langsam."
+            ] },
+            { "p": "Eine saubere Linien-Datei hilft auch hier. Du kannst eine helle Kopie in der richtigen Größe auf normales Papier drucken und darüber pausen, was die Größe ohne zweites Werkzeug klärt." }
+          ]
+        },
+        {
+          "h2": "Thermodrucker",
+          "blocks": [
+            { "p": "Thermo-Stencil-Drucker erzeugen mit Hitze statt Tinte das Muster auf einem speziellen mehrlagigen Transferpapier. Der Drucker liest ein digitales Bild oder eine Papiervorlage und erzeugt das Stencil in einem Durchgang. Die Modelle unterscheiden sich in der Anbindung, prüfe also, was deines annimmt, ob USB-Kabel, angeschlossener Computer oder Handy-App." },
+            { "ul": [
+              "Braucht: einen Thermodrucker, passendes Thermo-Transferpapier und eine Datei oder Vorlage zum Drucken.",
+              "Stärke: schnell und gleichmäßig, sobald eingerichtet, und Kopien desselben Motivs sind einfach.",
+              "Grenze: Drucker und Papier kosten Geld, und eine Datei, die etwas zu blass, zu kräftig oder in der falschen Größe ist, druckt genau so."
+            ] },
+            { "p": "Hier zählt eine saubere Linien-Stencil-Datei am meisten. Ein Thermodrucker druckt die Linien, die er bekommt. Grautöne, Hintergrundstruktur und dünne Haarlinien drucken womöglich schlecht oder gar nicht, und eine Datei in der falschen Größe druckt in der falschen Größe. Schwarze Linien auf schlichtem weißem Grund in bekannter Breite lassen dem Drucker am wenigsten Spielraum für Fehler." }
+          ]
+        },
+        {
+          "h2": "Gedruckte Transfers mit normalen Druckern",
+          "blocks": [
+            { "p": "Manche drucken das Stencil mit einem normalen Tintenstrahl- oder Laserdrucker auf Papier, das als Transferschicht funktioniert, oder drucken auf normales Papier und nutzen es als Referenz oder Pausbasis. Was funktioniert, hängt von Druckertyp und Papier ab. Folge also den Anweisungen des Materials und teste ein Blatt, bevor du es ernsthaft nutzt." },
+            { "ul": [
+              "Braucht: einen normalen Drucker, geeignetes transferfähiges Papier für die direkte Übertragung und eine Datei in der richtigen Größe.",
+              "Stärke: Den Drucker besitzt du vielleicht schon, und er druckt hoch aufgelöst.",
+              "Grenze: Das Material muss dafür gemacht sein, normales Büropapier ist kein Transfermaterial, und Druckereinstellungen wie Skalierung können die Größe ändern."
+            ] },
+            { "p": "Wie bei jeder digitalen Methode stelle den Druckdialog auf tatsächliche Größe und miss das Ergebnis. Die Anleitung zum [Drucken in Originalgröße](guide:tattoo-stencil-size-true-size-print) erklärt, wie." }
+          ]
+        },
+        {
+          "h2": "Wann eine saubere Linien-Datei zählt",
+          "blocks": [
+            { "p": "Jede Methode, die von einer digitalen Datei ausgeht, profitiert von einer Datei, die für diese Aufgabe gemacht ist. Eine Stencil-Datei unterscheidet sich in einigen Punkten von einem Foto:" },
+            { "ul": [
+              "Sie besteht nur aus Linien, ohne Schattierung, Papierstruktur oder Hintergrund.",
+              "Die Linien sind dunkel und durchgehend, damit Hitze oder Tinte etwas Festes zum Wiedergeben haben.",
+              "Sie hat eine bekannte Breite und druckt in der mit dem Kunden vereinbarten Größe.",
+              "Schwache Punkte sind entfernt, damit sie auf dem Transfer nicht zu Markierungen werden."
+            ] },
+            { "p": "Ein Tattoo-Stencil-Maker erzeugt diese Art Datei aus einem Foto oder einer Zeichnung. Unsere Anleitung zum [Tattoo Stencil aus Foto oder Zeichnung erstellen](guide:tattoo-stencil-from-photo) führt durch die Regler." }
+          ]
+        },
+        {
+          "h2": "Die Wahl zwischen ihnen",
+          "blocks": [
+            { "p": "Ein paar Fragen entscheiden meist:" },
+            { "ul": [
+              "Wie viele Stencils machst du pro Woche? Höheres Volumen spricht für Ausrüstung, die schnell wiederholt.",
+              "Wie oft skalierst du ein Motiv um? Digitale Methoden machen Größenänderungen einfach, beim Pausen sind sie ein eigener Arbeitsgang.",
+              "Wie viel der Linienarbeit willst du selbst neu zeichnen? Beim Pausen bekommst du das von selbst.",
+              "Was besitzt du schon? Ein vorhandener Drucker ist der günstigste Start, sofern das Papier dazu passt."
+            ] },
+            { "p": "Viele nutzen mehr als eine Methode, zum Beispiel einen gedruckten Umriss für die Hauptformen und Pausen von Hand für feine Details. Nichts hier verlangt ein Entweder-oder." }
+          ]
+        },
+        {
+          "h2": "Die Datei vorbereiten, welche Methode du auch wählst",
+          "blocks": [
+            { "p": "Welchen Weg du auch nimmst, die Vorbereitung der Datei ist dieselbe. Erstelle eine saubere Linienfassung, lege die Breite in Millimetern fest, lade sie in einer für diese Breite scharfen Größe herunter und drucke einen Test auf normalem Papier. Skinstencil ist im Browser kostenlos nutzbar, und es wird nichts hochgeladen. Kostenlose Downloads tragen ein Wasserzeichen und sind auf 800 px begrenzt. Ein Tagespass oder Pro entfernt das Wasserzeichen, erlaubt bis zu 4000 px und speichert die Größe von 300 dpi im PNG." },
+            { "p": "Miss dann den Testdruck mit einem Lineal, bevor du dein Transfermaterial nutzt." }
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Was ist der Unterschied zwischen einer Stencil-Datei und einem Foto?", "a": "Eine Stencil-Datei enthält nur saubere dunkle Linien auf schlichtem Grund in bekannter Größe. Ein Foto hat Tonwerte, Struktur und Hintergrund, die die meisten Übertragungsmethoden nicht nutzen können." },
+        { "q": "Brauche ich einen Thermodrucker, um eine Stencil-Datei zu nutzen?", "a": "Nein. Eine Datei lässt sich auf normales Papier drucken und von Hand durchpausen oder mit einem normalen Drucker auf transferfähiges Papier drucken. Ein Thermodrucker ist eine von mehreren Möglichkeiten." },
+        { "q": "Kann ich ein Stencil auf normales Papier drucken und nachpausen?", "a": "Ja. Ein heller Ausdruck in Originalgröße ist ein gängiger Weg zum Pausen, weil die Größe schon feststeht." },
+        { "q": "Welche Methode soll ich nutzen?", "a": "Das hängt davon ab, wie viele Stencils du machst, welche Ausrüstung du hast und wie du gern arbeitest. Viele kombinieren Methoden." },
+        { "q": "Muss die Datei eine bestimmte Größe haben?", "a": "Sie muss für die gedruckte Breite scharf genug sein. Bei 300 dpi braucht ein Stencil von 100 mm etwa 1181 Pixel. Lege die Breite in Millimetern im Tool fest, und es zeigt die Pixelgröße." }
+      ],
+      "cta": "Erstelle eine saubere Linien-Stencil-Datei und drucke sie mit der Methode, die du nutzt."
+    }
+  }
+}
