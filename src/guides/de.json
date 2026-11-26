@@ -23,6 +23,18 @@
     "tattoo-stencil-from-photo",
     "tattoo-stencil-size-true-size-print",
     "tattoo-stencil-transfer-methods",
+    "ai-tattoo-generator-guide",
+    "ai-tattoo-prompts",
+    "see-a-tattoo-on-your-body-before-you-get-it",
+    "fine-line-tattoo-stencil-tips",
+    "how-to-apply-a-tattoo-stencil",
+    "how-long-does-a-tattoo-stencil-last",
+    "tattoo-stencil-paper-guide",
+    "tattoo-stencil-printer-guide",
+    "tattoo-size-chart-by-body-part",
+    "tattoo-placement-guide",
+    "make-a-tattoo-stencil-at-home",
+    "free-tattoo-stencil-maker-guide",
     "brow-mapping-on-a-photo-start-arch-end",
     "brow-mapping-measurements-scale-and-print-true-size"
   ],
@@ -843,6 +855,2259 @@
         }
       ],
       "cta": "Lege den Maßstab fest, lies die Maße ab und drucke die Brow Mapping Vorlage in Originalgröße. [Brow Mapping öffnen](brow)."
+    },
+    "ai-tattoo-generator-guide": {
+      "title": "KI Tattoo Generator: So nutzt du ihn und bekommst ein Motiv, das dein Tätowierer stechen kann",
+      "short": "KI Tattoo Generator: so nutzt du ihn richtig",
+      "blurb": "Was ein KI Tattoo Generator kann und was nicht, und wie du ein sauberes Motiv für dein Studio-Gespräch bekommst.",
+      "metaTitle": "KI Tattoo Generator: Anleitung für ein stechbares Motiv",
+      "metaDesc": "So nutzt du einen KI Tattoo Generator richtig: klare Beschreibung, saubere Linien, Ergebnis prüfen und als Entwurf zu deinem Tätowierer mitnehmen.",
+      "updated": "2026-11-26",
+      "answer": "Ein KI Tattoo Generator macht aus einer Beschreibung oder einem Beispielbild in Sekunden ein Tattoo-Motiv. Nutze ihn, um Ideen auszuprobieren, und prüfe dann, ob die Linien sauber und die Details nicht zu klein sind. Sieh das Ergebnis als Entwurf und bring es zu deinem Tätowierer, der es für die Haut anpasst.",
+      "sections": [
+        {
+          "h2": "Was ein KI Tattoo Generator wirklich macht",
+          "blocks": [
+            {
+              "p": "Ein KI Tattoo Generator erzeugt aus Worten ein Bild, oder aus einem Bild, das du als Beispiel mitgibst. Du beschreibst die Idee, er liefert ein Motiv, und du kannst die Beschreibung anpassen und es noch einmal versuchen. Mehr ist es nicht: Du bekommst etwas, das du anschauen kannst und worauf du reagieren kannst."
+            },
+            {
+              "p": "Er ist ein schneller Weg, Ideen zu erkunden. Statt deinem Tätowierer eine halbfertige Idee zu beschreiben und zu hoffen, dass ihr beide dasselbe vor Augen habt, kommst du mit etwas Konkretem. Schon ein grobes Motiv macht das Gespräch kürzer, weil du sagen kannst: „mehr so, weniger so“."
+            },
+            {
+              "p": "In Skinstencil erstellt der Generator auf der Startseite ein Motiv aus einer Beschreibung oder einem Beispielbild und zeigt es an 8 Körperstellen und auf 6 Hauttönen. Er kann auch ein Stencil erzeugen, das du in Originalgröße (300 dpi) drucken kannst. Kostenlos zum Ausprobieren."
+            }
+          ]
+        },
+        {
+          "h2": "Was ein KI Tattoo Generator nicht kann",
+          "blocks": [
+            {
+              "p": "Ein generiertes Bild ist ein Bild, kein Tattoo-Plan. Es weiß nicht, wie sich Tinte in der Haut verhält, wie sich dein Körper bewegt oder wie eine Linie in zehn Jahren aussieht. Sei dir über die Grenzen im Klaren, bevor du dich in ein Ergebnis verliebst."
+            },
+            {
+              "ul": [
+                "**Er kann nicht beurteilen, was sich gut stechen lässt.** Sehr kleine Details und haarfeine Abstände sehen am Bildschirm gut aus und können auf der Haut ineinander verlaufen.",
+                "**Er ersetzt deinen Tätowierer nicht.** Platzierung, Größe und Linienführung entscheidet die Person, die die Maschine führt.",
+                "**Er folgt deinen Worten nicht immer genau.** Hände, Schrift und symmetrische Formen sind typische Stellen für seltsame Ergebnisse, also schau genau hin.",
+                "**Er kann ein Motiv nicht im rechtlichen oder persönlichen Sinn einzigartig machen.** Mehr dazu weiter unten."
+              ]
+            },
+            {
+              "p": "Sieh das Ergebnis als Skizze eines schnellen Assistenten. Nützlich, aber nicht fertig."
+            }
+          ]
+        },
+        {
+          "h2": "Schreibe eine Beschreibung, der der Generator folgen kann",
+          "blocks": [
+            {
+              "p": "Vage Worte ergeben vage Motive. Eine gute Beschreibung nennt das Motiv, den Stil, wie kräftig die Linien sind und was du nicht willst. Ein kurzes Beispiel: „ein einzelner Wolfskopf, Traditional-Stil, kräftige Konturen, kein Hintergrund, keine Schattierung“."
+            },
+            {
+              "p": "Wenn du eine Vorlage hast, nutze sie. Ein Beispielbild sagt dem Generator mehr über Stimmung und Aufbau als ein Absatz voller Adjektive. Wähle die Vorlage wegen ihres Stils oder Layouts, nicht, weil du sie nachbauen willst."
+            },
+            {
+              "p": "Eine ausführliche Liste mit Formulierungen, nach Stil sortiert, findest du bei den [KI Tattoo Prompts](guide:ai-tattoo-prompts). Fang dort an, wenn du vor einem leeren Eingabefeld sitzt."
+            }
+          ]
+        },
+        {
+          "h2": "So bekommst du ein Motiv, das ein Tätowierer wirklich stechen kann",
+          "blocks": [
+            {
+              "p": "Der Abstand zwischen einem hübschen Bild und einem tätowierbaren Motiv hat vor allem mit Einfachheit zu tun. Bitte um das, womit Tätowierer täglich arbeiten."
+            },
+            {
+              "ul": [
+                "**Saubere, durchgehende Linien.** Schreibe „saubere Konturen“ oder „klare Linienführung“. Vermeide einen skizzenhaften oder kratzigen Look, es sei denn, genau das ist das Ziel.",
+                "**Kein feines Rauschen.** Pünktchen, feine Schraffur und dutzende kleine Details werden auf der Haut zu Flecken. Bitte um „minimale Details“ oder „keine Textur“.",
+                "**Luft zwischen den Elementen.** Linien, die sich fast berühren, laufen mit der Zeit gern zusammen. Bitte um offene Abstände.",
+                "**Ein schlichter Hintergrund.** Ein Motiv, das frei auf Weiß steht, lässt sich leichter zum Stencil machen als eines mit einer unruhigen Szene dahinter.",
+                "**Eine klare Idee.** Ein einzelnes Hauptmotiv wirkt besser als eine überfüllte Collage."
+              ]
+            },
+            {
+              "p": "Wenn ein Ergebnis fast passt, aber zu unruhig ist, generiere es mit weniger Worten neu, nicht mit mehr. Nimm zuerst Details weg und füge dann zurück, was dir fehlt."
+            }
+          ]
+        },
+        {
+          "h2": "Checkliste vor dem Gespräch mit deinem Tätowierer",
+          "blocks": [
+            {
+              "p": "Nimm dir fünf Minuten für das Motiv, bevor du einen Termin buchst. Zoome hinein und sieh es dir dann klein an, so groß, wie es auf deinem Arm oder Knöchel wirklich wäre."
+            },
+            {
+              "ol": [
+                "**Zoome hinein.** Sind die Linien durchgehend, oder brechen sie auf und wackeln?",
+                "**Verkleinere es.** Drucke es in der geplanten Größe oder sieh es klein am Bildschirm an. Überleben die Details?",
+                "**Prüfe die Abstände.** Liegen irgendwo zwei Linien näher beieinander, als du es verschwommen sehen möchtest?",
+                "**Prüfe die Anatomie.** Zähle Finger, Augen und Blütenblätter. Sieh dir Buchstaben und Symbole einzeln an.",
+                "**Probiere es am Körper.** Sieh es an der Körperstelle, die du im Kopf hast, und auf einem Hautton, der deinem nahekommt.",
+                "**Frag dich, was du ändern würdest.** Notiere zwei oder drei Punkte, die du im Beratungsgespräch ansprechen kannst."
+              ]
+            },
+            {
+              "p": "Beim Größencheck hilft dir das [Stencil Studio](studio): Es macht aus einer Zeichnung, einem Flash oder einem Foto ein Stencil auf deinem Gerät, ohne dass etwas hochgeladen wird. Fürs Drucken siehst du dir [Tattoo Stencil Größe](guide:tattoo-stencil-size-true-size-print) an."
+            }
+          ]
+        },
+        {
+          "h2": "Urheberrecht, Originalität und dein Tätowierer",
+          "blocks": [
+            {
+              "p": "KI-Bilder entstehen aus Mustern, die aus vielen bestehenden Bildern gelernt wurden, und die Regeln dazu, wem sie gehören, sind vielerorts noch ungeklärt. Geh nicht davon aus, dass ein generiertes Motiv automatisch einzigartig ist oder dass niemand Rechte an etwas hält, das ihm ähnelt."
+            },
+            {
+              "p": "Zwei einfache Gewohnheiten halten dich auf der sicheren Seite. Erstens: Bitte den Generator nicht, einen namentlich genannten Künstler oder ein bestimmtes Werk von jemandem zu kopieren, und nutze ihn nicht, um dessen Motiv zu verschleiern. Zweitens: Zeig das Ergebnis deinem Tätowierer und sag offen, dass es aus einem KI-Generator stammt."
+            },
+            {
+              "p": "Ein guter Tätowierer zeichnet es oft neu, ändert die Komposition und bringt seine eigene Handschrift ein. So wird aus einer generierten Idee ein Motiv, das wirklich deins ist. Wenn dein Tätowierer ein Motiv ablehnt, akzeptiere das und frag, was er stattdessen zeichnen würde."
+            }
+          ]
+        },
+        {
+          "h2": "Vom generierten Motiv zum Stencil",
+          "blocks": [
+            {
+              "p": "Wenn du und dein Tätowierer euch auf ein Motiv geeinigt habt, muss daraus ein Stencil werden: eine saubere Kontur, in der richtigen Größe gedruckt. Meist bereitet das dein Tätowierer vor, aber viele kommen gern mit einer druckbaren Version, um es zu beschleunigen."
+            },
+            {
+              "p": "Der Generator kann ein Stencil erzeugen, das du in Originalgröße (300 dpi) drucken kannst. Kostenlose Downloads tragen ein Wasserzeichen, ein Tagespass oder Pro entfernt es. Bring es als Ausgangspunkt mit und lass den Tätowierer entscheiden, ob er es verwendet, neu zeichnet oder am Tag selbst anpasst."
+            },
+            {
+              "p": "Wie das Stencil danach auf die Haut kommt, liest du bei den [Tattoo Stencil Übertragungsmethoden](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kann ich ein KI-generiertes Motiv zu einem Tätowierer mitnehmen?",
+          "a": "Ja, aber sag ihm, woher es kommt. Viele Tätowierer zeichnen es neu oder passen es so an, dass es auf der Haut funktioniert, manche lehnen es ab, und das ist ihre Entscheidung."
+        },
+        {
+          "q": "Sind KI-Tattoo-Motive einzigartig?",
+          "a": "Nicht automatisch. Die Rechtslage zu KI-Bildern ist je nach Land unterschiedlich und noch in Bewegung. Zeig es deinem Tätowierer und bitte nicht um eine Kopie fremder Arbeit."
+        },
+        {
+          "q": "Warum sehen KI-Tattoo-Motive am Bildschirm gut aus und auf der Haut schlecht?",
+          "a": "Bildschirme zeigen haarfeine Details, die die Haut nicht halten kann. Winzige Abstände und feine Texturen verlaufen ineinander, also bitte um saubere Linien und minimale Details."
+        },
+        {
+          "q": "Kann mir ein KI Tattoo Generator das Tattoo an meinem Körper zeigen?",
+          "a": "Manche können das. Der Skinstencil Generator zeigt ein Motiv an 8 Körperstellen und auf 6 Hauttönen und gibt dir so ein ungefähres Gefühl für Platzierung und Kontrast."
+        },
+        {
+          "q": "Ist der Skinstencil KI Tattoo Generator kostenlos?",
+          "a": "Er ist kostenlos zum Ausprobieren. Kostenlose Downloads tragen ein Wasserzeichen, ein Tagespass oder Pro entfernt es."
+        }
+      ],
+      "cta": "Probiere den KI Tattoo Generator auf der Skinstencil Startseite aus, beschreibe deine Idee und sieh sie an deiner Körperstelle, bevor du mit deinem Tätowierer sprichst."
+    },
+    "ai-tattoo-prompts": {
+      "title": "KI Tattoo Prompts: eine Formel und über 25 Beispiele, die funktionieren",
+      "short": "KI Tattoo Prompts: Formel und Beispiele",
+      "blurb": "Eine einfache Prompt-Formel, 25 Beispiel-Prompts nach Stil und was du tust, wenn das Motiv nicht passt.",
+      "metaTitle": "KI Tattoo Prompts: Formel und über 25 Beispiele",
+      "metaDesc": "Bessere KI Tattoo Prompts mit einer Formel aus fünf Teilen und über 25 Beispielen für Fine Line, Traditional, Blackwork, Geometrisch und mehr.",
+      "updated": "2026-11-26",
+      "answer": "Gute KI Tattoo Prompts bestehen aus fünf Teilen: Motiv, Stil, Linienstärke, Komposition und was vermieden werden soll. Zum Beispiel: „ein Fuchs, Fine-Line-Stil, dünne gleichmäßige Linien, zentriert auf schlichtem weißem Hintergrund, keine Schattierung“. Ändere jeweils nur einen Teil, um das Ergebnis zu verbessern.",
+      "sections": [
+        {
+          "h2": "Die Formel für KI Tattoo Prompts",
+          "blocks": [
+            {
+              "p": "Die besten KI Tattoo Prompts sind kurz und konkret. Die meisten schwachen Ergebnisse entstehen, weil ein Teil fehlt und der Generator die Lücke mit einer eigenen Vermutung füllt. Nutze diese fünf Teile, ungefähr in dieser Reihenfolge:"
+            },
+            {
+              "ol": [
+                "**Motiv.** Was es ist. „Ein Reiher im Wasser“ schlägt „ein Vogel“.",
+                "**Stil.** Fine Line, Traditional, Blackwork, geometrisch, Lettering, botanisch und so weiter.",
+                "**Linienstärke.** Dünn, mittel oder kräftig, gleichmäßig oder abwechslungsreich.",
+                "**Komposition.** Zentriert, hochkant, umlaufend, mit oder ohne Rahmen, schlichter Hintergrund.",
+                "**Was vermieden werden soll.** Keine Schattierung, kein Text, kein Hintergrund, keine winzigen Details."
+              ]
+            },
+            {
+              "p": "Zusammengesetzt: „ein Reiher im Wasser, Fine-Line-Stil, dünne gleichmäßige Linien, Hochformat auf schlichtem weißem Hintergrund, keine Schattierung, keine winzigen Details“."
+            },
+            {
+              "p": "Du brauchst nicht immer alle Teile. Aber wenn dich ein Ergebnis enttäuscht, prüfe, welchen der fünf du ausgelassen hast."
+            }
+          ]
+        },
+        {
+          "h2": "Fine Line Prompts",
+          "blocks": [
+            {
+              "p": "Fine-Line-Motive leben von dünnen, gleichmäßigen Strichen und viel Weißraum. Sag das ausdrücklich und bitte den Generator, auf dichte Flächen zu verzichten."
+            },
+            {
+              "ul": [
+                "Eine Ein-Linien-Zeichnung eines Frauengesichts, Fine-Line-Stil, eine durchgehende dünne Linie, schlichter weißer Hintergrund",
+                "Ein kleiner Sichelmond mit drei Sternen, Fine Line, dünne gleichmäßige Linien, minimal, keine Schattierung",
+                "Ein Kolibri neben einer Blume, Fine-Line-Stil, zarte dünne Konturen, keine Füllung, weißer Hintergrund",
+                "Eine Bergkette bei Sonnenaufgang, Fine Line, dünne Linien, einfacher Horizont, keine Hintergrundtextur",
+                "Zwei Hände, die sich fast berühren, Fine-Line-Stil, dünne Konturen, minimale Details, zentriert"
+              ]
+            },
+            {
+              "p": "Warum dieser Stil besondere Sorgfalt braucht, liest du bei den [Fine Line Tattoo Stencil Tipps](guide:fine-line-tattoo-stencil-tips)."
+            }
+          ]
+        },
+        {
+          "h2": "Traditional und Blackwork Prompts",
+          "blocks": [
+            {
+              "p": "Traditional heißt kräftige Konturen und flache Farbflächen. Blackwork heißt massives Schwarz und starke Kontraste. Beide brauchen kräftige Linien, also bitte darum."
+            },
+            {
+              "table": {
+                "head": [
+                  "Stil",
+                  "Beispiel-Prompt"
+                ],
+                "rows": [
+                  [
+                    "Traditional",
+                    "Eine Rose mit zwei Blättern, Traditional-Tattoo-Stil, kräftige schwarze Konturen, flache Schattierung, schlichter weißer Hintergrund"
+                  ],
+                  [
+                    "Traditional",
+                    "Eine Schwalbe, die ein Banner trägt, Traditional-Stil, dicke Konturen, einfache Formen, zentriert"
+                  ],
+                  [
+                    "Traditional",
+                    "Ein Dolch durch ein Herz, Traditional-Tattoo-Flash, kräftige Linien, keine Verläufe"
+                  ],
+                  [
+                    "Traditional",
+                    "Ein Schiff in rauen Wellen, Traditional-Stil, schwere Konturen, wenige Details"
+                  ],
+                  [
+                    "Blackwork",
+                    "Ein Rabe mit offenen Flügeln, Blackwork-Stil, massive schwarze Füllung, hoher Kontrast, keine Verläufe"
+                  ],
+                  [
+                    "Blackwork",
+                    "Eine Schlange, die sich um einen Dolch windet, Blackwork, kräftige schwarze Formen, saubere Kanten"
+                  ],
+                  [
+                    "Blackwork",
+                    "Ein Vollmond über Kiefern, Blackwork-Stil, starker Schwarz-Weiß-Kontrast, keine Graustufen"
+                  ],
+                  [
+                    "Blackwork",
+                    "Ein Totenkopf mit Blumendetails, Blackwork, massives Schwarz und sauberes Linienmuster, schlichter Hintergrund"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "h2": "Geometrische und Lettering Prompts",
+          "blocks": [
+            {
+              "p": "Geometrische Motive hängen an präzisen Formen, Lettering an lesbaren Buchstaben. Hier patzen Generatoren am häufigsten, also halte die Anfrage einfach und prüfe das Ergebnis genau."
+            },
+            {
+              "ul": [
+                "Ein Wolfskopf aus Dreiecken, geometrischer Stil, dünne präzise Linien, symmetrisch, weißer Hintergrund",
+                "Ein Mandala mit achtfacher Symmetrie, geometrisch, mittlere Linienstärke, keine Schattierung",
+                "Ein Sechseck-Muster, das einen Würfel bildet, geometrische Line Art, saubere gerade Linien, minimal",
+                "Ein geometrischer Hirsch mit Geweih aus überlappenden Linien, dünne Linien, zentriert",
+                "Das Wort „Atme“ in eleganter Schreibschrift, dünnes Lettering, schlichter weißer Hintergrund, keine Verzierung",
+                "Das Wort „Familie“ in kräftigem gotischem Lettering, dicke Striche, kein Hintergrund, keine Effekte",
+                "Ein kurzes Datum in römischen Ziffern, sauberes Serifen-Lettering, gleichmäßige Abstände, kein Schnörkel"
+              ]
+            },
+            {
+              "p": "Lies bei Text immer jeden Buchstaben im Ergebnis nach. Generatoren können Zeichen vertauschen oder erfinden. Viele lassen das Motiv ohne Text erstellen und fügen die Schrift im Stencil-Schritt hinzu oder lassen die Buchstaben vom Tätowierer zeichnen."
+            }
+          ]
+        },
+        {
+          "h2": "Botanische und Tier-Prompts",
+          "blocks": [
+            {
+              "p": "Pflanzen und Tiere sind dankbare Motive. Sie passen zu fast jedem Stil, also nenne den Stil klar und entscheide, wie viel Detail du willst."
+            },
+            {
+              "ul": [
+                "Ein Lavendelzweig, botanische Illustration, dünne Linien, keine Farbe, schlichter Hintergrund",
+                "Ein Olivenzweig, Fine-Line-Botanik, zarte Konturen, Hochformat",
+                "Eine voll erblühte Pfingstrose, botanische Line Art, mittlere Linien, einfache Blütenblätter, keine Schattierung",
+                "Ein Wildblumenstrauß mit Schleife, Fine Line, dünne gleichmäßige Striche, weißer Hintergrund",
+                "Ein Farn, der sich an der Spitze einrollt, botanischer Stil, saubere Linien, minimale Details",
+                "Eine schlafende Katze, zu einem Kreis zusammengerollt, einfache Line Art, mittlere Linienstärke, keine Fellstruktur",
+                "Ein Löwe im Profil, Traditional-Stil, kräftige Konturen, flache Formen, kein Hintergrund",
+                "Ein Koi, der nach oben schwimmt, saubere Konturen, mittlere Linien, einfache Schuppen, weißer Hintergrund",
+                "Ein Schmetterling mit offenen Flügeln, symmetrische Line Art, dünne Linien, keine Füllung",
+                "Eine Eule von vorn, Blackwork-Stil, massive Formen, saubere Kanten"
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Häufige Prompt-Fehler",
+          "blocks": [
+            {
+              "ul": [
+                "**Zu vage.** „Ein cooles Tattoo“ liefert dir die durchschnittliche Vorstellung des Generators von cool.",
+                "**Zu überladen.** Zehn Motive und sechs Stile ergeben ein Durcheinander. Wähle ein Motiv und einen Stil.",
+                "**Realismus und Fine Line zugleich verlangen.** Fotorealistische Schattierung und dünne Konturen ziehen in entgegengesetzte Richtungen.",
+                "**Den Hintergrund vergessen.** Wenn du ein sauberes Stencil willst, schreibe „schlichter weißer Hintergrund“.",
+                "**Winzige Details verlangen.** Wörter wie „aufwendig“ und „hochdetailliert“ erzeugen oft genau das Rauschen, das auf der Haut verläuft.",
+                "**Den Stil eines lebenden Künstlers nennen.** Besser beschreibst du den Look in einfachen Worten und kopierst niemanden."
+              ]
+            },
+            {
+              "p": "Positive und negative Anweisungen arbeiten zusammen. Sag, was du willst, und dann, was wegbleiben soll."
+            }
+          ]
+        },
+        {
+          "h2": "So verbesserst du Schritt für Schritt",
+          "blocks": [
+            {
+              "p": "Sieh das erste Ergebnis als Entwurf. Ändere jeweils nur einen Teil des Prompts, damit du weißt, was welchen Unterschied bewirkt hat."
+            },
+            {
+              "ol": [
+                "Erzeuge eine erste Version mit allen fünf Teilen.",
+                "Wenn das Motiv falsch ist, schreibe nur das Motiv neu.",
+                "Wenn es zu unruhig ist, füge „minimale Details“ und „keine Schattierung“ hinzu oder streiche Adjektive.",
+                "Wenn die Linien zu kräftig oder zu dünn sind, ändere nur das Wort für die Linienstärke.",
+                "Wenn es gut aussieht, sieh es dir klein und an der geplanten Körperstelle an."
+              ]
+            },
+            {
+              "p": "Du kannst auch mit einem Beispielbild starten und eine kurze Beschreibung ergänzen. Der Skinstencil Generator nimmt Beschreibung und Beispielbild an und zeigt das Motiv an 8 Körperstellen und auf 6 Hauttönen. Kostenlos zum Ausprobieren; kostenlose Downloads tragen ein Wasserzeichen."
+            },
+            {
+              "p": "Geh das Ergebnis in jedem Fall mit der Checkliste in unserer [Anleitung zum KI Tattoo Generator](guide:ai-tattoo-generator-guide) durch und zeig es deinem Tätowierer."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Was macht einen guten KI Tattoo Prompt aus?",
+          "a": "Ein guter Prompt nennt Motiv, Stil, Linienstärke, Komposition und was vermieden werden soll. Kurz und konkret schlägt lang und vage."
+        },
+        {
+          "q": "Wie lang sollte ein KI Tattoo Prompt sein?",
+          "a": "Meist reichen ein oder zwei Zeilen. Zusätzliche Adjektive bringen eher Rauschen als Qualität."
+        },
+        {
+          "q": "Wie vermeide ich zu viele Details im KI-Tattoo?",
+          "a": "Füge Formulierungen wie „minimale Details“, „keine Schattierung“ und „schlichter weißer Hintergrund“ hinzu und meide Wörter wie „aufwendig“."
+        },
+        {
+          "q": "Kann ich ein Bild statt eines Prompts verwenden?",
+          "a": "Ja. Der Skinstencil Generator kann mit einem Beispielbild arbeiten, mit oder ohne kurze Beschreibung."
+        },
+        {
+          "q": "Warum sieht der Text in meinem KI-Tattoo falsch aus?",
+          "a": "Generatoren schreiben Buchstaben oft falsch oder verzerren sie. Prüfe jedes Zeichen, oder lass den Text weg und die Schrift von deinem Tätowierer zeichnen."
+        }
+      ],
+      "cta": "Füge einen dieser Prompts in den Skinstencil KI Generator ein, sieh das Motiv an deiner Körperstelle und mach ein Stencil daraus, das du drucken kannst."
+    },
+    "see-a-tattoo-on-your-body-before-you-get-it": {
+      "title": "Tattoo Vorschau: Tattoo am Körper ansehen, bevor du es stechen lässt (4 Wege)",
+      "short": "Tattoo Vorschau am eigenen Körper",
+      "blurb": "Vier Wege, ein Tattoo auf der Haut zu testen, was eine Vorschau nicht zeigen kann, und eine Checkliste fürs Beratungsgespräch.",
+      "metaTitle": "Tattoo Vorschau: Tattoo am Körper ansehen vor dem Stechen",
+      "metaDesc": "Vier Wege für eine Tattoo Vorschau am eigenen Körper: App, Foto, temporäre Übertragung und Stencil auf der Haut. Und was keine Vorschau zeigt.",
+      "updated": "2026-11-26",
+      "answer": "Du kannst ein Tattoo vor dem Stechen am Körper ansehen, indem du das Motiv auf ein Foto legst, eine Vorschau-App oder einen Generator nutzt, es in Originalgröße ausdruckst und an die Haut hältst oder dir vom Tätowierer ein Stencil aufsetzen lässt. Jeder Weg zeigt etwas anderes, und keiner zeigt, wie es heilt.",
+      "sections": [
+        {
+          "h2": "Warum du ein Tattoo am Körper ansehen solltest, bevor du dich entscheidest",
+          "blocks": [
+            {
+              "p": "Für eine echte Tattoo Vorschau am Körper brauchst du mehr als einen Bildschirm. Ein Motiv, das am Bildschirm perfekt aussieht, kann sich am Unterarm falsch anfühlen. Es ist vielleicht zu groß, sitzt zu hoch oder in einem Winkel, der gegen deinen Muskel arbeitet. Der Sinn einer Vorschau ist, das herauszufinden, solange sich noch alles kostenlos ändern lässt."
+            },
+            {
+              "p": "Sie hilft auch im Gespräch mit deinem Tätowierer. Auf den eigenen Arm zu zeigen und zu sagen „hier, ungefähr so breit“ ist klarer als jede Beschreibung. Die meisten Menschen müssen ein Tattoo an ihrem Körper sehen, bevor die Idee real wirkt, und das ist ein guter Instinkt."
+            },
+            {
+              "p": "Die vier Wege unten gehen vom schnellsten zum zuverlässigsten. Du brauchst nicht alle, aber je dauerhafter und sichtbarer die Stelle, desto mehr davon solltest du nutzen."
+            },
+            {
+              "p": "Jeder Schritt beantwortet eine andere Frage. Ein Foto beantwortet, ob dir die Idee gefällt. Ein Ausdruck beantwortet, ob die Größe stimmt. Eine temporäre Version beantwortet, ob du gern damit lebst. Das Stencil des Tätowierers beantwortet, ob die Platzierung an deinem Körper funktioniert."
+            }
+          ]
+        },
+        {
+          "h2": "Weg 1: Vorschau auf einem Foto oder in einer App",
+          "blocks": [
+            {
+              "p": "Am schnellsten legst du das Motiv auf ein Foto von dir. Manche Tools lassen dich ein Motiv auf ein Bild setzen, andere zeigen es stattdessen an einem Modellkörper."
+            },
+            {
+              "p": "Der Skinstencil KI Generator auf der Startseite erstellt ein Motiv aus einer Beschreibung oder einem Beispielbild und zeigt es an 8 Körperstellen und auf 6 Hauttönen. So bekommst du schnell ein Gefühl für Platzierung und Kontrast, bevor du irgendetwas entscheidest. Kostenlos zum Ausprobieren."
+            },
+            {
+              "p": "Wenn du eine Vorschau auf deinem eigenen Foto machst, fotografiere frontal, bei gleichmäßigem Licht und mit entspannter Körperstelle. Ein Foto aus einem schiefen Winkel verzerrt die Vorschau."
+            },
+            {
+              "p": "Eine Bildschirmvorschau eignet sich gut für Komposition und Idee. Bei der echten Größe ist sie schwach, also geh zu den nächsten Schritten, bevor du dich festlegst."
+            }
+          ]
+        },
+        {
+          "h2": "Weg 2: in Originalgröße drucken und an die Haut halten",
+          "blocks": [
+            {
+              "p": "Die Größe wird am Bildschirm am häufigsten falsch eingeschätzt. Drucke das Motiv in der echten Breite, schneide es aus und halte es an deine Haut oder klebe es locker an. Du siehst sofort, ob es zu groß oder zu klein ist."
+            },
+            {
+              "p": "Um in der richtigen Größe zu drucken, legst du sie in Millimetern fest und druckst mit 100 Prozent ohne Skalierung. Unsere Anleitung zur [Tattoo Stencil Größe](guide:tattoo-stencil-size-true-size-print) zeigt, wie, und der Skinstencil Generator kann ein Stencil erzeugen, das du in Originalgröße (300 dpi) drucken kannst."
+            },
+            {
+              "p": "Das kostet nur Papier und dauert zehn Minuten. Für die meisten ist es der nützlichste Schritt."
+            }
+          ]
+        },
+        {
+          "h2": "Weg 3: temporäre Übertragung oder aufgezeichnete Probe",
+          "blocks": [
+            {
+              "p": "Um es ein oder zwei Tage auf der Haut zu sehen, kannst du ein temporäres Tattoo aus deinem eigenen Motiv verwenden oder die Kontur mit einem hautverträglichen Stift aufzeichnen. Wenn du es zu Hause trägst, siehst du, wie es aussieht, wenn du dich bewegst, sitzt und anziehst."
+            },
+            {
+              "p": "Nimm Produkte, die für die Haut gemacht sind, und halte dich an die Anleitung. Wenn du empfindliche Haut oder eine Hauterkrankung hast, frag deinen Tätowierer oder Apotheker, was für dich geeignet ist."
+            }
+          ]
+        },
+        {
+          "h2": "Weg 4: ein Stencil, das dein Tätowierer aufsetzt",
+          "blocks": [
+            {
+              "p": "Die zuverlässigste Vorschau ist das echte Stencil, positioniert von der Person, die dich tätowiert. Tätowierer setzen es meist auf, lassen dich aufstehen und bewegen und korrigieren, bis es sitzt. Lass dich hier nicht hetzen. Sieh im Spiegel aus mehreren Winkeln hin."
+            },
+            {
+              "p": "Prüfe die Ränder genauso wie die Mitte. Ein Motiv kann von vorn ausgewogen wirken und sich beim Drehen zu einer Seite neigen. Wenn sich etwas falsch anfühlt, sag es. Ein Stencil zu verschieben ist leicht, ein Tattoo nicht."
+            },
+            {
+              "p": "Du kannst dein eigenes Stencil als Ausgangspunkt mitbringen, und dein Tätowierer entscheidet, ob er es nutzt. Wie ein Stencil auf die Haut kommt, siehst du bei den [Tattoo Stencil Übertragungsmethoden](guide:tattoo-stencil-transfer-methods). Wenn du nur ein Foto oder eine Zeichnung hast, macht das [Stencil Studio](studio) daraus ein Stencil auf deinem Gerät, ohne dass etwas hochgeladen wird."
+            }
+          ]
+        },
+        {
+          "h2": "Was eine Vorschau nicht zeigen kann",
+          "blocks": [
+            {
+              "p": "Sei ehrlich zu den Grenzen. Eine Vorschau ist ein Bild von Tag eins, und ein Tattoo ist etwas für die lange Zeit."
+            },
+            {
+              "ul": [
+                "**Heilung.** Die Haut verändert sich beim Heilen, und Linien können danach anders aussehen. Dein Tätowierer sagt dir, was du erwarten kannst.",
+                "**Alterung.** Linien werden über die Jahre weicher, und feine Details verlaufen zuerst.",
+                "**Bewegung.** Ein flaches Bild biegt sich nicht mit deinem Körper. Ein Motiv an Gelenk, Rippen oder Schulter kann in Bewegung anders aussehen.",
+                "**Wie Tinte in deiner Haut sitzt.** Dasselbe Motiv kann an verschiedenen Körpern unterschiedlich aussehen.",
+                "**Deine eigene Reaktion nach einer Woche.** Wenn es dir nach mehreren Tagen mit der Vorschau immer noch gefällt, ist das ein gutes Zeichen."
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Wie Platzierung, Größe und Hautton den Look verändern",
+          "blocks": [
+            {
+              "p": "Dasselbe Motiv kann sehr unterschiedlich wirken, je nachdem, wohin es kommt, wie groß es ist und auf welcher Haut es sitzt."
+            },
+            {
+              "table": {
+                "head": [
+                  "Faktor",
+                  "Worauf du achten solltest"
+                ],
+                "rows": [
+                  [
+                    "Platzierung",
+                    "Flache Stellen erhalten ein Motiv unverändert. Gewölbte oder sich dehnende Stellen können es verzerren, also prüfe es in Bewegung."
+                  ],
+                  [
+                    "Größe",
+                    "Kleine Größen verlieren Details. Größere können überwältigen. Drucke es aus und halte es an."
+                  ],
+                  [
+                    "Hautton",
+                    "Der Kontrast zwischen Tinte und Haut bestimmt, wie klar ein Motiv wirkt. Sieh die Vorschau auf einem Hautton, der deinem nahekommt."
+                  ],
+                  [
+                    "Ausrichtung",
+                    "Prüfe, in welche Richtung das Motiv zeigt und wie es mit der Körperstelle fließt."
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Nutze die 6 Hauttöne im Skinstencil Generator zum Vergleichen, und denk daran, dass eine Vorschau am Bildschirm der Wirklichkeit nur nahekommt."
+            }
+          ]
+        },
+        {
+          "h2": "Checkliste fürs Beratungsgespräch",
+          "blocks": [
+            {
+              "ol": [
+                "Bring das Motiv mit, und einen Ausdruck in Originalgröße, wenn du einen hast.",
+                "Bring Fotos der Körperstelle mit, frontal und bei gutem Licht aufgenommen.",
+                "Frag, wo dein Tätowierer es platzieren würde und warum.",
+                "Frag, ob ein Detail zu klein ist, um zu halten, und was er vereinfachen würde.",
+                "Sieh dir das Stencil im Spiegel an, im Stehen und in Bewegung.",
+                "Frag nach Heilung und Nachsorge und halte dich an den Rat deines Tätowierers.",
+                "Nimm dir Zeit. Wenn du unsicher bist, warte eine Woche und sieh noch einmal hin."
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wie sehe ich, wie ein Tattoo an mir aussieht?",
+          "a": "Lege das Motiv auf ein Foto oder in ein Vorschau-Tool, drucke es in Originalgröße und halte es an die Haut, und lass dir vom Tätowierer das Stencil aufsetzen, bevor das Tattoo beginnt."
+        },
+        {
+          "q": "Sind Tattoo-Vorschau-Apps genau?",
+          "a": "Für Platzierung und Komposition sind sie gut, bei Originalgröße und Heilung selten. Prüfe immer zusätzlich mit einem gedruckten Stencil."
+        },
+        {
+          "q": "Kann ich ein Tattoo-Motiv mit einem temporären Tattoo testen?",
+          "a": "Ja. Mit einer temporären Übertragung oder einer Kontur aus hautverträglichem Stift kannst du das Motiv ein oder zwei Tage tragen. Frag deinen Tätowierer oder Apotheker, wenn deine Haut empfindlich ist."
+        },
+        {
+          "q": "Was kann eine Tattoo Vorschau nicht zeigen?",
+          "a": "Sie zeigt nicht die Heilung, nicht wie die Linien altern und nicht genau, wie sich das Motiv mit deinem Körper bewegt."
+        },
+        {
+          "q": "Verändert der Hautton, wie ein Tattoo aussieht?",
+          "a": "Ja. Der Kontrast zwischen Tinte und Haut beeinflusst, wie ein Motiv wirkt, also sieh die Vorschau auf einem Hautton, der deinem nahekommt."
+        }
+      ],
+      "cta": "Erstelle ein Motiv im Skinstencil Generator, sieh es an 8 Körperstellen und auf 6 Hauttönen und drucke das Stencil dann in Originalgröße."
+    },
+    "fine-line-tattoo-stencil-tips": {
+      "title": "Fine Line Tattoo Stencil: Tipps für saubere, druckbare Linien",
+      "short": "Fine Line Tattoo Stencil Tipps",
+      "blurb": "Warum Fine Line ein sehr sauberes Stencil braucht, wie dünn zu dünn ist und wie du vor dem Drucken prüfst.",
+      "metaTitle": "Fine Line Tattoo Stencil: Tipps für saubere Linien",
+      "metaDesc": "Ein Fine Line Tattoo Stencil, das sauber druckt: Linienstärke in mm, Abstände, was Verkleinern mit Details macht, und eine Checkliste vor dem Druck.",
+      "updated": "2026-11-26",
+      "answer": "Ein Fine Line Tattoo Stencil braucht saubere, gleichmäßige, durchgehende Linien mit offenen Abständen, weil dünne Striche keinen Spielraum für Fehler lassen. Prüfe die Linienstärke in der echten Druckgröße, lass die Abstände zwischen den Linien breit genug, damit sie getrennt bleiben, und vereinfache Details, die beim Verkleinern zum Fleck werden.",
+      "sections": [
+        {
+          "h2": "Warum ein Fine Line Tattoo Stencil sehr sauber sein muss",
+          "blocks": [
+            {
+              "p": "Ein Fine Line Tattoo Stencil lässt weniger Spielraum für Fehler als ein kräftiges Motiv. Eine dicke Kontur verbirgt einen leicht wackeligen Rand. Eine dünne Linie zeigt jedes Wackeln, jeden Bruch und jedes verirrte Pünktchen."
+            },
+            {
+              "p": "Das Stencil ist die Vorlage, der dein Tätowierer folgt. Hat es unterbrochene Striche, unscharfe Kanten oder Rauschen, muss der Tätowierer raten, welche Striche gewollt sind. Ein sauberes Stencil macht dieses Raten überflüssig und hält das Ergebnis näher an dem Motiv, das du gewählt hast."
+            },
+            {
+              "p": "Deshalb verdient Fine Line schon bei der Vorbereitung etwas mehr Sorgfalt, bevor überhaupt Tinte im Spiel ist."
+            },
+            {
+              "p": "Das gilt auch für die Quelle des Stencils. Eine saubere Zeichnung, ein ordentlicher Flash-Bogen oder ein klares Foto ergeben ein saubereres Ergebnis als ein unscharfer Screenshot. Ein guter Start spart später am meisten Zeit."
+            }
+          ]
+        },
+        {
+          "h2": "Linienstärke in Millimetern: Bildschirm gegenüber Haut",
+          "blocks": [
+            {
+              "p": "Am Bildschirm wird die Linienstärke in Pixeln gemessen und ändert sich beim Zoomen. Auf Papier und Haut wird sie in Millimetern gemessen und ist fest. Beides zu vermischen ist eine häufige Quelle für Überraschungen."
+            },
+            {
+              "p": "Bei 300 dpi ist ein Pixel etwa 0,085 mm breit (25,4 geteilt durch 300). So kannst du ausrechnen, was aus einer Bildschirmlinie beim Druck in Originalgröße wird:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Linienbreite in Pixeln",
+                  "Gedruckte Breite bei 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "1 px",
+                    "etwa 0,08 mm"
+                  ],
+                  [
+                    "3 px",
+                    "etwa 0,25 mm"
+                  ],
+                  [
+                    "6 px",
+                    "etwa 0,51 mm"
+                  ],
+                  [
+                    "12 px",
+                    "etwa 1,02 mm"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Das sagt dir, wie das Stencil auf Papier aussieht. Welche Linienstärke ein Tattoo an einer bestimmten Körperstelle halten kann, ist eine Frage an deinen Tätowierer, der seine Nadeln und deine Haut kennt. Frag nach der dünnsten Linie, die er dort gern sticht."
+            }
+          ]
+        },
+        {
+          "h2": "Abstände zwischen den Linien",
+          "blocks": [
+            {
+              "p": "Die Zwischenräume zählen genauso wie die Linien. Zwei dünne Linien, die sehr dicht beieinander liegen, können an Tag eins gut aussehen und ineinander laufen, wenn sich das Tattoo setzt."
+            },
+            {
+              "ul": [
+                "Lass zwischen parallelen Linien klaren Abstand. Wenn ein Abstand auf dem Ausdruck eng wirkt, ist er zu eng.",
+                "Vermeide Schraffur und feine Textur, die in kleine Flächen gepackt sind.",
+                "Gib Blütenblättern, Federn und Schnörkeln Luft zum Atmen.",
+                "Wenn du Dichte willst, erzeuge sie mit weniger, bewussteren Linien."
+              ]
+            },
+            {
+              "p": "Im Zweifel bitte deinen Tätowierer, sich die engste Stelle im Motiv anzusehen und zu sagen, ob sie hält."
+            }
+          ]
+        },
+        {
+          "h2": "Wie beim Verkleinern Details verloren gehen",
+          "blocks": [
+            {
+              "p": "Wenn du ein Motiv verkleinerst, schrumpft alles zusammen: Die Linien werden dünner und die Abstände schmaler. Ein Motiv, das für eine große Fläche gezeichnet wurde, kann bei halber Größe zu Matsch werden."
+            },
+            {
+              "p": "Viel Fine-Line-Arbeit sitzt klein, an Handgelenken, Fingern, hinter dem Ohr. Dort schlägt das am stärksten zu. Kleine Stellen sind außerdem oft gewölbt, und das macht enge Abstände noch weniger verzeihend."
+            },
+            {
+              "ol": [
+                "Lege zuerst die endgültige Breite in Millimetern fest.",
+                "Beurteile das Motiv in dieser Größe, nicht herangezoomt.",
+                "Wenn Linien verlaufen oder Abstände zulaufen, nimm Details weg, statt nur weiter zu verkleinern.",
+                "Oder mach das Tattoo etwas größer, damit die Details Platz haben."
+              ]
+            },
+            {
+              "p": "Unsere Anleitung zur [Tattoo Stencil Größe](guide:tattoo-stencil-size-true-size-print) erklärt Millimeter und Pixel und wie du mit 100 Prozent druckst."
+            }
+          ]
+        },
+        {
+          "h2": "So prüfst du ein Stencil vor dem Drucken",
+          "blocks": [
+            {
+              "p": "Ein kurzer Check spart einen verschwendeten Bogen und einen zweiten Weg zu deinem Tätowierer. Mach ihn jedes Mal, auch wenn das Motiv auf den ersten Blick gut aussieht, denn Probleme bei dünnen Linien übersieht man auf einem hellen Bildschirm leicht."
+            },
+            {
+              "ol": [
+                "**Zoome auf 100 Prozent und sieh dir die Kanten an.** Sie sollten glatt sein, nicht treppenförmig.",
+                "**Suche nach Unterbrechungen.** Eine Linie, die durchgehen sollte, aber eine Lücke hat, druckt mit Lücke.",
+                "**Suche nach Pünktchen.** Winzige Punkte, die von einem Foto oder Scan übrig sind, werden mitgedruckt.",
+                "**Sieh es in Originalgröße an.** Halte den Bildschirm auf Armlänge in ähnlicher Größe oder drucke eine Testkopie.",
+                "**Prüfe die engste Stelle.** Such die zwei Linien, die am dichtesten beieinander liegen, und beurteile sie.",
+                "**Miss den Ausdruck.** Bestätige die Breite mit einem Lineal."
+              ]
+            },
+            {
+              "p": "Das [Stencil Studio](studio) macht aus deiner eigenen Zeichnung, deinem Flash oder deinem Foto ein Stencil auf deinem Gerät, ohne Upload. Wenn du von einem Foto ausgehst, zeigt dir [Tattoo Stencil aus Foto](guide:tattoo-stencil-from-photo), wie du saubere Linien herausholst."
+            }
+          ]
+        },
+        {
+          "h2": "Häufige Fehler bei Fine Line Stencils",
+          "blocks": [
+            {
+              "ul": [
+                "**Ein Bild mit niedriger Auflösung nutzen.** Dünne Linien auf einem kleinen Bild drucken gezackt. Starte mit einer größeren, schärferen Datei.",
+                "**Ein unruhiges Foto nachzeichnen.** Hautstruktur, Schatten und Hintergründe werden im Stencil zu Rauschen.",
+                "**Hinterher skalieren.** Eine gedruckte Kopie zu vergrößern oder den Drucker auf Seitengröße anpassen zu lassen verändert jede Linie.",
+                "**Zu viele feine Details zeichnen.** Zehn winzige Elemente wirken nur am Bildschirm elegant.",
+                "**Die Meinung des Tätowierers auslassen.** Er sieht Probleme, die du nicht siehst.",
+                "**Nur auf einem hellen Bildschirm urteilen.** Ein hinterleuchteter Bildschirm lässt dünne Linien kräftiger wirken als Papier."
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Wann du vereinfachen solltest",
+          "blocks": [
+            {
+              "p": "Wenn du auf dem Ausdruck die Augen zusammenkneifen musst, um ein Detail zu sehen, hält es auf der Haut wahrscheinlich nicht. Vereinfachen heißt nicht, das Motiv aufzugeben. So bleibt ein Fine-Line-Motiv klar."
+            },
+            {
+              "ul": [
+                "Fasse mehrere kleine Formen zu einer zusammen.",
+                "Lass die Schattierung weg und nutze nur die saubere Kontur.",
+                "Ersetze eine dichte Textur durch wenige kräftige Linien.",
+                "Vergrößere es leicht.",
+                "Wähle eine Stelle mit flacherer Haut."
+              ]
+            },
+            {
+              "p": "Vereinfache vor dem Drucken, nicht danach. Es ist viel leichter, ein Detail aus dem Motiv zu entfernen, als deinem Tätowierer zu erklären, warum eine gedruckte Linie verschwunden ist. Ein einfacheres Stencil gibt deinem Tätowierer außerdem mehr Freiheit, es am Tag selbst an deinen Körper anzupassen."
+            },
+            {
+              "p": "Wenn du ein Motiv mit dem Skinstencil Generator erstellst, kannst du „dünne gleichmäßige Linien, minimale Details, keine Schattierung“ verlangen und es an 8 Körperstellen und auf 6 Hauttönen ansehen. Er erzeugt ein Stencil, das du in Originalgröße (300 dpi) drucken kannst. Kostenlos zum Ausprobieren; kostenlose Downloads tragen ein Wasserzeichen, ein Tagespass oder Pro entfernt es."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Was ist ein Fine Line Tattoo Stencil?",
+          "a": "Es ist ein Stencil für ein Motiv aus dünnen, zarten Linien. Weil die Linien dünn sind, muss das Stencil sauber, durchgehend und frei von Rauschen sein."
+        },
+        {
+          "q": "Wie dünn darf eine Tattoo-Linie sein?",
+          "a": "Das hängt vom Tätowierer, den Nadeln und der Körperstelle ab. Frag deinen Tätowierer nach der dünnsten Linie, die er dort gern sticht, wo du es willst."
+        },
+        {
+          "q": "Warum sieht mein Fine Line Motiv klein gedruckt verschwommen aus?",
+          "a": "Beim Verkleinern schrumpfen Linienbreite und Abstände zugleich, und Details verschmelzen. Vereinfache das Motiv oder drucke es etwas größer."
+        },
+        {
+          "q": "Welche Auflösung sollte ein Fine Line Stencil haben?",
+          "a": "Drucke mit 300 dpi in Originalgröße, damit dünne Linien glatt bleiben. Nimm ein scharfes Ausgangsbild, statt ein kleines aufzublasen."
+        },
+        {
+          "q": "Kann ich ein Fine Line Stencil aus einem Foto machen?",
+          "a": "Ja, aber ein unruhiges Foto bringt Rauschen. Nimm ein klares Foto oder eine Zeichnung und prüfe das Ergebnis vor dem Drucken auf Pünktchen und Unterbrechungen."
+        }
+      ],
+      "cta": "Öffne das Skinstencil Studio, mach aus deiner Zeichnung ein sauberes Stencil auf deinem Gerät und prüfe es in Originalgröße, bevor du druckst."
+    },
+    "how-to-apply-a-tattoo-stencil": {
+      "title": "Tattoo Stencil auftragen: Haut vorbereiten, platzieren und abziehen",
+      "short": "Tattoo Stencil auftragen",
+      "blurb": "Schritt für Schritt: Haut vorbereiten, Stencil platzieren, andrücken, abziehen und Fehler korrigieren.",
+      "metaTitle": "Tattoo Stencil auftragen: Schritt für Schritt",
+      "metaDesc": "Tattoo Stencil auftragen: Haut vorbereiten, Transferlösung, Platzierung, Andrücken, Abziehen, Trocknen und Korrekturen. Für Artists und Kunden.",
+      "updated": "2026-11-26",
+      "answer": "Um ein Tattoo Stencil aufzutragen, reinigst du die Haut und lässt sie trocknen, rasierst sie auf Anweisung deines Artists, trägst dünn Transferlösung oder Stick auf, drückst das Stencil ohne Verrutschen an, hältst es ein paar Sekunden, ziehst es langsam ab und prüfst Linien und Platzierung nach dem Trocknen im Spiegel.",
+      "sections": [
+        {
+          "h2": "Tattoo Stencil auftragen: die Kurzfassung",
+          "blocks": [
+            {
+              "p": "Ein Tattoo Stencil auftragen läuft auf Folgendes hinaus: Du bereitest die Haut vor, befeuchtest sie leicht mit einem Transferprodukt, drückst das Stencil-Blatt einmal an und ziehst es ab, sodass das Motiv auf der Haut bleibt. Jeder Schritt ist einfach. Kleine Fehler in einem davon sorgen für ein verschwommenes, schiefes oder lückenhaftes Stencil."
+            },
+            {
+              "p": "Diese Anleitung richtet sich an Artists, die eine feste Routine wollen, und an Kunden, die wissen möchten, was gerade passiert und worauf sie achten sollten. Halte dich an die Hygieneregeln deines Studios und an den Rat deines Artists. Wo diese Anleitung einen Schritt beschreibt, hat die Arbeitsweise deines eigenen Studios Vorrang."
+            },
+            {
+              "p": "Die ganze Routine in der Reihenfolge:"
+            },
+            {
+              "ol": [
+                "Haut vorbereiten.",
+                "Stencil positionieren, ohne die Haut zu berühren.",
+                "Transferprodukt auftragen.",
+                "Einmal andrücken, dann halten.",
+                "Langsam abziehen.",
+                "Trocknen lassen, dann im Spiegel prüfen."
+              ]
+            },
+            {
+              "p": "In den folgenden Abschnitten gehen wir jeden Schritt einzeln durch und schauen dann, was du tust, wenn etwas schiefgeht."
+            }
+          ]
+        },
+        {
+          "h2": "Haut vorbereiten",
+          "blocks": [
+            {
+              "p": "Ein Stencil überträgt sich nur auf saubere, trockene und fettfreie Haut sauber. Dein Artist reinigt die Stelle nach der Hygieneroutine des Studios. Creme, Öl oder Sonnencreme solltest du vor dem Termin nicht selbst auf die Stelle auftragen, außer es wird dir gesagt."
+            },
+            {
+              "p": "Haare stören. Ein Stencil liegt dann auf dem Haar statt auf der Haut und löst sich, wenn sich das Haar bewegt. Dein Artist rasiert die Stelle vielleicht, manche rasieren etwas weiter als das Motiv, damit die Ränder sauber bleiben. Lass ihn das machen, und rasiere am Vorabend keinen Ausschlag, keine Schnittwunde und keine gereizte Haut selbst."
+            },
+            {
+              "ul": [
+                "Die Haut sollte trocken sein, bevor ein Transferprodukt aufgetragen wird.",
+                "Eine sehr fettige oder verschwitzte Stelle muss abgewischt werden und braucht einen Moment zum Beruhigen.",
+                "Lose oder schuppige Haut ergibt eine lückenhafte Linie, sag deinem Artist also Bescheid, wenn die Stelle sich schält."
+              ]
+            },
+            {
+              "p": "Denk auch an die Haltung. Überlege dir vor dem Stencil, wie du während der Sitzung sitzen oder liegen wirst, denn das Stencil muss in dieser Position gut aussehen und nicht nur in der, in der du beim Auftragen stehst."
+            }
+          ]
+        },
+        {
+          "h2": "Das Transferprodukt wählen",
+          "blocks": [
+            {
+              "p": "Die meisten Artists nehmen entweder eine flüssige Transferlösung oder ein Stick-Produkt. Beide tun dasselbe: Sie hinterlassen einen dünnen, leicht klebrigen Film, damit sich die Farbe vom Stencil-Blatt löst und auf die Haut übergeht."
+            },
+            {
+              "ul": [
+                "**Lösung** wird dünn mit behandschuhter Hand oder einem geeigneten Applikator aufgetragen. Sie verteilt sich gleichmäßig, aber zu viel sammelt sich und verschmiert die Linien.",
+                "**Stick** wird in einer dünnen, gleichmäßigen Schicht aufgerieben. Er lässt sich an kleinen Stellen gut kontrollieren, aber eine dicke Schicht kann eine Kante hinterlassen oder die Linien mitziehen."
+              ]
+            },
+            {
+              "p": "In beiden Fällen gilt: lieber weniger als mehr. Die Haut soll leicht klebrig sein, nicht nass. Folge den Hinweisen des Produkts, das du benutzt, und frag deinen Artist ruhig, was er verwendet, wenn dich das interessiert."
+            },
+            {
+              "p": "Trag das Produkt nur dort auf, wo das Stencil liegen wird, plus einen kleinen Rand. Produkt außerhalb des Motivs ist nur eine zusätzliche Fläche, auf der das Blatt rutschen kann."
+            }
+          ]
+        },
+        {
+          "h2": "Positionieren und prüfen, bevor du andrückst",
+          "blocks": [
+            {
+              "p": "Die Platzierung ist der Schritt, den du dir nicht leisten kannst zu überstürzen, denn das Stencil lässt sich nicht mehr verschieben, sobald es die Haut berührt. Halte das Blatt knapp über die Haut und schau, wo das Motiv landen wird. Prüfe es an den natürlichen Linien des Körpers: am Rand eines Muskels, an der Mitte der Wirbelsäule, an der Rundung einer Schulter."
+            },
+            {
+              "p": "Stell dich dann vor einen Spiegel. Kunden, das ist euer Moment. Frag dich:"
+            },
+            {
+              "ul": [
+                "Sitzt das Motiv gerade oder kippt es?",
+                "Ist es auf der Körperstelle zentriert, die du meinst?",
+                "Sieht es gut aus, wenn du stehst, den Arm bewegst oder den Kopf drehst?",
+                "Hat es die Größe, die du dir vorgestellt hast?"
+              ]
+            },
+            {
+              "p": "Wenn die Größe nicht stimmt, hör auf, bevor du andrückst. Ein neues Stencil zu drucken geht schnell, und die richtige Größe lässt sich leichter beurteilen, wenn das Stencil in Originalgröße gedruckt ist. Mehr dazu findest du in [der Anleitung zur Originalgröße](guide:tattoo-stencil-size-true-size-print)."
+            },
+            {
+              "p": "Manche Artists setzen vorher auch ein paar kleine Orientierungspunkte auf die Haut, etwa oben und in der Mitte des Motivs. Daran kannst du das Blatt ausrichten, wenn deine Hände beschäftigt sind."
+            }
+          ]
+        },
+        {
+          "h2": "Andrücken, halten und abziehen",
+          "blocks": [
+            {
+              "p": "Leg das Stencil-Blatt in einer Bewegung auf, mit dem Motiv zur Haut. Beginne in der Mitte oder an einem Rand und drücke mit flacher Hand gleichmäßig und fest nach außen. Schiebe das Blatt nicht. Jedes Verrutschen hinterlässt eine doppelte Linie, und doppelte Linien lassen sich schwer korrigieren."
+            },
+            {
+              "p": "Halte es ein paar Sekunden, oder so lange, wie es dein Artist gewohnt ist. Ziehe das Blatt dann langsam ab, beginne an einer Ecke und halte den Rest mit der anderen Hand an Ort und Stelle. Bleibt ein Teil auf dem Papier zurück, leg das Blatt wieder auf und drücke noch einmal an, bevor du weiter abziehst."
+            },
+            {
+              "p": "Gewölbte Stellen wie Rippen, Waden und Armbeuge brauchen besondere Sorgfalt. Drücke das Blatt abschnittsweise in die Wölbung, statt es in einem Zug flach zu streichen, damit es keine Falten wirft. Bei einem großen Motiv schneiden manche Artists das Blatt in Teile und tragen sie nacheinander auf."
+            },
+            {
+              "p": "Zu schnelles Abziehen ist der andere häufige Fehler. Ein schneller Ruck kann nasse Linien verschmieren oder einen Teil des Motivs mitreißen. Ein langsames, gleichmäßiges Abziehen lässt die Linien dort, wo du sie hingesetzt hast."
+            }
+          ]
+        },
+        {
+          "h2": "Trocknungszeit und Ergebnis prüfen",
+          "blocks": [
+            {
+              "p": "Lass das Stencil trocknen, bevor es etwas berührt. Die Linien sollten dunkel, scharf und durchgehend aussehen. Die Trocknungszeit hängt vom Produkt, vom Raum und von der Haut ab, dein Artist beurteilt also, wann es so weit ist, und kurzes Warten ist besser als ein verwischtes Stencil."
+            },
+            {
+              "p": "Prüfe das Stencil jetzt so, wie es ein Kunde tun würde:"
+            },
+            {
+              "ul": [
+                "Sind alle Linien da, auch die dünnen?",
+                "Fehlen Teile, sind sie doppelt oder verwischt?",
+                "Stimmt die Platzierung im Spiegel noch?",
+                "Hast du noch Fragen zum Motiv, bevor die Arbeit beginnt?"
+              ]
+            },
+            {
+              "p": "Das ist der letzte einfache Moment, um Änderungen zu verlangen. Sobald der Artist anfängt, ist es nicht mehr leicht, das Motiv zu verschieben. Wenn du unsicher bist, sag es jetzt. Ein guter Artist macht lieber ein Stencil neu, als von einem zu arbeiten, an dem der Kunde zweifelt."
+            }
+          ]
+        },
+        {
+          "h2": "Fehler korrigieren",
+          "blocks": [
+            {
+              "p": "Ein schiefes, doppeltes oder verwischtes Stencil lässt sich abwischen und neu machen. Dein Artist nimmt dafür das Produkt und die Methode, die er normalerweise nutzt, nach der Hygieneroutine des Studios. Entferne es nicht mit eigenen Produkten."
+            },
+            {
+              "ul": [
+                "**Schief oder nicht mittig:** entfernen, Orientierungspunkte neu setzen und ein frisches Blatt auftragen.",
+                "**Lückenhafte Linien:** meist war die Haut zu trocken, zu fettig oder behaart, oder der Druck war zu gering. Haut neu vorbereiten und noch einmal versuchen.",
+                "**Verschmierte Linien:** meist zu viel Transferprodukt oder ein Rutschen beim Andrücken. Weniger nehmen und nur einmal andrücken.",
+                "**Zu blass:** die häufigsten Ursachen stehen in der Anleitung [wie lange ein Stencil hält](guide:how-long-does-a-tattoo-stencil-last)."
+              ]
+            },
+            {
+              "p": "Eine saubere Linien-Datei hilft schon am Anfang. Ein Stencil aus klaren, gleichmäßigen Linien überträgt sich zuverlässiger als eines aus einem unscharfen oder niedrig aufgelösten Bild. Mit [dem Studio](studio) machst du aus deiner eigenen Zeichnung, deinem Flash oder deinem Foto ein sauberes Stencil auf deinem Gerät, und es wird nichts hochgeladen."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Was kommt vor dem Tattoo Stencil auf die Haut?",
+          "a": "Dein Artist reinigt und trocknet die Haut, rasiert sie bei Bedarf und trägt dann dünn Transferlösung oder Stick auf. Die Haut sollte sich leicht klebrig anfühlen, nicht nass."
+        },
+        {
+          "q": "Wie lange hält man ein Tattoo Stencil auf der Haut fest?",
+          "a": "Ein paar Sekunden festen, gleichmäßigen Drucks mit flacher Hand reichen meist. Dein Artist sagt dir, was mit dem Produkt funktioniert, das er benutzt."
+        },
+        {
+          "q": "Kann man ein Tattoo Stencil auf behaarter Haut auftragen?",
+          "a": "Es ist viel schwieriger, weil das Stencil auf dem Haar statt auf der Haut sitzt. Artists rasieren die Stelle deshalb meist vorher, so wie sie es vorgeben."
+        },
+        {
+          "q": "Was tun, wenn das Tattoo Stencil schief ist?",
+          "a": "Sag es deinem Artist, bevor er anfängt. Er kann es entfernen und ein neues auftragen, was viel einfacher ist, als das Motiv später zu ändern."
+        },
+        {
+          "q": "Brauche ich einen Spiegel, um mein Stencil zu prüfen?",
+          "a": "Ja, bitte um einen. Die Platzierung im Stehen und in Bewegung zu prüfen ist der beste Weg, ein Stencil zu erkennen, das nur im ruhigen Liegen gut aussieht."
+        }
+      ],
+      "cta": "Mach im Studio ein sauberes Stencil aus deiner eigenen Zeichnung oder deinem Foto, kostenlos zum Ausprobieren, und es wird nichts hochgeladen."
+    },
+    "how-long-does-a-tattoo-stencil-last": {
+      "title": "Wie lange hält ein Tattoo Stencil auf der Haut?",
+      "short": "Wie lange hält ein Tattoo Stencil?",
+      "blurb": "Was ein Stencil verblassen oder verschmieren lässt, wie es länger hält und was du tun kannst, solange du wartest.",
+      "metaTitle": "Wie lange hält ein Tattoo Stencil? Einflussfaktoren",
+      "metaDesc": "Wie lange hält ein Tattoo Stencil? Was die Haltbarkeit beeinflusst (Haut, Schweiß, Körperstelle, Reibung), wie es länger hält und was bei Verblassen hilft.",
+      "updated": "2026-11-26",
+      "answer": "Ein Tattoo Stencil hält bei guter Anwendung so lange, wie die Sitzung es braucht, eine feste Zeit gibt es aber nicht. Hauttyp, Schweiß, Körperstelle, Transferprodukt und Reibung verändern sie. Trockene Haut, eine dünne Produktschicht und Kleidung, die die Stelle nicht berührt, helfen.",
+      "sections": [
+        {
+          "h2": "Wie lange hält ein Tattoo Stencil?",
+          "blocks": [
+            {
+              "p": "Wie lange hält ein Tattoo Stencil? Das hängt davon ab, wie es aufgetragen wurde und an welcher Körperstelle es sitzt. Eine ehrliche einzelne Zahl gibt es nicht. Ein gut aufgetragenes Stencil an einer ruhigen, trockenen Stelle kann einen langen Termin über scharf bleiben. Ein Stencil an einer verschwitzten, beweglichen oder geriebenen Stelle kann viel früher verblassen."
+            },
+            {
+              "p": "Ein Stencil ist eine Orientierung für den Artist, keine dauerhafte Markierung. Es soll gut genug sein, um danach zu arbeiten, und der Artist arbeitet oft in Etappen darüber. Du kannst beeinflussen, wie wenig vor Beginn der Arbeit schiefgeht."
+            },
+            {
+              "p": "Die folgenden Faktoren sind die, auf die es in der Praxis ankommt."
+            },
+            {
+              "p": "Beachte, dass die meisten davon mit Vorbereitung und Umgang zu tun haben, nicht mit Glück. Das ist eine gute Nachricht: Wenn du weißt, warum Stencils versagen, kannst du das frühe Verblassen meist schon vor dem Termin verhindern. Artists sehen immer wieder dieselben wenigen Ursachen, und Kunden helfen, indem sie mit sauberer Haut ohne Produkte kommen und die Stelle frei und ruhig halten, sobald das Stencil sitzt."
+            }
+          ]
+        },
+        {
+          "h2": "Was beeinflusst, wie lange ein Stencil hält",
+          "blocks": [
+            {
+              "h3": "Hauttyp und Hautzustand"
+            },
+            {
+              "p": "Fettige Haut wehrt die Übertragung ab, und sehr trockene oder schuppige Haut ergibt eine lückenhafte. Saubere, trockene, glatte Haut hält ein Stencil am besten."
+            },
+            {
+              "h3": "Schweiß und Wärme"
+            },
+            {
+              "p": "Schweiß löst den Film, der die Linien hält. Ein warmer Raum, ein nervöser Kunde oder ein heißer Tag verkürzen die Lebensdauer eines Stencils, besonders an Rücken, Brust und Achselbereich."
+            },
+            {
+              "h3": "Körperstelle"
+            },
+            {
+              "p": "Stellen, die sich beugen oder reiben, wie die Armbeuge, die Rippen, die Hände, die Füße und der Hals, nutzen ein Stencil schneller ab als eine flache, ruhige Fläche wie der äußere Oberschenkel oder der obere Rücken."
+            },
+            {
+              "h3": "Transferprodukt und Menge"
+            },
+            {
+              "p": "Eine dünne, gleichmäßige Schicht Transferlösung oder Stick lässt die Linien haften. Zu viel hinterlässt einen nassen, losen Film, der verschmiert. Zu wenig ergibt eine blasse Linie."
+            },
+            {
+              "h3": "Stencil-Farbe und Druckqualität"
+            },
+            {
+              "p": "Dunkle, gleichmäßige, durchgehende Linien halten länger als blasse oder unterbrochene. Ein Stencil-Blatt, das schlecht gealtert ist, druckt vielleicht heller, prüfe also zuerst Papier und Drucker. Tipps zur Lagerung findest du in der [Anleitung zum Tattoo Stencil Papier](guide:tattoo-stencil-paper-guide)."
+            },
+            {
+              "h3": "Reibung"
+            },
+            {
+              "p": "Kleidung, Bettwäsche, eine Hand, die Schweiß abwischt, oder ein Kunde, der auf der Liege rutscht, reiben die Linien weg. Das ist die häufigste Ursache für ein Stencil, das früh verblasst."
+            }
+          ]
+        },
+        {
+          "h2": "So hält ein Stencil länger",
+          "blocks": [
+            {
+              "ol": [
+                "Beginne mit sauberer, trockener Haut und lass Produkt kurz einziehen, bevor du andrückst.",
+                "Rasiere die Stelle nach Anweisung, damit das Stencil auf der Haut sitzt und nicht auf dem Haar.",
+                "Nimm eine dünne, gleichmäßige Schicht Transferprodukt.",
+                "Drücke einmal fest und gleichmäßig an und schiebe das Blatt nicht.",
+                "Lass das Stencil vollständig trocknen, bevor es berührt wird."
+              ]
+            },
+            {
+              "p": "Reduziere dann die Reibung. Halte Kleidung und Abdeckungen von der Stelle fern und frag deinen Artist nach der besten Position für die Sitzung. Manche Artists arbeiten abschnittsweise, damit der Teil des Motivs, den sie noch nicht stechen, unberührt bleibt. Frag deinen Artist, was er empfiehlt, denn die Methoden unterscheiden sich von Studio zu Studio."
+            },
+            {
+              "p": "Plane auch die Reihenfolge. Wenn das Motiv über ein Gelenk oder eine Wölbung geht, frag deinen Artist, ob er mit der Stelle beginnen möchte, die am stärksten reibt, solange die Linien am frischesten sind. Sorge außerdem für ein angenehmes Raumklima. Eine kühlere, ruhigere Umgebung bedeutet weniger Schweiß, und weniger Schweiß bedeutet länger haltende Linien. Wenn du leicht ins Schwitzen kommst, sag es, bevor das Stencil aufgetragen wird."
+            }
+          ]
+        },
+        {
+          "h2": "Warum die Druckqualität zählt",
+          "blocks": [
+            {
+              "p": "Der häufigste Grund, warum ein Stencil früh verblasst, ist, dass es von Anfang an zu blass gedruckt wurde. Eine Linie, die blass beginnt, hat keine Reserve. Eine saubere, dunkle, durchgehende Linie startet stärker und hält länger."
+            },
+            {
+              "p": "Deshalb ist eine saubere Linien-Datei so wichtig. Ein unscharfes, kleines oder niedrig aufgelöstes Bild druckt als weiche, graue Linie, selbst auf gutem Transferpapier. Eine scharfe Datei in der richtigen Größe gibt dem Drucker etwas Solides zum Arbeiten."
+            },
+            {
+              "p": "Mit [dem Studio](studio) machst du aus einer Zeichnung, einem Flash oder einem Foto auf deinem Gerät ein sauberes Linien-Stencil, sodass dein Ausdruck mit Linien beginnt, die scharf sein sollen. Mehr dazu, wie du [die Druckgröße richtig hinbekommst](guide:tattoo-stencil-size-true-size-print), kannst du ebenfalls nachlesen."
+            }
+          ]
+        },
+        {
+          "h2": "Was tun, wenn das Stencil verblasst",
+          "blocks": [
+            {
+              "p": "Warte nicht, bis es ganz weg ist. Sag deinem Artist Bescheid, sobald du merkst, dass die Linien blass, verschmiert oder lückenhaft werden. Er kann ein frisches Stencil auftragen, meist in kürzerer Zeit, als es dauert, um ein schlechtes herumzuarbeiten."
+            },
+            {
+              "ul": [
+                "Ein verblasstes Stencil ist das Signal, anzuhalten und es zu erneuern, nicht zu raten, wo eine Linie war.",
+                "Wenn nur eine Stelle weg ist, macht dein Artist vielleicht nur diese neu.",
+                "Wenn es immer wieder verblasst, sind oft Schweiß, Produkt oder Reibung die Ursache, und der Artist ändert beim zweiten Versuch eventuell die Methode."
+              ]
+            },
+            {
+              "p": "Wenn es jedes Mal verblasst, schau dir den Druck selbst an. Ein Stencil, das auf dem Blatt blass war, ist auch auf der Haut blass. Die ganze Routine steht in der Anleitung [Tattoo Stencil auftragen](guide:how-to-apply-a-tattoo-stencil)."
+            }
+          ]
+        },
+        {
+          "h2": "Was Kunden beim Warten tun und lassen sollten",
+          "blocks": [
+            {
+              "p": "Sobald das Stencil sitzt, ist es deine Aufgabe, es zu schützen. Folge den Anweisungen deines Artists und nimm diese Liste als allgemeine Orientierung."
+            },
+            {
+              "h3": "Das hilft"
+            },
+            {
+              "ul": [
+                "Halte still und atme normal.",
+                "Sag deinem Artist, wenn sich die Stelle nass, juckend oder heiß anfühlt.",
+                "Prüfe die Platzierung im Spiegel, bevor die Arbeit beginnt.",
+                "Bitte darum, das Stencil neu zu machen, wenn du nicht zufrieden bist."
+              ]
+            },
+            {
+              "h3": "Das lässt du besser"
+            },
+            {
+              "ul": [
+                "Das Stencil berühren oder abwischen.",
+                "Kleidung, einen Taschenriemen oder eine Decke darauf reiben lassen.",
+                "Eigene Creme, eigenes Öl oder Deo auf die Stelle auftragen.",
+                "Die Stelle kratzen, auch wenn sie juckt."
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wie lange hält ein Tattoo Stencil auf der Haut?",
+          "a": "Eine feste Zeit gibt es nicht. Ein gut aufgetragenes Stencil an einer trockenen, ruhigen Stelle kann eine ganze Sitzung halten, eines an einer verschwitzten oder geriebenen Stelle kann viel früher verblassen."
+        },
+        {
+          "q": "Warum verblasst mein Tattoo Stencil?",
+          "a": "Die üblichen Ursachen sind Schweiß, Reibung durch Kleidung oder Bettwäsche, zu viel oder zu wenig Transferprodukt und ein blasser Ausdruck."
+        },
+        {
+          "q": "Kann ich ein Tattoo Stencil länger haltbar machen?",
+          "a": "Ja. Nimm saubere, trockene Haut, eine dünne Produktschicht, einmal festes Andrücken und genug Trocknungszeit, und halte alles fern, was an der Stelle reibt."
+        },
+        {
+          "q": "Was ist, wenn mein Stencil vor dem Tattoo verschmiert?",
+          "a": "Sag es deinem Artist. Er kann es entfernen und ein frisches auftragen, was besser ist, als nach einer verschmierten Vorlage zu arbeiten."
+        },
+        {
+          "q": "Beeinflusst das Stencil-Papier, wie lange es hält?",
+          "a": "Ja. Stencil-Papier, das alt, feucht oder für deinen Drucker nicht geeignet ist, kann eine hellere Linie drucken, und hellere Linien verblassen schneller."
+        }
+      ],
+      "cta": "Starte im Studio mit einem sauberen, scharfen Stencil, kostenlos zum Ausprobieren, und es wird nichts hochgeladen."
+    },
+    "tattoo-stencil-paper-guide": {
+      "title": "Tattoo Stencil Papier: Arten, Funktion und Auswahl",
+      "short": "Tattoo Stencil Papier",
+      "blurb": "Thermopapier, Hektograph, Durchpauspapier und bedruckbares Transferpapier im neutralen Vergleich.",
+      "metaTitle": "Tattoo Stencil Papier: Arten und Auswahl",
+      "metaDesc": "Tattoo Stencil Papier erklärt: Thermotransfer, Hektograph, Durchpauspapier und Tintenstrahl-Transferpapier, Funktion, Vor- und Nachteile, Lagerung, Fehler.",
+      "updated": "2026-11-26",
+      "answer": "Tattoo Stencil Papier gibt es in vier Hauptarten: Thermotransferpapier für Thermo-Stencil-Drucker, Hektographenpapier (Spiritus-Kohlepapier) zum Durchpausen von Hand, Freihand-Pauspapier und bedruckbares Transferpapier für Tintenstrahldrucker. Wähle das Papier, das zu deinem Drucker, deinem Volumen und deiner Arbeitsweise passt, und teste es vor dem Termin.",
+      "sections": [
+        {
+          "h2": "Tattoo Stencil Papier: die vier Hauptarten",
+          "blocks": [
+            {
+              "p": "Tattoo Stencil Papier ist das Blatt, das dein Motiv von der Vorlage auf die Haut trägt. Es gibt vier Hauptarten, und jede funktioniert mit einer anderen Methode, die Linien darauf zu bringen. Die falsche Kombination aus Papier und Drucker ist ein häufiger Grund für ein blasses oder lückenhaftes Stencil."
+            },
+            {
+              "ul": [
+                "**Thermotransferpapier**, verwendet mit einem Thermo-Stencil-Drucker.",
+                "**Hektographenpapier (Spiritus-Kohlepapier)**, verwendet mit einem Stift oder einer Durchpausmethode.",
+                "**Freihand-Pauspapier**, auf das du direkt zeichnest oder pausst.",
+                "**Bedruckbares Transferpapier**, verwendet mit manchen normalen Tintenstrahldruckern."
+              ]
+            },
+            {
+              "p": "Diese Anleitung ist neutral. Sie reiht die Arten nicht nach Qualität, denn welche die beste ist, hängt von deiner Ausrüstung und deinen Gewohnheiten ab. Den größeren Überblick findest du in [der Anleitung zu den Transfermethoden](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Thermotransferpapier",
+          "blocks": [
+            {
+              "p": "Thermotransferpapier ist ein mehrschichtiges Blatt. Ein Thermo-Stencil-Drucker erhitzt es, die Hitze erzeugt in der Transferschicht ein Linienmuster, und das geht beim Andrücken des Stencils auf die Haut über."
+            },
+            {
+              "ul": [
+                "**Vorteile:** nach dem Einrichten schnell, gleichmäßige Linien, ein Motiv lässt sich leicht wiederholen.",
+                "**Nachteile:** Es braucht einen Thermodrucker, und das Papier ist für diesen Druckertyp gemacht, du kannst also nicht jedes Blatt nehmen."
+              ]
+            },
+            {
+              "p": "Die Papierbreite sollte zum Drucker passen. Ein Drucker, der für eine bestimmte Blattbreite gebaut ist, funktioniert mit einem von Hand zugeschnittenen anderen Format nicht gut. Prüfe also Breite und Format, die dein Drucker annimmt."
+            },
+            {
+              "p": "Weil die Hitze die Arbeit macht, reagiert das Papier empfindlich auf Wärme und Handhabung. Halte es von Wärmequellen fern, bis es in den Drucker kommt."
+            },
+            {
+              "p": "Thermoblätter verzeihen bei der Datei auch am wenigsten. Der Drucker zeichnet genau die Linien, die er bekommt. Eine saubere, dunkle, hoch aufgelöste Linien-Datei ergibt also ein sauberes Stencil, und ein unscharfes Foto ergibt ein unscharfes."
+            }
+          ]
+        },
+        {
+          "h2": "Hektograph und Spiritus-Kohlepapier",
+          "blocks": [
+            {
+              "p": "Hektograph, auch Spiritus-Kohlepapier genannt, ist ein Papier mit violetter Farbe für von Hand gemachte Stencils. Du legst das Kohleblatt unter deine Zeichnung, und der Druck eines Stifts überträgt die Linie auf ein Trägerblatt. Das Trägerblatt ist das Stencil."
+            },
+            {
+              "ul": [
+                "**Vorteile:** kein Drucker, geringe Ausrüstungskosten, vielen Artists vertraut.",
+                "**Nachteile:** Jedes Stencil wird von Hand gezeichnet, das Skalieren braucht einen eigenen Schritt, und die Linienqualität hängt von Stiftdruck und ruhiger Hand ab."
+              ]
+            },
+            {
+              "p": "Viele Artists drucken das Motiv in der richtigen Größe auf normales Papier und pausen das durch. Ein sauberer Linien-Ausdruck macht das viel schneller und legt die Größe fest, bevor du eine einzige Linie ziehst."
+            }
+          ]
+        },
+        {
+          "h2": "Freihand-Pauspapier",
+          "blocks": [
+            {
+              "p": "Freihand-Pauspapier ist dafür gemacht, direkt darauf zu zeichnen. Manche Arten werden als Block mit einer Transferschicht auf der Rückseite verkauft. Du zeichnest oder pausest das Motiv auf der Vorderseite, und die Linien werden auf die Haut durchgedrückt."
+            },
+            {
+              "ul": [
+                "**Vorteile:** einfach, keine Maschine, gut für schnelle oder individuelle Motive, die du am Tag selbst zeichnen willst.",
+                "**Nachteile:** langsamer bei komplexen Motiven, und du musst die Hinweise des Papiers beachten, das du benutzt."
+              ]
+            },
+            {
+              "p": "Es passt gut zu einem Leuchttisch oder einem Fenster, wenn du von einem gedruckten Motiv pausest."
+            },
+            {
+              "p": "Die Wahl zwischen den vier Arten läuft auf drei Fragen hinaus. Wie viele Stencils machst du pro Woche? Arbeitest du mit digitalen Dateien oder mit Handzeichnungen? Und wie viel Ausrüstung willst du besitzen und pflegen? Wenige Stencils im Monat aus Handzeichnungen sprechen für Hektograph oder Pauspapier. Ein stetiger Strom digitaler Motive spricht für einen Drucker und das passende Papier."
+            }
+          ]
+        },
+        {
+          "h2": "Bedruckbares Transferpapier für Tintenstrahldrucker",
+          "blocks": [
+            {
+              "p": "Bedruckbares Transferpapier ist so gemacht, dass ein normaler Tintenstrahldrucker darauf drucken kann. Das Blatt nimmt die Tinte auf der Oberfläche auf, und die gedruckten Linien gehen beim Andrücken des Stencils auf die Haut über."
+            },
+            {
+              "ul": [
+                "**Vorteile:** Du kannst einen Drucker nutzen, den du vielleicht schon hast, und derselbe Drucker erledigt auch andere Aufgaben.",
+                "**Nachteile:** Nicht jeder Drucker und jedes Papier passen zusammen, die Tinte verhält sich vielleicht nicht wie in einem eigenen Stencil-System, und das Ergebnis kann blasser oder weniger scharf sein als bei anderen Methoden."
+              ]
+            },
+            {
+              "p": "Prüfe in den Hinweisen des Papiers, welche Druckertypen unterstützt werden, und mach vor einer Kundensitzung einen Testdruck. Ein Test kostet ein Blatt. Ein schlechtes Stencil kostet die Zeit des Termins."
+            }
+          ]
+        },
+        {
+          "h2": "Welcher Drucker zu welchem Papier passt",
+          "blocks": [
+            {
+              "table": {
+                "head": [
+                  "Papierart",
+                  "Funktioniert mit",
+                  "Braucht"
+                ],
+                "rows": [
+                  [
+                    "Thermotransferpapier",
+                    "Thermo-Stencil-Drucker",
+                    "Papier, das für diesen Druckertyp gemacht ist"
+                  ],
+                  [
+                    "Hektograph / Spiritus-Kohlepapier",
+                    "Kein Drucker (Durchpausen von Hand)",
+                    "Einen Stift und eine Zeichnung oder einen Ausdruck zum Durchpausen"
+                  ],
+                  [
+                    "Freihand-Pauspapier",
+                    "Kein Drucker (Zeichnen)",
+                    "Einen Stift und beim Pausen eine Vorlage"
+                  ],
+                  [
+                    "Bedruckbares Transferpapier",
+                    "Tintenstrahldrucker, wie es das Papier angibt",
+                    "Einen unterstützten Drucker und Testdrucke"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Einen genaueren Blick auf Drucker bietet die [Anleitung zum Tattoo Stencil Drucker](guide:tattoo-stencil-printer-guide). Die kurze Regel lautet: Geh von den Hinweisen des Papiers aus und prüfe, ob dein Drucker auf der Liste der unterstützten steht."
+            }
+          ]
+        },
+        {
+          "h2": "Lagerung und häufige Fehler",
+          "blocks": [
+            {
+              "p": "Stencil-Papier reagiert empfindlich auf Feuchtigkeit, Hitze und Knicken. Lagere es flach, in seiner Packung oder einer Mappe, an einem kühlen, trockenen Ort ohne direkte Sonne. Lass die Verpackung geschlossen, damit die Blätter keinen Staub oder keine Feuchtigkeit aufnehmen."
+            },
+            {
+              "p": "Häufige Fehler, die du vermeiden solltest:"
+            },
+            {
+              "ul": [
+                "Das Blatt falsch herum einlegen, sodass der Drucker auf das Trägerpapier druckt.",
+                "Papier verwenden, das nicht für deinen Druckertyp gemacht ist.",
+                "Eine blasse, kleine oder niedrig aufgelöste Datei drucken, was bei jedem Papier ein blasses Stencil ergibt.",
+                "Die bedruckte Fläche mit feuchten oder fettigen Händen anfassen.",
+                "Alte, gewellte oder feuchte Blätter benutzen.",
+                "Den Testdruck vor dem Termin auslassen."
+              ]
+            },
+            {
+              "p": "Eine saubere Linien-Datei ist die andere Hälfte eines guten Stencils. [Das Studio](studio) macht aus deiner Zeichnung, deinem Flash oder deinem Foto auf deinem Gerät ein sauberes Stencil, und der KI-Generator auf der Startseite kann ein Stencil erstellen, das du in Originalgröße mit 300 dpi druckst."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Welches Papier nimmt man für ein Tattoo Stencil?",
+          "a": "Das hängt von der Methode ab: Thermotransferpapier für Thermodrucker, Hektograph- oder Pauspapier für Handarbeit oder bedruckbares Transferpapier für manche Tintenstrahldrucker."
+        },
+        {
+          "q": "Kann ich normales Druckerpapier für ein Tattoo Stencil nehmen?",
+          "a": "Nicht als Transferblatt. Du kannst auf normales Papier drucken, um eine Vorlage oder eine Zeichnung zum Durchpausen zu haben, aber die Übertragung selbst braucht Stencil-Papier."
+        },
+        {
+          "q": "Was ist Hektographenpapier?",
+          "a": "Es ist violettes Papier nach Art von Kohlepapier, auch Spiritus-Kohlepapier genannt, das eine gezeichnete Linie auf ein Trägerblatt überträgt, wenn du mit einem Stift darauf drückst."
+        },
+        {
+          "q": "Kann ich ein Tattoo Stencil auf einem Tintenstrahldrucker drucken?",
+          "a": "Manche bedruckbaren Transferpapiere sind dafür gemacht. Prüfe die Hinweise des Papiers und teste es vor einer Sitzung."
+        },
+        {
+          "q": "Wie lagere ich Tattoo Stencil Papier?",
+          "a": "Flach, in der Packung, an einem kühlen, trockenen Ort ohne Sonne. Feuchtigkeit und Hitze können die Transferschicht ruinieren."
+        }
+      ],
+      "cta": "Mach zuerst die saubere Linien-Datei. Probiere das Studio kostenlos aus, und es wird nichts hochgeladen."
+    },
+    "tattoo-stencil-printer-guide": {
+      "title": "Tattoo Stencil Drucker: worauf du vor dem Kauf achten solltest",
+      "short": "Tattoo Stencil Drucker",
+      "blurb": "Thermodrucker, Tintenstrahl und Thermokopierer erklärt, mit Prüfpunkten und Druck in Originalgröße.",
+      "metaTitle": "Tattoo Stencil Drucker: Auswahl und Druck",
+      "metaDesc": "Tattoo Stencil Drucker: Thermo, Tintenstrahl oder Kopierer, Papierbreite, dpi, Anschluss, Originalgröße und Hilfe bei hellen oder verschmierten Drucken.",
+      "updated": "2026-11-26",
+      "answer": "Ein Tattoo Stencil Drucker bringt dein Motiv auf Transferpapier. Zur Wahl stehen ein Thermo-Stencil-Drucker, ein Tintenstrahldrucker mit Transferpapier und ein Thermokopierer. Prüfe Papierbreite, Auflösung in dpi, Anschluss, ob er in Originalgröße druckt, und was das Verbrauchsmaterial kostet, bevor du kaufst.",
+      "sections": [
+        {
+          "h2": "Was ein Tattoo Stencil Drucker macht",
+          "blocks": [
+            {
+              "p": "Ein Tattoo Stencil Drucker verwandelt ein digitales Motiv in ein Linienmuster auf Transferpapier, bereit zum Andrücken auf die Haut. Er ist der Schritt zwischen deiner Datei und der Haut, und seine Qualität sieht man an jedem Stencil."
+            },
+            {
+              "p": "Es gibt drei gängige Wege. Diese Anleitung beschreibt sie neutral und reiht kein Produkt. Für Methoden von Hand siehst du in [der Anleitung zu den Transfermethoden](guide:tattoo-stencil-transfer-methods) nach."
+            }
+          ]
+        },
+        {
+          "h2": "Thermo-Stencil-Drucker, Tintenstrahl oder Kopierer",
+          "blocks": [
+            {
+              "h3": "Thermo-Stencil-Drucker"
+            },
+            {
+              "p": "Ein Thermo-Stencil-Drucker arbeitet mit Hitze und Thermotransferpapier. Er ist für genau diese Aufgabe gebaut, daher ist das Ergebnis meist gleichmäßig und die Einrichtung einfach. Er braucht das richtige Papier, und du bist an das Papier gebunden, das zu ihm passt."
+            },
+            {
+              "h3": "Tintenstrahldrucker mit Transferpapier"
+            },
+            {
+              "p": "Manche bedruckbaren Transferpapiere funktionieren in einem normalen Tintenstrahldrucker. Das ist eine flexible Möglichkeit, wenn du schon einen Drucker hast, aber nicht jede Kombination aus Drucker und Papier funktioniert, und die Linien können blasser sein. Teste, bevor du dich darauf verlässt."
+            },
+            {
+              "h3": "Thermokopierer"
+            },
+            {
+              "p": "Ein Thermokopierer macht aus einer Papiervorlage durch Kopieren ein Stencil. Er ist nützlich, wenn du mit Zeichnungen auf Papier arbeitest. Eine digitale Datei muss erst auf normales Papier gedruckt und dann kopiert werden."
+            },
+            {
+              "p": "Keiner davon ist für alle der beste. Der richtige hängt von deinem Volumen, deinem Platz, deinem Budget und davon ab, ob du mit Dateien oder mit Papierzeichnungen arbeitest. Zu den Papieren selbst siehst du in der [Anleitung zum Tattoo Stencil Papier](guide:tattoo-stencil-paper-guide) nach."
+            }
+          ]
+        },
+        {
+          "h2": "Worauf du bei der Wahl achten solltest",
+          "blocks": [
+            {
+              "ul": [
+                "**Papierbreite:** Prüfe das breiteste Stencil, das du brauchst. Ein Drucker, der nur ein schmales Blatt annimmt, begrenzt große Motive wie ein Rückenstück oder einen Sleeve.",
+                "**Auflösung in dpi:** Ein höherer Wert bedeutet feinere Linien. Achte auf die tatsächliche Auflösung des Druckers und prüfe, ob er Dateien mit 300 dpi verarbeitet.",
+                "**Anschluss:** USB, kabelgebunden oder drahtlos, und ob er mit deinem Handy, Tablet oder Computer funktioniert. Stell sicher, dass er mit dem System läuft, das du schon nutzt.",
+                "**Ausgabe in Originalgröße:** Der Drucker soll die Datei in der Größe drucken, die du eingestellt hast, ohne sie an das Blatt anzupassen.",
+                "**Kosten für Verbrauchsmaterial:** Papier und gegebenenfalls Tinte oder Farbband sind laufende Kosten. Vergleiche das Papier, das du nutzen wirst, und wie viele Stencils es ergibt, nicht nur den Druckerpreis.",
+                "**Support und Ersatzteile:** Prüfe, ob das Papier in deiner Region weiter erhältlich bleibt und ob der Drucker repariert werden kann."
+              ]
+            },
+            {
+              "p": "Frag andere Artists, was sie benutzen und warum. Ihre tägliche Erfahrung ist nützlicher als ein Datenblatt."
+            },
+            {
+              "p": "Denk auch daran, wo der Drucker stehen wird. Ein Thermo-Stencil-Drucker ist klein und passt auf einen Studiotisch oder einen Rollwagen, aber du brauchst Strom, eine ebene Fläche und einen Platz, an dem das Papier trocken bleibt. Wenn du zu Guest Spots oder Conventions reist, zählen Gewicht und ein einfacher Aufbau mehr als zusätzliche Funktionen."
+            }
+          ]
+        },
+        {
+          "h2": "Warum Druckgröße und 300 dpi wichtig sind",
+          "blocks": [
+            {
+              "p": "Ein Stencil in der falschen Größe ist das falsche Stencil. Wenn das Motiv 10 Prozent zu klein druckt, wird auch das Tattoo 10 Prozent zu klein. Deshalb muss der Druck in Originalgröße erfolgen und darf nicht auf die Seite verkleinert werden."
+            },
+            {
+              "p": "Auch die Auflösung zählt. Bei 300 dpi druckt eine dünne Linie als glatter, durchgehender Strich. Niedrigere Auflösungen zeigen treppenförmige Kanten an Kurven, und ein Stencil besteht überwiegend aus Kurven. Eine Datei, die zu klein ist und auf Größe hochgezogen wird, druckt weich und grau."
+            },
+            {
+              "p": "Die [Anleitung zur Originalgröße](guide:tattoo-stencil-size-true-size-print) nennt die Zahlen, auch wie viele Pixel du bei 300 dpi für eine bestimmte Breite brauchst."
+            }
+          ]
+        },
+        {
+          "h2": "So druckst du eine Datei in Originalgröße",
+          "blocks": [
+            {
+              "ol": [
+                "Beginne mit einer sauberen Linien-Datei in den richtigen Proportionen, mit mindestens so vielen Pixeln, wie die Breite bei 300 dpi braucht.",
+                "Lege die Größe in Millimetern oder Zoll in deinem Gestaltungstool fest und exportiere mit 300 dpi.",
+                "Wähle im Druckdialog tatsächliche Größe oder 100 Prozent. Schalte An Seite anpassen und Skalieren aus.",
+                "Stelle das Papierformat passend zum Blatt im Drucker ein.",
+                "Drucke zuerst einen Test auf normales Papier und miss ihn mit einem Lineal gegen die eingestellte Größe nach.",
+                "Drucke dann auf das Transferpapier."
+              ]
+            },
+            {
+              "p": "Der KI-Generator auf der Startseite von Skinstencil erstellt ein Motiv aus einer Beschreibung oder einem Beispielbild, zeigt es an 8 Körperstellen und 6 Hauttönen und macht daraus ein Stencil, das du in Originalgröße mit 300 dpi drucken kannst. [Das Studio](studio) macht aus deiner eigenen Zeichnung, deinem Flash oder deinem Foto ein Stencil auf deinem Gerät, ohne dass etwas hochgeladen wird. Beides ist kostenlos zum Ausprobieren. Kostenlose Downloads tragen ein Wasserzeichen, und ein Tagespass oder Pro entfernt es."
+            }
+          ]
+        },
+        {
+          "h2": "Häufige Probleme und Lösungen",
+          "blocks": [
+            {
+              "h3": "Das Stencil ist zu hell"
+            },
+            {
+              "ul": [
+                "Prüfe, ob das Papier die richtige Art ist und richtig herum eingelegt wurde.",
+                "Prüfe die Datei: Blasse oder dünne Linien in der Datei drucken blass.",
+                "Nimm frisches Papier, keine alten oder feuchten Blätter.",
+                "Schau in die Einstellungen des Druckers nach Dichte oder Dunkelheit."
+              ]
+            },
+            {
+              "h3": "Das Stencil ist verschmiert"
+            },
+            {
+              "ul": [
+                "Lass den Ausdruck trocknen oder abkühlen, bevor du ihn anfasst.",
+                "Prüfe, ob Papier und Drucker zusammenpassen, und reinige den Drucker so, wie es der Hersteller rät.",
+                "Fasse das Blatt an den Rändern an."
+              ]
+            },
+            {
+              "h3": "Das Stencil hat die falsche Größe"
+            },
+            {
+              "ul": [
+                "Schalte An Seite anpassen oder Skalieren aus.",
+                "Prüfe Größe und dpi, die du beim Export der Datei eingestellt hast.",
+                "Drucke einen Test auf normales Papier und miss ihn nach, bevor du das Transferpapier nimmst."
+              ]
+            },
+            {
+              "p": "Wenn eine Lösung das Problem nicht behebt, ändere immer nur eine Sache auf einmal, damit du siehst, was geholfen hat."
+            },
+            {
+              "p": "Halte kurz fest, mit welchen Einstellungen du einen guten Druck bekommen hast: Dateigröße, dpi, Papier und Dichteeinstellung des Druckers. Wenn ein Stencil falsch herauskommt, zeigt dir diese Notiz sofort, was sich geändert hat. Mach den Testdruck immer, bevor ein Kunde auf der Liege sitzt, nie während des Termins."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Welchen Drucker nutzen Tätowierer für Stencils?",
+          "a": "Viele nutzen einen Thermo-Stencil-Drucker, manche einen Tintenstrahldrucker mit Transferpapier oder einen Thermokopierer. Der richtige hängt von deinem Volumen und deinem Ablauf ab."
+        },
+        {
+          "q": "Kann ich einen normalen Drucker für Tattoo Stencils nehmen?",
+          "a": "Manche Tintenstrahldrucker funktionieren mit bedruckbarem Transferpapier, aber nicht jede Kombination. Prüfe die Hinweise des Papiers und teste vor einer Sitzung."
+        },
+        {
+          "q": "Wie viel dpi sollte ein Tattoo Stencil haben?",
+          "a": "300 dpi sind der übliche Zielwert. Sie halten dünne Linien in der gedruckten Größe glatt und durchgehend."
+        },
+        {
+          "q": "Warum ist mein Tattoo Stencil zu hell?",
+          "a": "Übliche Ursachen sind falsches oder altes Papier, eine blasse Quelldatei, falsch herum eingelegtes Papier oder eine zu niedrige Dichteeinstellung."
+        },
+        {
+          "q": "Wie drucke ich ein Stencil in der richtigen Größe?",
+          "a": "Lege die Größe in Millimetern fest, exportiere mit 300 dpi, drucke in tatsächlicher Größe bei ausgeschaltetem An Seite anpassen und miss einen Testdruck mit einem Lineal nach."
+        }
+      ],
+      "cta": "Mach ein Stencil, das du in Originalgröße mit 300 dpi drucken kannst. Probiere den KI-Generator oder das Studio, kostenlos zum Ausprobieren."
+    },
+    "tattoo-size-chart-by-body-part": {
+      "title": "Tattoo Größe: typische Maße nach Körperstelle",
+      "short": "Tattoo Größe nach Körperstelle",
+      "blurb": "Typische Tattoo Größen in cm und Zoll für 13 Körperstellen, dazu Grenzen für feine Details und wie du die Größe mit einem Stencil in Originalgröße prüfst.",
+      "metaTitle": "Tattoo Größe nach Körperstelle: cm und Zoll",
+      "metaDesc": "Tattoo Größe in cm und Zoll für 13 Körperstellen, Mindestgrößen für Fineline und Bold und wie du die Größe mit einem Stencil in Originalgröße prüfst.",
+      "updated": "2026-11-26",
+      "answer": "Eine Tabelle zur Tattoo Größe nennt die typische Breite oder Länge für jede Körperstelle, zum Beispiel 2 bis 5 cm (etwa 1 bis 2 Zoll) am Handgelenk und 8 bis 25 cm (3 bis 10 Zoll) am Unterarm. Das sind Richtwerte, keine Regeln. Drucke dein Motiv in Originalgröße und halte es auf deine Haut.",
+      "sections": [
+        {
+          "h2": "Tattoo Größe nach Körperstelle",
+          "blocks": [
+            {
+              "p": "Die passende Tattoo Größe ist ein guter Ausgangspunkt, bevor du mit einem Artist sprichst. Die Bereiche unten sind typische Maße für die längste Seite eines einzelnen Motivs bei einem durchschnittlichen Erwachsenen. Sie sind Orientierung, keine Regeln. Körper sind verschieden, Motive auch."
+            },
+            {
+              "table": {
+                "head": [
+                  "Körperstelle",
+                  "Typische Größe (cm)",
+                  "Typische Größe (Zoll)"
+                ],
+                "rows": [
+                  [
+                    "Handgelenk",
+                    "2 bis 5 cm",
+                    "0,8 bis 2 Zoll"
+                  ],
+                  [
+                    "Unterarm",
+                    "8 bis 25 cm",
+                    "3 bis 10 Zoll"
+                  ],
+                  [
+                    "Oberarm",
+                    "8 bis 20 cm",
+                    "3 bis 8 Zoll"
+                  ],
+                  [
+                    "Schulterblatt",
+                    "10 bis 20 cm",
+                    "4 bis 8 Zoll"
+                  ],
+                  [
+                    "Rücken",
+                    "20 bis 45 cm",
+                    "8 bis 18 Zoll"
+                  ],
+                  [
+                    "Brust",
+                    "10 bis 30 cm",
+                    "4 bis 12 Zoll"
+                  ],
+                  [
+                    "Rippen",
+                    "10 bis 25 cm",
+                    "4 bis 10 Zoll"
+                  ],
+                  [
+                    "Oberschenkel",
+                    "15 bis 35 cm",
+                    "6 bis 14 Zoll"
+                  ],
+                  [
+                    "Wade",
+                    "10 bis 25 cm",
+                    "4 bis 10 Zoll"
+                  ],
+                  [
+                    "Knöchel",
+                    "3 bis 8 cm",
+                    "1,2 bis 3 Zoll"
+                  ],
+                  [
+                    "Hand",
+                    "3 bis 8 cm",
+                    "1,2 bis 3 Zoll"
+                  ],
+                  [
+                    "Nacken und Hals",
+                    "3 bis 10 cm",
+                    "1,2 bis 4 Zoll"
+                  ],
+                  [
+                    "Hinter dem Ohr",
+                    "1 bis 4 cm",
+                    "0,4 bis 1,6 Zoll"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Lies die Zahlen als Länge des Motivs entlang des Körperteils oder als Höhe auf einer flachen Fläche wie dem Rücken. Ein Motiv am Unterarm kann die ganze Länge des Arms nutzen, während ein Motiv am Handgelenk meist ein kleines Band oder Symbol ist."
+            }
+          ]
+        },
+        {
+          "h2": "So liest du die Tabelle",
+          "blocks": [
+            {
+              "p": "Die Bereiche sind absichtlich weit. Eine Rose mit 10 cm (4 Zoll) ist am Oberschenkel ein kleines Tattoo und hinter dem Ohr ein großes. Entscheidend ist, wie das Motiv zum Platz um es herum passt."
+            },
+            {
+              "ul": [
+                "**Kleine** Motive passen gut an Handgelenk, Knöchel, Hand, Nacken und hinter das Ohr.",
+                "**Mittlere** Motive passen an Oberarm, Unterarm, Wade, Schulterblatt und Rippen.",
+                "**Große** Motive gehören auf Rücken, Brust und Oberschenkel, wo ein Motiv genug Raum zum Atmen hat."
+              ]
+            },
+            {
+              "p": "Liegt deine Idee außerhalb des Bereichs für die Stelle, die dir gefällt, überlege eine andere Stelle oder eine andere Größe. Ein Motiv, das sich um ein Körperteil wickelt, lässt zum Beispiel ein langes Design dort Platz finden, wo ein flaches nicht passen würde."
+            }
+          ]
+        },
+        {
+          "h2": "Mindestgröße für Details",
+          "blocks": [
+            {
+              "p": "Bei der Größe geht es nicht nur um die Optik. Tattoo-Farbe verläuft über die Jahre leicht in der Haut, deshalb können winzige Details verschwimmen. Je kleiner das Motiv, desto weniger Details hält es aus und bleibt trotzdem lesbar."
+            },
+            {
+              "h3": "Fineline-Arbeiten"
+            },
+            {
+              "p": "Fineline-Motive bestehen aus dünnen, hellen Linien. Sie wirken zart, brauchen aber genug Abstand zwischen den Linien. Viele Artists empfehlen, ein Motiv mindestens ein paar Zentimeter groß zu halten und winzige Schrift oder dichte Muster zu vermeiden. Frag deinen Artist nach der kleinsten Größe, die er für dein Motiv gern sticht."
+            },
+            {
+              "h3": "Bold-Arbeiten"
+            },
+            {
+              "p": "Bold-Motive mit dicken Konturen und gefüllten Flächen halten auch in kleinerer Größe, weil die Formen einfach sind und die Abstände dazwischen breit. Ein kräftiges Symbol kann in einer Größe funktionieren, in der dasselbe Bild als Fineline zu Matsch würde."
+            },
+            {
+              "p": "Wenn du ein Motiv verkleinerst, vereinfache es. Entferne kleine Elemente im Hintergrund, mach enge Abstände breiter und die Schrift größer, als du denkst."
+            }
+          ]
+        },
+        {
+          "h2": "So misst du an deinem Körper",
+          "blocks": [
+            {
+              "p": "Du kannst die Stelle in wenigen Minuten mit einem weichen Maßband oder einem Lineal ausmessen. Ein weiches Maßband folgt den Rundungen, ein starres Lineal nicht."
+            },
+            {
+              "ol": [
+                "Markiere oben und unten an der Stelle, die du im Kopf hast, mit einem abwaschbaren Stift oder kleinen Klebestreifen.",
+                "Miss den geraden Abstand zwischen den Markierungen und dann noch einmal entlang der Körperrundung.",
+                "Miss die Breite an der breitesten Stelle der Fläche.",
+                "Notiere beide Werte in Zentimetern und Zoll, damit du sie mit der Tabelle vergleichen kannst.",
+                "Lass auf jeder Seite mindestens eine Fingerbreite Rand, damit das Motiv nicht direkt am Rand sitzt."
+              ]
+            },
+            {
+              "p": "Der gerade und der gebogene Wert unterscheiden sich stärker an runden Stellen wie Oberarm und Wade. Ein Motiv, das auf Papier 10 cm breit ist, wirkt schmaler, sobald es sich um eine Rundung legt, weil ein Teil davon vom Betrachter wegdreht."
+            }
+          ]
+        },
+        {
+          "h2": "Größe mit einem Stencil in Originalgröße prüfen",
+          "blocks": [
+            {
+              "p": "Zahlen in einer Tabelle helfen nur begrenzt. Am zuverlässigsten beurteilst du die Größe, wenn du das Motiv in echten Maßen auf deinem Körper siehst. Genau das leistet ein Stencil in Originalgröße."
+            },
+            {
+              "p": "Lege die Breite in Millimetern fest, exportiere das Motiv mit 300 dpi und drucke es mit 100 Prozent ohne Skalierung. Unsere Anleitung zum [Druck in Originalgröße](guide:tattoo-stencil-size-true-size-print) zeigt die Rechnung und wie du das Ergebnis mit einem Lineal bestätigst."
+            },
+            {
+              "p": "Das geht im [Studio](studio). Es macht aus deiner eigenen Zeichnung, deinem Flash oder deinem Foto ein Stencil auf deinem Gerät, und nichts wird hochgeladen. Stelle die Größe in Millimetern ein, lade das Stencil herunter und drucke es."
+            },
+            {
+              "p": "Schneide den Ausdruck aus und halte ihn an deine Haut oder klebe ihn an. Stell dich vor einen Spiegel, bewege den Arm, setz dich hin und geh ein Stück. Wirkt es zu groß oder zu klein, ändere die Größe und drucke neu. Papier ist billig, Haut nicht."
+            }
+          ]
+        },
+        {
+          "h2": "Wie Stelle und Haut die nötige Größe verändern",
+          "blocks": [
+            {
+              "p": "Dasselbe Motiv kann je nach Stelle und Haut anders aussehen."
+            },
+            {
+              "ul": [
+                "**Rundungen.** Ein Motiv auf einer runden Stelle wirkt von vorn kleiner und leicht verzerrt. Am Oberarm oder an der Wade darfst du etwas größer gehen, als eine flache Zeichnung vermuten lässt.",
+                "**Bewegung.** Haut an Gelenken dehnt sich und faltet sich. Motive dort werden oft kleiner oder einfacher gehalten, und dein Artist kann dich zur genauen Position beraten.",
+                "**Körperbau.** Ein Motiv mit 15 cm sitzt auf einem schlanken Unterarm anders als auf einem breiten. Beurteile es an deinem eigenen Körper, nicht auf dem Foto von jemand anderem.",
+                "**Hautton.** Der Kontrast verändert, wie ein Motiv wirkt. Frag deinen Artist, was auf deiner Haut am besten zu sehen ist.",
+                "**Altern.** Linien werden mit der Zeit weicher. Gibst du einem Motiv etwas Raum, bleibt es klarer."
+              ]
+            },
+            {
+              "p": "Der KI-Generator auf der Startseite hilft dabei. Er erstellt ein Motiv aus einer Beschreibung oder einem Beispielbild und zeigt es an 8 Körperstellen (Schulterblatt, Rücken, Unterarm, Oberarm, Brust, Rippen, Oberschenkel und Wade) und auf 6 Hauttönen, damit du siehst, wie Größe und Kontrast wirken, bevor du druckst. Er erstellt ein Stencil, das du in Originalgröße (300 dpi) drucken kannst."
+            },
+            {
+              "p": "Wenn du noch überlegst, wohin das Motiv soll, lies unsere [Anleitung zur Tattoo Stelle](guide:tattoo-placement-guide)."
+            }
+          ]
+        },
+        {
+          "h2": "Letzte Checks vor dem Termin",
+          "blocks": [
+            {
+              "ul": [
+                "Sieht das gedruckte Stencil richtig aus, wenn du stehst, sitzt und dich bewegst?",
+                "Ist genug Abstand zwischen den Linien für den gewählten Stil?",
+                "Ist jede Schrift groß genug, um sie aus normalem Abstand zu lesen?"
+              ]
+            },
+            {
+              "p": "Dein Artist hat bei Größe und Detail das letzte Wort. Bring deinen Ausdruck und die Maße mit und sieh die Tabelle als Beginn des Gesprächs."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wie groß ist ein kleines Tattoo?",
+          "a": "Eine feste Regel gibt es nicht, aber viele nennen ein Motiv unter etwa 5 cm (2 Zoll) klein. Stellen wie Handgelenk, Knöchel und hinter dem Ohr passen meist zu dieser Größe."
+        },
+        {
+          "q": "Wie groß ist ein mittleres Tattoo?",
+          "a": "Mittel heißt meist etwa 8 bis 15 cm (3 bis 6 Zoll) an der längsten Seite. Es passt gut an Unterarm, Oberarm, Wade oder Schulterblatt."
+        },
+        {
+          "q": "Was ist die kleinste Größe für ein Tattoo?",
+          "a": "Das hängt vom Stil und vom Artist ab. Feine Details brauchen mehr Platz als kräftige Formen. Frag deinen Artist nach der Mindestgröße, bei der dein Motiv klar bleibt."
+        },
+        {
+          "q": "Wie finde ich heraus, wie groß mein Tattoo an meinem Körper wird?",
+          "a": "Drucke das Motiv in Originalgröße und halte es an die Stelle oder klebe es dort an. Dann kannst du die Größe im Spiegel und in Bewegung beurteilen."
+        },
+        {
+          "q": "Sind Tattoo Größen für alle gleich?",
+          "a": "Nein. Die Bereiche in einer Tabelle sind typisch, und Körperbau, Haut und das Motiv selbst ändern, was passend aussieht."
+        }
+      ],
+      "cta": "Stelle im Studio die Größe in Millimetern ein, drucke dein Stencil in Originalgröße und sieh, wie es auf deiner Haut sitzt, bevor du buchst."
+    },
+    "tattoo-placement-guide": {
+      "title": "Tattoo Stelle wählen: so findest du den richtigen Platz",
+      "short": "Tattoo Stelle wählen",
+      "blurb": "Sichtbarkeit, Dresscode, Hautbewegung und Form des Motivs: so wählst du die Tattoo Stelle und testest sie mit einem Stencil.",
+      "metaTitle": "Tattoo Stelle wählen: so findest du den richtigen Platz",
+      "metaDesc": "Tattoo Stelle wählen: Sichtbarkeit, Dresscode, Hautbewegung und Motivform, dazu eine Tabelle zur Platzwahl und der Test mit einem Stencil.",
+      "updated": "2026-11-26",
+      "answer": "Die Tattoo Stelle wählst du am besten, indem du vier Dinge abwägst: wer es sieht, wie sich die Haut dort bewegt und altert, wie gut die Form des Motivs zum Platz passt und wie du zur Heilung stehst. Teste die Stelle mit einem Stencil in Originalgröße und frag dann deinen Artist.",
+      "sections": [
+        {
+          "h2": "Die Tattoo Stelle beginnt mit der Frage, wer es sieht",
+          "blocks": [
+            {
+              "p": "Die Tattoo Stelle entscheidet darüber, wie du jeden Tag mit deinem Tattoo lebst. Beginne mit der Sichtbarkeit, denn sie lässt sich später am schwersten ändern."
+            },
+            {
+              "p": "Frag dich, wo das Tattoo zu sehen sein soll und für wen."
+            },
+            {
+              "ul": [
+                "**Immer sichtbar:** Hände, Hals, Gesicht, Unterarme und Unterschenkel sind in den meisten Outfits zu sehen.",
+                "**Sichtbar, wenn du es willst:** Oberarm, Oberschenkel, Schulterblatt und Brust lassen sich mit T-Shirt, Shorts oder Hemdkragen verdecken.",
+                "**Meist privat:** Rippen, Rücken, Hüfte und oberer Oberschenkel sehen nur wenige, außer du entscheidest dich zu zeigen."
+              ]
+            },
+            {
+              "p": "Es gibt keine richtige Antwort. Ein Tattoo, das du verstecken kannst, gibt dir mehr Kontrolle. Ein Tattoo, das du siehst, gibt dir mehr Freude im Alltag. Überlege, was dir wichtiger ist."
+            }
+          ]
+        },
+        {
+          "h2": "Beruf, Dresscode und Veränderungen im Leben",
+          "blocks": [
+            {
+              "p": "Die Haltung zu sichtbaren Tattoos unterscheidet sich je nach Land, Branche und Arbeitgeber, und sie ändert sich mit der Zeit. Bevor du eine Stelle wählst, die in Arbeitskleidung zu sehen ist, prüfe den Dresscode und die Kultur deines Arbeitsplatzes oder des Arbeitsplatzes, den du dir wünschst."
+            },
+            {
+              "p": "Denk auch daran, wohin dein Leben gehen könnte. Ein Berufswechsel, eine Uniform, eine Reise oder ein Familienfest können ändern, wie wohl du dich mit einem sichtbaren Tattoo fühlst. Stellen, die ein Ärmel oder ein Kragen verdeckt, halten dir Optionen offen."
+            },
+            {
+              "p": "Das ist eine persönliche Entscheidung. Wäge sie ehrlich ab und lass nicht einen Trend für dich entscheiden."
+            }
+          ]
+        },
+        {
+          "h2": "Wie sich Haut bewegt und altert",
+          "blocks": [
+            {
+              "p": "Ein Tattoo sitzt auf Haut, und Haut ist keine flache Leinwand. Manche Stellen bleiben jahrzehntelang stabil. Andere dehnen sich, falten sich oder verändern sich mit dem Körper."
+            },
+            {
+              "ul": [
+                "**Gelenke** wie Ellbogen, Knie, Handgelenk und Knöchel biegen sich den ganzen Tag. Ein Motiv, das über ein Gelenk geht, verzerrt sich bei Bewegung.",
+                "**Hände, Füße und Finger** sind viel Reibung, Waschen und Sonne ausgesetzt. Motive dort brauchen oft Nachstechen, und dein Artist sagt dir, wie sie sich meist halten.",
+                "**Stellen, die sich mit Gewicht, Schwangerschaft oder Muskeln verändern** wie Bauch, Hüfte, Brust und Oberschenkelinnenseite können sich mit der Zeit verschieben.",
+                "**Sonnenbeschienene Stellen** verblassen schneller als bedeckte, deshalb zählt Sonnenschutz bei sichtbaren Stellen."
+              ]
+            },
+            {
+              "p": "Nichts davon schließt eine Stelle aus. Es heißt nur, dass du deinen Artist fragen solltest, wie eine Stelle meist altert, und dir verheilte Fotos seiner Arbeiten dort ansehen solltest."
+            }
+          ]
+        },
+        {
+          "h2": "Die Form des Motivs zum Platz passend wählen",
+          "blocks": [
+            {
+              "p": "Der Körper hat natürliche Linien und Rundungen, und eine gute Platzierung folgt ihnen. Ein Motiv, das mit der Körperform arbeitet, sieht aus, als gehöre es dorthin."
+            },
+            {
+              "ul": [
+                "**Lange, schmale Motive** wie ein Dolch, ein Zweig, eine Textzeile oder ein Motiv entlang der Wirbelsäule passen zu Stellen, die in einer Linie verlaufen: Unterarm, Wirbelsäule, Wade, Rippen oder die Länge des Oberschenkels.",
+                "**Runde oder kompakte Motive** wie ein Mandala, eine Rose oder ein Porträt sitzen gut auf flachen oder leicht gewölbten Flächen: Schulterblatt, Oberarm, Brust oder Oberschenkel.",
+                "**Kleine Motive** wie ein Symbol, ein Datum oder ein winziges Tier passen zu Stellen mit wenig Platz: Handgelenk, Knöchel, hinter dem Ohr oder die Innenseite eines Fingers."
+              ]
+            },
+            {
+              "p": "Wenn du dich nicht entscheiden kannst, ändere lieber die Form, statt die Passung zu erzwingen. Viele Motive lassen sich strecken, vereinfachen oder in zwei Teile teilen, damit sie zu einer Stelle passen."
+            }
+          ]
+        },
+        {
+          "h2": "Häufige Stellen und was dazu passt",
+          "blocks": [
+            {
+              "table": {
+                "head": [
+                  "Stelle",
+                  "Passt für lange Motive",
+                  "Passt für runde Motive",
+                  "Passt für kleine Motive"
+                ],
+                "rows": [
+                  [
+                    "Unterarm",
+                    "Ja",
+                    "Ja, auf der flachen Seite des Arms",
+                    "Ja"
+                  ],
+                  [
+                    "Oberarm",
+                    "Ja, umlaufend",
+                    "Ja",
+                    "Ja"
+                  ],
+                  [
+                    "Schulterblatt",
+                    "Manchmal",
+                    "Ja",
+                    "Ja"
+                  ],
+                  [
+                    "Rücken",
+                    "Ja, entlang der Wirbelsäule",
+                    "Ja, große Motive",
+                    "Ja"
+                  ],
+                  [
+                    "Brust",
+                    "Manchmal",
+                    "Ja",
+                    "Ja"
+                  ],
+                  [
+                    "Rippen",
+                    "Ja, an der Seite entlang",
+                    "Manchmal",
+                    "Ja"
+                  ],
+                  [
+                    "Oberschenkel",
+                    "Ja",
+                    "Ja",
+                    "Ja"
+                  ],
+                  [
+                    "Wade",
+                    "Ja",
+                    "Manchmal",
+                    "Ja"
+                  ],
+                  [
+                    "Handgelenk und Knöchel",
+                    "Nur Bänder",
+                    "Nein",
+                    "Ja"
+                  ],
+                  [
+                    "Hinter dem Ohr und Nacken",
+                    "Manchmal",
+                    "Nein",
+                    "Ja"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Sieh die Tabelle als Ausgangspunkt, nicht als Regelwerk. Erfahrene Artists passen Motive an fast jede Stelle an. Typische Maße für jede Stelle findest du in der Tabelle zur [Tattoo Größe](guide:tattoo-size-chart-by-body-part)."
+            }
+          ]
+        },
+        {
+          "h2": "Schmerz, Heilung und Komfort",
+          "blocks": [
+            {
+              "p": "Schmerz ist von Mensch zu Mensch verschieden, und er hängt von der Stelle ab, deshalb gibt es keine verlässliche Rangliste für alle. Manche finden Rippen oder Füße schwer, andere spüren dort kaum etwas. Auch die Heilung unterscheidet sich, denn eine Stelle, die an Kleidung reibt oder sich oft biegt, kann umständlicher zu pflegen sein."
+            },
+            {
+              "p": "Frag deinen Artist, was dich an der Stelle erwartet, wie lang die Sitzung dauert und wie du sie danach pflegst. Er hat das schon oft gemacht und kann dir Rat geben, der zu deinem Körper und deinem Motiv passt."
+            }
+          ]
+        },
+        {
+          "h2": "Die Stelle testen, bevor du dich festlegst",
+          "blocks": [
+            {
+              "p": "Über eine Stelle nachzudenken hilft, aber sie zu sehen ist besser. Es gibt zwei einfache Wege, eine Stelle zu testen."
+            },
+            {
+              "h3": "Mit einem gedruckten Stencil"
+            },
+            {
+              "p": "Drucke dein Motiv in Originalgröße und klebe es an die Stelle. Prüfe es im Stehen, im Sitzen und in Bewegung. Das [Studio](studio) macht aus deiner eigenen Zeichnung, deinem Flash oder deinem Foto ein Stencil auf deinem Gerät, und nichts wird hochgeladen. Zum Drucken lies unsere Anleitung zum [Druck in Originalgröße](guide:tattoo-stencil-size-true-size-print). Wie du ein Stencil aufträgst, steht unter [Übertragungsmethoden](guide:tattoo-stencil-transfer-methods)."
+            },
+            {
+              "h3": "Mit einer Vorschau"
+            },
+            {
+              "p": "Der KI-Generator auf der Startseite erstellt ein Motiv aus einer Beschreibung oder einem Beispielbild und zeigt es an 8 Körperstellen (Schulterblatt, Rücken, Unterarm, Oberarm, Brust, Rippen, Oberschenkel und Wade) und auf 6 Hauttönen. So vergleichst du Stellen schnell, bevor du druckst. Er erstellt ein Stencil, das du in Originalgröße (300 dpi) drucken kannst."
+            }
+          ]
+        },
+        {
+          "h2": "Fehler, die du vermeiden solltest",
+          "blocks": [
+            {
+              "ul": [
+                "Eine Stelle nur zu wählen, weil sie gerade im Trend liegt.",
+                "Ein Motiv in einen Platz zu zwingen, der nicht zu seiner Form passt.",
+                "Den Dresscode eines Jobs zu ignorieren, den du hast oder willst.",
+                "Feine Details dort zu platzieren, wo sich die Haut dehnt, faltet oder reibt.",
+                "Den Test in Originalgröße zu überspringen und nur nach dem Bildschirm zu urteilen.",
+                "Die Entscheidung zu überstürzen. Ein guter Artist lässt dir Zeit."
+              ]
+            },
+            {
+              "p": "Gib dir eine Woche, um mit der Stencil-Idee zu leben. Gefällt dir die Stelle am siebten Tag noch, ist das ein gutes Zeichen."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Welche Stelle ist die beste für ein erstes Tattoo?",
+          "a": "Die eine beste Stelle gibt es nicht. Viele beginnen an einer Stelle, die sich leicht verdecken und pflegen lässt, etwa am Oberarm oder Oberschenkel, und lassen sich von ihrem Artist beraten."
+        },
+        {
+          "q": "Welche Tattoo Stellen tun am meisten weh?",
+          "a": "Schmerz ist von Person zu Person verschieden, deshalb lassen sich die Stellen schwer ordnen. Frag deinen Artist, was dich an der Stelle erwartet, an die du denkst."
+        },
+        {
+          "q": "Woher weiß ich, ob ein Tattoo zur Stelle passt?",
+          "a": "Drucke das Motiv in Originalgröße, klebe es an die Stelle und prüfe es in Bewegung. So siehst du Größe und Fluss weit besser als am Bildschirm."
+        },
+        {
+          "q": "Verblassen Tattoos an Gelenken und Händen schneller?",
+          "a": "Stellen mit viel Bewegung, Reibung und Waschen brauchen eher Nachstechen. Frag deinen Artist, wie sich die Stelle meist hält."
+        },
+        {
+          "q": "Kann ich ein Motiv an eine andere Stelle anpassen?",
+          "a": "Ja. Motive lassen sich verkleinern, vereinfachen, strecken oder teilen, und dein Artist hilft dir, eines an die gewählte Stelle anzupassen."
+        }
+      ],
+      "cta": "Probiere das Stencil-Studio oder den KI-Generator aus und sieh dein Motiv an der gewählten Stelle, bevor du dich festlegst."
+    },
+    "make-a-tattoo-stencil-at-home": {
+      "title": "Tattoo Stencil selber machen: Methoden für zu Hause",
+      "short": "Tattoo Stencil selber machen",
+      "blurb": "Wege, ein Tattoo Stencil zu Hause ohne Thermodrucker selber zu machen, für Artists und zum Üben auf Papier oder mit temporären Methoden.",
+      "metaTitle": "Tattoo Stencil selber machen, auch ohne Drucker",
+      "metaDesc": "Tattoo Stencil selber machen ohne Thermodrucker: Pauspapier, Übertragung von normalem Papier und eine saubere Linien-Datei, plus Sicherheitshinweis.",
+      "updated": "2026-11-26",
+      "answer": "Um ein Tattoo Stencil selber zu machen, beginne mit einer sauberen Linienzeichnung in der richtigen Größe. Pause sie auf Pauspapier durch oder drucke sie auf normalem Papier und übertrage sie von Hand. Nutze diese Methoden zum Üben auf Papier oder mit temporären Methoden. Echtes Tätowieren gehört zu einem ausgebildeten Artist.",
+      "sections": [
+        {
+          "h2": "Bevor du ein Tattoo Stencil selber machst",
+          "blocks": [
+            {
+              "p": "Du kannst ein Tattoo Stencil selber machen, mit einem Drucker, etwas Papier und ein paar einfachen Materialien. Ein Stencil ist eine Linienzeichnung eines Motivs, die als Vorlage dient, damit das Motiv an der richtigen Stelle und in der richtigen Größe landet."
+            },
+            {
+              "p": "Diese Anleitung ist für Tattoo-Artists, die eine Ersatzmethode brauchen, für Lernende, die Stencil-Arbeit üben, und für Menschen, die ein Motiv auf Papier oder ein temporäres Zeichen wollen. Sie ist keine Anleitung, dich selbst oder andere zu tätowieren."
+            },
+            {
+              "p": "**Sicherheitshinweis:** Echtes Tätowieren muss ein ausgebildeter Artist in einem zugelassenen Studio übernehmen, mit sterilem Material und richtiger Nachsorge. Ein Stencil zu machen und auf Papier oder mit temporären Methoden zu üben ist etwas anderes, als Farbe in die Haut zu bringen. Bitte versuche nicht, zu Hause zu tätowieren."
+            }
+          ]
+        },
+        {
+          "h2": "Was du brauchst",
+          "blocks": [
+            {
+              "ul": [
+                "Eine saubere Linienzeichnung des Motivs, auf Papier oder als Datei.",
+                "Ein Lineal oder Maßband in Millimetern.",
+                "Pauspapier oder dünnes Papier.",
+                "Einen spitzen Bleistift oder feinen Stift.",
+                "Kohlepapier oder Transferpapier, wenn du von Hand durchpausen willst.",
+                "Einen normalen Drucker, schwarze Tinte und einfaches Papier.",
+                "Malerkrepp, um das Papier festzuhalten.",
+                "Eine Lichtquelle wie ein Fenster oder einen Leuchttisch, die beim Durchpausen hilft."
+              ]
+            },
+            {
+              "p": "Arbeitest du als Artist, nimm die Materialien, die dein Studio schon für Haut nutzt. Die Liste oben ist für Stencil-Übung auf Papier und für temporäre Methoden."
+            }
+          ]
+        },
+        {
+          "h2": "Methode 1: Pauspapier und Kohlepapier",
+          "blocks": [
+            {
+              "p": "Das ist die klassische Methode, und sie funktioniert noch. Sie braucht keine Elektronik."
+            },
+            {
+              "ol": [
+                "Lege deine Zeichnung auf eine ebene Fläche und das Pauspapier darüber.",
+                "Zeichne die Hauptlinien mit einem spitzen Bleistift nach und drücke gleichmäßig.",
+                "Lass Schattierung und Flächen weg. Ein Stencil braucht nur Konturen und wichtige Details.",
+                "Lege Kohlepapier oder Transferpapier unter die Pause, mit der Kohleseite zur Zielfläche.",
+                "Fixiere die Lagen mit Klebeband, damit nichts verrutscht.",
+                "Fahre die Linien noch einmal mit einem Stift nach, um sie zu übertragen."
+              ]
+            },
+            {
+              "p": "Das Ergebnis ist eine Kopie der Linien auf der neuen Fläche. Zum Üben ist diese Fläche meist Papier oder ein Übungsmaterial. Weitere Möglichkeiten findest du in unserer Anleitung zu [Übertragungsmethoden](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Methode 2: auf normalem Papier drucken und übertragen",
+          "blocks": [
+            {
+              "p": "Ein normaler Drucker kann die Stencil-Linien auf einfaches Papier drucken. Die Linien überträgst du dann von Hand auf eine Übungsfläche."
+            },
+            {
+              "ol": [
+                "Drucke die Linienzeichnung mit 100 Prozent ohne Skalierung.",
+                "Prüfe die Größe mit einem Lineal. Die gedruckte Breite muss zur gewählten Breite passen.",
+                "Lege den Ausdruck auf die Übungsfläche und zeichne die Linien mit einem Stift nach, damit sie durch Kohlepapier oder Transferpapier durchkommen.",
+                "Hebe das Papier ab und sieh dir das Ergebnis an. Fehlende Linien korrigierst du mit einem Bleistift."
+              ]
+            },
+            {
+              "p": "Denke daran, dass ein Stencil ein Spiegelbild des fertigen Motivs ist, wenn du es von der Rückseite des Papiers überträgst. Prüfe die Richtung, bevor du anfängst, besonders bei Schrift."
+            }
+          ]
+        },
+        {
+          "h2": "Methode 3: eine saubere Linien-Datei und ein Drucker",
+          "blocks": [
+            {
+              "p": "Je sauberer die Linien-Datei, desto leichter wird jeder weitere Schritt. Eine gute Datei hat dünne, durchgehende schwarze Linien auf weißem Hintergrund, keinen grauen Schleier und keine verirrten Punkte."
+            },
+            {
+              "p": "Das [Studio](studio) macht aus deiner eigenen Zeichnung, deinem Flash oder deinem Foto ein Stencil auf deinem Gerät, und nichts wird hochgeladen. Es liefert eine saubere Linienversion in einer Größe, die du in Millimetern festlegst, und die du auf einem normalen Drucker drucken kannst."
+            },
+            {
+              "p": "Gehst du von einem Foto aus, erklärt unsere Anleitung zum [Stencil aus Foto](guide:tattoo-stencil-from-photo), wie du ein klares Ergebnis bekommst. Der KI-Generator auf der Startseite kann auch ein Motiv aus einer Beschreibung oder einem Beispielbild erstellen und ein Stencil machen, das du in Originalgröße (300 dpi) drucken kannst. Ausprobieren ist kostenlos. Kostenlose Downloads tragen ein Wasserzeichen, und ein Tagespass oder Pro entfernt es."
+            }
+          ]
+        },
+        {
+          "h2": "Die Größe richtig hinbekommen",
+          "blocks": [
+            {
+              "p": "Ein Stencil in der falschen Größe macht alles andere zunichte. Lege die Größe zuerst in Millimetern fest und sorge dafür, dass Datei und Drucker sie einhalten."
+            },
+            {
+              "ul": [
+                "Exportiere das Stencil mit 300 dpi.",
+                "Drucke mit 100 Prozent. Schalte Optionen wie „An Seite anpassen“ oder „Verkleinern“ aus.",
+                "Miss den Ausdruck mit einem Lineal und vergleiche ihn mit deinem Ziel.",
+                "Weicht er ab, prüfe die Druckskalierung und drucke neu."
+              ]
+            },
+            {
+              "p": "Unsere Anleitung zum [Druck in Originalgröße](guide:tattoo-stencil-size-true-size-print) erklärt die Rechnung genauer, und die Tabelle zur [Tattoo Größe](guide:tattoo-size-chart-by-body-part) zeigt typische Maße für jede Körperstelle."
+            }
+          ]
+        },
+        {
+          "h2": "Tipps für ein sauberes Ergebnis",
+          "blocks": [
+            {
+              "ul": [
+                "Nimm weniger, sauberere Linien. Zu viele Details werden beim Übertragen zu einem Fleck.",
+                "Bewahre eine Kopie des Originals auf und arbeite mit der Kopie.",
+                "Arbeite mit leichter Hand und scharfen Werkzeugen.",
+                "Teste zuerst auf Schmierpapier, bevor du das endgültige Blatt nimmst.",
+                "Halte die Druckerfarbe dunkel. Blasse Linien sind schwer zu verfolgen.",
+                "Beschrifte jedes Blatt mit Größe und Datum, damit du weißt, welche Version du gemacht hast."
+              ]
+            },
+            {
+              "p": "Ist ein Stencil für einen echten Kunden, sollte der Artist, der die Arbeit macht, es freigeben. Er kennt seine Technik und weiß, was die Haut zulässt."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kann ich ein Tattoo Stencil ohne Thermodrucker machen?",
+          "a": "Ja. Du kannst das Motiv auf Pauspapier durchpausen, Kohlepapier oder Transferpapier nutzen oder die Linien auf einem normalen Drucker drucken und von Hand übertragen."
+        },
+        {
+          "q": "Welches Papier nehme ich für ein selbst gemachtes Tattoo Stencil?",
+          "a": "Dünnes Pauspapier eignet sich gut zum Durchpausen von Hand, und einfaches Druckerpapier für ein gedrucktes Stencil. Wähle Papier, das flach bleibt und nicht reißt."
+        },
+        {
+          "q": "Wie stelle ich sicher, dass das Stencil die richtige Größe hat?",
+          "a": "Lege die Breite in Millimetern fest, exportiere mit 300 dpi und drucke mit 100 Prozent. Miss dann den Ausdruck mit einem Lineal."
+        },
+        {
+          "q": "Ist es sicher, mich selbst mit einem Stencil zu tätowieren?",
+          "a": "Nein. Echtes Tätowieren gehört zu einem ausgebildeten Artist in einem zugelassenen Studio. Ein Stencil ist zum Üben auf Papier, für temporäre Methoden oder für Profis gedacht."
+        },
+        {
+          "q": "Warum wird mein Stencil unscharf?",
+          "a": "Die Quelldatei ist wahrscheinlich zu klein oder zu weich. Beginne mit einer sauberen, hochauflösenden Linien-Datei und drucke mit 300 dpi."
+        }
+      ],
+      "cta": "Öffne das Studio, mach aus deiner Zeichnung ein sauberes Stencil in der gewählten Größe und drucke es zu Hause."
+    },
+    "free-tattoo-stencil-maker-guide": {
+      "title": "Tattoo Stencil kostenlos erstellen: worauf du achten solltest",
+      "short": "Tattoo Stencil kostenlos erstellen",
+      "blurb": "Eine Checkliste, um jeden kostenlosen Tattoo-Stencil-Maker zu beurteilen, was kostenlose Versionen meist begrenzen, und ein Test in fünf Minuten.",
+      "metaTitle": "Tattoo Stencil kostenlos: Checkliste zur Bewertung",
+      "metaDesc": "Tattoo Stencil kostenlos erstellen: saubere Linien, Größe in mm, Druck in Originalgröße und Datenschutz, plus ein Fünf-Minuten-Test mit deiner Zeichnung.",
+      "updated": "2026-11-26",
+      "answer": "Ein guter kostenloser Tattoo-Stencil-Maker liefert saubere schwarze Linien, lässt dich die Größe in Millimetern festlegen, druckt in Originalgröße, zeigt eine Vorschau auf der Haut und achtet auf deinen Datenschutz. Teste jedes Tool in fünf Minuten mit deiner eigenen Zeichnung und lies, was die kostenlose Version begrenzt.",
+      "sections": [
+        {
+          "h2": "Was ein kostenloser Tattoo-Stencil-Maker können sollte",
+          "blocks": [
+            {
+              "p": "Ein Tattoo Stencil kostenlos zu erstellen heißt, ein Bild in eine Linienzeichnung zu verwandeln, die du drucken und als Vorlage nutzen kannst. Das klingt einfach, aber die Ergebnisse unterscheiden sich stark zwischen den Tools. Manche liefern scharfe Linien in der richtigen Größe. Andere liefern einen grauen Schmierer in falscher Größe und ein Wasserzeichen quer über der Mitte."
+            },
+            {
+              "p": "Bevor du Zeit in ein Tool steckst, solltest du wissen, was ein gutes kann. Die nächsten Abschnitte nennen die wichtigsten Funktionen und geben dir eine Checkliste, die du auf jedes Tool anwenden kannst."
+            }
+          ]
+        },
+        {
+          "h2": "Saubere Linien",
+          "blocks": [
+            {
+              "p": "Ein Stencil besteht aus Linien, also beurteilst du zuerst die Linienqualität. Du willst durchgehende, gleichmäßige schwarze Linien auf weißem Hintergrund. Daran erkennst du ein gutes Ergebnis:"
+            },
+            {
+              "ul": [
+                "Glatte Kurven ohne ausgefranste Kanten.",
+                "Kein grauer Schleier und kein körniges Rauschen um die Linien.",
+                "Details, die nach der Umwandlung noch zu sehen sind, nicht verloren oder doppelt.",
+                "Eine Möglichkeit, Schwellenwert oder Linienstärke anzupassen, damit du das Ergebnis abstimmen kannst."
+              ]
+            },
+            {
+              "p": "Ein Tool mit nur einem festen Filter funktioniert bei manchen Bildern und scheitert bei anderen. Ein Tool mit Reglern gibt dir bessere Chancen auf ein sauberes Ergebnis mit deiner eigenen Vorlage."
+            }
+          ]
+        },
+        {
+          "h2": "Größe in Millimetern und Druck in Originalgröße",
+          "blocks": [
+            {
+              "p": "Ein Stencil, das in falscher Größe druckt, ist nutzlos, deshalb zählt die Größenkontrolle mehr als fast jede andere Funktion. Ein gutes Tool lässt dich Breite oder Höhe in Millimetern eingeben und zeigt dir, was das bei 300 dpi in Pixeln bedeutet."
+            },
+            {
+              "p": "300 dpi ist das übliche Ziel für ein gedrucktes Bild, das aus der Nähe betrachtet wird. Bei dieser Dichte bleibt eine dünne Linie auf Papier sauber. Das Tool sollte außerdem eine Datei exportieren, die ohne Überraschungen mit 100 Prozent druckt. Wenn du die Rechnung sehen willst, lies unsere Anleitung zum [Druck in Originalgröße](guide:tattoo-stencil-size-true-size-print)."
+            },
+            {
+              "p": "Typische Größen für jede Körperstelle findest du in der Tabelle zur [Tattoo Größe](guide:tattoo-size-chart-by-body-part)."
+            }
+          ]
+        },
+        {
+          "h2": "Vorschau auf der Haut und Datenschutz",
+          "blocks": [
+            {
+              "h3": "Vorschau"
+            },
+            {
+              "p": "Ein Motiv an einer Körperstelle zu sehen hilft dir, Größe und Platz zu beurteilen, bevor du druckst. Tools mit einer Vorschau an verschiedenen Körperstellen und Hauttönen ersparen dir viel Raten. Unsere [Anleitung zur Tattoo Stelle](guide:tattoo-placement-guide) erklärt, wie du damit eine Stelle wählst."
+            },
+            {
+              "h3": "Datenschutz"
+            },
+            {
+              "p": "Deine Zeichnungen und Fotos können persönlich sein. Prüfe, ob das Tool dein Bild auf einen Server hochlädt oder auf deinem eigenen Gerät verarbeitet. Ein Tool, das auf deinem Gerät arbeitet, lässt das Bild bei dir. Lädt es hoch, suche nach einer klaren Aussage, wie lange die Datei gespeichert wird und wer sie sehen kann."
+            }
+          ]
+        },
+        {
+          "h2": "Eine Checkliste für jedes Tool, auch für Skinstencil",
+          "blocks": [
+            {
+              "p": "Beurteile mit dieser Liste jeden kostenlosen Tattoo-Stencil-Maker. Hake jede Zeile ab, bevor du dich auf eines verlässt."
+            },
+            {
+              "ul": [
+                "Liefert es saubere, durchgehende Linien aus deinem eigenen Bild?",
+                "Kannst du die Größe in Millimetern festlegen?",
+                "Exportiert es mit 300 dpi für den Druck in Originalgröße?",
+                "Gibt es eine Vorschau an einer Körperstelle?",
+                "Sagt es klar, was mit deinem Bild passiert?",
+                "Ist klar, was kostenlos ist und was nicht?",
+                "Kannst du herunterladen, ohne ein Konto anzulegen, das du nicht willst?",
+                "Funktioniert es für Fotos genauso wie für Zeichnungen?"
+              ]
+            },
+            {
+              "p": "Skinstencil ist ein Beispiel, das du durch dieselbe Liste schicken kannst. Das [Studio](studio) macht aus deiner eigenen Zeichnung, deinem Flash oder deinem Foto ein Stencil auf deinem Gerät, und nichts wird hochgeladen. Der KI-Generator auf der Startseite erstellt ein Motiv aus einer Beschreibung oder einem Beispielbild, zeigt es an 8 Körperstellen (Schulterblatt, Rücken, Unterarm, Oberarm, Brust, Rippen, Oberschenkel und Wade) und auf 6 Hauttönen und erstellt ein Stencil, das du in Originalgröße (300 dpi) drucken kannst. Beurteile es so, wie du jedes andere Tool beurteilen würdest."
+            }
+          ]
+        },
+        {
+          "h2": "Was kostenlose Versionen meist begrenzen",
+          "blocks": [
+            {
+              "p": "Die meisten kostenlosen Tools haben Grenzen, und es ist fair, vorher danach zu suchen. Häufig sind:"
+            },
+            {
+              "ul": [
+                "Ein Wasserzeichen auf heruntergeladenen Dateien.",
+                "Eine Obergrenze für Umwandlungen oder Downloads.",
+                "Geringere Auflösung im kostenlosen Tarif.",
+                "Weniger Regler zum Anpassen.",
+                "Funktionen, die ein Konto brauchen."
+              ]
+            },
+            {
+              "p": "Nichts davon ist an sich schlecht. Mit einer kostenlosen Stufe kannst du ein Tool testen, bevor du dich festlegst. Wichtig ist, dass die Grenze klar ist, damit du weißt, was du bekommst. Bei Skinstencil ist Ausprobieren kostenlos. Kostenlose Downloads tragen ein Wasserzeichen, und ein Tagespass oder Pro entfernt es. Den aktuellen Tarif siehst du auf der Website."
+            }
+          ]
+        },
+        {
+          "h2": "Jedes Tool in fünf Minuten testen",
+          "blocks": [
+            {
+              "p": "Du brauchst keinen langen Test. Nimm deine eigene Zeichnung und folge diesen Schritten."
+            },
+            {
+              "ol": [
+                "Wähle eine einfache Zeichnung von dir mit klaren Linien. Ein Scan oder ein Foto einer Skizze geht.",
+                "Lade sie in das Tool und achte darauf, wie lange es dauert.",
+                "Prüfe die Linienqualität in voller Vergrößerung.",
+                "Lege eine Größe in Millimetern fest, zum Beispiel 100 mm.",
+                "Lade das Ergebnis herunter und drucke es mit 100 Prozent.",
+                "Miss den Ausdruck mit einem Lineal.",
+                "Sieh dir an, wie der Download aussieht, auch ein mögliches Wasserzeichen."
+              ]
+            },
+            {
+              "p": "Passt der Ausdruck zur eingestellten Größe und sehen die Linien sauber aus, besteht das Tool die Grundlagen. Wenn nicht, wechsle zu einem anderen."
+            }
+          ]
+        },
+        {
+          "h2": "Wann ein Foto den Foto-Modus braucht",
+          "blocks": [
+            {
+              "p": "Eine Zeichnung auf weißem Papier lässt sich leicht umwandeln, weil die Linien schon dunkel sind und der Hintergrund schlicht. Ein Foto ist schwerer. Es hat Schatten, Farben, Texturen und weiche Kanten, und ein einfacher Filter macht daraus Rauschen."
+            },
+            {
+              "p": "Ist deine Vorlage ein Foto, suche ein Tool mit eigenem Foto-Modus. Er sollte Töne vereinfachen und die Hauptkonturen herausarbeiten, damit das Ergebnis wie ein Stencil wirkt. Unsere Anleitung zum [Stencil aus Foto](guide:tattoo-stencil-from-photo) erklärt, wie du das beste Ergebnis bekommst."
+            },
+            {
+              "p": "Ein Tipp für jedes Foto: gutes Licht, ein scharfes Bild und, wo möglich, ein schlichter Hintergrund. Besseres Ausgangsmaterial ergibt ein saubereres Stencil."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Gibt es einen kostenlosen Tattoo-Stencil-Maker?",
+          "a": "Ja, mehrere Tools bieten eine kostenlose Stufe. Prüfe die Grenzen wie Wasserzeichen, Download-Obergrenzen oder geringere Auflösung, bevor du dich darauf verlässt."
+        },
+        {
+          "q": "Kann ich kostenlos ein Tattoo Stencil aus einem Foto erstellen?",
+          "a": "Oft ja, aber Fotos brauchen mehr Sorgfalt als Zeichnungen. Nimm ein Tool mit Foto-Modus und ein scharfes, gut beleuchtetes Ausgangsbild."
+        },
+        {
+          "q": "In welcher Größe sollte ein Stencil exportiert werden?",
+          "a": "Wähle die Größe in Millimetern, die du auf der Haut willst, und exportiere mit 300 dpi. Drucke dann mit 100 Prozent und miss das Ergebnis."
+        },
+        {
+          "q": "Sind meine Bilder in einem Online-Stencil-Maker sicher?",
+          "a": "Das hängt vom Tool ab. Suche eines, das Bilder auf deinem Gerät verarbeitet oder klar sagt, wie lange Dateien gespeichert werden und wer sie sehen kann."
+        },
+        {
+          "q": "Warum haben kostenlose Stencil-Downloads ein Wasserzeichen?",
+          "a": "Ein Wasserzeichen ist eine häufige Grenze kostenloser Tarife. Viele Tools entfernen es mit einer bezahlten Option, prüfe also, was das Tool bietet."
+        }
+      ],
+      "cta": "Probiere das Skinstencil Studio mit deiner eigenen Zeichnung aus und geh die Checkliste selbst durch."
     }
   }
 }
