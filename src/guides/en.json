@@ -23,6 +23,18 @@
     "tattoo-stencil-from-photo",
     "tattoo-stencil-size-true-size-print",
     "tattoo-stencil-transfer-methods",
+    "ai-tattoo-generator-guide",
+    "ai-tattoo-prompts",
+    "see-a-tattoo-on-your-body-before-you-get-it",
+    "fine-line-tattoo-stencil-tips",
+    "how-to-apply-a-tattoo-stencil",
+    "how-long-does-a-tattoo-stencil-last",
+    "tattoo-stencil-paper-guide",
+    "tattoo-stencil-printer-guide",
+    "tattoo-size-chart-by-body-part",
+    "tattoo-placement-guide",
+    "make-a-tattoo-stencil-at-home",
+    "free-tattoo-stencil-maker-guide",
     "brow-mapping-on-a-photo-start-arch-end",
     "brow-mapping-measurements-scale-and-print-true-size"
   ],
@@ -843,6 +855,2259 @@
         }
       ],
       "cta": "Set the scale, read the measurements and print the guide at true size. [Open brow mapping](brow)."
+    },
+    "ai-tattoo-generator-guide": {
+      "title": "AI tattoo generator: how to use one and get a design an artist can tattoo",
+      "short": "AI tattoo generator: how to use one well",
+      "blurb": "What an AI tattoo generator can and cannot do, and how to get a clean design to take to your artist.",
+      "metaTitle": "AI Tattoo Generator Guide: Get a Design to Tattoo",
+      "metaDesc": "How to use an AI tattoo generator well: write a clear brief, keep lines clean, check the result, and take it to your artist as a starting point.",
+      "updated": "2026-11-26",
+      "answer": "An AI tattoo generator turns a written description or an example picture into a tattoo design in seconds. Use it to explore ideas, then check that the lines are clean and the detail is not too small. Treat the result as a draft and take it to your artist, who adapts it for skin.",
+      "sections": [
+        {
+          "h2": "What an AI tattoo generator actually does",
+          "blocks": [
+            {
+              "p": "An AI tattoo generator makes a picture from words, or from a picture you supply as an example. You describe the idea, it returns a design, and you can adjust the description and try again. That is the whole job: it gives you something to look at and react to."
+            },
+            {
+              "p": "It is a fast way to explore. Instead of describing a half-formed idea to an artist and hoping you picture the same thing, you can arrive with something concrete. Even a rough design makes the conversation shorter, because you can say \"more like this, less like that\"."
+            },
+            {
+              "p": "In Skinstencil, the generator on the home page makes a design from a description or an example picture and shows it on 8 body parts and 6 skin tones. It can also make a stencil you can print at true size (300 dpi). It is free to try."
+            }
+          ]
+        },
+        {
+          "h2": "What an AI tattoo generator cannot do",
+          "blocks": [
+            {
+              "p": "A generated image is a picture, not a tattoo plan. It does not know how ink behaves in skin, how your body moves, or how a line will look in ten years. Be clear about the limits before you fall in love with a result."
+            },
+            {
+              "ul": [
+                "**It cannot judge what will tattoo well.** Very small detail and hairline gaps look fine on a screen and can blur together on skin.",
+                "**It cannot replace your artist.** Placement, size and linework are decisions for the person holding the machine.",
+                "**It does not always follow your words exactly.** Hands, lettering and symmetrical shapes are common places for odd results, so look closely.",
+                "**It cannot make a design original in the legal or personal sense.** More on that below."
+              ]
+            },
+            {
+              "p": "Think of the output as a sketch from a fast assistant. Useful, but unfinished."
+            }
+          ]
+        },
+        {
+          "h2": "Write a brief the generator can follow",
+          "blocks": [
+            {
+              "p": "Vague words give vague designs. A good brief names the subject, the style, how heavy the lines are, and what you do not want. A short example: \"a single wolf head, traditional style, bold outlines, no background, no shading\"."
+            },
+            {
+              "p": "If you have a reference, use it. An example picture tells the generator more about mood and composition than a paragraph of adjectives. Choose a reference for its style or layout, not because you plan to reproduce it."
+            },
+            {
+              "p": "We keep a full list of wording ideas in [AI tattoo prompts](guide:ai-tattoo-prompts), grouped by style. Start there if you are staring at an empty box."
+            }
+          ]
+        },
+        {
+          "h2": "Get a design an artist can actually tattoo",
+          "blocks": [
+            {
+              "p": "The gap between a pretty image and a tattooable design is mostly about simplicity. Ask for the things artists work with every day."
+            },
+            {
+              "ul": [
+                "**Clean, continuous lines.** Say \"clean outlines\" or \"solid linework\". Avoid asking for a sketchy or scratchy look unless that is the goal.",
+                "**No tiny noise.** Specks, fine hatching and dozens of small details turn into smudges on skin. Ask for \"minimal detail\" or \"no texture\".",
+                "**Room between elements.** Lines that nearly touch tend to merge over time. Ask for open spacing.",
+                "**A plain background.** A design that floats on white is easier to turn into a stencil than one with a busy scene behind it.",
+                "**One clear idea.** A single focal subject reads better than a crowded collage."
+              ]
+            },
+            {
+              "p": "If a result is close but too busy, regenerate with fewer words rather than more. Subtract detail first, then add back what you miss."
+            }
+          ]
+        },
+        {
+          "h2": "Review checklist before you see your artist",
+          "blocks": [
+            {
+              "p": "Spend five minutes with the design before you book. Zoom in, then look at it small, the size it would really be on your arm or ankle."
+            },
+            {
+              "ol": [
+                "**Zoom in.** Are the lines solid, or do they break up and wobble?",
+                "**Shrink it.** Print it at the size you plan to get, or view it small on screen. Does the detail survive?",
+                "**Check the gaps.** Are any two lines closer together than you would be happy to see blur?",
+                "**Check the anatomy.** Count fingers, eyes and petals. Look at letters and symbols one at a time.",
+                "**Try it on the body.** See it on the body part you have in mind, and on a skin tone close to yours.",
+                "**Ask what you would change.** Note two or three things so you can raise them at the consultation."
+              ]
+            },
+            {
+              "p": "The [stencil Studio](studio) can help with the size check: it turns a drawing, flash or photo into a stencil on your device, with nothing uploaded. For the printing side, see [tattoo stencil size](guide:tattoo-stencil-size-true-size-print)."
+            }
+          ]
+        },
+        {
+          "h2": "Copyright, originality and your artist",
+          "blocks": [
+            {
+              "p": "AI images are made from patterns learned from many existing pictures, and the rules about who owns them are still unsettled in many places. You should not assume a generated design is automatically unique, or that nobody else holds rights in something that resembles it."
+            },
+            {
+              "p": "Two simple habits keep you on the right side of this. First, do not ask a generator to copy a named artist or a specific piece of someone's work, and do not use it to launder their design. Second, show the result to your artist and say plainly that it came from an AI generator."
+            },
+            {
+              "p": "A good artist will often redraw it, change the composition and add their own touch. That is how a generated idea becomes a design that is properly yours. If your artist says no to a design, accept that, and ask what they would draw instead."
+            }
+          ]
+        },
+        {
+          "h2": "From generated design to stencil",
+          "blocks": [
+            {
+              "p": "Once you and your artist agree on a design, it has to become a stencil: a clean outline that is printed at the right size. Your artist will usually prepare this, but many people like to arrive with a printable version to speed things up."
+            },
+            {
+              "p": "The generator can make a stencil you can print at true size (300 dpi). Free downloads carry a watermark, and a day pass or Pro removes it. Bring it as a starting point, and let the artist decide whether to use it, redraw it or adjust it on the day."
+            },
+            {
+              "p": "For how the stencil then gets onto skin, read [tattoo stencil transfer methods](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I take an AI-generated design to a tattoo artist?",
+          "a": "Yes, but tell them where it came from. Many artists will redraw or adapt it so it works on skin, and some will decline, which is their call."
+        },
+        {
+          "q": "Are AI tattoo designs original?",
+          "a": "Not automatically. The legal position on AI images varies and is still developing, so show your artist and avoid asking for a copy of anyone else's work."
+        },
+        {
+          "q": "Why do AI tattoo designs look good on screen but bad on skin?",
+          "a": "Screens can show hairline detail that skin cannot hold. Tiny gaps and fine texture blur together, so ask for clean lines and minimal detail."
+        },
+        {
+          "q": "Can an AI tattoo generator show me the tattoo on my body?",
+          "a": "Some can. The Skinstencil generator shows a design on 8 body parts and 6 skin tones, which gives you a rough idea of placement and contrast."
+        },
+        {
+          "q": "Is the Skinstencil AI tattoo generator free?",
+          "a": "It is free to try. Free downloads carry a watermark, and a day pass or Pro removes it."
+        }
+      ],
+      "cta": "Try the AI tattoo generator on the Skinstencil home page, describe your idea and see it on your body part before you talk to your artist."
+    },
+    "ai-tattoo-prompts": {
+      "title": "AI tattoo prompts: a formula and 25+ examples that work",
+      "short": "AI tattoo prompts: formula and examples",
+      "blurb": "A simple prompt formula, 25 example prompts by style, and how to fix a design that is not right.",
+      "metaTitle": "AI Tattoo Prompts: Formula and 25+ Examples",
+      "metaDesc": "Write better AI tattoo prompts with a five-part formula and 25+ copy-ready examples for fine line, traditional, blackwork, geometric and more.",
+      "updated": "2026-11-26",
+      "answer": "Good AI tattoo prompts follow five parts: the subject, the style, the line weight, the composition, and what to avoid. For example: \"a fox, fine line style, thin even lines, centred on a plain white background, no shading\". Change one part at a time to improve the result.",
+      "sections": [
+        {
+          "h2": "The AI tattoo prompts formula",
+          "blocks": [
+            {
+              "p": "The best AI tattoo prompts are short and specific. Most weak results come from leaving out a part, so the generator fills the gap with its own guess. Use these five parts, in roughly this order:"
+            },
+            {
+              "ol": [
+                "**Subject.** What it is. \"A heron standing in water\" beats \"a bird\".",
+                "**Style.** Fine line, traditional, blackwork, geometric, lettering, botanical and so on.",
+                "**Line weight.** Thin, medium or bold, and even or varied.",
+                "**Composition.** Centred, vertical, wrapped around, with or without a border, plain background.",
+                "**What to avoid.** No shading, no text, no background, no tiny details."
+              ]
+            },
+            {
+              "p": "Put together: \"a heron standing in water, fine line style, thin even lines, vertical composition on a plain white background, no shading, no tiny details\"."
+            },
+            {
+              "p": "You do not always need every part. But when a result disappoints, check which of the five you skipped."
+            }
+          ]
+        },
+        {
+          "h2": "Fine line prompts",
+          "blocks": [
+            {
+              "p": "Fine line designs rely on thin, even strokes and a lot of white space. Say so, and ask the generator to leave out heavy fills."
+            },
+            {
+              "ul": [
+                "A single-line drawing of a woman's face, fine line style, one continuous thin line, plain white background",
+                "A small crescent moon with three stars, fine line, thin even lines, minimal, no shading",
+                "A hummingbird beside a flower, fine line style, delicate thin outlines, no fill, white background",
+                "A mountain range at sunrise, fine line, thin lines, simple horizon, no background texture",
+                "Two hands almost touching, fine line style, thin outlines, minimal detail, centred"
+              ]
+            },
+            {
+              "p": "For more on why this style needs extra care, see [fine line tattoo stencil tips](guide:fine-line-tattoo-stencil-tips)."
+            }
+          ]
+        },
+        {
+          "h2": "Traditional and blackwork prompts",
+          "blocks": [
+            {
+              "p": "Traditional means bold outlines and flat colour blocks. Blackwork means solid black and strong contrast. Both want heavy lines, so ask for them."
+            },
+            {
+              "table": {
+                "head": [
+                  "Style",
+                  "Example prompt"
+                ],
+                "rows": [
+                  [
+                    "Traditional",
+                    "A rose with two leaves, traditional tattoo style, bold black outlines, flat shading, plain white background"
+                  ],
+                  [
+                    "Traditional",
+                    "A swallow carrying a banner, traditional style, thick outlines, simple shapes, centred"
+                  ],
+                  [
+                    "Traditional",
+                    "A dagger through a heart, traditional tattoo flash, bold lines, no gradients"
+                  ],
+                  [
+                    "Traditional",
+                    "A ship in rough waves, traditional style, heavy outlines, limited detail"
+                  ],
+                  [
+                    "Blackwork",
+                    "A raven with open wings, blackwork style, solid black fill, high contrast, no gradients"
+                  ],
+                  [
+                    "Blackwork",
+                    "A snake coiled around a dagger, blackwork, bold black shapes, clean edges"
+                  ],
+                  [
+                    "Blackwork",
+                    "A full moon over pine trees, blackwork style, strong black and white contrast, no grey shading"
+                  ],
+                  [
+                    "Blackwork",
+                    "A skull with floral details, blackwork, solid black and clean line pattern, plain background"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "h2": "Geometric and lettering prompts",
+          "blocks": [
+            {
+              "p": "Geometric work depends on precise shapes, and lettering depends on legible letters. These two are where generators slip most often, so keep the request simple and check the output closely."
+            },
+            {
+              "ul": [
+                "A wolf head built from triangles, geometric style, thin precise lines, symmetrical, white background",
+                "A mandala with eight-fold symmetry, geometric, medium line weight, no shading",
+                "A hexagon pattern forming a cube, geometric line art, clean straight lines, minimal",
+                "A geometric deer with antlers made of overlapping lines, thin lines, centred",
+                "The word \"Breathe\" in elegant script, thin lettering, plain white background, no decoration",
+                "The word \"Family\" in bold gothic lettering, thick strokes, no background, no effects",
+                "A short date in Roman numerals, clean serif lettering, even spacing, no ornament"
+              ]
+            },
+            {
+              "p": "With text, always read every letter on the result. Generators can swap or invent characters. Many people ask for the design without text and add the wording in the stencil step, or ask the artist to draw the letters."
+            }
+          ]
+        },
+        {
+          "h2": "Botanical and animal prompts",
+          "blocks": [
+            {
+              "p": "Plants and animals are forgiving subjects. They suit almost any style, so name the style clearly and choose how much detail you want."
+            },
+            {
+              "ul": [
+                "A sprig of lavender, botanical illustration style, thin lines, no colour, plain background",
+                "A branch of olive leaves, fine line botanical, delicate outlines, vertical composition",
+                "A peony in full bloom, botanical line art, medium lines, simple petals, no shading",
+                "A wildflower bouquet tied with ribbon, fine line, thin even strokes, white background",
+                "A fern curling at the tip, botanical style, clean lines, minimal detail",
+                "A sleeping cat curled in a circle, simple line art, medium line weight, no fur texture",
+                "A lion in profile, traditional style, bold outlines, flat shapes, no background",
+                "A koi fish swimming upward, clean outlines, medium lines, simple scales, white background",
+                "A butterfly with open wings, symmetrical line art, thin lines, no fill",
+                "An owl facing forward, blackwork style, solid shapes, clean edges"
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Common prompt mistakes",
+          "blocks": [
+            {
+              "ul": [
+                "**Too vague.** \"A cool tattoo\" gives you the generator's average idea of cool.",
+                "**Too crowded.** Ten subjects and six styles produce a muddle. Choose one subject and one style.",
+                "**Asking for realism and fine line together.** Photo-like shading and thin outlines pull in opposite directions.",
+                "**Forgetting the background.** If you want a clean stencil, say \"plain white background\".",
+                "**Asking for tiny detail.** Words like \"intricate\" and \"highly detailed\" tend to create exactly the noise that blurs on skin.",
+                "**Naming a living artist's style.** It is better to describe the look in plain words and stay clear of copying anyone."
+              ]
+            },
+            {
+              "p": "Positive and negative instructions work together. Say what you want, then say what to leave out."
+            }
+          ]
+        },
+        {
+          "h2": "How to iterate",
+          "blocks": [
+            {
+              "p": "Treat the first result as a draft. Change one part of the prompt at a time so you know what caused each difference."
+            },
+            {
+              "ol": [
+                "Generate a first version with all five parts.",
+                "If the subject is wrong, rewrite the subject only.",
+                "If it is too busy, add \"minimal detail\" and \"no shading\", or remove adjectives.",
+                "If the lines are too heavy or too light, change the line weight word and nothing else.",
+                "If it looks good, view it small and on the body part you plan to use."
+              ]
+            },
+            {
+              "p": "You can also start from an example picture and add a short description. Skinstencil's generator accepts both a description and an example picture, and shows the design on 8 body parts and 6 skin tones. Free to try; free downloads carry a watermark."
+            },
+            {
+              "p": "Whatever you get, run it through the review checklist in [our AI tattoo generator guide](guide:ai-tattoo-generator-guide) and show it to your artist."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What makes a good AI tattoo prompt?",
+          "a": "A good prompt names the subject, the style, the line weight, the composition and what to avoid. Short and specific beats long and vague."
+        },
+        {
+          "q": "How long should an AI tattoo prompt be?",
+          "a": "One or two lines is usually enough. Extra adjectives tend to add noise rather than quality."
+        },
+        {
+          "q": "How do I stop an AI tattoo from having too much detail?",
+          "a": "Add phrases such as \"minimal detail\", \"no shading\" and \"plain white background\", and avoid words like \"intricate\"."
+        },
+        {
+          "q": "Can I use a picture instead of a prompt?",
+          "a": "Yes. The Skinstencil generator can work from an example picture, with or without a short description."
+        },
+        {
+          "q": "Why does the text in my AI tattoo look wrong?",
+          "a": "Generators often misspell or distort letters. Check every character, or leave text out and have the lettering drawn by your artist."
+        }
+      ],
+      "cta": "Paste one of these prompts into the Skinstencil AI generator, see it on your body part and make a stencil you can print."
+    },
+    "see-a-tattoo-on-your-body-before-you-get-it": {
+      "title": "See a tattoo on your body before you get it: 4 ways to preview",
+      "short": "See a tattoo on your body before you get it",
+      "blurb": "Four ways to preview a tattoo on skin, what a preview cannot show, and a checklist for your consultation.",
+      "metaTitle": "See a Tattoo on Your Body Before You Get It",
+      "metaDesc": "Four ways to preview a tattoo design on your body: apps, photo mock-ups, temporary transfers and a stencil on skin. Plus what no preview can show.",
+      "updated": "2026-11-26",
+      "answer": "You can see a tattoo on your body before you get it by placing the design on a photo, using a preview app or generator, printing it at true size to hold against your skin, or having your artist put a stencil on. Each shows something different, and none shows how it heals.",
+      "sections": [
+        {
+          "h2": "Why you should see a tattoo on your body first",
+          "blocks": [
+            {
+              "p": "To see a tattoo on your body before you commit, you need more than a screen. A design that looks perfect on a screen can feel wrong on your forearm. It may be too large, sit too high or sit at an angle that fights your muscle. The point of a preview is to find that out while it is still free to change."
+            },
+            {
+              "p": "It also helps the conversation with your artist. Pointing at your own arm and saying \"here, about this wide\" is clearer than describing it. Most people need to see a tattoo on their body before the idea feels real, and that is a good instinct."
+            },
+            {
+              "p": "The four ways below go from quickest to most reliable. You do not need all of them, but the more permanent and visible the spot, the more of them you should use."
+            },
+            {
+              "p": "Each step answers a different question. A photo answers whether you like the idea. A printout answers whether the size is right. A temporary version answers whether you like living with it. The artist's stencil answers whether the placement works on your body."
+            }
+          ]
+        },
+        {
+          "h2": "Way 1: a preview on a photo or in an app",
+          "blocks": [
+            {
+              "p": "The fastest route is to place the design on a photo of yourself. Some tools let you drop a design on a picture, and some show it on a model body instead."
+            },
+            {
+              "p": "The Skinstencil AI generator on the home page makes a design from a description or an example picture and shows it on 8 body parts and 6 skin tones. That gives you a quick feel for placement and contrast before you decide anything. It is free to try."
+            },
+            {
+              "p": "When you make a mock-up on your own photo, take the photo straight on, in even light, with the body part relaxed. A photo taken at a strange angle gives a distorted preview."
+            },
+            {
+              "p": "A screen preview is good for composition and idea. It is weak on true size, so move on to the next steps before you commit."
+            }
+          ]
+        },
+        {
+          "h2": "Way 2: print it at true size and hold it up",
+          "blocks": [
+            {
+              "p": "Size is the thing most often misjudged on screen. Print the design at the real width, cut it out and hold it against your skin, or tape it loosely in place. You will see at once whether it is too big or too small."
+            },
+            {
+              "p": "To print at the right size you need to set it in millimetres and print at 100 percent with no scaling. Our guide on [tattoo stencil size](guide:tattoo-stencil-size-true-size-print) shows how, and the Skinstencil generator can make a stencil you can print at true size (300 dpi)."
+            },
+            {
+              "p": "This costs nothing but paper and takes ten minutes. It is the most useful step for most people."
+            }
+          ]
+        },
+        {
+          "h2": "Way 3: a temporary transfer or drawn-on mock-up",
+          "blocks": [
+            {
+              "p": "To see it on skin for a day or two, you can use a temporary tattoo made from your own design, or draw the outline on with a skin-safe pen. Wearing it around the house shows how it looks when you move, sit and get dressed."
+            },
+            {
+              "p": "Use products made for skin and follow their instructions. If you have sensitive skin or a skin condition, ask your artist or a pharmacist what is suitable for you."
+            }
+          ]
+        },
+        {
+          "h2": "Way 4: a stencil placed by your artist",
+          "blocks": [
+            {
+              "p": "The most reliable preview is the real stencil, positioned by the person who will tattoo you. Artists usually place it, ask you to stand and move, and adjust until it sits right. Do not feel rushed here. Look in a mirror from several angles."
+            },
+            {
+              "p": "Check the edges as well as the centre. A design can look balanced from the front and lean to one side when you turn. If something feels off, say so. Moving a stencil is easy, and moving a tattoo is not."
+            },
+            {
+              "p": "You can bring your own stencil as a starting point, and your artist decides whether to use it. For how a stencil gets onto skin, see [tattoo stencil transfer methods](guide:tattoo-stencil-transfer-methods). If you only have a photo or drawing, the [stencil Studio](studio) turns it into a stencil on your device, with nothing uploaded."
+            }
+          ]
+        },
+        {
+          "h2": "What a preview cannot show",
+          "blocks": [
+            {
+              "p": "Be honest about the limits. A preview is a picture of day one, and a tattoo is a long-term thing."
+            },
+            {
+              "ul": [
+                "**Healing.** Skin changes while it heals, and lines can look different afterwards. Your artist can tell you what to expect.",
+                "**Ageing.** Lines soften over the years, and fine detail tends to blur first.",
+                "**Movement.** A flat image does not bend with your body. A design on a joint, ribcage or shoulder can look different when you move.",
+                "**How ink sits in your skin.** The same design can look different on different bodies.",
+                "**Your own reaction after a week.** If you still like it after living with the preview for several days, that is a good sign."
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "How placement, size and skin tone change the look",
+          "blocks": [
+            {
+              "p": "The same design can read very differently depending on where it goes, how big it is and the skin it sits on."
+            },
+            {
+              "table": {
+                "head": [
+                  "Factor",
+                  "What to check"
+                ],
+                "rows": [
+                  [
+                    "Placement",
+                    "Flat areas keep a design intact. Curved or stretching areas can distort it, so check it while you move."
+                  ],
+                  [
+                    "Size",
+                    "Small sizes lose detail. Bigger sizes can overwhelm. Print and hold it up."
+                  ],
+                  [
+                    "Skin tone",
+                    "Contrast between the ink and your skin affects how crisp a design looks. Preview on a tone close to yours."
+                  ],
+                  [
+                    "Direction",
+                    "Check which way the design faces and how it flows with the body part."
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Use the 6 skin tones in the Skinstencil generator to compare, and remember that a preview on a screen is only close to the real thing."
+            }
+          ]
+        },
+        {
+          "h2": "Checklist for the consultation",
+          "blocks": [
+            {
+              "ol": [
+                "Bring the design, and a true-size printout if you have one.",
+                "Bring photos of the body part, taken straight on in good light.",
+                "Ask where your artist would place it, and why.",
+                "Ask whether any detail is too small to hold, and what they would simplify.",
+                "Look at the stencil in a mirror, standing and moving.",
+                "Ask about healing and aftercare, and follow your artist's advice.",
+                "Take your time. If you are unsure, wait a week and look again."
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How can I see what a tattoo will look like on me?",
+          "a": "Place the design on a photo or preview tool, print it at true size to hold against your skin, and ask your artist to put the stencil on before the tattoo starts."
+        },
+        {
+          "q": "Are tattoo preview apps accurate?",
+          "a": "They are good for placement and composition but rarely for true size or healing. Always check with a printed stencil as well."
+        },
+        {
+          "q": "Can I test a tattoo design with a temporary tattoo?",
+          "a": "Yes. A temporary transfer or a skin-safe pen outline lets you wear the design for a day or two. Ask your artist or a pharmacist if your skin is sensitive."
+        },
+        {
+          "q": "What can a tattoo preview not show?",
+          "a": "It cannot show healing, how the lines age or exactly how the design moves with your body."
+        },
+        {
+          "q": "Does skin tone change how a tattoo looks?",
+          "a": "Yes. Contrast between the ink and your skin affects how a design reads, so preview on a tone close to yours."
+        }
+      ],
+      "cta": "Create a design in the Skinstencil generator, see it on 8 body parts and 6 skin tones, then print the stencil at true size."
+    },
+    "fine-line-tattoo-stencil-tips": {
+      "title": "Fine line tattoo stencil: tips for clean, printable linework",
+      "short": "Fine line tattoo stencil tips",
+      "blurb": "Why fine line needs a very clean stencil, how thin is too thin, and how to check before you print.",
+      "metaTitle": "Fine Line Tattoo Stencil: Tips for Clean Lines",
+      "metaDesc": "Make a fine line tattoo stencil that prints clean: line weight in mm, spacing, what shrinking does to detail, and a pre-print checklist.",
+      "updated": "2026-11-26",
+      "answer": "A fine line tattoo stencil needs clean, even, continuous lines with open spacing, because thin strokes leave no room for error. Check the line weight at the real printed size, keep gaps between lines wide enough to stay separate, and simplify any detail that shrinks into a smudge.",
+      "sections": [
+        {
+          "h2": "Why a fine line tattoo stencil must be very clean",
+          "blocks": [
+            {
+              "p": "A fine line tattoo stencil has less margin for error than a bold design. A thick outline hides a slightly wobbly edge. A thin line shows every wobble, break and stray speck."
+            },
+            {
+              "p": "The stencil is the guide your artist follows. If it has broken strokes, fuzzy edges or noise, the artist has to guess which marks are intended. A clean stencil makes that guess unnecessary, and keeps the final result closer to the design you chose."
+            },
+            {
+              "p": "This is why fine line deserves a little extra care at the preparation stage, before any ink is involved."
+            },
+            {
+              "p": "The same applies to the source of the stencil. A tidy drawing, a clean flash sheet or a clear photo gives a cleaner result than a blurry screenshot. Starting well saves the most time later."
+            }
+          ]
+        },
+        {
+          "h2": "Line weight in millimetres: screen versus skin",
+          "blocks": [
+            {
+              "p": "On a screen, line thickness is measured in pixels, and it changes as you zoom. On paper and skin it is measured in millimetres, and it is fixed. Mixing the two is a common source of surprise."
+            },
+            {
+              "p": "At 300 dpi, one pixel is about 0.085 mm wide (25.4 divided by 300). So you can work out what a screen line will become when printed at true size:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Line width in pixels",
+                  "Printed width at 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "1 px",
+                    "about 0.08 mm"
+                  ],
+                  [
+                    "3 px",
+                    "about 0.25 mm"
+                  ],
+                  [
+                    "6 px",
+                    "about 0.51 mm"
+                  ],
+                  [
+                    "12 px",
+                    "about 1.02 mm"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "That tells you what the stencil will look like on paper. What line thickness a tattoo can hold on a given body part is a question for your artist, who knows their needles and your skin. Ask them for the thinnest line they are happy to tattoo there."
+            }
+          ]
+        },
+        {
+          "h2": "Spacing between lines",
+          "blocks": [
+            {
+              "p": "Gaps matter as much as lines. Two thin lines that sit very close together can look fine on day one and run into each other as the tattoo settles."
+            },
+            {
+              "ul": [
+                "Leave clear space between parallel lines. If a gap looks tight on the printout, it is too tight.",
+                "Avoid hatching and fine texture packed into small areas.",
+                "Give petals, feathers and curls room to breathe.",
+                "If you want density, make it with fewer, more deliberate lines."
+              ]
+            },
+            {
+              "p": "When in doubt, ask your artist to look at the tightest spot in the design and say whether it will hold."
+            }
+          ]
+        },
+        {
+          "h2": "How detail is lost when you shrink a design",
+          "blocks": [
+            {
+              "p": "Scaling a design down shrinks everything together: the lines get thinner and the gaps get narrower. A design drawn for a large canvas can turn into mush at half the size."
+            },
+            {
+              "p": "A lot of fine line work is placed small, on wrists, fingers, behind the ear. That is where this bites hardest. Small placements also tend to be curved, which makes tight spacing even less forgiving."
+            },
+            {
+              "ol": [
+                "Decide the final width in millimetres first.",
+                "Judge the design at that size, not zoomed in.",
+                "If lines blur or gaps close up, remove detail instead of just shrinking more.",
+                "Or make the tattoo a little larger, so the detail has room."
+              ]
+            },
+            {
+              "p": "Our guide to [tattoo stencil size](guide:tattoo-stencil-size-true-size-print) covers the millimetres and pixels, and how to print at 100 percent."
+            }
+          ]
+        },
+        {
+          "h2": "How to check a stencil before printing",
+          "blocks": [
+            {
+              "p": "A short check saves a wasted sheet and a second trip to your artist. Run through it every time, even when the design looks fine at a glance, because thin-line problems are easy to miss on a bright screen."
+            },
+            {
+              "ol": [
+                "**Zoom to 100 percent and look at the edges.** They should be smooth, not stair-stepped.",
+                "**Look for breaks.** A line that should be continuous but has a gap will print with a gap.",
+                "**Look for specks.** Tiny dots left over from a photo or scan will print too.",
+                "**View at true size.** Hold the screen at arm's length at a similar size or print one test copy.",
+                "**Check the tightest spot.** Find the two lines closest together and judge them.",
+                "**Measure the printout.** Use a ruler to confirm the width."
+              ]
+            },
+            {
+              "p": "The [stencil Studio](studio) turns your own drawing, flash or photo into a stencil on your device, nothing uploaded. If you start from a photo, [tattoo stencil from photo](guide:tattoo-stencil-from-photo) shows how to get clean lines out of it."
+            }
+          ]
+        },
+        {
+          "h2": "Common fine line stencil mistakes",
+          "blocks": [
+            {
+              "ul": [
+                "**Using a low-resolution image.** Thin lines on a small image print jagged. Start with a larger, sharper file.",
+                "**Tracing a busy photo.** Skin texture, shadows and backgrounds become noise in the stencil.",
+                "**Scaling after the fact.** Resizing a printed copy or letting the printer shrink it to fit changes every line.",
+                "**Drawing too many fine details.** Ten tiny elements look elegant only on screen.",
+                "**Skipping the artist's opinion.** The artist can see problems you cannot.",
+                "**Judging only on a bright screen.** A backlit screen makes thin lines look bolder than paper does."
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "When to simplify",
+          "blocks": [
+            {
+              "p": "If you have to squint to see a detail on the printout, it probably will not hold on skin. Simplifying is not giving up on the design. It is how a fine line piece stays crisp."
+            },
+            {
+              "ul": [
+                "Merge several small shapes into one.",
+                "Drop shading and use clean outline only.",
+                "Replace a dense texture with a few strong lines.",
+                "Increase the size slightly.",
+                "Choose a placement with flatter skin."
+              ]
+            },
+            {
+              "p": "Simplify before you print, not after. It is much easier to remove a detail from the design than to explain to your artist why a printed line has vanished. A simpler stencil also gives your artist more freedom to adapt it to your body on the day."
+            },
+            {
+              "p": "If you create a design with the Skinstencil generator, you can ask for \"thin even lines, minimal detail, no shading\" and see it on 8 body parts and 6 skin tones. It makes a stencil you can print at true size (300 dpi). Free to try; free downloads carry a watermark, and a day pass or Pro removes it."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a fine line tattoo stencil?",
+          "a": "It is a stencil for a design made of thin, delicate lines. Because the lines are thin, the stencil must be clean, continuous and free of noise."
+        },
+        {
+          "q": "How thin can a tattoo line be?",
+          "a": "That depends on the artist, the needles and the body part. Ask your artist for the thinnest line they are happy to tattoo where you want it."
+        },
+        {
+          "q": "Why does my fine line design look blurry when printed small?",
+          "a": "Shrinking reduces line width and the gaps between lines together, so details merge. Simplify the design or print it a little larger."
+        },
+        {
+          "q": "What resolution should a fine line stencil be?",
+          "a": "Print at 300 dpi at the real size so that thin lines stay smooth. Use a sharp source image rather than enlarging a small one."
+        },
+        {
+          "q": "Can I make a fine line stencil from a photo?",
+          "a": "Yes, but a busy photo adds noise. Use a clear photo or drawing, and check the result for specks and breaks before you print."
+        }
+      ],
+      "cta": "Open the Skinstencil Studio to turn your drawing into a clean stencil on your device, then check it at true size before you print."
+    },
+    "how-to-apply-a-tattoo-stencil": {
+      "title": "How to apply a tattoo stencil: skin prep, placement and peeling",
+      "short": "How to apply a tattoo stencil",
+      "blurb": "A step-by-step look at preparing the skin, placing the stencil, pressing, peeling and fixing mistakes.",
+      "metaTitle": "How to Apply a Tattoo Stencil: Step by Step",
+      "metaDesc": "How to apply a tattoo stencil: skin prep, transfer solution, placement, pressing, peeling, drying and fixes. A plain guide for artists and clients.",
+      "updated": "2026-11-26",
+      "answer": "To apply a tattoo stencil, clean and dry the skin, shave it if your artist directs, apply a thin layer of transfer solution or stick, press the stencil on without sliding it, hold it for a few seconds, peel it off slowly, then let the lines dry and check the placement in a mirror.",
+      "sections": [
+        {
+          "h2": "How to apply a tattoo stencil: the short version",
+          "blocks": [
+            {
+              "p": "How to apply a tattoo stencil comes down to this: you prepare the skin, wet it lightly with a transfer product, press the stencil sheet on once, and peel it away to leave the design on the skin. Each step is simple. Small slips in any of them are what produce a blurry, crooked or patchy stencil."
+            },
+            {
+              "p": "This guide is for artists who want a repeatable routine and for clients who want to know what is happening and what to look for. Follow your studio's hygiene rules and your artist's advice. Where this guide describes a step, your own studio's way of working comes first."
+            },
+            {
+              "p": "The whole routine in order:"
+            },
+            {
+              "ol": [
+                "Prepare the skin.",
+                "Position the stencil without touching the skin.",
+                "Apply the transfer product.",
+                "Press once, then hold.",
+                "Peel slowly.",
+                "Let it dry, then check it in a mirror."
+              ]
+            },
+            {
+              "p": "The sections below take each step in turn and then cover what to do when something goes wrong."
+            }
+          ]
+        },
+        {
+          "h2": "Prepare the skin",
+          "blocks": [
+            {
+              "p": "A stencil transfers cleanly only to skin that is clean, dry and free of oil. Your artist will clean the area in line with the studio's hygiene routine. Do not rub your own lotion, oil or sunscreen on the area before the appointment unless you are told to."
+            },
+            {
+              "p": "Hair gets in the way. A stencil sits on hair instead of skin, and it lifts when the hair moves. Your artist may shave the area, and some shave a little wider than the design so the edges stay clean. Let them do it, and do not shave a rash, a cut or irritated skin yourself the night before."
+            },
+            {
+              "ul": [
+                "The skin should be dry before any transfer product goes on.",
+                "A very oily or very sweaty area needs wiping and a moment to settle.",
+                "Loose or flaky skin gives a patchy line, so tell your artist if the area is peeling."
+              ]
+            },
+            {
+              "p": "Think about the pose too. Decide how you will sit or lie for the session before the stencil goes on, because the stencil has to look right in that position, not only in the one you stand in while it is applied."
+            }
+          ]
+        },
+        {
+          "h2": "Choose the transfer product",
+          "blocks": [
+            {
+              "p": "Most artists use either a liquid transfer solution or a stick-type product. Both do the same job: they leave a thin tacky film so the ink from the stencil sheet lifts off the paper and onto the skin."
+            },
+            {
+              "ul": [
+                "**Solution** is applied in a thin layer with a gloved hand or a suitable applicator. It spreads evenly, but too much will pool and smear the lines.",
+                "**Stick** is rubbed on in a thin, even layer. It is easy to control on small areas, but a thick layer can leave a ridge or drag the lines."
+              ]
+            },
+            {
+              "p": "In both cases, less is better than more. You want the skin slightly tacky, not wet. Follow the instructions of the product you use, and ask your artist what they use if you are curious."
+            },
+            {
+              "p": "Apply the product only to the area the stencil will cover, plus a small margin. Product outside the design just adds a surface for the sheet to slip on."
+            }
+          ]
+        },
+        {
+          "h2": "Position and check before you press",
+          "blocks": [
+            {
+              "p": "Placement is the step you cannot afford to rush, because the stencil cannot be moved once it touches the skin. Hold the sheet just above the skin and look at where the design will land. Check it against the body's natural lines: the edge of a muscle, the centre of the spine, the curve of a shoulder."
+            },
+            {
+              "p": "Then stand in front of a mirror. Clients, this is your moment. Ask yourself:"
+            },
+            {
+              "ul": [
+                "Is the design level, or does it lean?",
+                "Is it centred on the part of the body you meant?",
+                "Does it sit well when you stand, move your arm or turn your head?",
+                "Is the size what you pictured?"
+              ]
+            },
+            {
+              "p": "If the size looks wrong, stop before pressing. Printing a new stencil is quick, and the right size is easier to judge when the stencil is printed true to size. You can read more in [the true-size guide](guide:tattoo-stencil-size-true-size-print)."
+            },
+            {
+              "p": "Some artists also mark a few small reference points on the skin first, such as the top and centre of the design. They give you something to line the sheet up against when your hands are busy."
+            }
+          ]
+        },
+        {
+          "h2": "Press, hold and peel",
+          "blocks": [
+            {
+              "p": "Lay the stencil sheet down in one movement, with the design facing the skin. Start from the centre or from one edge and press outward with a flat hand, using even, firm pressure. Do not slide the sheet. Any slip leaves a doubled line, and doubled lines are hard to fix."
+            },
+            {
+              "p": "Hold for a few seconds, or as your artist is used to. Then peel the sheet slowly, starting at one corner and keeping the rest in place with your other hand. If a section stays behind on the paper, lay the sheet back down and press it again before lifting further."
+            },
+            {
+              "p": "Curved areas such as ribs, calves and the inner arm need extra care. Press the sheet into the curve in sections instead of flattening it in one go, so it does not crease or wrinkle. On a large design, some artists cut the sheet into parts and apply them one at a time."
+            },
+            {
+              "p": "Peeling fast is the other common slip. A quick pull can smear wet lines or lift part of the design. A slow, steady peel leaves the lines where you put them."
+            }
+          ]
+        },
+        {
+          "h2": "Drying time and checking the result",
+          "blocks": [
+            {
+              "p": "Leave the stencil to dry before anything touches it. The lines should look dark, crisp and continuous. Drying times differ with the product, the room and the skin, so your artist will judge when it is ready, and a short wait is better than a smudge."
+            },
+            {
+              "p": "Now check the stencil as a client would:"
+            },
+            {
+              "ul": [
+                "Are all the lines there, including the thin ones?",
+                "Are any parts missing, doubled or smudged?",
+                "Does the placement still look right in the mirror?",
+                "Do you have any questions about the design before the work begins?"
+              ]
+            },
+            {
+              "p": "This is the last easy moment to ask for changes. Once the artist starts, moving the design is no longer simple. If you are not sure, say so now. A good artist would rather redo a stencil than work from one the client doubts."
+            }
+          ]
+        },
+        {
+          "h2": "Fixing mistakes",
+          "blocks": [
+            {
+              "p": "A crooked, doubled or smudged stencil can be wiped away and redone. Your artist will use the product and method they normally use for this, in line with the studio's hygiene routine. Do not use your own products to remove it."
+            },
+            {
+              "ul": [
+                "**Crooked or off-centre:** remove it, reset your reference marks and apply a fresh sheet.",
+                "**Patchy lines:** usually skin that was too dry, too oily or hairy, or too little pressure. Re-prepare the skin and try again.",
+                "**Smeared lines:** usually too much transfer product, or a slide while pressing. Use less and press once.",
+                "**Too faint:** see [how long a stencil lasts](guide:how-long-does-a-tattoo-stencil-last) for the common causes."
+              ]
+            },
+            {
+              "p": "A clean line file helps at the start. A stencil printed from clear, even lines transfers more reliably than one printed from a muddy or low-resolution image. With [the Studio](studio) you can turn your own drawing, flash or photo into a clean stencil on your device, and nothing is uploaded."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What do you put on skin before a tattoo stencil?",
+          "a": "Your artist cleans and dries the skin, shaves it if needed, and then applies a thin layer of transfer solution or stick. The skin should feel slightly tacky, not wet."
+        },
+        {
+          "q": "How long do you hold a tattoo stencil on the skin?",
+          "a": "A few seconds of firm, even pressure with a flat hand is usually enough. Your artist will tell you what works with the product they use."
+        },
+        {
+          "q": "Can you apply a tattoo stencil on hairy skin?",
+          "a": "It is much harder, because the stencil sits on the hair and not on the skin. Artists usually shave the area first, as they direct."
+        },
+        {
+          "q": "What if the tattoo stencil is crooked?",
+          "a": "Tell your artist before they start. They can remove it and apply a new one, which is far easier than changing the design later."
+        },
+        {
+          "q": "Do I need a mirror to check my stencil?",
+          "a": "Yes, ask for one. Checking the placement standing up and in motion is the best way to catch a stencil that looks fine only when you are lying still."
+        }
+      ],
+      "cta": "Make a clean stencil from your own drawing or photo in the Studio, free to try, and nothing is uploaded."
+    },
+    "how-long-does-a-tattoo-stencil-last": {
+      "title": "How long does a tattoo stencil last on skin?",
+      "short": "How long does a tattoo stencil last?",
+      "blurb": "What makes a stencil fade or smudge, how to make it last, and what to do while you wait.",
+      "metaTitle": "How Long Does a Tattoo Stencil Last? What Affects It",
+      "metaDesc": "How long does a tattoo stencil last? See what affects it (skin, sweat, body area, rubbing), how to make it last and what to do if it fades.",
+      "updated": "2026-11-26",
+      "answer": "A tattoo stencil lasts as long as the session needs when it is applied well, but there is no fixed time. Skin type, sweat, body area, the transfer product and rubbing all change it. Dry skin, a thin layer of product and keeping clothing off the area help it last.",
+      "sections": [
+        {
+          "h2": "How long does a tattoo stencil last?",
+          "blocks": [
+            {
+              "p": "How long does a tattoo stencil last? It depends on how it was applied and where on the body it sits. There is no honest single number. A well-applied stencil on a still, dry area can stay crisp through a long appointment. A stencil on a sweaty, bendy or rubbed area can fade much sooner."
+            },
+            {
+              "p": "A stencil is a guide for the artist, not a permanent mark. It is meant to be good enough to work from, and the artist will often work over it in stages. What you control is how many things go wrong before the work starts."
+            },
+            {
+              "p": "The factors below are the ones that matter in practice."
+            },
+            {
+              "p": "Notice that most of them are about preparation and handling, not luck. That is good news: if you know why stencils fail, you can prevent most early fading before the appointment starts. Artists see the same few causes again and again, and clients can help by arriving with clean, product-free skin and by keeping the area uncovered and still once the stencil is on."
+            }
+          ]
+        },
+        {
+          "h2": "What affects how long a stencil lasts",
+          "blocks": [
+            {
+              "h3": "Skin type and condition"
+            },
+            {
+              "p": "Oily skin resists the transfer, and very dry or flaky skin gives a patchy one. Skin that is clean, dry and smooth holds a stencil best."
+            },
+            {
+              "h3": "Sweat and heat"
+            },
+            {
+              "p": "Sweat breaks down the film that holds the lines. A warm room, a nervous client or a hot day all shorten the life of a stencil, especially on the back, chest and underarm area."
+            },
+            {
+              "h3": "Area of the body"
+            },
+            {
+              "p": "Places that bend or rub, such as the inner elbow, the ribs, the hands, the feet and the neck, wear a stencil faster than a flat, still area like the outer thigh or the upper back."
+            },
+            {
+              "h3": "Transfer product and how much you use"
+            },
+            {
+              "p": "A thin, even layer of transfer solution or stick lets the lines bond. Too much leaves a wet, loose film that smears. Too little gives a pale line."
+            },
+            {
+              "h3": "Stencil ink and print quality"
+            },
+            {
+              "p": "Dark, even, solid lines last longer than faint or broken ones. A stencil sheet that has aged badly may print lighter, so check the paper and printer first. See the [stencil paper guide](guide:tattoo-stencil-paper-guide) for storage tips."
+            },
+            {
+              "h3": "Rubbing"
+            },
+            {
+              "p": "Clothing, bedding, a hand wiping sweat or a client shifting on the table will rub the lines away. This is the most common cause of a stencil that fades early."
+            }
+          ]
+        },
+        {
+          "h2": "How to make a stencil last longer",
+          "blocks": [
+            {
+              "ol": [
+                "Start with clean, dry skin and let any product settle before you press.",
+                "Shave the area as directed so the stencil sits on skin and not on hair.",
+                "Use a thin, even layer of transfer product.",
+                "Press once, firmly and evenly, and do not slide the sheet.",
+                "Let the stencil dry fully before it is touched."
+              ]
+            },
+            {
+              "p": "Then reduce the rubbing. Keep clothing and drapes clear of the area, and ask your artist about the best position for the session. Some artists work in sections, so that the part of the design they are not yet tattooing stays untouched. Ask your artist what they recommend, as methods differ between studios."
+            },
+            {
+              "p": "Plan the order of work as well. If the design spans a joint or a curve, ask your artist whether they would like to start with the area that rubs most, while the lines are freshest. Keep the room comfortable too. A cooler, calmer setting means less sweat, and less sweat means longer-lasting lines. If you tend to get hot, say so before the stencil goes on."
+            }
+          ]
+        },
+        {
+          "h2": "Why print quality matters",
+          "blocks": [
+            {
+              "p": "The most common reason a stencil fades early is that it was printed faint in the first place. A line that starts pale has nothing in reserve. A clean, dark, continuous line starts stronger and survives longer."
+            },
+            {
+              "p": "That is why a clean line file matters. A blurry, small or low-resolution image prints as a soft, grey line, even on good transfer paper. A sharp file printed at the right size gives the printer something solid to work with."
+            },
+            {
+              "p": "With [the Studio](studio), you can turn a drawing, flash or photo into a clean line stencil on your device, so what you print starts from lines that are meant to be crisp. You can also read about [getting the print size right](guide:tattoo-stencil-size-true-size-print)."
+            }
+          ]
+        },
+        {
+          "h2": "What to do if the stencil fades",
+          "blocks": [
+            {
+              "p": "Do not wait until it has gone. Tell your artist as soon as you notice the lines getting faint, smudged or patchy. They can re-apply a fresh stencil, usually in less time than it takes to work around a poor one."
+            },
+            {
+              "ul": [
+                "A faded stencil is a cue to stop and renew it, not to guess where a line was.",
+                "If only one part has gone, your artist may redo just that part.",
+                "If it keeps fading, the cause is often sweat, product or rubbing, so the artist may change the method for the second try."
+              ]
+            },
+            {
+              "p": "If it fades every time, look at the print itself. A stencil that was pale on the sheet will be pale on the skin. See [how to apply a stencil](guide:how-to-apply-a-tattoo-stencil) for the full routine."
+            }
+          ]
+        },
+        {
+          "h2": "What clients should and should not do while waiting",
+          "blocks": [
+            {
+              "p": "Once the stencil is on, your job is to protect it. Follow your artist's instructions, and use this list as a general guide."
+            },
+            {
+              "h3": "Do"
+            },
+            {
+              "ul": [
+                "Keep still, and breathe normally.",
+                "Tell your artist if the area feels wet, itchy or hot.",
+                "Check the placement in the mirror before the work starts.",
+                "Ask for the stencil to be redone if you are not happy with it."
+              ]
+            },
+            {
+              "h3": "Do not"
+            },
+            {
+              "ul": [
+                "Touch or wipe the stencil.",
+                "Let your clothing, a bag strap or a blanket rub on it.",
+                "Apply your own lotion, oil or deodorant to the area.",
+                "Scratch the area, even if it itches."
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How long does a tattoo stencil last on skin?",
+          "a": "There is no fixed time. A well-applied stencil on a dry, still area can last a full session, and one on a sweaty or rubbed area can fade much sooner."
+        },
+        {
+          "q": "Why is my tattoo stencil fading?",
+          "a": "The usual causes are sweat, rubbing from clothing or bedding, too much or too little transfer product, and a faint original print."
+        },
+        {
+          "q": "Can I make a tattoo stencil last longer?",
+          "a": "Yes. Use clean dry skin, a thin layer of product, one firm press, enough drying time, and keep anything from rubbing the area."
+        },
+        {
+          "q": "What if my stencil smudges before the tattoo starts?",
+          "a": "Tell your artist. They can remove it and put on a fresh one, which is better than working from a smudged guide."
+        },
+        {
+          "q": "Does the stencil paper affect how long it lasts?",
+          "a": "Yes. Stencil paper that is old, damp or the wrong type for your printer can print a lighter line, and lighter lines fade faster."
+        }
+      ],
+      "cta": "Start from a clean, crisp stencil in the Studio, free to try, with nothing uploaded."
+    },
+    "tattoo-stencil-paper-guide": {
+      "title": "Tattoo stencil paper: types, how they work and how to choose",
+      "short": "Tattoo stencil paper guide",
+      "blurb": "Thermal, hectograph, tracing and printable transfer paper compared in neutral terms.",
+      "metaTitle": "Tattoo Stencil Paper: Types and How to Choose",
+      "metaDesc": "Tattoo stencil paper explained: thermal transfer, hectograph, tracing and inkjet transfer paper, how each works, pros, cons, storage and common mistakes.",
+      "updated": "2026-11-26",
+      "answer": "Tattoo stencil paper comes in four main types: thermal transfer paper for thermal stencil printers, hectograph (spirit carbon) paper for hand tracing, freehand tracing paper, and printable transfer paper for inkjet printers. Choose the one that matches your printer, your volume and how you work.",
+      "sections": [
+        {
+          "h2": "Tattoo stencil paper: the four main types",
+          "blocks": [
+            {
+              "p": "Tattoo stencil paper is the sheet that carries your design from the page to the skin. There are four main types, and each works with a different method of getting the lines onto it. The wrong pairing of paper and printer is a common reason for a pale or patchy stencil."
+            },
+            {
+              "ul": [
+                "**Thermal transfer paper**, used with a thermal stencil printer.",
+                "**Hectograph (spirit carbon) paper**, used with a pen or a tracing method.",
+                "**Freehand tracing paper**, used by drawing or tracing straight onto it.",
+                "**Printable transfer paper**, used with some ordinary inkjet printers."
+              ]
+            },
+            {
+              "p": "This guide is neutral. It does not rank the types, because the best one depends on your equipment and your habits. For the wider picture, see [the transfer methods guide](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Thermal transfer paper",
+          "blocks": [
+            {
+              "p": "Thermal transfer paper is a multi-layer sheet. A thermal stencil printer heats it, and the heat makes a pattern of lines in the transfer layer, which then moves to skin when the stencil is pressed on."
+            },
+            {
+              "ul": [
+                "**Pros:** quick once set up, even lines, easy to repeat a design.",
+                "**Cons:** it needs a thermal printer, and the paper is made for that type of printer, so you cannot use any sheet."
+              ]
+            },
+            {
+              "p": "The paper width should match the printer. A printer built for one sheet width will not work well with a different size cut by hand, so check the width and format your printer accepts."
+            },
+            {
+              "p": "Because the heat does the work, the paper is sensitive to warmth and handling. Keep it clear of heat sources until it goes into the printer."
+            },
+            {
+              "p": "Thermal sheets are also the least forgiving about the file. The printer draws exactly the lines it is given, so a clean, dark, high-resolution line file gives a clean stencil, and a muddy photo gives a muddy one."
+            }
+          ]
+        },
+        {
+          "h2": "Hectograph and spirit carbon paper",
+          "blocks": [
+            {
+              "p": "Hectograph, also called spirit carbon, is a purple-inked paper used for hand-made stencils. You place the carbon sheet under your drawing, and the pressure of a pen transfers the line to a backing sheet. The backing sheet is the stencil."
+            },
+            {
+              "ul": [
+                "**Pros:** no printer, low equipment cost, familiar to many artists.",
+                "**Cons:** every stencil is drawn by hand, scaling needs a separate step, and the line quality depends on your pen pressure and steadiness."
+              ]
+            },
+            {
+              "p": "Many artists print the design at the right size on plain paper and trace that. A clean line print makes this much faster, and it fixes the size before you draw a single line."
+            }
+          ]
+        },
+        {
+          "h2": "Freehand tracing paper",
+          "blocks": [
+            {
+              "p": "Freehand tracing paper is made to be drawn on directly. Some types are sold as a pad with a transfer layer already on the back. You draw or trace the design on the front, and the lines are pressed through to the skin."
+            },
+            {
+              "ul": [
+                "**Pros:** simple, no machine, and good for quick or custom designs that you want to draw on the day.",
+                "**Cons:** slower for complex designs, and you need to follow the instructions of the paper you use."
+              ]
+            },
+            {
+              "p": "It pairs well with a light box or a window if you are tracing from a printed design."
+            },
+            {
+              "p": "How to choose between the four comes down to three questions. How many stencils do you make in a week? Do you work from digital files or from hand drawings? And how much equipment do you want to own and maintain? A few stencils a month from hand drawings points to hectograph or tracing paper. A steady flow of digital designs points to a printer and the paper that goes with it."
+            }
+          ]
+        },
+        {
+          "h2": "Printable transfer paper for inkjet printers",
+          "blocks": [
+            {
+              "p": "Printable transfer paper is made so an ordinary inkjet printer can print onto it. The sheet takes the ink on its surface, and the printed lines then move to the skin when the stencil is pressed on."
+            },
+            {
+              "ul": [
+                "**Pros:** you can use a printer you may already own, and the same printer does other jobs.",
+                "**Cons:** not every printer and paper work together, the ink may not behave like a dedicated stencil system, and the result can be paler or less crisp than other methods."
+              ]
+            },
+            {
+              "p": "Check the paper's instructions for the printer types it supports, and do a test print before a client session. A test costs a sheet. A bad stencil costs the appointment's time."
+            }
+          ]
+        },
+        {
+          "h2": "Which printers go with which paper",
+          "blocks": [
+            {
+              "table": {
+                "head": [
+                  "Paper type",
+                  "Works with",
+                  "Needs"
+                ],
+                "rows": [
+                  [
+                    "Thermal transfer paper",
+                    "Thermal stencil printer",
+                    "Paper made for that printer type"
+                  ],
+                  [
+                    "Hectograph / spirit carbon",
+                    "No printer (hand tracing)",
+                    "A pen and a drawing or print to trace"
+                  ],
+                  [
+                    "Freehand tracing paper",
+                    "No printer (drawing)",
+                    "A pen, and a reference if tracing"
+                  ],
+                  [
+                    "Printable transfer paper",
+                    "Inkjet printers, as the paper says",
+                    "A supported printer and test prints"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "For a closer look at printers, read the [stencil printer guide](guide:tattoo-stencil-printer-guide). The short rule is to start from the paper's own instructions and to check that your printer is on the supported list."
+            }
+          ]
+        },
+        {
+          "h2": "Storage and common mistakes",
+          "blocks": [
+            {
+              "p": "Stencil paper is sensitive to moisture, heat and bending. Store it flat, in its pack or a folder, in a cool dry place away from direct sun. Keep the packaging closed so the sheets do not pick up dust or damp."
+            },
+            {
+              "p": "Common mistakes to avoid:"
+            },
+            {
+              "ul": [
+                "Loading the sheet the wrong way round, so the printer prints on the backing.",
+                "Using paper that was not made for your printer type.",
+                "Printing a faint, small or low-resolution file, which gives a pale stencil whatever paper you use.",
+                "Touching the printed surface with damp or oily hands.",
+                "Using old, curled or damp sheets.",
+                "Skipping a test print before the appointment."
+              ]
+            },
+            {
+              "p": "A clean line file is the other half of a good stencil. [The Studio](studio) turns your drawing, flash or photo into a clean stencil on your device, and the AI generator on the home page can make a stencil you print at true size, 300 dpi."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What paper do you use for a tattoo stencil?",
+          "a": "It depends on the method: thermal transfer paper for thermal printers, hectograph or tracing paper for hand work, or printable transfer paper for some inkjet printers."
+        },
+        {
+          "q": "Can I use normal printer paper for a tattoo stencil?",
+          "a": "Not as the transfer sheet. You can print on plain paper to use as a reference or a drawing to trace, but the transfer itself needs stencil paper."
+        },
+        {
+          "q": "What is hectograph paper?",
+          "a": "It is purple carbon-style paper, also called spirit carbon, that transfers a drawn line to a backing sheet when you press on it with a pen."
+        },
+        {
+          "q": "Can I print a tattoo stencil on an inkjet printer?",
+          "a": "Some printable transfer papers are made for it. Check the paper's own instructions and test it before a session."
+        },
+        {
+          "q": "How should I store tattoo stencil paper?",
+          "a": "Flat, in its pack, in a cool dry place out of the sun. Damp and heat can spoil the transfer layer."
+        }
+      ],
+      "cta": "Make the clean line file first. Try the Studio free, and nothing is uploaded."
+    },
+    "tattoo-stencil-printer-guide": {
+      "title": "Tattoo stencil printer: what to look for before you buy",
+      "short": "Tattoo stencil printer guide",
+      "blurb": "Thermal, inkjet and copier options explained, with what to check and how to print at true size.",
+      "metaTitle": "Tattoo Stencil Printer: How to Choose and Print",
+      "metaDesc": "Tattoo stencil printer guide: thermal vs inkjet vs copier, paper width, dpi, connection, true-size printing and fixes for light or smeared prints.",
+      "updated": "2026-11-26",
+      "answer": "A tattoo stencil printer is a printer that puts your design on transfer paper. The main options are a thermal stencil printer, an inkjet with transfer paper, and a thermal copier. Check paper width, resolution in dpi, how it connects, whether it prints at true size, and what the consumables cost.",
+      "sections": [
+        {
+          "h2": "What a tattoo stencil printer does",
+          "blocks": [
+            {
+              "p": "A tattoo stencil printer turns a digital design into a pattern of lines on transfer paper, ready to press to skin. It is the step between your file and the skin, so its quality shows in every stencil."
+            },
+            {
+              "p": "There are three common routes. This guide describes them in neutral terms and does not rank any product. For hand-made options, see [the transfer methods guide](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Thermal stencil printer, inkjet or copier",
+          "blocks": [
+            {
+              "h3": "Thermal stencil printer"
+            },
+            {
+              "p": "A thermal stencil printer uses heat and thermal transfer paper. It is built for this one job, so the output is usually consistent and the setup is simple. It needs the right paper, and you are tied to the paper that fits it."
+            },
+            {
+              "h3": "Inkjet with transfer paper"
+            },
+            {
+              "p": "Some printable transfer papers work in an ordinary inkjet printer. This is a flexible option if you already own a printer, but not every printer and paper pair works, and the lines may be paler. Test before you rely on it."
+            },
+            {
+              "h3": "Thermal copier"
+            },
+            {
+              "p": "A thermal copier makes a stencil from a paper original by copying it. It is useful when you work from drawings on paper. A digital file has to be printed on plain paper first, then copied."
+            },
+            {
+              "p": "None of these is best for everyone. The right one depends on your volume, your space, your budget and whether you work from files or from paper drawings. For the papers themselves, see the [stencil paper guide](guide:tattoo-stencil-paper-guide)."
+            }
+          ]
+        },
+        {
+          "h2": "What to look for when you choose",
+          "blocks": [
+            {
+              "ul": [
+                "**Paper width:** check the widest stencil you will need. A printer that takes only a narrow sheet limits large designs such as a back piece or a sleeve.",
+                "**Resolution in dpi:** a higher figure means finer lines. Look for the printer's real resolution, and check it handles 300 dpi files.",
+                "**Connection:** USB, wired or wireless, and whether it works with your phone, tablet or computer. Make sure it works with the system you already use.",
+                "**True-size output:** the printer should print the file at the size you set, without scaling it to fit the sheet.",
+                "**Consumable cost:** paper, and any ink or ribbon, is a running cost. Compare the paper you will use and how many stencils it makes, not only the printer price.",
+                "**Support and spares:** check that paper stays available in your region, and that the printer can be repaired."
+              ]
+            },
+            {
+              "p": "Ask other artists what they use and why. Their daily experience is more useful than a spec sheet."
+            },
+            {
+              "p": "Think about where the printer will live, too. A thermal stencil printer is small and can sit on a studio desk or a trolley, but you need power, a flat surface and a place to keep the paper dry. If you travel to guest spots or conventions, weight and a simple setup matter more than extra features."
+            }
+          ]
+        },
+        {
+          "h2": "Why print size and 300 dpi matter",
+          "blocks": [
+            {
+              "p": "A stencil that is the wrong size is the wrong stencil. If the design prints 10 percent small, the tattoo ends up 10 percent small. That is why the print must be true to size, not shrunk to fit a page."
+            },
+            {
+              "p": "Resolution matters too. At 300 dpi, a thin line prints as a smooth, continuous stroke. Lower resolutions show stair-stepped edges on curves, and a stencil is mostly curves. A file that is too small, stretched up to size, prints soft and grey."
+            },
+            {
+              "p": "The [true-size guide](guide:tattoo-stencil-size-true-size-print) has the numbers, including how many pixels you need for a given width at 300 dpi."
+            }
+          ]
+        },
+        {
+          "h2": "How to print a file at true size",
+          "blocks": [
+            {
+              "ol": [
+                "Start with a clean line file with the right proportions, with at least as many pixels as the width needs at 300 dpi.",
+                "Set the size in millimetres or inches in your design tool, and export at 300 dpi.",
+                "In the print dialog, choose actual size or 100 percent. Turn off fit to page and scale to fit.",
+                "Set the paper size to match the sheet in the printer.",
+                "Print a first test on plain paper and measure it with a ruler against the size you set.",
+                "Then print on the transfer paper."
+              ]
+            },
+            {
+              "p": "The AI generator on the Skinstencil home page makes a design from a description or an example picture, shows it on 8 body parts and 6 skin tones, and makes a stencil you can print at true size, 300 dpi. [The Studio](studio) turns your own drawing, flash or photo into a stencil on your device, with nothing uploaded. It is free to try. Free downloads carry a watermark, and a day pass or Pro removes it."
+            }
+          ]
+        },
+        {
+          "h2": "Common problems and fixes",
+          "blocks": [
+            {
+              "h3": "The stencil is too light"
+            },
+            {
+              "ul": [
+                "Check the paper is the right type and loaded the right way up.",
+                "Check the file: faint or thin lines in the file print faint.",
+                "Use fresh paper, not old or damp sheets.",
+                "Look at the printer's own settings for density or darkness."
+              ]
+            },
+            {
+              "h3": "The stencil is smeared"
+            },
+            {
+              "ul": [
+                "Let the print dry or cool before handling.",
+                "Check the paper and printer match, and clean the printer as its maker advises.",
+                "Handle the sheet by the edges."
+              ]
+            },
+            {
+              "h3": "The stencil is the wrong size"
+            },
+            {
+              "ul": [
+                "Turn off fit to page or scale to fit.",
+                "Check the size and dpi set when you exported the file.",
+                "Print a test on plain paper and measure it before the transfer paper."
+              ]
+            },
+            {
+              "p": "If one fix does not solve it, change one thing at a time so you can tell what worked."
+            },
+            {
+              "p": "Keep a short note of the settings that gave you a good print: the file size, the dpi, the paper and the printer's density setting. When a stencil comes out wrong, that note shows you straight away what changed. Always run a test print before a client is in the chair, never during the appointment."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What printer do tattoo artists use for stencils?",
+          "a": "Many use a thermal stencil printer, and some use an inkjet with transfer paper or a thermal copier. The right one depends on your volume and workflow."
+        },
+        {
+          "q": "Can I use a normal printer for tattoo stencils?",
+          "a": "Some inkjet printers work with printable transfer paper, but not every pair does. Check the paper's instructions and test before a session."
+        },
+        {
+          "q": "What dpi should a tattoo stencil be?",
+          "a": "300 dpi is the usual target. It keeps thin lines smooth and continuous at the size you print."
+        },
+        {
+          "q": "Why is my tattoo stencil too light?",
+          "a": "Usual causes are the wrong or old paper, a faint source file, the paper loaded the wrong way, or a low density setting."
+        },
+        {
+          "q": "How do I print a stencil at the right size?",
+          "a": "Set the size in millimetres, export at 300 dpi, print at actual size with fit to page off, and measure a test print with a ruler."
+        }
+      ],
+      "cta": "Make a stencil you can print at true size, 300 dpi. Try the AI generator or the Studio, free to try."
+    },
+    "tattoo-size-chart-by-body-part": {
+      "title": "Tattoo size chart: typical sizes by body part",
+      "short": "Tattoo size chart by body part",
+      "blurb": "Typical tattoo sizes in cm and inches for 13 body parts, plus detail limits and how to check size with a true-size stencil.",
+      "metaTitle": "Tattoo size chart: cm and inches by body part",
+      "metaDesc": "A tattoo size chart in cm and inches for 13 body parts, minimum sizes for fine line and bold work, and how to check size with a true-size stencil.",
+      "updated": "2026-11-26",
+      "answer": "A tattoo size chart lists the typical width or length that suits each body part, for example 2 to 5 cm (about 1 to 2 inches) at the wrist and 8 to 25 cm (3 to 10 inches) along the forearm. These are guides, not rules. Print your design at true size and hold it on your skin to check.",
+      "sections": [
+        {
+          "h2": "Tattoo size chart by body part",
+          "blocks": [
+            {
+              "p": "A tattoo size chart gives you a starting point before you talk to an artist. The ranges below are typical sizes for the longest side of a single design on an average adult. They are guidance, not rules. Bodies differ, and so do designs."
+            },
+            {
+              "table": {
+                "head": [
+                  "Body part",
+                  "Typical size (cm)",
+                  "Typical size (inches)"
+                ],
+                "rows": [
+                  [
+                    "Wrist",
+                    "2 to 5 cm",
+                    "0.8 to 2 in"
+                  ],
+                  [
+                    "Forearm",
+                    "8 to 25 cm",
+                    "3 to 10 in"
+                  ],
+                  [
+                    "Upper arm",
+                    "8 to 20 cm",
+                    "3 to 8 in"
+                  ],
+                  [
+                    "Shoulder blade",
+                    "10 to 20 cm",
+                    "4 to 8 in"
+                  ],
+                  [
+                    "Back",
+                    "20 to 45 cm",
+                    "8 to 18 in"
+                  ],
+                  [
+                    "Chest",
+                    "10 to 30 cm",
+                    "4 to 12 in"
+                  ],
+                  [
+                    "Ribs",
+                    "10 to 25 cm",
+                    "4 to 10 in"
+                  ],
+                  [
+                    "Thigh",
+                    "15 to 35 cm",
+                    "6 to 14 in"
+                  ],
+                  [
+                    "Calf",
+                    "10 to 25 cm",
+                    "4 to 10 in"
+                  ],
+                  [
+                    "Ankle",
+                    "3 to 8 cm",
+                    "1.2 to 3 in"
+                  ],
+                  [
+                    "Hand",
+                    "3 to 8 cm",
+                    "1.2 to 3 in"
+                  ],
+                  [
+                    "Neck",
+                    "3 to 10 cm",
+                    "1.2 to 4 in"
+                  ],
+                  [
+                    "Behind the ear",
+                    "1 to 4 cm",
+                    "0.4 to 1.6 in"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Read the numbers as the length of the design along the limb, or the height on a flat area like the back. A forearm piece can run the full length of the arm, while a wrist piece is usually a small band or symbol."
+            }
+          ]
+        },
+        {
+          "h2": "How to read the chart",
+          "blocks": [
+            {
+              "p": "The ranges are wide on purpose. A 10 cm (4 inch) rose is a small tattoo on a thigh and a large one behind the ear. What matters is how the design relates to the space around it."
+            },
+            {
+              "ul": [
+                "**Small** pieces sit well on the wrist, ankle, hand, neck and behind the ear.",
+                "**Medium** pieces suit the upper arm, forearm, calf, shoulder blade and ribs.",
+                "**Large** pieces use the back, chest and thigh, where there is room for a design to breathe."
+              ]
+            },
+            {
+              "p": "If your idea falls outside the range for the spot you like, consider a different placement or a different size. Wrapping a design around a limb, for example, lets a long design fit where a flat one would not."
+            }
+          ]
+        },
+        {
+          "h2": "Minimum size for detail",
+          "blocks": [
+            {
+              "p": "Size is not only about looks. Tattoo ink spreads slightly in the skin over the years, so tiny details can blur. The smaller the design, the fewer details it can hold and still stay readable."
+            },
+            {
+              "h3": "Fine line work"
+            },
+            {
+              "p": "Fine line designs use thin, light strokes. They look delicate, but they need enough space between lines. Many artists suggest keeping a design at least a few centimetres across and avoiding tiny text or crowded patterns. Ask your artist for the smallest size they are happy to do for your design."
+            },
+            {
+              "h3": "Bold work"
+            },
+            {
+              "p": "Bold designs with thick outlines and solid fill hold up at smaller sizes because the shapes are simple and the gaps between them are wide. A bold symbol can work at a size where the same image in fine line would turn to mush."
+            },
+            {
+              "p": "When you shrink a design, simplify it. Remove small background elements, widen tight gaps and make text larger than you think you need."
+            }
+          ]
+        },
+        {
+          "h2": "How to measure on your body",
+          "blocks": [
+            {
+              "p": "You can measure your own placement in a few minutes with a soft tape measure or a ruler. A soft tape follows curves, which a rigid ruler does not."
+            },
+            {
+              "ol": [
+                "Mark the top and bottom of the spot you have in mind with a washable pen, or with small pieces of tape.",
+                "Measure the straight distance between the marks, then measure again along the curve of the body.",
+                "Measure the width at the widest point of the area.",
+                "Write down both numbers in centimetres and inches, so you can compare them with the chart.",
+                "Leave a margin of at least a finger width on each side so the design does not sit right at an edge."
+              ]
+            },
+            {
+              "p": "The straight measurement and the curved one differ more on round areas like the upper arm and calf. A design that is 10 cm wide on paper will look narrower once it wraps around a curve, because part of it turns away from the viewer."
+            }
+          ]
+        },
+        {
+          "h2": "Check size with a true-size stencil",
+          "blocks": [
+            {
+              "p": "Numbers on a chart only go so far. The most reliable way to judge size is to see the design at its real dimensions on your body. A stencil printed at true size does exactly that."
+            },
+            {
+              "p": "Decide the width in millimetres, export the design at 300 dpi, and print it at 100 percent with no scaling. Our guide on [true-size printing](guide:tattoo-stencil-size-true-size-print) shows the sums and how to confirm the result with a ruler."
+            },
+            {
+              "p": "You can do this in the [Studio](studio). It turns your own drawing, flash or photo into a stencil on your device, and nothing is uploaded. Set the size in millimetres, download the stencil and print it."
+            },
+            {
+              "p": "Cut the printout out and hold it against your skin, or tape it in place. Stand in front of a mirror, move your arm, sit down and walk around. If it feels too big or too small, change the size and print again. Paper is cheap and skin is not."
+            }
+          ]
+        },
+        {
+          "h2": "How placement and skin change the size you need",
+          "blocks": [
+            {
+              "p": "The same design can look different depending on where it sits and whose skin it is on."
+            },
+            {
+              "ul": [
+                "**Curves.** A design on a rounded area appears smaller and slightly distorted from the front. On the upper arm or calf you may want to go a bit larger than a flat drawing suggests.",
+                "**Movement.** Skin near joints stretches and folds. Designs there are often kept smaller or simpler, and your artist may advise on the exact position.",
+                "**Body size.** A 15 cm design sits differently on a slim forearm and a broad one. Judge it on your own body, not on a photo of someone else's.",
+                "**Skin tone.** Contrast changes how a design reads, so ask your artist what shows up best on your skin.",
+                "**Ageing.** Lines soften with time. Giving a design some room helps it stay clear."
+              ]
+            },
+            {
+              "p": "The AI generator on the home page helps with this part. It makes a design from a description or an example picture, then shows it on 8 body parts (shoulder blade, back, forearm, upper arm, chest, ribs, thigh and calf) and 6 skin tones, so you can see how scale and contrast look before you print. It makes a stencil you can print at true size (300 dpi)."
+            },
+            {
+              "p": "If you are still deciding where the design should go, see our [tattoo placement guide](guide:tattoo-placement-guide)."
+            }
+          ]
+        },
+        {
+          "h2": "Final checks before you book",
+          "blocks": [
+            {
+              "ul": [
+                "Does the printed stencil look right when you stand, sit and move?",
+                "Is there enough space between lines for the style you chose?",
+                "Is any text large enough to read from a normal distance?"
+              ]
+            },
+            {
+              "p": "Your artist has the final say on size and detail. Bring your printout and the measurements, and treat the chart as the start of the conversation."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What size is a small tattoo?",
+          "a": "There is no fixed rule, but many people call a design under about 5 cm (2 inches) small. Placements like the wrist, ankle and behind the ear usually suit this size."
+        },
+        {
+          "q": "How big is a medium tattoo?",
+          "a": "Medium usually means roughly 8 to 15 cm (3 to 6 inches) on the longest side. It fits well on a forearm, upper arm, calf or shoulder blade."
+        },
+        {
+          "q": "What is the smallest size a tattoo can be?",
+          "a": "It depends on the style and the artist. Fine detail needs more room than bold shapes, so ask your artist for the minimum size that will stay clear for your design."
+        },
+        {
+          "q": "How do I find out how big my tattoo will be on my body?",
+          "a": "Print the design at true size and hold it on the spot, or tape it there. You can then judge the size in a mirror and while you move."
+        },
+        {
+          "q": "Are tattoo sizes the same for everyone?",
+          "a": "No. The ranges in a chart are typical, and your body shape, skin and the design itself all change what looks right."
+        }
+      ],
+      "cta": "Set the size in millimetres in the Studio, print your stencil at true size and see how it sits on your skin before you book."
+    },
+    "tattoo-placement-guide": {
+      "title": "Tattoo placement: how to choose the right spot",
+      "short": "Tattoo placement: how to choose",
+      "blurb": "Visibility, dress code, skin movement and design shape: how to choose a tattoo placement and test it with a stencil.",
+      "metaTitle": "Tattoo placement: how to choose the right spot",
+      "metaDesc": "How to choose a tattoo placement: visibility, dress code, skin movement and design shape, plus a placement table and how to test with a stencil.",
+      "updated": "2026-11-26",
+      "answer": "Tattoo placement is best chosen by weighing four things: who will see it, how the skin moves and ages there, how well the shape of the design fits the space, and how you feel about the healing. Test the spot with a true-size stencil, then ask your artist.",
+      "sections": [
+        {
+          "h2": "Tattoo placement starts with who sees it",
+          "blocks": [
+            {
+              "p": "Tattoo placement is the decision that shapes how you live with a tattoo every day. Start with visibility, because it is the one you cannot easily change later."
+            },
+            {
+              "p": "Ask yourself where you want the tattoo to be seen, and by whom."
+            },
+            {
+              "ul": [
+                "**Always visible:** hands, neck, face, forearms and lower legs show in most outfits.",
+                "**Visible when you choose:** upper arm, thigh, shoulder blade and chest can be covered by a T-shirt, shorts or a shirt collar.",
+                "**Mostly private:** ribs, back, hip and upper thigh are seen by few people unless you decide to show them."
+              ]
+            },
+            {
+              "p": "There is no right answer. A tattoo you can hide gives you more control. A tattoo you can see gives you more daily enjoyment. Think about which matters more to you."
+            }
+          ]
+        },
+        {
+          "h2": "Work, dress code and life changes",
+          "blocks": [
+            {
+              "p": "Attitudes to visible tattoos vary by country, industry and employer, and they change over time. Before choosing a spot that shows in work clothes, check the dress code and the culture of your workplace, or of the workplace you hope to join."
+            },
+            {
+              "p": "Also think about where your life could go. A career change, a uniform, travel or a family event can all change how comfortable you feel about a visible tattoo. Placements that a sleeve or collar can cover keep your options open."
+            },
+            {
+              "p": "This is a personal call. Weigh it honestly and do not let a trend decide for you."
+            }
+          ]
+        },
+        {
+          "h2": "How the skin moves and ages",
+          "blocks": [
+            {
+              "p": "A tattoo lives on skin, and skin is not a flat canvas. Some areas stay stable for decades. Others stretch, fold or change with the body."
+            },
+            {
+              "ul": [
+                "**Joints** such as the elbow, knee, wrist and ankle bend all day. A design that crosses a joint is distorted when you move.",
+                "**Hands, feet and fingers** see a lot of friction, washing and sun. Designs there often need touch-ups, and your artist can tell you how they tend to hold up.",
+                "**Areas that change with weight, pregnancy or muscle** such as the stomach, hips, chest and inner thighs can shift over time.",
+                "**Sun-exposed areas** fade faster than covered ones, so sunscreen matters for visible placements."
+              ]
+            },
+            {
+              "p": "None of this rules a spot out. It simply means you should ask your artist how the placement tends to age, and look at healed photos of their work in that area."
+            }
+          ]
+        },
+        {
+          "h2": "Match the shape of the design to the space",
+          "blocks": [
+            {
+              "p": "The body has natural lines and curves, and a good placement follows them. A design that works with the shape of the body looks as if it belongs there."
+            },
+            {
+              "ul": [
+                "**Long, narrow designs** such as a dagger, a branch, a line of text or a spine piece suit places that run in a line: the forearm, spine, calf, ribs or the length of the thigh.",
+                "**Round or compact designs** such as a mandala, a rose or a portrait sit well on flat or gently curved areas: the shoulder blade, upper arm, chest or thigh.",
+                "**Small designs** such as a symbol, a date or a tiny animal suit spots with limited room: the wrist, ankle, behind the ear or the inner finger."
+              ]
+            },
+            {
+              "p": "If you cannot decide, change the shape rather than force the fit. Many designs can be stretched, simplified or split in two to suit a spot."
+            }
+          ]
+        },
+        {
+          "h2": "Common placements and what suits them",
+          "blocks": [
+            {
+              "table": {
+                "head": [
+                  "Placement",
+                  "Suits long designs",
+                  "Suits round designs",
+                  "Suits small designs"
+                ],
+                "rows": [
+                  [
+                    "Forearm",
+                    "Yes",
+                    "Yes, on the flat of the arm",
+                    "Yes"
+                  ],
+                  [
+                    "Upper arm",
+                    "Yes, wrapping around",
+                    "Yes",
+                    "Yes"
+                  ],
+                  [
+                    "Shoulder blade",
+                    "Sometimes",
+                    "Yes",
+                    "Yes"
+                  ],
+                  [
+                    "Back",
+                    "Yes, along the spine",
+                    "Yes, large pieces",
+                    "Yes"
+                  ],
+                  [
+                    "Chest",
+                    "Sometimes",
+                    "Yes",
+                    "Yes"
+                  ],
+                  [
+                    "Ribs",
+                    "Yes, along the side",
+                    "Sometimes",
+                    "Yes"
+                  ],
+                  [
+                    "Thigh",
+                    "Yes",
+                    "Yes",
+                    "Yes"
+                  ],
+                  [
+                    "Calf",
+                    "Yes",
+                    "Sometimes",
+                    "Yes"
+                  ],
+                  [
+                    "Wrist and ankle",
+                    "Bands only",
+                    "No",
+                    "Yes"
+                  ],
+                  [
+                    "Behind the ear and neck",
+                    "Sometimes",
+                    "No",
+                    "Yes"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Treat the table as a starting point, not a rulebook. Skilled artists adapt designs to almost any area. If you want typical sizes for each spot, see the [tattoo size chart](guide:tattoo-size-chart-by-body-part)."
+            }
+          ]
+        },
+        {
+          "h2": "Pain, healing and comfort",
+          "blocks": [
+            {
+              "p": "Pain varies from person to person, and it varies by area, so there is no reliable ranking that fits everyone. Some people find ribs or feet hard and others hardly notice them. Healing also differs, because an area that rubs against clothing or bends often can be more awkward to look after."
+            },
+            {
+              "p": "Ask your artist what to expect for the spot you are considering, how long the session will be and how to care for it afterwards. They have done this many times and can give you advice that fits your body and your design."
+            }
+          ]
+        },
+        {
+          "h2": "Test the placement before you commit",
+          "blocks": [
+            {
+              "p": "Thinking about a spot is useful, but seeing it is better. You have two easy ways to test a placement."
+            },
+            {
+              "h3": "Use a printed stencil"
+            },
+            {
+              "p": "Print your design at true size and tape it to the spot. Check it standing, sitting and moving. The [Studio](studio) turns your own drawing, flash or photo into a stencil on your device, and nothing is uploaded. For printing, see our guide on [true-size printing](guide:tattoo-stencil-size-true-size-print). To apply a stencil, see [transfer methods](guide:tattoo-stencil-transfer-methods)."
+            },
+            {
+              "h3": "Use a preview"
+            },
+            {
+              "p": "The AI generator on the home page makes a design from a description or an example picture and shows it on 8 body parts (shoulder blade, back, forearm, upper arm, chest, ribs, thigh and calf) and 6 skin tones. It is a quick way to compare spots before you print. It makes a stencil you can print at true size (300 dpi)."
+            }
+          ]
+        },
+        {
+          "h2": "Mistakes to avoid",
+          "blocks": [
+            {
+              "ul": [
+                "Choosing a spot only because it is trendy.",
+                "Forcing a design into a space that does not suit its shape.",
+                "Ignoring the dress code of a job you have or want.",
+                "Placing fine detail where skin stretches, folds or rubs.",
+                "Skipping the true-size test and judging only from a screen.",
+                "Rushing the decision. A good artist will let you take your time."
+              ]
+            },
+            {
+              "p": "Take a week to live with the stencil idea. If you still like the spot on day seven, you have a good sign."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Where is the best place for a first tattoo?",
+          "a": "There is no single best spot. Many people start somewhere easy to cover and easy to look after, such as the upper arm or thigh, and ask their artist for advice."
+        },
+        {
+          "q": "Which tattoo placements hurt the most?",
+          "a": "Pain varies by person, so it is hard to rank the spots. Ask your artist what to expect for the area you have in mind."
+        },
+        {
+          "q": "How do I know if a tattoo will fit the spot?",
+          "a": "Print the design at true size and tape it to the spot, then check it while you move. This shows you scale and flow far better than a screen does."
+        },
+        {
+          "q": "Do tattoos on joints and hands fade faster?",
+          "a": "Areas with a lot of movement, friction and washing can need more touch-ups. Ask your artist how that placement tends to hold up."
+        },
+        {
+          "q": "Can I change a design to suit a different placement?",
+          "a": "Yes. Designs can be resized, simplified, stretched or split, and your artist can help adapt one to the area you choose."
+        }
+      ],
+      "cta": "Try the stencil Studio or the AI generator to see your design on your chosen spot before you commit."
+    },
+    "make-a-tattoo-stencil-at-home": {
+      "title": "Make a tattoo stencil at home: practical methods",
+      "short": "Make a tattoo stencil at home",
+      "blurb": "Ways to make a tattoo stencil at home without a thermal printer, for artists and for practice on paper or with temporary methods.",
+      "metaTitle": "Make a tattoo stencil at home without a printer",
+      "metaDesc": "How to make a tattoo stencil at home without a thermal printer: tracing paper, regular paper transfer and a clean line file, plus a safety note.",
+      "updated": "2026-11-26",
+      "answer": "To make a tattoo stencil at home, start with a clean line drawing at the right size. Trace it onto tracing paper, or print it on regular paper and transfer it by hand. Use these methods for practice on paper or with temporary methods. Real tattooing belongs with a trained artist.",
+      "sections": [
+        {
+          "h2": "Before you make a tattoo stencil at home",
+          "blocks": [
+            {
+              "p": "You can make a tattoo stencil at home with a printer, some paper and a few basic supplies. A stencil is a line drawing of a design, used as a guide so the artwork lands in the right place and at the right size."
+            },
+            {
+              "p": "This guide is for tattoo artists who need a backup method, for students practising stencil work, and for people who want a design on paper or a temporary mark. It is not a guide to tattooing yourself or anyone else."
+            },
+            {
+              "p": "**Safety note:** real tattooing must be done by a trained artist in a licensed studio, with sterile equipment and proper aftercare. Making a stencil and practising on paper or with temporary methods is a different thing from putting ink in skin. Please do not try to tattoo at home."
+            }
+          ]
+        },
+        {
+          "h2": "What you need",
+          "blocks": [
+            {
+              "ul": [
+                "A clean line drawing of the design, on paper or as a digital file.",
+                "A ruler or measuring tape in millimetres.",
+                "Tracing paper or thin paper.",
+                "A sharp pencil or fine pen.",
+                "Carbon or transfer paper, if you are tracing by hand.",
+                "A regular printer, black ink and plain paper.",
+                "Masking tape to hold the paper in place.",
+                "A light source, such as a window or lightbox, to help you trace."
+              ]
+            },
+            {
+              "p": "If you work as an artist, use the materials your studio already uses for skin. The list above is for stencil practice on paper and temporary methods."
+            }
+          ]
+        },
+        {
+          "h2": "Method 1: tracing paper and carbon",
+          "blocks": [
+            {
+              "p": "This is the old-fashioned method and it still works. It needs no electronics."
+            },
+            {
+              "ol": [
+                "Place your drawing on a flat surface and lay tracing paper over it.",
+                "Trace the main lines with a sharp pencil, pressing evenly.",
+                "Skip shading and fill. A stencil needs outlines and key details only.",
+                "Place carbon or transfer paper under the tracing, with the carbon side facing your target surface.",
+                "Tape the layers together so nothing shifts.",
+                "Go over the lines again with a pen to transfer them."
+              ]
+            },
+            {
+              "p": "The result is a copy of the lines on the new surface. For practice, that surface is usually paper or a practice material. For other transfer options, see our guide on [transfer methods](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Method 2: print on regular paper and transfer",
+          "blocks": [
+            {
+              "p": "A regular printer can print the stencil lines on plain paper. You can then carry the lines onto a practice surface by hand."
+            },
+            {
+              "ol": [
+                "Print the line drawing at 100 percent with no scaling.",
+                "Check the size with a ruler. The printed width should match the width you chose.",
+                "Place the printout over your practice surface and trace the lines with a pen so they transfer through carbon or transfer paper.",
+                "Lift the paper and look at the result. Correct any missed lines with a pencil."
+              ]
+            },
+            {
+              "p": "Remember that a stencil is a mirror image of the final design when it is transferred from the back of the paper. Check the direction before you start, especially with text."
+            }
+          ]
+        },
+        {
+          "h2": "Method 3: a clean line file and a printer",
+          "blocks": [
+            {
+              "p": "The cleaner the line file, the easier every other step becomes. A good file has thin, solid black lines on a white background, no grey haze and no stray dots."
+            },
+            {
+              "p": "The [Studio](studio) turns your own drawing, flash or photo into a stencil on your device, and nothing is uploaded. It produces a clean line version at a size you set in millimetres, which you can print on a regular printer."
+            },
+            {
+              "p": "If you start from a photo, our guide on [stencils from a photo](guide:tattoo-stencil-from-photo) explains how to get a clear result. The AI generator on the home page can also make a design from a description or an example picture, and make a stencil you can print at true size (300 dpi). It is free to try. Free downloads carry a watermark, and a day pass or Pro removes it."
+            }
+          ]
+        },
+        {
+          "h2": "Get the size right",
+          "blocks": [
+            {
+              "p": "A stencil in the wrong size wastes everything else you did. Decide the size in millimetres first, and make sure the file and the printer both respect it."
+            },
+            {
+              "ul": [
+                "Export the stencil at 300 dpi.",
+                "Print at 100 percent. Turn off any option like fit to page or shrink to fit.",
+                "Measure the printout with a ruler and compare it to your target.",
+                "If it is off, check the print scale and print again."
+              ]
+            },
+            {
+              "p": "Our guide on [true-size printing](guide:tattoo-stencil-size-true-size-print) explains the sums in more detail, and the [tattoo size chart](guide:tattoo-size-chart-by-body-part) shows typical sizes for each body part."
+            }
+          ]
+        },
+        {
+          "h2": "Tips for a cleaner result",
+          "blocks": [
+            {
+              "ul": [
+                "Use fewer, cleaner lines. Too much detail turns into a smudge when you transfer it.",
+                "Keep a copy of the original and work from the copy.",
+                "Use a light touch and sharp tools.",
+                "Test on scrap paper first before using your final sheet.",
+                "Keep your printer ink dark. Pale lines are hard to follow.",
+                "Label each sheet with the size and the date, so you know which version you made."
+              ]
+            },
+            {
+              "p": "If a stencil is for a real client, the artist who will do the work should approve it. They know their technique and what the skin will allow."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I make a tattoo stencil without a thermal printer?",
+          "a": "Yes. You can trace the design on tracing paper, use carbon or transfer paper, or print the lines on a regular printer and transfer them by hand."
+        },
+        {
+          "q": "What paper do I use for a homemade tattoo stencil?",
+          "a": "Thin tracing paper works well for hand tracing, and plain printer paper works for a printed stencil. Choose paper that stays flat and does not tear."
+        },
+        {
+          "q": "How do I make sure the stencil is the right size?",
+          "a": "Set the width in millimetres, export at 300 dpi and print at 100 percent. Then measure the printout with a ruler."
+        },
+        {
+          "q": "Is it safe to tattoo myself using a stencil?",
+          "a": "No. Real tattooing should be done by a trained artist in a licensed studio. A stencil is for practice on paper, for temporary methods or for use by professionals."
+        },
+        {
+          "q": "Why does my stencil come out blurry?",
+          "a": "The source file is probably too small or too soft. Start from a clean, high-resolution line file and print at 300 dpi."
+        }
+      ],
+      "cta": "Open the Studio to turn your drawing into a clean stencil at the size you choose, ready to print at home."
+    },
+    "free-tattoo-stencil-maker-guide": {
+      "title": "Free tattoo stencil maker: what to look for",
+      "short": "Free tattoo stencil maker: what to look for",
+      "blurb": "A checklist for judging any free tattoo stencil maker, what free versions usually limit, and a five-minute test.",
+      "metaTitle": "Free tattoo stencil maker: a checklist to judge one",
+      "metaDesc": "How to judge a free tattoo stencil maker: clean lines, size in mm, true-size print, privacy, plus a five-minute test with your own drawing.",
+      "updated": "2026-11-26",
+      "answer": "A good free tattoo stencil maker gives you clean black lines, lets you set the size in millimetres, prints at true size, shows a preview on skin and respects your privacy. Test any tool in five minutes with your own drawing, and read what the free version limits.",
+      "sections": [
+        {
+          "h2": "What a free tattoo stencil maker should do",
+          "blocks": [
+            {
+              "p": "A free tattoo stencil maker turns an image into a line drawing you can print and use as a guide. That sounds simple, but the results vary a lot between tools. Some give you crisp lines at the right size. Others give you a grey smear that is the wrong size and a watermark across the middle."
+            },
+            {
+              "p": "Before you spend time on any tool, know what a good one does. The next sections list the core features and give you a checklist you can apply to any tool."
+            }
+          ]
+        },
+        {
+          "h2": "Clean lines",
+          "blocks": [
+            {
+              "p": "A stencil is a set of lines, so line quality is the first thing to judge. You want solid, even black lines on a white background. Look for these signs of a good result:"
+            },
+            {
+              "ul": [
+                "Smooth curves, with no jagged edges.",
+                "No grey haze or speckled noise around the lines.",
+                "Details that are still visible after conversion, not lost or doubled.",
+                "A way to adjust the threshold or line strength, so you can tune the result."
+              ]
+            },
+            {
+              "p": "A tool that offers one fixed filter may work for some images and fail for others. A tool with adjustment controls gives you a better chance of a clean result with your own artwork."
+            }
+          ]
+        },
+        {
+          "h2": "Size in millimetres and true-size print",
+          "blocks": [
+            {
+              "p": "A stencil that prints at the wrong size is useless, so size control matters more than almost any other feature. A good tool lets you type the width or height in millimetres and tells you what that means in pixels at 300 dpi."
+            },
+            {
+              "p": "300 dpi is the usual target for a printed image that will be looked at closely. At that density a thin line stays clean on paper. The tool should also export a file that prints at 100 percent without surprises. If you want the sums, see our guide on [true-size printing](guide:tattoo-stencil-size-true-size-print)."
+            },
+            {
+              "p": "For typical sizes by body part, use the [tattoo size chart](guide:tattoo-size-chart-by-body-part)."
+            }
+          ]
+        },
+        {
+          "h2": "Preview on skin and privacy",
+          "blocks": [
+            {
+              "h3": "Preview"
+            },
+            {
+              "p": "Seeing a design on a body part helps you judge scale and placement before you print. Tools that show a preview on different body parts and skin tones save you a lot of guesswork. Our [placement guide](guide:tattoo-placement-guide) explains how to use that to choose a spot."
+            },
+            {
+              "h3": "Privacy"
+            },
+            {
+              "p": "Your drawings and photos can be personal. Check whether the tool uploads your image to a server or processes it on your own device. A tool that processes on your device keeps the image with you. If it does upload, look for a clear statement about how long the file is kept and who can see it."
+            }
+          ]
+        },
+        {
+          "h2": "A checklist for any tool, including Skinstencil",
+          "blocks": [
+            {
+              "p": "Use this list to judge any free tattoo stencil maker. Tick each line before you rely on one."
+            },
+            {
+              "ul": [
+                "Does it give clean, solid lines from your own image?",
+                "Can you set the size in millimetres?",
+                "Does it export at 300 dpi for true-size printing?",
+                "Is there a preview on a body part?",
+                "Does it say clearly what happens to your image?",
+                "Is it clear what is free and what is not?",
+                "Can you download without creating an account you do not want?",
+                "Does it work for photos as well as drawings?"
+              ]
+            },
+            {
+              "p": "Skinstencil is one example you can run through the same list. The [Studio](studio) turns your own drawing, flash or photo into a stencil on your device, and nothing is uploaded. The AI generator on the home page makes a design from a description or an example picture, shows it on 8 body parts (shoulder blade, back, forearm, upper arm, chest, ribs, thigh and calf) and 6 skin tones, and makes a stencil you can print at true size (300 dpi). Judge it the way you would judge any other tool."
+            }
+          ]
+        },
+        {
+          "h2": "What free versions usually limit",
+          "blocks": [
+            {
+              "p": "Most free tools have limits, and it is fair to look for them in advance. Common ones include:"
+            },
+            {
+              "ul": [
+                "A watermark on downloaded files.",
+                "A cap on the number of conversions or downloads.",
+                "Lower resolution output on the free plan.",
+                "Fewer adjustment controls.",
+                "Features that need an account."
+              ]
+            },
+            {
+              "p": "None of these is bad in itself. A free tier lets you try a tool before you commit. The key is that the limit is clear, so you know what you get. With Skinstencil, it is free to try. Free downloads carry a watermark, and a day pass or Pro removes it. Check the current plan on the site."
+            }
+          ]
+        },
+        {
+          "h2": "Test any tool in five minutes",
+          "blocks": [
+            {
+              "p": "You do not need a long review. Use your own drawing and follow these steps."
+            },
+            {
+              "ol": [
+                "Pick a simple drawing of yours with clear lines. A scan or a photo of a sketch works.",
+                "Load it in the tool and note how long it takes.",
+                "Check the line quality at full zoom.",
+                "Set a size in millimetres, for example 100 mm.",
+                "Download the result and print it at 100 percent.",
+                "Measure the printout with a ruler.",
+                "Check what the download looks like, including any watermark."
+              ]
+            },
+            {
+              "p": "If the printout matches the size you set and the lines look clean, the tool passes the basics. If not, move on to another one."
+            }
+          ]
+        },
+        {
+          "h2": "When a photo needs Photo mode",
+          "blocks": [
+            {
+              "p": "A drawing on white paper converts easily, because the lines are already dark and the background is plain. A photo is harder. It has shadows, colours, textures and soft edges, and a simple filter will turn those into noise."
+            },
+            {
+              "p": "If your source is a photo, look for a tool with a dedicated photo mode. It should simplify tones and pick out the main contours so the result reads as a stencil. Our guide on [stencils from a photo](guide:tattoo-stencil-from-photo) explains how to get the best result."
+            },
+            {
+              "p": "A tip for any photo: use good light, a sharp image and a plain background where you can. Better input gives a cleaner stencil."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is there a free tattoo stencil maker?",
+          "a": "Yes, several tools offer a free tier. Check the limits, such as watermarks, caps on downloads or lower resolution, before you rely on one."
+        },
+        {
+          "q": "Can I make a tattoo stencil from a photo for free?",
+          "a": "Often yes, but photos need more care than drawings. Use a tool with a photo mode and a sharp, well-lit source image."
+        },
+        {
+          "q": "What size should a stencil be exported at?",
+          "a": "Choose the size in millimetres that you want on skin and export at 300 dpi. Then print at 100 percent and measure the result."
+        },
+        {
+          "q": "Are my images safe in an online stencil maker?",
+          "a": "It depends on the tool. Look for one that processes images on your device, or that states clearly how long files are kept and who can see them."
+        },
+        {
+          "q": "Why do free stencil downloads have a watermark?",
+          "a": "A watermark is a common limit on free plans. Many tools remove it with a paid option, so check what the tool offers."
+        }
+      ],
+      "cta": "Try the Skinstencil Studio with your own drawing and run it through the checklist yourself."
     }
   }
 }
