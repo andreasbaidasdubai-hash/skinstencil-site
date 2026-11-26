@@ -35,7 +35,7 @@
   var S = { design: null, part: 'shoulder', tone: 't3', view: 'back', x: 54, y: 50, s: 50, r: -8, style: 'bold', example: false };
   var D = document.createElement('canvas'); D.width = D.height = 800;      // the design: black on white
   var SC = document.createElement('canvas'); SC.width = SC.height = 800;   // the stencil
-  var NN = 800, SET = { mode: 'draw', sens: 55, smooth: 0, weight: 2, specks: 30, mm: 88 }, vmode = 'art', did = 0, realFor = '';
+  var NN = 800, SET = { mode: 'draw', sens: 68, smooth: 0, weight: 2, specks: 30, mm: 88 }, vmode = 'art', did = 0, realFor = '';
   function unlocked() { try { return !!(U && U.isUnlocked()); } catch (e) { return false; } }
 
   /* ---------- design in, stencil out ---------- */
@@ -63,7 +63,9 @@
     if (SET.weight < 2) ink = dil(ink, false); else for (i = 2; i < SET.weight; i++) ink = dil(ink, true);
     ink = despeck(ink, SET.specks);
     var c = SC.getContext('2d'), im = c.createImageData(NN, NN), kept = 0, oc = 0, ic = 0, add = 0;
-    for (i = 0; i < NN * NN; i++) { var o = i * 4; if (ink[i]) { im.data[o] = 79; im.data[o + 1] = 53; im.data[o + 2] = 200; ic++; if (orig[i]) kept++; else add++; } else { im.data[o] = 255; im.data[o + 1] = 255; im.data[o + 2] = 255; } im.data[o + 3] = 255; if (orig[i]) oc++; }
+    // the mask is softened by one blur and boosted, so line edges are anti-aliased instead of stair-stepped; the counts below still use the hard mask
+    var soft = new Float32Array(NN * NN); for (i = 0; i < NN * NN; i++) soft[i] = ink[i]; soft = blur3(soft, 1);
+    for (i = 0; i < NN * NN; i++) { var o = i * 4, a = soft[i] < .06 ? 0 : Math.min(1, soft[i] * 1.7); if (ink[i]) { ic++; if (orig[i]) kept++; else add++; } im.data[o] = 255 - 176 * a; im.data[o + 1] = 255 - 202 * a; im.data[o + 2] = 255 - 55 * a; im.data[o + 3] = 255; if (orig[i]) oc++; }
     c.putImageData(im, 0, 0);
     var kp = oc ? Math.round(100 * kept / oc) : 0, ad = ic ? Math.round(100 * add / ic) : 0;
     $('kept').textContent = kp + '%'; $('lost').textContent = (100 - kp) + '%'; $('added').textContent = ad + '%'; $('meterFill').style.width = kp + '%';
@@ -86,6 +88,7 @@
   $('vt').addEventListener('pointerdown', function (e) { e.stopPropagation(); });
   $('toSheet').addEventListener('click', function () { setView('sheet'); $('st4').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); });
   function split(x) { var r = $('sheet').getBoundingClientRect(), p = Math.max(0, Math.min(100, (x - r.left) / r.width * 100)); $('split').value = p; $('hd').style.left = p + '%'; $('cS').style.clipPath = 'inset(0 0 0 ' + p + '%)'; }
+  $('cS').style.clipPath = 'inset(0 0 0 50%)';
   $('split').addEventListener('input', function () { var r = $('sheet').getBoundingClientRect(); split(r.left + this.value / 100 * r.width); });
   var sd = false;
   $('sheet').addEventListener('pointerdown', function (e) { sd = true; this.setPointerCapture(e.pointerId); split(e.clientX); e.stopPropagation(); });
