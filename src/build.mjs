@@ -261,7 +261,11 @@ for (const l of LANGS) {
     };
     const fill = t => t.replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => { if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in workstation`); return vars[k]; });
     vars.siteHead = siteHead(l, S, page === 'gen' ? 'home' : page, vars.langSelect); vars.siteFoot = siteFoot(l, S);
-    vars.wsCss = WS_CSS; vars.wsMarkup = (page === 'gen' || page === 'index') ? fill(read('src/ws.part.html')) : '';
+    vars.wsCss = WS_CSS; vars.wsMarkup = ''; vars.wsScenes = '';
+    if (page === 'gen' || page === 'index') {   // the tool, and the scenes that come after it (the homepage puts pricing in between)
+      const full = fill(read('src/ws.part.html')), cut = full.indexOf('<!--SCENES-->'), open = full.slice(0, full.indexOf('>') + 1);
+      vars.wsMarkup = full.slice(0, cut) + '</div>\n'; vars.wsScenes = open + '\n' + full.slice(cut + '<!--SCENES-->'.length);
+    }
     let html = TPL[page].replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {
       if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in ${page} template`);
       return vars[k];
