@@ -20,6 +20,7 @@
     var q = sp($('a3b')), k = Math.max(0, Math.min(1, (q - .45) / .3));
     if (!reduce) { $('artistImg').style.transform = 'translate(-50%,-50%) scale(' + (1 + q * .1) + ')'; $('machineImg').style.transform = 'translate(-50%,-50%) scale(' + (1.04 + q * .06) + ')'; }
     $('artistImg').style.opacity = 1 - k; $('machineImg').style.opacity = k;
+    var ws = $('ws').getBoundingClientRect(); document.querySelector('.dock').style.display = (ws.bottom > 0 && ws.top < window.innerHeight) ? 'none' : '';   // the bottom button is for the later sections; on the form itself it would cover the controls
     var d = document.documentElement, h = d.scrollHeight - window.innerHeight; $('bar').style.width = (100 * (window.scrollY || 0) / Math.max(1, h)) + '%';
   }
   var tick = false;
@@ -144,7 +145,7 @@
       var p = Math.min(1, (n - t0) / dur), e = p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2, r = e * 140, m = 'radial-gradient(circle at 50% 50%,#000 ' + (r - 30) + '%,transparent ' + r + '%)';
       c.style.webkitMaskImage = m; c.style.maskImage = m; c.style.filter = 'blur(' + ((1 - e) * 7) + 'px) contrast(' + (.6 + e * .4) + ')'; c.style.opacity = .9 * Math.min(1, e * 2);
       if (p < 1) requestAnimationFrame(f);
-      else { c.style.webkitMaskImage = ''; c.style.maskImage = ''; c.style.opacity = .9; if (reduce) { c.style.filter = ''; return; } c.style.filter = 'drop-shadow(0 0 7px rgba(205,64,52,.7))'; c.style.transition = 'filter 3.2s ease-out'; requestAnimationFrame(function () { requestAnimationFrame(function () { c.style.filter = 'drop-shadow(0 0 0 rgba(205,64,52,0))'; }); }); setTimeout(function () { c.style.transition = ''; c.style.filter = ''; }, 3400); }
+      else { c.style.webkitMaskImage = ''; c.style.maskImage = ''; c.style.opacity = .9; c.style.filter = ''; }   // no red glow: the design sits on an opaque white square that only looks transparent through the multiply blend, so a glow would outline the square
     })(t0);
   }
 
