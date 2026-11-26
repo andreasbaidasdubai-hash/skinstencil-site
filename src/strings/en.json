@@ -270,5 +270,11 @@
   "s.gen.errBudget": "The generator is paused for today. Please try again tomorrow.",
   "s.gen.errUpstream": "The design could not be made and nothing was used. Please try again.",
   "s.gen.errNetwork": "No connection to the generator. Please try again.",
-  "s.gen.errBot": "We could not confirm you are a person. Reload the page and try again."
+  "s.gen.errBot": "We could not confirm you are a person. Reload the page and try again.",
+  "hero2.eyebrow": "For tattoo artists and studios",
+  "hero2.h1": "Stencils that match your line, ready to print.",
+  "hero2.sub": "Turn your own design, sketch or flash into a clean stencil in seconds. Free to use, nothing to install, nothing uploaded. Downloads carry a small watermark until you remove it.",
+  "hero2.ctaOpen": "Open the free tool",
+  "hero2.f1": "Runs in your browser",
+  "hero2.f3": "Your images never leave your device"
 }

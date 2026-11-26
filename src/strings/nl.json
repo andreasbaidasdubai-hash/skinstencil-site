@@ -270,5 +270,11 @@
   "s.gen.errBudget": "De generator is vandaag gepauzeerd. Probeer het morgen opnieuw.",
   "s.gen.errUpstream": "Het ontwerp kon niet worden gemaakt en er is niets afgetrokken. Probeer het opnieuw.",
   "s.gen.errNetwork": "Geen verbinding met de generator. Probeer het opnieuw.",
-  "s.gen.errBot": "We konden niet bevestigen dat je een mens bent. Laad de pagina opnieuw en probeer het nog eens."
+  "s.gen.errBot": "We konden niet bevestigen dat je een mens bent. Laad de pagina opnieuw en probeer het nog eens.",
+  "hero2.eyebrow": "Voor tattoo-artiesten en studio's",
+  "hero2.h1": "Stencils die bij jouw lijn passen, klaar om te printen.",
+  "hero2.sub": "Maak in een paar seconden een schone stencil van je eigen ontwerp, schets of flash. Gratis te gebruiken, niets te installeren, niets geüpload. Downloads hebben een klein watermerk totdat je het verwijdert.",
+  "hero2.ctaOpen": "Open de gratis tool",
+  "hero2.f1": "Draait in je browser",
+  "hero2.f3": "Je afbeeldingen verlaten je apparaat nooit"
 }

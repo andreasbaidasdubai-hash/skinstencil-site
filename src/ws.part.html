@@ -1,0 +1,58 @@
+<div class="wsx l-{{lang}} d-{{dir}}">
+<div class="ws" id="ws" role="region" aria-label="{{gen.h1}}"><div class="hbg" aria-hidden="true"><video id="vDoor" muted loop playsinline preload="metadata" poster="/assets/scenes/door.jpg" src="/assets/door.mp4"></video></div>
+<div class="wsin" id="genBox" data-studio="{{base}}studio/">
+ <div>
+  <h1 class="pitch">{{gen.h1}}</h1><p class="psub">{{gen.lead}}</p>
+  <div class="stp" id="st1"><h3><i>1</i>{{gen.w.s1}}</h3>
+   <label class="vh" for="genPrompt">{{s.gen.label}}</label>
+   <textarea id="genPrompt" maxlength="200" placeholder="{{s.gen.ph}}"></textarea>
+   <div class="attach"><input type="file" id="ref" accept="image/png,image/jpeg,image/webp" hidden><button class="attbtn" id="attBtn" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.5l-8.6 8.6a5.5 5.5 0 01-7.8-7.8l9-9a3.7 3.7 0 015.2 5.2l-9 9a1.8 1.8 0 01-2.6-2.6l8.4-8.4"/></svg>{{gen.w.attach}}</button><span class="thumbw" id="thumbw" hidden><img id="thumb" alt="{{gen.w.attachAlt}}"><button id="attX" type="button" aria-label="{{gen.w.attachRemove}}">&times;</button></span></div>
+   <div class="wseg" id="refmode" hidden><button type="button" aria-pressed="true" data-m="inspire"><b>{{gen.w.refInspire}}</b><span>{{gen.w.refInspireHint}}</span></button><button type="button" aria-pressed="false" data-m="trace"><b>{{gen.w.refTrace}}</b><span>{{gen.w.refTraceHint}}</span></button></div>
+   <div class="wseg" id="genStyle"><button type="button" data-v="bold" aria-pressed="true"><b>{{s.gen.bold}}</b><span>{{gen.boldHint}}</span></button><button type="button" data-v="detail" aria-pressed="false"><b>{{s.gen.detail}}</b><span>{{gen.detailHint}}</span></button></div>
+   <p class="model" id="model" aria-live="polite"></p>
+   <div class="btnrow"><button class="cta" id="genBtn" type="button">{{s.gen.btn}}</button></div>
+   <div id="genTs"></div>
+   <p class="wnote" id="genStatus" role="status" aria-live="polite"></p>
+   <p class="wnote">{{s.gen.hint}}</p>
+  </div>
+  <div class="stp" id="st2"><h3><i>2</i>{{gen.w.s2}}</h3>
+   <div class="map"><div><div class="vw" id="vw"><button type="button" aria-pressed="false" data-v="front">{{gen.w.front}}</button><button type="button" aria-pressed="true" data-v="back">{{gen.w.back}}</button></div><svg id="bmap" viewBox="0 0 160 340" role="group" aria-label="{{gen.w.bodyMap}}"></svg></div>
+    <div><p class="wnote">{{gen.w.tapPart}}</p><p class="partname" id="pname"></p></div></div>
+  </div>
+  <div class="stp" id="st3"><h3><i>3</i>{{gen.w.s3}}</h3>
+   <div class="tones" id="tones" role="group" aria-label="{{gen.w.toneLabel}}"></div>
+   <div class="row"><label for="rs">{{gen.w.size}} <span id="rsv"></span></label><input type="range" id="rs" min="20" max="90" value="50"></div>
+   <div class="row"><label for="rr">{{gen.w.turn}} <span id="rrv"></span></label><input type="range" id="rr" min="-60" max="60" value="0"></div>
+   <div class="btnrow"><button class="cta ghost" id="real" type="button">{{gen.w.real}}</button><button class="cta" id="toSheet" type="button">{{gen.w.toSheet}}</button></div>
+   <p class="wnote" id="rnote">{{gen.w.dragHint}}</p>
+  </div>
+  <div class="stp" id="st4"><h3><i>4</i>{{gen.w.s4}}</h3>
+   <div class="wseg" id="smode"><button type="button" aria-pressed="true" data-v="draw"><b>{{gen.w.modeDraw}}</b><span>{{gen.w.modeDrawHint}}</span></button><button type="button" aria-pressed="false" data-v="photo"><b>{{gen.w.modePhoto}}</b><span>{{gen.w.modePhotoHint}}</span></button></div>
+   <div class="row"><label for="sens">{{gen.w.detail}} <span id="sensV">55</span></label><input id="sens" type="range" min="1" max="100" value="55"></div>
+   <div class="row"><label for="smooth">{{gen.w.smooth}} <span id="smoothV">0</span></label><input id="smooth" type="range" min="0" max="4" value="0"></div>
+   <div class="row"><label for="weight">{{gen.w.weight}} <span id="weightV">2</span></label><input id="weight" type="range" min="1" max="6" value="2"></div>
+   <div class="row"><label for="specks">{{gen.w.specks}} <span id="specksV">30</span></label><input id="specks" type="range" min="0" max="300" value="30"></div>
+   <div class="row"><label for="split">{{gen.w.compare}}</label><input id="split" type="range" min="0" max="100" value="50"></div>
+   <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
+   <div class="wstats"><span><u style="background:#1F7A4C"></u>{{gen.w.kept}} <b id="kept">-</b></span><span><u style="background:#B42318"></u>{{gen.w.lost}} <b id="lost">-</b></span><span><u style="background:#C98A00"></u>{{gen.w.added}} <b id="added">-</b></span></div>
+   <div class="mmrow"><label for="mm">{{gen.w.width}}</label><input id="mm" type="number" min="10" max="600" step="1" value="88"><span class="wnote" id="sizeOut"></span></div>
+   <div class="ruler" id="ruler" aria-hidden="true"></div>
+   <div class="btnrow"><button class="cta" id="dlBtn" type="button">{{gen.w.dl}}</button><button class="cta ghost" id="printBtn" type="button">{{gen.w.print}}</button></div>
+   <p class="wnote" id="dlNote"></p>
+   <p class="wnote" id="wmNote">{{gen.w.wm}} <a href="{{base}}studio/">{{gen.w.wmLink}}</a></p>
+   <p class="wnote"><a href="{{base}}studio/" id="toStudio">{{gen.w.studioLink}}</a></p>
+  </div>
+ </div>
+ <div class="stagecol"><div class="wstage" id="wstage"><img id="wskin" alt="{{gen.w.skinAlt}}" src="/assets/lib/shoulder_t3.jpg"><div id="wart"><canvas id="wc2" width="800" height="800" role="img" aria-label="{{gen.resultAlt}}"></canvas></div><img id="wreal" alt="{{gen.w.realTag}}" style="opacity:0"><div class="lamp" id="lamp"></div>
+  <div class="sheet" id="sheet" hidden><canvas id="cO" width="800" height="800"></canvas><canvas id="cS" width="800" height="800"></canvas><div class="hd" id="hd"></div><span class="sl l">{{gen.w.designL}}</span><span class="sl r">{{gen.w.stencilL}}</span></div>
+  <div class="vt" id="vt" role="group" aria-label="{{gen.w.viewLabel}}"><button type="button" aria-pressed="true" data-m="art">{{gen.w.vTattoo}}</button><button type="button" aria-pressed="false" data-m="stencil">{{gen.w.vStencil}}</button><button type="button" aria-pressed="false" data-m="sheet">{{gen.w.vSheet}}</button></div>
+  <div class="stagetag" id="wtag" hidden></div><div class="empty" id="wempty">{{gen.w.empty}}</div></div></div>
+</div></div>
+
+<div class="a3" id="a3" role="region" aria-label="{{gen.w.a3h}}"><div class="sticky"><div class="bk" style="background-image:url(/assets/scenes/hands.jpg)"></div><img id="handsImg" alt="{{gen.w.handsAlt}}" loading="lazy" src="/assets/scenes/hands.jpg"><video id="vHands" muted loop playsinline preload="none" src="/assets/hands.mp4"></video><div class="sc"></div><div class="cap"><h2>{{gen.w.a3h}}</h2><p>{{gen.w.a3p}}</p><a class="cta big" href="#ws">{{gen.w.cta}}</a></div></div></div>
+
+<div class="a3" id="a3b" role="region" aria-label="{{gen.w.a4h}}"><div class="sticky"><div class="bk" style="background-image:url(/assets/scenes/artist.jpg)"></div><img id="artistImg" alt="{{gen.w.artistAlt}}" loading="lazy" src="/assets/scenes/artist.jpg"><img id="machineImg" alt="{{gen.w.machineAlt}}" loading="lazy" src="/assets/scenes/machine.jpg"><div class="sc"></div><div class="cap"><h2>{{gen.w.a4h}}</h2><p>{{gen.w.a4p}}</p><a class="cta big" href="#ws">{{gen.w.cta}}</a></div></div></div>
+
+<div class="artists"><div class="in"><h2>{{gen.w.artH}}</h2><p class="artlead">{{gen.w.artP}}</p><a class="cta big" href="#ws">{{gen.w.cta}}</a>
+ <div class="pair"><figure><img alt="{{gen.w.hennaAlt}}" loading="lazy" src="/assets/scenes/henna.jpg"><a href="{{base}}studio/">{{gen.w.hennaLink}}</a></figure><figure><img alt="{{gen.w.browAlt}}" loading="lazy" src="/assets/scenes/brow.jpg"><a href="{{base}}brow/">{{gen.w.browLink}}</a></figure></div></div></div>
+</div>

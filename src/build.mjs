@@ -86,6 +86,27 @@ function i18nJson(S, prefixes) {
   return JSON.stringify(o).replace(/</g, '\\u003c');
 }
 
+
+// The workstation (generator, body map, stencil maker, scenes) is shared by the homepage and the generator page: one markup file, one stylesheet.
+// Its stylesheet is scoped to .wsx so it cannot touch the page around it; a selector starting with & attaches to the wrapper itself (language and direction classes).
+function scopeCss(css, scope) {
+  let i = 0; const out = [];
+  function block(inMedia) {
+    while (i < css.length) {
+      const open = css.indexOf('{', i), close = css.indexOf('}', i);
+      if (inMedia && close !== -1 && (open === -1 || close < open)) { i = close + 1; return; }
+      if (open === -1) { out.push(css.slice(i)); i = css.length; return; }
+      const head = css.slice(i, open).replace(/\/\*[\s\S]*?\*\//g, '').trim(); i = open + 1;
+      if (head.startsWith('@media')) { out.push(head + '{'); block(true); out.push('}'); continue; }
+      const end = css.indexOf('}', i), body = css.slice(i, end); i = end + 1;
+      if (!head) continue;
+      out.push(head.split(',').map(sel => { sel = sel.trim(); return sel.startsWith('&') ? scope + sel.slice(1) : sel.startsWith(':root') ? scope + sel.slice(5) : scope + ' ' + sel; }).join(',') + '{' + body + '}');
+    }
+  }
+  block(false); return out.join('\n');
+}
+const WS_TOKENS = '.wsx{--paper:#F4F1EA;--card:#FBFAF6;--ink:#1D1B19;--muted:#6F6A63;--line:rgba(29,27,25,.16);--stencil:#4F35C8;--stencil-soft:#E9E5F9;--ok:#1F7A4C;--bad:#B42318;color:var(--ink);background:var(--paper);color-scheme:light;font-size:17px;line-height:1.6}';
+const WS_CSS = WS_TOKENS + '\n' + scopeCss(read('src/ws.css'), '.wsx');
 const plain = s => String(s).replace(/<[^>]+>/g, '');
 const OFFERS = [{ '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Day pass', price: '4.99', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro monthly', price: '12', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro yearly', price: '79', priceCurrency: 'USD' }];
 function ldjsonBrow(S, l) {
@@ -215,8 +236,10 @@ for (const l of LANGS) {
       ldjson: ldjson(S, l, page),
       guidesNav: page === 'index' ? guidesNav(l) : '', guidesSection: page === 'index' ? guidesSection(l, 'tattoo', S) : '', guidesSectionBrow: page === 'index' ? guidesSection(l, 'brow', S) : '',
       browGuides: page === 'brow' ? browGuidesBlock(l, S) : '',
-      i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.'] : page === 'brow' ? ['brow.', 's.dl.', 's.thanks', 'theme.'] : page === 'gen' ? ['s.gen.', 'gen.w.'] : ['s.', 'sample.']),
+      i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.', 'gen.w.', 's.gen.'] : page === 'brow' ? ['brow.', 's.dl.', 's.thanks', 'theme.'] : page === 'gen' ? ['s.gen.', 'gen.w.'] : ['s.', 'sample.']),
     };
+    const fill = t => t.replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => { if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in workstation`); return vars[k]; });
+    vars.wsCss = WS_CSS; vars.wsMarkup = (page === 'gen' || page === 'index') ? fill(read('src/ws.part.html')) : '';
     let html = TPL[page].replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {
       if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in ${page} template`);
       return vars[k];

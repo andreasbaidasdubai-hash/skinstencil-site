@@ -20,8 +20,8 @@
     var q = sp($('a3b')), k = Math.max(0, Math.min(1, (q - .45) / .3));
     if (!reduce) { $('artistImg').style.transform = 'translate(-50%,-50%) scale(' + (1 + q * .1) + ')'; $('machineImg').style.transform = 'translate(-50%,-50%) scale(' + (1.04 + q * .06) + ')'; }
     $('artistImg').style.opacity = 1 - k; $('machineImg').style.opacity = k;
-    var ws = $('ws').getBoundingClientRect(); document.querySelector('.dock').style.display = (ws.bottom > 0 && ws.top < window.innerHeight) ? 'none' : '';   // the bottom button is for the later sections; on the form itself it would cover the controls
-    var d = document.documentElement, h = d.scrollHeight - window.innerHeight; $('bar').style.width = (100 * (window.scrollY || 0) / Math.max(1, h)) + '%';
+    var ws = $('ws').getBoundingClientRect(), dock = document.querySelector('.dock'); if (dock) dock.style.display = (ws.bottom > 0 && ws.top < window.innerHeight) ? 'none' : '';   // the bottom button is for the later sections; on the form itself it would cover the controls
+    var d = document.documentElement, h = d.scrollHeight - window.innerHeight; if ($('bar')) $('bar').style.width = (100 * (window.scrollY || 0) / Math.max(1, h)) + '%';
   }
   var tick = false;
   function onScroll() { if (tick) return; tick = true; requestAnimationFrame(function () { tick = false; scenes(); }); }
@@ -151,7 +151,7 @@
 
   /* ---------- the generator service ---------- */
   var busy = false, st = $('genStatus'), REF = '', REFMODE = 'inspire';
-  function say(k, cls, v) { st.textContent = k ? t(k, v) : ''; st.className = 'note' + (cls ? ' ' + cls : ''); }
+  function say(k, cls, v) { st.textContent = k ? t(k, v) : ''; st.className = 'wnote' + (cls ? ' ' + cls : ''); }
   function route() {
     var m = $('model');
     if (REF) { m.innerHTML = t('gen.w.modelRef'); $('genStyle').classList.add('dim'); }
@@ -227,11 +227,11 @@
   $('real').addEventListener('click', function () {
     if (!S.design || busy) return;
     if (realFor === realKey()) { clearReal(); return; }
-    var n = $('rnote'); busy = true; $('real').disabled = true; n.className = 'note'; n.textContent = t('gen.w.realBusy');
+    var n = $('rnote'); busy = true; $('real').disabled = true; n.className = 'wnote'; n.textContent = t('gen.w.realBusy');
     var c = document.createElement('canvas'); c.width = c.height = 640; c.getContext('2d').drawImage(D, 0, 0, 640, 640);
     ask('/place', { part: S.part, tone: S.tone, design: c.toDataURL('image/jpeg', .9), x: S.x, y: S.y, s: S.s, r: S.r })
-      .then(function (r) { var u = URL.createObjectURL(r.blob), im = $('wreal'); im.onload = function () { realFor = realKey(); setView('art'); showReal(true); URL.revokeObjectURL(u); }; im.src = u; n.textContent = t('gen.w.realNote'); n.className = 'note ok'; })
-      .catch(function (e) { n.textContent = t(e && e.key ? e.key : 's.gen.errNetwork'); n.className = 'note err'; })
+      .then(function (r) { var u = URL.createObjectURL(r.blob), im = $('wreal'); im.onload = function () { realFor = realKey(); setView('art'); showReal(true); URL.revokeObjectURL(u); }; im.src = u; n.textContent = t('gen.w.realNote'); n.className = 'wnote ok'; })
+      .catch(function (e) { n.textContent = t(e && e.key ? e.key : 's.gen.errNetwork'); n.className = 'wnote err'; })
       .then(function () { busy = false; $('real').disabled = false; });
   });
 

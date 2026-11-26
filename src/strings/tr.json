@@ -270,5 +270,11 @@
   "s.gen.errBudget": "Oluşturucu bugünlük durduruldu. Yarın tekrar dene.",
   "s.gen.errUpstream": "Tasarım oluşturulamadı ve hakkından bir şey düşülmedi. Tekrar dene.",
   "s.gen.errNetwork": "Oluşturucuya bağlanılamadı. Tekrar dene.",
-  "s.gen.errBot": "Bir insan olduğunu doğrulayamadık. Sayfayı yenileyip tekrar dene."
+  "s.gen.errBot": "Bir insan olduğunu doğrulayamadık. Sayfayı yenileyip tekrar dene.",
+  "hero2.eyebrow": "Dövme sanatçıları ve stüdyolar için",
+  "hero2.h1": "Çizgisine uyan, baskıya hazır stencil'ler.",
+  "hero2.sub": "Kendi tasarımınızı, eskizinizi veya flash'ınızı saniyeler içinde temiz bir stencil'e dönüştürün. Kullanımı ücretsiz, kurulum yok, hiçbir şey yüklenmez. Filigranı kaldırana kadar indirmelerde küçük bir filigran bulunur.",
+  "hero2.ctaOpen": "Ücretsiz aracı aç",
+  "hero2.f1": "Tarayıcınızda çalışır",
+  "hero2.f3": "Görselleriniz cihazınızdan çıkmaz"
 }

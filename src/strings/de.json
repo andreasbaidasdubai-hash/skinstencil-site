@@ -270,5 +270,11 @@
   "s.gen.errBudget": "Der Generator pausiert für heute. Bitte versuche es morgen wieder.",
   "s.gen.errUpstream": "Das Motiv konnte nicht erstellt werden, es wurde nichts verbraucht. Bitte versuche es erneut.",
   "s.gen.errNetwork": "Keine Verbindung zum Generator. Bitte versuche es erneut.",
-  "s.gen.errBot": "Wir konnten nicht bestätigen, dass du ein Mensch bist. Lade die Seite neu und versuche es erneut."
+  "s.gen.errBot": "Wir konnten nicht bestätigen, dass du ein Mensch bist. Lade die Seite neu und versuche es erneut.",
+  "hero2.eyebrow": "Für Tätowierer und Studios",
+  "hero2.h1": "Stencils, die zu deiner Linie passen, druckfertig.",
+  "hero2.sub": "Mach aus deinem eigenen Motiv, deiner Skizze oder deinem Flash in Sekunden einen sauberen Stencil. Kostenlos nutzbar, nichts zu installieren, nichts wird hochgeladen. Downloads tragen ein kleines Wasserzeichen, bis du es entfernst.",
+  "hero2.ctaOpen": "Kostenloses Tool öffnen",
+  "hero2.f1": "Läuft in deinem Browser",
+  "hero2.f3": "Deine Bilder verlassen nie dein Gerät"
 }

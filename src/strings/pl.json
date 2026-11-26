@@ -270,5 +270,11 @@
   "s.gen.errBudget": "Generator jest dziś wstrzymany. Spróbuj jutro.",
   "s.gen.errUpstream": "Nie udało się stworzyć projektu i nic nie zostało zużyte. Spróbuj ponownie.",
   "s.gen.errNetwork": "Brak połączenia z generatorem. Spróbuj ponownie.",
-  "s.gen.errBot": "Nie udało się potwierdzić, że jesteś człowiekiem. Odśwież stronę i spróbuj ponownie."
+  "s.gen.errBot": "Nie udało się potwierdzić, że jesteś człowiekiem. Odśwież stronę i spróbuj ponownie.",
+  "hero2.eyebrow": "Dla tatuatorów i studiów",
+  "hero2.h1": "Stencile zgodne z twoją kreską, gotowe do druku.",
+  "hero2.sub": "Zamień własny projekt, szkic lub flash w czysty stencil w kilka sekund. Za darmo, bez instalacji, nic nie jest wysyłane. Pliki mają mały znak wodny, dopóki go nie usuniesz.",
+  "hero2.ctaOpen": "Otwórz darmowe narzędzie",
+  "hero2.f1": "Działa w przeglądarce",
+  "hero2.f3": "Twoje obrazy nie opuszczają urządzenia"
 }

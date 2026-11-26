@@ -197,15 +197,135 @@ footer .wrap{padding-block:28px}
 .glink:hover{border-color:var(--stencil)}.glink h3{font-size:17px}.glink p{margin:6px 0 0;font-size:14px;color:var(--muted)}
 #guides .note a{color:var(--stencil)}
 @media (max-width:900px){.gl{grid-template-columns:minmax(0,1fr)}}
-.doors .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;padding-block:18px 0}
-.door{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
-.door:hover{border-color:var(--stencil)}
-.door h2{font-size:19px;margin:0;font-weight:700}
-.door p{margin:6px 0 10px;color:var(--muted);font-size:15px}
-.door .go{font-weight:600;font-size:14px;color:var(--stencil)}
-.door.ai{border-color:var(--stencil);background:var(--stencil-soft)}
-@media (max-width:760px){.doors .wrap{grid-template-columns:minmax(0,1fr)}}
 [hidden]{display:none!important}
+.wsx{--paper:#F4F1EA;--card:#FBFAF6;--ink:#1D1B19;--muted:#6F6A63;--line:rgba(29,27,25,.16);--stencil:#4F35C8;--stencil-soft:#E9E5F9;--ok:#1F7A4C;--bad:#B42318;color:var(--ink);background:var(--paper);color-scheme:light;font-size:17px;line-height:1.6}
+.wsx .cta{display:inline-block;font:700 14px var(--body);letter-spacing:.03em;text-decoration:none;text-align:center;background:var(--stencil);color:#fff;border:1.5px solid var(--stencil);padding:13px 24px;border-radius:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.wsx .cta:hover{box-shadow:0 10px 24px -12px rgba(79,53,200,.7)}
+.wsx .cta:active{transform:translateY(1px) scale(.99)}
+.wsx .cta.ghost{background:none;color:var(--ink);border-color:var(--ink)}
+.wsx .cta.ghost:hover{box-shadow:none;background:rgba(29,27,25,.05)}
+.wsx .cta.big{font-size:16px;padding:16px 30px}
+.wsx .cta:disabled{opacity:.45;cursor:default;transform:none;box-shadow:none}
+.wsx .ws{position:relative;overflow:clip;padding:var(--wspad,40px) max(18px,env(safe-area-inset-left,0px)) 72px}
+.wsx .hbg{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none}
+.wsx .hbg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s}
+.wsx .hbg video.on{opacity:.55}
+.wsx .hbg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--paper) 0%,rgba(244,241,234,.93) 42%,rgba(244,241,234,.55) 100%)}
+.wsx.d-rtl .hbg::after{background:linear-gradient(270deg,var(--paper) 0%,rgba(244,241,234,.93) 42%,rgba(244,241,234,.55) 100%)}
+.wsx .wsin{position:relative;z-index:1;max-width:1160px;margin:0 auto;display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:start}
+.wsx .pitch{font-weight:800;font-size:clamp(30px,3.7vw,52px);line-height:1.04;font-stretch:106%;margin:0 0 14px}
+.wsx.l-ar .pitch{font-stretch:100%}
+.wsx .psub{font-size:18px;line-height:1.4;color:#4A463F;margin:0 0 20px;max-width:34ch}
+.wsx .stp{border-top:1px solid var(--line);padding:18px 0 20px;display:grid;gap:12px}
+.wsx .stp.off{opacity:.38;pointer-events:none}
+.wsx .stp h3{font:800 15px var(--display);margin:0;display:flex;gap:10px;align-items:center}
+.wsx .stp h3 i{font:600 12px var(--body);font-style:normal;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;flex:none}
+.wsx textarea{width:100%;font:500 16px var(--body);background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:11px 13px;resize:vertical;min-height:74px}
+.wsx .wseg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.wsx .wseg button{text-align:start;font:500 14px var(--body);color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:9px 12px;cursor:pointer}
+.wsx .wseg button b{display:block}
+.wsx .wseg button span{display:block;font-size:12.5px;color:var(--muted)}
+.wsx .wseg button[aria-pressed="true"]{border-color:var(--stencil);background:var(--stencil-soft)}
+.wsx .wseg.dim{opacity:.4;pointer-events:none}
+.wsx .attach{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.wsx .attbtn{display:inline-flex;gap:8px;align-items:center;font:600 13px var(--body);background:#fff;color:var(--ink);border:1.5px dashed rgba(29,27,25,.4);border-radius:8px;padding:9px 13px;cursor:pointer;transition:border-color .15s,transform .15s}
+.wsx .attbtn:hover{border-color:var(--stencil)}
+.wsx .attbtn:active{transform:scale(.98)}
+.wsx .thumbw{position:relative;width:54px;height:54px;border:1px solid var(--line);background:#fff}
+.wsx .thumbw img{width:100%;height:100%;object-fit:cover;display:block}
+.wsx .thumbw button{position:absolute;inset-inline-end:-8px;top:-8px;width:22px;height:22px;border-radius:50%;border:0;background:var(--ink);color:#fff;font:700 14px/1 var(--body);cursor:pointer;padding:0}
+.wsx .model{font:500 13px/1.4 var(--body);margin:0;color:#4A463F;background:#fff;border-inline-start:3px solid var(--stencil);padding:8px 11px}
+.wsx .model b{color:var(--ink)}
+.wsx .wnote{font-size:13px;color:var(--muted);margin:0}
+.wsx .wnote.err{color:var(--bad)}
+.wsx .wnote.ok{color:var(--ok)}
+.wsx .btnrow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.wsx .map{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr);gap:16px;align-items:center}
+.wsx .map svg{width:100%;height:auto;display:block}
+.wsx .map .base{fill:#E8E3D8}
+.wsx .map .zone{fill:#D6D1C5;stroke:#fff;stroke-width:1.2;cursor:pointer;transition:fill .15s}
+.wsx .map .zone:hover{fill:#BDB6F0}
+.wsx .map .zone.sel{fill:var(--stencil)}
+.wsx .vw{display:flex;gap:6px;margin-bottom:8px}
+.wsx .vw button{font:600 12px var(--body);background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px;cursor:pointer;color:var(--ink)}
+.wsx .vw button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.wsx .partname{font:800 20px var(--display);margin:4px 0 0}
+.wsx .tones{display:flex;gap:9px;flex-wrap:wrap}
+.wsx .tones button{width:38px;height:38px;border-radius:50%;border:2px solid transparent;padding:0;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(0,0,0,.18);transition:transform .15s}
+.wsx .tones button:hover{transform:scale(1.1)}
+.wsx .tones button[aria-pressed="true"]{border-color:var(--ink);box-shadow:0 0 0 2px var(--paper) inset}
+.wsx .row{display:grid;gap:4px}
+.wsx .row label{font:600 13px var(--body);display:flex;justify-content:space-between}
+.wsx .row label span{color:var(--muted);font-weight:500}
+.wsx input[type=range]{width:100%;accent-color:var(--stencil)}
+.wsx .stagecol{position:sticky;top:calc(var(--stk,0px) + 20px);display:grid;justify-items:center;gap:10px}
+.wsx .wstage{position:relative;width:min(560px,100%,calc((100svh - 130px)*.75));aspect-ratio:3/4;background:#0c0b0d;overflow:hidden;touch-action:none;cursor:grab;box-shadow:0 40px 80px -34px rgba(29,27,25,.65);direction:ltr}
+.wsx .wstage>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;transition:opacity .5s}
+.wsx .wstage #wart{position:absolute;pointer-events:none;mix-blend-mode:multiply;transform-origin:50% 50%}
+.wsx .wstage #wart canvas{display:block;width:100%;height:auto;opacity:.9}
+.wsx .wstage .lamp{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle 230px at var(--lx,50%) var(--ly,30%),rgba(255,214,160,.34),rgba(255,214,160,0) 70%);mix-blend-mode:soft-light;opacity:0;transition:opacity .35s}
+.wsx .wstage:hover .lamp{opacity:1}
+.wsx .wstage .stagetag{position:absolute;inset-inline-start:12px;bottom:12px;font:600 12px var(--body);color:#fff;background:rgba(0,0,0,.5);padding:5px 10px;backdrop-filter:blur(6px);max-width:80%}
+.wsx .wstage .empty{position:absolute;inset:auto 0 18px 0;text-align:center;font:600 13px var(--body);color:#fff;text-shadow:0 1px 10px #000;pointer-events:none}
+.wsx .vt{position:absolute;z-index:6;left:50%;top:10px;transform:translateX(-50%);display:flex;gap:2px;background:rgba(255,255,255,.92);border-radius:999px;padding:3px;box-shadow:0 6px 18px -8px rgba(0,0,0,.5);max-width:calc(100% - 16px)}
+.wsx .vt button{font:600 12px var(--body);color:var(--ink);background:none;border:0;border-radius:999px;padding:6px 11px;cursor:pointer;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:420px){
+.wsx .vt button{padding:6px 8px;font-size:11.5px}
+}
+.wsx .vt button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.wsx .sheet{position:absolute;inset:0;background:#fff;z-index:4;cursor:ew-resize;touch-action:none}
+.wsx .sheet canvas{position:absolute;left:0;top:50%;width:100%;height:auto;transform:translateY(-50%)}
+.wsx .sheet .hd{position:absolute;top:0;bottom:0;width:2px;background:var(--ink);left:50%}
+.wsx .sheet .sl{position:absolute;bottom:12px;font:600 11px var(--body);color:var(--muted);letter-spacing:.04em}
+.wsx .sheet .sl.l{left:12px}
+.wsx .sheet .sl.r{right:12px}
+.wsx .meter{height:6px;background:rgba(180,35,24,.25);border-radius:3px;overflow:hidden}
+.wsx .meter i{display:block;height:100%;width:0;background:var(--ok);transition:width .25s}
+.wsx .wstats{display:flex;gap:16px;flex-wrap:wrap;font:500 13px var(--body);color:var(--muted)}
+.wsx .wstats u{display:inline-block;width:8px;height:8px;border-radius:50%;margin-inline-end:6px}
+.wsx .wstats b{color:var(--ink);margin-inline-start:4px}
+.wsx .mmrow{display:grid;grid-template-columns:auto 90px 1fr;gap:10px;align-items:center}
+.wsx .mmrow label{font:600 13px var(--body)}
+.wsx .mmrow input{font:500 15px var(--body);padding:7px 9px;border:1px solid var(--line);background:#fff;width:100%;color:var(--ink)}
+.wsx .ruler{height:16px;border-bottom:1.5px solid var(--ink);background-image:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px var(--cm,40px));background-size:100% 9px;background-repeat:no-repeat;direction:ltr}
+@media (max-width:860px){
+.wsx .wsin{grid-template-columns:1fr}
+.wsx .stagecol{order:-1;top:var(--stk,0px);z-index:6;background:var(--paper);padding:8px 0 10px;margin:0 -18px;box-shadow:0 14px 20px -16px rgba(29,27,25,.35)}
+.wsx .wstage{width:auto;height:min(40svh,380px);aspect-ratio:3/4}
+.wsx .pitch{font-size:clamp(28px,8vw,40px)}
+.wsx .stp{padding:16px 0}
+.wsx .mmrow{grid-template-columns:1fr 90px}
+.wsx .mmrow .wnote{grid-column:1/-1}
+}
+.wsx .a3{position:relative;height:230svh;background:#0c0b0d}
+.wsx .a3 .sticky{position:sticky;top:0;height:100svh;overflow:hidden}
+.wsx .a3 .bk{position:absolute;inset:-6%;background-size:cover;background-position:center;filter:blur(30px) saturate(1.1);transform:scale(1.1);opacity:.7}
+.wsx .a3 img,.wsx .a3 video{position:absolute;left:50%;top:50%;height:100%;width:auto;max-width:none;transform:translate(-50%,-50%);will-change:transform}
+.wsx .a3 video{opacity:0;transition:opacity .6s}
+.wsx .a3 video.on{opacity:1}
+.wsx .a3 .sc{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.05) 55%,rgba(0,0,0,.35))}
+.wsx .a3 .cap{position:absolute;inset-inline:0;bottom:7svh;padding:0 max(22px,env(safe-area-inset-left,0px));max-width:980px;margin:0 auto;color:#fff}
+.wsx .a3 .cap h2{font:800 clamp(34px,6vw,76px)/1 var(--display);margin:0 0 12px;font-stretch:104%}
+.wsx .a3 .cap p{font-size:clamp(16px,2vw,21px);margin:0;max-width:34ch;opacity:.92}
+.wsx .a3 .cta{background:#fff;color:var(--ink);border-color:#fff;margin-top:18px}
+.wsx #a3b img#machineImg{opacity:0}
+@media (prefers-reduced-motion:reduce){
+.wsx .a3{height:auto}
+.wsx .a3 .sticky{position:relative;height:80svh}
+}
+.wsx .artists{padding:clamp(56px,9vw,110px) max(22px,env(safe-area-inset-left,0px))}
+.wsx .artists .in{max-width:1060px;margin:0 auto}
+.wsx .artists h2{font-weight:800;font-size:clamp(30px,4.6vw,58px);line-height:1.02;margin-bottom:14px}
+.wsx .artists .artlead{font-size:19px;max-width:44ch;color:#4A463F;margin:0 0 22px}
+.wsx .pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}
+.wsx .pair figure{margin:0;position:relative}
+.wsx .pair img{width:100%;height:auto;display:block;aspect-ratio:4/5;object-fit:cover}
+.wsx .pair a{position:absolute;inset-inline:12px;bottom:12px;background:#fff;color:var(--ink);text-decoration:none;font:700 14px var(--body);padding:10px 14px}
+@media (max-width:620px){
+.wsx .pair{grid-template-columns:1fr}
+}
+
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/","inLanguage":"en","description":"Free tattoo stencil generator in your browser. Turn a drawing, flash or photo into a clean line stencil and print it at true size. Nothing is uploaded; remove the watermark with a day pass or Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"12","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"79","priceCurrency":"USD"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The tool in the studio is free and has no sign-up. Downloads from the free tool carry a small watermark and are limited to 800 pixels. A day pass or Pro removes the watermark and unlocks the full size."}},{"@type":"Question","name":"How do I remove the watermark?","acceptedAnswer":{"@type":"Answer","text":"Pick a day pass or Pro and pay at the secure checkout. You get a license key by email. Paste it into the studio and the watermark is gone. The key is checked with our payment provider and kept only in your browser."}},{"@type":"Question","name":"Is this AI?","acceptedAnswer":{"@type":"Answer","text":"The stencil filter is classic image processing: it finds lines by edges and brightness, removes specks and sets the line weight. That keeps it fast, private and predictable on clean drawings."}},{"@type":"Question","name":"Do you keep my designs?","acceptedAnswer":{"@type":"Answer","text":"No. The free tool runs in your browser and does not upload your images. Closing the page discards them."}},{"@type":"Question","name":"Can I upload any tattoo?","acceptedAnswer":{"@type":"Answer","text":"Only designs you made or have the right to use. We remove material when a rights holder asks."}},{"@type":"Question","name":"Which files work?","acceptedAnswer":{"@type":"Answer","text":"JPG, PNG and WebP. Large images are scaled down to keep the tool fast. A flat, well-lit photo of a drawing works well."}},{"@type":"Question","name":"How do I print a stencil?","acceptedAnswer":{"@type":"Answer","text":"Download the PNG and print it at the size you set. Paid files carry the 300 dpi size, so print software uses true size. Thermal stencil printers print onto thermal transfer paper. Inkjet printers need stencil ink and inkjet transfer paper."}},{"@type":"Question","name":"What about a full sleeve or a big piece?","acceptedAnswer":{"@type":"Answer","text":"Work motif by motif. Smaller parts keep their detail much better than one huge image."}},{"@type":"Question","name":"Does it work on a tablet or phone?","acceptedAnswer":{"@type":"Answer","text":"Yes, in the browser. A phone app may follow."}},{"@type":"Question","name":"Why does it drop my fine hatching?","acceptedAnswer":{"@type":"Answer","text":"Lower sensitivity and higher speck removal drop fine lines on purpose. Raise sensitivity, lower speck removal, and check the drift overlay to see what was lost."}},{"@type":"Question","name":"Can I get a refund?","acceptedAnswer":{"@type":"Answer","text":"The day pass is not refundable, because the license key works as soon as you receive it. Pro can be refunded in full within 14 days of your first payment: write to hello@skinstencil.com. Renewals are not refunded, and you can cancel before the next one at any time. Your statutory rights are not affected."}}]}</script>
@@ -227,20 +347,75 @@ footer .wrap{padding-block:28px}
 
 <!-- ============ TATTOO ============ -->
 <main id="v-tattoo" class="view">
-<div class="doors"><div class="wrap">
-  <a class="door ai" href="/ai-tattoo-generator/"><h2>Make a design with AI</h2><p>Describe the tattoo and get clean black line art in about 20 seconds.</p><span class="go">Open the AI generator &rarr;</span></a>
-  <a class="door" href="/studio/"><h2>Turn your drawing into a stencil</h2><p>Load a drawing, flash or photo, check what the stencil kept and print it at true size.</p><span class="go">Open the stencil Studio &rarr;</span></a>
+<div class="wsx l-en d-ltr">
+<div class="ws" id="ws" role="region" aria-label="The AI generator and stencil maker for tattoos and brows"><div class="hbg" aria-hidden="true"><video id="vDoor" muted loop playsinline preload="metadata" poster="/assets/scenes/door.jpg" src="/assets/door.mp4"></video></div>
+<div class="wsin" id="genBox" data-studio="/studio/">
+ <div>
+  <h1 class="pitch">The AI generator and stencil maker for tattoos and brows</h1><p class="psub">Describe it. See it on your skin. Print it at true size.</p>
+  <div class="stp" id="st1"><h3><i>1</i>Describe it</h3>
+   <label class="vh" for="genPrompt">Describe the tattoo</label>
+   <textarea id="genPrompt" maxlength="200" placeholder="a fine-line wolf with a crescent moon"></textarea>
+   <div class="attach"><input type="file" id="ref" accept="image/png,image/jpeg,image/webp" hidden><button class="attbtn" id="attBtn" type="button"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.5l-8.6 8.6a5.5 5.5 0 01-7.8-7.8l9-9a3.7 3.7 0 015.2 5.2l-9 9a1.8 1.8 0 01-2.6-2.6l8.4-8.4"/></svg>Add a picture as example</button><span class="thumbw" id="thumbw" hidden><img id="thumb" alt="Your example picture"><button id="attX" type="button" aria-label="Remove the picture">&times;</button></span></div>
+   <div class="wseg" id="refmode" hidden><button type="button" aria-pressed="true" data-m="inspire"><b>Use as inspiration</b><span>New design in the same spirit.</span></button><button type="button" aria-pressed="false" data-m="trace"><b>Recreate it as linework</b><span>Keeps your picture, cleans the lines.</span></button></div>
+   <div class="wseg" id="genStyle"><button type="button" data-v="bold" aria-pressed="true"><b>Bold</b><span>Solid, confident lines. Prints well.</span></button><button type="button" data-v="detail" aria-pressed="false"><b>Fine detail</b><span>Finer linework and more detail.</span></button></div>
+   <p class="model" id="model" aria-live="polite"></p>
+   <div class="btnrow"><button class="cta" id="genBtn" type="button">Create design</button></div>
+   <div id="genTs"></div>
+   <p class="wnote" id="genStatus" role="status" aria-live="polite"></p>
+   <p class="wnote">An AI draws it from your words, then it becomes a stencil here. Visitors get a few designs a day; a day pass or Pro gives many more.</p>
+  </div>
+  <div class="stp" id="st2"><h3><i>2</i>Choose where</h3>
+   <div class="map"><div><div class="vw" id="vw"><button type="button" aria-pressed="false" data-v="front">Front</button><button type="button" aria-pressed="true" data-v="back">Back</button></div><svg id="bmap" viewBox="0 0 160 340" role="group" aria-label="Body map"></svg></div>
+    <div><p class="wnote">Tap a body part</p><p class="partname" id="pname"></p></div></div>
+  </div>
+  <div class="stp" id="st3"><h3><i>3</i>Make it yours</h3>
+   <div class="tones" id="tones" role="group" aria-label="Skin tone"></div>
+   <div class="row"><label for="rs">Size <span id="rsv"></span></label><input type="range" id="rs" min="20" max="90" value="50"></div>
+   <div class="row"><label for="rr">Turn <span id="rrv"></span></label><input type="range" id="rr" min="-60" max="60" value="0"></div>
+   <div class="btnrow"><button class="cta ghost" id="real" type="button">Show it realistic</button><button class="cta" id="toSheet" type="button">Make the stencil</button></div>
+   <p class="wnote" id="rnote">Drag the tattoo on the skin to place it.</p>
+  </div>
+  <div class="stp" id="st4"><h3><i>4</i>Make the stencil</h3>
+   <div class="wseg" id="smode"><button type="button" aria-pressed="true" data-v="draw"><b>Line art</b><span>For drawings and designs.</span></button><button type="button" aria-pressed="false" data-v="photo"><b>Photo</b><span>Finds the edges of a photo.</span></button></div>
+   <div class="row"><label for="sens">Detail <span id="sensV">55</span></label><input id="sens" type="range" min="1" max="100" value="55"></div>
+   <div class="row"><label for="smooth">Smoothing <span id="smoothV">0</span></label><input id="smooth" type="range" min="0" max="4" value="0"></div>
+   <div class="row"><label for="weight">Line weight <span id="weightV">2</span></label><input id="weight" type="range" min="1" max="6" value="2"></div>
+   <div class="row"><label for="specks">Remove specks <span id="specksV">30</span></label><input id="specks" type="range" min="0" max="300" value="30"></div>
+   <div class="row"><label for="split">Compare design and stencil</label><input id="split" type="range" min="0" max="100" value="50"></div>
+   <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
+   <div class="wstats"><span><u style="background:#1F7A4C"></u>Kept <b id="kept">-</b></span><span><u style="background:#B42318"></u>Lost <b id="lost">-</b></span><span><u style="background:#C98A00"></u>Added <b id="added">-</b></span></div>
+   <div class="mmrow"><label for="mm">Width on paper (mm)</label><input id="mm" type="number" min="10" max="600" step="1" value="88"><span class="wnote" id="sizeOut"></span></div>
+   <div class="ruler" id="ruler" aria-hidden="true"></div>
+   <div class="btnrow"><button class="cta" id="dlBtn" type="button">Download PNG</button><button class="cta ghost" id="printBtn" type="button">Print at true size</button></div>
+   <p class="wnote" id="dlNote"></p>
+   <p class="wnote" id="wmNote">Free downloads carry a small watermark. <a href="/studio/">A day pass or Pro removes it.</a></p>
+   <p class="wnote"><a href="/studio/" id="toStudio">Need more control? Open it in the Studio</a></p>
+  </div>
+ </div>
+ <div class="stagecol"><div class="wstage" id="wstage"><img id="wskin" alt="Bare skin to place the tattoo on" src="/assets/lib/shoulder_t3.jpg"><div id="wart"><canvas id="wc2" width="800" height="800" role="img" aria-label="Generated tattoo design"></canvas></div><img id="wreal" alt="Realistic preview" style="opacity:0"><div class="lamp" id="lamp"></div>
+  <div class="sheet" id="sheet" hidden><canvas id="cO" width="800" height="800"></canvas><canvas id="cS" width="800" height="800"></canvas><div class="hd" id="hd"></div><span class="sl l">Design</span><span class="sl r">Stencil</span></div>
+  <div class="vt" id="vt" role="group" aria-label="View"><button type="button" aria-pressed="true" data-m="art">Tattoo</button><button type="button" aria-pressed="false" data-m="stencil">Stencil</button><button type="button" aria-pressed="false" data-m="sheet">Print sheet</button></div>
+  <div class="stagetag" id="wtag" hidden></div><div class="empty" id="wempty">Create a design to see it here</div></div></div>
 </div></div>
+
+<div class="a3" id="a3" role="region" aria-label="Pressed on. Done."><div class="sticky"><div class="bk" style="background-image:url(/assets/scenes/hands.jpg)"></div><img id="handsImg" alt="Gloved hands pressing a transfer stencil onto a shoulder" loading="lazy" src="/assets/scenes/hands.jpg"><video id="vHands" muted loop playsinline preload="none" src="/assets/hands.mp4"></video><div class="sc"></div><div class="cap"><h2>Pressed on. Done.</h2><p>By the time you sit in the chair, the only thing left is the tattoo.</p><a class="cta big" href="#ws">Create your design</a></div></div></div>
+
+<div class="a3" id="a3b" role="region" aria-label="Now comes the easy part."><div class="sticky"><div class="bk" style="background-image:url(/assets/scenes/artist.jpg)"></div><img id="artistImg" alt="A tattoo artist holding a tattoo machine over a stenciled design" loading="lazy" src="/assets/scenes/artist.jpg"><img id="machineImg" alt="Close-up of a tattoo machine needle on a stencil line" loading="lazy" src="/assets/scenes/machine.jpg"><div class="sc"></div><div class="cap"><h2>Now comes the easy part.</h2><p>Your artist starts on a plan that is already agreed, drawn and placed.</p><a class="cta big" href="#ws">Create your design</a></div></div></div>
+
+<div class="artists"><div class="in"><h2>For artists, the same room</h2><p class="artlead">Design the henna or map the brows, print it at true size, and your client arrives to a plan, not a blank page.</p><a class="cta big" href="#ws">Create your design</a>
+ <div class="pair"><figure><img alt="Henna being drawn on a palm" loading="lazy" src="/assets/scenes/henna.jpg"><a href="/studio/">Stencil studio</a></figure><figure><img alt="A brow being mapped with a ruler and pencil" loading="lazy" src="/assets/scenes/brow.jpg"><a href="/brow/">Brow mapping</a></figure></div></div></div>
+</div>
+
 <div class="hero"><div class="wrap">
   <div>
-    <div class="eyebrow">For tattoos and brows</div>
-    <h1>The AI generator and stencil maker for tattoos and brows</h1>
-    <p class="sub">Describe a design or add a picture, see it on your skin, then turn it into a stencil and print it at true size. Free to try. Downloads carry a small watermark until you remove it.</p>
+    <div class="eyebrow">For tattoo artists and studios</div>
+    <h1>Stencils that match your line, ready to print.</h1>
+    <p class="sub">Turn your own design, sketch or flash into a clean stencil in seconds. Free to use, nothing to install, nothing uploaded. Downloads carry a small watermark until you remove it.</p>
     <div class="ctas">
-      <a class="btn" href="/ai-tattoo-generator/">Create your design</a>
-      <a class="btn alt" href="/studio/">Open the stencil Studio</a>
+      <a class="btn" href="/studio/">Open the free tool</a>
+      <a class="btn alt" href="#pricing">See pricing</a>
     </div>
-    <ul class="facts"><li>The stencil step runs on your device</li><li>No sign-up</li><li>A few free designs a day</li></ul>
+    <ul class="facts"><li>Runs in your browser</li><li>No sign-up</li><li>Your images never leave your device</li></ul>
   </div>
   <div class="panel" id="demo">
     <div class="stage" id="dStage" style="aspect-ratio:7/9">
@@ -481,10 +656,13 @@ footer .wrap{padding-block:28px}
 
 <footer><div class="wrap"><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a> &middot; <a href="mailto:hello@skinstencil.com">hello@skinstencil.com</a><br>Privacy and terms are in English.</div></footer>
 
-<script>window.I18N={"sample.dagger":"Dagger","sample.mandala":"Mandala","sample.lettering":"Lettering","sample.orb":"Shaded orb","g.design":"Design","g.stencil":"Stencil","g.modeDraw":"Drawing mode","g.modePhoto":"Photo mode","g.n.dagger":"Outlines kept, shading turned into hatching lines.","g.n.mandala":"Fine petals and a hatched centre.","g.n.lettering":"Script and swashes at a clean weight.","g.n.orb":"Photo mode finds shape edges in soft shading.","d.eyebrow":"Better input, better stencil","d.h2":"Do and don't, shown with the tool itself.","d.lead":"Each pair feeds the tool a good and a poor version of the same design. The poor versions are made on purpose, so you can see what goes wrong.","d.do":"Do","d.dont":"Don't","d.or":"or","d.p1.do":"Sharp, high resolution","d.p1.dont":"Blurry","d.p1.note":"A soft image loses its fine lines first.","d.p2.do":"Good contrast","d.p2.dont":"Low contrast","d.p2.note":"Pale lines on a pale ground are lost or broken.","d.p3.do":"Tightly cropped","d.p3.dont":"Lots of empty space","d.p3.note":"Small subjects lose detail. Crop in."};</script>
+<script>window.I18N={"sample.dagger":"Dagger","sample.mandala":"Mandala","sample.lettering":"Lettering","sample.orb":"Shaded orb","g.design":"Design","g.stencil":"Stencil","g.modeDraw":"Drawing mode","g.modePhoto":"Photo mode","g.n.dagger":"Outlines kept, shading turned into hatching lines.","g.n.mandala":"Fine petals and a hatched centre.","g.n.lettering":"Script and swashes at a clean weight.","g.n.orb":"Photo mode finds shape edges in soft shading.","d.eyebrow":"Better input, better stencil","d.h2":"Do and don't, shown with the tool itself.","d.lead":"Each pair feeds the tool a good and a poor version of the same design. The poor versions are made on purpose, so you can see what goes wrong.","d.do":"Do","d.dont":"Don't","d.or":"or","d.p1.do":"Sharp, high resolution","d.p1.dont":"Blurry","d.p1.note":"A soft image loses its fine lines first.","d.p2.do":"Good contrast","d.p2.dont":"Low contrast","d.p2.note":"Pale lines on a pale ground are lost or broken.","d.p3.do":"Tightly cropped","d.p3.dont":"Lots of empty space","d.p3.note":"Small subjects lose detail. Crop in.","s.gen.h":"Make a design","s.gen.label":"Describe the tattoo","s.gen.ph":"a fine-line wolf with a crescent moon","s.gen.bold":"Bold","s.gen.detail":"Fine detail","s.gen.btn":"Create design","s.gen.busy":"Drawing your design, about 20 seconds...","s.gen.hint":"An AI draws it from your words, then it becomes a stencil here. Visitors get a few designs a day; a day pass or Pro gives many more.","s.gen.left":"{n} left today","s.gen.errShort":"Describe it in a few words first.","s.gen.errLimitFree":"You have used today's free designs. A day pass or Pro gives many more.","s.gen.errLimitPaid":"You have reached today's limit. It resets tomorrow.","s.gen.errBudget":"The generator is paused for today. Please try again tomorrow.","s.gen.errUpstream":"The design could not be made and nothing was used. Please try again.","s.gen.errNetwork":"No connection to the generator. Please try again.","s.gen.errBot":"We could not confirm you are a person. Reload the page and try again.","gen.w.browNav":"Brows","gen.w.s1":"Describe it","gen.w.s2":"Choose where","gen.w.s3":"Make it yours","gen.w.s4":"Make the stencil","gen.w.attach":"Add a picture as example","gen.w.attachAlt":"Your example picture","gen.w.attachRemove":"Remove the picture","gen.w.refInspire":"Use as inspiration","gen.w.refInspireHint":"New design in the same spirit.","gen.w.refTrace":"Recreate it as linework","gen.w.refTraceHint":"Keeps your picture, cleans the lines.","gen.w.modelBold":"Model: \u003cb>Recraft V4.1 Vector\u003c/b>. Draws clean vector linework that prints crisply.","gen.w.modelDetail":"Model: \u003cb>GPT Image 2\u003c/b>. Draws fine lines and rich detail.","gen.w.modelRef":"Model: \u003cb>GPT Image 2 with your picture\u003c/b>. It is the model that can see a picture, so it is used whenever you add one.","gen.w.errBig":"Pick a picture under 12 MB.","gen.w.errImg":"That file is not a picture we can read.","gen.w.front":"Front","gen.w.back":"Back","gen.w.bodyMap":"Body map","gen.w.tapPart":"Tap a body part","gen.w.p.shoulder":"Shoulder blade","gen.w.p.back":"Back","gen.w.p.forearm":"Forearm","gen.w.p.arm":"Upper arm","gen.w.p.chest":"Chest","gen.w.p.ribs":"Ribs","gen.w.p.thigh":"Thigh","gen.w.p.calf":"Calf","gen.w.toneLabel":"Skin tone","gen.w.t.t1":"Very fair","gen.w.t.t2":"Fair","gen.w.t.t3":"Light olive","gen.w.t.t4":"Tan","gen.w.t.t5":"Deep brown","gen.w.t.t6":"Very deep","gen.w.size":"Size","gen.w.turn":"Turn","gen.w.dragHint":"Drag the tattoo on the skin to place it.","gen.w.real":"Show it realistic","gen.w.realBack":"Back to my placement","gen.w.realTag":"Realistic preview","gen.w.realBusy":"Placing it on the skin, about 30 seconds...","gen.w.realNote":"Drawn by the realism model onto this photo.","gen.w.errPlaceLimit":"You have used today's realistic preview. A day pass or Pro gives more.","gen.w.toSheet":"Make the stencil","gen.w.vTattoo":"Tattoo","gen.w.vStencil":"Stencil","gen.w.vSheet":"Print sheet","gen.w.viewLabel":"View","gen.w.designL":"Design","gen.w.stencilL":"Stencil","gen.w.empty":"Create a design to see it here","gen.w.example":"Example design. Yours appears here.","gen.w.skinAlt":"Bare skin to place the tattoo on","gen.w.modeDraw":"Line art","gen.w.modeDrawHint":"For drawings and designs.","gen.w.modePhoto":"Photo","gen.w.modePhotoHint":"Finds the edges of a photo.","gen.w.detail":"Detail","gen.w.smooth":"Smoothing","gen.w.weight":"Line weight","gen.w.specks":"Remove specks","gen.w.compare":"Compare design and stencil","gen.w.kept":"Kept","gen.w.lost":"Lost","gen.w.added":"Added","gen.w.width":"Width on paper (mm)","gen.w.sizeOut":"{inch} in, {px} px at 300 dpi","gen.w.dl":"Download PNG","gen.w.print":"Print at true size","gen.w.saved":"Saved at {mm} mm wide, 300 dpi.","gen.w.popup":"Allow pop-ups to print, or download the PNG and print it at 100%.","gen.w.wm":"Free downloads carry a small watermark.","gen.w.wmLink":"A day pass or Pro removes it.","gen.w.studioLink":"Need more control? Open it in the Studio","gen.w.a3h":"Pressed on. Done.","gen.w.a3p":"By the time you sit in the chair, the only thing left is the tattoo.","gen.w.a4h":"Now comes the easy part.","gen.w.a4p":"Your artist starts on a plan that is already agreed, drawn and placed.","gen.w.cta":"Create your design","gen.w.handsAlt":"Gloved hands pressing a transfer stencil onto a shoulder","gen.w.artistAlt":"A tattoo artist holding a tattoo machine over a stenciled design","gen.w.machineAlt":"Close-up of a tattoo machine needle on a stencil line","gen.w.artH":"For artists, the same room","gen.w.artP":"Design the henna or map the brows, print it at true size, and your client arrives to a plan, not a blank page.","gen.w.hennaAlt":"Henna being drawn on a palm","gen.w.browAlt":"A brow being mapped with a ruler and pencil","gen.w.hennaLink":"Stencil studio","gen.w.browLink":"Brow mapping"};</script>
 <script src="/js/config.js"></script>
 <script src="/js/analytics.js"></script>
 <script src="/js/engine.js"></script>
+<script src="/js/unlock.js"></script>
+<script src="/js/png-util.js"></script>
+<script src="/js/gen-page.js"></script>
 <script>
 (function(){
   var T=window.I18N||{}, C=window.SkinConfig||{};
@@ -605,7 +783,7 @@ footer .wrap{padding-block:28px}
     });
   })();
   /* once the page has laid out, redraw every picture at the size it is shown (see SkinEngine.crisp) */
-  requestAnimationFrame(function(){ [].forEach.call(document.querySelectorAll('canvas'),function(c){ E.crisp(c); }); });
+  requestAnimationFrame(function(){ [].forEach.call(document.querySelectorAll('canvas'),function(c){ if(!c.closest('.wsx')) E.crisp(c); });   /* the workstation canvases keep their size: they are redrawn by their own script */ });
 })();
 </script>
 

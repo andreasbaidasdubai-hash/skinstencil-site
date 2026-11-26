@@ -270,5 +270,11 @@
   "s.gen.errBudget": "El generador está en pausa por hoy. Inténtalo de nuevo mañana.",
   "s.gen.errUpstream": "No se pudo crear el diseño y no se descontó nada. Inténtalo de nuevo.",
   "s.gen.errNetwork": "Sin conexión con el generador. Inténtalo de nuevo.",
-  "s.gen.errBot": "No pudimos confirmar que eres una persona. Recarga la página e inténtalo de nuevo."
+  "s.gen.errBot": "No pudimos confirmar que eres una persona. Recarga la página e inténtalo de nuevo.",
+  "hero2.eyebrow": "Para tatuadores y estudios",
+  "hero2.h1": "Stencils fieles a tu línea, listos para imprimir.",
+  "hero2.sub": "Convierte tu propio diseño, boceto o flash en un stencil limpio en segundos. Gratis, sin instalar nada y sin subir nada. Las descargas llevan una marca de agua pequeña hasta que la quitas.",
+  "hero2.ctaOpen": "Abrir la herramienta gratuita",
+  "hero2.f1": "Funciona en tu navegador",
+  "hero2.f3": "Tus imágenes no salen de tu dispositivo"
 }

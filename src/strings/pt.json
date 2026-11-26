@@ -270,5 +270,11 @@
   "s.gen.errBudget": "O gerador está em pausa por hoje. Tente novamente amanhã.",
   "s.gen.errUpstream": "Não foi possível criar o desenho e nada foi descontado. Tente novamente.",
   "s.gen.errNetwork": "Sem ligação ao gerador. Tente novamente.",
-  "s.gen.errBot": "Não conseguimos confirmar que é uma pessoa. Recarregue a página e tente novamente."
+  "s.gen.errBot": "Não conseguimos confirmar que é uma pessoa. Recarregue a página e tente novamente.",
+  "hero2.eyebrow": "Para tatuadores e estúdios",
+  "hero2.h1": "Stencils que seguem o seu traço, prontos para imprimir.",
+  "hero2.sub": "Transforme seu desenho, sketch ou flash em um stencil limpo em segundos. Uso grátis, nada para instalar, nada enviado. Os downloads têm uma pequena marca d'água até você removê-la.",
+  "hero2.ctaOpen": "Abrir a ferramenta grátis",
+  "hero2.f1": "Roda no seu navegador",
+  "hero2.f3": "Suas imagens nunca saem do seu aparelho"
 }
