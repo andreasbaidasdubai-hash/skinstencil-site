@@ -23,6 +23,18 @@
     "tattoo-stencil-from-photo",
     "tattoo-stencil-size-true-size-print",
     "tattoo-stencil-transfer-methods",
+    "ai-tattoo-generator-guide",
+    "ai-tattoo-prompts",
+    "see-a-tattoo-on-your-body-before-you-get-it",
+    "fine-line-tattoo-stencil-tips",
+    "how-to-apply-a-tattoo-stencil",
+    "how-long-does-a-tattoo-stencil-last",
+    "tattoo-stencil-paper-guide",
+    "tattoo-stencil-printer-guide",
+    "tattoo-size-chart-by-body-part",
+    "tattoo-placement-guide",
+    "make-a-tattoo-stencil-at-home",
+    "free-tattoo-stencil-maker-guide",
     "brow-mapping-on-a-photo-start-arch-end",
     "brow-mapping-measurements-scale-and-print-true-size"
   ],
@@ -843,6 +855,2259 @@
         }
       ],
       "cta": "Ustaw skalę, odczytaj pomiary i wydrukuj linie pomocnicze w rzeczywistym rozmiarze. [Otwórz mapowanie brwi](brow)."
+    },
+    "ai-tattoo-generator-guide": {
+      "title": "Generator tatuaży AI: jak go używać i dostać projekt, który tatuator może wykonać",
+      "short": "Generator tatuaży AI: jak z niego dobrze korzystać",
+      "blurb": "Co generator tatuaży AI potrafi, czego nie potrafi i jak dostać czysty projekt, z którym pójdziesz do tatuatora.",
+      "metaTitle": "Generator tatuaży AI: jak dostać projekt do tatuażu",
+      "metaDesc": "Jak dobrze używać generatora tatuaży AI: napisz jasny opis, zadbaj o czyste linie, sprawdź wynik i zanieś go tatuatorowi jako punkt wyjścia.",
+      "updated": "2026-11-26",
+      "answer": "Generator tatuaży AI zamienia opis lub przykładowy obrazek w projekt tatuażu w kilka sekund. Użyj go do szukania pomysłów, potem sprawdź, czy linie są czyste, a detale nie za drobne. Traktuj wynik jako szkic i zanieś go tatuatorowi, który dostosuje go do skóry.",
+      "sections": [
+        {
+          "h2": "Co właściwie robi generator tatuaży AI",
+          "blocks": [
+            {
+              "p": "Generator tatuaży AI tworzy obraz na podstawie słów albo przykładowego obrazka, który mu dasz. Opisujesz pomysł, dostajesz projekt, a potem możesz poprawić opis i spróbować jeszcze raz. Na tym polega cała jego praca: daje ci coś, na co można popatrzeć i na co można zareagować."
+            },
+            {
+              "p": "To szybki sposób na szukanie pomysłów. Zamiast opowiadać tatuatorowi niedokończoną myśl i liczyć, że oboje wyobrażacie sobie to samo, możesz przyjść z czymś konkretnym. Nawet surowy projekt skraca rozmowę, bo da się powiedzieć „bardziej tak, mniej tak”."
+            },
+            {
+              "p": "W Skinstencil generator na stronie głównej tworzy projekt z opisu lub przykładowego obrazka i pokazuje go na 8 częściach ciała i 6 odcieniach skóry. Potrafi też zrobić szablon, który wydrukujesz w rzeczywistym rozmiarze (300 dpi). Możesz go wypróbować za darmo."
+            }
+          ]
+        },
+        {
+          "h2": "Czego generator tatuaży AI nie potrafi",
+          "blocks": [
+            {
+              "p": "Wygenerowany obraz to obrazek, a nie plan tatuażu. Nie wie, jak tusz zachowuje się w skórze, jak porusza się twoje ciało ani jak linia będzie wyglądać za dziesięć lat. Zanim zakochasz się w wyniku, zdaj sobie sprawę z tych ograniczeń."
+            },
+            {
+              "ul": [
+                "**Nie oceni, co dobrze się tatuuje.** Bardzo drobne detale i włosowate odstępy wyglądają dobrze na ekranie, a na skórze mogą się zlać.",
+                "**Nie zastąpi twojego tatuatora.** Miejsce, rozmiar i kreska to decyzje osoby, która trzyma maszynkę.",
+                "**Nie zawsze słucha dokładnie twoich słów.** Dłonie, napisy i symetryczne kształty to częste miejsca dziwnych wyników, więc przyjrzyj się uważnie.",
+                "**Nie sprawi, że projekt będzie oryginalny w sensie prawnym ani osobistym.** Więcej o tym niżej."
+              ]
+            },
+            {
+              "p": "Traktuj wynik jak szkic od szybkiego asystenta. Przydatny, ale niedokończony."
+            }
+          ]
+        },
+        {
+          "h2": "Napisz opis, za którym generator może pójść",
+          "blocks": [
+            {
+              "p": "Ogólne słowa dają ogólne projekty. Dobry opis nazywa motyw, styl, grubość linii i to, czego nie chcesz. Krótki przykład: „głowa jednego wilka, styl tradycyjny, grube kontury, bez tła, bez cieniowania”."
+            },
+            {
+              "p": "Jeśli masz wzór, użyj go. Przykładowy obrazek mówi generatorowi więcej o nastroju i kompozycji niż akapit przymiotników. Wybierz go ze względu na styl lub układ, a nie dlatego, że chcesz go odtworzyć."
+            },
+            {
+              "p": "Pełną listę pomysłów na sformułowania, pogrupowaną według stylów, znajdziesz w [promptach do tatuaży AI](guide:ai-tattoo-prompts). Zacznij od niej, jeśli patrzysz na puste pole."
+            }
+          ]
+        },
+        {
+          "h2": "Zdobądź projekt, który tatuator naprawdę może wytatuować",
+          "blocks": [
+            {
+              "p": "Różnica między ładnym obrazkiem a projektem do tatuażu to głównie prostota. Poproś o to, z czym tatuatorzy pracują na co dzień."
+            },
+            {
+              "ul": [
+                "**Czyste, ciągłe linie.** Napisz „czyste kontury” albo „pełna kreska”. Unikaj prośby o szkicowy lub drapany wygląd, chyba że to jest cel.",
+                "**Żadnego drobnego szumu.** Kropki, cienkie kreskowanie i dziesiątki małych detali zamieniają się na skórze w plamy. Poproś o „minimum detali” lub „bez faktury”.",
+                "**Miejsce między elementami.** Linie, które prawie się stykają, z czasem zwykle się zlewają. Poproś o luźne odstępy.",
+                "**Jednolite tło.** Projekt na białym tle łatwiej zamienić w szablon niż taki z gwarnym tłem.",
+                "**Jeden wyraźny pomysł.** Jeden główny motyw czyta się lepiej niż zatłoczony kolaż."
+              ]
+            },
+            {
+              "p": "Jeśli wynik jest bliski, ale zbyt gęsty, wygeneruj go jeszcze raz z mniejszą liczbą słów, a nie z większą. Najpierw odejmij detale, potem dodaj z powrotem to, czego ci brakuje."
+            }
+          ]
+        },
+        {
+          "h2": "Lista kontrolna przed wizytą u tatuatora",
+          "blocks": [
+            {
+              "p": "Poświęć pięć minut na projekt, zanim zarezerwujesz termin. Przybliż go, a potem obejrzyj w małym rozmiarze, takim, jaki naprawdę będzie na ramieniu czy kostce."
+            },
+            {
+              "ol": [
+                "**Przybliż.** Czy linie są pełne, czy się łamią i falują?",
+                "**Zmniejsz.** Wydrukuj w planowanym rozmiarze albo obejrzyj mały na ekranie. Czy detale przetrwały?",
+                "**Sprawdź odstępy.** Czy jakieś dwie linie są bliżej siebie, niż chcesz, żeby się zlały?",
+                "**Sprawdź anatomię.** Policz palce, oczy i płatki. Przyjrzyj się literom i symbolom po kolei.",
+                "**Przymierz na ciele.** Zobacz projekt na części ciała, którą masz na myśli, i na odcieniu skóry zbliżonym do twojego.",
+                "**Zastanów się, co byś zmienił.** Zanotuj dwie lub trzy rzeczy, żeby poruszyć je na konsultacji."
+              ]
+            },
+            {
+              "p": "[Studio szablonów](studio) pomoże przy sprawdzaniu rozmiaru: zamienia rysunek, flash lub zdjęcie w szablon na twoim urządzeniu, bez wysyłania czegokolwiek. O druku przeczytasz w poradniku [rozmiar szablonu tatuażu](guide:tattoo-stencil-size-true-size-print)."
+            }
+          ]
+        },
+        {
+          "h2": "Prawa autorskie, oryginalność i twój tatuator",
+          "blocks": [
+            {
+              "p": "Obrazy AI powstają ze wzorców wyuczonych na wielu istniejących obrazach, a zasady dotyczące tego, do kogo należą, w wielu miejscach nie są jeszcze ustalone. Nie zakładaj, że wygenerowany projekt jest automatycznie unikalny ani że nikt inny nie ma praw do czegoś, co go przypomina."
+            },
+            {
+              "p": "Dwa proste nawyki trzymają cię po właściwej stronie. Po pierwsze, nie proś generatora o skopiowanie konkretnego artysty ani konkretnej pracy i nie używaj go do „przepierania” czyjegoś projektu. Po drugie, pokaż wynik tatuatorowi i powiedz otwarcie, że pochodzi z generatora AI."
+            },
+            {
+              "p": "Dobry tatuator często przerysuje projekt, zmieni kompozycję i doda coś od siebie. Tak wygenerowany pomysł staje się projektem naprawdę twoim. Jeśli tatuator odmówi wykonania projektu, zaakceptuj to i zapytaj, co narysowałby zamiast niego."
+            }
+          ]
+        },
+        {
+          "h2": "Od wygenerowanego projektu do szablonu",
+          "blocks": [
+            {
+              "p": "Gdy ty i tatuator zgodzicie się co do projektu, musi on stać się szablonem: czystym konturem wydrukowanym w odpowiednim rozmiarze. Zwykle przygotowuje go tatuator, ale wiele osób lubi przyjść z wersją do wydruku, żeby przyspieszyć sprawę."
+            },
+            {
+              "p": "Generator potrafi zrobić szablon, który wydrukujesz w rzeczywistym rozmiarze (300 dpi). Darmowe pliki mają znak wodny, a karnet dzienny lub Pro go usuwa. Zabierz szablon jako punkt wyjścia, a tatuator zdecyduje, czy go użyć, przerysować, czy poprawić na miejscu."
+            },
+            {
+              "p": "O tym, jak szablon trafia potem na skórę, przeczytasz w poradniku [jak nałożyć szablon tatuażu](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy mogę zanieść projekt z AI do tatuatora?",
+          "a": "Tak, ale powiedz, skąd pochodzi. Wielu tatuatorów go przerysuje lub dostosuje, żeby działał na skórze, a niektórzy odmówią, i to ich decyzja."
+        },
+        {
+          "q": "Czy projekty tatuaży z AI są oryginalne?",
+          "a": "Nie automatycznie. Sytuacja prawna obrazów AI bywa różna i wciąż się zmienia, więc pokaż projekt tatuatorowi i nie proś o kopię cudzej pracy."
+        },
+        {
+          "q": "Dlaczego projekty tatuaży z AI wyglądają dobrze na ekranie, a na skórze gorzej?",
+          "a": "Ekran pokazuje włosowate detale, których skóra nie utrzyma. Drobne odstępy i delikatna faktura się zlewają, więc poproś o czyste linie i minimum detali."
+        },
+        {
+          "q": "Czy generator tatuaży AI pokaże mi tatuaż na moim ciele?",
+          "a": "Niektóre tak. Generator Skinstencil pokazuje projekt na 8 częściach ciała i 6 odcieniach skóry, co daje przybliżone pojęcie o miejscu i kontraście."
+        },
+        {
+          "q": "Czy generator tatuaży AI Skinstencil jest darmowy?",
+          "a": "Można go wypróbować za darmo. Darmowe pliki mają znak wodny, a karnet dzienny lub Pro go usuwa."
+        }
+      ],
+      "cta": "Wypróbuj generator tatuaży AI na stronie głównej Skinstencil, opisz pomysł i zobacz go na wybranej części ciała, zanim porozmawiasz z tatuatorem."
+    },
+    "ai-tattoo-prompts": {
+      "title": "Prompty do tatuaży AI: wzór i ponad 25 przykładów, które działają",
+      "short": "Prompty do tatuaży AI: wzór i przykłady",
+      "blurb": "Prosty wzór promptu, 25 przykładowych promptów według stylu i sposoby na poprawienie projektu, który nie wyszedł.",
+      "metaTitle": "Prompty do tatuaży AI: wzór i ponad 25 przykładów",
+      "metaDesc": "Pisz lepsze prompty do tatuaży AI według wzoru z pięciu części i ponad 25 gotowych przykładów: fine line, tradycyjny, blackwork, geometryczny i inne.",
+      "updated": "2026-11-26",
+      "answer": "Dobre prompty do tatuaży AI mają pięć części: motyw, styl, grubość linii, kompozycję i to, czego unikać. Na przykład: „lis, styl fine line, cienkie równe linie, na środku na jednolitym białym tle, bez cieniowania”. Zmieniaj naraz jedną część, żeby poprawić wynik.",
+      "sections": [
+        {
+          "h2": "Wzór na prompty do tatuaży AI",
+          "blocks": [
+            {
+              "p": "Najlepsze prompty do tatuaży AI są krótkie i konkretne. Większość słabych wyników bierze się z pominięcia którejś części, więc generator zgaduje to, czego brakuje. Użyj tych pięciu części, mniej więcej w tej kolejności:"
+            },
+            {
+              "ol": [
+                "**Motyw.** Co to jest. „Czapla stojąca w wodzie” jest lepsza niż „ptak”.",
+                "**Styl.** Fine line, tradycyjny, blackwork, geometryczny, lettering, botaniczny i tak dalej.",
+                "**Grubość linii.** Cienka, średnia lub gruba, równa lub zmienna.",
+                "**Kompozycja.** Na środku, pionowa, owinięta wokół, z ramką lub bez, jednolite tło.",
+                "**Czego unikać.** Bez cieniowania, bez tekstu, bez tła, bez drobnych detali."
+              ]
+            },
+            {
+              "p": "Razem: „czapla stojąca w wodzie, styl fine line, cienkie równe linie, kompozycja pionowa na jednolitym białym tle, bez cieniowania, bez drobnych detali”."
+            },
+            {
+              "p": "Nie zawsze potrzebujesz każdej części. Ale gdy wynik rozczarowuje, sprawdź, której z pięciu brakuje."
+            }
+          ]
+        },
+        {
+          "h2": "Prompty fine line",
+          "blocks": [
+            {
+              "p": "Projekty fine line opierają się na cienkich, równych kreskach i dużej ilości białej przestrzeni. Napisz o tym wprost i poproś generator, żeby pominął ciężkie wypełnienia."
+            },
+            {
+              "ul": [
+                "Rysunek kobiecej twarzy jedną linią, styl fine line, jedna ciągła cienka linia, jednolite białe tło",
+                "Mały półksiężyc z trzema gwiazdkami, fine line, cienkie równe linie, minimalistycznie, bez cieniowania",
+                "Koliber obok kwiatu, styl fine line, delikatne cienkie kontury, bez wypełnienia, białe tło",
+                "Pasmo górskie o wschodzie słońca, fine line, cienkie linie, prosty horyzont, bez faktury tła",
+                "Dwie dłonie prawie się dotykają, styl fine line, cienkie kontury, minimum detali, na środku"
+              ]
+            },
+            {
+              "p": "Więcej o tym, dlaczego ten styl wymaga dodatkowej uwagi, przeczytasz w [poradach o szablonie do tatuażu fine line](guide:fine-line-tattoo-stencil-tips)."
+            }
+          ]
+        },
+        {
+          "h2": "Prompty do stylu tradycyjnego i blackwork",
+          "blocks": [
+            {
+              "p": "Styl tradycyjny to grube kontury i płaskie bloki koloru. Blackwork to pełna czerń i mocny kontrast. Oba chcą ciężkich linii, więc o nie poproś."
+            },
+            {
+              "table": {
+                "head": [
+                  "Styl",
+                  "Przykładowy prompt"
+                ],
+                "rows": [
+                  [
+                    "Tradycyjny",
+                    "Róża z dwoma liśćmi, styl tradycyjny tatuażu, grube czarne kontury, płaskie cieniowanie, jednolite białe tło"
+                  ],
+                  [
+                    "Tradycyjny",
+                    "Jaskółka niosąca wstęgę, styl tradycyjny, grube kontury, proste kształty, na środku"
+                  ],
+                  [
+                    "Tradycyjny",
+                    "Sztylet przebijający serce, flash w stylu tradycyjnym, grube linie, bez gradientów"
+                  ],
+                  [
+                    "Tradycyjny",
+                    "Statek na wzburzonych falach, styl tradycyjny, ciężkie kontury, ograniczone detale"
+                  ],
+                  [
+                    "Blackwork",
+                    "Kruk z rozpostartymi skrzydłami, styl blackwork, pełne czarne wypełnienie, wysoki kontrast, bez gradientów"
+                  ],
+                  [
+                    "Blackwork",
+                    "Wąż owinięty wokół sztyletu, blackwork, grube czarne kształty, czyste krawędzie"
+                  ],
+                  [
+                    "Blackwork",
+                    "Pełnia księżyca nad sosnami, styl blackwork, mocny czarno-biały kontrast, bez szarego cieniowania"
+                  ],
+                  [
+                    "Blackwork",
+                    "Czaszka z kwiatowymi detalami, blackwork, pełna czerń i czysty wzór z linii, jednolite tło"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "h2": "Prompty geometryczne i do napisów",
+          "blocks": [
+            {
+              "p": "Styl geometryczny zależy od precyzyjnych kształtów, a napisy od czytelnych liter. To tutaj generatory mylą się najczęściej, więc formułuj prośbę prosto i dokładnie sprawdzaj wynik."
+            },
+            {
+              "ul": [
+                "Głowa wilka zbudowana z trójkątów, styl geometryczny, cienkie precyzyjne linie, symetrycznie, białe tło",
+                "Mandala z ośmiokrotną symetrią, geometryczna, średnia grubość linii, bez cieniowania",
+                "Wzór z sześciokątów tworzący sześcian, geometryczna kreska, czyste proste linie, minimalistycznie",
+                "Geometryczny jeleń z porożem z nakładających się linii, cienkie linie, na środku",
+                "Słowo „Breathe” eleganckim pismem odręcznym, cienkie litery, jednolite białe tło, bez ozdób",
+                "Słowo „Family” grubą gotycką czcionką, grube kreski, bez tła, bez efektów",
+                "Krótka data cyframi rzymskimi, czysta czcionka szeryfowa, równe odstępy, bez ozdobników"
+              ]
+            },
+            {
+              "p": "Przy tekście zawsze przeczytaj każdą literę na wyniku. Generatory potrafią zamienić lub wymyślić znaki. Wiele osób prosi o projekt bez tekstu i dodaje napis w kroku szablonu albo prosi tatuatora o narysowanie liter."
+            }
+          ]
+        },
+        {
+          "h2": "Prompty roślinne i zwierzęce",
+          "blocks": [
+            {
+              "p": "Rośliny i zwierzęta to wdzięczne motywy. Pasują do prawie każdego stylu, więc jasno nazwij styl i zdecyduj, ile detali chcesz."
+            },
+            {
+              "ul": [
+                "Gałązka lawendy, styl ilustracji botanicznej, cienkie linie, bez koloru, jednolite tło",
+                "Gałąź oliwna z liśćmi, botaniczny fine line, delikatne kontury, kompozycja pionowa",
+                "Piwonia w pełnym rozkwicie, botaniczna kreska, średnie linie, proste płatki, bez cieniowania",
+                "Bukiet polnych kwiatów przewiązany wstążką, fine line, cienkie równe kreski, białe tło",
+                "Paproć zwinięta na końcu, styl botaniczny, czyste linie, minimum detali",
+                "Śpiący kot zwinięty w kółko, prosta kreska, średnia grubość linii, bez faktury sierści",
+                "Lew z profilu, styl tradycyjny, grube kontury, płaskie kształty, bez tła",
+                "Karp koi płynący w górę, czyste kontury, średnie linie, proste łuski, białe tło",
+                "Motyl z rozpostartymi skrzydłami, symetryczna kreska, cienkie linie, bez wypełnienia",
+                "Sowa patrząca na wprost, styl blackwork, pełne kształty, czyste krawędzie"
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Częste błędy w promptach",
+          "blocks": [
+            {
+              "ul": [
+                "**Zbyt ogólny.** „Fajny tatuaż” da ci przeciętne wyobrażenie generatora o fajności.",
+                "**Zbyt zatłoczony.** Dziesięć motywów i sześć stylów daje bałagan. Wybierz jeden motyw i jeden styl.",
+                "**Realizm razem z fine line.** Fotograficzne cieniowanie i cienkie kontury ciągną w przeciwne strony.",
+                "**Zapomniane tło.** Jeśli chcesz czystego szablonu, napisz „jednolite białe tło”.",
+                "**Prośba o drobne detale.** Słowa „misterny” i „bardzo szczegółowy” zwykle tworzą dokładnie ten szum, który na skórze się zlewa.",
+                "**Wymienianie stylu żyjącego artysty.** Lepiej opisać wygląd zwykłymi słowami i nikogo nie kopiować."
+              ]
+            },
+            {
+              "p": "Instrukcje pozytywne i negatywne działają razem. Napisz, czego chcesz, a potem, co pominąć."
+            }
+          ]
+        },
+        {
+          "h2": "Jak poprawiać wynik krok po kroku",
+          "blocks": [
+            {
+              "p": "Traktuj pierwszy wynik jak szkic. Zmieniaj naraz jedną część promptu, żeby wiedzieć, co spowodowało każdą różnicę."
+            },
+            {
+              "ol": [
+                "Wygeneruj pierwszą wersję ze wszystkimi pięcioma częściami.",
+                "Jeśli motyw jest zły, przepisz tylko motyw.",
+                "Jeśli jest zbyt gęsto, dodaj „minimum detali” i „bez cieniowania” albo usuń przymiotniki.",
+                "Jeśli linie są zbyt grube lub zbyt cienkie, zmień tylko słowo o grubości linii.",
+                "Jeśli wygląda dobrze, obejrzyj go w małym rozmiarze i na części ciała, którą planujesz."
+              ]
+            },
+            {
+              "p": "Możesz też zacząć od przykładowego obrazka i dodać krótki opis. Generator Skinstencil przyjmuje i opis, i przykładowy obrazek, a projekt pokazuje na 8 częściach ciała i 6 odcieniach skóry. Można go wypróbować za darmo, a darmowe pliki mają znak wodny."
+            },
+            {
+              "p": "Cokolwiek dostaniesz, przejdź listę kontrolną z [naszego poradnika o generatorze tatuaży AI](guide:ai-tattoo-generator-guide) i pokaż wynik tatuatorowi."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Co składa się na dobry prompt do tatuażu AI?",
+          "a": "Dobry prompt nazywa motyw, styl, grubość linii, kompozycję i to, czego unikać. Krótki i konkretny wygrywa z długim i ogólnym."
+        },
+        {
+          "q": "Jak długi powinien być prompt do tatuażu AI?",
+          "a": "Zwykle wystarczy jedna lub dwie linijki. Dodatkowe przymiotniki częściej dodają szumu niż jakości."
+        },
+        {
+          "q": "Jak sprawić, żeby tatuaż z AI nie miał zbyt wielu detali?",
+          "a": "Dodaj frazy takie jak „minimum detali”, „bez cieniowania” i „jednolite białe tło” oraz unikaj słów w rodzaju „misterny”."
+        },
+        {
+          "q": "Czy mogę użyć obrazka zamiast promptu?",
+          "a": "Tak. Generator Skinstencil potrafi pracować na przykładowym obrazku, z krótkim opisem lub bez."
+        },
+        {
+          "q": "Dlaczego tekst w moim tatuażu z AI wygląda źle?",
+          "a": "Generatory często przekręcają lub zniekształcają litery. Sprawdź każdy znak albo pomiń tekst i poproś tatuatora o narysowanie napisu."
+        }
+      ],
+      "cta": "Wklej jeden z tych promptów do generatora AI Skinstencil, zobacz projekt na wybranej części ciała i zrób szablon, który wydrukujesz."
+    },
+    "see-a-tattoo-on-your-body-before-you-get-it": {
+      "title": "Podgląd tatuażu na ciele przed zrobieniem: 4 sposoby",
+      "short": "Podgląd tatuażu na ciele przed zrobieniem",
+      "blurb": "Cztery sposoby na podgląd tatuażu na skórze, czego podgląd nie pokaże i lista kontrolna na konsultację.",
+      "metaTitle": "Podgląd tatuażu na ciele: jak zobaczyć go przed",
+      "metaDesc": "Cztery sposoby na podgląd tatuażu na ciele: aplikacje, makiety na zdjęciu, tymczasowe tatuaże i szablon na skórze. Plus to, czego żaden podgląd nie pokaże.",
+      "updated": "2026-11-26",
+      "answer": "Podgląd tatuażu na ciele zrobisz, umieszczając projekt na zdjęciu, używając aplikacji lub generatora, drukując go w rzeczywistym rozmiarze i przykładając do skóry albo prosząc tatuatora o założenie szablonu. Każdy sposób pokazuje co innego i żaden nie pokaże, jak tatuaż się goi.",
+      "sections": [
+        {
+          "h2": "Dlaczego warto zobaczyć tatuaż na ciele przed zrobieniem",
+          "blocks": [
+            {
+              "p": "Żeby zrobić podgląd tatuażu na ciele, zanim się zdecydujesz, potrzebujesz czegoś więcej niż ekranu. Projekt, który na ekranie wygląda idealnie, na przedramieniu może wyglądać źle. Może być za duży, leżeć za wysoko albo pod kątem, który kłóci się z mięśniem. Podgląd ma to wyłapać, dopóki zmiana nic nie kosztuje."
+            },
+            {
+              "p": "Pomaga też w rozmowie z tatuatorem. Wskazanie własnego ramienia i słowa „tutaj, mniej więcej tak szeroko” są jaśniejsze niż opis. Większość osób musi zobaczyć tatuaż na swoim ciele, zanim pomysł stanie się prawdziwy, i to dobry instynkt."
+            },
+            {
+              "p": "Cztery sposoby poniżej idą od najszybszego do najbardziej wiarygodnego. Nie potrzebujesz wszystkich, ale im trwalsze i bardziej widoczne miejsce, tym więcej z nich warto wykorzystać."
+            },
+            {
+              "p": "Każdy krok odpowiada na inne pytanie. Zdjęcie odpowiada, czy podoba ci się pomysł. Wydruk odpowiada, czy rozmiar jest dobry. Wersja tymczasowa odpowiada, czy lubisz z nią żyć. Szablon od tatuatora odpowiada, czy miejsce pasuje do twojego ciała."
+            }
+          ]
+        },
+        {
+          "h2": "Sposób 1: podgląd na zdjęciu lub w aplikacji",
+          "blocks": [
+            {
+              "p": "Najszybsza droga to umieszczenie projektu na swoim zdjęciu. Niektóre narzędzia pozwalają położyć projekt na zdjęciu, a inne pokazują go na modelu ciała."
+            },
+            {
+              "p": "Generator AI Skinstencil na stronie głównej tworzy projekt z opisu lub przykładowego obrazka i pokazuje go na 8 częściach ciała i 6 odcieniach skóry. Daje to szybkie wyczucie miejsca i kontrastu, zanim cokolwiek zdecydujesz. Można go wypróbować za darmo."
+            },
+            {
+              "p": "Gdy robisz makietę na własnym zdjęciu, sfotografuj część ciała na wprost, w równym świetle i w rozluźnieniu. Zdjęcie zrobione pod dziwnym kątem daje zniekształcony podgląd."
+            },
+            {
+              "p": "Podgląd na ekranie dobrze pokazuje kompozycję i pomysł. Słabo pokazuje rzeczywisty rozmiar, więc przejdź do kolejnych kroków, zanim się zdecydujesz."
+            }
+          ]
+        },
+        {
+          "h2": "Sposób 2: wydrukuj w rzeczywistym rozmiarze i przyłóż",
+          "blocks": [
+            {
+              "p": "Rozmiar to rzecz, którą na ekranie ocenia się najczęściej źle. Wydrukuj projekt w prawdziwej szerokości, wytnij go i przyłóż do skóry albo luźno przyklej taśmą. Od razu zobaczysz, czy jest za duży, czy za mały."
+            },
+            {
+              "p": "Żeby wydrukować w odpowiednim rozmiarze, ustaw go w milimetrach i drukuj w 100 procentach, bez skalowania. W poradniku o [rozmiarze szablonu tatuażu](guide:tattoo-stencil-size-true-size-print) pokazujemy, jak to zrobić, a generator Skinstencil potrafi zrobić szablon do wydruku w rzeczywistym rozmiarze (300 dpi)."
+            },
+            {
+              "p": "Kosztuje to tylko papier i zajmuje dziesięć minut. Dla większości osób to najprzydatniejszy krok."
+            }
+          ]
+        },
+        {
+          "h2": "Sposób 3: tymczasowy tatuaż lub rysunek na skórze",
+          "blocks": [
+            {
+              "p": "Żeby zobaczyć projekt na skórze przez dzień czy dwa, możesz użyć tymczasowego tatuażu zrobionego z własnego projektu albo narysować kontur pisakiem bezpiecznym dla skóry. Chodzenie z nim po domu pokazuje, jak wygląda, gdy się ruszasz, siadasz i ubierasz."
+            },
+            {
+              "p": "Używaj produktów przeznaczonych na skórę i stosuj się do ich instrukcji. Jeśli masz wrażliwą skórę lub chorobę skóry, zapytaj tatuatora albo farmaceutę, co będzie dla ciebie odpowiednie."
+            }
+          ]
+        },
+        {
+          "h2": "Sposób 4: szablon nałożony przez tatuatora",
+          "blocks": [
+            {
+              "p": "Najbardziej wiarygodny podgląd to prawdziwy szablon, ustawiony przez osobę, która będzie cię tatuować. Tatuatorzy zwykle go nakładają, proszą, żebyś wstał i się poruszył, i poprawiają, aż wszystko dobrze leży. Nie czuj się tu popędzany. Popatrz w lustro pod różnymi kątami."
+            },
+            {
+              "p": "Sprawdź krawędzie, nie tylko środek. Projekt może wyglądać na zrównoważony z przodu, a przechylać się na bok, gdy się obrócisz. Jeśli coś ci nie pasuje, powiedz o tym. Przesunięcie szablonu jest proste, przesunięcie tatuażu nie."
+            },
+            {
+              "p": "Możesz przynieść własny szablon jako punkt wyjścia, a tatuator zdecyduje, czy go użyć. O tym, jak szablon trafia na skórę, przeczytasz w poradniku [jak nałożyć szablon tatuażu](guide:tattoo-stencil-transfer-methods). Jeśli masz tylko zdjęcie lub rysunek, [Studio szablonów](studio) zamieni je w szablon na twoim urządzeniu, bez wysyłania czegokolwiek."
+            }
+          ]
+        },
+        {
+          "h2": "Czego podgląd nie pokaże",
+          "blocks": [
+            {
+              "p": "Bądź szczery co do ograniczeń. Podgląd to obraz pierwszego dnia, a tatuaż to rzecz na lata."
+            },
+            {
+              "ul": [
+                "**Gojenia.** Skóra zmienia się podczas gojenia, a linie potem mogą wyglądać inaczej. Tatuator powie ci, czego się spodziewać.",
+                "**Starzenia.** Linie z biegiem lat łagodnieją, a drobne detale zwykle zlewają się jako pierwsze.",
+                "**Ruchu.** Płaski obraz nie wygina się razem z ciałem. Projekt na stawie, żebrach czy ramieniu może wyglądać inaczej, gdy się ruszasz.",
+                "**Tego, jak tusz leży w twojej skórze.** Ten sam projekt może wyglądać inaczej na różnych ciałach.",
+                "**Twojej reakcji po tygodniu.** Jeśli po kilku dniach życia z podglądem nadal ci się podoba, to dobry znak."
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Jak miejsce, rozmiar i odcień skóry zmieniają wygląd",
+          "blocks": [
+            {
+              "p": "Ten sam projekt może wyglądać zupełnie inaczej w zależności od tego, gdzie trafi, jak jest duży i na jakiej skórze leży."
+            },
+            {
+              "table": {
+                "head": [
+                  "Czynnik",
+                  "Co sprawdzić"
+                ],
+                "rows": [
+                  [
+                    "Miejsce",
+                    "Płaskie obszary zachowują projekt w całości. Zakrzywione lub rozciągające się mogą go zniekształcić, więc sprawdź go w ruchu."
+                  ],
+                  [
+                    "Rozmiar",
+                    "Małe rozmiary tracą detale. Większe mogą przytłaczać. Wydrukuj i przyłóż."
+                  ],
+                  [
+                    "Odcień skóry",
+                    "Kontrast między tuszem a skórą wpływa na to, jak ostro wygląda projekt. Zrób podgląd na odcieniu zbliżonym do twojego."
+                  ],
+                  [
+                    "Kierunek",
+                    "Sprawdź, w którą stronę projekt jest zwrócony i jak płynie z częścią ciała."
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Użyj 6 odcieni skóry w generatorze Skinstencil do porównania i pamiętaj, że podgląd na ekranie jest tylko zbliżony do rzeczywistości."
+            }
+          ]
+        },
+        {
+          "h2": "Lista kontrolna na konsultację",
+          "blocks": [
+            {
+              "ol": [
+                "Weź projekt i wydruk w rzeczywistym rozmiarze, jeśli go masz.",
+                "Weź zdjęcia części ciała, zrobione na wprost w dobrym świetle.",
+                "Zapytaj, gdzie tatuator by go umieścił i dlaczego.",
+                "Zapytaj, czy jakiś detal jest za mały, żeby się utrzymać, i co by uprościł.",
+                "Obejrzyj szablon w lustrze, stojąc i w ruchu.",
+                "Zapytaj o gojenie i pielęgnację i stosuj się do rad tatuatora.",
+                "Nie spiesz się. Jeśli masz wątpliwości, poczekaj tydzień i spójrz jeszcze raz."
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Jak mogę zobaczyć, jak tatuaż będzie na mnie wyglądał?",
+          "a": "Umieść projekt na zdjęciu lub w narzędziu do podglądu, wydrukuj go w rzeczywistym rozmiarze i przyłóż do skóry, a przed rozpoczęciem tatuażu poproś tatuatora o założenie szablonu."
+        },
+        {
+          "q": "Czy aplikacje do podglądu tatuażu są dokładne?",
+          "a": "Dobrze pokazują miejsce i kompozycję, ale rzadko rzeczywisty rozmiar i gojenie. Zawsze sprawdź też na wydrukowanym szablonie."
+        },
+        {
+          "q": "Czy mogę przetestować projekt tatuażu tymczasowym tatuażem?",
+          "a": "Tak. Tymczasowy transfer lub kontur pisakiem bezpiecznym dla skóry pozwala nosić projekt przez dzień lub dwa. Zapytaj tatuatora albo farmaceutę, jeśli masz wrażliwą skórę."
+        },
+        {
+          "q": "Czego podgląd tatuażu nie może pokazać?",
+          "a": "Nie pokaże gojenia, tego, jak linie się starzeją, ani dokładnie, jak projekt porusza się razem z ciałem."
+        },
+        {
+          "q": "Czy odcień skóry zmienia wygląd tatuażu?",
+          "a": "Tak. Kontrast między tuszem a skórą wpływa na to, jak projekt się czyta, więc zrób podgląd na odcieniu zbliżonym do twojego."
+        }
+      ],
+      "cta": "Stwórz projekt w generatorze Skinstencil, zobacz go na 8 częściach ciała i 6 odcieniach skóry, a potem wydrukuj szablon w rzeczywistym rozmiarze."
+    },
+    "fine-line-tattoo-stencil-tips": {
+      "title": "Szablon tatuażu fine line: wskazówki do czystych linii, które da się wydrukować",
+      "short": "Wskazówki do szablonu tatuażu fine line",
+      "blurb": "Dlaczego fine line potrzebuje bardzo czystego szablonu, jak cienka to za cienka i jak sprawdzić go przed drukiem.",
+      "metaTitle": "Szablon tatuażu fine line: wskazówki do czystych linii",
+      "metaDesc": "Zrób szablon tatuażu fine line, który drukuje się czysto: grubość linii w mm, odstępy, co robi zmniejszanie z detalami i lista kontrolna przed drukiem.",
+      "updated": "2026-11-26",
+      "answer": "Szablon tatuażu fine line potrzebuje czystych, równych, ciągłych linii z luźnymi odstępami, bo cienkie kreski nie wybaczają błędów. Sprawdź grubość linii w rzeczywistym rozmiarze wydruku, zostaw między liniami szerokie przerwy i uprość detale, które po zmniejszeniu zamieniają się w plamę.",
+      "sections": [
+        {
+          "h2": "Dlaczego szablon tatuażu fine line musi być bardzo czysty",
+          "blocks": [
+            {
+              "p": "Szablon tatuażu fine line ma mniejszy margines błędu niż mocny projekt. Gruby kontur ukrywa lekko drżącą krawędź. Cienka linia pokazuje każde drgnięcie, przerwę i zabłąkaną kropkę."
+            },
+            {
+              "p": "Szablon to wskazówka, za którą idzie tatuator. Jeśli ma przerwane kreski, rozmyte krawędzie albo szum, tatuator musi zgadywać, które znaki są zamierzone. Czysty szablon czyni zgadywanie zbędnym i trzyma końcowy efekt bliżej projektu, który wybierasz."
+            },
+            {
+              "p": "Dlatego fine line zasługuje na odrobinę większą staranność na etapie przygotowania, zanim pojawi się jakikolwiek tusz."
+            },
+            {
+              "p": "To samo dotyczy źródła szablonu. Staranny rysunek, czysta kartka z flashem lub wyraźne zdjęcie dają czystszy wynik niż rozmyty zrzut ekranu. Dobry start oszczędza najwięcej czasu później."
+            }
+          ]
+        },
+        {
+          "h2": "Grubość linii w milimetrach: ekran a skóra",
+          "blocks": [
+            {
+              "p": "Na ekranie grubość linii mierzy się w pikselach i zmienia się przy powiększaniu. Na papierze i skórze mierzy się ją w milimetrach i jest stała. Mieszanie obu to częste źródło niespodzianek."
+            },
+            {
+              "p": "Przy 300 dpi jeden piksel ma około 0,085 mm szerokości (25,4 podzielone przez 300). Możesz więc obliczyć, czym stanie się linia z ekranu po wydruku w rzeczywistym rozmiarze:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Szerokość linii w pikselach",
+                  "Szerokość na wydruku przy 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "1 px",
+                    "około 0,08 mm"
+                  ],
+                  [
+                    "3 px",
+                    "około 0,25 mm"
+                  ],
+                  [
+                    "6 px",
+                    "około 0,51 mm"
+                  ],
+                  [
+                    "12 px",
+                    "około 1,02 mm"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "To mówi, jak szablon będzie wyglądał na papierze. Jaką grubość linii tatuaż utrzyma na danej części ciała, to pytanie do tatuatora, który zna swoje igły i twoją skórę. Zapytaj o najcieńszą linię, którą chętnie tam wytatuuje."
+            }
+          ]
+        },
+        {
+          "h2": "Odstępy między liniami",
+          "blocks": [
+            {
+              "p": "Przerwy liczą się tak samo jak linie. Dwie cienkie linie bardzo blisko siebie mogą wyglądać dobrze pierwszego dnia, a potem zlewają się, gdy tatuaż się ustabilizuje."
+            },
+            {
+              "ul": [
+                "Zostaw wyraźną przestrzeń między liniami równoległymi. Jeśli przerwa wygląda ciasno na wydruku, jest za ciasna.",
+                "Unikaj kreskowania i drobnej faktury upchniętej w małych obszarach.",
+                "Daj płatkom, piórom i lokom trochę oddechu.",
+                "Jeśli chcesz gęstości, uzyskaj ją mniejszą liczbą przemyślanych linii."
+              ]
+            },
+            {
+              "p": "W razie wątpliwości poproś tatuatora, żeby spojrzał na najciaśniejsze miejsce w projekcie i powiedział, czy się utrzyma."
+            }
+          ]
+        },
+        {
+          "h2": "Jak giną detale, gdy zmniejszasz projekt",
+          "blocks": [
+            {
+              "p": "Zmniejszenie projektu zmniejsza wszystko naraz: linie stają się cieńsze, a przerwy węższe. Projekt narysowany na duże płótno może w połowie rozmiaru zamienić się w papkę."
+            },
+            {
+              "p": "Dużo prac fine line trafia w małe miejsca: nadgarstki, palce, za ucho. Tam problem uderza najmocniej. Małe miejsca bywają też zakrzywione, przez co ciasne odstępy są jeszcze mniej wybaczające."
+            },
+            {
+              "ol": [
+                "Najpierw ustal końcową szerokość w milimetrach.",
+                "Oceń projekt w tym rozmiarze, a nie w powiększeniu.",
+                "Jeśli linie się rozmywają lub przerwy się zamykają, usuń detale zamiast jeszcze bardziej zmniejszać.",
+                "Albo zrób tatuaż nieco większy, żeby detale miały miejsce."
+              ]
+            },
+            {
+              "p": "Nasz poradnik o [rozmiarze szablonu tatuażu](guide:tattoo-stencil-size-true-size-print) opisuje milimetry i piksele oraz to, jak drukować w 100 procentach."
+            }
+          ]
+        },
+        {
+          "h2": "Jak sprawdzić szablon przed drukiem",
+          "blocks": [
+            {
+              "p": "Krótka kontrola oszczędza zmarnowaną kartkę i drugą wizytę u tatuatora. Przechodź przez nią za każdym razem, nawet gdy projekt na pierwszy rzut oka wygląda dobrze, bo problemy z cienkimi liniami łatwo przeoczyć na jasnym ekranie."
+            },
+            {
+              "ol": [
+                "**Powiększ do 100 procent i obejrzyj krawędzie.** Powinny być gładkie, a nie schodkowe.",
+                "**Poszukaj przerw.** Linia, która powinna być ciągła, a ma przerwę, wydrukuje się z przerwą.",
+                "**Poszukaj kropek.** Drobne kropki po zdjęciu lub skanie też się wydrukują.",
+                "**Obejrzyj w rzeczywistym rozmiarze.** Trzymaj ekran na wyciągnięcie ręki w podobnym rozmiarze albo wydrukuj jedną kopię próbną.",
+                "**Sprawdź najciaśniejsze miejsce.** Znajdź dwie najbliższe linie i oceń je.",
+                "**Zmierz wydruk.** Linijką potwierdź szerokość."
+              ]
+            },
+            {
+              "p": "[Studio szablonów](studio) zamienia twój rysunek, flash lub zdjęcie w szablon na twoim urządzeniu, bez wysyłania czegokolwiek. Jeśli zaczynasz od zdjęcia, [szablon tatuażu ze zdjęcia](guide:tattoo-stencil-from-photo) pokazuje, jak uzyskać z niego czyste linie."
+            }
+          ]
+        },
+        {
+          "h2": "Częste błędy w szablonie fine line",
+          "blocks": [
+            {
+              "ul": [
+                "**Obraz o niskiej rozdzielczości.** Cienkie linie na małym obrazie drukują się poszarpane. Zacznij od większego, ostrzejszego pliku.",
+                "**Obrysowywanie gęstego zdjęcia.** Faktura skóry, cienie i tła stają się w szablonie szumem.",
+                "**Skalowanie po fakcie.** Zmiana rozmiaru wydrukowanej kopii albo pozwolenie drukarce, by zmniejszyła obraz do strony, zmienia każdą linię.",
+                "**Rysowanie zbyt wielu drobnych detali.** Dziesięć małych elementów wygląda elegancko tylko na ekranie.",
+                "**Pomijanie opinii tatuatora.** Tatuator widzi problemy, których ty nie widzisz.",
+                "**Ocena tylko na jasnym ekranie.** Podświetlony ekran sprawia, że cienkie linie wyglądają mocniej niż na papierze."
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Kiedy uprościć",
+          "blocks": [
+            {
+              "p": "Jeśli musisz mrużyć oczy, żeby zobaczyć detal na wydruku, prawdopodobnie nie utrzyma się na skórze. Uproszczenie to nie rezygnacja z projektu. To sposób, w jaki praca fine line pozostaje wyrazista."
+            },
+            {
+              "ul": [
+                "Połącz kilka małych kształtów w jeden.",
+                "Odpuść cieniowanie i zostaw sam czysty kontur.",
+                "Zastąp gęstą fakturę kilkoma mocnymi liniami.",
+                "Zwiększ rozmiar o odrobinę.",
+                "Wybierz miejsce z bardziej płaską skórą."
+              ]
+            },
+            {
+              "p": "Upraszczaj przed drukiem, nie po. O wiele łatwiej usunąć detal z projektu, niż tłumaczyć tatuatorowi, dlaczego wydrukowana linia zniknęła. Prostszy szablon daje też tatuatorowi więcej swobody, by dostosować go do twojego ciała na miejscu."
+            },
+            {
+              "p": "Jeśli tworzysz projekt generatorem Skinstencil, możesz poprosić o „cienkie równe linie, minimum detali, bez cieniowania” i zobaczyć go na 8 częściach ciała i 6 odcieniach skóry. Zrobi szablon, który wydrukujesz w rzeczywistym rozmiarze (300 dpi). Można go wypróbować za darmo, darmowe pliki mają znak wodny, a karnet dzienny lub Pro go usuwa."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czym jest szablon tatuażu fine line?",
+          "a": "To szablon do projektu z cienkich, delikatnych linii. Ponieważ linie są cienkie, szablon musi być czysty, ciągły i bez szumu."
+        },
+        {
+          "q": "Jak cienka może być linia tatuażu?",
+          "a": "To zależy od tatuatora, igieł i części ciała. Zapytaj tatuatora o najcieńszą linię, którą chętnie wytatuuje tam, gdzie chcesz."
+        },
+        {
+          "q": "Dlaczego mój projekt fine line jest rozmazany po wydrukowaniu w małym rozmiarze?",
+          "a": "Zmniejszenie obniża szerokość linii i przerwy między nimi naraz, więc detale się zlewają. Uprość projekt albo wydrukuj go nieco większy."
+        },
+        {
+          "q": "Jaką rozdzielczość powinien mieć szablon fine line?",
+          "a": "Drukuj w 300 dpi w rzeczywistym rozmiarze, żeby cienkie linie pozostały gładkie. Użyj ostrego obrazu źródłowego zamiast powiększać mały."
+        },
+        {
+          "q": "Czy mogę zrobić szablon fine line ze zdjęcia?",
+          "a": "Tak, ale gęste zdjęcie dodaje szumu. Użyj wyraźnego zdjęcia lub rysunku i przed drukiem sprawdź wynik pod kątem kropek i przerw."
+        }
+      ],
+      "cta": "Otwórz Studio Skinstencil, żeby zamienić rysunek w czysty szablon na swoim urządzeniu, a potem sprawdź go w rzeczywistym rozmiarze przed drukiem."
+    },
+    "how-to-apply-a-tattoo-stencil": {
+      "title": "Jak nałożyć szablon tatuażu: przygotowanie skóry, ustawienie i zdejmowanie",
+      "short": "Jak nałożyć szablon tatuażu",
+      "blurb": "Krok po kroku: przygotowanie skóry, ustawienie szablonu, dociskanie, zdejmowanie i poprawianie błędów.",
+      "metaTitle": "Jak nałożyć szablon tatuażu: krok po kroku",
+      "metaDesc": "Jak nałożyć szablon tatuażu: skóra, płyn do transferu, ustawienie, dociskanie, zdejmowanie, schnięcie i poprawki. Dla tatuatorów i klientów.",
+      "updated": "2026-11-26",
+      "answer": "Żeby nałożyć szablon tatuażu, oczyść i osusz skórę, w razie potrzeby ogól ją, nałóż cienką warstwę płynu lub sztyftu do transferu, dociśnij szablon bez przesuwania, przytrzymaj go kilka sekund, powoli zdejmij arkusz, poczekaj, aż linie wyschną, i sprawdź ustawienie w lustrze.",
+      "sections": [
+        {
+          "h2": "Jak nałożyć szablon tatuażu: krótka wersja",
+          "blocks": [
+            {
+              "p": "Jak nałożyć szablon tatuażu, sprowadza się do tego: przygotowujesz skórę, lekko ją zwilżasz środkiem do transferu, jednym ruchem dociskasz arkusz szablonu i zdejmujesz go, zostawiając projekt na skórze. Każdy krok jest prosty. Małe potknięcia w którymkolwiek z nich dają rozmazany, krzywy lub dziurawy szablon."
+            },
+            {
+              "p": "Ten poradnik jest dla tatuatorów, którzy chcą powtarzalnej rutyny, i dla klientów, którzy chcą wiedzieć, co się dzieje i na co zwrócić uwagę. Przestrzegaj zasad higieny swojego studia i rad tatuatora. Tam, gdzie poradnik opisuje jakiś krok, pierwszeństwo ma sposób pracy twojego studia."
+            },
+            {
+              "p": "Cała rutyna po kolei:"
+            },
+            {
+              "ol": [
+                "Przygotuj skórę.",
+                "Ustaw szablon, nie dotykając skóry.",
+                "Nałóż środek do transferu.",
+                "Dociśnij raz, potem przytrzymaj.",
+                "Zdejmij powoli.",
+                "Poczekaj, aż wyschnie, i sprawdź w lustrze."
+              ]
+            },
+            {
+              "p": "Kolejne sekcje omawiają każdy krok po kolei, a potem to, co robić, gdy coś pójdzie nie tak."
+            }
+          ]
+        },
+        {
+          "h2": "Przygotuj skórę",
+          "blocks": [
+            {
+              "p": "Szablon przenosi się czysto tylko na skórę czystą, suchą i bez tłuszczu. Tatuator oczyści miejsce zgodnie z rutyną higieniczną studia. Nie wcieraj własnego balsamu, oliwki ani kremu z filtrem przed wizytą, chyba że dostaniesz takie polecenie."
+            },
+            {
+              "p": "Włosy przeszkadzają. Szablon leży na włosach zamiast na skórze i odrywa się, gdy włosy się ruszają. Tatuator może ogolić miejsce, a niektórzy golą trochę szerzej niż projekt, żeby krawędzie były czyste. Pozwól im na to i nie gol sam wysypki, skaleczenia ani podrażnionej skóry wieczorem przed wizytą."
+            },
+            {
+              "ul": [
+                "Skóra powinna być sucha, zanim nałożysz jakikolwiek środek do transferu.",
+                "Bardzo tłusty lub bardzo spocony obszar trzeba przetrzeć i dać mu chwilę, żeby się uspokoił.",
+                "Luźna lub łuszcząca się skóra daje dziurawą linię, więc powiedz tatuatorowi, jeśli miejsce się łuszczy."
+              ]
+            },
+            {
+              "p": "Pomyśl też o pozycji. Zdecyduj, jak będziesz siedzieć lub leżeć podczas sesji, zanim szablon trafi na skórę, bo musi dobrze wyglądać w tej pozycji, a nie tylko w tej, w której stoisz podczas nakładania."
+            }
+          ]
+        },
+        {
+          "h2": "Wybierz środek do transferu",
+          "blocks": [
+            {
+              "p": "Większość tatuatorów używa płynu do transferu albo produktu w sztyfcie. Oba robią to samo: zostawiają cienką, lepką warstwę, dzięki której tusz z arkusza szablonu odchodzi od papieru i przechodzi na skórę."
+            },
+            {
+              "ul": [
+                "**Płyn** nakłada się cienką warstwą ręką w rękawiczce lub odpowiednim aplikatorem. Rozprowadza się równo, ale jego nadmiar zbiera się w kałużę i rozmazuje linie.",
+                "**Sztyft** wciera się cienką, równą warstwą. Łatwo go kontrolować na małych obszarach, ale gruba warstwa może zostawić grzbiet lub pociągnąć linie."
+              ]
+            },
+            {
+              "p": "W obu przypadkach mniej znaczy lepiej. Skóra ma być lekko lepka, a nie mokra. Stosuj się do instrukcji używanego produktu, a jeśli cię to ciekawi, zapytaj tatuatora, czego używa."
+            },
+            {
+              "p": "Nakładaj środek tylko na obszar, który szablon pokryje, plus mały margines. Produkt poza projektem tylko dodaje powierzchnię, po której arkusz się ślizga."
+            }
+          ]
+        },
+        {
+          "h2": "Ustaw i sprawdź, zanim dociśniesz",
+          "blocks": [
+            {
+              "p": "Ustawienie to krok, w którym nie wolno się spieszyć, bo szablonu nie da się przesunąć, gdy dotknie skóry. Trzymaj arkusz tuż nad skórą i patrz, gdzie wyląduje projekt. Porównaj go z naturalnymi liniami ciała: krawędzią mięśnia, środkiem kręgosłupa, krzywizną barku."
+            },
+            {
+              "p": "Potem stań przed lustrem. Klienci, to wasz moment. Zapytaj siebie:"
+            },
+            {
+              "ul": [
+                "Czy projekt stoi prosto, czy się przechyla?",
+                "Czy jest wyśrodkowany na części ciała, o którą ci chodziło?",
+                "Czy dobrze wygląda, gdy stoisz, poruszasz ręką albo obracasz głowę?",
+                "Czy rozmiar jest taki, jak sobie wyobrażasz?"
+              ]
+            },
+            {
+              "p": "Jeśli rozmiar wygląda źle, zatrzymaj się przed dociśnięciem. Wydrukowanie nowego szablonu jest szybkie, a właściwy rozmiar łatwiej ocenić, gdy szablon jest wydrukowany w rzeczywistej skali. Więcej przeczytasz w [poradniku o rzeczywistym rozmiarze](guide:tattoo-stencil-size-true-size-print)."
+            },
+            {
+              "p": "Niektórzy tatuatorzy zaznaczają też najpierw na skórze kilka małych punktów odniesienia, na przykład górę i środek projektu. Dają coś, do czego można dopasować arkusz, gdy ręce są zajęte."
+            }
+          ]
+        },
+        {
+          "h2": "Dociśnij, przytrzymaj i zdejmij",
+          "blocks": [
+            {
+              "p": "Połóż arkusz szablonu jednym ruchem, projektem do skóry. Zacznij od środka lub od jednej krawędzi i dociskaj na zewnątrz płaską dłonią, równym, mocnym naciskiem. Nie przesuwaj arkusza. Każde ześlizgnięcie zostawia podwójną linię, a podwójne linie trudno naprawić."
+            },
+            {
+              "p": "Przytrzymaj kilka sekund albo tak, jak jest przyzwyczajony tatuator. Potem powoli zdejmij arkusz, zaczynając od jednego rogu i przytrzymując resztę drugą ręką. Jeśli fragment został na papierze, połóż arkusz z powrotem i dociśnij jeszcze raz, zanim podniesiesz go dalej."
+            },
+            {
+              "p": "Zakrzywione miejsca, takie jak żebra, łydki czy wewnętrzna strona ramienia, wymagają dodatkowej uwagi. Dociskaj arkusz w krzywiznę fragmentami zamiast spłaszczać go naraz, żeby się nie zagiął ani nie pomarszczył. Przy dużym projekcie niektórzy tatuatorzy tną arkusz na części i nakładają je po kolei."
+            },
+            {
+              "p": "Zdejmowanie w pośpiechu to drugie częste potknięcie. Szybkie szarpnięcie może rozmazać mokre linie lub oderwać część projektu. Powolne, równe zdejmowanie zostawia linie tam, gdzie je położono."
+            }
+          ]
+        },
+        {
+          "h2": "Czas schnięcia i sprawdzenie wyniku",
+          "blocks": [
+            {
+              "p": "Zostaw szablon do wyschnięcia, zanim cokolwiek go dotknie. Linie powinny wyglądać na ciemne, wyraźne i ciągłe. Czas schnięcia zależy od produktu, pomieszczenia i skóry, więc tatuator oceni, kiedy jest gotowy, a krótkie czekanie jest lepsze niż rozmazanie."
+            },
+            {
+              "p": "Teraz sprawdź szablon tak, jak zrobiłby to klient:"
+            },
+            {
+              "ul": [
+                "Czy są wszystkie linie, także cienkie?",
+                "Czy jakichś części brakuje, czy są podwójne albo rozmazane?",
+                "Czy ustawienie nadal dobrze wygląda w lustrze?",
+                "Czy masz jakieś pytania o projekt, zanim zacznie się praca?"
+              ]
+            },
+            {
+              "p": "To ostatni łatwy moment, żeby poprosić o zmiany. Gdy tatuator zacznie, przesunięcie projektu nie jest już proste. Jeśli masz wątpliwości, powiedz to teraz. Dobry tatuator woli zrobić szablon od nowa, niż pracować na takim, w który klient wątpi."
+            }
+          ]
+        },
+        {
+          "h2": "Poprawianie błędów",
+          "blocks": [
+            {
+              "p": "Krzywy, podwójny lub rozmazany szablon można zetrzeć i zrobić od nowa. Tatuator użyje do tego produktu i metody, których zwykle używa, zgodnie z rutyną higieniczną studia. Nie używaj do zmywania własnych produktów."
+            },
+            {
+              "ul": [
+                "**Krzywy lub przesunięty:** zdejmij go, ustaw na nowo punkty odniesienia i nałóż świeży arkusz.",
+                "**Dziurawe linie:** zwykle skóra była zbyt sucha, zbyt tłusta lub owłosiona albo nacisk był za słaby. Przygotuj skórę jeszcze raz i spróbuj ponownie.",
+                "**Rozmazane linie:** zwykle zbyt dużo środka do transferu albo ześlizgnięcie przy dociskaniu. Użyj mniej i dociśnij raz.",
+                "**Zbyt blady:** częste przyczyny opisuje poradnik [jak długo trzyma się szablon tatuażu](guide:how-long-does-a-tattoo-stencil-last)."
+              ]
+            },
+            {
+              "p": "Czysty plik z liniami pomaga już na starcie. Szablon wydrukowany z wyraźnych, równych linii przenosi się pewniej niż ten z zamazanego lub niskiej rozdzielczości obrazu. W [Studio](studio) zamienisz własny rysunek, flash lub zdjęcie w czysty szablon na swoim urządzeniu, a nic nie jest wysyłane."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Co nakłada się na skórę przed szablonem tatuażu?",
+          "a": "Tatuator czyści i suszy skórę, w razie potrzeby ją goli, a potem nakłada cienką warstwę płynu lub sztyftu do transferu. Skóra powinna być lekko lepka, a nie mokra."
+        },
+        {
+          "q": "Jak długo przytrzymywać szablon tatuażu na skórze?",
+          "a": "Zwykle wystarczy kilka sekund mocnego, równego nacisku płaską dłonią. Tatuator powie, co sprawdza się przy produkcie, którego używa."
+        },
+        {
+          "q": "Czy można nałożyć szablon tatuażu na owłosioną skórę?",
+          "a": "To dużo trudniejsze, bo szablon leży na włosach, a nie na skórze. Tatuatorzy zwykle najpierw golą miejsce, zgodnie ze swoimi zasadami."
+        },
+        {
+          "q": "Co, jeśli szablon tatuażu jest krzywy?",
+          "a": "Powiedz tatuatorowi, zanim zacznie. Może go zdjąć i nałożyć nowy, co jest dużo łatwiejsze niż zmienianie projektu później."
+        },
+        {
+          "q": "Czy potrzebuję lustra, żeby sprawdzić szablon?",
+          "a": "Tak, poproś o nie. Sprawdzenie ustawienia na stojąco i w ruchu to najlepszy sposób, żeby wyłapać szablon, który wygląda dobrze tylko wtedy, gdy leżysz nieruchomo."
+        }
+      ],
+      "cta": "Zrób czysty szablon z własnego rysunku lub zdjęcia w Studio, za darmo na próbę, a nic nie jest wysyłane."
+    },
+    "how-long-does-a-tattoo-stencil-last": {
+      "title": "Jak długo trzyma się szablon tatuażu na skórze?",
+      "short": "Jak długo trzyma się szablon tatuażu?",
+      "blurb": "Co sprawia, że szablon blaknie lub się rozmazuje, jak sprawić, żeby wytrzymał, i co robić w czasie czekania.",
+      "metaTitle": "Jak długo trzyma się szablon tatuażu? Co na to wpływa",
+      "metaDesc": "Jak długo trzyma się szablon tatuażu? Co wpływa na trwałość (skóra, pot, miejsce na ciele, tarcie), jak ją wydłużyć i co robić, gdy szablon blaknie.",
+      "updated": "2026-11-26",
+      "answer": "Dobrze nałożony szablon tatuażu trzyma się tak długo, jak potrzeba na sesję, ale nie ma stałego czasu. Wpływają na to rodzaj skóry, pot, miejsce na ciele, środek do transferu i tarcie. Pomaga sucha skóra, cienka warstwa produktu i trzymanie ubrań z dala od miejsca.",
+      "sections": [
+        {
+          "h2": "Jak długo trzyma się szablon tatuażu?",
+          "blocks": [
+            {
+              "p": "Jak długo trzyma się szablon tatuażu? To zależy od tego, jak go nałożono i w którym miejscu ciała leży. Nie ma jednej uczciwej liczby. Dobrze nałożony szablon na nieruchomym, suchym miejscu może pozostać wyraźny przez długą wizytę. Szablon na spoconym, zginającym się lub ocieranym miejscu może zblednąć dużo szybciej."
+            },
+            {
+              "p": "Szablon jest wskazówką dla tatuatora, a nie trwałym znakiem. Ma być wystarczająco dobry, żeby na nim pracować, a tatuator często pracuje nad nim etapami. To, na co masz wpływ, to liczba rzeczy, które pójdą źle, zanim praca się zacznie."
+            },
+            {
+              "p": "Czynniki poniżej to te, które mają znaczenie w praktyce."
+            },
+            {
+              "p": "Zauważ, że większość z nich dotyczy przygotowania i obchodzenia się z szablonem, a nie szczęścia. To dobra wiadomość: jeśli wiesz, dlaczego szablony zawodzą, możesz zapobiec większości wczesnego blaknięcia, zanim zacznie się wizyta. Tatuatorzy widzą te same kilka przyczyn raz za razem, a klienci mogą pomóc, przychodząc z czystą skórą bez żadnych produktów i trzymając miejsce odkryte i nieruchome, gdy szablon już jest nałożony."
+            }
+          ]
+        },
+        {
+          "h2": "Co wpływa na to, jak długo trzyma się szablon",
+          "blocks": [
+            {
+              "h3": "Rodzaj i stan skóry"
+            },
+            {
+              "p": "Tłusta skóra opiera się transferowi, a bardzo sucha lub łuszcząca się daje dziurawy. Skóra czysta, sucha i gładka trzyma szablon najlepiej."
+            },
+            {
+              "h3": "Pot i ciepło"
+            },
+            {
+              "p": "Pot rozkłada warstwę, która trzyma linie. Ciepłe pomieszczenie, zdenerwowany klient albo gorący dzień skracają życie szablonu, zwłaszcza na plecach, klatce piersiowej i pod pachą."
+            },
+            {
+              "h3": "Miejsce na ciele"
+            },
+            {
+              "p": "Miejsca, które się zginają lub ocierają, takie jak wewnętrzna strona łokcia, żebra, dłonie, stopy i szyja, zużywają szablon szybciej niż płaskie, nieruchome obszary, jak zewnętrzna strona uda albo górna część pleców."
+            },
+            {
+              "h3": "Środek do transferu i jego ilość"
+            },
+            {
+              "p": "Cienka, równa warstwa płynu lub sztyftu do transferu pozwala liniom się związać. Zbyt dużo zostawia mokrą, luźną warstwę, która się rozmazuje. Zbyt mało daje bladą linię."
+            },
+            {
+              "h3": "Tusz szablonu i jakość wydruku"
+            },
+            {
+              "p": "Ciemne, równe, pełne linie trzymają się dłużej niż blade lub przerwane. Arkusz szablonu, który źle się zestarzał, może drukować jaśniej, więc najpierw sprawdź papier i drukarkę. Wskazówki dotyczące przechowywania znajdziesz w [poradniku o papierze do szablonów tatuażu](guide:tattoo-stencil-paper-guide)."
+            },
+            {
+              "h3": "Tarcie"
+            },
+            {
+              "p": "Ubranie, pościel, ręka wycierająca pot albo klient przesuwający się na stole zetrą linie. To najczęstsza przyczyna szablonu, który blaknie za wcześnie."
+            }
+          ]
+        },
+        {
+          "h2": "Jak sprawić, żeby szablon trzymał się dłużej",
+          "blocks": [
+            {
+              "ol": [
+                "Zacznij od czystej, suchej skóry i daj środkowi chwilę, żeby się ułożył, zanim dociśniesz.",
+                "Ogól miejsce zgodnie z zaleceniem, żeby szablon leżał na skórze, a nie na włosach.",
+                "Użyj cienkiej, równej warstwy środka do transferu.",
+                "Dociśnij raz, mocno i równo, i nie przesuwaj arkusza.",
+                "Daj szablonowi całkowicie wyschnąć, zanim ktoś go dotknie."
+              ]
+            },
+            {
+              "p": "Potem ogranicz tarcie. Trzymaj ubrania i okrycia z dala od miejsca i zapytaj tatuatora o najlepszą pozycję na sesję. Niektórzy tatuatorzy pracują fragmentami, tak że część projektu, której jeszcze nie tatuują, pozostaje nietknięta. Zapytaj tatuatora, co poleca, bo metody różnią się między studiami."
+            },
+            {
+              "p": "Zaplanuj też kolejność pracy. Jeśli projekt obejmuje staw lub krzywiznę, zapytaj tatuatora, czy zacząłby od miejsca, które najbardziej się ociera, póki linie są najświeższe. Zadbaj też o komfort w pomieszczeniu. Chłodniejsze, spokojniejsze otoczenie to mniej potu, a mniej potu to trwalsze linie. Jeśli łatwo się przegrzewasz, powiedz o tym, zanim szablon trafi na skórę."
+            }
+          ]
+        },
+        {
+          "h2": "Dlaczego jakość wydruku ma znaczenie",
+          "blocks": [
+            {
+              "p": "Najczęstszy powód, dla którego szablon blaknie za wcześnie, to to, że od początku został wydrukowany słabo. Linia, która zaczyna jako blada, nie ma rezerwy. Czysta, ciemna, ciągła linia zaczyna mocniej i przetrwa dłużej."
+            },
+            {
+              "p": "Dlatego liczy się czysty plik z liniami. Rozmazany, mały lub niskiej rozdzielczości obraz drukuje się jako miękka, szara linia, nawet na dobrym papierze transferowym. Ostry plik wydrukowany w odpowiednim rozmiarze daje drukarce solidny materiał."
+            },
+            {
+              "p": "W [Studio](studio) zamienisz rysunek, flash lub zdjęcie w czysty szablon z linii na swoim urządzeniu, więc to, co drukujesz, zaczyna się od linii, które mają być wyraźne. Możesz też przeczytać o tym, [jak dobrać rozmiar wydruku](guide:tattoo-stencil-size-true-size-print)."
+            }
+          ]
+        },
+        {
+          "h2": "Co robić, gdy szablon blaknie",
+          "blocks": [
+            {
+              "p": "Nie czekaj, aż zniknie. Powiedz tatuatorowi, gdy tylko zauważysz, że linie bledną, rozmazują się lub robią się dziurawe. Może nałożyć świeży szablon, zwykle w krótszym czasie, niż zajmuje praca wokół słabego."
+            },
+            {
+              "ul": [
+                "Wyblakły szablon to sygnał, żeby przerwać i go odnowić, a nie zgadywać, gdzie była linia.",
+                "Jeśli zniknęła tylko jedna część, tatuator może poprawić tylko ją.",
+                "Jeśli ciągle blaknie, przyczyną często jest pot, produkt albo tarcie, więc tatuator może zmienić metodę przy drugiej próbie."
+              ]
+            },
+            {
+              "p": "Jeśli blaknie za każdym razem, przyjrzyj się samemu wydrukowi. Szablon, który był blady na arkuszu, będzie blady na skórze. Pełną rutynę znajdziesz w poradniku [jak nałożyć szablon tatuażu](guide:how-to-apply-a-tattoo-stencil)."
+            }
+          ]
+        },
+        {
+          "h2": "Co klient powinien i czego nie powinien robić w czasie czekania",
+          "blocks": [
+            {
+              "p": "Gdy szablon jest już na skórze, twoim zadaniem jest go chronić. Stosuj się do wskazówek tatuatora, a tę listę traktuj jako ogólną wskazówkę."
+            },
+            {
+              "h3": "Rób"
+            },
+            {
+              "ul": [
+                "Siedź nieruchomo i oddychaj normalnie.",
+                "Powiedz tatuatorowi, jeśli miejsce jest mokre, swędzi lub jest gorące.",
+                "Sprawdź ustawienie w lustrze, zanim zacznie się praca.",
+                "Poproś o zrobienie szablonu od nowa, jeśli ci się nie podoba."
+              ]
+            },
+            {
+              "h3": "Nie rób"
+            },
+            {
+              "ul": [
+                "Nie dotykaj i nie wycieraj szablonu.",
+                "Nie pozwól, żeby ubranie, pasek torby albo koc ocierały się o niego.",
+                "Nie nakładaj na miejsce własnego balsamu, oliwki ani dezodorantu.",
+                "Nie drap miejsca, nawet jeśli swędzi."
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Jak długo trzyma się szablon tatuażu na skórze?",
+          "a": "Nie ma stałego czasu. Dobrze nałożony szablon na suchym, nieruchomym miejscu może wytrzymać całą sesję, a na spoconym lub ocieranym miejscu zblednąć dużo szybciej."
+        },
+        {
+          "q": "Dlaczego mój szablon tatuażu blaknie?",
+          "a": "Zwykle przyczyną są pot, tarcie od ubrania lub pościeli, zbyt dużo lub zbyt mało środka do transferu oraz słaby oryginalny wydruk."
+        },
+        {
+          "q": "Czy mogę sprawić, żeby szablon tatuażu trzymał się dłużej?",
+          "a": "Tak. Użyj czystej, suchej skóry, cienkiej warstwy produktu, jednego mocnego dociśnięcia, daj mu dość czasu na wyschnięcie i nie pozwól, by cokolwiek ocierało miejsce."
+        },
+        {
+          "q": "Co, jeśli szablon rozmaże się, zanim zacznie się tatuaż?",
+          "a": "Powiedz tatuatorowi. Może go zdjąć i nałożyć świeży, co jest lepsze niż praca na rozmazanej wskazówce."
+        },
+        {
+          "q": "Czy papier do szablonów wpływa na to, jak długo szablon się trzyma?",
+          "a": "Tak. Papier stary, wilgotny albo nieodpowiedni do twojej drukarki może drukować jaśniejszą linię, a jaśniejsze linie szybciej bledną."
+        }
+      ],
+      "cta": "Zacznij od czystego, wyraźnego szablonu w Studio, za darmo na próbę, a nic nie jest wysyłane."
+    },
+    "tattoo-stencil-paper-guide": {
+      "title": "Papier do szablonów tatuażu: rodzaje, jak działają i jak wybrać",
+      "short": "Papier do szablonów tatuażu",
+      "blurb": "Papier termiczny, hektograficzny, kalka i papier do druku transferowego porównane neutralnie.",
+      "metaTitle": "Papier do szablonów tatuażu: rodzaje i jak wybrać",
+      "metaDesc": "Papier do szablonów tatuażu: termotransferowy, hektograficzny, kalka i do drukarek atramentowych. Jak działają, plusy, minusy, przechowywanie i błędy.",
+      "updated": "2026-11-26",
+      "answer": "Papier do szablonów tatuażu występuje w czterech głównych rodzajach: termotransferowy do drukarek termicznych, hektograficzny (kalka spirytusowa) do obrysowywania ręką, papier do rysowania odręcznego i papier do druku transferowego do drukarek atramentowych. Wybierz ten, który pasuje do drukarki, ilości szablonów i sposobu pracy.",
+      "sections": [
+        {
+          "h2": "Papier do szablonów tatuażu: cztery główne rodzaje",
+          "blocks": [
+            {
+              "p": "Papier do szablonów tatuażu to arkusz, który przenosi projekt ze strony na skórę. Są cztery główne rodzaje, a każdy działa z innym sposobem nanoszenia na niego linii. Zły dobór papieru i drukarki to częsty powód bladego lub dziurawego szablonu."
+            },
+            {
+              "ul": [
+                "**Papier termotransferowy**, używany z drukarką termiczną do szablonów.",
+                "**Papier hektograficzny (kalka spirytusowa)**, używany z długopisem lub metodą obrysowywania.",
+                "**Papier do rysowania odręcznego**, na którym rysuje się lub obrysowuje bezpośrednio.",
+                "**Papier do druku transferowego**, używany z niektórymi zwykłymi drukarkami atramentowymi."
+              ]
+            },
+            {
+              "p": "Ten poradnik jest neutralny. Nie ustawia rodzajów w rankingu, bo najlepszy zależy od twojego sprzętu i nawyków. Szerszy obraz znajdziesz w [poradniku o metodach przenoszenia](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Papier termotransferowy",
+          "blocks": [
+            {
+              "p": "Papier termotransferowy to arkusz wielowarstwowy. Drukarka termiczna do szablonów go podgrzewa, a ciepło tworzy w warstwie transferowej wzór z linii, który potem przechodzi na skórę po dociśnięciu szablonu."
+            },
+            {
+              "ul": [
+                "**Plusy:** szybki po ustawieniu, równe linie, łatwo powtórzyć projekt.",
+                "**Minusy:** wymaga drukarki termicznej, a papier jest robiony pod ten typ drukarki, więc nie użyjesz byle arkusza."
+              ]
+            },
+            {
+              "p": "Szerokość papieru powinna pasować do drukarki. Drukarka zbudowana na jedną szerokość arkusza nie będzie dobrze działać z innym rozmiarem przyciętym ręcznie, więc sprawdź szerokość i format, które przyjmuje twoja drukarka."
+            },
+            {
+              "p": "Ponieważ całą robotę wykonuje ciepło, papier jest wrażliwy na temperaturę i obchodzenie się z nim. Trzymaj go z dala od źródeł ciepła, aż trafi do drukarki."
+            },
+            {
+              "p": "Arkusze termiczne są też najmniej wybaczające, jeśli chodzi o plik. Drukarka rysuje dokładnie te linie, które dostaje, więc czysty, ciemny plik z liniami w wysokiej rozdzielczości daje czysty szablon, a zamazane zdjęcie zamazany."
+            }
+          ]
+        },
+        {
+          "h2": "Papier hektograficzny i kalka spirytusowa",
+          "blocks": [
+            {
+              "p": "Hektograf, zwany też kalką spirytusową, to papier z fioletowym tuszem, używany do ręcznych szablonów. Kładziesz arkusz kalki pod rysunkiem, a nacisk długopisu przenosi linię na arkusz spodni. Arkusz spodni to szablon."
+            },
+            {
+              "ul": [
+                "**Plusy:** bez drukarki, niski koszt sprzętu, znany wielu tatuatorom.",
+                "**Minusy:** każdy szablon rysuje się ręcznie, skalowanie wymaga osobnego kroku, a jakość linii zależy od nacisku i pewności ręki."
+              ]
+            },
+            {
+              "p": "Wielu tatuatorów drukuje projekt w odpowiednim rozmiarze na zwykłym papierze i obrysowuje wydruk. Czysty wydruk linii bardzo to przyspiesza i ustala rozmiar, zanim narysujesz choćby jedną linię."
+            }
+          ]
+        },
+        {
+          "h2": "Papier do rysowania odręcznego",
+          "blocks": [
+            {
+              "p": "Papier do rysowania odręcznego jest zrobiony do rysowania bezpośrednio na nim. Niektóre rodzaje sprzedaje się jako bloczek z warstwą transferową już na odwrocie. Rysujesz lub obrysowujesz projekt na wierzchu, a linie przechodzą na skórę."
+            },
+            {
+              "ul": [
+                "**Plusy:** prosty, bez maszyny, dobry do szybkich lub własnych projektów, które chcesz narysować tego samego dnia.",
+                "**Minusy:** wolniejszy przy złożonych projektach, a trzeba stosować się do instrukcji używanego papieru."
+              ]
+            },
+            {
+              "p": "Dobrze łączy się ze stolikiem podświetlanym lub oknem, jeśli obrysowujesz wydrukowany projekt."
+            },
+            {
+              "p": "Wybór między czterema sprowadza się do trzech pytań. Ile szablonów robisz w tygodniu? Pracujesz z plików cyfrowych czy z rysunków ręcznych? I ile sprzętu chcesz mieć i utrzymywać? Kilka szablonów miesięcznie z rysunków ręcznych wskazuje na papier hektograficzny lub do rysowania odręcznego. Stały przepływ projektów cyfrowych wskazuje na drukarkę i pasujący do niej papier."
+            }
+          ]
+        },
+        {
+          "h2": "Papier do druku transferowego do drukarek atramentowych",
+          "blocks": [
+            {
+              "p": "Papier do druku transferowego jest zrobiony tak, żeby zwykła drukarka atramentowa mogła na nim drukować. Arkusz przyjmuje tusz na powierzchni, a wydrukowane linie przechodzą na skórę po dociśnięciu szablonu."
+            },
+            {
+              "ul": [
+                "**Plusy:** możesz użyć drukarki, którą już masz, a ta sama drukarka robi inne rzeczy.",
+                "**Minusy:** nie każda drukarka i papier współpracują, tusz może zachowywać się inaczej niż w dedykowanym systemie do szablonów, a wynik może być bledszy lub mniej wyraźny niż przy innych metodach."
+              ]
+            },
+            {
+              "p": "Sprawdź w instrukcji papieru, jakie typy drukarek obsługuje, i zrób wydruk próbny przed sesją z klientem. Test kosztuje arkusz. Zły szablon kosztuje czas wizyty."
+            }
+          ]
+        },
+        {
+          "h2": "Jakie drukarki pasują do jakiego papieru",
+          "blocks": [
+            {
+              "table": {
+                "head": [
+                  "Rodzaj papieru",
+                  "Działa z",
+                  "Potrzebuje"
+                ],
+                "rows": [
+                  [
+                    "Papier termotransferowy",
+                    "Drukarka termiczna do szablonów",
+                    "Papieru zrobionego pod ten typ drukarki"
+                  ],
+                  [
+                    "Hektograficzny / kalka spirytusowa",
+                    "Bez drukarki (obrysowywanie ręką)",
+                    "Długopisu i rysunku lub wydruku do obrysowania"
+                  ],
+                  [
+                    "Papier do rysowania odręcznego",
+                    "Bez drukarki (rysowanie)",
+                    "Długopisu i wzoru, jeśli obrysowujesz"
+                  ],
+                  [
+                    "Papier do druku transferowego",
+                    "Drukarki atramentowe, zgodnie z informacją na papierze",
+                    "Obsługiwanej drukarki i wydruków próbnych"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Więcej o drukarkach przeczytasz w [poradniku o drukarce do szablonów tatuażu](guide:tattoo-stencil-printer-guide). Krótka zasada: zacznij od instrukcji papieru i sprawdź, czy twoja drukarka jest na liście obsługiwanych."
+            }
+          ]
+        },
+        {
+          "h2": "Przechowywanie i częste błędy",
+          "blocks": [
+            {
+              "p": "Papier do szablonów jest wrażliwy na wilgoć, ciepło i zginanie. Przechowuj go płasko, w opakowaniu lub teczce, w chłodnym, suchym miejscu, z dala od bezpośredniego słońca. Trzymaj opakowanie zamknięte, żeby arkusze nie łapały kurzu ani wilgoci."
+            },
+            {
+              "p": "Częste błędy, których warto unikać:"
+            },
+            {
+              "ul": [
+                "Wkładanie arkusza złą stroną, przez co drukarka drukuje na spodniej warstwie.",
+                "Użycie papieru, który nie został zrobiony pod twój typ drukarki.",
+                "Drukowanie bladego, małego lub niskiej rozdzielczości pliku, co daje blady szablon na każdym papierze.",
+                "Dotykanie zadrukowanej powierzchni wilgotnymi lub tłustymi rękami.",
+                "Używanie starych, zwiniętych lub wilgotnych arkuszy.",
+                "Pominięcie wydruku próbnego przed wizytą."
+              ]
+            },
+            {
+              "p": "Czysty plik z liniami to druga połowa dobrego szablonu. [Studio](studio) zamienia rysunek, flash lub zdjęcie w czysty szablon na twoim urządzeniu, a generator AI na stronie głównej potrafi zrobić szablon do wydruku w rzeczywistym rozmiarze, 300 dpi."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Jakiego papieru używa się do szablonu tatuażu?",
+          "a": "To zależy od metody: papier termotransferowy do drukarek termicznych, hektograficzny lub do rysowania odręcznego do pracy ręcznej albo papier do druku transferowego do niektórych drukarek atramentowych."
+        },
+        {
+          "q": "Czy mogę użyć zwykłego papieru do drukarki na szablon tatuażu?",
+          "a": "Nie jako arkusza transferowego. Na zwykłym papierze możesz wydrukować wzór jako odniesienie lub rysunek do obrysowania, ale sam transfer wymaga papieru do szablonów."
+        },
+        {
+          "q": "Czym jest papier hektograficzny?",
+          "a": "To fioletowy papier w rodzaju kalki, zwany też kalką spirytusową, który przenosi narysowaną linię na arkusz spodni, gdy naciskasz go długopisem."
+        },
+        {
+          "q": "Czy mogę wydrukować szablon tatuażu na drukarce atramentowej?",
+          "a": "Niektóre papiery do druku transferowego są do tego przeznaczone. Sprawdź instrukcję papieru i przetestuj go przed sesją."
+        },
+        {
+          "q": "Jak przechowywać papier do szablonów tatuażu?",
+          "a": "Płasko, w opakowaniu, w chłodnym, suchym miejscu bez słońca. Wilgoć i ciepło mogą zepsuć warstwę transferową."
+        }
+      ],
+      "cta": "Najpierw zrób czysty plik z liniami. Wypróbuj Studio za darmo, a nic nie jest wysyłane."
+    },
+    "tattoo-stencil-printer-guide": {
+      "title": "Drukarka do szablonów tatuażu: na co zwrócić uwagę przed zakupem",
+      "short": "Drukarka do szablonów tatuażu",
+      "blurb": "Opcje termiczne, atramentowe i kopiarki wyjaśnione, z tym, co sprawdzić, i jak drukować w rzeczywistym rozmiarze.",
+      "metaTitle": "Drukarka do szablonów tatuażu: jak wybrać i drukować",
+      "metaDesc": "Drukarka do szablonów tatuażu: termiczna, atramentowa czy kopiarka, szerokość papieru, dpi, druk w rzeczywistym rozmiarze i naprawa bladych wydruków.",
+      "updated": "2026-11-26",
+      "answer": "Drukarka do szablonów tatuażu to drukarka, która nanosi projekt na papier transferowy. Główne opcje to drukarka termiczna do szablonów, drukarka atramentowa z papierem transferowym i kopiarka termiczna. Sprawdź szerokość papieru, rozdzielczość w dpi, sposób połączenia, druk w rzeczywistym rozmiarze i koszt materiałów.",
+      "sections": [
+        {
+          "h2": "Co robi drukarka do szablonów tatuażu",
+          "blocks": [
+            {
+              "p": "Drukarka do szablonów tatuażu zamienia cyfrowy projekt we wzór z linii na papierze transferowym, gotowy do przyłożenia do skóry. To krok między plikiem a skórą, więc jej jakość widać w każdym szablonie."
+            },
+            {
+              "p": "Są trzy częste drogi. Ten poradnik opisuje je neutralnie i nie ocenia żadnego produktu. Opcje ręczne znajdziesz w [poradniku o metodach przenoszenia](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Drukarka termiczna do szablonów, atramentowa czy kopiarka",
+          "blocks": [
+            {
+              "h3": "Drukarka termiczna do szablonów"
+            },
+            {
+              "p": "Drukarka termiczna do szablonów używa ciepła i papieru termotransferowego. Jest zbudowana do tego jednego zadania, więc wynik jest zwykle powtarzalny, a konfiguracja prosta. Potrzebuje właściwego papieru i jesteś zdany na papier, który do niej pasuje."
+            },
+            {
+              "h3": "Drukarka atramentowa z papierem transferowym"
+            },
+            {
+              "p": "Niektóre papiery do druku transferowego działają w zwykłej drukarce atramentowej. To elastyczna opcja, jeśli już masz drukarkę, ale nie każda para drukarki i papieru działa, a linie mogą być bledsze. Przetestuj, zanim na tym polegasz."
+            },
+            {
+              "h3": "Kopiarka termiczna"
+            },
+            {
+              "p": "Kopiarka termiczna robi szablon z papierowego oryginału, kopiując go. Przydaje się, gdy pracujesz z rysunków na papierze. Plik cyfrowy trzeba najpierw wydrukować na zwykłym papierze, a potem skopiować."
+            },
+            {
+              "p": "Żadna z nich nie jest najlepsza dla wszystkich. Właściwa zależy od ilości szablonów, miejsca, budżetu i tego, czy pracujesz z plików, czy z rysunków na papierze. O samych papierach przeczytasz w [poradniku o papierze do szablonów](guide:tattoo-stencil-paper-guide)."
+            }
+          ]
+        },
+        {
+          "h2": "Na co zwrócić uwagę przy wyborze",
+          "blocks": [
+            {
+              "ul": [
+                "**Szerokość papieru:** sprawdź najszerszy szablon, jakiego będziesz potrzebować. Drukarka przyjmująca tylko wąski arkusz ogranicza duże projekty, takie jak plecy czy rękaw.",
+                "**Rozdzielczość w dpi:** wyższa wartość oznacza cieńsze linie. Szukaj rzeczywistej rozdzielczości drukarki i sprawdź, czy obsługuje pliki 300 dpi.",
+                "**Połączenie:** USB, przewodowe lub bezprzewodowe, i czy działa z telefonem, tabletem lub komputerem. Upewnij się, że współpracuje z systemem, którego już używasz.",
+                "**Druk w rzeczywistym rozmiarze:** drukarka powinna drukować plik w rozmiarze, który ustawisz, bez skalowania go do arkusza.",
+                "**Koszt materiałów:** papier oraz ewentualny tusz lub taśma to koszt bieżący. Porównuj papier, którego użyjesz, i liczbę szablonów, jaką daje, a nie tylko cenę drukarki.",
+                "**Wsparcie i części:** sprawdź, czy papier jest dostępny w twoim regionie i czy drukarkę da się naprawić."
+              ]
+            },
+            {
+              "p": "Zapytaj innych tatuatorów, czego używają i dlaczego. Ich codzienne doświadczenie jest bardziej przydatne niż karta specyfikacji."
+            },
+            {
+              "p": "Pomyśl też o tym, gdzie drukarka będzie stać. Drukarka termiczna do szablonów jest mała i zmieści się na biurku w studiu lub na wózku, ale potrzebujesz zasilania, płaskiej powierzchni i miejsca na suche przechowywanie papieru. Jeśli jeździsz na guest spoty lub konwenty, liczy się waga i prosta konfiguracja, a nie dodatkowe funkcje."
+            }
+          ]
+        },
+        {
+          "h2": "Dlaczego liczy się rozmiar wydruku i 300 dpi",
+          "blocks": [
+            {
+              "p": "Szablon w złym rozmiarze to zły szablon. Jeśli projekt wydrukuje się o 10 procent za mały, tatuaż wyjdzie o 10 procent za mały. Dlatego wydruk musi być w rzeczywistej skali, a nie zmniejszony do strony."
+            },
+            {
+              "p": "Rozdzielczość też ma znaczenie. Przy 300 dpi cienka linia drukuje się jako gładka, ciągła kreska. Niższe rozdzielczości pokazują schodkowe krawędzie na krzywych, a szablon to głównie krzywe. Plik zbyt mały, rozciągnięty do rozmiaru, drukuje się miękko i szaro."
+            },
+            {
+              "p": "[Poradnik o rzeczywistym rozmiarze](guide:tattoo-stencil-size-true-size-print) podaje liczby, w tym ile pikseli potrzeba na daną szerokość przy 300 dpi."
+            }
+          ]
+        },
+        {
+          "h2": "Jak wydrukować plik w rzeczywistym rozmiarze",
+          "blocks": [
+            {
+              "ol": [
+                "Zacznij od czystego pliku z liniami o właściwych proporcjach, z co najmniej taką liczbą pikseli, jakiej wymaga szerokość przy 300 dpi.",
+                "Ustaw rozmiar w milimetrach lub calach w narzędziu do projektowania i wyeksportuj w 300 dpi.",
+                "W oknie drukowania wybierz rozmiar rzeczywisty lub 100 procent. Wyłącz dopasowanie do strony i skalowanie do rozmiaru.",
+                "Ustaw rozmiar papieru zgodny z arkuszem w drukarce.",
+                "Wydrukuj pierwszą próbę na zwykłym papierze i zmierz ją linijką względem ustawionego rozmiaru.",
+                "Dopiero potem drukuj na papierze transferowym."
+              ]
+            },
+            {
+              "p": "Generator AI na stronie głównej Skinstencil tworzy projekt z opisu lub przykładowego obrazka, pokazuje go na 8 częściach ciała i 6 odcieniach skóry oraz robi szablon, który wydrukujesz w rzeczywistym rozmiarze, 300 dpi. [Studio](studio) zamienia twój rysunek, flash lub zdjęcie w szablon na twoim urządzeniu, a nic nie jest wysyłane. Można go wypróbować za darmo. Darmowe pliki mają znak wodny, a karnet dzienny lub Pro go usuwa."
+            }
+          ]
+        },
+        {
+          "h2": "Częste problemy i rozwiązania",
+          "blocks": [
+            {
+              "h3": "Szablon jest za jasny"
+            },
+            {
+              "ul": [
+                "Sprawdź, czy papier jest właściwego typu i włożony właściwą stroną do góry.",
+                "Sprawdź plik: blade lub cienkie linie w pliku drukują się blado.",
+                "Użyj świeżego papieru, a nie starych lub wilgotnych arkuszy.",
+                "Zajrzyj w ustawienia drukarki, szukając gęstości lub ciemności."
+              ]
+            },
+            {
+              "h3": "Szablon jest rozmazany"
+            },
+            {
+              "ul": [
+                "Daj wydrukowi wyschnąć lub ostygnąć, zanim go dotkniesz.",
+                "Sprawdź, czy papier i drukarka do siebie pasują, i czyść drukarkę zgodnie z zaleceniami producenta.",
+                "Trzymaj arkusz za krawędzie."
+              ]
+            },
+            {
+              "h3": "Szablon ma zły rozmiar"
+            },
+            {
+              "ul": [
+                "Wyłącz dopasowanie do strony lub skalowanie do rozmiaru.",
+                "Sprawdź rozmiar i dpi ustawione przy eksporcie pliku.",
+                "Wydrukuj próbę na zwykłym papierze i zmierz ją przed papierem transferowym."
+              ]
+            },
+            {
+              "p": "Jeśli jedna poprawka nie pomaga, zmieniaj jedną rzecz naraz, żeby wiedzieć, co zadziałało."
+            },
+            {
+              "p": "Zapisuj krótko ustawienia, które dały dobry wydruk: rozmiar pliku, dpi, papier i ustawienie gęstości drukarki. Gdy szablon wyjdzie źle, ta notatka od razu pokaże, co się zmieniło. Zawsze rób wydruk próbny, zanim klient usiądzie na fotelu, a nie w trakcie wizyty."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Jakiej drukarki używają tatuatorzy do szablonów?",
+          "a": "Wielu używa drukarki termicznej do szablonów, a niektórzy drukarki atramentowej z papierem transferowym lub kopiarki termicznej. Właściwa zależy od ilości szablonów i sposobu pracy."
+        },
+        {
+          "q": "Czy mogę użyć zwykłej drukarki do szablonów tatuażu?",
+          "a": "Niektóre drukarki atramentowe działają z papierem do druku transferowego, ale nie każda para. Sprawdź instrukcję papieru i przetestuj przed sesją."
+        },
+        {
+          "q": "Ile dpi powinien mieć szablon tatuażu?",
+          "a": "Zwykłym celem jest 300 dpi. Dzięki temu cienkie linie są gładkie i ciągłe w rozmiarze, w jakim drukujesz."
+        },
+        {
+          "q": "Dlaczego mój szablon tatuażu jest za jasny?",
+          "a": "Zwykłe przyczyny to zły lub stary papier, blady plik źródłowy, papier włożony złą stroną albo niskie ustawienie gęstości."
+        },
+        {
+          "q": "Jak wydrukować szablon w odpowiednim rozmiarze?",
+          "a": "Ustaw rozmiar w milimetrach, wyeksportuj w 300 dpi, drukuj w rozmiarze rzeczywistym z wyłączonym dopasowaniem do strony i zmierz wydruk próbny linijką."
+        }
+      ],
+      "cta": "Zrób szablon, który wydrukujesz w rzeczywistym rozmiarze, 300 dpi. Wypróbuj generator AI lub Studio, za darmo na próbę."
+    },
+    "tattoo-size-chart-by-body-part": {
+      "title": "Rozmiar tatuażu w zależności od miejsca na ciele: tabela w cm i calach",
+      "short": "Rozmiar tatuażu w zależności od miejsca",
+      "blurb": "Typowe rozmiary tatuaży w cm i calach dla 13 części ciała, limity detali i sprawdzanie rozmiaru szablonem w skali 1:1.",
+      "metaTitle": "Rozmiar tatuażu w zależności od miejsca: cm i cale",
+      "metaDesc": "Rozmiar tatuażu w zależności od miejsca: tabela w cm i calach dla 13 części ciała, minimalne rozmiary fine line i mocnej kreski oraz test szablonem.",
+      "updated": "2026-11-26",
+      "answer": "Tabela rozmiarów tatuaży podaje typową szerokość lub długość dla każdej części ciała, na przykład od 2 do 5 cm (około 1 do 2 cali) na nadgarstku i od 8 do 25 cm (3 do 10 cali) wzdłuż przedramienia. To wskazówki, nie reguły. Wydrukuj projekt w rzeczywistym rozmiarze i przyłóż do skóry, żeby sprawdzić.",
+      "sections": [
+        {
+          "h2": "Rozmiar tatuażu w zależności od miejsca na ciele",
+          "blocks": [
+            {
+              "p": "Rozmiar tatuażu w zależności od miejsca na ciele to punkt wyjścia, zanim porozmawiasz z tatuatorem. Poniższe zakresy to typowe rozmiary dłuższego boku pojedynczego projektu u przeciętnego dorosłego. To wskazówki, a nie reguły. Ciała są różne, projekty też."
+            },
+            {
+              "table": {
+                "head": [
+                  "Część ciała",
+                  "Typowy rozmiar (cm)",
+                  "Typowy rozmiar (cale)"
+                ],
+                "rows": [
+                  [
+                    "Nadgarstek",
+                    "od 2 do 5 cm",
+                    "od 0,8 do 2 cali"
+                  ],
+                  [
+                    "Przedramię",
+                    "od 8 do 25 cm",
+                    "od 3 do 10 cali"
+                  ],
+                  [
+                    "Ramię",
+                    "od 8 do 20 cm",
+                    "od 3 do 8 cali"
+                  ],
+                  [
+                    "Łopatka",
+                    "od 10 do 20 cm",
+                    "od 4 do 8 cali"
+                  ],
+                  [
+                    "Plecy",
+                    "od 20 do 45 cm",
+                    "od 8 do 18 cali"
+                  ],
+                  [
+                    "Klatka piersiowa",
+                    "od 10 do 30 cm",
+                    "od 4 do 12 cali"
+                  ],
+                  [
+                    "Żebra",
+                    "od 10 do 25 cm",
+                    "od 4 do 10 cali"
+                  ],
+                  [
+                    "Udo",
+                    "od 15 do 35 cm",
+                    "od 6 do 14 cali"
+                  ],
+                  [
+                    "Łydka",
+                    "od 10 do 25 cm",
+                    "od 4 do 10 cali"
+                  ],
+                  [
+                    "Kostka",
+                    "od 3 do 8 cm",
+                    "od 1,2 do 3 cali"
+                  ],
+                  [
+                    "Dłoń",
+                    "od 3 do 8 cm",
+                    "od 1,2 do 3 cali"
+                  ],
+                  [
+                    "Szyja",
+                    "od 3 do 10 cm",
+                    "od 1,2 do 4 cali"
+                  ],
+                  [
+                    "Za uchem",
+                    "od 1 do 4 cm",
+                    "od 0,4 do 1,6 cala"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Odczytuj liczby jako długość projektu wzdłuż kończyny albo wysokość na płaskim miejscu, takim jak plecy. Projekt na przedramieniu może iść przez całą długość ręki, a ten na nadgarstku to zwykle mała opaska lub symbol."
+            }
+          ]
+        },
+        {
+          "h2": "Jak czytać tabelę",
+          "blocks": [
+            {
+              "p": "Zakresy są szerokie celowo. Róża o wysokości 10 cm (4 cale) to mały tatuaż na udzie i duży za uchem. Liczy się to, jak projekt ma się do przestrzeni wokół niego."
+            },
+            {
+              "ul": [
+                "**Małe** projekty dobrze leżą na nadgarstku, kostce, dłoni, szyi i za uchem.",
+                "**Średnie** pasują na ramię, przedramię, łydkę, łopatkę i żebra.",
+                "**Duże** zajmują plecy, klatkę piersiową i udo, gdzie jest miejsce, żeby projekt mógł oddychać."
+              ]
+            },
+            {
+              "p": "Jeśli twój pomysł wykracza poza zakres dla miejsca, które lubisz, rozważ inne miejsce albo inny rozmiar. Owinięcie projektu wokół kończyny pozwala, na przykład, zmieścić długi wzór tam, gdzie płaski by się nie zmieścił."
+            }
+          ]
+        },
+        {
+          "h2": "Minimalny rozmiar a detale",
+          "blocks": [
+            {
+              "p": "Rozmiar to nie tylko wygląd. Tusz tatuażu z latami lekko rozchodzi się w skórze, więc drobne detale mogą się zlać. Im mniejszy projekt, tym mniej detali utrzyma i nadal pozostanie czytelny."
+            },
+            {
+              "h3": "Fine line"
+            },
+            {
+              "p": "Projekty fine line używają cienkich, jasnych kresek. Wyglądają delikatnie, ale potrzebują wystarczającej przestrzeni między liniami. Wielu tatuatorów radzi, żeby projekt miał co najmniej kilka centymetrów i żeby unikać drobnego tekstu oraz gęstych wzorów. Zapytaj tatuatora o najmniejszy rozmiar, w którym chętnie wykona twój projekt."
+            },
+            {
+              "h3": "Mocna kreska"
+            },
+            {
+              "p": "Mocne projekty z grubymi konturami i pełnym wypełnieniem wytrzymują w mniejszych rozmiarach, bo kształty są proste, a odstępy między nimi szerokie. Mocny symbol może działać w rozmiarze, w którym ten sam obraz w fine line zamieniłby się w papkę."
+            },
+            {
+              "p": "Gdy zmniejszasz projekt, upraszczaj go. Usuń małe elementy tła, poszerz ciasne odstępy i zrób tekst większy, niż myślisz, że potrzeba."
+            }
+          ]
+        },
+        {
+          "h2": "Jak zmierzyć miejsce na własnym ciele",
+          "blocks": [
+            {
+              "p": "Swoje miejsce zmierzysz w kilka minut miękką miarką krawiecką albo linijką. Miękka miarka podąża za krzywiznami, czego sztywna linijka nie potrafi."
+            },
+            {
+              "ol": [
+                "Zaznacz górę i dół miejsca, które masz na myśli, zmywalnym pisakiem lub małymi kawałkami taśmy.",
+                "Zmierz prostą odległość między znakami, a potem jeszcze raz wzdłuż krzywizny ciała.",
+                "Zmierz szerokość w najszerszym punkcie obszaru.",
+                "Zapisz obie liczby w centymetrach i calach, żeby porównać je z tabelą.",
+                "Zostaw margines co najmniej szerokości palca z każdej strony, żeby projekt nie leżał tuż przy krawędzi."
+              ]
+            },
+            {
+              "p": "Pomiar prosty i pomiar po krzywiźnie różnią się bardziej na okrągłych miejscach, takich jak ramię i łydka. Projekt szeroki na papierze na 10 cm wyda się węższy, gdy owinie się wokół krzywizny, bo jego część odwraca się od patrzącego."
+            }
+          ]
+        },
+        {
+          "h2": "Sprawdź rozmiar szablonem w skali 1:1",
+          "blocks": [
+            {
+              "p": "Liczby w tabeli dają tylko tyle. Najpewniejszy sposób oceny rozmiaru to zobaczyć projekt w prawdziwych wymiarach na swoim ciele. Szablon wydrukowany w rzeczywistym rozmiarze robi dokładnie to."
+            },
+            {
+              "p": "Ustal szerokość w milimetrach, wyeksportuj projekt w 300 dpi i wydrukuj w 100 procentach, bez skalowania. Nasz poradnik o [druku w rzeczywistym rozmiarze](guide:tattoo-stencil-size-true-size-print) pokazuje wyliczenia i jak potwierdzić wynik linijką."
+            },
+            {
+              "p": "Zrobisz to w [Studio](studio). Zamienia twój rysunek, flash lub zdjęcie w szablon na twoim urządzeniu, a nic nie jest wysyłane. Ustaw rozmiar w milimetrach, pobierz szablon i wydrukuj go."
+            },
+            {
+              "p": "Wytnij wydruk i przyłóż do skóry albo przyklej taśmą. Stań przed lustrem, poruszaj ręką, usiądź i pochodź. Jeśli wydaje się za duży lub za mały, zmień rozmiar i wydrukuj jeszcze raz. Papier jest tani, a skóra nie."
+            }
+          ]
+        },
+        {
+          "h2": "Jak miejsce i skóra zmieniają potrzebny rozmiar",
+          "blocks": [
+            {
+              "p": "Ten sam projekt może wyglądać inaczej w zależności od miejsca i od tego, na czyjej skórze leży."
+            },
+            {
+              "ul": [
+                "**Krzywizny.** Projekt na zaokrąglonym miejscu z przodu wydaje się mniejszy i lekko zniekształcony. Na ramieniu lub łydce możesz chcieć iść trochę większy, niż sugeruje płaski rysunek.",
+                "**Ruch.** Skóra przy stawach rozciąga się i fałduje. Projekty tam często są mniejsze lub prostsze, a tatuator może doradzić dokładną pozycję.",
+                "**Budowa ciała.** Projekt o wysokości 15 cm leży inaczej na szczupłym przedramieniu, a inaczej na szerokim. Oceniaj go na własnym ciele, a nie na zdjęciu kogoś innego.",
+                "**Odcień skóry.** Kontrast zmienia czytelność projektu, więc zapytaj tatuatora, co najlepiej widać na twojej skórze.",
+                "**Starzenie.** Linie z czasem łagodnieją. Pozostawienie projektowi trochę miejsca pomaga mu pozostać wyraźnym."
+              ]
+            },
+            {
+              "p": "Generator AI na stronie głównej pomaga w tej części. Tworzy projekt z opisu lub przykładowego obrazka, a potem pokazuje go na 8 częściach ciała (łopatka, plecy, przedramię, ramię, klatka piersiowa, żebra, udo i łydka) i 6 odcieniach skóry, więc zobaczysz skalę i kontrast, zanim wydrukujesz. Robi szablon, który wydrukujesz w rzeczywistym rozmiarze (300 dpi)."
+            },
+            {
+              "p": "Jeśli wciąż decydujesz, gdzie ma trafić projekt, zajrzyj do naszego [poradnika o wyborze miejsca na tatuaż](guide:tattoo-placement-guide)."
+            }
+          ]
+        },
+        {
+          "h2": "Ostatnie sprawdzenie przed rezerwacją",
+          "blocks": [
+            {
+              "ul": [
+                "Czy wydrukowany szablon dobrze wygląda, gdy stoisz, siedzisz i się ruszasz?",
+                "Czy między liniami jest dość miejsca dla wybranego stylu?",
+                "Czy tekst jest dość duży, żeby go przeczytać z normalnej odległości?"
+              ]
+            },
+            {
+              "p": "Ostatnie słowo co do rozmiaru i detali ma tatuator. Przynieś wydruk i pomiary, a tabelę traktuj jako początek rozmowy."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Jaki rozmiar ma mały tatuaż?",
+          "a": "Nie ma stałej reguły, ale wiele osób nazywa małym projekt poniżej około 5 cm (2 cali). Miejsca takie jak nadgarstek, kostka i za uchem zwykle pasują do tego rozmiaru."
+        },
+        {
+          "q": "Jak duży jest średni tatuaż?",
+          "a": "Średni to zwykle mniej więcej od 8 do 15 cm (od 3 do 6 cali) na dłuższym boku. Dobrze pasuje na przedramię, ramię, łydkę lub łopatkę."
+        },
+        {
+          "q": "Jaki jest najmniejszy możliwy rozmiar tatuażu?",
+          "a": "To zależy od stylu i tatuatora. Drobne detale potrzebują więcej miejsca niż mocne kształty, więc zapytaj tatuatora o minimalny rozmiar, w którym twój projekt pozostanie czytelny."
+        },
+        {
+          "q": "Jak sprawdzić, jak duży będzie mój tatuaż na ciele?",
+          "a": "Wydrukuj projekt w rzeczywistym rozmiarze i przyłóż go do miejsca albo przyklej taśmą. Rozmiar ocenisz w lustrze i w ruchu."
+        },
+        {
+          "q": "Czy rozmiary tatuaży są takie same dla wszystkich?",
+          "a": "Nie. Zakresy w tabeli są typowe, a budowa ciała, skóra i sam projekt zmieniają to, co wygląda dobrze."
+        }
+      ],
+      "cta": "Ustaw rozmiar w milimetrach w Studio, wydrukuj szablon w rzeczywistym rozmiarze i zobacz, jak leży na skórze, zanim się umówisz."
+    },
+    "tattoo-placement-guide": {
+      "title": "Miejsce na tatuaż: jak wybrać właściwe",
+      "short": "Miejsce na tatuaż: jak wybrać",
+      "blurb": "Widoczność, dress code, ruch skóry i kształt projektu: jak wybrać miejsce na tatuaż i przetestować je szablonem.",
+      "metaTitle": "Miejsce na tatuaż: jak wybrać właściwe",
+      "metaDesc": "Jak wybrać miejsce na tatuaż: widoczność, dress code, ruch skóry i kształt projektu, plus tabela miejsc i test szablonem.",
+      "updated": "2026-11-26",
+      "answer": "Miejsce na tatuaż najlepiej wybrać, biorąc pod uwagę cztery rzeczy: kto go zobaczy, jak skóra tam się rusza i starzeje, jak kształt projektu pasuje do przestrzeni i co myślisz o gojeniu. Sprawdź miejsce szablonem w rzeczywistym rozmiarze, a potem zapytaj tatuatora.",
+      "sections": [
+        {
+          "h2": "Miejsce na tatuaż zaczyna się od pytania, kto go zobaczy",
+          "blocks": [
+            {
+              "p": "Miejsce na tatuaż to decyzja, która kształtuje, jak z nim żyjesz każdego dnia. Zacznij od widoczności, bo to jedyna rzecz, której później nie zmienisz łatwo."
+            },
+            {
+              "p": "Zapytaj siebie, gdzie chcesz, żeby tatuaż był widoczny, i dla kogo."
+            },
+            {
+              "ul": [
+                "**Zawsze widoczne:** dłonie, szyja, twarz, przedramiona i podudzia widać w większości strojów.",
+                "**Widoczne, gdy chcesz:** ramię, udo, łopatkę i klatkę piersiową można zakryć koszulką, szortami albo kołnierzem koszuli.",
+                "**Głównie prywatne:** żebra, plecy, biodro i górną część uda widzi niewiele osób, chyba że sam zdecydujesz się je pokazać."
+              ]
+            },
+            {
+              "p": "Nie ma jednej dobrej odpowiedzi. Tatuaż, który możesz ukryć, daje ci więcej kontroli. Tatuaż, który widzisz, daje więcej codziennej radości. Zastanów się, co jest dla ciebie ważniejsze."
+            }
+          ]
+        },
+        {
+          "h2": "Praca, dress code i zmiany w życiu",
+          "blocks": [
+            {
+              "p": "Podejście do widocznych tatuaży zależy od kraju, branży i pracodawcy i zmienia się z czasem. Zanim wybierzesz miejsce widoczne w ubraniu do pracy, sprawdź dress code i kulturę swojego miejsca pracy albo tego, do którego chcesz trafić."
+            },
+            {
+              "p": "Pomyśl też o tym, dokąd może zmierzać twoje życie. Zmiana kariery, mundur, podróże czy wydarzenie rodzinne mogą zmienić to, jak czujesz się z widocznym tatuażem. Miejsca, które zakryje rękaw lub kołnierz, zostawiają ci otwarte opcje."
+            },
+            {
+              "p": "To osobista decyzja. Rozważ ją szczerze i nie pozwól, żeby zdecydował za ciebie trend."
+            }
+          ]
+        },
+        {
+          "h2": "Jak skóra się rusza i starzeje",
+          "blocks": [
+            {
+              "p": "Tatuaż żyje na skórze, a skóra nie jest płaskim płótnem. Niektóre miejsca pozostają stabilne przez dziesięciolecia. Inne rozciągają się, fałdują lub zmieniają razem z ciałem."
+            },
+            {
+              "ul": [
+                "**Stawy**, takie jak łokieć, kolano, nadgarstek i kostka, zginają się cały dzień. Projekt przechodzący przez staw zniekształca się, gdy się ruszasz.",
+                "**Dłonie, stopy i palce** są wystawione na tarcie, mycie i słońce. Projekty tam często wymagają poprawek, a tatuator powie, jak zwykle się trzymają.",
+                "**Miejsca zmieniające się z wagą, ciążą lub mięśniami**, takie jak brzuch, biodra, klatka piersiowa i wewnętrzna strona ud, mogą z czasem się przesuwać.",
+                "**Miejsca wystawione na słońce** blakną szybciej niż zakryte, więc filtr przeciwsłoneczny ma znaczenie przy widocznych miejscach."
+              ]
+            },
+            {
+              "p": "Nic z tego nie wyklucza miejsca. Znaczy tylko, że warto zapytać tatuatora, jak to miejsce zwykle się starzeje, i obejrzeć zdjęcia jego wygojonych prac w tym obszarze."
+            }
+          ]
+        },
+        {
+          "h2": "Dopasuj kształt projektu do miejsca",
+          "blocks": [
+            {
+              "p": "Ciało ma naturalne linie i krzywizny, a dobre miejsce za nimi podąża. Projekt, który współgra z kształtem ciała, wygląda, jakby tam należał."
+            },
+            {
+              "ul": [
+                "**Długie, wąskie projekty**, takie jak sztylet, gałąź, linia tekstu czy wzór wzdłuż kręgosłupa, pasują do miejsc biegnących w linii: przedramienia, kręgosłupa, łydki, żeber lub całej długości uda.",
+                "**Okrągłe lub zwarte projekty**, takie jak mandala, róża czy portret, dobrze leżą na płaskich lub lekko zakrzywionych miejscach: łopatce, ramieniu, klatce piersiowej lub udzie.",
+                "**Małe projekty**, takie jak symbol, data czy maleńkie zwierzę, pasują do miejsc o ograniczonej przestrzeni: nadgarstka, kostki, miejsca za uchem czy wewnętrznej strony palca."
+              ]
+            },
+            {
+              "p": "Jeśli nie możesz się zdecydować, zmień kształt zamiast wymuszać dopasowanie. Wiele projektów można rozciągnąć, uprościć lub podzielić na dwa, żeby pasowały do miejsca."
+            }
+          ]
+        },
+        {
+          "h2": "Popularne miejsca i co do nich pasuje",
+          "blocks": [
+            {
+              "table": {
+                "head": [
+                  "Miejsce",
+                  "Pasuje do długich projektów",
+                  "Pasuje do okrągłych projektów",
+                  "Pasuje do małych projektów"
+                ],
+                "rows": [
+                  [
+                    "Przedramię",
+                    "Tak",
+                    "Tak, na płaskiej części ręki",
+                    "Tak"
+                  ],
+                  [
+                    "Ramię",
+                    "Tak, owijając dookoła",
+                    "Tak",
+                    "Tak"
+                  ],
+                  [
+                    "Łopatka",
+                    "Czasem",
+                    "Tak",
+                    "Tak"
+                  ],
+                  [
+                    "Plecy",
+                    "Tak, wzdłuż kręgosłupa",
+                    "Tak, duże projekty",
+                    "Tak"
+                  ],
+                  [
+                    "Klatka piersiowa",
+                    "Czasem",
+                    "Tak",
+                    "Tak"
+                  ],
+                  [
+                    "Żebra",
+                    "Tak, wzdłuż boku",
+                    "Czasem",
+                    "Tak"
+                  ],
+                  [
+                    "Udo",
+                    "Tak",
+                    "Tak",
+                    "Tak"
+                  ],
+                  [
+                    "Łydka",
+                    "Tak",
+                    "Czasem",
+                    "Tak"
+                  ],
+                  [
+                    "Nadgarstek i kostka",
+                    "Tylko opaski",
+                    "Nie",
+                    "Tak"
+                  ],
+                  [
+                    "Za uchem i szyja",
+                    "Czasem",
+                    "Nie",
+                    "Tak"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Traktuj tabelę jako punkt wyjścia, a nie regulamin. Doświadczeni tatuatorzy dostosowują projekty do niemal każdego miejsca. Jeśli chcesz poznać typowe rozmiary dla każdego miejsca, zajrzyj do [tabeli rozmiarów tatuaży](guide:tattoo-size-chart-by-body-part)."
+            }
+          ]
+        },
+        {
+          "h2": "Ból, gojenie i komfort",
+          "blocks": [
+            {
+              "p": "Ból różni się u każdej osoby i zależy od miejsca, więc nie ma wiarygodnego rankingu, który pasuje wszystkim. Niektórzy uważają żebra lub stopy za trudne, a inni prawie ich nie czują. Gojenie też bywa różne, bo miejsce, które ociera się o ubranie lub często się zgina, może być trudniejsze w pielęgnacji."
+            },
+            {
+              "p": "Zapytaj tatuatora, czego się spodziewać po miejscu, które rozważasz, jak długa będzie sesja i jak potem dbać o tatuaż. Robił to wiele razy i da radę, które pasują do twojego ciała i projektu."
+            }
+          ]
+        },
+        {
+          "h2": "Sprawdź miejsce, zanim się zdecydujesz",
+          "blocks": [
+            {
+              "p": "Myślenie o miejscu jest przydatne, ale zobaczenie go jest lepsze. Masz dwa łatwe sposoby na test."
+            },
+            {
+              "h3": "Użyj wydrukowanego szablonu"
+            },
+            {
+              "p": "Wydrukuj projekt w rzeczywistym rozmiarze i przyklej taśmą do miejsca. Sprawdź go na stojąco, siedząc i w ruchu. [Studio](studio) zamienia twój rysunek, flash lub zdjęcie w szablon na twoim urządzeniu, a nic nie jest wysyłane. O drukowaniu przeczytasz w poradniku o [druku w rzeczywistym rozmiarze](guide:tattoo-stencil-size-true-size-print). Jak nałożyć szablon, opisują [metody przenoszenia](guide:tattoo-stencil-transfer-methods)."
+            },
+            {
+              "h3": "Użyj podglądu"
+            },
+            {
+              "p": "Generator AI na stronie głównej tworzy projekt z opisu lub przykładowego obrazka i pokazuje go na 8 częściach ciała (łopatka, plecy, przedramię, ramię, klatka piersiowa, żebra, udo i łydka) i 6 odcieniach skóry. To szybki sposób na porównanie miejsc, zanim wydrukujesz. Robi szablon, który wydrukujesz w rzeczywistym rozmiarze (300 dpi)."
+            }
+          ]
+        },
+        {
+          "h2": "Błędy, których warto unikać",
+          "blocks": [
+            {
+              "ul": [
+                "Wybór miejsca tylko dlatego, że jest modne.",
+                "Wciskanie projektu w przestrzeń, która nie pasuje do jego kształtu.",
+                "Ignorowanie dress code'u pracy, którą masz lub chcesz mieć.",
+                "Umieszczanie drobnych detali tam, gdzie skóra się rozciąga, fałduje lub ociera.",
+                "Pominięcie testu w rzeczywistym rozmiarze i ocenianie tylko z ekranu.",
+                "Pośpiech w decyzji. Dobry tatuator pozwoli ci się nie spieszyć."
+              ]
+            },
+            {
+              "p": "Daj sobie tydzień na życie z pomysłem na szablon. Jeśli w siódmym dniu miejsce wciąż ci się podoba, to dobry znak."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Jakie jest najlepsze miejsce na pierwszy tatuaż?",
+          "a": "Nie ma jednego najlepszego miejsca. Wiele osób zaczyna od miejsca łatwego do zakrycia i pielęgnacji, takiego jak ramię lub udo, i prosi tatuatora o radę."
+        },
+        {
+          "q": "Które miejsca na tatuaż bolą najbardziej?",
+          "a": "Ból zależy od osoby, więc trudno ustawić miejsca w rankingu. Zapytaj tatuatora, czego się spodziewać w miejscu, które masz na myśli."
+        },
+        {
+          "q": "Jak sprawdzić, czy tatuaż pasuje do miejsca?",
+          "a": "Wydrukuj projekt w rzeczywistym rozmiarze, przyklej go taśmą do miejsca i sprawdź w ruchu. Pokaże ci skalę i przepływ dużo lepiej niż ekran."
+        },
+        {
+          "q": "Czy tatuaże na stawach i dłoniach blakną szybciej?",
+          "a": "Miejsca z dużym ruchem, tarciem i myciem mogą wymagać więcej poprawek. Zapytaj tatuatora, jak takie miejsce zwykle się trzyma."
+        },
+        {
+          "q": "Czy mogę zmienić projekt, żeby pasował do innego miejsca?",
+          "a": "Tak. Projekty można zmieniać w rozmiarze, upraszczać, rozciągać lub dzielić, a tatuator pomoże dostosować go do wybranego miejsca."
+        }
+      ],
+      "cta": "Wypróbuj Studio szablonów lub generator AI, żeby zobaczyć projekt na wybranym miejscu, zanim się zdecydujesz."
+    },
+    "make-a-tattoo-stencil-at-home": {
+      "title": "Jak zrobić szablon tatuażu w domu: praktyczne metody",
+      "short": "Jak zrobić szablon tatuażu w domu",
+      "blurb": "Sposoby na zrobienie szablonu tatuażu w domu bez drukarki termicznej, dla tatuatorów i do ćwiczeń na papierze lub metodami tymczasowymi.",
+      "metaTitle": "Jak zrobić szablon tatuażu w domu bez drukarki",
+      "metaDesc": "Jak zrobić szablon tatuażu w domu bez drukarki termicznej: kalka, transfer ze zwykłego papieru i czysty plik z liniami, plus uwaga o bezpieczeństwie.",
+      "updated": "2026-11-26",
+      "answer": "Żeby zrobić szablon tatuażu w domu, zacznij od czystego rysunku liniowego w odpowiednim rozmiarze. Obrysuj go na kalce albo wydrukuj na zwykłym papierze i przenieś ręcznie. Te metody służą do ćwiczeń na papierze lub metod tymczasowych. Prawdziwe tatuowanie należy do wykwalifikowanego tatuatora.",
+      "sections": [
+        {
+          "h2": "Zanim zrobisz szablon tatuażu w domu",
+          "blocks": [
+            {
+              "p": "Jak zrobić szablon tatuażu w domu? Wystarczy drukarka, papier i kilka podstawowych materiałów. Szablon to rysunek liniowy projektu, używany jako wskazówka, żeby wzór trafił we właściwe miejsce i w odpowiednim rozmiarze."
+            },
+            {
+              "p": "Ten poradnik jest dla tatuatorów, którzy potrzebują metody zapasowej, dla uczniów ćwiczących pracę z szablonem i dla osób, które chcą projekt na papierze lub tymczasowy znak. To nie jest poradnik tatuowania siebie ani nikogo innego."
+            },
+            {
+              "p": "**Uwaga o bezpieczeństwie:** prawdziwe tatuowanie musi wykonywać wykwalifikowany tatuator w licencjonowanym studiu, ze sterylnym sprzętem i właściwą pielęgnacją po zabiegu. Zrobienie szablonu i ćwiczenie na papierze lub metodami tymczasowymi to coś innego niż wprowadzanie tuszu w skórę. Proszę, nie próbuj tatuować w domu."
+            }
+          ]
+        },
+        {
+          "h2": "Czego potrzebujesz",
+          "blocks": [
+            {
+              "ul": [
+                "Czysty rysunek liniowy projektu, na papierze lub jako plik cyfrowy.",
+                "Linijka lub miara w milimetrach.",
+                "Kalka lub cienki papier.",
+                "Ostry ołówek lub cienki długopis.",
+                "Kalka kopiowa lub papier transferowy, jeśli obrysowujesz ręcznie.",
+                "Zwykła drukarka, czarny tusz i zwykły papier.",
+                "Taśma malarska do przytrzymania papieru.",
+                "Źródło światła, takie jak okno lub stolik podświetlany, które pomoże w obrysowywaniu."
+              ]
+            },
+            {
+              "p": "Jeśli pracujesz jako tatuator, używaj materiałów, których twoje studio już używa do skóry. Lista powyżej służy do ćwiczeń z szablonem na papierze i metod tymczasowych."
+            }
+          ]
+        },
+        {
+          "h2": "Metoda 1: kalka i papier kopiowy",
+          "blocks": [
+            {
+              "p": "To metoda staroświecka i nadal działa. Nie wymaga elektroniki."
+            },
+            {
+              "ol": [
+                "Połóż rysunek na płaskiej powierzchni i przykryj go kalką.",
+                "Obrysuj główne linie ostrym ołówkiem, dociskając równo.",
+                "Pomiń cieniowanie i wypełnienia. Szablon potrzebuje tylko konturów i kluczowych detali.",
+                "Połóż papier kopiowy lub transferowy pod kalką, stroną z węglem do powierzchni docelowej.",
+                "Przyklej warstwy taśmą, żeby nic się nie przesunęło.",
+                "Przejedź linie jeszcze raz długopisem, żeby je przenieść."
+              ]
+            },
+            {
+              "p": "Wynikiem jest kopia linii na nowej powierzchni. Do ćwiczeń jest to zwykle papier lub materiał treningowy. Inne opcje przenoszenia opisuje nasz poradnik o [metodach przenoszenia](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Metoda 2: wydruk na zwykłym papierze i przeniesienie",
+          "blocks": [
+            {
+              "p": "Zwykła drukarka może wydrukować linie szablonu na zwykłym papierze. Potem możesz ręcznie przenieść linie na powierzchnię do ćwiczeń."
+            },
+            {
+              "ol": [
+                "Wydrukuj rysunek liniowy w 100 procentach, bez skalowania.",
+                "Sprawdź rozmiar linijką. Wydrukowana szerokość powinna odpowiadać wybranej.",
+                "Połóż wydruk na powierzchni do ćwiczeń i obrysuj linie długopisem, żeby przeniosły się przez papier kopiowy lub transferowy.",
+                "Unieś papier i obejrzyj wynik. Brakujące linie popraw ołówkiem."
+              ]
+            },
+            {
+              "p": "Pamiętaj, że szablon przenoszony z tyłu papieru jest lustrzanym odbiciem końcowego projektu. Sprawdź kierunek, zanim zaczniesz, zwłaszcza przy tekście."
+            }
+          ]
+        },
+        {
+          "h2": "Metoda 3: czysty plik z liniami i drukarka",
+          "blocks": [
+            {
+              "p": "Im czystszy plik z liniami, tym łatwiejszy każdy kolejny krok. Dobry plik ma cienkie, pełne czarne linie na białym tle, bez szarej mgły i zabłąkanych kropek."
+            },
+            {
+              "p": "[Studio](studio) zamienia twój rysunek, flash lub zdjęcie w szablon na twoim urządzeniu, a nic nie jest wysyłane. Tworzy czystą wersję z linii w rozmiarze ustawionym w milimetrach, którą wydrukujesz na zwykłej drukarce."
+            },
+            {
+              "p": "Jeśli zaczynasz od zdjęcia, nasz poradnik o [szablonie tatuażu ze zdjęcia](guide:tattoo-stencil-from-photo) wyjaśnia, jak uzyskać czysty wynik. Generator AI na stronie głównej potrafi też stworzyć projekt z opisu lub przykładowego obrazka i zrobić szablon do wydruku w rzeczywistym rozmiarze (300 dpi). Można go wypróbować za darmo. Darmowe pliki mają znak wodny, a karnet dzienny lub Pro go usuwa."
+            }
+          ]
+        },
+        {
+          "h2": "Dobierz właściwy rozmiar",
+          "blocks": [
+            {
+              "p": "Szablon w złym rozmiarze marnuje całą resztę pracy. Najpierw ustal rozmiar w milimetrach i upewnij się, że plik i drukarka go respektują."
+            },
+            {
+              "ul": [
+                "Wyeksportuj szablon w 300 dpi.",
+                "Drukuj w 100 procentach. Wyłącz opcje takie jak dopasowanie do strony lub zmniejszanie do rozmiaru.",
+                "Zmierz wydruk linijką i porównaj z docelowym rozmiarem.",
+                "Jeśli się różni, sprawdź skalę wydruku i drukuj jeszcze raz."
+              ]
+            },
+            {
+              "p": "Nasz poradnik o [druku w rzeczywistym rozmiarze](guide:tattoo-stencil-size-true-size-print) dokładniej wyjaśnia wyliczenia, a [tabela rozmiarów tatuaży](guide:tattoo-size-chart-by-body-part) pokazuje typowe rozmiary dla każdej części ciała."
+            }
+          ]
+        },
+        {
+          "h2": "Wskazówki na czystszy wynik",
+          "blocks": [
+            {
+              "ul": [
+                "Używaj mniej, ale czystszych linii. Zbyt wiele detali zamienia się w plamę przy przenoszeniu.",
+                "Zachowaj kopię oryginału i pracuj na kopii.",
+                "Używaj lekkiego dotyku i ostrych narzędzi.",
+                "Najpierw przetestuj na zbędnej kartce, zanim użyjesz ostatecznego arkusza.",
+                "Dbaj o ciemny tusz w drukarce. Blade linie trudno śledzić.",
+                "Opisz każdy arkusz rozmiarem i datą, żeby wiedzieć, którą wersję zrobiono."
+              ]
+            },
+            {
+              "p": "Jeśli szablon jest dla prawdziwego klienta, powinien go zatwierdzić tatuator, który będzie wykonywał pracę. Zna swoją technikę i to, na co pozwoli skóra."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy mogę zrobić szablon tatuażu bez drukarki termicznej?",
+          "a": "Tak. Możesz obrysować projekt na kalce, użyć papieru kopiowego lub transferowego albo wydrukować linie na zwykłej drukarce i przenieść je ręcznie."
+        },
+        {
+          "q": "Jakiego papieru użyć do domowego szablonu tatuażu?",
+          "a": "Cienka kalka dobrze sprawdza się do obrysowywania ręką, a zwykły papier do drukarki do szablonu z wydruku. Wybierz papier, który zostaje płaski i się nie rwie."
+        },
+        {
+          "q": "Jak upewnić się, że szablon ma właściwy rozmiar?",
+          "a": "Ustaw szerokość w milimetrach, wyeksportuj w 300 dpi i drukuj w 100 procentach. Potem zmierz wydruk linijką."
+        },
+        {
+          "q": "Czy bezpiecznie jest tatuować siebie za pomocą szablonu?",
+          "a": "Nie. Prawdziwe tatuowanie powinien wykonywać wykwalifikowany tatuator w licencjonowanym studiu. Szablon służy do ćwiczeń na papierze, metod tymczasowych lub do użytku profesjonalistów."
+        },
+        {
+          "q": "Dlaczego mój szablon wychodzi rozmazany?",
+          "a": "Plik źródłowy jest prawdopodobnie za mały lub za miękki. Zacznij od czystego pliku z liniami w wysokiej rozdzielczości i drukuj w 300 dpi."
+        }
+      ],
+      "cta": "Otwórz Studio, żeby zamienić rysunek w czysty szablon w wybranym rozmiarze, gotowy do wydrukowania w domu."
+    },
+    "free-tattoo-stencil-maker-guide": {
+      "title": "Darmowy generator szablonów tatuażu: na co zwrócić uwagę",
+      "short": "Darmowy generator szablonów tatuażu: na co uważać",
+      "blurb": "Lista kontrolna do oceny każdego darmowego generatora szablonów tatuażu, co zwykle ogranicza wersja darmowa i test na pięć minut.",
+      "metaTitle": "Darmowy generator szablonów tatuażu: lista kontrolna",
+      "metaDesc": "Jak ocenić darmowy generator szablonów tatuażu: czyste linie, rozmiar w mm, druk w rzeczywistej skali, prywatność i pięciominutowy test na własnym rysunku.",
+      "updated": "2026-11-26",
+      "answer": "Dobry darmowy generator szablonów tatuażu daje czyste czarne linie, pozwala ustawić rozmiar w milimetrach, drukuje w rzeczywistej skali, pokazuje podgląd na skórze i szanuje twoją prywatność. Przetestuj każde narzędzie w pięć minut na własnym rysunku i przeczytaj, co ogranicza wersja darmowa.",
+      "sections": [
+        {
+          "h2": "Co powinien robić darmowy generator szablonów tatuażu",
+          "blocks": [
+            {
+              "p": "Darmowy generator szablonów tatuażu zamienia obraz w rysunek liniowy, który możesz wydrukować i użyć jako wskazówki. Brzmi to prosto, ale wyniki bardzo się różnią między narzędziami. Niektóre dają wyraźne linie we właściwym rozmiarze. Inne dają szarą plamę w złym rozmiarze ze znakiem wodnym pośrodku."
+            },
+            {
+              "p": "Zanim poświęcisz czas na jakiekolwiek narzędzie, wiedz, co robi dobre. Kolejne sekcje wymieniają podstawowe funkcje i dają listę kontrolną, którą zastosujesz do każdego narzędzia."
+            }
+          ]
+        },
+        {
+          "h2": "Czyste linie",
+          "blocks": [
+            {
+              "p": "Szablon to zestaw linii, więc jakość linii to pierwsze, co oceniasz. Chcesz pełnych, równych czarnych linii na białym tle. Szukaj tych oznak dobrego wyniku:"
+            },
+            {
+              "ul": [
+                "Gładkie krzywe, bez poszarpanych krawędzi.",
+                "Brak szarej mgły i plamkowego szumu wokół linii.",
+                "Detale wciąż widoczne po konwersji, a nie zgubione lub podwojone.",
+                "Możliwość regulacji progu lub siły linii, żeby dopracować wynik."
+              ]
+            },
+            {
+              "p": "Narzędzie z jednym stałym filtrem może działać dla niektórych obrazów, a zawodzić dla innych. Narzędzie z regulacją daje większą szansę na czysty wynik z twoją własną pracą."
+            }
+          ]
+        },
+        {
+          "h2": "Rozmiar w milimetrach i druk w rzeczywistej skali",
+          "blocks": [
+            {
+              "p": "Szablon, który drukuje się w złym rozmiarze, jest bezużyteczny, więc kontrola rozmiaru liczy się bardziej niż prawie jakakolwiek inna funkcja. Dobre narzędzie pozwala wpisać szerokość lub wysokość w milimetrach i mówi, co to oznacza w pikselach przy 300 dpi."
+            },
+            {
+              "p": "300 dpi to zwykły cel dla wydruku, któremu będzie się przyglądać z bliska. Przy takiej gęstości cienka linia zostaje czysta na papierze. Narzędzie powinno też eksportować plik, który drukuje się w 100 procentach bez niespodzianek. Jeśli chcesz wyliczeń, zajrzyj do poradnika o [druku w rzeczywistym rozmiarze](guide:tattoo-stencil-size-true-size-print)."
+            },
+            {
+              "p": "Typowe rozmiary dla poszczególnych części ciała znajdziesz w [tabeli rozmiarów tatuaży](guide:tattoo-size-chart-by-body-part)."
+            }
+          ]
+        },
+        {
+          "h2": "Podgląd na skórze i prywatność",
+          "blocks": [
+            {
+              "h3": "Podgląd"
+            },
+            {
+              "p": "Zobaczenie projektu na części ciała pomaga ocenić skalę i miejsce przed drukiem. Narzędzia pokazujące podgląd na różnych częściach ciała i odcieniach skóry oszczędzają dużo zgadywania. Nasz [poradnik o wyborze miejsca na tatuaż](guide:tattoo-placement-guide) wyjaśnia, jak to wykorzystać."
+            },
+            {
+              "h3": "Prywatność"
+            },
+            {
+              "p": "Twoje rysunki i zdjęcia mogą być osobiste. Sprawdź, czy narzędzie wysyła obraz na serwer, czy przetwarza go na twoim urządzeniu. Narzędzie, które przetwarza na urządzeniu, zostawia obraz u ciebie. Jeśli wysyła, szukaj jasnej informacji, jak długo plik jest przechowywany i kto może go zobaczyć."
+            }
+          ]
+        },
+        {
+          "h2": "Lista kontrolna dla każdego narzędzia, także Skinstencil",
+          "blocks": [
+            {
+              "p": "Użyj tej listy do oceny każdego darmowego generatora szablonów tatuażu. Zaznacz każdy punkt, zanim na którymś zaczniesz polegać."
+            },
+            {
+              "ul": [
+                "Czy daje czyste, pełne linie z twojego własnego obrazu?",
+                "Czy możesz ustawić rozmiar w milimetrach?",
+                "Czy eksportuje w 300 dpi do druku w rzeczywistej skali?",
+                "Czy jest podgląd na części ciała?",
+                "Czy jasno mówi, co dzieje się z twoim obrazem?",
+                "Czy jest jasne, co jest darmowe, a co nie?",
+                "Czy możesz pobrać plik bez zakładania konta, którego nie chcesz?",
+                "Czy działa dla zdjęć, a nie tylko dla rysunków?"
+              ]
+            },
+            {
+              "p": "Skinstencil to jeden z przykładów, który możesz przepuścić przez tę samą listę. [Studio](studio) zamienia twój rysunek, flash lub zdjęcie w szablon na twoim urządzeniu, a nic nie jest wysyłane. Generator AI na stronie głównej tworzy projekt z opisu lub przykładowego obrazka, pokazuje go na 8 częściach ciała (łopatka, plecy, przedramię, ramię, klatka piersiowa, żebra, udo i łydka) i 6 odcieniach skóry oraz robi szablon, który wydrukujesz w rzeczywistym rozmiarze (300 dpi). Oceń go tak, jak każde inne narzędzie."
+            }
+          ]
+        },
+        {
+          "h2": "Co zwykle ogranicza wersja darmowa",
+          "blocks": [
+            {
+              "p": "Większość darmowych narzędzi ma limity i warto poszukać ich z góry. Częste to:"
+            },
+            {
+              "ul": [
+                "Znak wodny na pobranych plikach.",
+                "Limit liczby konwersji lub pobrań.",
+                "Niższa rozdzielczość wyniku w planie darmowym.",
+                "Mniej opcji regulacji.",
+                "Funkcje wymagające konta."
+              ]
+            },
+            {
+              "p": "Żaden z nich nie jest zły sam w sobie. Darmowy poziom pozwala wypróbować narzędzie, zanim się zdecydujesz. Chodzi o to, żeby limit był jasny i żeby było wiadomo, co dostajesz. W Skinstencil można go wypróbować za darmo. Darmowe pliki mają znak wodny, a karnet dzienny lub Pro go usuwa. Aktualny plan sprawdź na stronie."
+            }
+          ]
+        },
+        {
+          "h2": "Przetestuj każde narzędzie w pięć minut",
+          "blocks": [
+            {
+              "p": "Nie potrzebujesz długiej recenzji. Użyj własnego rysunku i wykonaj te kroki."
+            },
+            {
+              "ol": [
+                "Wybierz prosty własny rysunek z wyraźnymi liniami. Skan lub zdjęcie szkicu się nadaje.",
+                "Wczytaj go do narzędzia i zanotuj, jak długo to trwa.",
+                "Sprawdź jakość linii w pełnym powiększeniu.",
+                "Ustaw rozmiar w milimetrach, na przykład 100 mm.",
+                "Pobierz wynik i wydrukuj w 100 procentach.",
+                "Zmierz wydruk linijką.",
+                "Sprawdź, jak wygląda pobrany plik, w tym ewentualny znak wodny."
+              ]
+            },
+            {
+              "p": "Jeśli wydruk odpowiada ustawionemu rozmiarowi, a linie wyglądają czysto, narzędzie zdaje podstawy. Jeśli nie, przejdź do innego."
+            }
+          ]
+        },
+        {
+          "h2": "Kiedy zdjęcie wymaga trybu Zdjęcie",
+          "blocks": [
+            {
+              "p": "Rysunek na białym papierze konwertuje się łatwo, bo linie są już ciemne, a tło jednolite. Zdjęcie jest trudniejsze. Ma cienie, kolory, faktury i miękkie krawędzie, a prosty filtr zamieni je w szum."
+            },
+            {
+              "p": "Jeśli twoje źródło to zdjęcie, szukaj narzędzia z osobnym trybem zdjęcia. Powinien upraszczać tony i wybierać główne kontury, żeby wynik czytał się jak szablon. Nasz poradnik o [szablonie tatuażu ze zdjęcia](guide:tattoo-stencil-from-photo) wyjaśnia, jak uzyskać najlepszy wynik."
+            },
+            {
+              "p": "Wskazówka dla każdego zdjęcia: dobre światło, ostry obraz i, gdzie się da, jednolite tło. Lepsze wejście daje czystszy szablon."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Czy istnieje darmowy generator szablonów tatuażu?",
+          "a": "Tak, kilka narzędzi oferuje darmowy poziom. Sprawdź limity, takie jak znaki wodne, limity pobrań lub niższa rozdzielczość, zanim zaczniesz na nim polegać."
+        },
+        {
+          "q": "Czy mogę za darmo zrobić szablon tatuażu ze zdjęcia?",
+          "a": "Często tak, ale zdjęcia wymagają większej uwagi niż rysunki. Użyj narzędzia z trybem zdjęcia i ostrego, dobrze oświetlonego źródła."
+        },
+        {
+          "q": "W jakim rozmiarze eksportować szablon?",
+          "a": "Wybierz rozmiar w milimetrach, który chcesz na skórze, i wyeksportuj w 300 dpi. Potem drukuj w 100 procentach i zmierz wynik."
+        },
+        {
+          "q": "Czy moje obrazy są bezpieczne w internetowym generatorze szablonów?",
+          "a": "To zależy od narzędzia. Szukaj takiego, które przetwarza obrazy na twoim urządzeniu albo jasno podaje, jak długo pliki są przechowywane i kto może je zobaczyć."
+        },
+        {
+          "q": "Dlaczego darmowe pliki mają znak wodny?",
+          "a": "Znak wodny to częsty limit planów darmowych. Wiele narzędzi usuwa go w opcji płatnej, więc sprawdź, co oferuje narzędzie."
+        }
+      ],
+      "cta": "Wypróbuj Studio Skinstencil na własnym rysunku i sam przepuść je przez listę kontrolną."
     }
   }
 }

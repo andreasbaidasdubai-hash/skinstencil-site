@@ -23,6 +23,18 @@
     "tattoo-stencil-from-photo",
     "tattoo-stencil-size-true-size-print",
     "tattoo-stencil-transfer-methods",
+    "ai-tattoo-generator-guide",
+    "ai-tattoo-prompts",
+    "see-a-tattoo-on-your-body-before-you-get-it",
+    "fine-line-tattoo-stencil-tips",
+    "how-to-apply-a-tattoo-stencil",
+    "how-long-does-a-tattoo-stencil-last",
+    "tattoo-stencil-paper-guide",
+    "tattoo-stencil-printer-guide",
+    "tattoo-size-chart-by-body-part",
+    "tattoo-placement-guide",
+    "make-a-tattoo-stencil-at-home",
+    "free-tattoo-stencil-maker-guide",
     "brow-mapping-on-a-photo-start-arch-end",
     "brow-mapping-measurements-scale-and-print-true-size"
   ],
@@ -843,6 +855,2259 @@
         }
       ],
       "cta": "Stel de schaal in, lees de metingen af en print de gids op ware grootte. [Open wenkbrauw mapping](brow)."
+    },
+    "ai-tattoo-generator-guide": {
+      "title": "AI tattoo generator: zo gebruik je er een en krijg je een ontwerp dat een tatoeëerder kan zetten",
+      "short": "AI tattoo generator: zo gebruik je hem goed",
+      "blurb": "Wat een AI tattoo generator wel en niet kan, en hoe je een schoon ontwerp meeneemt naar je tatoeëerder.",
+      "metaTitle": "AI tattoo generator: ontwerp voor je tatoeëerder",
+      "metaDesc": "Zo gebruik je een AI tattoo generator goed: duidelijke omschrijving, schone lijnen, check het resultaat en ga ermee naar je tatoeëerder.",
+      "updated": "2026-11-26",
+      "answer": "Een AI tattoo generator maakt in seconden een tattoo-ontwerp van een beschrijving of een voorbeeldafbeelding. Gebruik hem om ideeën te verkennen en controleer dan of de lijnen schoon zijn en de details niet te klein. Zie het resultaat als een eerste versie en neem het mee naar je tatoeëerder, die het aanpast voor de huid.",
+      "sections": [
+        {
+          "h2": "Wat een AI tattoo generator echt doet",
+          "blocks": [
+            {
+              "p": "Een AI tattoo generator maakt een afbeelding van woorden, of van een voorbeeldafbeelding die je zelf aanlevert. Jij beschrijft het idee, hij geeft een ontwerp terug, en je kunt de beschrijving aanpassen en opnieuw proberen. Meer is het niet: je krijgt iets om naar te kijken en op te reageren."
+            },
+            {
+              "p": "Het is een snelle manier om te verkennen. In plaats van een half uitgewerkt idee aan een tatoeëerder te beschrijven en te hopen dat jullie hetzelfde voor je zien, kom je met iets concreets. Ook een ruw ontwerp maakt het gesprek korter, want je kunt zeggen: “meer zoals dit, minder zoals dat”."
+            },
+            {
+              "p": "In Skinstencil maakt de generator op de homepage een ontwerp van een beschrijving of een voorbeeldafbeelding en laat hij het zien op 8 lichaamsdelen en 6 huidtinten. Hij kan ook een stencil maken die je op ware grootte (300 dpi) kunt printen. Je kunt het gratis proberen."
+            }
+          ]
+        },
+        {
+          "h2": "Wat een AI tattoo generator niet kan",
+          "blocks": [
+            {
+              "p": "Een gegenereerde afbeelding is een plaatje, geen tattooplan. Het weet niet hoe inkt zich in de huid gedraagt, hoe je lichaam beweegt of hoe een lijn er over tien jaar uitziet. Wees duidelijk over de grenzen voordat je verliefd wordt op een resultaat."
+            },
+            {
+              "ul": [
+                "**Hij kan niet beoordelen wat goed te tatoeëren is.** Heel kleine details en haarfijne openingen zien er op een scherm prima uit en lopen op de huid in elkaar over.",
+                "**Hij vervangt je tatoeëerder niet.** Plaatsing, grootte en lijnwerk zijn beslissingen voor degene die de machine vasthoudt.",
+                "**Hij volgt je woorden niet altijd precies.** Handen, letters en symmetrische vormen gaan vaak mis, dus kijk goed.",
+                "**Hij kan een ontwerp niet origineel maken in juridische of persoonlijke zin.** Daarover straks meer."
+              ]
+            },
+            {
+              "p": "Zie het resultaat als een schets van een snelle assistent. Nuttig, maar niet af."
+            }
+          ]
+        },
+        {
+          "h2": "Schrijf een omschrijving die de generator kan volgen",
+          "blocks": [
+            {
+              "p": "Vage woorden geven vage ontwerpen. Een goede omschrijving noemt het onderwerp, de stijl, hoe zwaar de lijnen zijn en wat je niet wilt. Een kort voorbeeld: “één wolvenkop, traditionele stijl, dikke contouren, geen achtergrond, geen arcering”."
+            },
+            {
+              "p": "Heb je een referentie, gebruik die dan. Een voorbeeldafbeelding vertelt de generator meer over sfeer en compositie dan een alinea vol bijvoeglijke naamwoorden. Kies een referentie om de stijl of de opbouw, niet omdat je hem wilt namaken."
+            },
+            {
+              "p": "We hebben een volledige lijst met formuleringen, per stijl gegroepeerd, in [AI tattoo prompts](guide:ai-tattoo-prompts). Begin daar als je naar een leeg invoerveld zit te staren."
+            }
+          ]
+        },
+        {
+          "h2": "Krijg een ontwerp dat een tatoeëerder echt kan zetten",
+          "blocks": [
+            {
+              "p": "Het verschil tussen een mooi plaatje en een ontwerp dat te tatoeëren is, zit vooral in eenvoud. Vraag om dingen waar tatoeëerders elke dag mee werken."
+            },
+            {
+              "ul": [
+                "**Schone, doorlopende lijnen.** Zeg “schone contouren” of “strak lijnwerk”. Vraag niet om een schetsmatige of krasserige look, tenzij dat het doel is.",
+                "**Geen kleine ruis.** Spikkels, fijne arcering en tientallen kleine details worden vlekken op de huid. Vraag om “minimaal detail” of “geen textuur”.",
+                "**Ruimte tussen de elementen.** Lijnen die bijna raken, lopen na verloop van tijd in elkaar over. Vraag om open tussenruimtes.",
+                "**Een egale achtergrond.** Een ontwerp dat op wit zweeft, is makkelijker tot stencil om te zetten dan een ontwerp met een druk tafereel erachter.",
+                "**Eén duidelijk idee.** Eén hoofdonderwerp leest beter dan een volle collage."
+              ]
+            },
+            {
+              "p": "Is een resultaat bijna goed maar te druk, genereer dan opnieuw met minder woorden in plaats van meer. Haal eerst detail weg en voeg daarna terug wat je mist."
+            }
+          ]
+        },
+        {
+          "h2": "Controlelijst voordat je naar je tatoeëerder gaat",
+          "blocks": [
+            {
+              "p": "Besteed vijf minuten aan het ontwerp voordat je een afspraak maakt. Zoom in en bekijk het daarna klein, op de grootte die het echt op je arm of enkel zou hebben."
+            },
+            {
+              "ol": [
+                "**Zoom in.** Zijn de lijnen strak, of vallen ze uiteen en wiebelen ze?",
+                "**Maak het klein.** Print het op de grootte die je wilt, of bekijk het klein op het scherm. Overleeft het detail dat?",
+                "**Check de openingen.** Liggen er twee lijnen dichter bij elkaar dan je lief is als ze in elkaar overlopen?",
+                "**Check de anatomie.** Tel vingers, ogen en bloemblaadjes. Bekijk letters en symbolen een voor een.",
+                "**Probeer het op het lichaam.** Bekijk het op het lichaamsdeel dat je in gedachten hebt en op een huidtint die dicht bij de jouwe ligt.",
+                "**Bedenk wat je zou veranderen.** Noteer twee of drie dingen, zodat je ze in het consult kunt aankaarten."
+              ]
+            },
+            {
+              "p": "De [stencil Studio](studio) helpt bij de grootte-check: hij maakt van een tekening, flash of foto een stencil op je eigen apparaat, zonder iets te uploaden. Voor het printen, zie [tattoo stencil grootte](guide:tattoo-stencil-size-true-size-print)."
+            }
+          ]
+        },
+        {
+          "h2": "Auteursrecht, originaliteit en je tatoeëerder",
+          "blocks": [
+            {
+              "p": "AI-afbeeldingen worden gemaakt op basis van patronen uit veel bestaande plaatjes, en de regels over wie ze bezit liggen op veel plekken nog niet vast. Ga er niet van uit dat een gegenereerd ontwerp automatisch uniek is, of dat niemand rechten heeft op iets wat erop lijkt."
+            },
+            {
+              "p": "Twee simpele gewoonten houden je aan de veilige kant. Vraag een generator ten eerste niet om een bekende kunstenaar of een specifiek werk van iemand te kopiëren, en gebruik hem niet om hun ontwerp wit te wassen. Laat het resultaat ten tweede aan je tatoeëerder zien en zeg er eerlijk bij dat het uit een AI-generator komt."
+            },
+            {
+              "p": "Een goede tatoeëerder tekent het vaak opnieuw, past de compositie aan en voegt er een eigen toets aan toe. Zo wordt een gegenereerd idee een ontwerp dat echt van jou is. Zegt je tatoeëerder nee tegen een ontwerp, accepteer dat dan en vraag wat hij of zij zelf zou tekenen."
+            }
+          ]
+        },
+        {
+          "h2": "Van gegenereerd ontwerp naar stencil",
+          "blocks": [
+            {
+              "p": "Zodra jij en je tatoeëerder het eens zijn over een ontwerp, moet het een stencil worden: een schone omlijning die op de juiste grootte is geprint. Meestal bereidt je tatoeëerder dit voor, maar veel mensen komen graag met een printbare versie om het te versnellen."
+            },
+            {
+              "p": "De generator kan een stencil maken die je op ware grootte (300 dpi) kunt printen. Gratis downloads hebben een watermerk, en met een dagpas of Pro verdwijnt dat. Neem het mee als startpunt en laat de tatoeëerder beslissen of hij het gebruikt, opnieuw tekent of op de dag zelf aanpast."
+            },
+            {
+              "p": "Hoe de stencil daarna op de huid komt, lees je in [tattoo stencil aanbrengen: methodes](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kan ik een met AI gemaakt ontwerp meenemen naar een tatoeëerder?",
+          "a": "Ja, maar vertel waar het vandaan komt. Veel tatoeëerders tekenen het opnieuw of passen het aan zodat het op de huid werkt, en sommigen weigeren het, wat hun keuze is."
+        },
+        {
+          "q": "Zijn AI tattoo-ontwerpen origineel?",
+          "a": "Niet automatisch. De juridische situatie rond AI-afbeeldingen verschilt per land en is nog in ontwikkeling, dus laat het aan je tatoeëerder zien en vraag niet om een kopie van het werk van een ander."
+        },
+        {
+          "q": "Waarom zien AI tattoo-ontwerpen er op het scherm goed uit en op de huid slecht?",
+          "a": "Een scherm toont haarfijn detail dat de huid niet kan vasthouden. Kleine openingen en fijne textuur lopen in elkaar over, dus vraag om schone lijnen en minimaal detail."
+        },
+        {
+          "q": "Kan een AI tattoo generator me de tattoo op mijn lichaam laten zien?",
+          "a": "Sommige wel. De generator van Skinstencil toont een ontwerp op 8 lichaamsdelen en 6 huidtinten, zodat je een idee krijgt van plaatsing en contrast."
+        },
+        {
+          "q": "Is de AI tattoo generator van Skinstencil gratis?",
+          "a": "Je kunt hem gratis proberen. Gratis downloads hebben een watermerk, en met een dagpas of Pro verdwijnt dat."
+        }
+      ],
+      "cta": "Probeer de AI tattoo generator op de homepage van Skinstencil, beschrijf je idee en zie het op je lichaamsdeel voordat je met je tatoeëerder praat."
+    },
+    "ai-tattoo-prompts": {
+      "title": "AI tattoo prompts: een formule en 25+ voorbeelden die werken",
+      "short": "AI tattoo prompts: formule en voorbeelden",
+      "blurb": "Een simpele prompt-formule, 25 voorbeeldprompts per stijl en hoe je een ontwerp bijstuurt dat nog niet goed is.",
+      "metaTitle": "AI tattoo prompts: formule en 25+ voorbeelden",
+      "metaDesc": "Schrijf betere AI tattoo prompts met een formule van vijf delen en 25+ kant-en-klare voorbeelden voor fine line, traditioneel, blackwork en geometrisch.",
+      "updated": "2026-11-26",
+      "answer": "Goede AI tattoo prompts bestaan uit vijf delen: het onderwerp, de stijl, de lijndikte, de compositie en wat je wilt vermijden. Bijvoorbeeld: “een vos, fine line stijl, dunne gelijkmatige lijnen, gecentreerd op een egale witte achtergrond, geen arcering”. Pas telkens één deel aan om het resultaat te verbeteren.",
+      "sections": [
+        {
+          "h2": "De formule voor AI tattoo prompts",
+          "blocks": [
+            {
+              "p": "De beste AI tattoo prompts zijn kort en specifiek. De meeste zwakke resultaten komen doordat een deel ontbreekt, waarna de generator de leemte met een eigen gok vult. Gebruik deze vijf delen, ongeveer in deze volgorde:"
+            },
+            {
+              "ol": [
+                "**Onderwerp.** Wat het is. “Een reiger die in water staat” wint het van “een vogel”.",
+                "**Stijl.** Fine line, traditioneel, blackwork, geometrisch, lettering, botanisch enzovoort.",
+                "**Lijndikte.** Dun, middel of dik, en gelijkmatig of gevarieerd.",
+                "**Compositie.** Gecentreerd, verticaal, om een lichaamsdeel heen, met of zonder rand, egale achtergrond.",
+                "**Wat je wilt vermijden.** Geen arcering, geen tekst, geen achtergrond, geen kleine details."
+              ]
+            },
+            {
+              "p": "Samengevoegd: “een reiger die in water staat, fine line stijl, dunne gelijkmatige lijnen, verticale compositie op een egale witte achtergrond, geen arcering, geen kleine details”."
+            },
+            {
+              "p": "Je hebt niet altijd elk deel nodig. Maar als een resultaat tegenvalt, kijk dan welke van de vijf je hebt overgeslagen."
+            }
+          ]
+        },
+        {
+          "h2": "Fine line prompts",
+          "blocks": [
+            {
+              "p": "Fine line ontwerpen leven van dunne, gelijkmatige streken en veel witruimte. Zeg dat, en vraag de generator zware vlakken weg te laten."
+            },
+            {
+              "ul": [
+                "Een tekening van het gezicht van een vrouw in één doorlopende lijn, fine line stijl, één dunne lijn, egale witte achtergrond",
+                "Een kleine maansikkel met drie sterren, fine line, dunne gelijkmatige lijnen, minimalistisch, geen arcering",
+                "Een kolibrie naast een bloem, fine line stijl, fijne dunne contouren, zonder vulling, witte achtergrond",
+                "Een bergketen bij zonsopgang, fine line, dunne lijnen, eenvoudige horizon, geen achtergrondtextuur",
+                "Twee handen die elkaar bijna raken, fine line stijl, dunne contouren, minimaal detail, gecentreerd"
+              ]
+            },
+            {
+              "p": "Meer over waarom deze stijl extra zorg vraagt, lees je in [fine line tattoo stencil tips](guide:fine-line-tattoo-stencil-tips)."
+            }
+          ]
+        },
+        {
+          "h2": "Traditionele en blackwork prompts",
+          "blocks": [
+            {
+              "p": "Traditioneel betekent dikke contouren en vlakke kleurblokken. Blackwork betekent massief zwart en sterk contrast. Beide vragen om zware lijnen, dus vraag erom."
+            },
+            {
+              "table": {
+                "head": [
+                  "Stijl",
+                  "Voorbeeldprompt"
+                ],
+                "rows": [
+                  [
+                    "Traditioneel",
+                    "Een roos met twee bladeren, traditionele tattoostijl, dikke zwarte contouren, vlakke arcering, egale witte achtergrond"
+                  ],
+                  [
+                    "Traditioneel",
+                    "Een zwaluw met een banner, traditionele stijl, dikke contouren, eenvoudige vormen, gecentreerd"
+                  ],
+                  [
+                    "Traditioneel",
+                    "Een dolk door een hart, traditionele tattoo flash, dikke lijnen, geen kleurverlopen"
+                  ],
+                  [
+                    "Traditioneel",
+                    "Een schip in woeste golven, traditionele stijl, zware contouren, beperkt detail"
+                  ],
+                  [
+                    "Blackwork",
+                    "Een raaf met open vleugels, blackwork stijl, massief zwarte vulling, hoog contrast, geen kleurverlopen"
+                  ],
+                  [
+                    "Blackwork",
+                    "Een slang om een dolk, blackwork, dikke zwarte vormen, schone randen"
+                  ],
+                  [
+                    "Blackwork",
+                    "Een volle maan boven dennenbomen, blackwork stijl, sterk zwart-wit contrast, geen grijze arcering"
+                  ],
+                  [
+                    "Blackwork",
+                    "Een schedel met bloemdetails, blackwork, massief zwart en een schoon lijnpatroon, egale achtergrond"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "h2": "Geometrische en lettering prompts",
+          "blocks": [
+            {
+              "p": "Geometrisch werk hangt af van precieze vormen en lettering van leesbare letters. Hier gaan generators het vaakst de fout in, dus houd het verzoek eenvoudig en controleer het resultaat nauwkeurig."
+            },
+            {
+              "ul": [
+                "Een wolvenkop opgebouwd uit driehoeken, geometrische stijl, dunne precieze lijnen, symmetrisch, witte achtergrond",
+                "Een mandala met achtvoudige symmetrie, geometrisch, middeldikke lijn, geen arcering",
+                "Een patroon van zeshoeken dat een kubus vormt, geometrische lijntekening, schone rechte lijnen, minimalistisch",
+                "Een geometrisch hert met een gewei van elkaar overlappende lijnen, dunne lijnen, gecentreerd",
+                "Het woord “Breathe” in elegant schrijfletterwerk, dunne letters, egale witte achtergrond, geen versiering",
+                "Het woord “Family” in dikke gotische letters, dikke streken, geen achtergrond, geen effecten",
+                "Een korte datum in Romeinse cijfers, schone schreefletters, gelijkmatige spatiëring, geen ornament"
+              ]
+            },
+            {
+              "p": "Lees bij tekst altijd elke letter van het resultaat. Generators kunnen tekens verwisselen of verzinnen. Veel mensen vragen om het ontwerp zonder tekst en voegen de woorden toe in de stencilstap, of laten de tatoeëerder de letters tekenen."
+            }
+          ]
+        },
+        {
+          "h2": "Botanische en dierprompts",
+          "blocks": [
+            {
+              "p": "Planten en dieren zijn dankbare onderwerpen. Ze passen bij bijna elke stijl, dus noem de stijl duidelijk en kies hoeveel detail je wilt."
+            },
+            {
+              "ul": [
+                "Een takje lavendel, botanische illustratiestijl, dunne lijnen, geen kleur, egale achtergrond",
+                "Een tak met olijfbladeren, fine line botanisch, fijne contouren, verticale compositie",
+                "Een pioenroos in volle bloei, botanische lijntekening, middeldikke lijnen, eenvoudige bloemblaadjes, geen arcering",
+                "Een veldboeket met een lint eromheen, fine line, dunne gelijkmatige streken, witte achtergrond",
+                "Een varen met een krullende top, botanische stijl, schone lijnen, minimaal detail",
+                "Een slapende kat die in een cirkel is opgekruld, eenvoudige lijntekening, middeldikke lijn, geen vachttextuur",
+                "Een leeuw in profiel, traditionele stijl, dikke contouren, vlakke vormen, geen achtergrond",
+                "Een koikarper die omhoog zwemt, schone contouren, middeldikke lijnen, eenvoudige schubben, witte achtergrond",
+                "Een vlinder met open vleugels, symmetrische lijntekening, dunne lijnen, zonder vulling",
+                "Een uil van voren gezien, blackwork stijl, massieve vormen, schone randen"
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Veelgemaakte fouten in prompts",
+          "blocks": [
+            {
+              "ul": [
+                "**Te vaag.** “Een coole tattoo” geeft je het gemiddelde idee van cool van de generator.",
+                "**Te vol.** Tien onderwerpen en zes stijlen geven een warboel. Kies één onderwerp en één stijl.",
+                "**Realisme en fine line tegelijk vragen.** Fotorealistische arcering en dunne contouren trekken in tegengestelde richtingen.",
+                "**De achtergrond vergeten.** Wil je een schone stencil, zeg dan “egale witte achtergrond”.",
+                "**Om kleine details vragen.** Woorden als “ingewikkeld” en “zeer gedetailleerd” leveren juist de ruis op die op de huid vervaagt.",
+                "**De stijl van een levende kunstenaar noemen.** Beschrijf de look liever in gewone woorden en kopieer niemand."
+              ]
+            },
+            {
+              "p": "Positieve en negatieve instructies werken samen. Zeg wat je wilt en zeg dan wat er weg moet."
+            }
+          ]
+        },
+        {
+          "h2": "Zo verfijn je stap voor stap",
+          "blocks": [
+            {
+              "p": "Zie het eerste resultaat als een eerste versie. Verander telkens één deel van de prompt, zodat je weet wat elk verschil veroorzaakt."
+            },
+            {
+              "ol": [
+                "Genereer een eerste versie met alle vijf de delen.",
+                "Klopt het onderwerp niet, herschrijf dan alleen het onderwerp.",
+                "Is het te druk, voeg dan “minimaal detail” en “geen arcering” toe, of haal bijvoeglijke naamwoorden weg.",
+                "Zijn de lijnen te zwaar of te licht, pas dan alleen het woord voor de lijndikte aan.",
+                "Ziet het er goed uit, bekijk het dan klein en op het lichaamsdeel dat je wilt gebruiken."
+              ]
+            },
+            {
+              "p": "Je kunt ook beginnen met een voorbeeldafbeelding en een korte beschrijving toevoegen. De generator van Skinstencil accepteert een beschrijving en een voorbeeldafbeelding, en laat het ontwerp zien op 8 lichaamsdelen en 6 huidtinten. Gratis te proberen; gratis downloads hebben een watermerk."
+            },
+            {
+              "p": "Wat je ook krijgt, loop het door met de controlelijst in [onze gids over de AI tattoo generator](guide:ai-tattoo-generator-guide) en laat het aan je tatoeëerder zien."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wat maakt een goede AI tattoo prompt?",
+          "a": "Een goede prompt noemt het onderwerp, de stijl, de lijndikte, de compositie en wat je wilt vermijden. Kort en specifiek wint het van lang en vaag."
+        },
+        {
+          "q": "Hoe lang moet een AI tattoo prompt zijn?",
+          "a": "Een of twee regels is meestal genoeg. Extra bijvoeglijke naamwoorden voegen eerder ruis toe dan kwaliteit."
+        },
+        {
+          "q": "Hoe voorkom ik dat een AI tattoo te veel detail heeft?",
+          "a": "Voeg zinnen toe als “minimaal detail”, “geen arcering” en “egale witte achtergrond”, en vermijd woorden als “ingewikkeld”."
+        },
+        {
+          "q": "Kan ik een afbeelding gebruiken in plaats van een prompt?",
+          "a": "Ja. De generator van Skinstencil kan werken met een voorbeeldafbeelding, met of zonder korte beschrijving."
+        },
+        {
+          "q": "Waarom ziet de tekst in mijn AI tattoo er verkeerd uit?",
+          "a": "Generators spellen letters vaak fout of vervormen ze. Controleer elk teken, of laat de tekst weg en laat de letters door je tatoeëerder tekenen."
+        }
+      ],
+      "cta": "Plak een van deze prompts in de AI-generator van Skinstencil, zie het op je lichaamsdeel en maak een stencil die je kunt printen."
+    },
+    "see-a-tattoo-on-your-body-before-you-get-it": {
+      "title": "Tattoo op je lichaam bekijken voordat je hem zet: 4 manieren om te testen",
+      "short": "Tattoo op je lichaam bekijken voor je hem zet",
+      "blurb": "Vier manieren om een tattoo op de huid te bekijken, wat een voorbeeld niet kan laten zien en een controlelijst voor je consult.",
+      "metaTitle": "Tattoo op je lichaam bekijken voor je hem zet",
+      "metaDesc": "Vier manieren om een tattoo op je lichaam te bekijken: apps, fotomock-ups, tijdelijke transfers en een stencil op de huid. En wat geen voorbeeld laat zien.",
+      "updated": "2026-11-26",
+      "answer": "Je kunt een tattoo op je lichaam bekijken voordat je hem zet door het ontwerp op een foto te plaatsen, een preview-app of generator te gebruiken, het op ware grootte te printen en tegen je huid te houden, of je tatoeëerder een stencil te laten aanbrengen. Elke manier laat iets anders zien, en geen enkele laat zien hoe het geneest.",
+      "sections": [
+        {
+          "h2": "Waarom je een tattoo eerst op je lichaam moet bekijken",
+          "blocks": [
+            {
+              "p": "Om een tattoo op je lichaam te bekijken voordat je je vastlegt, heb je meer nodig dan een scherm. Een ontwerp dat er op een scherm perfect uitziet, kan op je onderarm verkeerd voelen. Het is misschien te groot, zit te hoog of staat in een hoek die tegen je spieren in gaat. Het doel van een voorbeeld is dat uit te zoeken zolang het nog gratis te veranderen is."
+            },
+            {
+              "p": "Het helpt ook bij het gesprek met je tatoeëerder. Op je eigen arm wijzen en zeggen “hier, ongeveer zo breed” is duidelijker dan het beschrijven. De meeste mensen moeten een tattoo op hun lichaam zien voordat het idee echt wordt, en dat is een goed instinct."
+            },
+            {
+              "p": "De vier manieren hieronder gaan van snelst naar betrouwbaarst. Je hebt ze niet allemaal nodig, maar hoe definitiever en zichtbaarder de plek, hoe meer ervan je moet gebruiken."
+            },
+            {
+              "p": "Elke stap beantwoordt een andere vraag. Een foto beantwoordt of je het idee mooi vindt. Een printout beantwoordt of de grootte klopt. Een tijdelijke versie beantwoordt of je er graag mee leeft. De stencil van je tatoeëerder beantwoordt of de plaatsing werkt op jouw lichaam."
+            }
+          ]
+        },
+        {
+          "h2": "Manier 1: een voorbeeld op een foto of in een app",
+          "blocks": [
+            {
+              "p": "De snelste route is het ontwerp op een foto van jezelf plaatsen. Sommige tools laten je een ontwerp op een afbeelding zetten, en sommige tonen het op een model."
+            },
+            {
+              "p": "De AI-generator van Skinstencil op de homepage maakt een ontwerp van een beschrijving of een voorbeeldafbeelding en laat het zien op 8 lichaamsdelen en 6 huidtinten. Zo krijg je snel een gevoel voor plaatsing en contrast voordat je iets besluit. Je kunt het gratis proberen."
+            },
+            {
+              "p": "Maak je een mock-up op je eigen foto, neem die dan recht van voren, in gelijkmatig licht, met het lichaamsdeel ontspannen. Een foto onder een rare hoek geeft een vertekend voorbeeld."
+            },
+            {
+              "p": "Een schermvoorbeeld is goed voor compositie en idee. Het is zwak in ware grootte, dus ga door naar de volgende stappen voordat je je vastlegt."
+            }
+          ]
+        },
+        {
+          "h2": "Manier 2: print het op ware grootte en houd het ertegenaan",
+          "blocks": [
+            {
+              "p": "De grootte is wat op een scherm het vaakst verkeerd wordt ingeschat. Print het ontwerp op de echte breedte, knip het uit en houd het tegen je huid, of plak het losjes vast. Je ziet meteen of het te groot of te klein is."
+            },
+            {
+              "p": "Om op de juiste grootte te printen, stel je de maat in millimeters in en print je op 100 procent zonder schaling. Onze gids over [tattoo stencil grootte](guide:tattoo-stencil-size-true-size-print) laat zien hoe, en de generator van Skinstencil kan een stencil maken die je op ware grootte (300 dpi) kunt printen."
+            },
+            {
+              "p": "Dit kost alleen papier en duurt tien minuten. Voor de meeste mensen is het de nuttigste stap."
+            }
+          ]
+        },
+        {
+          "h2": "Manier 3: een tijdelijke transfer of getekende mock-up",
+          "blocks": [
+            {
+              "p": "Om het een dag of twee op de huid te zien, kun je een tijdelijke tattoo van je eigen ontwerp gebruiken, of de omtrek met een huidveilige pen tekenen. Draag je het thuis, dan zie je hoe het eruitziet als je beweegt, zit en je aankleedt."
+            },
+            {
+              "p": "Gebruik producten die voor de huid zijn gemaakt en volg de instructies. Heb je een gevoelige huid of een huidaandoening, vraag dan je tatoeëerder of een apotheker wat voor jou geschikt is."
+            }
+          ]
+        },
+        {
+          "h2": "Manier 4: een stencil die je tatoeëerder aanbrengt",
+          "blocks": [
+            {
+              "p": "Het betrouwbaarste voorbeeld is de echte stencil, geplaatst door degene die je gaat tatoeëren. Tatoeëerders plaatsen hem meestal, vragen je te staan en te bewegen, en passen aan tot het goed zit. Laat je hier niet opjagen. Kijk vanuit meerdere hoeken in een spiegel."
+            },
+            {
+              "p": "Check de randen net zo goed als het midden. Een ontwerp kan van voren in balans lijken en opzij leunen als je draait. Voelt iets niet goed, zeg het dan. Een stencil verplaatsen is makkelijk, een tattoo verplaatsen niet."
+            },
+            {
+              "p": "Je kunt je eigen stencil meenemen als startpunt, en je tatoeëerder beslist of hij hem gebruikt. Hoe een stencil op de huid komt, lees je in [tattoo stencil aanbrengen: methodes](guide:tattoo-stencil-transfer-methods). Heb je alleen een foto of tekening, dan maakt de [stencil Studio](studio) er op je eigen apparaat een stencil van, zonder iets te uploaden."
+            }
+          ]
+        },
+        {
+          "h2": "Wat een voorbeeld niet kan laten zien",
+          "blocks": [
+            {
+              "p": "Wees eerlijk over de grenzen. Een voorbeeld is een plaatje van dag één, en een tattoo is iets voor de lange termijn."
+            },
+            {
+              "ul": [
+                "**Genezing.** De huid verandert tijdens het genezen, en lijnen kunnen er daarna anders uitzien. Je tatoeëerder kan vertellen wat je kunt verwachten.",
+                "**Veroudering.** Lijnen worden door de jaren zachter, en fijn detail vervaagt meestal het eerst.",
+                "**Beweging.** Een plat plaatje buigt niet mee met je lichaam. Een ontwerp op een gewricht, ribbenkast of schouder kan er anders uitzien als je beweegt.",
+                "**Hoe inkt in jouw huid zit.** Hetzelfde ontwerp kan op verschillende lichamen anders uitzien.",
+                "**Je eigen reactie na een week.** Als je het na meerdere dagen leven met het voorbeeld nog steeds mooi vindt, is dat een goed teken."
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Hoe plaatsing, grootte en huidtint de look veranderen",
+          "blocks": [
+            {
+              "p": "Hetzelfde ontwerp kan heel anders overkomen, afhankelijk van waar het komt, hoe groot het is en op welke huid het zit."
+            },
+            {
+              "table": {
+                "head": [
+                  "Factor",
+                  "Waar je op let"
+                ],
+                "rows": [
+                  [
+                    "Plaatsing",
+                    "Vlakke plekken houden een ontwerp intact. Gebogen of rekkende plekken kunnen het vervormen, dus check het terwijl je beweegt."
+                  ],
+                  [
+                    "Grootte",
+                    "Kleine formaten verliezen detail. Grotere formaten kunnen overweldigen. Print het en houd het ertegenaan."
+                  ],
+                  [
+                    "Huidtint",
+                    "Het contrast tussen de inkt en je huid bepaalt hoe scherp een ontwerp eruitziet. Bekijk het op een tint die dicht bij de jouwe ligt."
+                  ],
+                  [
+                    "Richting",
+                    "Check welke kant het ontwerp op kijkt en hoe het meebeweegt met het lichaamsdeel."
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Gebruik de 6 huidtinten in de generator van Skinstencil om te vergelijken, en onthoud dat een voorbeeld op een scherm slechts in de buurt komt van het echte werk."
+            }
+          ]
+        },
+        {
+          "h2": "Controlelijst voor het consult",
+          "blocks": [
+            {
+              "ol": [
+                "Neem het ontwerp mee, en een printout op ware grootte als je die hebt.",
+                "Neem foto's van het lichaamsdeel mee, recht van voren en in goed licht.",
+                "Vraag waar je tatoeëerder het zou plaatsen, en waarom.",
+                "Vraag of een detail te klein is om te houden, en wat hij of zij zou vereenvoudigen.",
+                "Bekijk de stencil in een spiegel, staand en in beweging.",
+                "Vraag naar genezing en nazorg, en volg het advies van je tatoeëerder.",
+                "Neem je tijd. Twijfel je, wacht dan een week en kijk opnieuw."
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Hoe kan ik zien hoe een tattoo er op mij uitziet?",
+          "a": "Plaats het ontwerp op een foto of in een preview-tool, print het op ware grootte om tegen je huid te houden, en vraag je tatoeëerder de stencil aan te brengen voordat de tattoo begint."
+        },
+        {
+          "q": "Zijn tattoo preview-apps nauwkeurig?",
+          "a": "Ze zijn goed voor plaatsing en compositie, maar zelden voor ware grootte of genezing. Check altijd ook met een geprinte stencil."
+        },
+        {
+          "q": "Kan ik een tattoo-ontwerp testen met een tijdelijke tattoo?",
+          "a": "Ja. Met een tijdelijke transfer of een omtrek met een huidveilige pen kun je het ontwerp een dag of twee dragen. Vraag je tatoeëerder of een apotheker als je huid gevoelig is."
+        },
+        {
+          "q": "Wat kan een tattoo-voorbeeld niet laten zien?",
+          "a": "Het kan niet laten zien hoe het geneest, hoe de lijnen verouderen of precies hoe het ontwerp met je lichaam meebeweegt."
+        },
+        {
+          "q": "Verandert huidtint hoe een tattoo eruitziet?",
+          "a": "Ja. Het contrast tussen de inkt en je huid bepaalt hoe een ontwerp overkomt, dus bekijk het op een tint die dicht bij de jouwe ligt."
+        }
+      ],
+      "cta": "Maak een ontwerp in de generator van Skinstencil, zie het op 8 lichaamsdelen en 6 huidtinten en print de stencil dan op ware grootte."
+    },
+    "fine-line-tattoo-stencil-tips": {
+      "title": "Fine line tattoo stencil: tips voor schoon, printbaar lijnwerk",
+      "short": "Fine line tattoo stencil tips",
+      "blurb": "Waarom fine line een heel schone stencil nodig heeft, hoe dun te dun is en hoe je controleert voordat je print.",
+      "metaTitle": "Fine line tattoo stencil: tips voor schone lijnen",
+      "metaDesc": "Maak een fine line tattoo stencil die schoon print: lijndikte in mm, tussenruimte, wat verkleinen met detail doet en een controlelijst voor het printen.",
+      "updated": "2026-11-26",
+      "answer": "Een fine line tattoo stencil heeft schone, gelijkmatige, doorlopende lijnen en open tussenruimtes nodig, want dunne streken laten geen ruimte voor fouten. Check de lijndikte op de echte geprinte grootte, houd de openingen tussen lijnen breed genoeg om gescheiden te blijven en vereenvoudig detail dat tot een vlek verkleint.",
+      "sections": [
+        {
+          "h2": "Waarom een fine line tattoo stencil heel schoon moet zijn",
+          "blocks": [
+            {
+              "p": "Een fine line tattoo stencil heeft minder speling dan een dik ontwerp. Een dikke contour verbergt een licht wiebelige rand. Een dunne lijn toont elke wiebel, onderbreking en dwaalstip."
+            },
+            {
+              "p": "De stencil is de gids die je tatoeëerder volgt. Heeft hij onderbroken streken, rafelige randen of ruis, dan moet de tatoeëerder raden welke tekens bedoeld zijn. Een schone stencil maakt dat raden overbodig en houdt het eindresultaat dichter bij het ontwerp dat je koos."
+            },
+            {
+              "p": "Daarom verdient fine line wat extra zorg in de voorbereiding, voordat er ook maar inkt aan te pas komt."
+            },
+            {
+              "p": "Hetzelfde geldt voor de bron van de stencil. Een nette tekening, een schoon flashvel of een duidelijke foto geeft een schoner resultaat dan een wazige screenshot. Goed beginnen bespaart later de meeste tijd."
+            }
+          ]
+        },
+        {
+          "h2": "Lijndikte in millimeters: scherm tegenover huid",
+          "blocks": [
+            {
+              "p": "Op een scherm wordt lijndikte in pixels gemeten, en die verandert als je zoomt. Op papier en huid wordt ze in millimeters gemeten, en die ligt vast. Die twee door elkaar halen is een veelvoorkomende bron van verrassingen."
+            },
+            {
+              "p": "Bij 300 dpi is één pixel ongeveer 0,085 mm breed (25,4 gedeeld door 300). Zo kun je uitrekenen wat een lijn op het scherm wordt als je op ware grootte print:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Lijnbreedte in pixels",
+                  "Geprinte breedte bij 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "1 px",
+                    "ongeveer 0,08 mm"
+                  ],
+                  [
+                    "3 px",
+                    "ongeveer 0,25 mm"
+                  ],
+                  [
+                    "6 px",
+                    "ongeveer 0,51 mm"
+                  ],
+                  [
+                    "12 px",
+                    "ongeveer 1,02 mm"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Dat vertelt je hoe de stencil op papier eruitziet. Welke lijndikte een tattoo op een bepaald lichaamsdeel kan houden, is een vraag voor je tatoeëerder, die zijn of haar naalden en jouw huid kent. Vraag de dunste lijn die hij of zij daar graag zet."
+            }
+          ]
+        },
+        {
+          "h2": "Tussenruimte tussen lijnen",
+          "blocks": [
+            {
+              "p": "Openingen zijn net zo belangrijk als lijnen. Twee dunne lijnen die heel dicht bij elkaar liggen, kunnen op dag één prima lijken en in elkaar overlopen als de tattoo zich zet."
+            },
+            {
+              "ul": [
+                "Laat duidelijke ruimte tussen parallelle lijnen. Ziet een opening er op de printout krap uit, dan is hij te krap.",
+                "Vermijd arcering en fijne textuur die in kleine vlakken zijn gepropt.",
+                "Geef bloemblaadjes, veren en krullen ruimte om te ademen.",
+                "Wil je dichtheid, maak die dan met minder, bewustere lijnen."
+              ]
+            },
+            {
+              "p": "Twijfel je, vraag je tatoeëerder dan naar het krapste punt in het ontwerp te kijken en te zeggen of het standhoudt."
+            }
+          ]
+        },
+        {
+          "h2": "Hoe detail verloren gaat als je een ontwerp verkleint",
+          "blocks": [
+            {
+              "p": "Een ontwerp verkleinen krimpt alles tegelijk: de lijnen worden dunner en de openingen smaller. Een ontwerp dat voor een groot vlak is getekend, kan op de helft van de grootte een brij worden."
+            },
+            {
+              "p": "Veel fine line werk wordt klein geplaatst, op polsen, vingers, achter het oor. Daar speelt dit het meest op. Kleine plekken zijn ook vaak gebogen, waardoor krappe tussenruimtes nog minder vergevingsgezind zijn."
+            },
+            {
+              "ol": [
+                "Bepaal eerst de uiteindelijke breedte in millimeters.",
+                "Beoordeel het ontwerp op die grootte, niet ingezoomd.",
+                "Vervagen lijnen of sluiten openingen zich, haal dan detail weg in plaats van nog verder te verkleinen.",
+                "Of maak de tattoo wat groter, zodat het detail ruimte heeft."
+              ]
+            },
+            {
+              "p": "Onze gids over [tattoo stencil grootte](guide:tattoo-stencil-size-true-size-print) behandelt de millimeters en pixels, en hoe je op 100 procent print."
+            }
+          ]
+        },
+        {
+          "h2": "Zo check je een stencil voordat je print",
+          "blocks": [
+            {
+              "p": "Een korte check bespaart een verspild vel en een tweede bezoek aan je tatoeëerder. Doe hem elke keer, ook als het ontwerp op het eerste gezicht goed lijkt, want problemen met dunne lijnen zijn op een helder scherm makkelijk te missen."
+            },
+            {
+              "ol": [
+                "**Zoom naar 100 procent en kijk naar de randen.** Ze moeten glad zijn, niet trapvormig.",
+                "**Zoek onderbrekingen.** Een lijn die doorlopend moet zijn maar een gat heeft, print met een gat.",
+                "**Zoek spikkels.** Kleine puntjes die van een foto of scan zijn overgebleven, worden ook geprint.",
+                "**Bekijk het op ware grootte.** Houd het scherm op armlengte op een vergelijkbare grootte, of print één proefkopie.",
+                "**Check het krapste punt.** Zoek de twee lijnen die het dichtst bij elkaar liggen en beoordeel ze.",
+                "**Meet de printout.** Controleer de breedte met een liniaal."
+              ]
+            },
+            {
+              "p": "De [stencil Studio](studio) maakt van je eigen tekening, flash of foto een stencil op je apparaat, zonder iets te uploaden. Begin je met een foto, dan laat [tattoo stencil maken van een foto](guide:tattoo-stencil-from-photo) zien hoe je er schone lijnen uit haalt."
+            }
+          ]
+        },
+        {
+          "h2": "Veelgemaakte fouten bij een fine line stencil",
+          "blocks": [
+            {
+              "ul": [
+                "**Een afbeelding met lage resolutie gebruiken.** Dunne lijnen op een kleine afbeelding printen kartelig. Begin met een groter, scherper bestand.",
+                "**Een drukke foto overtrekken.** Huidtextuur, schaduwen en achtergronden worden ruis in de stencil.",
+                "**Achteraf schalen.** Een geprinte kopie vergroten of verkleinen, of de printer laten krimpen om te passen, verandert elke lijn.",
+                "**Te veel fijne details tekenen.** Tien kleine elementen zien er alleen op het scherm elegant uit.",
+                "**De mening van de tatoeëerder overslaan.** De tatoeëerder ziet problemen die jij niet ziet.",
+                "**Alleen op een helder scherm beoordelen.** Een scherm met achtergrondverlichting laat dunne lijnen steviger lijken dan papier."
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Wanneer je moet vereenvoudigen",
+          "blocks": [
+            {
+              "p": "Moet je turen om een detail op de printout te zien, dan houdt het waarschijnlijk geen stand op de huid. Vereenvoudigen is geen opgeven van het ontwerp. Zo blijft een fine line stuk scherp."
+            },
+            {
+              "ul": [
+                "Voeg meerdere kleine vormen samen tot één.",
+                "Laat arcering weg en gebruik alleen een schone contour.",
+                "Vervang een dichte textuur door een paar sterke lijnen.",
+                "Maak het iets groter.",
+                "Kies een plek met vlakkere huid."
+              ]
+            },
+            {
+              "p": "Vereenvoudig voordat je print, niet erna. Het is veel makkelijker een detail uit het ontwerp te halen dan aan je tatoeëerder uit te leggen waarom een geprinte lijn is verdwenen. Een eenvoudigere stencil geeft je tatoeëerder ook meer vrijheid om hem op de dag zelf aan je lichaam aan te passen."
+            },
+            {
+              "p": "Maak je een ontwerp met de generator van Skinstencil, dan kun je vragen om “dunne gelijkmatige lijnen, minimaal detail, geen arcering” en het zien op 8 lichaamsdelen en 6 huidtinten. Hij maakt een stencil die je op ware grootte (300 dpi) kunt printen. Gratis te proberen; gratis downloads hebben een watermerk, en met een dagpas of Pro verdwijnt dat."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wat is een fine line tattoo stencil?",
+          "a": "Het is een stencil voor een ontwerp van dunne, delicate lijnen. Omdat de lijnen dun zijn, moet de stencil schoon, doorlopend en vrij van ruis zijn."
+        },
+        {
+          "q": "Hoe dun kan een tattoolijn zijn?",
+          "a": "Dat hangt af van de tatoeëerder, de naalden en het lichaamsdeel. Vraag je tatoeëerder naar de dunste lijn die hij of zij graag zet op de plek die je wilt."
+        },
+        {
+          "q": "Waarom ziet mijn fine line ontwerp er wazig uit als ik het klein print?",
+          "a": "Verkleinen vermindert de lijnbreedte en de openingen tussen lijnen tegelijk, waardoor details samensmelten. Vereenvoudig het ontwerp of print het iets groter."
+        },
+        {
+          "q": "Welke resolutie moet een fine line stencil hebben?",
+          "a": "Print op 300 dpi op de echte grootte, zodat dunne lijnen glad blijven. Gebruik een scherpe bronafbeelding in plaats van een kleine te vergroten."
+        },
+        {
+          "q": "Kan ik een fine line stencil van een foto maken?",
+          "a": "Ja, maar een drukke foto geeft ruis. Gebruik een duidelijke foto of tekening en controleer het resultaat op spikkels en onderbrekingen voordat je print."
+        }
+      ],
+      "cta": "Open de Skinstencil Studio om je tekening op je apparaat om te zetten in een schone stencil en check hem op ware grootte voordat je print."
+    },
+    "how-to-apply-a-tattoo-stencil": {
+      "title": "Tattoo stencil aanbrengen: huid voorbereiden, plaatsen en afpellen",
+      "short": "Tattoo stencil aanbrengen",
+      "blurb": "Stap voor stap: de huid voorbereiden, de stencil plaatsen, aandrukken, afpellen en fouten herstellen.",
+      "metaTitle": "Tattoo stencil aanbrengen: stap voor stap",
+      "metaDesc": "Tattoo stencil aanbrengen: huid voorbereiden, transfervloeistof, plaatsing, aandrukken, afpellen en herstellen. Een heldere gids voor tatoeëerder en klant.",
+      "updated": "2026-11-26",
+      "answer": "Om een tattoo stencil aan te brengen maak je de huid schoon en droog, scheer je haar als je tatoeëerder dat wil, breng je een dunne laag transfervloeistof of stick aan, druk je de stencil aan zonder te schuiven en houd je hem enkele seconden vast. Pel hem langzaam af en check de plaatsing in een spiegel.",
+      "sections": [
+        {
+          "h2": "Tattoo stencil aanbrengen: de korte versie",
+          "blocks": [
+            {
+              "p": "Een tattoo stencil aanbrengen komt hierop neer: je bereidt de huid voor, maakt hem licht nat met een transferproduct, drukt het stencilvel één keer aan en pelt het weg, zodat het ontwerp op de huid achterblijft. Elke stap is eenvoudig. Kleine foutjes in een van de stappen zorgen voor een wazige, scheve of vlekkerige stencil."
+            },
+            {
+              "p": "Deze gids is voor tatoeëerders die een vaste routine willen en voor klanten die willen weten wat er gebeurt en waar ze op moeten letten. Volg de hygiëneregels van je studio en het advies van je tatoeëerder. Waar deze gids een stap beschrijft, gaat de werkwijze van je eigen studio voor."
+            },
+            {
+              "p": "De hele routine op volgorde:"
+            },
+            {
+              "ol": [
+                "Bereid de huid voor.",
+                "Positioneer de stencil zonder de huid aan te raken.",
+                "Breng het transferproduct aan.",
+                "Druk één keer aan en houd vast.",
+                "Pel langzaam af.",
+                "Laat drogen en check het in een spiegel."
+              ]
+            },
+            {
+              "p": "De secties hieronder behandelen elke stap en daarna wat je doet als er iets misgaat."
+            }
+          ]
+        },
+        {
+          "h2": "Bereid de huid voor",
+          "blocks": [
+            {
+              "p": "Een stencil laat alleen netjes los op huid die schoon, droog en vetvrij is. Je tatoeëerder maakt het gebied schoon volgens de hygiëneroutine van de studio. Smeer voor de afspraak zelf geen lotion, olie of zonnebrand op de plek, tenzij je dat te horen krijgt."
+            },
+            {
+              "p": "Haar zit in de weg. Een stencil blijft op het haar zitten in plaats van op de huid en komt los als het haar beweegt. Je tatoeëerder scheert het gebied misschien, en sommigen scheren iets ruimer dan het ontwerp zodat de randen schoon blijven. Laat ze dat doen, en scheer zelf de avond ervoor geen uitslag, snee of geïrriteerde huid."
+            },
+            {
+              "ul": [
+                "De huid moet droog zijn voordat er transferproduct op komt.",
+                "Een heel vet of heel zweterig gebied moet worden afgeveegd en even tot rust komen.",
+                "Losse of schilferende huid geeft een vlekkerige lijn, dus zeg het je tatoeëerder als het gebied vervelt."
+              ]
+            },
+            {
+              "p": "Denk ook aan de houding. Bepaal hoe je tijdens de sessie zit of ligt voordat de stencil erop gaat, want de stencil moet er in die houding goed uitzien, niet alleen in de houding waarin je staat terwijl hij wordt aangebracht."
+            }
+          ]
+        },
+        {
+          "h2": "Kies het transferproduct",
+          "blocks": [
+            {
+              "p": "De meeste tatoeëerders gebruiken een vloeibare transferoplossing of een product in stickvorm. Beide doen hetzelfde: ze laten een dunne plakkerige film achter, zodat de inkt van het stencilvel van het papier loskomt en op de huid blijft zitten."
+            },
+            {
+              "ul": [
+                "**Vloeistof** wordt in een dunne laag aangebracht met een gehandschoende hand of een geschikte applicator. Ze verspreidt zich gelijkmatig, maar te veel blijft liggen en smeert de lijnen uit.",
+                "**Stick** wordt in een dunne, gelijkmatige laag opgewreven. Hij is goed te sturen op kleine gebieden, maar een dikke laag kan een rand achterlaten of de lijnen meetrekken."
+              ]
+            },
+            {
+              "p": "In beide gevallen is minder beter dan meer. De huid moet licht plakkerig zijn, niet nat. Volg de instructies van het product dat je gebruikt, en vraag je tatoeëerder wat hij of zij gebruikt als je nieuwsgierig bent."
+            },
+            {
+              "p": "Breng het product alleen aan op het gebied dat de stencil bedekt, plus een kleine marge. Product buiten het ontwerp geeft het vel alleen meer oppervlak om op te glijden."
+            }
+          ]
+        },
+        {
+          "h2": "Positioneer en check voordat je aandrukt",
+          "blocks": [
+            {
+              "p": "Plaatsing is de stap waar je niet mee mag haasten, want de stencil kan niet meer verplaatst worden zodra hij de huid raakt. Houd het vel net boven de huid en kijk waar het ontwerp terechtkomt. Check het aan de natuurlijke lijnen van het lichaam: de rand van een spier, het midden van de ruggengraat, de welving van een schouder."
+            },
+            {
+              "p": "Ga daarna voor een spiegel staan. Klanten, dit is jullie moment. Vraag jezelf af:"
+            },
+            {
+              "ul": [
+                "Zit het ontwerp recht, of helt het over?",
+                "Zit het gecentreerd op het lichaamsdeel dat je bedoelde?",
+                "Staat het goed als je staat, je arm beweegt of je hoofd draait?",
+                "Is de grootte wat je je had voorgesteld?"
+              ]
+            },
+            {
+              "p": "Lijkt de grootte verkeerd, stop dan voordat je aandrukt. Een nieuwe stencil printen gaat snel, en de juiste grootte is makkelijker te beoordelen als de stencil op ware grootte is geprint. Meer daarover lees je in [de gids over ware grootte](guide:tattoo-stencil-size-true-size-print)."
+            },
+            {
+              "p": "Sommige tatoeëerders zetten eerst ook een paar kleine referentiepunten op de huid, zoals de bovenkant en het midden van het ontwerp. Daarmee kun je het vel uitlijnen terwijl je handen vol zijn."
+            }
+          ]
+        },
+        {
+          "h2": "Aandrukken, vasthouden en afpellen",
+          "blocks": [
+            {
+              "p": "Leg het stencilvel in één beweging neer, met het ontwerp naar de huid toe. Begin in het midden of bij één rand en druk met een platte hand naar buiten, met gelijkmatige, stevige druk. Schuif het vel niet. Elke slip geeft een dubbele lijn, en dubbele lijnen zijn moeilijk te herstellen."
+            },
+            {
+              "p": "Houd het een paar seconden vast, of zoals je tatoeëerder gewend is. Pel het vel daarna langzaam af, begin bij één hoek en houd de rest met je andere hand op zijn plek. Blijft een stuk op het papier achter, leg het vel dan terug en druk opnieuw aan voordat je verder optilt."
+            },
+            {
+              "p": "Gebogen plekken zoals ribben, kuiten en de binnenkant van de arm vragen extra zorg. Druk het vel in de bocht aan in delen in plaats van het in één keer plat te leggen, zodat het niet kreukt of plooit. Bij een groot ontwerp knippen sommige tatoeëerders het vel in stukken en brengen ze die een voor een aan."
+            },
+            {
+              "p": "Te snel afpellen is de andere veelvoorkomende fout. Een snelle ruk kan natte lijnen uitsmeren of een deel van het ontwerp losrukken. Een langzame, gelijkmatige pel laat de lijnen liggen waar je ze neerlegde."
+            }
+          ]
+        },
+        {
+          "h2": "Droogtijd en het resultaat controleren",
+          "blocks": [
+            {
+              "p": "Laat de stencil drogen voordat er iets aankomt. De lijnen moeten donker, scherp en doorlopend zijn. De droogtijd verschilt per product, ruimte en huid, dus je tatoeëerder beoordeelt wanneer hij klaar is, en een korte wachttijd is beter dan een veeg."
+            },
+            {
+              "p": "Check de stencil nu zoals een klant dat zou doen:"
+            },
+            {
+              "ul": [
+                "Zijn alle lijnen er, ook de dunne?",
+                "Ontbreken er delen, zijn er dubbele lijnen of vegen?",
+                "Ziet de plaatsing er in de spiegel nog steeds goed uit?",
+                "Heb je nog vragen over het ontwerp voordat het werk begint?"
+              ]
+            },
+            {
+              "p": "Dit is het laatste makkelijke moment om wijzigingen te vragen. Zodra de tatoeëerder begint, is het ontwerp verplaatsen niet meer simpel. Weet je het niet zeker, zeg het dan nu. Een goede tatoeëerder maakt liever een nieuwe stencil dan dat hij werkt van een stencil waaraan de klant twijfelt."
+            }
+          ]
+        },
+        {
+          "h2": "Fouten herstellen",
+          "blocks": [
+            {
+              "p": "Een scheve, dubbele of uitgesmeerde stencil kan worden weggeveegd en opnieuw gedaan. Je tatoeëerder gebruikt daarvoor het product en de methode die hij of zij gewoonlijk gebruikt, volgens de hygiëneroutine van de studio. Gebruik geen eigen producten om hem te verwijderen."
+            },
+            {
+              "ul": [
+                "**Scheef of niet gecentreerd:** verwijder hem, zet je referentiepunten opnieuw en breng een nieuw vel aan.",
+                "**Vlekkerige lijnen:** meestal huid die te droog, te vet of behaard was, of te weinig druk. Bereid de huid opnieuw voor en probeer het nog eens.",
+                "**Uitgesmeerde lijnen:** meestal te veel transferproduct, of een slip tijdens het aandrukken. Gebruik minder en druk één keer aan.",
+                "**Te vaag:** zie [hoelang een stencil blijft zitten](guide:how-long-does-a-tattoo-stencil-last) voor de gebruikelijke oorzaken."
+              ]
+            },
+            {
+              "p": "Een schoon lijnbestand helpt vanaf het begin. Een stencil die van heldere, gelijkmatige lijnen is geprint, laat betrouwbaarder los dan een stencil van een vage of laagresolutie afbeelding. Met [de Studio](studio) maak je van je eigen tekening, flash of foto een schone stencil op je apparaat, en er wordt niets geüpload."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wat doe je op de huid voor een tattoo stencil?",
+          "a": "Je tatoeëerder maakt de huid schoon en droog, scheert hem indien nodig en brengt dan een dunne laag transfervloeistof of stick aan. De huid moet licht plakkerig aanvoelen, niet nat."
+        },
+        {
+          "q": "Hoelang houd je een tattoo stencil op de huid vast?",
+          "a": "Een paar seconden stevige, gelijkmatige druk met een platte hand is meestal genoeg. Je tatoeëerder vertelt wat werkt bij het product dat hij of zij gebruikt."
+        },
+        {
+          "q": "Kun je een tattoo stencil aanbrengen op behaarde huid?",
+          "a": "Dat is veel moeilijker, want de stencil blijft op het haar zitten en niet op de huid. Tatoeëerders scheren het gebied meestal eerst, zoals ze zelf bepalen."
+        },
+        {
+          "q": "Wat als de tattoo stencil scheef zit?",
+          "a": "Zeg het je tatoeëerder voordat hij begint. Die kan hem verwijderen en een nieuwe aanbrengen, en dat is veel makkelijker dan het ontwerp later aanpassen."
+        },
+        {
+          "q": "Heb ik een spiegel nodig om mijn stencil te checken?",
+          "a": "Ja, vraag erom. Je plaatsing staand en in beweging controleren is de beste manier om een stencil te betrappen die er alleen goed uitziet als je stil ligt."
+        }
+      ],
+      "cta": "Maak in de Studio een schone stencil van je eigen tekening of foto, gratis te proberen, en er wordt niets geüpload."
+    },
+    "how-long-does-a-tattoo-stencil-last": {
+      "title": "Hoelang blijft een tattoo stencil zitten op de huid?",
+      "short": "Hoelang blijft een tattoo stencil zitten?",
+      "blurb": "Wat een stencil laat vervagen of uitsmeren, hoe je hem langer laat zitten en wat je doet terwijl je wacht.",
+      "metaTitle": "Hoelang blijft een tattoo stencil zitten? Wat telt",
+      "metaDesc": "Hoelang blijft een tattoo stencil zitten? Zie wat het beïnvloedt (huid, zweet, lichaamsdeel, wrijving) en hoe je hem langer laat zitten.",
+      "updated": "2026-11-26",
+      "answer": "Een goed aangebrachte tattoo stencil blijft zo lang zitten als de sessie nodig heeft, maar er is geen vaste tijd. Huidtype, zweet, lichaamsdeel, transferproduct en wrijving veranderen dat. Droge huid, een dunne laag product en kleding weghouden van de plek helpen hem langer te laten zitten.",
+      "sections": [
+        {
+          "h2": "Hoelang blijft een tattoo stencil zitten?",
+          "blocks": [
+            {
+              "p": "Hoelang blijft een tattoo stencil zitten? Dat hangt af van hoe hij is aangebracht en op welk lichaamsdeel hij zit. Er is geen eerlijk enkel getal. Een goed aangebrachte stencil op een rustig, droog gebied kan scherp blijven tijdens een lange afspraak. Een stencil op een zweterige, buigende of schurende plek kan veel eerder vervagen."
+            },
+            {
+              "p": "Een stencil is een gids voor de tatoeëerder, geen blijvende markering. Hij moet goed genoeg zijn om van te werken, en de tatoeëerder werkt er vaak in fases overheen. Wat jij kunt sturen, is hoeveel er misgaat voordat het werk begint."
+            },
+            {
+              "p": "De factoren hieronder zijn degene die in de praktijk tellen."
+            },
+            {
+              "p": "Merk op dat de meeste over voorbereiding en omgang gaan, niet over geluk. Dat is goed nieuws: als je weet waarom stencils falen, kun je het meeste vroege vervagen voorkomen voordat de afspraak begint. Tatoeëerders zien steeds dezelfde paar oorzaken, en klanten kunnen helpen door met schone, productvrije huid te komen en de plek onbedekt en rustig te houden zodra de stencil erop zit."
+            }
+          ]
+        },
+        {
+          "h2": "Wat bepaalt hoelang een stencil blijft zitten",
+          "blocks": [
+            {
+              "h3": "Huidtype en huidconditie"
+            },
+            {
+              "p": "Vette huid weerstaat de transfer, en heel droge of schilferige huid geeft een vlekkerige transfer. Huid die schoon, droog en glad is, houdt een stencil het best vast."
+            },
+            {
+              "h3": "Zweet en warmte"
+            },
+            {
+              "p": "Zweet breekt de film af die de lijnen vasthoudt. Een warme ruimte, een zenuwachtige klant of een hete dag verkorten allemaal de levensduur van een stencil, vooral op de rug, borst en oksel."
+            },
+            {
+              "h3": "Lichaamsdeel"
+            },
+            {
+              "p": "Plekken die buigen of schuren, zoals de binnenkant van de elleboog, de ribben, de handen, de voeten en de nek, slijten een stencil sneller dan een vlakke, rustige plek zoals de buitenkant van het bovenbeen of de bovenrug."
+            },
+            {
+              "h3": "Transferproduct en hoeveel je gebruikt"
+            },
+            {
+              "p": "Een dunne, gelijkmatige laag transfervloeistof of stick laat de lijnen hechten. Te veel laat een natte, losse film achter die uitsmeert. Te weinig geeft een bleke lijn."
+            },
+            {
+              "h3": "Stencilinkt en printkwaliteit"
+            },
+            {
+              "p": "Donkere, gelijkmatige, massieve lijnen blijven langer zitten dan vage of onderbroken lijnen. Een stencilvel dat slecht is verouderd, print misschien lichter, dus check eerst het papier en de printer. Zie de [gids over tattoo stencil papier](guide:tattoo-stencil-paper-guide) voor bewaartips."
+            },
+            {
+              "h3": "Wrijving"
+            },
+            {
+              "p": "Kleding, beddengoed, een hand die zweet wegveegt of een klant die op de tafel verschuift, wrijft de lijnen weg. Dit is de meest voorkomende oorzaak van een stencil die vroeg vervaagt."
+            }
+          ]
+        },
+        {
+          "h2": "Zo laat je een stencil langer zitten",
+          "blocks": [
+            {
+              "ol": [
+                "Begin met schone, droge huid en laat product tot rust komen voordat je aandrukt.",
+                "Scheer het gebied zoals gevraagd, zodat de stencil op de huid zit en niet op haar.",
+                "Gebruik een dunne, gelijkmatige laag transferproduct.",
+                "Druk één keer stevig en gelijkmatig aan en schuif het vel niet.",
+                "Laat de stencil volledig drogen voordat er iets aankomt."
+              ]
+            },
+            {
+              "p": "Beperk daarna de wrijving. Houd kleding en doeken uit de buurt van de plek en vraag je tatoeëerder naar de beste houding voor de sessie. Sommige tatoeëerders werken in delen, zodat het deel van het ontwerp dat ze nog niet tatoeëren onaangeroerd blijft. Vraag je tatoeëerder wat hij of zij aanraadt, want methodes verschillen per studio."
+            },
+            {
+              "p": "Plan ook de volgorde van het werk. Loopt het ontwerp over een gewricht of een bocht, vraag je tatoeëerder dan of hij of zij wil beginnen met het deel dat het meest schuurt, zolang de lijnen het verst zijn. Houd ook de ruimte comfortabel. Een koelere, rustigere omgeving betekent minder zweet, en minder zweet betekent lijnen die langer blijven zitten. Heb je snel warm, zeg het dan voordat de stencil erop gaat."
+            }
+          ]
+        },
+        {
+          "h2": "Waarom printkwaliteit telt",
+          "blocks": [
+            {
+              "p": "De meest voorkomende reden dat een stencil vroeg vervaagt, is dat hij al vaag is geprint. Een lijn die bleek begint, heeft niets in reserve. Een schone, donkere, doorlopende lijn begint sterker en blijft langer."
+            },
+            {
+              "p": "Daarom telt een schoon lijnbestand. Een wazige, kleine of laagresolutie afbeelding print als een zachte, grijze lijn, zelfs op goed transferpapier. Een scherp bestand dat op de juiste grootte is geprint, geeft de printer iets stevigs om mee te werken."
+            },
+            {
+              "p": "Met [de Studio](studio) maak je van een tekening, flash of foto een schone lijnstencil op je apparaat, zodat je print begint met lijnen die scherp bedoeld zijn. Je kunt ook lezen over [de juiste printgrootte kiezen](guide:tattoo-stencil-size-true-size-print)."
+            }
+          ]
+        },
+        {
+          "h2": "Wat je doet als de stencil vervaagt",
+          "blocks": [
+            {
+              "p": "Wacht niet tot hij weg is. Zeg het je tatoeëerder zodra je merkt dat de lijnen vaag, uitgesmeerd of vlekkerig worden. Die kan een nieuwe stencil aanbrengen, meestal in minder tijd dan het kost om rond een slechte heen te werken."
+            },
+            {
+              "ul": [
+                "Een vervaagde stencil is een teken om te stoppen en hem te vernieuwen, niet om te raden waar een lijn liep.",
+                "Is maar één deel weg, dan doet je tatoeëerder misschien alleen dat deel opnieuw.",
+                "Blijft hij vervagen, dan is de oorzaak vaak zweet, product of wrijving, dus de tatoeëerder past de methode misschien aan voor de tweede poging."
+              ]
+            },
+            {
+              "p": "Vervaagt hij elke keer, kijk dan naar de print zelf. Een stencil die op het vel bleek was, is ook op de huid bleek. Zie [tattoo stencil aanbrengen](guide:how-to-apply-a-tattoo-stencil) voor de volledige routine."
+            }
+          ]
+        },
+        {
+          "h2": "Wat klanten wel en niet moeten doen terwijl ze wachten",
+          "blocks": [
+            {
+              "p": "Zodra de stencil erop zit, is het jouw taak hem te beschermen. Volg de instructies van je tatoeëerder en gebruik deze lijst als algemene leidraad."
+            },
+            {
+              "h3": "Wel"
+            },
+            {
+              "ul": [
+                "Houd je stil en adem normaal.",
+                "Zeg het je tatoeëerder als de plek nat, jeukerig of heet aanvoelt.",
+                "Check de plaatsing in de spiegel voordat het werk begint.",
+                "Vraag om de stencil opnieuw te doen als je er niet blij mee bent."
+              ]
+            },
+            {
+              "h3": "Niet"
+            },
+            {
+              "ul": [
+                "Raak de stencil niet aan en veeg hem niet af.",
+                "Laat geen kleding, tasband of deken erop wrijven.",
+                "Breng geen eigen lotion, olie of deodorant aan op de plek.",
+                "Krab niet aan de plek, ook niet als het jeukt."
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Hoelang blijft een tattoo stencil op de huid zitten?",
+          "a": "Er is geen vaste tijd. Een goed aangebrachte stencil op een droge, rustige plek kan een hele sessie blijven zitten, en een op een zweterige of schurende plek kan veel eerder vervagen."
+        },
+        {
+          "q": "Waarom vervaagt mijn tattoo stencil?",
+          "a": "De gebruikelijke oorzaken zijn zweet, wrijving van kleding of beddengoed, te veel of te weinig transferproduct en een vage oorspronkelijke print."
+        },
+        {
+          "q": "Kan ik een tattoo stencil langer laten zitten?",
+          "a": "Ja. Gebruik schone droge huid, een dunne laag product, één stevige druk, genoeg droogtijd en houd alles weg wat op de plek kan wrijven."
+        },
+        {
+          "q": "Wat als mijn stencil uitsmeert voordat de tattoo begint?",
+          "a": "Zeg het je tatoeëerder. Die kan hem verwijderen en een nieuwe aanbrengen, en dat is beter dan werken van een uitgesmeerde gids."
+        },
+        {
+          "q": "Heeft het stencilpapier invloed op hoelang hij blijft zitten?",
+          "a": "Ja. Stencilpapier dat oud, vochtig of van het verkeerde type voor je printer is, kan een lichtere lijn printen, en lichtere lijnen vervagen sneller."
+        }
+      ],
+      "cta": "Begin met een schone, scherpe stencil in de Studio, gratis te proberen, en er wordt niets geüpload."
+    },
+    "tattoo-stencil-paper-guide": {
+      "title": "Tattoo stencil papier: soorten, hoe ze werken en hoe je kiest",
+      "short": "Tattoo stencil papier gids",
+      "blurb": "Thermisch, hectograaf-, overtrek- en printbaar transferpapier neutraal vergeleken.",
+      "metaTitle": "Tattoo stencil papier: soorten en hoe je kiest",
+      "metaDesc": "Tattoo stencil papier uitgelegd: thermisch transferpapier, hectograaf, overtrekpapier en inkjet-transferpapier, met voor- en nadelen, bewaren en fouten.",
+      "updated": "2026-11-26",
+      "answer": "Tattoo stencil papier bestaat in vier hoofdsoorten: thermisch transferpapier voor thermische stencilprinters, hectograaf (spirit carbon) papier voor handmatig overtrekken, overtrekpapier voor vrij tekenen en printbaar transferpapier voor inkjetprinters. Kies het type dat past bij je printer, je volume en je manier van werken.",
+      "sections": [
+        {
+          "h2": "Tattoo stencil papier: de vier hoofdsoorten",
+          "blocks": [
+            {
+              "p": "Tattoo stencil papier is het vel dat je ontwerp van de pagina naar de huid brengt. Er zijn vier hoofdsoorten, en elk werkt met een andere manier om de lijnen erop te krijgen. De verkeerde combinatie van papier en printer is een veelvoorkomende reden voor een bleke of vlekkerige stencil."
+            },
+            {
+              "ul": [
+                "**Thermisch transferpapier**, gebruikt met een thermische stencilprinter.",
+                "**Hectograaf (spirit carbon) papier**, gebruikt met een pen of een overtrekmethode.",
+                "**Overtrekpapier voor vrij tekenen**, waarop je rechtstreeks tekent of overtrekt.",
+                "**Printbaar transferpapier**, gebruikt met sommige gewone inkjetprinters."
+              ]
+            },
+            {
+              "p": "Deze gids is neutraal. Hij rangschikt de soorten niet, want de beste hangt af van je apparatuur en je gewoonten. Voor het grotere plaatje, zie [de gids over transfermethodes](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Thermisch transferpapier",
+          "blocks": [
+            {
+              "p": "Thermisch transferpapier is een vel met meerdere lagen. Een thermische stencilprinter verhit het, en de hitte maakt een patroon van lijnen in de transferlaag, dat naar de huid gaat als de stencil wordt aangedrukt."
+            },
+            {
+              "ul": [
+                "**Voordelen:** snel zodra het is ingesteld, gelijkmatige lijnen, makkelijk een ontwerp te herhalen.",
+                "**Nadelen:** je hebt een thermische printer nodig, en het papier is voor dat type printer gemaakt, dus je kunt niet elk vel gebruiken."
+              ]
+            },
+            {
+              "p": "De papierbreedte moet bij de printer passen. Een printer die voor één velbreedte is gebouwd, werkt niet goed met een ander formaat dat met de hand is bijgesneden, dus check de breedte en het formaat dat je printer accepteert."
+            },
+            {
+              "p": "Omdat de hitte het werk doet, is het papier gevoelig voor warmte en hantering. Houd het uit de buurt van warmtebronnen tot het in de printer gaat."
+            },
+            {
+              "p": "Thermische vellen zijn ook het minst vergevingsgezind over het bestand. De printer tekent precies de lijnen die hij krijgt, dus een schoon, donker lijnbestand met hoge resolutie geeft een schone stencil, en een vage foto geeft een vage."
+            }
+          ]
+        },
+        {
+          "h2": "Hectograaf en spirit carbon papier",
+          "blocks": [
+            {
+              "p": "Hectograaf, ook spirit carbon genoemd, is paars bedrukt papier voor handgemaakte stencils. Je legt het carbonvel onder je tekening, en de druk van een pen brengt de lijn over op een achtervel. Dat achtervel is de stencil."
+            },
+            {
+              "ul": [
+                "**Voordelen:** geen printer, lage apparatuurkosten, bekend bij veel tatoeëerders.",
+                "**Nadelen:** elke stencil wordt met de hand getekend, schalen vraagt een aparte stap en de lijnkwaliteit hangt af van je penpressie en vaste hand."
+              ]
+            },
+            {
+              "p": "Veel tatoeëerders printen het ontwerp op de juiste grootte op gewoon papier en trekken dat over. Een schone lijnprint maakt dit veel sneller, en legt de grootte vast voordat je ook maar één lijn tekent."
+            }
+          ]
+        },
+        {
+          "h2": "Overtrekpapier voor vrij tekenen",
+          "blocks": [
+            {
+              "p": "Overtrekpapier voor vrij tekenen is gemaakt om er rechtstreeks op te tekenen. Sommige types worden verkocht als blok met al een transferlaag op de achterkant. Je tekent of trekt het ontwerp over op de voorkant, en de lijnen worden door op de huid gedrukt."
+            },
+            {
+              "ul": [
+                "**Voordelen:** eenvoudig, geen machine, en goed voor snelle of eigen ontwerpen die je op de dag zelf wilt tekenen.",
+                "**Nadelen:** langzamer voor complexe ontwerpen, en je moet de instructies van het papier dat je gebruikt volgen."
+              ]
+            },
+            {
+              "p": "Het combineert goed met een lichtbak of een raam als je van een geprint ontwerp overtrekt."
+            },
+            {
+              "p": "Kiezen tussen de vier komt neer op drie vragen. Hoeveel stencils maak je per week? Werk je van digitale bestanden of van handtekeningen? En hoeveel apparatuur wil je bezitten en onderhouden? Een paar stencils per maand van handtekeningen wijst op hectograaf- of overtrekpapier. Een gestage stroom digitale ontwerpen wijst op een printer en het bijbehorende papier."
+            }
+          ]
+        },
+        {
+          "h2": "Printbaar transferpapier voor inkjetprinters",
+          "blocks": [
+            {
+              "p": "Printbaar transferpapier is gemaakt zodat een gewone inkjetprinter erop kan printen. Het vel neemt de inkt op het oppervlak op, en de geprinte lijnen gaan naar de huid als de stencil wordt aangedrukt."
+            },
+            {
+              "ul": [
+                "**Voordelen:** je kunt een printer gebruiken die je misschien al hebt, en dezelfde printer doet ander werk.",
+                "**Nadelen:** niet elke printer en elk papier werkt samen, de inkt gedraagt zich misschien niet als in een speciaal stencilsysteem, en het resultaat kan bleker of minder scherp zijn dan bij andere methodes."
+              ]
+            },
+            {
+              "p": "Lees in de instructies van het papier welke printertypes het ondersteunt en doe een testprint voor een klantsessie. Een test kost een vel. Een slechte stencil kost de tijd van de afspraak."
+            }
+          ]
+        },
+        {
+          "h2": "Welke printers bij welk papier horen",
+          "blocks": [
+            {
+              "table": {
+                "head": [
+                  "Papiersoort",
+                  "Werkt met",
+                  "Heeft nodig"
+                ],
+                "rows": [
+                  [
+                    "Thermisch transferpapier",
+                    "Thermische stencilprinter",
+                    "Papier dat voor dat printertype is gemaakt"
+                  ],
+                  [
+                    "Hectograaf / spirit carbon",
+                    "Geen printer (handmatig overtrekken)",
+                    "Een pen en een tekening of print om over te trekken"
+                  ],
+                  [
+                    "Overtrekpapier voor vrij tekenen",
+                    "Geen printer (tekenen)",
+                    "Een pen, en een voorbeeld als je overtrekt"
+                  ],
+                  [
+                    "Printbaar transferpapier",
+                    "Inkjetprinters, zoals het papier aangeeft",
+                    "Een ondersteunde printer en testprints"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Voor een nadere blik op printers lees je de [gids over tattoo stencil printers](guide:tattoo-stencil-printer-guide). De korte regel is te beginnen bij de eigen instructies van het papier en te checken of je printer op de lijst van ondersteunde printers staat."
+            }
+          ]
+        },
+        {
+          "h2": "Bewaren en veelgemaakte fouten",
+          "blocks": [
+            {
+              "p": "Stencilpapier is gevoelig voor vocht, warmte en buigen. Bewaar het plat, in de verpakking of een map, op een koele, droge plek uit de zon. Houd de verpakking gesloten, zodat de vellen geen stof of vocht opnemen."
+            },
+            {
+              "p": "Veelgemaakte fouten die je moet vermijden:"
+            },
+            {
+              "ul": [
+                "Het vel verkeerd om laden, zodat de printer op het achtervel print.",
+                "Papier gebruiken dat niet voor je printertype is gemaakt.",
+                "Een vaag, klein of laagresolutie bestand printen, wat een bleke stencil geeft, welk papier je ook gebruikt.",
+                "Het geprinte oppervlak aanraken met vochtige of vette handen.",
+                "Oude, gekrulde of vochtige vellen gebruiken.",
+                "Een testprint overslaan voor de afspraak."
+              ]
+            },
+            {
+              "p": "Een schoon lijnbestand is de andere helft van een goede stencil. [De Studio](studio) maakt van je tekening, flash of foto een schone stencil op je apparaat, en de AI-generator op de homepage kan een stencil maken die je op ware grootte print, 300 dpi."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Welk papier gebruik je voor een tattoo stencil?",
+          "a": "Dat hangt af van de methode: thermisch transferpapier voor thermische printers, hectograaf- of overtrekpapier voor handwerk, of printbaar transferpapier voor sommige inkjetprinters."
+        },
+        {
+          "q": "Kan ik gewoon printerpapier gebruiken voor een tattoo stencil?",
+          "a": "Niet als transfervel. Je kunt op gewoon papier printen als referentie of als tekening om over te trekken, maar voor de transfer zelf heb je stencilpapier nodig."
+        },
+        {
+          "q": "Wat is hectograafpapier?",
+          "a": "Het is paars carbonachtig papier, ook spirit carbon genoemd, dat een getekende lijn op een achtervel overbrengt als je er met een pen op drukt."
+        },
+        {
+          "q": "Kan ik een tattoo stencil printen op een inkjetprinter?",
+          "a": "Sommige printbare transferpapieren zijn daarvoor gemaakt. Lees de instructies van het papier en test het voor een sessie."
+        },
+        {
+          "q": "Hoe bewaar ik tattoo stencil papier?",
+          "a": "Plat, in de verpakking, op een koele droge plek uit de zon. Vocht en warmte kunnen de transferlaag bederven."
+        }
+      ],
+      "cta": "Maak eerst het schone lijnbestand. Probeer de Studio gratis, en er wordt niets geüpload."
+    },
+    "tattoo-stencil-printer-guide": {
+      "title": "Tattoo stencil printer: waar je op let voordat je koopt",
+      "short": "Tattoo stencil printer gids",
+      "blurb": "Thermische, inkjet- en kopieeropties uitgelegd, met waar je op moet checken en hoe je op ware grootte print.",
+      "metaTitle": "Tattoo stencil printer: kiezen en printen",
+      "metaDesc": "Tattoo stencil printer gids: thermisch, inkjet of kopieermachine, papierbreedte, dpi, aansluiting en printen op ware grootte, plus oplossingen.",
+      "updated": "2026-11-26",
+      "answer": "Een tattoo stencil printer is een printer die je ontwerp op transferpapier zet. De hoofdopties zijn een thermische stencilprinter, een inkjet met transferpapier en een thermische kopieermachine. Check papierbreedte, resolutie in dpi, aansluiting, of hij op ware grootte print en wat de verbruiksmaterialen kosten.",
+      "sections": [
+        {
+          "h2": "Wat een tattoo stencil printer doet",
+          "blocks": [
+            {
+              "p": "Een tattoo stencil printer zet een digitaal ontwerp om in een patroon van lijnen op transferpapier, klaar om op de huid te drukken. Het is de stap tussen je bestand en de huid, dus de kwaliteit ervan zie je in elke stencil."
+            },
+            {
+              "p": "Er zijn drie gangbare routes. Deze gids beschrijft ze neutraal en rangschikt geen enkel product. Voor handmatige opties, zie [de gids over transfermethodes](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Thermische stencilprinter, inkjet of kopieermachine",
+          "blocks": [
+            {
+              "h3": "Thermische stencilprinter"
+            },
+            {
+              "p": "Een thermische stencilprinter gebruikt hitte en thermisch transferpapier. Hij is voor deze ene taak gebouwd, dus de uitvoer is meestal consistent en de installatie eenvoudig. Hij heeft het juiste papier nodig, en je zit vast aan het papier dat erbij past."
+            },
+            {
+              "h3": "Inkjet met transferpapier"
+            },
+            {
+              "p": "Sommige printbare transferpapieren werken in een gewone inkjetprinter. Dit is een flexibele optie als je al een printer hebt, maar niet elke combinatie van printer en papier werkt, en de lijnen kunnen bleker zijn. Test voordat je erop vertrouwt."
+            },
+            {
+              "h3": "Thermische kopieermachine"
+            },
+            {
+              "p": "Een thermische kopieermachine maakt een stencil van een papieren origineel door het te kopiëren. Dat is handig als je van tekeningen op papier werkt. Een digitaal bestand moet eerst op gewoon papier worden geprint en dan worden gekopieerd."
+            },
+            {
+              "p": "Geen van deze is voor iedereen de beste. De juiste hangt af van je volume, je ruimte, je budget en of je van bestanden of van papieren tekeningen werkt. Voor de papieren zelf, zie de [gids over tattoo stencil papier](guide:tattoo-stencil-paper-guide)."
+            }
+          ]
+        },
+        {
+          "h2": "Waar je op let bij het kiezen",
+          "blocks": [
+            {
+              "ul": [
+                "**Papierbreedte:** check de breedste stencil die je nodig hebt. Een printer die alleen een smal vel aanneemt, beperkt grote ontwerpen zoals een rugstuk of een sleeve.",
+                "**Resolutie in dpi:** een hoger getal betekent fijnere lijnen. Kijk naar de echte resolutie van de printer en check of hij 300 dpi bestanden aankan.",
+                "**Aansluiting:** USB, bedraad of draadloos, en of hij werkt met je telefoon, tablet of computer. Zorg dat hij werkt met het systeem dat je al gebruikt.",
+                "**Uitvoer op ware grootte:** de printer moet het bestand printen op de grootte die je instelt, zonder het te schalen om op het vel te passen.",
+                "**Kosten van verbruiksmaterialen:** papier, en eventuele inkt of lint, zijn doorlopende kosten. Vergelijk het papier dat je gaat gebruiken en hoeveel stencils het oplevert, niet alleen de printerprijs.",
+                "**Ondersteuning en reserveonderdelen:** check dat papier in jouw regio beschikbaar blijft en dat de printer gerepareerd kan worden."
+              ]
+            },
+            {
+              "p": "Vraag andere tatoeëerders wat ze gebruiken en waarom. Hun dagelijkse ervaring is nuttiger dan een specificatieblad."
+            },
+            {
+              "p": "Denk ook na over waar de printer komt te staan. Een thermische stencilprinter is klein en past op een studiobureau of een trolley, maar je hebt stroom nodig, een vlak oppervlak en een plek om het papier droog te bewaren. Reis je naar guest spots of conventies, dan tellen gewicht en een eenvoudige opstelling zwaarder dan extra functies."
+            }
+          ]
+        },
+        {
+          "h2": "Waarom printgrootte en 300 dpi tellen",
+          "blocks": [
+            {
+              "p": "Een stencil met de verkeerde grootte is de verkeerde stencil. Print het ontwerp 10 procent te klein, dan wordt de tattoo 10 procent te klein. Daarom moet de print op ware grootte zijn, niet verkleind om op een pagina te passen."
+            },
+            {
+              "p": "Ook resolutie telt. Bij 300 dpi print een dunne lijn als een gladde, doorlopende streek. Lagere resoluties tonen trapvormige randen op bochten, en een stencil bestaat vooral uit bochten. Een bestand dat te klein is en omhoog is gerekt, print zacht en grijs."
+            },
+            {
+              "p": "De [gids over ware grootte](guide:tattoo-stencil-size-true-size-print) heeft de getallen, inclusief hoeveel pixels je nodig hebt voor een bepaalde breedte bij 300 dpi."
+            }
+          ]
+        },
+        {
+          "h2": "Zo print je een bestand op ware grootte",
+          "blocks": [
+            {
+              "ol": [
+                "Begin met een schoon lijnbestand met de juiste verhoudingen, met minstens zoveel pixels als de breedte nodig heeft bij 300 dpi.",
+                "Stel de grootte in millimeters of inches in je ontwerptool in en exporteer op 300 dpi.",
+                "Kies in het printvenster werkelijke grootte of 100 procent. Zet aan pagina aanpassen en schalen om te passen uit.",
+                "Stel het papierformaat in op het vel in de printer.",
+                "Print eerst een test op gewoon papier en meet die met een liniaal tegen de grootte die je instelde.",
+                "Print dan op het transferpapier."
+              ]
+            },
+            {
+              "p": "De AI-generator op de homepage van Skinstencil maakt een ontwerp van een beschrijving of een voorbeeldafbeelding, toont het op 8 lichaamsdelen en 6 huidtinten en maakt een stencil die je op ware grootte print, 300 dpi. [De Studio](studio) maakt van je eigen tekening, flash of foto een stencil op je apparaat, en er wordt niets geüpload. Het is gratis te proberen. Gratis downloads hebben een watermerk, en met een dagpas of Pro verdwijnt dat."
+            }
+          ]
+        },
+        {
+          "h2": "Veelvoorkomende problemen en oplossingen",
+          "blocks": [
+            {
+              "h3": "De stencil is te licht"
+            },
+            {
+              "ul": [
+                "Check of het papier het juiste type is en de goede kant boven is geladen.",
+                "Check het bestand: vage of dunne lijnen in het bestand printen vaag.",
+                "Gebruik vers papier, geen oude of vochtige vellen.",
+                "Kijk naar de eigen instellingen van de printer voor dichtheid of donkerte."
+              ]
+            },
+            {
+              "h3": "De stencil is uitgesmeerd"
+            },
+            {
+              "ul": [
+                "Laat de print drogen of afkoelen voordat je hem aanraakt.",
+                "Check of papier en printer bij elkaar passen en maak de printer schoon zoals de fabrikant aanraadt.",
+                "Pak het vel bij de randen vast."
+              ]
+            },
+            {
+              "h3": "De stencil heeft de verkeerde grootte"
+            },
+            {
+              "ul": [
+                "Zet pagina aanpassen of schalen om te passen uit.",
+                "Check de grootte en dpi die je instelde bij het exporteren van het bestand.",
+                "Print een test op gewoon papier en meet die voordat je op het transferpapier print."
+              ]
+            },
+            {
+              "p": "Lost één oplossing het niet op, verander dan één ding tegelijk, zodat je ziet wat werkte."
+            },
+            {
+              "p": "Bewaar een kort briefje met de instellingen die een goede print gaven: de bestandsgrootte, de dpi, het papier en de dichtheidsinstelling van de printer. Komt een stencil verkeerd uit, dan zie je meteen wat er veranderd is. Doe altijd een testprint voordat een klant in de stoel zit, nooit tijdens de afspraak."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Welke printer gebruiken tatoeëerders voor stencils?",
+          "a": "Veel tatoeëerders gebruiken een thermische stencilprinter, en sommigen een inkjet met transferpapier of een thermische kopieermachine. De juiste hangt af van je volume en werkwijze."
+        },
+        {
+          "q": "Kan ik een gewone printer gebruiken voor tattoo stencils?",
+          "a": "Sommige inkjetprinters werken met printbaar transferpapier, maar niet elke combinatie werkt. Lees de instructies van het papier en test voor een sessie."
+        },
+        {
+          "q": "Welke dpi moet een tattoo stencil hebben?",
+          "a": "300 dpi is het gebruikelijke doel. Het houdt dunne lijnen glad en doorlopend op de grootte waarop je print."
+        },
+        {
+          "q": "Waarom is mijn tattoo stencil te licht?",
+          "a": "Gebruikelijke oorzaken zijn het verkeerde of oude papier, een vaag bronbestand, het papier verkeerd om geladen of een lage dichtheidsinstelling."
+        },
+        {
+          "q": "Hoe print ik een stencil op de juiste grootte?",
+          "a": "Stel de grootte in millimeters in, exporteer op 300 dpi, print op werkelijke grootte met pagina aanpassen uit en meet een testprint met een liniaal."
+        }
+      ],
+      "cta": "Maak een stencil die je op ware grootte kunt printen, 300 dpi. Probeer de AI-generator of de Studio, gratis te proberen."
+    },
+    "tattoo-size-chart-by-body-part": {
+      "title": "Tattoo grootte per lichaamsdeel: typische maten in cm en inch",
+      "short": "Tattoo grootte per lichaamsdeel",
+      "blurb": "Typische tattoo-maten in cm en inch voor 13 lichaamsdelen, plus detailgrenzen en hoe je de grootte checkt met een stencil op ware grootte.",
+      "metaTitle": "Tattoo grootte per lichaamsdeel: cm en inch",
+      "metaDesc": "Tattoo grootte per lichaamsdeel in cm en inch voor 13 lichaamsdelen, minimale maten voor fine line en dik werk en hoe je de grootte checkt met een stencil.",
+      "updated": "2026-11-26",
+      "answer": "Een overzicht van tattoo grootte per lichaamsdeel toont de typische breedte of lengte die bij elk lichaamsdeel past, bijvoorbeeld 2 tot 5 cm (ongeveer 1 tot 2 inch) bij de pols en 8 tot 25 cm (3 tot 10 inch) langs de onderarm. Het zijn richtlijnen, geen regels. Print je ontwerp op ware grootte en houd het tegen je huid.",
+      "sections": [
+        {
+          "h2": "Tattoo grootte per lichaamsdeel",
+          "blocks": [
+            {
+              "p": "Een overzicht van tattoo grootte per lichaamsdeel geeft je een startpunt voordat je met een tatoeëerder praat. De bereiken hieronder zijn typische maten voor de langste zijde van één ontwerp bij een gemiddelde volwassene. Het is richting, geen regel. Lichamen verschillen, en ontwerpen ook."
+            },
+            {
+              "table": {
+                "head": [
+                  "Lichaamsdeel",
+                  "Typische grootte (cm)",
+                  "Typische grootte (inch)"
+                ],
+                "rows": [
+                  [
+                    "Pols",
+                    "2 tot 5 cm",
+                    "0,8 tot 2 inch"
+                  ],
+                  [
+                    "Onderarm",
+                    "8 tot 25 cm",
+                    "3 tot 10 inch"
+                  ],
+                  [
+                    "Bovenarm",
+                    "8 tot 20 cm",
+                    "3 tot 8 inch"
+                  ],
+                  [
+                    "Schouderblad",
+                    "10 tot 20 cm",
+                    "4 tot 8 inch"
+                  ],
+                  [
+                    "Rug",
+                    "20 tot 45 cm",
+                    "8 tot 18 inch"
+                  ],
+                  [
+                    "Borst",
+                    "10 tot 30 cm",
+                    "4 tot 12 inch"
+                  ],
+                  [
+                    "Ribben",
+                    "10 tot 25 cm",
+                    "4 tot 10 inch"
+                  ],
+                  [
+                    "Bovenbeen",
+                    "15 tot 35 cm",
+                    "6 tot 14 inch"
+                  ],
+                  [
+                    "Kuit",
+                    "10 tot 25 cm",
+                    "4 tot 10 inch"
+                  ],
+                  [
+                    "Enkel",
+                    "3 tot 8 cm",
+                    "1,2 tot 3 inch"
+                  ],
+                  [
+                    "Hand",
+                    "3 tot 8 cm",
+                    "1,2 tot 3 inch"
+                  ],
+                  [
+                    "Nek",
+                    "3 tot 10 cm",
+                    "1,2 tot 4 inch"
+                  ],
+                  [
+                    "Achter het oor",
+                    "1 tot 4 cm",
+                    "0,4 tot 1,6 inch"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Lees de getallen als de lengte van het ontwerp langs de ledemaat, of de hoogte op een vlak gebied zoals de rug. Een stuk op de onderarm kan de hele lengte van de arm beslaan, terwijl een stuk op de pols meestal een klein bandje of symbool is."
+            }
+          ]
+        },
+        {
+          "h2": "Zo lees je het overzicht",
+          "blocks": [
+            {
+              "p": "De bereiken zijn met opzet breed. Een roos van 10 cm (4 inch) is een kleine tattoo op een bovenbeen en een grote achter het oor. Waar het om gaat, is hoe het ontwerp zich verhoudt tot de ruimte eromheen."
+            },
+            {
+              "ul": [
+                "**Kleine** stukken passen goed op de pols, enkel, hand, nek en achter het oor.",
+                "**Middelgrote** stukken passen bij de bovenarm, onderarm, kuit, het schouderblad en de ribben.",
+                "**Grote** stukken gebruiken de rug, borst en het bovenbeen, waar een ontwerp ruimte heeft om te ademen."
+              ]
+            },
+            {
+              "p": "Valt je idee buiten het bereik voor de plek die je mooi vindt, overweeg dan een andere plaatsing of een andere grootte. Een ontwerp om een ledemaat wikkelen laat bijvoorbeeld een lang ontwerp passen waar een plat ontwerp dat niet zou doen."
+            }
+          ]
+        },
+        {
+          "h2": "Minimale grootte voor detail",
+          "blocks": [
+            {
+              "p": "Grootte gaat niet alleen over uiterlijk. Tattoo-inkt loopt door de jaren iets uit in de huid, dus kleine details kunnen vervagen. Hoe kleiner het ontwerp, hoe minder details het kan dragen en toch leesbaar blijft."
+            },
+            {
+              "h3": "Fine line werk"
+            },
+            {
+              "p": "Fine line ontwerpen gebruiken dunne, lichte streken. Ze zien er delicaat uit, maar hebben genoeg ruimte tussen de lijnen nodig. Veel tatoeëerders raden aan een ontwerp minstens een paar centimeter breed te houden en piepkleine tekst of drukke patronen te vermijden. Vraag je tatoeëerder naar de kleinste grootte die hij of zij voor jouw ontwerp wil zetten."
+            },
+            {
+              "h3": "Dik werk"
+            },
+            {
+              "p": "Dikke ontwerpen met zware contouren en massieve vulling houden stand op kleinere maten, omdat de vormen eenvoudig zijn en de openingen ertussen breed. Een dik symbool kan werken op een grootte waarop hetzelfde beeld in fine line een brij zou worden."
+            },
+            {
+              "p": "Als je een ontwerp verkleint, vereenvoudig het dan. Haal kleine achtergrondelementen weg, maak krappe openingen breder en maak tekst groter dan je denkt nodig te hebben."
+            }
+          ]
+        },
+        {
+          "h2": "Zo meet je op je lichaam",
+          "blocks": [
+            {
+              "p": "Je kunt je eigen plaatsing in een paar minuten opmeten met een zachte meetlint of een liniaal. Een zacht meetlint volgt bochten, een stijve liniaal niet."
+            },
+            {
+              "ol": [
+                "Markeer de boven- en onderkant van de plek die je in gedachten hebt met een afwasbare pen, of met kleine stukjes tape.",
+                "Meet de rechte afstand tussen de markeringen en meet daarna nog eens langs de bocht van het lichaam.",
+                "Meet de breedte op het breedste punt van het gebied.",
+                "Schrijf beide getallen op in centimeters en inches, zodat je ze met het overzicht kunt vergelijken.",
+                "Laat aan elke kant minstens een vingerbreedte marge, zodat het ontwerp niet precies tegen een rand zit."
+              ]
+            },
+            {
+              "p": "De rechte en de gebogen meting verschillen meer op ronde gebieden zoals de bovenarm en kuit. Een ontwerp dat op papier 10 cm breed is, ziet er smaller uit zodra het om een bocht heen loopt, omdat een deel van de kijker wegdraait."
+            }
+          ]
+        },
+        {
+          "h2": "Check de grootte met een stencil op ware grootte",
+          "blocks": [
+            {
+              "p": "Getallen in een overzicht brengen je maar tot een bepaald punt. De betrouwbaarste manier om grootte te beoordelen, is het ontwerp op zijn echte afmetingen op je lichaam zien. Een stencil die op ware grootte is geprint, doet precies dat."
+            },
+            {
+              "p": "Bepaal de breedte in millimeters, exporteer het ontwerp op 300 dpi en print het op 100 procent zonder schaling. Onze gids over [printen op ware grootte](guide:tattoo-stencil-size-true-size-print) laat de berekening zien en hoe je het resultaat met een liniaal bevestigt."
+            },
+            {
+              "p": "Dat kun je doen in de [Studio](studio). Hij maakt van je eigen tekening, flash of foto een stencil op je apparaat, en er wordt niets geüpload. Stel de grootte in millimeters in, download de stencil en print hem."
+            },
+            {
+              "p": "Knip de printout uit en houd hem tegen je huid, of plak hem vast. Ga voor een spiegel staan, beweeg je arm, ga zitten en loop rond. Voelt het te groot of te klein, pas dan de grootte aan en print opnieuw. Papier is goedkoop en huid niet."
+            }
+          ]
+        },
+        {
+          "h2": "Hoe plaatsing en huid de benodigde grootte veranderen",
+          "blocks": [
+            {
+              "p": "Hetzelfde ontwerp kan er anders uitzien, afhankelijk van waar het zit en op wiens huid."
+            },
+            {
+              "ul": [
+                "**Bochten.** Een ontwerp op een rond gebied lijkt van voren kleiner en iets vervormd. Op de bovenarm of kuit wil je misschien iets groter gaan dan een plat plaatje doet vermoeden.",
+                "**Beweging.** Huid bij gewrichten rekt en vouwt. Ontwerpen daar worden vaak kleiner of eenvoudiger gehouden, en je tatoeëerder kan adviseren over de exacte positie.",
+                "**Lichaamsbouw.** Een ontwerp van 15 cm zit anders op een slanke onderarm dan op een brede. Beoordeel het op je eigen lichaam, niet op een foto van een ander.",
+                "**Huidtint.** Contrast verandert hoe een ontwerp overkomt, dus vraag je tatoeëerder wat het best zichtbaar is op jouw huid.",
+                "**Veroudering.** Lijnen worden met de tijd zachter. Een ontwerp wat ruimte geven helpt het helder te houden."
+              ]
+            },
+            {
+              "p": "De AI-generator op de homepage helpt bij dit deel. Hij maakt een ontwerp van een beschrijving of een voorbeeldafbeelding en toont het daarna op 8 lichaamsdelen (schouderblad, rug, onderarm, bovenarm, borst, ribben, bovenbeen en kuit) en 6 huidtinten, zodat je ziet hoe schaal en contrast eruitzien voordat je print. Hij maakt een stencil die je op ware grootte (300 dpi) kunt printen."
+            },
+            {
+              "p": "Twijfel je nog waar het ontwerp heen moet, lees dan onze [gids over tattoo plaatsing](guide:tattoo-placement-guide)."
+            }
+          ]
+        },
+        {
+          "h2": "Laatste checks voordat je een afspraak maakt",
+          "blocks": [
+            {
+              "ul": [
+                "Ziet de geprinte stencil er goed uit als je staat, zit en beweegt?",
+                "Is er genoeg ruimte tussen de lijnen voor de stijl die je koos?",
+                "Is tekst groot genoeg om op normale afstand te lezen?"
+              ]
+            },
+            {
+              "p": "Je tatoeëerder heeft het laatste woord over grootte en detail. Neem je printout en de maten mee, en zie het overzicht als het begin van het gesprek."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Welke grootte is een kleine tattoo?",
+          "a": "Er is geen vaste regel, maar veel mensen noemen een ontwerp onder ongeveer 5 cm (2 inch) klein. Plekken als de pols, enkel en achter het oor passen meestal bij deze maat."
+        },
+        {
+          "q": "Hoe groot is een middelgrote tattoo?",
+          "a": "Middelgroot is meestal ongeveer 8 tot 15 cm (3 tot 6 inch) op de langste zijde. Het past goed op een onderarm, bovenarm, kuit of schouderblad."
+        },
+        {
+          "q": "Wat is de kleinste grootte van een tattoo?",
+          "a": "Dat hangt af van de stijl en de tatoeëerder. Fijn detail heeft meer ruimte nodig dan dikke vormen, dus vraag je tatoeëerder naar de minimale grootte waarop jouw ontwerp helder blijft."
+        },
+        {
+          "q": "Hoe zie ik hoe groot mijn tattoo op mijn lichaam wordt?",
+          "a": "Print het ontwerp op ware grootte en houd het op de plek, of plak het erop. Zo beoordeel je de grootte in een spiegel en terwijl je beweegt."
+        },
+        {
+          "q": "Zijn tattoo-maten voor iedereen hetzelfde?",
+          "a": "Nee. De bereiken in een overzicht zijn typisch, en je lichaamsbouw, huid en het ontwerp zelf veranderen wat er goed uitziet."
+        }
+      ],
+      "cta": "Stel de grootte in millimeters in de Studio in, print je stencil op ware grootte en zie hoe hij op je huid zit voordat je een afspraak maakt."
+    },
+    "tattoo-placement-guide": {
+      "title": "Tattoo plaatsing: zo kies je de juiste plek",
+      "short": "Tattoo plaatsing: zo kies je",
+      "blurb": "Zichtbaarheid, dresscode, huidbeweging en ontwerpvorm: zo kies je een tattoo plaatsing en test je die met een stencil.",
+      "metaTitle": "Tattoo plaatsing: zo kies je de juiste plek",
+      "metaDesc": "Zo kies je een tattoo plaatsing: zichtbaarheid, dresscode, huidbeweging en ontwerpvorm, plus een plaatsingstabel en hoe je test met een stencil.",
+      "updated": "2026-11-26",
+      "answer": "Je kiest een tattoo plaatsing het best door vier dingen af te wegen: wie hem ziet, hoe de huid daar beweegt en veroudert, hoe goed de vorm van het ontwerp bij de ruimte past en hoe je over het genezen denkt. Test de plek met een stencil op ware grootte en vraag dan je tatoeëerder.",
+      "sections": [
+        {
+          "h2": "Tattoo plaatsing begint bij wie hem ziet",
+          "blocks": [
+            {
+              "p": "Tattoo plaatsing is de beslissing die bepaalt hoe je elke dag met een tattoo leeft. Begin bij zichtbaarheid, want die kun je later niet makkelijk veranderen."
+            },
+            {
+              "p": "Vraag jezelf af waar je wilt dat de tattoo wordt gezien, en door wie."
+            },
+            {
+              "ul": [
+                "**Altijd zichtbaar:** handen, nek, gezicht, onderarmen en onderbenen zijn in de meeste outfits te zien.",
+                "**Zichtbaar als je dat kiest:** bovenarm, bovenbeen, schouderblad en borst kun je bedekken met een T-shirt, korte broek of boord van een overhemd.",
+                "**Meestal privé:** ribben, rug, heup en bovenbeen zien weinig mensen, tenzij je ze zelf laat zien."
+              ]
+            },
+            {
+              "p": "Er is geen goed antwoord. Een tattoo die je kunt verbergen, geeft je meer controle. Een tattoo die je kunt zien, geeft je dagelijks meer plezier. Bedenk welke van de twee voor jou zwaarder weegt."
+            }
+          ]
+        },
+        {
+          "h2": "Werk, dresscode en veranderingen in je leven",
+          "blocks": [
+            {
+              "p": "De houding tegenover zichtbare tattoos verschilt per land, branche en werkgever, en verandert in de tijd. Check voordat je een plek kiest die in werkkleding zichtbaar is de dresscode en de cultuur van je werkplek, of van de werkplek waar je graag wilt werken."
+            },
+            {
+              "p": "Denk ook aan waar je leven heen kan gaan. Een carrièrewissel, een uniform, reizen of een familiegebeurtenis kunnen allemaal veranderen hoe prettig je een zichtbare tattoo vindt. Plekken die een mouw of kraag kan bedekken, houden je opties open."
+            },
+            {
+              "p": "Dit is een persoonlijke keuze. Weeg het eerlijk af en laat een trend niet voor je beslissen."
+            }
+          ]
+        },
+        {
+          "h2": "Hoe de huid beweegt en veroudert",
+          "blocks": [
+            {
+              "p": "Een tattoo zit op de huid, en de huid is geen plat doek. Sommige gebieden blijven tientallen jaren stabiel. Andere rekken, vouwen of veranderen mee met het lichaam."
+            },
+            {
+              "ul": [
+                "**Gewrichten** zoals de elleboog, knie, pols en enkel buigen de hele dag. Een ontwerp dat over een gewricht loopt, wordt vervormd als je beweegt.",
+                "**Handen, voeten en vingers** krijgen veel wrijving, water en zon. Ontwerpen daar hebben vaak bijwerking nodig, en je tatoeëerder kan vertellen hoe ze meestal standhouden.",
+                "**Gebieden die veranderen door gewicht, zwangerschap of spieren** zoals de buik, heupen, borst en binnenkant van de bovenbenen kunnen na verloop van tijd verschuiven.",
+                "**Gebieden in de zon** vervagen sneller dan bedekte, dus zonnebrand is belangrijk bij zichtbare plekken."
+              ]
+            },
+            {
+              "p": "Niets hiervan sluit een plek uit. Het betekent alleen dat je je tatoeëerder moet vragen hoe die plaatsing meestal veroudert, en foto's van genezen werk op dat gebied moet bekijken."
+            }
+          ]
+        },
+        {
+          "h2": "Laat de vorm van het ontwerp bij de ruimte passen",
+          "blocks": [
+            {
+              "p": "Het lichaam heeft natuurlijke lijnen en bochten, en een goede plaatsing volgt ze. Een ontwerp dat meebeweegt met de vorm van het lichaam, lijkt er thuis te horen."
+            },
+            {
+              "ul": [
+                "**Lange, smalle ontwerpen** zoals een dolk, een tak, een regel tekst of een stuk langs de ruggengraat passen bij plekken die in een lijn lopen: de onderarm, ruggengraat, kuit, ribben of de lengte van het bovenbeen.",
+                "**Ronde of compacte ontwerpen** zoals een mandala, een roos of een portret zitten goed op vlakke of licht gebogen gebieden: het schouderblad, de bovenarm, borst of het bovenbeen.",
+                "**Kleine ontwerpen** zoals een symbool, een datum of een piepklein dier passen bij plekken met weinig ruimte: de pols, enkel, achter het oor of de binnenkant van een vinger."
+              ]
+            },
+            {
+              "p": "Kun je niet kiezen, verander dan de vorm in plaats van de passing te forceren. Veel ontwerpen kunnen worden uitgerekt, vereenvoudigd of in twee gesplitst om bij een plek te passen."
+            }
+          ]
+        },
+        {
+          "h2": "Veelgekozen plekken en wat erbij past",
+          "blocks": [
+            {
+              "table": {
+                "head": [
+                  "Plaatsing",
+                  "Past bij lange ontwerpen",
+                  "Past bij ronde ontwerpen",
+                  "Past bij kleine ontwerpen"
+                ],
+                "rows": [
+                  [
+                    "Onderarm",
+                    "Ja",
+                    "Ja, op de platte kant van de arm",
+                    "Ja"
+                  ],
+                  [
+                    "Bovenarm",
+                    "Ja, eromheen gewikkeld",
+                    "Ja",
+                    "Ja"
+                  ],
+                  [
+                    "Schouderblad",
+                    "Soms",
+                    "Ja",
+                    "Ja"
+                  ],
+                  [
+                    "Rug",
+                    "Ja, langs de ruggengraat",
+                    "Ja, grote stukken",
+                    "Ja"
+                  ],
+                  [
+                    "Borst",
+                    "Soms",
+                    "Ja",
+                    "Ja"
+                  ],
+                  [
+                    "Ribben",
+                    "Ja, langs de zij",
+                    "Soms",
+                    "Ja"
+                  ],
+                  [
+                    "Bovenbeen",
+                    "Ja",
+                    "Ja",
+                    "Ja"
+                  ],
+                  [
+                    "Kuit",
+                    "Ja",
+                    "Soms",
+                    "Ja"
+                  ],
+                  [
+                    "Pols en enkel",
+                    "Alleen bandjes",
+                    "Nee",
+                    "Ja"
+                  ],
+                  [
+                    "Achter het oor en nek",
+                    "Soms",
+                    "Nee",
+                    "Ja"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Zie de tabel als startpunt, niet als regelboek. Ervaren tatoeëerders passen ontwerpen aan bijna elk gebied aan. Wil je typische maten per plek weten, kijk dan in het [overzicht van tattoo grootte per lichaamsdeel](guide:tattoo-size-chart-by-body-part)."
+            }
+          ]
+        },
+        {
+          "h2": "Pijn, genezing en comfort",
+          "blocks": [
+            {
+              "p": "Pijn verschilt per persoon en per gebied, dus er is geen betrouwbare rangorde die voor iedereen geldt. Sommige mensen vinden ribben of voeten zwaar en anderen merken er amper iets van. Ook genezing verschilt, want een gebied dat tegen kleding wrijft of vaak buigt, kan lastiger te verzorgen zijn."
+            },
+            {
+              "p": "Vraag je tatoeëerder wat je kunt verwachten op de plek die je overweegt, hoe lang de sessie duurt en hoe je erna voor de plek zorgt. Hij of zij heeft dit vaak gedaan en kan advies geven dat bij je lichaam en je ontwerp past."
+            }
+          ]
+        },
+        {
+          "h2": "Test de plaatsing voordat je je vastlegt",
+          "blocks": [
+            {
+              "p": "Over een plek nadenken is nuttig, maar hem zien is beter. Je hebt twee makkelijke manieren om een plaatsing te testen."
+            },
+            {
+              "h3": "Gebruik een geprinte stencil"
+            },
+            {
+              "p": "Print je ontwerp op ware grootte en plak het op de plek. Check het staand, zittend en in beweging. De [Studio](studio) maakt van je eigen tekening, flash of foto een stencil op je apparaat, en er wordt niets geüpload. Voor het printen, zie onze gids over [printen op ware grootte](guide:tattoo-stencil-size-true-size-print). Om een stencil aan te brengen, zie [transfermethodes](guide:tattoo-stencil-transfer-methods)."
+            },
+            {
+              "h3": "Gebruik een voorbeeld"
+            },
+            {
+              "p": "De AI-generator op de homepage maakt een ontwerp van een beschrijving of een voorbeeldafbeelding en toont het op 8 lichaamsdelen (schouderblad, rug, onderarm, bovenarm, borst, ribben, bovenbeen en kuit) en 6 huidtinten. Het is een snelle manier om plekken te vergelijken voordat je print. Hij maakt een stencil die je op ware grootte (300 dpi) kunt printen."
+            }
+          ]
+        },
+        {
+          "h2": "Fouten die je moet vermijden",
+          "blocks": [
+            {
+              "ul": [
+                "Een plek kiezen alleen omdat die trendy is.",
+                "Een ontwerp in een ruimte forceren die niet bij de vorm past.",
+                "De dresscode negeren van een baan die je hebt of wilt.",
+                "Fijn detail plaatsen waar de huid rekt, vouwt of schuurt.",
+                "De test op ware grootte overslaan en alleen op een scherm oordelen.",
+                "De beslissing overhaasten. Een goede tatoeëerder laat je rustig de tijd nemen."
+              ]
+            },
+            {
+              "p": "Neem een week om met het idee van de stencil te leven. Vind je de plek op dag zeven nog steeds mooi, dan is dat een goed teken."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wat is de beste plek voor een eerste tattoo?",
+          "a": "Er is geen enkele beste plek. Veel mensen beginnen op een plek die makkelijk te bedekken en te verzorgen is, zoals de bovenarm of het bovenbeen, en vragen hun tatoeëerder om advies."
+        },
+        {
+          "q": "Welke tattoo plaatsingen doen het meeste pijn?",
+          "a": "Pijn verschilt per persoon, dus het is lastig de plekken te rangschikken. Vraag je tatoeëerder wat je kunt verwachten voor het gebied dat je in gedachten hebt."
+        },
+        {
+          "q": "Hoe weet ik of een tattoo bij de plek past?",
+          "a": "Print het ontwerp op ware grootte en plak het op de plek, check het dan terwijl je beweegt. Dat laat schaal en vloeiing veel beter zien dan een scherm."
+        },
+        {
+          "q": "Vervagen tattoos op gewrichten en handen sneller?",
+          "a": "Gebieden met veel beweging, wrijving en wassen kunnen meer bijwerking nodig hebben. Vraag je tatoeëerder hoe die plaatsing meestal standhoudt."
+        },
+        {
+          "q": "Kan ik een ontwerp aanpassen aan een andere plaatsing?",
+          "a": "Ja. Ontwerpen kunnen worden vergroot of verkleind, vereenvoudigd, uitgerekt of gesplitst, en je tatoeëerder helpt een ontwerp aan te passen aan het gebied dat je kiest."
+        }
+      ],
+      "cta": "Probeer de stencil Studio of de AI-generator om je ontwerp op je gekozen plek te zien voordat je je vastlegt."
+    },
+    "make-a-tattoo-stencil-at-home": {
+      "title": "Tattoo stencil maken: praktische methodes voor thuis",
+      "short": "Tattoo stencil thuis maken",
+      "blurb": "Manieren om thuis een tattoo stencil te maken zonder thermische printer, voor tatoeëerders en om te oefenen op papier of met tijdelijke methodes.",
+      "metaTitle": "Tattoo stencil maken zonder printer: thuis",
+      "metaDesc": "Tattoo stencil maken zonder thermische printer: overtrekpapier, gewoon papier overbrengen en een schoon lijnbestand, plus een veiligheidsnotitie.",
+      "updated": "2026-11-26",
+      "answer": "Om thuis een tattoo stencil te maken begin je met een schone lijntekening op de juiste grootte. Trek hem over op overtrekpapier, of print hem op gewoon papier en breng hem met de hand over. Gebruik deze methodes om te oefenen op papier of met tijdelijke methodes. Echt tatoeëren hoort bij een opgeleide tatoeëerder.",
+      "sections": [
+        {
+          "h2": "Voordat je thuis een tattoo stencil maakt",
+          "blocks": [
+            {
+              "p": "Je kunt thuis een tattoo stencil maken met een printer, wat papier en een paar basisbenodigdheden. Een stencil is een lijntekening van een ontwerp, gebruikt als gids zodat het kunstwerk op de juiste plek en op de juiste grootte terechtkomt."
+            },
+            {
+              "p": "Deze gids is voor tatoeëerders die een noodmethode nodig hebben, voor studenten die stencilwerk oefenen en voor mensen die een ontwerp op papier of een tijdelijke markering willen. Het is geen gids om jezelf of iemand anders te tatoeëren."
+            },
+            {
+              "p": "**Veiligheidsnotitie:** echt tatoeëren moet gebeuren door een opgeleide tatoeëerder in een erkende studio, met steriele apparatuur en goede nazorg. Een stencil maken en oefenen op papier of met tijdelijke methodes is iets anders dan inkt in de huid brengen. Probeer thuis alsjeblieft niet te tatoeëren."
+            }
+          ]
+        },
+        {
+          "h2": "Wat je nodig hebt",
+          "blocks": [
+            {
+              "ul": [
+                "Een schone lijntekening van het ontwerp, op papier of als digitaal bestand.",
+                "Een liniaal of meetlint in millimeters.",
+                "Overtrekpapier of dun papier.",
+                "Een scherp potlood of fijne pen.",
+                "Carbon- of transferpapier, als je met de hand overtrekt.",
+                "Een gewone printer, zwarte inkt en gewoon papier.",
+                "Afplaktape om het papier op zijn plek te houden.",
+                "Een lichtbron, zoals een raam of lichtbak, om het overtrekken te helpen."
+              ]
+            },
+            {
+              "p": "Werk je als tatoeëerder, gebruik dan de materialen die je studio al voor de huid gebruikt. De lijst hierboven is voor stencil-oefeningen op papier en tijdelijke methodes."
+            }
+          ]
+        },
+        {
+          "h2": "Methode 1: overtrekpapier en carbon",
+          "blocks": [
+            {
+              "p": "Dit is de ouderwetse methode en ze werkt nog steeds. Je hebt er geen elektronica voor nodig."
+            },
+            {
+              "ol": [
+                "Leg je tekening op een vlak oppervlak en leg overtrekpapier erover.",
+                "Trek de hoofdlijnen over met een scherp potlood en druk gelijkmatig.",
+                "Sla arcering en vulling over. Een stencil heeft alleen contouren en de belangrijkste details nodig.",
+                "Leg carbon- of transferpapier onder de overtrek, met de carbonkant naar het doeloppervlak.",
+                "Plak de lagen aan elkaar vast, zodat niets verschuift.",
+                "Ga de lijnen nog eens over met een pen om ze over te brengen."
+              ]
+            },
+            {
+              "p": "Het resultaat is een kopie van de lijnen op het nieuwe oppervlak. Voor oefening is dat oppervlak meestal papier of een oefenmateriaal. Voor andere overbrengopties, zie onze gids over [transfermethodes](guide:tattoo-stencil-transfer-methods)."
+            }
+          ]
+        },
+        {
+          "h2": "Methode 2: print op gewoon papier en breng over",
+          "blocks": [
+            {
+              "p": "Een gewone printer kan de stencillijnen op gewoon papier printen. Daarna kun je de lijnen met de hand op een oefenoppervlak overbrengen."
+            },
+            {
+              "ol": [
+                "Print de lijntekening op 100 procent zonder schaling.",
+                "Check de grootte met een liniaal. De geprinte breedte moet overeenkomen met de breedte die je koos.",
+                "Leg de printout op je oefenoppervlak en trek de lijnen over met een pen, zodat ze via carbon- of transferpapier doorkomen.",
+                "Til het papier op en bekijk het resultaat. Corrigeer gemiste lijnen met een potlood."
+              ]
+            },
+            {
+              "p": "Onthoud dat een stencil een spiegelbeeld van het uiteindelijke ontwerp is als hij vanaf de achterkant van het papier wordt overgebracht. Check de richting voordat je begint, vooral bij tekst."
+            }
+          ]
+        },
+        {
+          "h2": "Methode 3: een schoon lijnbestand en een printer",
+          "blocks": [
+            {
+              "p": "Hoe schoner het lijnbestand, hoe makkelijker elke andere stap wordt. Een goed bestand heeft dunne, massieve zwarte lijnen op een witte achtergrond, geen grijze waas en geen losse puntjes."
+            },
+            {
+              "p": "De [Studio](studio) maakt van je eigen tekening, flash of foto een stencil op je apparaat, en er wordt niets geüpload. Hij levert een schone lijnversie op de grootte die je in millimeters instelt, die je op een gewone printer kunt printen."
+            },
+            {
+              "p": "Begin je met een foto, dan legt onze gids over [een stencil maken van een foto](guide:tattoo-stencil-from-photo) uit hoe je een helder resultaat krijgt. De AI-generator op de homepage kan ook een ontwerp maken van een beschrijving of een voorbeeldafbeelding, en een stencil maken die je op ware grootte (300 dpi) kunt printen. Het is gratis te proberen. Gratis downloads hebben een watermerk, en met een dagpas of Pro verdwijnt dat."
+            }
+          ]
+        },
+        {
+          "h2": "Krijg de grootte goed",
+          "blocks": [
+            {
+              "p": "Een stencil met de verkeerde grootte maakt al het andere werk nutteloos. Bepaal eerst de grootte in millimeters en zorg dat zowel het bestand als de printer die respecteren."
+            },
+            {
+              "ul": [
+                "Exporteer de stencil op 300 dpi.",
+                "Print op 100 procent. Zet opties als pagina aanpassen of verkleinen om te passen uit.",
+                "Meet de printout met een liniaal en vergelijk hem met je doel.",
+                "Klopt het niet, check dan de printschaal en print opnieuw."
+              ]
+            },
+            {
+              "p": "Onze gids over [printen op ware grootte](guide:tattoo-stencil-size-true-size-print) legt de berekening uitgebreider uit, en het [overzicht van tattoo grootte per lichaamsdeel](guide:tattoo-size-chart-by-body-part) toont typische maten per lichaamsdeel."
+            }
+          ]
+        },
+        {
+          "h2": "Tips voor een schoner resultaat",
+          "blocks": [
+            {
+              "ul": [
+                "Gebruik minder, schonere lijnen. Te veel detail wordt een veeg bij het overbrengen.",
+                "Bewaar een kopie van het origineel en werk vanaf de kopie.",
+                "Werk met een lichte hand en scherp gereedschap.",
+                "Test eerst op kladpapier voordat je je definitieve vel gebruikt.",
+                "Houd je printerinkt donker. Bleke lijnen zijn moeilijk te volgen.",
+                "Label elk vel met de grootte en de datum, zodat je weet welke versie je maakte."
+              ]
+            },
+            {
+              "p": "Is een stencil voor een echte klant, dan moet de tatoeëerder die het werk gaat doen hem goedkeuren. Die kent zijn of haar techniek en wat de huid toelaat."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kan ik een tattoo stencil maken zonder thermische printer?",
+          "a": "Ja. Je kunt het ontwerp overtrekken op overtrekpapier, carbon- of transferpapier gebruiken, of de lijnen op een gewone printer printen en met de hand overbrengen."
+        },
+        {
+          "q": "Welk papier gebruik ik voor een zelfgemaakte tattoo stencil?",
+          "a": "Dun overtrekpapier werkt goed voor met de hand overtrekken, en gewoon printerpapier voor een geprinte stencil. Kies papier dat plat blijft en niet scheurt."
+        },
+        {
+          "q": "Hoe weet ik zeker dat de stencil de juiste grootte heeft?",
+          "a": "Stel de breedte in millimeters in, exporteer op 300 dpi en print op 100 procent. Meet de printout daarna met een liniaal."
+        },
+        {
+          "q": "Is het veilig om mezelf te tatoeëren met een stencil?",
+          "a": "Nee. Echt tatoeëren moet gebeuren door een opgeleide tatoeëerder in een erkende studio. Een stencil is voor oefenen op papier, voor tijdelijke methodes of voor gebruik door professionals."
+        },
+        {
+          "q": "Waarom komt mijn stencil wazig uit?",
+          "a": "Het bronbestand is waarschijnlijk te klein of te zacht. Begin met een schoon lijnbestand met hoge resolutie en print op 300 dpi."
+        }
+      ],
+      "cta": "Open de Studio om je tekening om te zetten in een schone stencil op de grootte die je kiest, klaar om thuis te printen."
+    },
+    "free-tattoo-stencil-maker-guide": {
+      "title": "Gratis tattoo stencil maker: waar je op let",
+      "short": "Gratis tattoo stencil maker: waar je op let",
+      "blurb": "Een checklist om elke gratis tattoo stencil maker te beoordelen, wat gratis versies meestal beperken en een test van vijf minuten.",
+      "metaTitle": "Gratis tattoo stencil maker: checklist om te kiezen",
+      "metaDesc": "Zo beoordeel je een gratis tattoo stencil maker: schone lijnen, grootte in mm, printen op ware grootte, privacy, plus een test van vijf minuten.",
+      "updated": "2026-11-26",
+      "answer": "Een goede gratis tattoo stencil maker geeft je schone zwarte lijnen, laat je de grootte in millimeters instellen, print op ware grootte, toont een voorbeeld op de huid en respecteert je privacy. Test elke tool in vijf minuten met je eigen tekening en lees wat de gratis versie beperkt.",
+      "sections": [
+        {
+          "h2": "Wat een gratis tattoo stencil maker moet kunnen",
+          "blocks": [
+            {
+              "p": "Een gratis tattoo stencil maker maakt van een afbeelding een lijntekening die je kunt printen en als gids gebruiken. Dat klinkt simpel, maar de resultaten verschillen sterk tussen tools. Sommige geven scherpe lijnen op de juiste grootte. Andere geven een grijze veeg op de verkeerde grootte, met een watermerk over het midden."
+            },
+            {
+              "p": "Weet voordat je tijd in een tool steekt wat een goede doet. De volgende secties noemen de kernfuncties en geven je een checklist die je op elke tool kunt toepassen."
+            }
+          ]
+        },
+        {
+          "h2": "Schone lijnen",
+          "blocks": [
+            {
+              "p": "Een stencil is een verzameling lijnen, dus lijnkwaliteit is het eerste wat je beoordeelt. Je wilt massieve, gelijkmatige zwarte lijnen op een witte achtergrond. Let op deze tekenen van een goed resultaat:"
+            },
+            {
+              "ul": [
+                "Gladde bochten, zonder kartelige randen.",
+                "Geen grijze waas of spikkelruis rond de lijnen.",
+                "Details die na de omzetting nog zichtbaar zijn, niet verloren of dubbel.",
+                "Een manier om de drempel of lijnsterkte aan te passen, zodat je het resultaat kunt bijstellen."
+              ]
+            },
+            {
+              "p": "Een tool met één vast filter kan voor sommige afbeeldingen werken en voor andere falen. Een tool met aanpasbare instellingen geeft je meer kans op een schoon resultaat met je eigen werk."
+            }
+          ]
+        },
+        {
+          "h2": "Grootte in millimeters en printen op ware grootte",
+          "blocks": [
+            {
+              "p": "Een stencil die op de verkeerde grootte print, is nutteloos, dus grootteregeling telt zwaarder dan bijna elke andere functie. Een goede tool laat je de breedte of hoogte in millimeters typen en vertelt wat dat in pixels bij 300 dpi betekent."
+            },
+            {
+              "p": "300 dpi is het gebruikelijke doel voor een geprinte afbeelding die van dichtbij wordt bekeken. Bij die dichtheid blijft een dunne lijn schoon op papier. De tool moet ook een bestand exporteren dat zonder verrassingen op 100 procent print. Wil je de berekening zien, lees dan onze gids over [printen op ware grootte](guide:tattoo-stencil-size-true-size-print)."
+            },
+            {
+              "p": "Voor typische maten per lichaamsdeel gebruik je het [overzicht van tattoo grootte per lichaamsdeel](guide:tattoo-size-chart-by-body-part)."
+            }
+          ]
+        },
+        {
+          "h2": "Voorbeeld op de huid en privacy",
+          "blocks": [
+            {
+              "h3": "Voorbeeld"
+            },
+            {
+              "p": "Een ontwerp op een lichaamsdeel zien helpt je schaal en plaatsing te beoordelen voordat je print. Tools die een voorbeeld op verschillende lichaamsdelen en huidtinten tonen, besparen je veel giswerk. Onze [gids over tattoo plaatsing](guide:tattoo-placement-guide) legt uit hoe je dat gebruikt om een plek te kiezen."
+            },
+            {
+              "h3": "Privacy"
+            },
+            {
+              "p": "Je tekeningen en foto's kunnen persoonlijk zijn. Check of de tool je afbeelding naar een server uploadt of op je eigen apparaat verwerkt. Een tool die op je apparaat verwerkt, houdt de afbeelding bij jou. Uploadt hij wel, zoek dan een duidelijke verklaring over hoelang het bestand wordt bewaard en wie het kan zien."
+            }
+          ]
+        },
+        {
+          "h2": "Een checklist voor elke tool, ook Skinstencil",
+          "blocks": [
+            {
+              "p": "Gebruik deze lijst om elke gratis tattoo stencil maker te beoordelen. Vink elke regel af voordat je op een tool vertrouwt."
+            },
+            {
+              "ul": [
+                "Geeft hij schone, massieve lijnen van je eigen afbeelding?",
+                "Kun je de grootte in millimeters instellen?",
+                "Exporteert hij op 300 dpi voor printen op ware grootte?",
+                "Is er een voorbeeld op een lichaamsdeel?",
+                "Zegt hij duidelijk wat er met je afbeelding gebeurt?",
+                "Is duidelijk wat gratis is en wat niet?",
+                "Kun je downloaden zonder een account aan te maken dat je niet wilt?",
+                "Werkt hij voor foto's en voor tekeningen?"
+              ]
+            },
+            {
+              "p": "Skinstencil is één voorbeeld dat je door dezelfde lijst kunt halen. De [Studio](studio) maakt van je eigen tekening, flash of foto een stencil op je apparaat, en er wordt niets geüpload. De AI-generator op de homepage maakt een ontwerp van een beschrijving of een voorbeeldafbeelding, toont het op 8 lichaamsdelen (schouderblad, rug, onderarm, bovenarm, borst, ribben, bovenbeen en kuit) en 6 huidtinten, en maakt een stencil die je op ware grootte (300 dpi) kunt printen. Beoordeel hem zoals je elke andere tool zou beoordelen."
+            }
+          ]
+        },
+        {
+          "h2": "Wat gratis versies meestal beperken",
+          "blocks": [
+            {
+              "p": "De meeste gratis tools hebben beperkingen, en het is redelijk om er vooraf naar te zoeken. Veelvoorkomende zijn:"
+            },
+            {
+              "ul": [
+                "Een watermerk op gedownloade bestanden.",
+                "Een limiet op het aantal omzettingen of downloads.",
+                "Uitvoer met lagere resolutie in het gratis plan.",
+                "Minder aanpasbare instellingen.",
+                "Functies die een account vragen."
+              ]
+            },
+            {
+              "p": "Geen van deze is op zich slecht. Met een gratis niveau kun je een tool proberen voordat je je vastlegt. Het gaat erom dat de beperking duidelijk is, zodat je weet wat je krijgt. Skinstencil is gratis te proberen. Gratis downloads hebben een watermerk, en met een dagpas of Pro verdwijnt dat. Check het actuele plan op de site."
+            }
+          ]
+        },
+        {
+          "h2": "Test elke tool in vijf minuten",
+          "blocks": [
+            {
+              "p": "Je hebt geen lange beoordeling nodig. Gebruik je eigen tekening en volg deze stappen."
+            },
+            {
+              "ol": [
+                "Kies een eenvoudige tekening van jezelf met duidelijke lijnen. Een scan of een foto van een schets werkt.",
+                "Laad hem in de tool en let op hoelang het duurt.",
+                "Check de lijnkwaliteit op volledige zoom.",
+                "Stel een grootte in millimeters in, bijvoorbeeld 100 mm.",
+                "Download het resultaat en print het op 100 procent.",
+                "Meet de printout met een liniaal.",
+                "Check hoe de download eruitziet, inclusief een eventueel watermerk."
+              ]
+            },
+            {
+              "p": "Komt de printout overeen met de grootte die je instelde en zien de lijnen er schoon uit, dan haalt de tool de basis. Zo niet, ga dan naar een andere."
+            }
+          ]
+        },
+        {
+          "h2": "Wanneer een foto de fotomodus nodig heeft",
+          "blocks": [
+            {
+              "p": "Een tekening op wit papier zet makkelijk om, omdat de lijnen al donker zijn en de achtergrond effen. Een foto is moeilijker. Hij heeft schaduwen, kleuren, texturen en zachte randen, en een simpel filter maakt daar ruis van."
+            },
+            {
+              "p": "Is je bron een foto, zoek dan een tool met een eigen fotomodus. Die moet tinten vereenvoudigen en de hoofdcontouren eruit pikken, zodat het resultaat als stencil leest. Onze gids over [een stencil maken van een foto](guide:tattoo-stencil-from-photo) legt uit hoe je het beste resultaat krijgt."
+            },
+            {
+              "p": "Een tip voor elke foto: gebruik goed licht, een scherp beeld en waar mogelijk een effen achtergrond. Betere invoer geeft een schonere stencil."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is er een gratis tattoo stencil maker?",
+          "a": "Ja, meerdere tools bieden een gratis niveau. Check de beperkingen, zoals watermerken, limieten op downloads of lagere resolutie, voordat je erop vertrouwt."
+        },
+        {
+          "q": "Kan ik gratis een tattoo stencil maken van een foto?",
+          "a": "Vaak wel, maar foto's vragen meer zorg dan tekeningen. Gebruik een tool met een fotomodus en een scherpe, goed verlichte bronafbeelding."
+        },
+        {
+          "q": "Op welke grootte moet een stencil worden geëxporteerd?",
+          "a": "Kies de grootte in millimeters die je op de huid wilt en exporteer op 300 dpi. Print daarna op 100 procent en meet het resultaat."
+        },
+        {
+          "q": "Zijn mijn afbeeldingen veilig in een online stencil maker?",
+          "a": "Dat hangt af van de tool. Zoek er een die afbeeldingen op je apparaat verwerkt, of die duidelijk vermeldt hoelang bestanden worden bewaard en wie ze kan zien."
+        },
+        {
+          "q": "Waarom hebben gratis stencil downloads een watermerk?",
+          "a": "Een watermerk is een gebruikelijke beperking van gratis plannen. Veel tools halen het weg met een betaalde optie, dus check wat de tool biedt."
+        }
+      ],
+      "cta": "Probeer de Skinstencil Studio met je eigen tekening en haal hem zelf door de checklist."
     }
   }
 }

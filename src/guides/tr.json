@@ -23,6 +23,18 @@
     "tattoo-stencil-from-photo",
     "tattoo-stencil-size-true-size-print",
     "tattoo-stencil-transfer-methods",
+    "ai-tattoo-generator-guide",
+    "ai-tattoo-prompts",
+    "see-a-tattoo-on-your-body-before-you-get-it",
+    "fine-line-tattoo-stencil-tips",
+    "how-to-apply-a-tattoo-stencil",
+    "how-long-does-a-tattoo-stencil-last",
+    "tattoo-stencil-paper-guide",
+    "tattoo-stencil-printer-guide",
+    "tattoo-size-chart-by-body-part",
+    "tattoo-placement-guide",
+    "make-a-tattoo-stencil-at-home",
+    "free-tattoo-stencil-maker-guide",
     "brow-mapping-on-a-photo-start-arch-end",
     "brow-mapping-measurements-scale-and-print-true-size"
   ],
@@ -843,6 +855,2259 @@
         }
       ],
       "cta": "Ölçeği ayarlayın, ölçüleri okuyun ve kılavuzu gerçek boyutta yazdırın. [Kaş haritalamayı aç](brow)."
+    },
+    "ai-tattoo-generator-guide": {
+      "title": "Yapay zeka dövme üretici: nasıl kullanılır ve dövmecinin uygulayabileceği tasarım nasıl alınır",
+      "short": "Yapay zeka dövme üretici: doğru kullanım",
+      "blurb": "Yapay zeka dövme üretici neyi yapabilir, neyi yapamaz ve dövmecinize götüreceğiniz temiz bir tasarım nasıl alınır.",
+      "metaTitle": "Yapay Zeka Dövme Üretici Rehberi: Tasarım Alın",
+      "metaDesc": "Yapay zeka dövme üretici nasıl kullanılır: net bir tarif yazın, çizgileri temiz tutun, sonucu kontrol edin ve dövmecinize başlangıç noktası olarak götürün.",
+      "updated": "2026-11-26",
+      "answer": "Yapay zeka dövme üretici, yazılı bir tarifi veya örnek bir resmi saniyeler içinde dövme tasarımına çevirir. Fikir keşfetmek için kullanın, sonra çizgilerin temiz olduğunu ve ayrıntının fazla küçük olmadığını kontrol edin. Sonucu taslak sayıp dövmecinize götürün, o da tasarımı cilde uygun hâle getirir.",
+      "sections": [
+        {
+          "h2": "Yapay zeka dövme üretici aslında ne yapar",
+          "blocks": [
+            {
+              "p": "Yapay zeka dövme üretici, kelimelerden ya da örnek olarak verdiğiniz bir resimden görsel üretir. Fikri anlatırsınız, size bir tasarım verir, tarifi değiştirip yeniden deneyebilirsiniz. Tüm işi bu: bakıp tepki verebileceğiniz bir şey ortaya koyar."
+            },
+            {
+              "p": "Keşfetmek için hızlı bir yoldur. Yarım kalmış bir fikri dövmeciye anlatıp ikinizin de aynı şeyi hayal etmesini ummak yerine elinizde somut bir şeyle gidebilirsiniz. Kaba bir tasarım bile konuşmayı kısaltır, çünkü “bundan biraz daha şöyle, şundan daha az” diyebilirsiniz."
+            },
+            {
+              "p": "Skinstencil'de ana sayfadaki üretici, bir tarif veya örnek resimden tasarım üretir ve onu 8 vücut bölgesinde ve 6 ten renginde gösterir. Ayrıca gerçek boyutta (300 dpi) yazdırabileceğiniz bir stencil de çıkarabilir. Denemek ücretsizdir."
+            }
+          ]
+        },
+        {
+          "h2": "Yapay zeka dövme üretici neyi yapamaz",
+          "blocks": [
+            {
+              "p": "Üretilen görsel bir resimdir, dövme planı değildir. Mürekkebin ciltte nasıl davrandığını, vücudunuzun nasıl hareket ettiğini ya da bir çizginin on yıl sonra nasıl görüneceğini bilmez. Bir sonuca âşık olmadan önce sınırlarını net görün."
+            },
+            {
+              "ul": [
+                "**Neyin iyi dövme olacağına karar veremez.** Çok küçük ayrıntılar ve kıl inceliğindeki boşluklar ekranda güzel görünür, ciltte birbirine karışabilir.",
+                "**Dövmecinizin yerini tutamaz.** Yerleşim, boyut ve çizgi işçiliği makineyi tutan kişinin kararıdır.",
+                "**Sözlerinizi her zaman tam uygulamaz.** Eller, yazılar ve simetrik şekiller tuhaf sonuçların sık görüldüğü yerlerdir, dikkatle bakın.",
+                "**Tasarımı hukuki ya da kişisel anlamda özgün yapamaz.** Bunu aşağıda ayrıca anlatıyoruz."
+              ]
+            },
+            {
+              "p": "Çıktıya, hızlı çalışan bir yardımcının çizdiği eskiz gibi bakın. Yararlıdır ama bitmemiştir."
+            }
+          ]
+        },
+        {
+          "h2": "Üreticinin takip edebileceği bir tarif yazın",
+          "blocks": [
+            {
+              "p": "Belirsiz sözler belirsiz tasarımlar getirir. İyi bir tarif konuyu, stili, çizgilerin ne kadar kalın olduğunu ve istemediklerinizi söyler. Kısa bir örnek: “tek bir kurt başı, old school stil, kalın dış çizgiler, arka plan yok, gölge yok”."
+            },
+            {
+              "p": "Elinizde bir referans varsa kullanın. Örnek bir resim, hava ve kompozisyon hakkında bir paragraf sıfattan daha fazlasını anlatır. Referansı stili veya düzeni için seçin, aynısını yapmayı planladığınız için değil."
+            },
+            {
+              "p": "Stile göre gruplanmış tarif fikirlerinin tam listesi [yapay zeka dövme promptları](guide:ai-tattoo-prompts) rehberinde var. Boş kutuya bakıp kalıyorsanız buradan başlayın."
+            }
+          ]
+        },
+        {
+          "h2": "Dövmecinin gerçekten uygulayabileceği tasarım alın",
+          "blocks": [
+            {
+              "p": "Güzel bir görselle dövmeye uygun bir tasarım arasındaki fark çoğunlukla sadelikle ilgilidir. Dövmecilerin her gün çalıştığı şeyleri isteyin."
+            },
+            {
+              "ul": [
+                "**Temiz, kesintisiz çizgiler.** “Temiz dış çizgi” veya “düz çizgi işçiliği” deyin. Amaç bu değilse karalama ya da tırtıklı bir görünüm istemeyin.",
+                "**Küçük gürültü olmasın.** Lekeler, ince tarama ve düzinelerce küçük ayrıntı ciltte lekeye dönüşür. “Az ayrıntı” veya “doku yok” isteyin.",
+                "**Öğeler arasında boşluk.** Neredeyse birbirine değen çizgiler zamanla birleşir. Açık aralık isteyin.",
+                "**Sade bir arka plan.** Beyaz üzerinde duran bir tasarım, arkasında kalabalık bir sahne olan tasarımdan daha kolay stencil'e dönüşür.",
+                "**Tek net fikir.** Tek bir odak konu, kalabalık bir kolajdan daha iyi okunur."
+              ]
+            },
+            {
+              "p": "Sonuç yakın ama fazla kalabalıksa daha çok değil, daha az kelimeyle yeniden üretin. Önce ayrıntıyı çıkarın, özlediğinizi sonra geri ekleyin."
+            }
+          ]
+        },
+        {
+          "h2": "Dövmecinize gitmeden önce kontrol listesi",
+          "blocks": [
+            {
+              "p": "Randevu almadan önce tasarımla beş dakika geçirin. Yakınlaştırın, sonra kolunuzda ya da ayak bileğinizde gerçekten olacağı boyutta, küçük hâliyle bakın."
+            },
+            {
+              "ol": [
+                "**Yakınlaştırın.** Çizgiler düz mü, yoksa kopuyor ve titriyor mu?",
+                "**Küçültün.** Yaptırmayı düşündüğünüz boyutta yazdırın ya da ekranda küçük görün. Ayrıntı ayakta kalıyor mu?",
+                "**Boşlukları kontrol edin.** Birbirine, bulanıklaşsa rahatsız olacağınız kadar yakın iki çizgi var mı?",
+                "**Anatomiyi kontrol edin.** Parmakları, gözleri ve taç yaprakları sayın. Harflere ve sembollere tek tek bakın.",
+                "**Vücutta deneyin.** Düşündüğünüz vücut bölgesinde ve teninize yakın bir ten renginde görün.",
+                "**Neyi değiştireceğinizi not edin.** Görüşmede açabilmek için iki üç şey yazın."
+              ]
+            },
+            {
+              "p": "Boyut kontrolünde [stencil Studio](studio) yardımcı olabilir: bir çizimi, flaşı veya fotoğrafı cihazınızda, hiçbir şey yüklenmeden stencil'e çevirir. Yazdırma tarafı için [dövme stencil boyutları](guide:tattoo-stencil-size-true-size-print) rehberine bakın."
+            }
+          ]
+        },
+        {
+          "h2": "Telif, özgünlük ve dövmeciniz",
+          "blocks": [
+            {
+              "p": "Yapay zeka görselleri, daha önce var olan birçok resimden öğrenilen kalıplarla üretilir ve bunların kime ait olduğuna dair kurallar birçok yerde hâlâ oturmamıştır. Üretilmiş bir tasarımın kendiliğinden benzersiz olduğunu ya da buna benzeyen bir işte başkasının hakkı olmadığını varsaymamalısınız."
+            },
+            {
+              "p": "İki basit alışkanlık sizi doğru tarafta tutar. Birincisi, üreticiden adı bilinen bir sanatçıyı ya da birinin belirli bir işini kopyalamasını istemeyin ve onun tasarımını aklamak için kullanmayın. İkincisi, sonucu dövmecinize gösterin ve yapay zeka üreticiden geldiğini açıkça söyleyin."
+            },
+            {
+              "p": "İyi bir dövmeci çoğu zaman tasarımı yeniden çizer, kompozisyonu değiştirir ve kendi dokunuşunu ekler. Üretilmiş bir fikir, gerçekten size ait bir tasarıma bu şekilde dönüşür. Dövmeciniz bir tasarıma hayır derse bunu kabul edin ve onun yerine ne çizeceğini sorun."
+            }
+          ]
+        },
+        {
+          "h2": "Üretilen tasarımdan stencil'e",
+          "blocks": [
+            {
+              "p": "Siz ve dövmeciniz bir tasarımda anlaşınca onun stencil'e, yani doğru boyutta yazdırılmış temiz bir dış çizgiye dönüşmesi gerekir. Bunu genellikle dövmeciniz hazırlar, ama birçok kişi işi hızlandırmak için yazdırılabilir bir sürümle gelmeyi sever."
+            },
+            {
+              "p": "Üretici, gerçek boyutta (300 dpi) yazdırabileceğiniz bir stencil çıkarabilir. Ücretsiz indirmelerde filigran bulunur, günlük geçiş veya Pro onu kaldırır. Başlangıç noktası olarak götürün; kullanıp kullanmayacağına, yeniden çizip çizmeyeceğine ya da o gün ayarlayıp ayarlamayacağına dövmeci karar versin."
+            },
+            {
+              "p": "Stencil'in cilde nasıl geçtiğini [dövme stencil nasıl uygulanır](guide:tattoo-stencil-transfer-methods) rehberinde okuyabilirsiniz."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Yapay zekayla üretilmiş bir tasarımı dövmeciye götürebilir miyim?",
+          "a": "Evet, ama nereden geldiğini söyleyin. Birçok dövmeci tasarımı ciltte işleyecek şekilde yeniden çizer ya da uyarlar, bazıları ise kabul etmez; bu onların kararıdır."
+        },
+        {
+          "q": "Yapay zeka dövme tasarımları özgün mü?",
+          "a": "Kendiliğinden değil. Yapay zeka görselleri için hukuki durum yere göre değişir ve hâlâ gelişiyor; dövmecinize gösterin ve başkasının işinin kopyasını istemeyin."
+        },
+        {
+          "q": "Yapay zeka dövme tasarımları neden ekranda güzel, ciltte kötü görünür?",
+          "a": "Ekran, cildin tutamayacağı kıl inceliğinde ayrıntıyı gösterebilir. Küçük boşluklar ve ince doku birbirine karışır, bu yüzden temiz çizgi ve az ayrıntı isteyin."
+        },
+        {
+          "q": "Yapay zeka dövme üretici dövmeyi vücudumda gösterebilir mi?",
+          "a": "Bazıları gösterir. Skinstencil üretici tasarımı 8 vücut bölgesinde ve 6 ten renginde gösterir, bu da yerleşim ve kontrast hakkında kabaca bir fikir verir."
+        },
+        {
+          "q": "Skinstencil yapay zeka dövme üretici ücretsiz mi?",
+          "a": "Denemek ücretsizdir. Ücretsiz indirmelerde filigran bulunur, günlük geçiş veya Pro onu kaldırır."
+        }
+      ],
+      "cta": "Skinstencil ana sayfasındaki yapay zeka dövme üreticiyi deneyin, fikrinizi anlatın ve dövmecinizle konuşmadan önce vücut bölgenizde görün."
+    },
+    "ai-tattoo-prompts": {
+      "title": "Yapay zeka dövme promptları: işe yarayan bir formül ve 25'ten fazla örnek",
+      "short": "Yapay zeka dövme promptları: formül ve örnekler",
+      "blurb": "Basit bir prompt formülü, stile göre 25 örnek prompt ve tutmayan bir tasarımı düzeltmenin yolu.",
+      "metaTitle": "Yapay Zeka Dövme Promptları: Formül ve 25+ Örnek",
+      "metaDesc": "Beş parçalı formülle daha iyi yapay zeka dövme promptları yazın: ince çizgi, old school, blackwork, geometrik için 25'ten fazla hazır örnek.",
+      "updated": "2026-11-26",
+      "answer": "İyi yapay zeka dövme promptları beş parçadan oluşur: konu, stil, çizgi kalınlığı, kompozisyon ve kaçınılacaklar. Örneğin: “bir tilki, ince çizgi stili, ince ve eşit çizgiler, düz beyaz arka planda ortalanmış, gölge yok”. Sonucu iyileştirmek için her seferinde yalnızca bir parçayı değiştirin.",
+      "sections": [
+        {
+          "h2": "Yapay zeka dövme promptları formülü",
+          "blocks": [
+            {
+              "p": "En iyi yapay zeka dövme promptları kısa ve nettir. Zayıf sonuçların çoğu bir parçanın eksik bırakılmasından gelir, çünkü üretici boşluğu kendi tahminiyle doldurur. Bu beş parçayı kabaca bu sırayla kullanın:"
+            },
+            {
+              "ol": [
+                "**Konu.** Ne olduğu. “Suda duran bir balıkçıl”, “bir kuş”tan iyidir.",
+                "**Stil.** İnce çizgi, old school, blackwork, geometrik, yazı, botanik ve benzeri.",
+                "**Çizgi kalınlığı.** İnce, orta veya kalın; eşit ya da değişken.",
+                "**Kompozisyon.** Ortalanmış, dikey, sarılmış, çerçeveli ya da çerçevesiz, düz arka plan.",
+                "**Kaçınılacaklar.** Gölge yok, yazı yok, arka plan yok, küçük ayrıntı yok."
+              ]
+            },
+            {
+              "p": "Birleştirince: “suda duran bir balıkçıl, ince çizgi stili, ince ve eşit çizgiler, düz beyaz arka planda dikey kompozisyon, gölge yok, küçük ayrıntı yok”."
+            },
+            {
+              "p": "Her parçaya her zaman ihtiyacınız olmaz. Ama bir sonuç hayal kırıklığı yarattığında beşten hangisini atladığınıza bakın."
+            }
+          ]
+        },
+        {
+          "h2": "İnce çizgi promptları",
+          "blocks": [
+            {
+              "p": "İnce çizgi tasarımlar ince, eşit vuruşlara ve bol beyaz alana dayanır. Bunu söyleyin ve üreticiden dolgu kullanmamasını isteyin."
+            },
+            {
+              "ul": [
+                "Bir kadın yüzünün tek çizgili çizimi, ince çizgi stili, kesintisiz tek ince çizgi, düz beyaz arka plan",
+                "Üç yıldızlı küçük bir hilal, ince çizgi, ince ve eşit çizgiler, minimal, gölge yok",
+                "Bir çiçeğin yanında sinek kuşu, ince çizgi stili, zarif ince dış çizgiler, dolgu yok, beyaz arka plan",
+                "Gün doğumunda bir dağ silsilesi, ince çizgi, ince çizgiler, sade ufuk, arka plan dokusu yok",
+                "Neredeyse birbirine değen iki el, ince çizgi stili, ince dış çizgiler, az ayrıntı, ortalanmış"
+              ]
+            },
+            {
+              "p": "Bu stilin neden ekstra özen istediğini [ince çizgi dövme stencil ipuçları](guide:fine-line-tattoo-stencil-tips) rehberinde bulabilirsiniz."
+            }
+          ]
+        },
+        {
+          "h2": "Old school ve blackwork promptları",
+          "blocks": [
+            {
+              "p": "Old school kalın dış çizgiler ve düz renk blokları demektir. Blackwork ise düz siyah ve güçlü kontrast demektir. İkisi de kalın çizgi ister, o yüzden isteyin."
+            },
+            {
+              "table": {
+                "head": [
+                  "Stil",
+                  "Örnek prompt"
+                ],
+                "rows": [
+                  [
+                    "Old school",
+                    "İki yapraklı bir gül, old school dövme stili, kalın siyah dış çizgiler, düz gölgelendirme, düz beyaz arka plan"
+                  ],
+                  [
+                    "Old school",
+                    "Bir pankart taşıyan kırlangıç, old school stil, kalın dış çizgiler, basit şekiller, ortalanmış"
+                  ],
+                  [
+                    "Old school",
+                    "Kalbi delen bir hançer, old school dövme flaş, kalın çizgiler, renk geçişi yok"
+                  ],
+                  [
+                    "Old school",
+                    "Dalgalı denizde bir gemi, old school stil, kalın dış çizgiler, sınırlı ayrıntı"
+                  ],
+                  [
+                    "Blackwork",
+                    "Kanatları açık bir karga, blackwork stili, düz siyah dolgu, yüksek kontrast, renk geçişi yok"
+                  ],
+                  [
+                    "Blackwork",
+                    "Bir hançere dolanmış yılan, blackwork, kalın siyah şekiller, temiz kenarlar"
+                  ],
+                  [
+                    "Blackwork",
+                    "Çam ağaçlarının üzerinde dolunay, blackwork stili, güçlü siyah beyaz kontrast, gri gölge yok"
+                  ],
+                  [
+                    "Blackwork",
+                    "Çiçek ayrıntılı bir kuru kafa, blackwork, düz siyah ve temiz çizgi deseni, düz arka plan"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "h2": "Geometrik ve yazı promptları",
+          "blocks": [
+            {
+              "p": "Geometrik işler kesin şekillere, yazı işleri okunaklı harflere dayanır. Üreticilerin en çok bu ikisinde yanıldığını unutmayın; isteği sade tutun ve çıktıyı dikkatle kontrol edin."
+            },
+            {
+              "ul": [
+                "Üçgenlerden oluşan bir kurt başı, geometrik stil, ince ve kesin çizgiler, simetrik, beyaz arka plan",
+                "Sekiz katlı simetriye sahip bir mandala, geometrik, orta çizgi kalınlığı, gölge yok",
+                "Küp oluşturan altıgen deseni, geometrik çizgi sanatı, temiz düz çizgiler, minimal",
+                "Üst üste binen çizgilerden boynuzlu geometrik bir geyik, ince çizgiler, ortalanmış",
+                "“Breathe” kelimesi zarif el yazısıyla, ince harfler, düz beyaz arka plan, süs yok",
+                "“Family” kelimesi kalın gotik harflerle, kalın vuruşlar, arka plan yok, efekt yok",
+                "Roma rakamlarıyla kısa bir tarih, temiz tırnaklı harfler, eşit aralık, süs yok"
+              ]
+            },
+            {
+              "p": "Yazıda sonuçtaki her harfi mutlaka okuyun. Üreticiler harfleri değiştirebilir ya da uydurabilir. Birçok kişi tasarımı yazısız ister ve kelimeyi stencil adımında ekler ya da harfleri dövmecinin çizmesini ister."
+            }
+          ]
+        },
+        {
+          "h2": "Botanik ve hayvan promptları",
+          "blocks": [
+            {
+              "p": "Bitkiler ve hayvanlar hoşgörülü konulardır. Hemen her stile uyarlar, o yüzden stili net söyleyin ve ne kadar ayrıntı istediğinize karar verin."
+            },
+            {
+              "ul": [
+                "Bir lavanta dalı, botanik illüstrasyon stili, ince çizgiler, renk yok, düz arka plan",
+                "Bir zeytin dalı, ince çizgi botanik, zarif dış çizgiler, dikey kompozisyon",
+                "Tam açmış bir şakayık, botanik çizgi sanatı, orta çizgiler, basit taç yapraklar, gölge yok",
+                "Kurdeleyle bağlanmış kır çiçeği buketi, ince çizgi, ince ve eşit vuruşlar, beyaz arka plan",
+                "Ucu kıvrılan bir eğrelti otu, botanik stil, temiz çizgiler, az ayrıntı",
+                "Daire biçiminde kıvrılmış uyuyan bir kedi, basit çizgi sanatı, orta çizgi kalınlığı, tüy dokusu yok",
+                "Profilden bir aslan, old school stil, kalın dış çizgiler, düz şekiller, arka plan yok",
+                "Yukarı doğru yüzen bir koi balığı, temiz dış çizgiler, orta çizgiler, basit pullar, beyaz arka plan",
+                "Kanatları açık bir kelebek, simetrik çizgi sanatı, ince çizgiler, dolgu yok",
+                "Karşıya bakan bir baykuş, blackwork stili, dolu şekiller, temiz kenarlar"
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Sık yapılan prompt hataları",
+          "blocks": [
+            {
+              "ul": [
+                "**Çok belirsiz.** “Havalı bir dövme” size üreticinin ortalama havalı fikrini verir.",
+                "**Çok kalabalık.** On konu ve altı stil karmaşa üretir. Bir konu ve bir stil seçin.",
+                "**Gerçekçilik ile ince çizgiyi birlikte istemek.** Fotoğraf gibi gölgelendirme ve ince dış çizgiler zıt yönlere çeker.",
+                "**Arka planı unutmak.** Temiz bir stencil istiyorsanız “düz beyaz arka plan” deyin.",
+                "**Küçük ayrıntı istemek.** “Karmaşık” ve “çok ayrıntılı” gibi sözler ciltte bulanıklaşan gürültüyü üretme eğilimindedir.",
+                "**Yaşayan bir sanatçının stilini anmak.** Görünümü sade sözlerle anlatmak ve kimseyi kopyalamaktan uzak durmak daha iyidir."
+              ]
+            },
+            {
+              "p": "Olumlu ve olumsuz talimatlar birlikte çalışır. Ne istediğinizi söyleyin, sonra neyi dışarıda bırakacağını söyleyin."
+            }
+          ]
+        },
+        {
+          "h2": "Nasıl yinelenir",
+          "blocks": [
+            {
+              "p": "İlk sonuca taslak gözüyle bakın. Her farkın nedenini bilmek için promptun her seferinde yalnızca bir parçasını değiştirin."
+            },
+            {
+              "ol": [
+                "Beş parçanın hepsiyle ilk sürümü üretin.",
+                "Konu yanlışsa yalnızca konuyu yeniden yazın.",
+                "Fazla kalabalıksa “az ayrıntı” ve “gölge yok” ekleyin ya da sıfatları çıkarın.",
+                "Çizgiler fazla kalın veya fazla inceyse yalnızca çizgi kalınlığı sözcüğünü değiştirin.",
+                "İyi görünüyorsa küçük hâliyle ve kullanmayı düşündüğünüz vücut bölgesinde görün."
+              ]
+            },
+            {
+              "p": "Örnek bir resimle başlayıp kısa bir açıklama da ekleyebilirsiniz. Skinstencil üretici hem açıklama hem örnek resim kabul eder ve tasarımı 8 vücut bölgesinde ve 6 ten renginde gösterir. Denemek ücretsiz; ücretsiz indirmelerde filigran bulunur."
+            },
+            {
+              "p": "Ne alırsanız alın, [yapay zeka dövme üretici rehberimizdeki](guide:ai-tattoo-generator-guide) kontrol listesinden geçirin ve dövmecinize gösterin."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "İyi bir yapay zeka dövme promptu neye benzer?",
+          "a": "İyi bir prompt konuyu, stili, çizgi kalınlığını, kompozisyonu ve kaçınılacakları söyler. Kısa ve net olan, uzun ve belirsiz olandan iyidir."
+        },
+        {
+          "q": "Yapay zeka dövme promptu ne kadar uzun olmalı?",
+          "a": "Genellikle bir iki satır yeter. Fazladan sıfatlar kaliteyi değil gürültüyü artırma eğilimindedir."
+        },
+        {
+          "q": "Yapay zeka dövmesinin çok fazla ayrıntı içermesini nasıl önlerim?",
+          "a": "“Az ayrıntı”, “gölge yok” ve “düz beyaz arka plan” gibi ifadeler ekleyin, “karmaşık” gibi sözcüklerden kaçının."
+        },
+        {
+          "q": "Prompt yerine resim kullanabilir miyim?",
+          "a": "Evet. Skinstencil üretici, kısa bir açıklamayla ya da açıklamasız, örnek bir resimden çalışabilir."
+        },
+        {
+          "q": "Yapay zeka dövmemdeki yazı neden yanlış görünüyor?",
+          "a": "Üreticiler harfleri sıklıkla yanlış yazar ya da bozar. Her harfi kontrol edin ya da yazıyı dışarıda bırakıp harfleri dövmecinize çizdirin."
+        }
+      ],
+      "cta": "Bu promptlardan birini Skinstencil yapay zeka üreticiye yapıştırın, vücut bölgenizde görün ve yazdırabileceğiniz bir stencil çıkarın."
+    },
+    "see-a-tattoo-on-your-body-before-you-get-it": {
+      "title": "Dövmeyi yaptırmadan önce vücudunda görmek: 4 önizleme yolu",
+      "short": "Dövmeyi yaptırmadan önce vücudunda gör",
+      "blurb": "Dövmeyi ciltte önizlemenin dört yolu, bir önizlemenin gösteremedikleri ve görüşmeniz için kontrol listesi.",
+      "metaTitle": "Dövmeyi Yaptırmadan Önce Vücudunda Görmek",
+      "metaDesc": "Dövme tasarımını vücudunda önizlemenin dört yolu: uygulama, fotoğraf mock-up'ı, geçici transfer, ciltte stencil. Ve hiçbir önizlemenin gösteremedikleri.",
+      "updated": "2026-11-26",
+      "answer": "Dövmeyi yaptırmadan önce vücudunuzda görmek için tasarımı bir fotoğrafa yerleştirebilir, bir önizleme uygulaması veya üretici kullanabilir, gerçek boyutta yazdırıp tenin üzerinde tutabilir ya da dövmecinize stencil'i uygulatabilirsiniz. Her yol farklı bir şey gösterir, ama hiçbiri dövmenin nasıl iyileşeceğini ya da yıllar içinde nasıl yaşlanacağını göstermez.",
+      "sections": [
+        {
+          "h2": "Dövmeyi yaptırmadan önce neden vücudunuzda görmelisiniz",
+          "blocks": [
+            {
+              "p": "Dövmeyi karar vermeden önce vücudunuzda görmek için ekrandan fazlasına ihtiyacınız var. Ekranda kusursuz görünen bir tasarım ön kolunuzda yanlış hissettirebilir. Fazla büyük olabilir, fazla yukarıda durabilir ya da kasınızla çatışan bir açıda oturabilir. Önizlemenin amacı bunu hâlâ ücretsiz değiştirebilecekken öğrenmektir."
+            },
+            {
+              "p": "Dövmecinizle konuşmaya da yardımcı olur. Kendi koluna işaret edip “şurada, yaklaşık bu genişlikte” demek anlatmaktan daha nettir. Çoğu insan fikir gerçek olmadan önce dövmeyi vücudunda görmek ister ve bu iyi bir içgüdüdür."
+            },
+            {
+              "p": "Aşağıdaki dört yol en hızlıdan en güvenilire doğru gider. Hepsine gerek yok, ama yer ne kadar kalıcı ve görünürse o kadar çoğunu kullanmalısınız."
+            },
+            {
+              "p": "Her adım farklı bir soruyu cevaplar. Fotoğraf fikri beğenip beğenmediğinizi cevaplar. Çıktı boyutun doğru olup olmadığını cevaplar. Geçici bir sürüm onunla yaşamayı sevip sevmediğinizi cevaplar. Dövmecinin stencil'i ise yerleşimin vücudunuzda işe yarayıp yaramadığını cevaplar."
+            }
+          ]
+        },
+        {
+          "h2": "1. yol: fotoğrafta veya uygulamada önizleme",
+          "blocks": [
+            {
+              "p": "En hızlı yol tasarımı kendi fotoğrafınıza yerleştirmektir. Bazı araçlar tasarımı bir resmin üzerine bırakmanıza izin verir, bazıları onu bir model vücutta gösterir."
+            },
+            {
+              "p": "Ana sayfadaki Skinstencil yapay zeka üretici, bir tarif veya örnek resimden tasarım üretir ve onu 8 vücut bölgesinde ve 6 ten renginde gösterir. Bu, bir şeye karar vermeden önce yerleşim ve kontrast hakkında hızlı bir his verir. Denemek ücretsizdir."
+            },
+            {
+              "p": "Kendi fotoğrafınızda mock-up yaparken fotoğrafı düz karşıdan, eşit ışıkta ve vücut bölgesi gevşekken çekin. Tuhaf bir açıyla çekilmiş fotoğraf çarpık bir önizleme verir."
+            },
+            {
+              "p": "Ekran önizlemesi kompozisyon ve fikir için iyidir. Gerçek boyut konusunda zayıftır, o yüzden karar vermeden önce sonraki adımlara geçin."
+            }
+          ]
+        },
+        {
+          "h2": "2. yol: gerçek boyutta yazdırıp tutun",
+          "blocks": [
+            {
+              "p": "Ekranda en sık yanlış değerlendirilen şey boyuttur. Tasarımı gerçek genişlikte yazdırın, kesin ve tenin üzerinde tutun ya da gevşekçe bantlayın. Çok büyük mü, çok küçük mü hemen görürsünüz."
+            },
+            {
+              "p": "Doğru boyutta yazdırmak için boyutu milimetre olarak ayarlamanız ve ölçeklemeden yüzde 100'de yazdırmanız gerekir. [Dövme stencil boyutları](guide:tattoo-stencil-size-true-size-print) rehberimiz bunun nasıl yapıldığını gösteriyor; Skinstencil üretici de gerçek boyutta (300 dpi) yazdırabileceğiniz bir stencil çıkarabilir."
+            },
+            {
+              "p": "Kâğıttan başka bir şeye mal olmaz ve on dakika sürer. Çoğu kişi için en yararlı adım budur."
+            }
+          ]
+        },
+        {
+          "h2": "3. yol: geçici transfer veya çizilmiş mock-up",
+          "blocks": [
+            {
+              "p": "Bir iki gün ciltte görmek için kendi tasarımınızdan yapılmış geçici bir dövme kullanabilir ya da dış çizgiyi cilde uygun bir kalemle çizebilirsiniz. Evde onunla dolaşmak, hareket ederken, otururken ve giyinirken nasıl göründüğünü gösterir."
+            },
+            {
+              "p": "Cilt için yapılmış ürünleri kullanın ve talimatlarına uyun. Hassas cildiniz ya da bir cilt rahatsızlığınız varsa size neyin uygun olduğunu dövmecinize veya eczacıya sorun."
+            }
+          ]
+        },
+        {
+          "h2": "4. yol: dövmecinin yerleştirdiği stencil",
+          "blocks": [
+            {
+              "p": "En güvenilir önizleme, sizi dövecek kişinin yerleştirdiği gerçek stencil'dir. Dövmeciler genellikle onu yerleştirir, ayağa kalkıp hareket etmenizi ister ve oturana kadar ayarlar. Burada acele ettirilmeyin. Aynada birkaç açıdan bakın."
+            },
+            {
+              "p": "Ortanın yanı sıra kenarlara da bakın. Bir tasarım önden dengeli görünüp döndüğünüzde bir yana yatabilir. Bir şey yanlış hissettiriyorsa söyleyin. Stencil'i kaydırmak kolaydır, dövmeyi kaydırmak değildir."
+            },
+            {
+              "p": "Başlangıç noktası olarak kendi stencil'inizi getirebilirsiniz, kullanıp kullanmayacağına dövmeciniz karar verir. Stencil'in cilde nasıl geçtiğini [dövme stencil nasıl uygulanır](guide:tattoo-stencil-transfer-methods) rehberinde görebilirsiniz. Elinizde yalnızca bir fotoğraf veya çizim varsa [stencil Studio](studio) onu cihazınızda, hiçbir şey yüklenmeden stencil'e çevirir."
+            }
+          ]
+        },
+        {
+          "h2": "Bir önizlemenin gösteremedikleri",
+          "blocks": [
+            {
+              "p": "Sınırları açıkça bilin. Önizleme ilk günün resmidir, dövme ise uzun vadeli bir şeydir."
+            },
+            {
+              "ul": [
+                "**İyileşme.** Cilt iyileşirken değişir ve çizgiler sonrasında farklı görünebilir. Dövmeciniz ne bekleyeceğinizi söyleyebilir.",
+                "**Yaşlanma.** Çizgiler yıllar içinde yumuşar, ince ayrıntı genellikle önce bulanıklaşır.",
+                "**Hareket.** Düz bir resim vücudunuzla birlikte bükülmez. Eklem, kaburga ya da omuz üzerindeki bir tasarım hareket ettiğinizde farklı görünebilir.",
+                "**Mürekkebin cildinizde nasıl durduğu.** Aynı tasarım farklı vücutlarda farklı görünebilir.",
+                "**Bir hafta sonraki kendi tepkiniz.** Önizlemeyle birkaç gün yaşadıktan sonra hâlâ beğeniyorsanız bu iyi bir işarettir."
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Yerleşim, boyut ve ten rengi görünümü nasıl değiştirir",
+          "blocks": [
+            {
+              "p": "Aynı tasarım, nereye konduğuna, ne kadar büyük olduğuna ve üzerinde durduğu tene göre çok farklı okunabilir."
+            },
+            {
+              "table": {
+                "head": [
+                  "Etken",
+                  "Neye bakılmalı"
+                ],
+                "rows": [
+                  [
+                    "Yerleşim",
+                    "Düz bölgeler tasarımı bozulmadan korur. Kavisli veya gerilen bölgeler onu çarpıtabilir, o yüzden hareket ederken kontrol edin."
+                  ],
+                  [
+                    "Boyut",
+                    "Küçük boyutlarda ayrıntı kaybolur. Büyük boyutlar bunaltabilir. Yazdırıp tutarak deneyin."
+                  ],
+                  [
+                    "Ten rengi",
+                    "Mürekkep ile cildiniz arasındaki kontrast tasarımın ne kadar net göründüğünü etkiler. Teninize yakın bir tonda önizleyin."
+                  ],
+                  [
+                    "Yön",
+                    "Tasarımın hangi yöne baktığına ve vücut bölgesiyle nasıl aktığına bakın."
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Karşılaştırmak için Skinstencil üreticideki 6 ten rengini kullanın ve ekrandaki önizlemenin gerçeğe yalnızca yakın olduğunu unutmayın."
+            }
+          ]
+        },
+        {
+          "h2": "Görüşme için kontrol listesi",
+          "blocks": [
+            {
+              "ol": [
+                "Tasarımı ve varsa gerçek boyutlu bir çıktıyı getirin.",
+                "Vücut bölgesinin iyi ışıkta, düz karşıdan çekilmiş fotoğraflarını getirin.",
+                "Dövmecinizin onu nereye yerleştireceğini ve nedenini sorun.",
+                "Hangi ayrıntının tutamayacak kadar küçük olduğunu ve neyi sadeleştireceğini sorun.",
+                "Stencil'e aynada, ayakta ve hareket ederek bakın.",
+                "İyileşme ve bakım hakkında sorun, dövmecinizin tavsiyesine uyun.",
+                "Acele etmeyin. Emin değilseniz bir hafta bekleyin ve yeniden bakın."
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bir dövmenin üzerimde nasıl görüneceğini nasıl görebilirim?",
+          "a": "Tasarımı bir fotoğrafa veya önizleme aracına yerleştirin, gerçek boyutta yazdırıp tenin üzerinde tutun ve dövme başlamadan önce dövmecinizden stencil'i uygulamasını isteyin."
+        },
+        {
+          "q": "Dövme önizleme uygulamaları doğru mu?",
+          "a": "Yerleşim ve kompozisyon için iyidir, ama gerçek boyut ve iyileşme için nadiren öyledir. Her zaman yazdırılmış bir stencil'le de kontrol edin."
+        },
+        {
+          "q": "Bir dövme tasarımını geçici dövmeyle test edebilir miyim?",
+          "a": "Evet. Geçici bir transfer veya cilde uygun bir kalemle çizilmiş dış çizgi, tasarımı bir iki gün taşımanızı sağlar. Cildiniz hassassa dövmecinize veya eczacıya sorun."
+        },
+        {
+          "q": "Dövme önizlemesi neyi gösteremez?",
+          "a": "İyileşmeyi, çizgilerin nasıl yaşlanacağını ve tasarımın vücudunuzla birlikte tam olarak nasıl hareket edeceğini gösteremez."
+        },
+        {
+          "q": "Ten rengi dövmenin görünümünü değiştirir mi?",
+          "a": "Evet. Mürekkep ile cildiniz arasındaki kontrast tasarımın nasıl okunduğunu etkiler, o yüzden teninize yakın bir tonda önizleyin."
+        }
+      ],
+      "cta": "Skinstencil üreticide bir tasarım oluşturun, 8 vücut bölgesinde ve 6 ten renginde görün, sonra stencil'i gerçek boyutta yazdırın."
+    },
+    "fine-line-tattoo-stencil-tips": {
+      "title": "İnce çizgi dövme stencil: temiz, yazdırılabilir çizgiler için ipuçları",
+      "short": "İnce çizgi dövme stencil ipuçları",
+      "blurb": "İnce çizgi neden çok temiz bir stencil ister, ne kadar ince fazla incedir ve yazdırmadan önce nasıl kontrol edilir.",
+      "metaTitle": "İnce Çizgi Dövme Stencil: Temiz Çizgi İpuçları",
+      "metaDesc": "Temiz basılan ince çizgi dövme stencil hazırlayın: mm cinsinden çizgi kalınlığı, aralık, küçültmenin etkisi ve yazdırma öncesi kontrol listesi.",
+      "updated": "2026-11-26",
+      "answer": "İnce çizgi dövme stencil, ince vuruşlar hata payı bırakmadığı için temiz, eşit, kesintisiz çizgiler ve açık aralıklar ister. Çizgi kalınlığını gerçek basılı boyutta kontrol edin, çizgiler arasındaki boşlukları ayrı kalacak kadar geniş tutun ve küçülünce lekeye dönüşen her ayrıntıyı sadeleştirin.",
+      "sections": [
+        {
+          "h2": "İnce çizgi dövme stencil neden çok temiz olmalı",
+          "blocks": [
+            {
+              "p": "İnce çizgi dövme stencil, kalın bir tasarıma göre daha az hata payına sahiptir. Kalın bir dış çizgi hafif titrek bir kenarı gizler. İnce bir çizgi her titremeyi, kopmayı ve başıboş lekeyi gösterir."
+            },
+            {
+              "p": "Stencil, dövmecinizin izlediği kılavuzdur. Kopuk vuruşlar, bulanık kenarlar ya da gürültü içeriyorsa dövmeci hangi izlerin kasıtlı olduğunu tahmin etmek zorunda kalır. Temiz bir stencil bu tahmini gereksiz kılar ve sonucu seçtiğiniz tasarıma daha yakın tutar."
+            },
+            {
+              "p": "İnce çizgi bu yüzden, henüz mürekkep devreye girmeden hazırlık aşamasında biraz ekstra özeni hak eder."
+            },
+            {
+              "p": "Aynısı stencil'in kaynağı için de geçerlidir. Düzenli bir çizim, temiz bir flaş sayfası ya da net bir fotoğraf, bulanık bir ekran görüntüsünden daha temiz sonuç verir. İyi başlamak sonradan en çok zaman kazandırır."
+            }
+          ]
+        },
+        {
+          "h2": "Milimetre cinsinden çizgi kalınlığı: ekran ve cilt",
+          "blocks": [
+            {
+              "p": "Ekranda çizgi kalınlığı pikselle ölçülür ve yakınlaştırdıkça değişir. Kâğıtta ve ciltte milimetreyle ölçülür ve sabittir. İkisini karıştırmak sık görülen bir sürprizdir."
+            },
+            {
+              "p": "300 dpi'de bir piksel yaklaşık 0,085 mm genişliğindedir (25,4 bölü 300). Böylece ekrandaki bir çizginin gerçek boyutta yazdırıldığında ne olacağını hesaplayabilirsiniz:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Piksel cinsinden çizgi genişliği",
+                  "300 dpi'de basılı genişlik"
+                ],
+                "rows": [
+                  [
+                    "1 px",
+                    "yaklaşık 0,08 mm"
+                  ],
+                  [
+                    "3 px",
+                    "yaklaşık 0,25 mm"
+                  ],
+                  [
+                    "6 px",
+                    "yaklaşık 0,51 mm"
+                  ],
+                  [
+                    "12 px",
+                    "yaklaşık 1,02 mm"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Bu size stencil'in kâğıtta nasıl görüneceğini söyler. Bir dövmenin belirli bir vücut bölgesinde hangi çizgi kalınlığını tutabileceği ise, iğnelerini ve cildinizi bilen dövmecinize sorulacak bir şeydir. Orada dövmeye razı olduğu en ince çizgiyi sorun."
+            }
+          ]
+        },
+        {
+          "h2": "Çizgiler arasındaki aralık",
+          "blocks": [
+            {
+              "p": "Boşluklar en az çizgiler kadar önemlidir. Birbirine çok yakın duran iki ince çizgi ilk gün iyi görünebilir, dövme oturdukça birbirine karışabilir."
+            },
+            {
+              "ul": [
+                "Paralel çizgiler arasında net boşluk bırakın. Çıktıda bir aralık dar görünüyorsa fazla dardır.",
+                "Küçük alanlara sıkıştırılmış tarama ve ince dokudan kaçının.",
+                "Taç yapraklarına, tüylere ve kıvrımlara nefes alacak yer verin.",
+                "Yoğunluk istiyorsanız bunu daha az, daha bilinçli çizgiyle yapın."
+              ]
+            },
+            {
+              "p": "Şüphedeyseniz dövmecinizden tasarımın en sıkışık yerine bakıp tutup tutmayacağını söylemesini isteyin."
+            }
+          ]
+        },
+        {
+          "h2": "Tasarımı küçültünce ayrıntı nasıl kaybolur",
+          "blocks": [
+            {
+              "p": "Bir tasarımı küçültmek her şeyi birlikte küçültür: çizgiler incelir, boşluklar daralır. Büyük bir tuval için çizilmiş bir tasarım yarı boyutta bulamaca dönebilir."
+            },
+            {
+              "p": "Çoğu ince çizgi iş küçük yerlere yapılır: bilek, parmak, kulak arkası. Bu en çok orada can yakar. Küçük bölgeler genellikle kavislidir de, bu da sıkı aralıkları daha da affetmez kılar."
+            },
+            {
+              "ol": [
+                "Önce son genişliği milimetre olarak belirleyin.",
+                "Tasarımı yakınlaştırılmış hâliyle değil, o boyutta değerlendirin.",
+                "Çizgiler bulanıyor ya da boşluklar kapanıyorsa daha fazla küçültmek yerine ayrıntıyı çıkarın.",
+                "Ya da dövmeyi biraz büyütün, böylece ayrıntının yeri olur."
+              ]
+            },
+            {
+              "p": "[Dövme stencil boyutları](guide:tattoo-stencil-size-true-size-print) rehberimiz milimetre ve pikselleri, ayrıca yüzde 100'de nasıl yazdırılacağını anlatıyor."
+            }
+          ]
+        },
+        {
+          "h2": "Yazdırmadan önce stencil nasıl kontrol edilir",
+          "blocks": [
+            {
+              "p": "Kısa bir kontrol, boşa giden bir sayfayı ve dövmeciye ikinci bir gidişi önler. Tasarım bir bakışta iyi görünse bile her seferinde yapın, çünkü ince çizgi sorunları parlak bir ekranda kolay gözden kaçar."
+            },
+            {
+              "ol": [
+                "**Yüzde 100'e yakınlaştırın ve kenarlara bakın.** Pürüzsüz olmalı, basamaklı değil.",
+                "**Kopukluk arayın.** Kesintisiz olması gereken ama boşluğu olan çizgi, boşluklu basılır.",
+                "**Leke arayın.** Fotoğraftan veya taramadan kalan küçük noktalar da basılır.",
+                "**Gerçek boyutta görün.** Ekranı kol mesafesinde benzer boyutta tutun ya da bir deneme çıktısı alın.",
+                "**En sıkışık yeri kontrol edin.** Birbirine en yakın iki çizgiyi bulun ve değerlendirin.",
+                "**Çıktıyı ölçün.** Genişliği cetvelle doğrulayın."
+              ]
+            },
+            {
+              "p": "[Stencil Studio](studio), kendi çizimi, flaşı veya fotoğrafı cihazınızda, hiçbir şey yüklenmeden stencil'e çevirir. Fotoğraftan başlıyorsanız [fotoğraftan dövme şablonu](guide:tattoo-stencil-from-photo) rehberi ondan temiz çizgi almayı gösterir."
+            }
+          ]
+        },
+        {
+          "h2": "Sık yapılan ince çizgi stencil hataları",
+          "blocks": [
+            {
+              "ul": [
+                "**Düşük çözünürlüklü görsel kullanmak.** Küçük bir görseldeki ince çizgiler tırtıklı basılır. Daha büyük ve net bir dosyayla başlayın.",
+                "**Kalabalık bir fotoğrafı çizmek.** Cilt dokusu, gölgeler ve arka planlar stencil'de gürültüye dönüşür.",
+                "**Sonradan ölçeklemek.** Basılı kopyayı yeniden boyutlandırmak ya da yazıcının sığdırmak için küçültmesine izin vermek her çizgiyi değiştirir.",
+                "**Çok fazla ince ayrıntı çizmek.** On küçük öğe yalnızca ekranda zarif görünür.",
+                "**Dövmecinin görüşünü atlamak.** Dövmeci sizin göremediğiniz sorunları görebilir.",
+                "**Yalnızca parlak ekranda değerlendirmek.** Arkadan aydınlatmalı ekran, ince çizgileri kâğıttan daha kalın gösterir."
+              ]
+            }
+          ]
+        },
+        {
+          "h2": "Ne zaman sadeleştirmeli",
+          "blocks": [
+            {
+              "p": "Çıktıdaki bir ayrıntıyı görmek için gözlerinizi kısmanız gerekiyorsa muhtemelen ciltte de tutmayacaktır. Sadeleştirmek tasarımdan vazgeçmek değildir. İnce çizgi bir işin net kalmasının yoludur."
+            },
+            {
+              "ul": [
+                "Birkaç küçük şekli tek bir şekilde birleştirin.",
+                "Gölgeyi bırakın, yalnızca temiz dış çizgi kullanın.",
+                "Yoğun bir dokuyu birkaç güçlü çizgiyle değiştirin.",
+                "Boyutu biraz artırın.",
+                "Cildi daha düz bir bölge seçin."
+              ]
+            },
+            {
+              "p": "Yazdırmadan önce sadeleştirin, sonra değil. Tasarımdan bir ayrıntıyı çıkarmak, basılı bir çizginin neden kaybolduğunu dövmecinize açıklamaktan çok daha kolaydır. Daha sade bir stencil, dövmecinize o gün onu vücudunuza uyarlama konusunda daha fazla özgürlük de verir."
+            },
+            {
+              "p": "Skinstencil üreticiyle bir tasarım oluşturuyorsanız “ince ve eşit çizgiler, az ayrıntı, gölge yok” isteyebilir ve onu 8 vücut bölgesinde ve 6 ten renginde görebilirsiniz. Gerçek boyutta (300 dpi) yazdırabileceğiniz bir stencil çıkarır. Denemek ücretsiz; ücretsiz indirmelerde filigran bulunur, günlük geçiş veya Pro onu kaldırır."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "İnce çizgi dövme stencil nedir?",
+          "a": "İnce, narin çizgilerden oluşan bir tasarım için hazırlanan stencil'dir. Çizgiler ince olduğundan stencil temiz, kesintisiz ve gürültüsüz olmalıdır."
+        },
+        {
+          "q": "Bir dövme çizgisi ne kadar ince olabilir?",
+          "a": "Bu dövmeciye, iğnelere ve vücut bölgesine bağlıdır. İstediğiniz yerde dövmeye razı olduğu en ince çizgiyi dövmecinize sorun."
+        },
+        {
+          "q": "İnce çizgi tasarımım küçük basılınca neden bulanık görünüyor?",
+          "a": "Küçültmek çizgi genişliğini ve çizgiler arasındaki boşlukları birlikte azaltır, böylece ayrıntılar birleşir. Tasarımı sadeleştirin ya da biraz daha büyük yazdırın."
+        },
+        {
+          "q": "İnce çizgi stencil hangi çözünürlükte olmalı?",
+          "a": "İnce çizgilerin pürüzsüz kalması için gerçek boyutta 300 dpi'de yazdırın. Küçük bir görseli büyütmek yerine net bir kaynak görsel kullanın."
+        },
+        {
+          "q": "Fotoğraftan ince çizgi stencil yapabilir miyim?",
+          "a": "Evet, ama kalabalık bir fotoğraf gürültü ekler. Net bir fotoğraf ya da çizim kullanın ve yazdırmadan önce sonucu leke ve kopukluk açısından kontrol edin."
+        }
+      ],
+      "cta": "Çiziminizi cihazınızda temiz bir stencil'e çevirmek için Skinstencil Studio'yu açın, sonra yazdırmadan önce gerçek boyutta kontrol edin."
+    },
+    "how-to-apply-a-tattoo-stencil": {
+      "title": "Dövme stencil nasıl uygulanır: cilt hazırlığı, yerleştirme ve soyma",
+      "short": "Dövme stencil nasıl uygulanır",
+      "blurb": "Cildi hazırlamaktan stencil'i yerleştirmeye, bastırmaya, soymaya ve hataları düzeltmeye adım adım bakış.",
+      "metaTitle": "Dövme Stencil Nasıl Uygulanır: Adım Adım",
+      "metaDesc": "Dövme stencil nasıl uygulanır: cilt hazırlığı, transfer solüsyonu, yerleştirme, bastırma, soyma, kuruma ve düzeltmeler. Sade bir rehber.",
+      "updated": "2026-11-26",
+      "answer": "Dövme stencil uygulamak için cildi temizleyip kurulayın, dövmeciniz isterse tıraş edin, ince bir kat transfer solüsyonu veya stick sürün, stencil'i kaydırmadan bastırın, birkaç saniye tutun, yavaşça soyun, çizgilerin kurumasını bekleyin ve yerleşimi aynada kontrol edin. Her adımı acele etmeden yapın.",
+      "sections": [
+        {
+          "h2": "Dövme stencil nasıl uygulanır: kısa özet",
+          "blocks": [
+            {
+              "p": "Dövme stencil nasıl uygulanır sorusunun cevabı şudur: cildi hazırlarsınız, transfer ürünüyle hafifçe ıslatırsınız, stencil kâğıdını bir kez bastırırsınız ve soyarak tasarımı ciltte bırakırsınız. Her adım basittir. Bulanık, eğri ya da yer yer eksik bir stencil, bu adımlardan herhangi birindeki küçük hatalardan çıkar."
+            },
+            {
+              "p": "Bu rehber, tekrarlanabilir bir rutin isteyen dövmeciler ve neler olduğunu, nelere bakacaklarını bilmek isteyen müşteriler için. Stüdyonuzun hijyen kurallarına ve dövmecinizin tavsiyelerine uyun. Rehberin anlattığı bir adım stüdyonuzun çalışma biçimiyle çelişirse stüdyonuzun yöntemi önce gelir."
+            },
+            {
+              "p": "Rutinin tamamı sırayla:"
+            },
+            {
+              "ol": [
+                "Cildi hazırlayın.",
+                "Stencil'i cilde dokunmadan konumlandırın.",
+                "Transfer ürününü sürün.",
+                "Bir kez bastırın, sonra tutun.",
+                "Yavaşça soyun.",
+                "Kurumasını bekleyin, sonra aynada kontrol edin."
+              ]
+            },
+            {
+              "p": "Aşağıdaki bölümler her adımı sırayla ele alıyor, ardından bir şey ters gittiğinde ne yapılacağını anlatıyor."
+            }
+          ]
+        },
+        {
+          "h2": "Cildi hazırlayın",
+          "blocks": [
+            {
+              "p": "Stencil yalnızca temiz, kuru ve yağsız cilde düzgün geçer. Dövmeciniz bölgeyi stüdyonun hijyen rutinine uygun şekilde temizler. Söylenmediği sürece randevudan önce o bölgeye kendi losyonunuzu, yağınızı ya da güneş kremi sürmeyin."
+            },
+            {
+              "p": "Tüyler işi zorlaştırır. Stencil ciltte değil tüyün üzerinde durur ve tüy oynayınca kalkar. Dövmeciniz bölgeyi tıraş edebilir, bazıları kenarlar temiz kalsın diye tasarımdan biraz geniş tıraş eder. Bırakın yapsın, ve bir gece önce kızarıklığı, kesiği ya da tahriş olmuş cildi kendiniz tıraş etmeyin."
+            },
+            {
+              "ul": [
+                "Herhangi bir transfer ürünü sürülmeden önce cilt kuru olmalı.",
+                "Çok yağlı ya da çok terli bir bölge silinmeli ve bir an beklenmeli.",
+                "Gevşek veya pullanan cilt yer yer kopuk çizgi verir, bölge soyuluyorsa dövmecinize söyleyin."
+              ]
+            },
+            {
+              "p": "Duruşu da düşünün. Stencil konmadan önce seans boyunca nasıl oturacağınıza ya da yatacağınıza karar verin, çünkü stencil uygulanırken ayakta durduğunuz pozisyonda değil, seanstaki pozisyonda doğru görünmelidir."
+            }
+          ]
+        },
+        {
+          "h2": "Transfer ürününü seçin",
+          "blocks": [
+            {
+              "p": "Çoğu dövmeci ya sıvı bir transfer solüsyonu ya da stick tipi bir ürün kullanır. İkisi de aynı işi yapar: stencil kâğıdındaki mürekkebin kâğıttan kalkıp cilde geçmesi için ince, yapışkan bir film bırakır."
+            },
+            {
+              "ul": [
+                "**Solüsyon** eldivenli elle ya da uygun bir aplikatörle ince bir kat sürülür. Eşit yayılır, ama fazlası birikip çizgileri bulaştırır.",
+                "**Stick** ince ve eşit bir kat olarak sürülür. Küçük alanlarda kontrol etmesi kolaydır, ama kalın kat bir kabartı bırakabilir ya da çizgileri sürükleyebilir."
+              ]
+            },
+            {
+              "p": "İkisinde de az, çoktan iyidir. Cildin ıslak değil, hafif yapışkan olmasını istersiniz. Kullandığınız ürünün talimatına uyun, merak ediyorsanız dövmecinize ne kullandığını sorun."
+            },
+            {
+              "p": "Ürünü yalnızca stencil'in kaplayacağı alana ve küçük bir paya sürün. Tasarımın dışındaki ürün, kâğıdın kayması için sadece bir yüzey ekler."
+            }
+          ]
+        },
+        {
+          "h2": "Bastırmadan önce yerleştirin ve kontrol edin",
+          "blocks": [
+            {
+              "p": "Yerleşim acele edemeyeceğiniz adımdır, çünkü stencil cilde değdikten sonra oynatılamaz. Kâğıdı cildin hemen üzerinde tutun ve tasarımın nereye ineceğine bakın. Vücudun doğal çizgileriyle karşılaştırın: kasın kenarı, omurganın ortası, omzun kavisi."
+            },
+            {
+              "p": "Sonra aynanın karşısına geçin. Müşteriler, sizin anınız bu. Kendinize sorun:"
+            },
+            {
+              "ul": [
+                "Tasarım düz mü, yoksa yana mı yatıyor?",
+                "Düşündüğünüz vücut bölgesinin ortasında mı?",
+                "Ayaktayken, kolunuzu oynatırken ya da başınızı çevirirken iyi duruyor mu?",
+                "Boyut hayal ettiğiniz gibi mi?"
+              ]
+            },
+            {
+              "p": "Boyut yanlış görünüyorsa bastırmadan durun. Yeni stencil yazdırmak hızlıdır ve doğru boyut, stencil gerçek boyutta yazdırıldığında daha kolay değerlendirilir. Daha fazlasını [gerçek boyut rehberinde](guide:tattoo-stencil-size-true-size-print) okuyabilirsiniz."
+            },
+            {
+              "p": "Bazı dövmeciler önce cilde, tasarımın üstü ve ortası gibi birkaç küçük referans noktası da işaretler. Elleriniz meşgulken kâğıdı hizalamak için size bir dayanak verirler."
+            }
+          ]
+        },
+        {
+          "h2": "Bastırın, tutun ve soyun",
+          "blocks": [
+            {
+              "p": "Stencil kâğıdını tasarım cilde bakacak şekilde tek harekette yatırın. Ortadan ya da bir kenardan başlayın ve düz bir elle, eşit ve sağlam baskıyla dışa doğru bastırın. Kâğıdı kaydırmayın. Her kayma çift çizgi bırakır ve çift çizgiyi düzeltmek zordur."
+            },
+            {
+              "p": "Birkaç saniye, ya da dövmecinizin alıştığı süre kadar tutun. Sonra kâğıdı bir köşeden başlayarak yavaşça soyun, geri kalanı diğer elinizle yerinde tutun. Bir bölüm kâğıtta kalırsa kâğıdı geri yatırın ve daha fazla kaldırmadan önce yeniden bastırın."
+            },
+            {
+              "p": "Kaburga, baldır ve kolun iç tarafı gibi kavisli bölgeler ekstra özen ister. Kâğıdı tek seferde düzleştirmek yerine kavisin içine parça parça bastırın, böylece kırışmaz ve buruşmaz. Büyük bir tasarımda bazı dövmeciler kâğıdı parçalara keser ve birer birer uygular."
+            },
+            {
+              "p": "Hızlı soymak diğer sık görülen hatadır. Hızlı bir çekiş ıslak çizgileri bulaştırabilir ya da tasarımın bir kısmını kaldırabilir. Yavaş ve sabit bir soyma çizgileri koyduğunuz yerde bırakır."
+            }
+          ]
+        },
+        {
+          "h2": "Kuruma süresi ve sonucu kontrol etme",
+          "blocks": [
+            {
+              "p": "Hiçbir şey dokunmadan önce stencil'in kurumasını bekleyin. Çizgiler koyu, net ve kesintisiz görünmeli. Kuruma süresi ürüne, odaya ve cilde göre değişir, bu yüzden ne zaman hazır olduğuna dövmeciniz karar verir ve kısa bir bekleme, bir lekeden iyidir."
+            },
+            {
+              "p": "Şimdi stencil'i bir müşteri gibi kontrol edin:"
+            },
+            {
+              "ul": [
+                "İnce olanlar dahil tüm çizgiler yerinde mi?",
+                "Eksik, çift ya da bulaşmış bir kısım var mı?",
+                "Yerleşim aynada hâlâ doğru görünüyor mu?",
+                "İş başlamadan önce tasarım hakkında sorunuz var mı?"
+              ]
+            },
+            {
+              "p": "Bu, değişiklik istemek için son kolay andır. Dövmeci başladıktan sonra tasarımı kaydırmak artık kolay değildir. Emin değilseniz şimdi söyleyin. İyi bir dövmeci, müşterinin şüphe ettiği bir stencil'le çalışmaktansa yenisini hazırlamayı tercih eder."
+            }
+          ]
+        },
+        {
+          "h2": "Hataları düzeltmek",
+          "blocks": [
+            {
+              "p": "Eğri, çift ya da bulaşmış bir stencil silinip yeniden yapılabilir. Dövmeciniz bunun için normalde kullandığı ürünü ve yöntemi, stüdyonun hijyen rutinine uygun şekilde kullanır. Kaldırmak için kendi ürünlerinizi kullanmayın."
+            },
+            {
+              "ul": [
+                "**Eğri veya ortada değil:** kaldırın, referans işaretlerini yeniden koyun ve yeni bir kâğıt uygulayın.",
+                "**Kopuk çizgiler:** genellikle fazla kuru, fazla yağlı ya da tüylü cilt veya yetersiz baskıdır. Cildi yeniden hazırlayıp tekrar deneyin.",
+                "**Bulaşmış çizgiler:** genellikle fazla transfer ürünü ya da bastırırken kayma. Daha az sürün ve bir kez bastırın.",
+                "**Fazla soluk:** yaygın nedenler için [dövme stencil ne kadar kalır](guide:how-long-does-a-tattoo-stencil-last) rehberine bakın."
+              ]
+            },
+            {
+              "p": "Başlangıçta temiz bir çizgi dosyası yardımcı olur. Net ve eşit çizgilerden yazdırılan bir stencil, bulanık veya düşük çözünürlüklü bir görselden yazdırılandan daha güvenilir geçer. [Studio](studio) ile kendi çiziminizi, flaşınızı ya da fotoğrafınızı cihazınızda temiz bir stencil'e çevirebilirsiniz, hiçbir şey yüklenmez."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Dövme stencil'den önce cilde ne sürülür?",
+          "a": "Dövmeciniz cildi temizleyip kurular, gerekirse tıraş eder, sonra ince bir kat transfer solüsyonu ya da stick sürer. Cilt ıslak değil, hafif yapışkan hissettirmeli."
+        },
+        {
+          "q": "Dövme stencil ciltte ne kadar tutulur?",
+          "a": "Düz bir elle birkaç saniye sağlam ve eşit baskı genellikle yeter. Dövmeciniz kullandığı ürünle neyin işe yaradığını söyler."
+        },
+        {
+          "q": "Tüylü cilde dövme stencil uygulanabilir mi?",
+          "a": "Çok daha zordur, çünkü stencil ciltte değil tüyün üzerinde durur. Dövmeciler genellikle önce bölgeyi, yönlendirdikleri şekilde tıraş eder."
+        },
+        {
+          "q": "Dövme stencil eğri çıkarsa ne olur?",
+          "a": "Başlamadan önce dövmecinize söyleyin. Onu kaldırıp yenisini uygulayabilir, bu da tasarımı sonradan değiştirmekten çok daha kolaydır."
+        },
+        {
+          "q": "Stencil'imi kontrol etmek için ayna gerekir mi?",
+          "a": "Evet, isteyin. Yerleşimi ayaktayken ve hareket ederken kontrol etmek, yalnızca hareketsiz yatarken iyi görünen bir stencil'i yakalamanın en iyi yoludur."
+        }
+      ],
+      "cta": "Studio'da kendi çiziminizden veya fotoğrafınızdan temiz bir stencil yapın. Denemek ücretsiz ve hiçbir şey yüklenmez."
+    },
+    "how-long-does-a-tattoo-stencil-last": {
+      "title": "Dövme stencil ciltte ne kadar kalır?",
+      "short": "Dövme stencil ne kadar kalır?",
+      "blurb": "Stencil'in neden solduğu veya bulaştığı, nasıl daha uzun kalacağı ve beklerken ne yapılacağı.",
+      "metaTitle": "Dövme Stencil Ne Kadar Kalır? Neleri Etkiler",
+      "metaDesc": "Dövme stencil ne kadar kalır? Neleri etkilediğini (cilt, ter, vücut bölgesi, sürtünme), nasıl daha uzun kalacağını ve soluyorsa ne yapılacağını görün.",
+      "updated": "2026-11-26",
+      "answer": "İyi uygulanan bir dövme stencil seansın gerektirdiği süre kadar kalır, ama sabit bir süre yoktur. Cilt tipi, ter, vücut bölgesi, transfer ürünü ve sürtünme süreyi değiştirir. Kuru cilt, ince bir kat ürün ve bölgeyi kıyafetten uzak tutmak daha uzun kalmasına yardım eder.",
+      "sections": [
+        {
+          "h2": "Dövme stencil ne kadar kalır?",
+          "blocks": [
+            {
+              "p": "Dövme stencil ne kadar kalır? Nasıl uygulandığına ve vücudun neresinde durduğuna bağlıdır. Tek bir dürüst sayı yoktur. Hareketsiz, kuru bir bölgeye iyi uygulanmış bir stencil uzun bir randevu boyunca net kalabilir. Terli, bükülen ya da sürtünen bir bölgedeki stencil çok daha çabuk solabilir."
+            },
+            {
+              "p": "Stencil, dövmeci için bir kılavuzdur, kalıcı bir iz değildir. Üzerinde çalışılabilecek kadar iyi olması amaçlanır ve dövmeci çoğu zaman üzerinde aşama aşama çalışır. Sizin kontrol ettiğiniz şey, iş başlamadan önce kaç şeyin ters gideceğidir."
+            },
+            {
+              "p": "Aşağıdaki etkenler pratikte önemli olanlardır."
+            },
+            {
+              "p": "Çoğunun şansla değil hazırlık ve kullanımla ilgili olduğuna dikkat edin. Bu iyi haber: stencil'lerin neden bozulduğunu biliyorsanız erken solmanın çoğunu randevu başlamadan önlersiniz. Dövmeciler aynı birkaç nedeni tekrar tekrar görür; müşteriler temiz, ürünsüz cilt ve stencil konduktan sonra bölgeyi açık ve hareketsiz tutarak yardımcı olabilir."
+            }
+          ]
+        },
+        {
+          "h2": "Stencil'in ne kadar kalacağını ne etkiler",
+          "blocks": [
+            {
+              "h3": "Cilt tipi ve durumu"
+            },
+            {
+              "p": "Yağlı cilt transfere direnir, çok kuru ya da pullanan cilt ise yer yer kopuk bir transfer verir. Temiz, kuru ve pürüzsüz cilt stencil'i en iyi tutar."
+            },
+            {
+              "h3": "Ter ve sıcak"
+            },
+            {
+              "p": "Ter, çizgileri tutan filmi çözer. Sıcak bir oda, gergin bir müşteri ya da sıcak bir gün stencil'in ömrünü kısaltır, özellikle sırt, göğüs ve koltuk altı çevresinde."
+            },
+            {
+              "h3": "Vücut bölgesi"
+            },
+            {
+              "p": "Dirsek içi, kaburgalar, eller, ayaklar ve boyun gibi bükülen ya da sürtünen yerler, dış uyluk ya da üst sırt gibi düz ve hareketsiz bir bölgeden daha çabuk aşındırır."
+            },
+            {
+              "h3": "Transfer ürünü ve ne kadar sürüldüğü"
+            },
+            {
+              "p": "İnce ve eşit bir kat transfer solüsyonu ya da stick çizgilerin tutunmasını sağlar. Fazlası ıslak, gevşek bir film bırakıp bulaştırır. Azı soluk çizgi verir."
+            },
+            {
+              "h3": "Stencil mürekkebi ve baskı kalitesi"
+            },
+            {
+              "p": "Koyu, eşit, dolu çizgiler soluk ya da kopuk olanlardan uzun kalır. Kötü yaşlanmış bir stencil kâğıdı daha açık basabilir, o yüzden önce kâğıdı ve yazıcıyı kontrol edin. Saklama ipuçları için [dövme stencil kağıdı rehberine](guide:tattoo-stencil-paper-guide) bakın."
+            },
+            {
+              "h3": "Sürtünme"
+            },
+            {
+              "p": "Kıyafet, yatak örtüsü, teri silen bir el ya da masada kımıldayan bir müşteri çizgileri siler. Stencil'in erken solmasının en sık nedeni budur."
+            }
+          ]
+        },
+        {
+          "h2": "Stencil nasıl daha uzun kalır",
+          "blocks": [
+            {
+              "ol": [
+                "Temiz, kuru cilde başlayın ve bastırmadan önce ürünün oturmasını bekleyin.",
+                "Bölgeyi yönlendirildiği gibi tıraş edin, stencil tüyde değil ciltte dursun.",
+                "İnce ve eşit bir kat transfer ürünü kullanın.",
+                "Bir kez, sağlam ve eşit bastırın, kâğıdı kaydırmayın.",
+                "Dokunulmadan önce stencil'in tamamen kurumasını bekleyin."
+              ]
+            },
+            {
+              "p": "Sonra sürtünmeyi azaltın. Kıyafeti ve örtüleri bölgeden uzak tutun ve seans için en iyi pozisyonu dövmecinize sorun. Bazı dövmeciler bölümler hâlinde çalışır, böylece henüz dövülmeyen kısım dokunulmadan kalır. Yöntemler stüdyodan stüdyoya değiştiği için dövmecinizin ne önerdiğini sorun."
+            },
+            {
+              "p": "İşin sırasını da planlayın. Tasarım bir eklemi ya da kavisi kapsıyorsa, çizgiler en tazeyken en çok sürtünen bölgeden başlamak isteyip istemediğini dövmecinize sorun. Odayı da rahat tutun. Daha serin ve sakin bir ortam daha az ter demektir, daha az ter daha uzun kalan çizgi demektir. Kolay terliyorsanız stencil konmadan önce söyleyin."
+            }
+          ]
+        },
+        {
+          "h2": "Baskı kalitesi neden önemli",
+          "blocks": [
+            {
+              "p": "Stencil'in erken solmasının en yaygın nedeni, en baştan soluk basılmış olmasıdır. Soluk başlayan çizginin yedeği yoktur. Temiz, koyu, kesintisiz bir çizgi daha güçlü başlar ve daha uzun dayanır."
+            },
+            {
+              "p": "Bu yüzden temiz bir çizgi dosyası önemlidir. Bulanık, küçük ya da düşük çözünürlüklü bir görsel, iyi transfer kâğıdında bile yumuşak, gri bir çizgi basar. Doğru boyutta basılan net bir dosya, yazıcıya üzerinde çalışacağı sağlam bir şey verir."
+            },
+            {
+              "p": "[Studio](studio) ile bir çizimi, flaşı ya da fotoğrafı cihazınızda temiz bir çizgi stencil'ine çevirebilirsiniz, böylece yazdırdığınız şey net olması amaçlanan çizgilerle başlar. [Baskı boyutunu doğru ayarlama](guide:tattoo-stencil-size-true-size-print) hakkında da okuyabilirsiniz."
+            }
+          ]
+        },
+        {
+          "h2": "Stencil solarsa ne yapılır",
+          "blocks": [
+            {
+              "p": "Tamamen gidene kadar beklemeyin. Çizgilerin soluklaştığını, bulaştığını ya da kopuk görünmeye başladığını fark eder etmez dövmecinize söyleyin. Yeni bir stencil uygulayabilir, bu genellikle kötü bir stencil'in etrafında çalışmaktan daha kısa sürer."
+            },
+            {
+              "ul": [
+                "Solmuş bir stencil, çizginin nerede olduğunu tahmin etmek için değil, durup yenilemek için bir işarettir.",
+                "Yalnızca bir kısım gittiyse dövmeciniz sadece o kısmı yenileyebilir.",
+                "Sürekli solarsa neden çoğunlukla ter, ürün ya da sürtünmedir, bu yüzden dövmeci ikinci denemede yöntemi değiştirebilir."
+              ]
+            },
+            {
+              "p": "Her seferinde soluyorsa baskının kendisine bakın. Kâğıtta soluk olan bir stencil ciltte de soluk olur. Tam rutin için [stencil nasıl uygulanır](guide:how-to-apply-a-tattoo-stencil) rehberine bakın."
+            }
+          ]
+        },
+        {
+          "h2": "Beklerken müşterilerin yapması ve yapmaması gerekenler",
+          "blocks": [
+            {
+              "p": "Stencil konduktan sonra sizin göreviniz onu korumaktır. Dövmecinizin talimatlarına uyun ve bu listeyi genel bir kılavuz olarak kullanın."
+            },
+            {
+              "h3": "Yapın"
+            },
+            {
+              "ul": [
+                "Kımıldamadan durun ve normal nefes alın.",
+                "Bölge ıslak, kaşıntılı ya da sıcak hissettiriyorsa dövmecinize söyleyin.",
+                "İş başlamadan önce yerleşimi aynada kontrol edin.",
+                "Memnun değilseniz stencil'in yenilenmesini isteyin."
+              ]
+            },
+            {
+              "h3": "Yapmayın"
+            },
+            {
+              "ul": [
+                "Stencil'e dokunmayın ya da silmeyin.",
+                "Kıyafetin, bir çanta kayışının ya da battaniyenin üzerine sürtmesine izin vermeyin.",
+                "Bölgeye kendi losyonunuzu, yağınızı veya deodorantınızı sürmeyin.",
+                "Kaşınsa bile bölgeyi kaşımayın."
+              ]
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Dövme stencil ciltte ne kadar kalır?",
+          "a": "Sabit bir süre yok. Kuru, hareketsiz bir bölgeye iyi uygulanmış bir stencil tüm seans boyunca kalabilir, terli ya da sürtünen bir bölgedeki çok daha çabuk solabilir."
+        },
+        {
+          "q": "Dövme stencil'im neden soluyor?",
+          "a": "Olağan nedenler ter, kıyafet veya yatak örtüsünden sürtünme, fazla ya da az transfer ürünü ve orijinal baskının soluk olmasıdır."
+        },
+        {
+          "q": "Dövme stencil'i daha uzun kalıcı yapabilir miyim?",
+          "a": "Evet. Temiz kuru cilt, ince bir kat ürün, tek sağlam bastırma, yeterli kuruma süresi kullanın ve bölgeye hiçbir şeyin sürtmesine izin vermeyin."
+        },
+        {
+          "q": "Dövme başlamadan stencil'im bulaşırsa ne olur?",
+          "a": "Dövmecinize söyleyin. Onu kaldırıp yenisini koyabilir, bu bulaşmış bir kılavuzla çalışmaktan daha iyidir."
+        },
+        {
+          "q": "Stencil kâğıdı ne kadar kaldığını etkiler mi?",
+          "a": "Evet. Eski, nemli ya da yazıcınıza uygun olmayan stencil kâğıdı daha açık bir çizgi basabilir ve açık çizgiler daha çabuk solar."
+        }
+      ],
+      "cta": "Studio'da temiz, net bir stencil ile başlayın. Denemek ücretsiz, hiçbir şey yüklenmez."
+    },
+    "tattoo-stencil-paper-guide": {
+      "title": "Dövme stencil kağıdı: türleri, nasıl çalışır ve nasıl seçilir",
+      "short": "Dövme stencil kağıdı rehberi",
+      "blurb": "Termal, hektograf, aydınger ve yazdırılabilir transfer kağıdı tarafsız bir dille karşılaştırıldı.",
+      "metaTitle": "Dövme Stencil Kağıdı: Türleri ve Nasıl Seçilir",
+      "metaDesc": "Dövme stencil kağıdı anlatıldı: termal, hektograf, aydınger ve inkjet transfer kağıdı, nasıl çalıştıkları, artıları, eksileri, saklama ve sık hatalar.",
+      "updated": "2026-11-26",
+      "answer": "Dövme stencil kağıdı dört ana türde gelir: termal stencil yazıcıları için termal transfer kağıdı, elle çizim için hektograf (spirit carbon) kağıdı, serbest çizim ve aydınger kağıdı, inkjet yazıcılar için yazdırılabilir transfer kağıdı. Yazıcınıza, hacminize ve çalışma biçiminize uyanı seçin, tek bir en iyisi yok.",
+      "sections": [
+        {
+          "h2": "Dövme stencil kağıdı: dört ana tür",
+          "blocks": [
+            {
+              "p": "Dövme stencil kağıdı, tasarımınızı sayfadan cilde taşıyan kâğıttır. Dört ana türü vardır ve her biri çizgileri kâğıda geçirmenin farklı bir yöntemiyle çalışır. Kâğıt ile yazıcının yanlış eşleşmesi, soluk veya yer yer kopuk bir stencil'in yaygın nedenlerinden biridir."
+            },
+            {
+              "ul": [
+                "**Termal transfer kağıdı**, termal stencil yazıcıyla kullanılır.",
+                "**Hektograf (spirit carbon) kağıdı**, kalemle ya da çizerek aktarma yöntemiyle kullanılır.",
+                "**Serbest çizim ve aydınger kağıdı**, doğrudan üzerine çizerek ya da çizimi geçirerek kullanılır.",
+                "**Yazdırılabilir transfer kağıdı**, bazı sıradan inkjet yazıcılarla kullanılır."
+              ]
+            },
+            {
+              "p": "Bu rehber tarafsızdır. Türleri sıralamaz, çünkü en iyisi ekipmanınıza ve alışkanlıklarınıza bağlıdır. Daha geniş resim için [aktarım yöntemleri rehberine](guide:tattoo-stencil-transfer-methods) bakın."
+            }
+          ]
+        },
+        {
+          "h2": "Termal transfer kağıdı",
+          "blocks": [
+            {
+              "p": "Termal transfer kağıdı çok katmanlı bir tabakadır. Termal stencil yazıcı onu ısıtır, ısı transfer katmanında bir çizgi deseni oluşturur ve stencil bastırıldığında bu desen cilde geçer."
+            },
+            {
+              "ul": [
+                "**Artıları:** kurulduktan sonra hızlı, eşit çizgiler, bir tasarımı tekrarlamak kolay.",
+                "**Eksileri:** termal bir yazıcı gerekir ve kâğıt o tip yazıcı için yapıldığından her tabakayı kullanamazsınız."
+              ]
+            },
+            {
+              "p": "Kâğıt genişliği yazıcıyla uyuşmalı. Bir tabaka genişliği için yapılmış yazıcı, elle kesilmiş farklı bir boyutla iyi çalışmaz, o yüzden yazıcınızın kabul ettiği genişliğe ve formata bakın."
+            },
+            {
+              "p": "İşi ısı yaptığı için kâğıt sıcağa ve elle tutulmaya duyarlıdır. Yazıcıya girene kadar onu ısı kaynaklarından uzak tutun."
+            },
+            {
+              "p": "Termal tabakalar dosya konusunda da en az affedenlerdir. Yazıcı kendisine verilen çizgileri aynen çizer, bu yüzden temiz, koyu, yüksek çözünürlüklü bir çizgi dosyası temiz bir stencil verir, bulanık bir fotoğraf ise bulanık bir stencil."
+            }
+          ]
+        },
+        {
+          "h2": "Hektograf ve spirit carbon kağıdı",
+          "blocks": [
+            {
+              "p": "Hektograf, spirit carbon olarak da bilinir, elle yapılan stencil'ler için kullanılan mor mürekkepli bir kâğıttır. Karbon tabakayı çiziminizin altına koyarsınız ve kalemin baskısı çizgiyi bir arka tabakaya geçirir. Stencil bu arka tabakadır."
+            },
+            {
+              "ul": [
+                "**Artıları:** yazıcı yok, düşük ekipman maliyeti, birçok dövmeciye tanıdık.",
+                "**Eksileri:** her stencil elle çizilir, ölçekleme ayrı bir adımdır ve çizgi kalitesi kalem baskınıza ve elinizin sabitliğine bağlıdır."
+              ]
+            },
+            {
+              "p": "Birçok dövmeci tasarımı düz kâğıda doğru boyutta yazdırır ve onu geçirir. Temiz bir çizgi baskısı bunu çok hızlandırır ve tek bir çizgi çizmeden önce boyutu sabitler."
+            }
+          ]
+        },
+        {
+          "h2": "Serbest çizim ve aydınger kağıdı",
+          "blocks": [
+            {
+              "p": "Serbest çizim ve aydınger kağıdı doğrudan üzerine çizilmek için yapılır. Bazı türleri arkasında hazır bir transfer katmanı olan blok olarak satılır. Tasarımı ön yüze çizer ya da geçirirsiniz ve çizgiler cilde bastırılarak geçer."
+            },
+            {
+              "ul": [
+                "**Artıları:** basit, makine gerekmez, o gün çizmek istediğiniz hızlı ya da özel tasarımlar için iyi.",
+                "**Eksileri:** karmaşık tasarımlarda daha yavaş ve kullandığınız kâğıdın talimatlarına uymanız gerekir."
+              ]
+            },
+            {
+              "p": "Basılı bir tasarımı geçiriyorsanız ışık masası ya da bir pencereyle iyi eşleşir."
+            },
+            {
+              "p": "Dördü arasında seçim üç soruya iner. Haftada kaç stencil yapıyorsunuz? Dijital dosyalarla mı, el çizimleriyle mi çalışıyorsunuz? Ve ne kadar ekipmana sahip olup bakımını yapmak istiyorsunuz? Ayda birkaç stencil ve el çizimleri hektograf ya da aydınger kâğıdına işaret eder. Düzenli bir dijital tasarım akışı ise bir yazıcıya ve onunla gelen kâğıda işaret eder."
+            }
+          ]
+        },
+        {
+          "h2": "İnkjet yazıcılar için yazdırılabilir transfer kağıdı",
+          "blocks": [
+            {
+              "p": "Yazdırılabilir transfer kağıdı, sıradan bir inkjet yazıcının üzerine basabileceği şekilde yapılır. Tabaka mürekkebi yüzeyinde tutar ve stencil bastırıldığında basılı çizgiler cilde geçer."
+            },
+            {
+              "ul": [
+                "**Artıları:** zaten sahip olabileceğiniz bir yazıcıyı kullanabilirsiniz ve aynı yazıcı başka işleri de yapar.",
+                "**Eksileri:** her yazıcı ve kâğıt birlikte çalışmaz, mürekkep özel bir stencil sistemi gibi davranmayabilir ve sonuç diğer yöntemlerden daha soluk ya da daha az net olabilir."
+              ]
+            },
+            {
+              "p": "Kâğıdın desteklediği yazıcı türleri için talimatlarına bakın ve müşteri seansından önce bir deneme baskısı yapın. Bir deneme bir tabakaya mal olur. Kötü bir stencil randevunun süresine mal olur."
+            }
+          ]
+        },
+        {
+          "h2": "Hangi yazıcı hangi kâğıtla gider",
+          "blocks": [
+            {
+              "table": {
+                "head": [
+                  "Kâğıt türü",
+                  "Birlikte çalıştığı",
+                  "Gerektirdiği"
+                ],
+                "rows": [
+                  [
+                    "Termal transfer kağıdı",
+                    "Termal stencil yazıcı",
+                    "O yazıcı tipi için yapılmış kâğıt"
+                  ],
+                  [
+                    "Hektograf / spirit carbon",
+                    "Yazıcı yok (elle geçirme)",
+                    "Bir kalem ve geçirilecek bir çizim ya da baskı"
+                  ],
+                  [
+                    "Serbest çizim ve aydınger kağıdı",
+                    "Yazıcı yok (çizim)",
+                    "Bir kalem, geçiriyorsanız bir referans"
+                  ],
+                  [
+                    "Yazdırılabilir transfer kağıdı",
+                    "Kâğıdın belirttiği inkjet yazıcılar",
+                    "Desteklenen bir yazıcı ve deneme baskıları"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Yazıcılara daha yakından bakmak için [dövme stencil yazıcısı rehberini](guide:tattoo-stencil-printer-guide) okuyun. Kısa kural, kâğıdın kendi talimatlarından başlamak ve yazıcınızın desteklenenler listesinde olduğunu kontrol etmektir."
+            }
+          ]
+        },
+        {
+          "h2": "Saklama ve sık yapılan hatalar",
+          "blocks": [
+            {
+              "p": "Stencil kâğıdı neme, ısıya ve bükülmeye duyarlıdır. Düz, paketinde ya da bir dosyada, serin ve kuru bir yerde, doğrudan güneşten uzak saklayın. Tabakalar toz ya da nem almasın diye ambalajı kapalı tutun."
+            },
+            {
+              "p": "Kaçınılacak sık hatalar:"
+            },
+            {
+              "ul": [
+                "Tabakayı ters yüklemek, yazıcının arka tabakaya basması.",
+                "Yazıcı tipiniz için yapılmamış kâğıt kullanmak.",
+                "Soluk, küçük ya da düşük çözünürlüklü dosya basmak, hangi kâğıdı kullanırsanız kullanın soluk bir stencil verir.",
+                "Basılı yüzeye nemli ya da yağlı ellerle dokunmak.",
+                "Eski, kıvrılmış ya da nemli tabakalar kullanmak.",
+                "Randevudan önce deneme baskısını atlamak."
+              ]
+            },
+            {
+              "p": "Temiz bir çizgi dosyası, iyi bir stencil'in diğer yarısıdır. [Studio](studio) çiziminizi, flaşınızı ya da fotoğrafınızı cihazınızda temiz bir stencil'e çevirir; ana sayfadaki yapay zeka üretici de gerçek boyutta, 300 dpi yazdırabileceğiniz bir stencil çıkarabilir."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Dövme stencil için hangi kâğıt kullanılır?",
+          "a": "Yönteme bağlıdır: termal yazıcılar için termal transfer kağıdı, elle çalışma için hektograf ya da aydınger kağıdı, bazı inkjet yazıcılar için yazdırılabilir transfer kağıdı."
+        },
+        {
+          "q": "Dövme stencil için normal yazıcı kâğıdı kullanabilir miyim?",
+          "a": "Transfer tabakası olarak hayır. Düz kâğıda referans ya da geçirilecek bir çizim olarak basabilirsiniz, ama transferin kendisi için stencil kâğıdı gerekir."
+        },
+        {
+          "q": "Hektograf kâğıdı nedir?",
+          "a": "Spirit carbon da denen, kalemle bastırdığınızda çizilen çizgiyi bir arka tabakaya geçiren mor, karbon tipi bir kâğıttır."
+        },
+        {
+          "q": "Dövme stencil'i inkjet yazıcıda basabilir miyim?",
+          "a": "Bazı yazdırılabilir transfer kağıtları bunun için yapılmıştır. Kâğıdın kendi talimatına bakın ve seanstan önce deneyin."
+        },
+        {
+          "q": "Dövme stencil kâğıdı nasıl saklanır?",
+          "a": "Düz, paketinde, serin ve kuru bir yerde, güneşten uzak. Nem ve ısı transfer katmanını bozabilir."
+        }
+      ],
+      "cta": "Önce temiz çizgi dosyasını yapın. Studio'yu ücretsiz deneyin, hiçbir şey yüklenmez."
+    },
+    "tattoo-stencil-printer-guide": {
+      "title": "Dövme stencil yazıcısı: almadan önce nelere bakmalı",
+      "short": "Dövme stencil yazıcısı rehberi",
+      "blurb": "Termal, inkjet ve fotokopi seçenekleri, nelere bakılacağı ve gerçek boyutta nasıl yazdırılacağı anlatıldı.",
+      "metaTitle": "Dövme Stencil Yazıcısı: Nasıl Seçilir ve Yazdırılır",
+      "metaDesc": "Dövme stencil yazıcısı rehberi: termal, inkjet ve fotokopi, kağıt genişliği, dpi, bağlantı, gerçek boyutta yazdırma ve soluk ya da bulaşık baskı çözümleri.",
+      "updated": "2026-11-26",
+      "answer": "Dövme stencil yazıcısı, tasarımınızı transfer kağıdına basan yazıcıdır. Ana seçenekler termal stencil yazıcı, transfer kağıdıyla inkjet ve termal fotokopidir. Kâğıt genişliğine, dpi cinsinden çözünürlüğe, bağlantıya, gerçek boyutta basıp basmadığına ve sarf malzemesinin maliyetine bakın. Hiçbiri herkes için en iyisi değildir.",
+      "sections": [
+        {
+          "h2": "Dövme stencil yazıcısı ne yapar",
+          "blocks": [
+            {
+              "p": "Dövme stencil yazıcısı, dijital bir tasarımı transfer kağıdında, cilde bastırılmaya hazır bir çizgi desenine çevirir. Dosyanızla cilt arasındaki adımdır, bu yüzden kalitesi her stencil'de kendini gösterir."
+            },
+            {
+              "p": "Yaygın üç yol var. Bu rehber onları tarafsız anlatır ve hiçbir ürünü sıralamaz. Elle yapılan seçenekler için [aktarım yöntemleri rehberine](guide:tattoo-stencil-transfer-methods) bakın."
+            }
+          ]
+        },
+        {
+          "h2": "Termal stencil yazıcı, inkjet veya fotokopi",
+          "blocks": [
+            {
+              "h3": "Termal stencil yazıcı"
+            },
+            {
+              "p": "Termal stencil yazıcı ısı ve termal transfer kağıdı kullanır. Yalnızca bu iş için yapılmıştır, bu yüzden çıktı genellikle tutarlıdır ve kurulum basittir. Doğru kâğıt gerekir ve ona uyan kâğıda bağlı kalırsınız."
+            },
+            {
+              "h3": "Transfer kağıdıyla inkjet"
+            },
+            {
+              "p": "Bazı yazdırılabilir transfer kâğıtları sıradan bir inkjet yazıcıda çalışır. Zaten bir yazıcınız varsa esnek bir seçenektir, ama her yazıcı ve kâğıt çifti çalışmaz ve çizgiler daha soluk olabilir. Güvenmeden önce deneyin."
+            },
+            {
+              "h3": "Termal fotokopi"
+            },
+            {
+              "p": "Termal fotokopi, kâğıt bir orijinalden kopyalayarak stencil yapar. Kâğıt üzerindeki çizimlerle çalışıyorsanız yararlıdır. Dijital bir dosyanın önce düz kâğıda basılması, sonra kopyalanması gerekir."
+            },
+            {
+              "p": "Hiçbiri herkes için en iyisi değildir. Doğrusu hacminize, alanınıza, bütçenize ve dosyalarla mı yoksa kâğıt çizimlerle mi çalıştığınıza bağlıdır. Kâğıtların kendisi için [dövme stencil kağıdı rehberine](guide:tattoo-stencil-paper-guide) bakın."
+            }
+          ]
+        },
+        {
+          "h2": "Seçerken nelere bakmalı",
+          "blocks": [
+            {
+              "ul": [
+                "**Kâğıt genişliği:** ihtiyaç duyacağınız en geniş stencil'e bakın. Yalnızca dar bir tabaka alan yazıcı, sırt ya da tam kol gibi büyük tasarımları sınırlar.",
+                "**dpi cinsinden çözünürlük:** yüksek rakam daha ince çizgi demektir. Yazıcının gerçek çözünürlüğüne bakın ve 300 dpi dosyaları işlediğini kontrol edin.",
+                "**Bağlantı:** USB, kablolu ya da kablosuz ve telefonunuzla, tabletinizle veya bilgisayarınızla çalışıp çalışmadığı. Zaten kullandığınız sistemle çalıştığından emin olun.",
+                "**Gerçek boyutta çıktı:** yazıcı dosyayı tabakaya sığdırmak için ölçeklemeden, ayarladığınız boyutta basmalı.",
+                "**Sarf malzemesi maliyeti:** kâğıt ve varsa mürekkep ya da şerit sürekli bir giderdir. Yalnızca yazıcı fiyatını değil, kullanacağınız kâğıdı ve kaç stencil çıkardığını karşılaştırın.",
+                "**Destek ve yedek parça:** bölgenizde kâğıdın bulunmaya devam ettiğini ve yazıcının onarılabildiğini kontrol edin."
+              ]
+            },
+            {
+              "p": "Diğer dövmecilere ne kullandıklarını ve nedenini sorun. Günlük deneyimleri bir teknik özellik sayfasından daha yararlıdır."
+            },
+            {
+              "p": "Yazıcının nerede duracağını da düşünün. Termal stencil yazıcı küçüktür ve stüdyo masasında ya da bir arabada durabilir, ama güce, düz bir yüzeye ve kâğıdı kuru tutacak bir yere ihtiyacınız var. Konuk dövmeci günlerine ya da fuarlara gidiyorsanız ağırlık ve basit kurulum, ek özelliklerden daha önemlidir."
+            }
+          ]
+        },
+        {
+          "h2": "Baskı boyutu ve 300 dpi neden önemli",
+          "blocks": [
+            {
+              "p": "Yanlış boyuttaki stencil yanlış stencil'dir. Tasarım yüzde 10 küçük basılırsa dövme de yüzde 10 küçük çıkar. Bu yüzden baskı gerçek boyutta olmalı, sayfaya sığması için küçültülmemeli."
+            },
+            {
+              "p": "Çözünürlük de önemlidir. 300 dpi'de ince bir çizgi pürüzsüz, kesintisiz bir vuruş olarak basılır. Daha düşük çözünürlükler eğrilerde basamaklı kenarlar gösterir ve stencil çoğunlukla eğrilerden oluşur. Fazla küçük olan ve büyütülen bir dosya yumuşak ve gri basılır."
+            },
+            {
+              "p": "[Gerçek boyut rehberinde](guide:tattoo-stencil-size-true-size-print) 300 dpi'de belirli bir genişlik için kaç piksel gerektiği dahil rakamlar var."
+            }
+          ]
+        },
+        {
+          "h2": "Dosyayı gerçek boyutta nasıl yazdırırsınız",
+          "blocks": [
+            {
+              "ol": [
+                "Doğru oranlara sahip, 300 dpi'de genişliğin gerektirdiği kadar ya da daha fazla piksele sahip temiz bir çizgi dosyasıyla başlayın.",
+                "Tasarım aracında boyutu milimetre veya inç olarak ayarlayın ve 300 dpi'de dışa aktarın.",
+                "Yazdırma penceresinde gerçek boyut veya yüzde 100'ü seçin. Sayfaya sığdır ve ölçeklendir seçeneklerini kapatın.",
+                "Kâğıt boyutunu yazıcıdaki tabakayla eşleşecek şekilde ayarlayın.",
+                "İlk denemeyi düz kâğıda basın ve ayarladığınız boyuta göre cetvelle ölçün.",
+                "Sonra transfer kâğıdına basın."
+              ]
+            },
+            {
+              "p": "Skinstencil ana sayfasındaki yapay zeka üretici, bir tarif veya örnek resimden tasarım üretir, onu 8 vücut bölgesinde ve 6 ten renginde gösterir ve gerçek boyutta, 300 dpi yazdırabileceğiniz bir stencil çıkarır. [Studio](studio) kendi çiziminizi, flaşınızı ya da fotoğrafınızı cihazınızda stencil'e çevirir, hiçbir şey yüklenmez. Denemek ücretsizdir. Ücretsiz indirmelerde filigran bulunur, günlük geçiş veya Pro onu kaldırır."
+            }
+          ]
+        },
+        {
+          "h2": "Sık sorunlar ve çözümleri",
+          "blocks": [
+            {
+              "h3": "Stencil fazla açık"
+            },
+            {
+              "ul": [
+                "Kâğıdın doğru türde ve doğru yüzü yukarı yüklendiğini kontrol edin.",
+                "Dosyayı kontrol edin: dosyadaki soluk ya da ince çizgiler soluk basılır.",
+                "Eski ya da nemli değil, taze kâğıt kullanın.",
+                "Yazıcının yoğunluk ya da koyuluk ayarlarına bakın."
+              ]
+            },
+            {
+              "h3": "Stencil bulaşmış"
+            },
+            {
+              "ul": [
+                "Dokunmadan önce baskının kurumasını ya da soğumasını bekleyin.",
+                "Kâğıt ve yazıcının uyuştuğunu kontrol edin ve yazıcıyı üreticisinin önerdiği şekilde temizleyin.",
+                "Tabakayı kenarlarından tutun."
+              ]
+            },
+            {
+              "h3": "Stencil yanlış boyutta"
+            },
+            {
+              "ul": [
+                "Sayfaya sığdır veya ölçeklendir seçeneğini kapatın.",
+                "Dosyayı dışa aktarırken ayarlanan boyutu ve dpi'yi kontrol edin.",
+                "Transfer kâğıdından önce düz kâğıda deneme basın ve ölçün."
+              ]
+            },
+            {
+              "p": "Bir çözüm sorunu gidermezse neyin işe yaradığını anlamak için her seferinde yalnızca bir şeyi değiştirin."
+            },
+            {
+              "p": "İyi bir baskı veren ayarların kısa bir notunu tutun: dosya boyutu, dpi, kâğıt ve yazıcının yoğunluk ayarı. Bir stencil yanlış çıktığında bu not neyin değiştiğini hemen gösterir. Deneme baskısını her zaman müşteri koltuğa oturmadan önce yapın, randevu sırasında değil."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Dövmeciler stencil için hangi yazıcıyı kullanır?",
+          "a": "Çoğu termal stencil yazıcı kullanır, bazıları transfer kağıdıyla inkjet ya da termal fotokopi kullanır. Doğrusu hacminize ve iş akışınıza bağlıdır."
+        },
+        {
+          "q": "Dövme stencil için normal yazıcı kullanabilir miyim?",
+          "a": "Bazı inkjet yazıcılar yazdırılabilir transfer kağıdıyla çalışır, ama her çift çalışmaz. Kâğıdın talimatına bakın ve seanstan önce deneyin."
+        },
+        {
+          "q": "Dövme stencil kaç dpi olmalı?",
+          "a": "300 dpi olağan hedeftir. İnce çizgileri bastığınız boyutta pürüzsüz ve kesintisiz tutar."
+        },
+        {
+          "q": "Dövme stencil'im neden fazla açık çıkıyor?",
+          "a": "Olağan nedenler yanlış ya da eski kâğıt, soluk bir kaynak dosya, kâğıdın ters yüklenmesi veya düşük yoğunluk ayarıdır."
+        },
+        {
+          "q": "Stencil'i doğru boyutta nasıl yazdırırım?",
+          "a": "Boyutu milimetre olarak ayarlayın, 300 dpi'de dışa aktarın, sayfaya sığdır kapalıyken gerçek boyutta yazdırın ve deneme baskısını cetvelle ölçün."
+        }
+      ],
+      "cta": "Gerçek boyutta, 300 dpi yazdırabileceğiniz bir stencil yapın. Yapay zeka üreticiyi ya da Studio'yu deneyin, denemek ücretsiz."
+    },
+    "tattoo-size-chart-by-body-part": {
+      "title": "Dövme boyutları vücut bölgesine göre: tipik ölçüler tablosu",
+      "short": "Dövme boyutları vücut bölgesine göre",
+      "blurb": "13 vücut bölgesi için cm ve inç cinsinden tipik dövme boyutları, ayrıntı sınırları ve gerçek boyutlu stencil'le boyut kontrolü.",
+      "metaTitle": "Dövme Boyutları Vücut Bölgesine Göre: cm ve inç",
+      "metaDesc": "13 vücut bölgesi için cm ve inç cinsinden dövme boyutları tablosu, ince çizgi ve kalın iş için asgari ölçüler ve gerçek boyutlu stencil'le boyut kontrolü.",
+      "updated": "2026-11-26",
+      "answer": "Dövme boyutları vücut bölgesine göre tablosu, her bölgeye uyan tipik genişliği veya uzunluğu listeler; örneğin bilekte 2 ile 5 cm (yaklaşık 1 ile 2 inç), ön kolda 8 ile 25 cm (3 ile 10 inç). Bunlar kural değil, rehberdir. Tasarımı gerçek boyutta yazdırıp cildinizin üzerinde tutarak kontrol edin.",
+      "sections": [
+        {
+          "h2": "Dövme boyutları vücut bölgesine göre",
+          "blocks": [
+            {
+              "p": "Dövme boyutları vücut bölgesine göre tablosu, bir dövmeciyle konuşmadan önce size bir başlangıç noktası verir. Aşağıdaki aralıklar, ortalama bir yetişkinde tek bir tasarımın en uzun kenarı için tipik ölçülerdir. Kural değil, rehberdir. Vücutlar farklıdır, tasarımlar da öyle."
+            },
+            {
+              "table": {
+                "head": [
+                  "Vücut bölgesi",
+                  "Tipik boyut (cm)",
+                  "Tipik boyut (inç)"
+                ],
+                "rows": [
+                  [
+                    "Bilek",
+                    "2 ile 5 cm",
+                    "0,8 ile 2 inç"
+                  ],
+                  [
+                    "Ön kol",
+                    "8 ile 25 cm",
+                    "3 ile 10 inç"
+                  ],
+                  [
+                    "Üst kol",
+                    "8 ile 20 cm",
+                    "3 ile 8 inç"
+                  ],
+                  [
+                    "Kürek kemiği",
+                    "10 ile 20 cm",
+                    "4 ile 8 inç"
+                  ],
+                  [
+                    "Sırt",
+                    "20 ile 45 cm",
+                    "8 ile 18 inç"
+                  ],
+                  [
+                    "Göğüs",
+                    "10 ile 30 cm",
+                    "4 ile 12 inç"
+                  ],
+                  [
+                    "Kaburgalar",
+                    "10 ile 25 cm",
+                    "4 ile 10 inç"
+                  ],
+                  [
+                    "Uyluk",
+                    "15 ile 35 cm",
+                    "6 ile 14 inç"
+                  ],
+                  [
+                    "Baldır",
+                    "10 ile 25 cm",
+                    "4 ile 10 inç"
+                  ],
+                  [
+                    "Ayak bileği",
+                    "3 ile 8 cm",
+                    "1,2 ile 3 inç"
+                  ],
+                  [
+                    "El",
+                    "3 ile 8 cm",
+                    "1,2 ile 3 inç"
+                  ],
+                  [
+                    "Boyun",
+                    "3 ile 10 cm",
+                    "1,2 ile 4 inç"
+                  ],
+                  [
+                    "Kulak arkası",
+                    "1 ile 4 cm",
+                    "0,4 ile 1,6 inç"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Sayıları, kol ya da bacak boyunca tasarımın uzunluğu veya sırt gibi düz bir bölgede yüksekliği olarak okuyun. Ön kol işi kolun tüm uzunluğunu kaplayabilirken bilek işi genellikle küçük bir bant ya da semboldür."
+            }
+          ]
+        },
+        {
+          "h2": "Tablo nasıl okunur",
+          "blocks": [
+            {
+              "p": "Aralıklar bilerek geniştir. 10 cm'lik (4 inç) bir gül uylukta küçük bir dövmedir, kulak arkasında ise büyük. Önemli olan tasarımın çevresindeki alanla ilişkisidir."
+            },
+            {
+              "ul": [
+                "**Küçük** işler bilek, ayak bileği, el, boyun ve kulak arkasında iyi durur.",
+                "**Orta boy** işler üst kol, ön kol, baldır, kürek kemiği ve kaburgalara uyar.",
+                "**Büyük** işler sırt, göğüs ve uyluğu kullanır; buralarda tasarımın nefes alacağı yer vardır."
+              ]
+            },
+            {
+              "p": "Fikriniz beğendiğiniz yerin aralığının dışında kalıyorsa farklı bir yer ya da farklı bir boyut düşünün. Örneğin tasarımı bir uzvun etrafına sarmak, düz bir tasarımın sığmayacağı yere uzun bir tasarımın sığmasını sağlar."
+            }
+          ]
+        },
+        {
+          "h2": "Ayrıntı için asgari boyut",
+          "blocks": [
+            {
+              "p": "Boyut yalnızca görünüşle ilgili değildir. Dövme mürekkebi yıllar içinde ciltte hafifçe yayılır, bu yüzden çok küçük ayrıntılar bulanıklaşabilir. Tasarım ne kadar küçükse, okunur kalarak taşıyabileceği ayrıntı o kadar azdır."
+            },
+            {
+              "h3": "İnce çizgi iş"
+            },
+            {
+              "p": "İnce çizgi tasarımlar ince, hafif vuruşlar kullanır. Narin görünürler ama çizgiler arasında yeterli boşluğa ihtiyaç duyarlar. Birçok dövmeci tasarımı en az birkaç santimetre genişlikte tutmayı, çok küçük yazı ve sıkışık desenlerden kaçınmayı önerir. Dövmecinize tasarımınız için yapmaya razı olduğu en küçük boyutu sorun."
+            },
+            {
+              "h3": "Kalın iş"
+            },
+            {
+              "p": "Kalın dış çizgili ve dolgulu tasarımlar daha küçük boyutlarda da dayanır, çünkü şekiller basittir ve aralarındaki boşluklar geniştir. Kalın bir sembol, aynı görselin ince çizgi hâlinin bulamaca döneceği bir boyutta çalışabilir."
+            },
+            {
+              "p": "Tasarımı küçülttüğünüzde sadeleştirin. Küçük arka plan öğelerini çıkarın, sıkışık boşlukları açın ve yazıyı düşündüğünüzden daha büyük yapın."
+            }
+          ]
+        },
+        {
+          "h2": "Vücudunuzda nasıl ölçersiniz",
+          "blocks": [
+            {
+              "p": "Yerleşimi birkaç dakikada yumuşak bir mezura ya da cetvelle ölçebilirsiniz. Yumuşak mezura kavisleri izler, sert cetvel izlemez."
+            },
+            {
+              "ol": [
+                "Düşündüğünüz yerin üstünü ve altını yıkanabilir bir kalemle ya da küçük bant parçalarıyla işaretleyin.",
+                "İşaretler arasındaki düz mesafeyi ölçün, sonra vücudun kavisi boyunca yeniden ölçün.",
+                "Bölgenin en geniş noktasındaki genişliği ölçün.",
+                "Tabloyla karşılaştırabilmek için iki sayıyı da santimetre ve inç olarak yazın.",
+                "Tasarım tam kenarda durmasın diye her iki yanda en az bir parmak genişliği pay bırakın."
+              ]
+            },
+            {
+              "p": "Düz ve kavisli ölçü, üst kol ve baldır gibi yuvarlak bölgelerde daha çok farklılaşır. Kâğıtta 10 cm genişliğindeki bir tasarım, kavise sarıldığında daha dar görünür, çünkü bir kısmı bakan kişiden uzağa döner."
+            }
+          ]
+        },
+        {
+          "h2": "Gerçek boyutlu stencil'le boyutu kontrol edin",
+          "blocks": [
+            {
+              "p": "Tablodaki sayılar bir yere kadar götürür. Boyutu değerlendirmenin en güvenilir yolu, tasarımı vücudunuzda gerçek ölçüleriyle görmektir. Gerçek boyutta yazdırılmış bir stencil tam olarak bunu yapar."
+            },
+            {
+              "p": "Genişliği milimetre olarak belirleyin, tasarımı 300 dpi'de dışa aktarın ve ölçeklemeden yüzde 100'de yazdırın. [Gerçek boyutta yazdırma](guide:tattoo-stencil-size-true-size-print) rehberimiz hesapları ve sonucu cetvelle nasıl doğrulayacağınızı gösteriyor."
+            },
+            {
+              "p": "Bunu [Studio](studio) içinde yapabilirsiniz. Kendi çiziminizi, flaşınızı ya da fotoğrafınızı cihazınızda stencil'e çevirir, hiçbir şey yüklenmez. Boyutu milimetre olarak ayarlayın, stencil'i indirin ve yazdırın."
+            },
+            {
+              "p": "Çıktıyı kesin ve cildinizin üzerinde tutun ya da bantlayın. Aynanın karşısına geçin, kolunuzu oynatın, oturun ve dolaşın. Çok büyük ya da çok küçük hissettiriyorsa boyutu değiştirip yeniden yazdırın. Kâğıt ucuzdur, cilt değil."
+            }
+          ]
+        },
+        {
+          "h2": "Yerleşim ve cilt ihtiyacınız olan boyutu nasıl değiştirir",
+          "blocks": [
+            {
+              "p": "Aynı tasarım, nerede durduğuna ve kimin cildinde olduğuna göre farklı görünebilir."
+            },
+            {
+              "ul": [
+                "**Kavisler.** Yuvarlak bir bölgedeki tasarım önden daha küçük ve hafif çarpık görünür. Üst kol veya baldırda düz bir çizimin önerdiğinden biraz daha büyük gitmek isteyebilirsiniz.",
+                "**Hareket.** Eklemlerin yakınındaki cilt gerilir ve katlanır. Oradaki tasarımlar çoğunlukla daha küçük ya da daha sade tutulur ve tam konum konusunda dövmeciniz tavsiye verebilir.",
+                "**Vücut ölçüsü.** 15 cm'lik bir tasarım ince bir ön kolda ve geniş bir ön kolda farklı durur. Başkasının fotoğrafında değil, kendi vücudunuzda değerlendirin.",
+                "**Ten rengi.** Kontrast, tasarımın nasıl okunduğunu değiştirir, o yüzden teninizde en iyi neyin göründüğünü dövmecinize sorun.",
+                "**Yaşlanma.** Çizgiler zamanla yumuşar. Tasarıma biraz alan tanımak net kalmasına yardım eder."
+              ]
+            },
+            {
+              "p": "Ana sayfadaki yapay zeka üretici bu kısımda yardımcı olur. Bir tarif veya örnek resimden tasarım üretir, sonra onu 8 vücut bölgesinde (kürek kemiği, sırt, ön kol, üst kol, göğüs, kaburgalar, uyluk ve baldır) ve 6 ten renginde gösterir, böylece yazdırmadan önce ölçeğin ve kontrastın nasıl göründüğünü görürsünüz. Gerçek boyutta (300 dpi) yazdırabileceğiniz bir stencil çıkarır."
+            },
+            {
+              "p": "Tasarımın nereye gideceğine hâlâ karar vermediyseniz [dövme yeri seçimi rehberimize](guide:tattoo-placement-guide) bakın."
+            }
+          ]
+        },
+        {
+          "h2": "Randevu almadan önce son kontroller",
+          "blocks": [
+            {
+              "ul": [
+                "Basılı stencil ayakta, otururken ve hareket ederken doğru görünüyor mu?",
+                "Seçtiğiniz stil için çizgiler arasında yeterli boşluk var mı?",
+                "Varsa yazı, normal bir mesafeden okunacak kadar büyük mü?"
+              ]
+            },
+            {
+              "p": "Boyut ve ayrıntıda son sözü dövmeciniz söyler. Çıktınızı ve ölçülerinizi getirin, tabloyu konuşmanın başlangıcı sayın."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Küçük bir dövme kaç cm'dir?",
+          "a": "Sabit bir kural yok, ama birçok kişi yaklaşık 5 cm'nin (2 inç) altındaki tasarımlara küçük der. Bilek, ayak bileği ve kulak arkası gibi bölgeler genellikle bu boyuta uyar."
+        },
+        {
+          "q": "Orta boy dövme ne kadardır?",
+          "a": "Orta boy genellikle en uzun kenarda kabaca 8 ile 15 cm (3 ile 6 inç) demektir. Ön kol, üst kol, baldır veya kürek kemiğine iyi oturur."
+        },
+        {
+          "q": "Bir dövme en az ne kadar küçük olabilir?",
+          "a": "Stile ve dövmeciye bağlıdır. İnce ayrıntı kalın şekillerden daha fazla yer ister, bu yüzden tasarımınızın net kalacağı asgari boyutu dövmecinize sorun."
+        },
+        {
+          "q": "Dövmemin vücudumda ne kadar büyük olacağını nasıl öğrenirim?",
+          "a": "Tasarımı gerçek boyutta yazdırıp o yerde tutun ya da bantlayın. Sonra boyutu aynada ve hareket ederken değerlendirebilirsiniz."
+        },
+        {
+          "q": "Dövme boyutları herkes için aynı mı?",
+          "a": "Hayır. Tablodaki aralıklar tipiktir; vücut yapınız, cildiniz ve tasarımın kendisi neyin doğru göründüğünü değiştirir."
+        }
+      ],
+      "cta": "Studio'da boyutu milimetre olarak ayarlayın, stencil'inizi gerçek boyutta yazdırın ve randevu almadan önce cildinizde nasıl durduğunu görün."
+    },
+    "tattoo-placement-guide": {
+      "title": "Dövme yeri seçimi: doğru yer nasıl seçilir",
+      "short": "Dövme yeri seçimi: nasıl seçilir",
+      "blurb": "Görünürlük, kıyafet kuralı, cilt hareketi ve tasarım şekli: dövme yeri nasıl seçilir ve stencil'le nasıl denenir.",
+      "metaTitle": "Dövme Yeri Seçimi: Doğru Yer Nasıl Seçilir",
+      "metaDesc": "Dövme yeri nasıl seçilir: görünürlük, kıyafet kuralı, cilt hareketi ve tasarım şekli; bir yerleşim tablosu ve stencil'le deneme.",
+      "updated": "2026-11-26",
+      "answer": "Dövme yeri seçimi dört şeyi tartarak yapılır: kimin göreceği, cildin orada nasıl hareket edip yaşlandığı, tasarım şeklinin alana ne kadar uyduğu ve iyileşme konusunda nasıl hissettiğiniz. Yeri gerçek boyutlu bir stencil'le deneyin, sonra son sözü söyleyecek olan dövmecinize sorun. Acele etmeyin.",
+      "sections": [
+        {
+          "h2": "Dövme yeri seçimi, kimin göreceğiyle başlar",
+          "blocks": [
+            {
+              "p": "Dövme yeri seçimi, dövmeyle her gün nasıl yaşayacağınızı belirleyen karardır. Görünürlükle başlayın, çünkü sonradan en zor değiştirilebilecek olan odur."
+            },
+            {
+              "p": "Kendinize dövmenin nerede ve kim tarafından görülmesini istediğinizi sorun."
+            },
+            {
+              "ul": [
+                "**Her zaman görünür:** eller, boyun, yüz, ön kollar ve alt bacaklar çoğu kıyafette görünür.",
+                "**İstediğinizde görünür:** üst kol, uyluk, kürek kemiği ve göğüs, tişört, şort ya da gömlek yakasıyla örtülebilir.",
+                "**Çoğunlukla özel:** kaburgalar, sırt, kalça ve üst uyluğu, göstermeye karar vermedikçe az kişi görür."
+              ]
+            },
+            {
+              "p": "Doğru bir cevap yok. Gizleyebileceğiniz bir dövme size daha fazla kontrol verir. Görebileceğiniz bir dövme size günlük daha fazla keyif verir. Hangisinin sizin için daha önemli olduğunu düşünün."
+            }
+          ]
+        },
+        {
+          "h2": "İş, kıyafet kuralı ve hayattaki değişiklikler",
+          "blocks": [
+            {
+              "p": "Görünür dövmelere bakış ülkeye, sektöre ve işverene göre değişir ve zamanla değişir. İş kıyafetinde görünen bir yer seçmeden önce işyerinizin ya da girmek istediğiniz işyerinin kıyafet kuralına ve kültürüne bakın."
+            },
+            {
+              "p": "Hayatınızın nereye gidebileceğini de düşünün. Kariyer değişikliği, bir üniforma, seyahat ya da bir aile olayı, görünür bir dövmeden ne kadar rahat olduğunuzu değiştirebilir. Kol ya da yaka ile örtülebilecek yerler seçeneklerinizi açık tutar."
+            },
+            {
+              "p": "Bu kişisel bir karardır. Dürüstçe tartın ve bir trendin sizin yerinize karar vermesine izin vermeyin."
+            }
+          ]
+        },
+        {
+          "h2": "Cilt nasıl hareket eder ve yaşlanır",
+          "blocks": [
+            {
+              "p": "Dövme ciltte yaşar ve cilt düz bir tuval değildir. Bazı bölgeler on yıllarca sabit kalır. Diğerleri vücutla birlikte gerilir, katlanır ya da değişir."
+            },
+            {
+              "ul": [
+                "**Dirsek, diz, bilek ve ayak bileği gibi eklemler** gün boyu bükülür. Bir ekleme taşan tasarım hareket ettiğinizde çarpılır.",
+                "**El, ayak ve parmaklar** çok sürtünme, yıkanma ve güneş görür. Oradaki tasarımlar çoğunlukla rötuş ister ve dövmeciniz bunların genelde nasıl dayandığını söyleyebilir.",
+                "**Kilo, hamilelik ya da kasla değişen bölgeler**, örneğin karın, kalça, göğüs ve iç uyluk, zamanla kayabilir.",
+                "**Güneş gören bölgeler** örtülü olanlardan daha çabuk solar, bu yüzden görünür yerleşimlerde güneş kremi önemlidir."
+              ]
+            },
+            {
+              "p": "Bunların hiçbiri bir yeri tümüyle dışarıda bırakmaz. Sadece o yerleşimin genelde nasıl yaşlandığını dövmecinize sormanız ve onun o bölgedeki iyileşmiş iş fotoğraflarına bakmanız gerektiği anlamına gelir."
+            }
+          ]
+        },
+        {
+          "h2": "Tasarımın şeklini alana uydurun",
+          "blocks": [
+            {
+              "p": "Vücudun doğal çizgileri ve kavisleri vardır ve iyi bir yerleşim onları izler. Vücudun şekliyle uyumlu çalışan bir tasarım, oraya aitmiş gibi görünür."
+            },
+            {
+              "ul": [
+                "**Uzun, dar tasarımlar**, örneğin hançer, dal, bir satır yazı ya da omurga işi, bir hat boyunca uzanan yerlere uyar: ön kol, omurga, baldır, kaburgalar ya da uyluğun boyu.",
+                "**Yuvarlak veya derli toplu tasarımlar**, örneğin mandala, gül ya da portre, düz veya hafif kavisli bölgelerde iyi durur: kürek kemiği, üst kol, göğüs veya uyluk.",
+                "**Küçük tasarımlar**, örneğin sembol, tarih ya da minik bir hayvan, yeri kısıtlı noktalara uyar: bilek, ayak bileği, kulak arkası ya da parmağın iç tarafı."
+              ]
+            },
+            {
+              "p": "Karar veremiyorsanız uydurmaya zorlamak yerine şekli değiştirin. Birçok tasarım bir yere uysun diye uzatılabilir, sadeleştirilebilir ya da ikiye bölünebilir."
+            }
+          ]
+        },
+        {
+          "h2": "Yaygın yerleşimler ve neye uydukları",
+          "blocks": [
+            {
+              "table": {
+                "head": [
+                  "Yerleşim",
+                  "Uzun tasarımlara uyar",
+                  "Yuvarlak tasarımlara uyar",
+                  "Küçük tasarımlara uyar"
+                ],
+                "rows": [
+                  [
+                    "Ön kol",
+                    "Evet",
+                    "Evet, kolun düz yüzünde",
+                    "Evet"
+                  ],
+                  [
+                    "Üst kol",
+                    "Evet, sararak",
+                    "Evet",
+                    "Evet"
+                  ],
+                  [
+                    "Kürek kemiği",
+                    "Bazen",
+                    "Evet",
+                    "Evet"
+                  ],
+                  [
+                    "Sırt",
+                    "Evet, omurga boyunca",
+                    "Evet, büyük işler",
+                    "Evet"
+                  ],
+                  [
+                    "Göğüs",
+                    "Bazen",
+                    "Evet",
+                    "Evet"
+                  ],
+                  [
+                    "Kaburgalar",
+                    "Evet, yan boyunca",
+                    "Bazen",
+                    "Evet"
+                  ],
+                  [
+                    "Uyluk",
+                    "Evet",
+                    "Evet",
+                    "Evet"
+                  ],
+                  [
+                    "Baldır",
+                    "Evet",
+                    "Bazen",
+                    "Evet"
+                  ],
+                  [
+                    "Bilek ve ayak bileği",
+                    "Yalnızca bantlar",
+                    "Hayır",
+                    "Evet"
+                  ],
+                  [
+                    "Kulak arkası ve boyun",
+                    "Bazen",
+                    "Hayır",
+                    "Evet"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Tabloya bir kural kitabı değil, bir başlangıç noktası gözüyle bakın. Usta dövmeciler tasarımları hemen her bölgeye uyarlar. Her yer için tipik boyutlar isterseniz [dövme boyutları tablosuna](guide:tattoo-size-chart-by-body-part) bakın."
+            }
+          ]
+        },
+        {
+          "h2": "Acı, iyileşme ve rahatlık",
+          "blocks": [
+            {
+              "p": "Acı kişiden kişiye ve bölgeden bölgeye değişir, bu yüzden herkese uyan güvenilir bir sıralama yoktur. Bazı kişiler kaburgaları ya da ayakları zor bulur, bazıları neredeyse fark etmez. İyileşme de farklıdır, çünkü kıyafete sürtünen ya da sık bükülen bir bölgenin bakımı daha zahmetli olabilir."
+            },
+            {
+              "p": "Düşündüğünüz yer için ne bekleyeceğinizi, seansın ne kadar süreceğini ve sonrasında nasıl bakım yapılacağını dövmecinize sorun. Bunu defalarca yapmışlardır ve vücudunuza ve tasarımınıza uyan tavsiye verebilirler."
+            }
+          ]
+        },
+        {
+          "h2": "Karar vermeden önce yerleşimi deneyin",
+          "blocks": [
+            {
+              "p": "Bir yeri düşünmek yararlıdır, ama görmek daha iyidir. Bir yerleşimi denemenin iki kolay yolu var."
+            },
+            {
+              "h3": "Basılı stencil kullanın"
+            },
+            {
+              "p": "Tasarımı gerçek boyutta yazdırıp o yere bantlayın. Ayakta, otururken ve hareket ederken kontrol edin. [Studio](studio) kendi çiziminizi, flaşınızı veya fotoğrafınızı cihazınızda stencil'e çevirir, hiçbir şey yüklenmez. Yazdırmak için [gerçek boyutta yazdırma](guide:tattoo-stencil-size-true-size-print) rehberimize bakın. Stencil'i uygulamak için [aktarım yöntemlerine](guide:tattoo-stencil-transfer-methods) bakın."
+            },
+            {
+              "h3": "Önizleme kullanın"
+            },
+            {
+              "p": "Ana sayfadaki yapay zeka üretici, bir tarif veya örnek resimden tasarım üretir ve onu 8 vücut bölgesinde (kürek kemiği, sırt, ön kol, üst kol, göğüs, kaburgalar, uyluk ve baldır) ve 6 ten renginde gösterir. Yazdırmadan önce yerleri karşılaştırmak için hızlı bir yoldur. Gerçek boyutta (300 dpi) yazdırabileceğiniz bir stencil çıkarır."
+            }
+          ]
+        },
+        {
+          "h2": "Kaçınılacak hatalar",
+          "blocks": [
+            {
+              "ul": [
+                "Bir yeri yalnızca trend olduğu için seçmek.",
+                "Tasarımı şekline uymayan bir alana zorlamak.",
+                "Sahip olduğunuz ya da istediğiniz işin kıyafet kuralını göz ardı etmek.",
+                "İnce ayrıntıyı cildin gerildiği, katlandığı ya da sürtündüğü yere koymak.",
+                "Gerçek boyut testini atlayıp yalnızca ekrandan değerlendirmek.",
+                "Kararı acele etmek. İyi bir dövmeci size zaman tanır."
+              ]
+            },
+            {
+              "p": "Stencil fikriyle bir hafta yaşayın. Yedinci günde yeri hâlâ beğeniyorsanız bu iyi bir işarettir."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "İlk dövme için en iyi yer neresidir?",
+          "a": "Tek bir en iyi yer yok. Birçok kişi üst kol ya da uyluk gibi örtülmesi ve bakımı kolay bir yerden başlar ve dövmecisinin tavsiyesini ister."
+        },
+        {
+          "q": "Hangi dövme yerleri en çok acıtır?",
+          "a": "Acı kişiye göre değiştiği için yerleri sıralamak zordur. Aklınızdaki bölge için ne bekleyeceğinizi dövmecinize sorun."
+        },
+        {
+          "q": "Bir dövmenin o yere uyup uymayacağını nasıl anlarım?",
+          "a": "Tasarımı gerçek boyutta yazdırıp o yere bantlayın, sonra hareket ederken kontrol edin. Bu size ölçeği ve akışı ekrandan çok daha iyi gösterir."
+        },
+        {
+          "q": "Eklem ve el dövmeleri daha çabuk mu solar?",
+          "a": "Çok hareket, sürtünme ve yıkanma olan bölgeler daha fazla rötuş isteyebilir. O yerleşimin genelde nasıl dayandığını dövmecinize sorun."
+        },
+        {
+          "q": "Bir tasarımı farklı bir yere uyacak şekilde değiştirebilir miyim?",
+          "a": "Evet. Tasarımlar yeniden boyutlandırılabilir, sadeleştirilebilir, uzatılabilir ya da bölünebilir ve dövmeciniz seçtiğiniz bölgeye uyarlamanıza yardım edebilir."
+        }
+      ],
+      "cta": "Karar vermeden önce tasarımınızı seçtiğiniz yerde görmek için stencil Studio'yu veya yapay zeka üreticiyi deneyin."
+    },
+    "make-a-tattoo-stencil-at-home": {
+      "title": "Evde dövme stencil yapımı: pratik yöntemler",
+      "short": "Evde dövme stencil yapımı",
+      "blurb": "Termal yazıcı olmadan evde dövme stencil yapmanın yolları; sanatçılar, kâğıt üzerinde alıştırma ve geçici yöntemler için.",
+      "metaTitle": "Evde Dövme Stencil Yapımı: Yazıcısız Yöntemler",
+      "metaDesc": "Termal yazıcı olmadan evde dövme stencil nasıl yapılır: aydınger, normal kâğıtla aktarma, temiz çizgi dosyası ve bir güvenlik notu.",
+      "updated": "2026-11-26",
+      "answer": "Evde dövme stencil yapmak için doğru boyutta temiz bir çizgi çizimiyle başlayın. Aydınger kâğıdına geçirin ya da normal kâğıda yazdırıp elle aktarın. Bu yöntemleri kâğıt üzerinde alıştırma veya geçici yöntemler için kullanın. Gerçek dövme, ruhsatlı bir stüdyodaki eğitimli bir dövmeciye aittir.",
+      "sections": [
+        {
+          "h2": "Evde dövme stencil yapmadan önce",
+          "blocks": [
+            {
+              "p": "Evde dövme stencil yapmak için bir yazıcı, biraz kâğıt ve birkaç temel malzeme yeter. Stencil, bir tasarımın çizgi çizimidir ve çalışmanın doğru yere ve doğru boyutta oturması için kılavuz olarak kullanılır."
+            },
+            {
+              "p": "Bu rehber, yedek yönteme ihtiyaç duyan dövmeciler, stencil çalışması alıştırması yapan öğrenciler ve kâğıt üzerinde bir tasarım ya da geçici bir iz isteyen kişiler için. Kendinize ya da başkasına dövme yapma rehberi değildir."
+            },
+            {
+              "p": "**Güvenlik notu:** gerçek dövme, ruhsatlı bir stüdyoda, steril ekipmanla ve doğru bakımla, eğitimli bir dövmeci tarafından yapılmalıdır. Stencil yapmak ve kâğıt üzerinde ya da geçici yöntemlerle alıştırma yapmak, cilde mürekkep işlemekten farklı bir şeydir. Lütfen evde dövme yapmaya çalışmayın."
+            }
+          ]
+        },
+        {
+          "h2": "İhtiyacınız olanlar",
+          "blocks": [
+            {
+              "ul": [
+                "Kâğıt üzerinde ya da dijital dosya olarak tasarımın temiz bir çizgi çizimi.",
+                "Milimetre cinsinden bir cetvel veya mezura.",
+                "Aydınger veya ince kâğıt.",
+                "Keskin bir kurşun kalem ya da ince uçlu kalem.",
+                "Elle geçiriyorsanız karbon ya da transfer kâğıdı.",
+                "Normal bir yazıcı, siyah mürekkep ve düz kâğıt.",
+                "Kâğıdı yerinde tutmak için kâğıt bant.",
+                "Geçirmeye yardım edecek bir ışık kaynağı, örneğin pencere ya da ışık masası."
+              ]
+            },
+            {
+              "p": "Dövmeciyseniz stüdyonuzun cilt için zaten kullandığı malzemeleri kullanın. Yukarıdaki liste kâğıt üzerinde stencil alıştırması ve geçici yöntemler içindir."
+            }
+          ]
+        },
+        {
+          "h2": "1. yöntem: aydınger ve karbon kâğıdı",
+          "blocks": [
+            {
+              "p": "Bu eski yöntemdir ve hâlâ işe yarar. Elektronik gerektirmez."
+            },
+            {
+              "ol": [
+                "Çiziminizi düz bir yüzeye koyun ve üzerine aydınger kâğıdını yatırın.",
+                "Ana çizgileri keskin bir kurşun kalemle, eşit baskıyla geçirin.",
+                "Gölgeyi ve dolguyu atlayın. Stencil yalnızca dış çizgiler ve önemli ayrıntılar ister.",
+                "Karbon ya da transfer kâğıdını, karbon yüzü hedef yüzeye bakacak şekilde geçirdiğiniz kâğıdın altına koyun.",
+                "Hiçbir şey kaymasın diye katmanları birlikte bantlayın.",
+                "Çizgileri aktarmak için bir kalemle yeniden üzerinden geçin."
+              ]
+            },
+            {
+              "p": "Sonuç, çizgilerin yeni yüzeydeki kopyasıdır. Alıştırma için bu yüzey genellikle kâğıt ya da bir alıştırma malzemesidir. Diğer aktarım seçenekleri için [aktarım yöntemleri](guide:tattoo-stencil-transfer-methods) rehberimize bakın."
+            }
+          ]
+        },
+        {
+          "h2": "2. yöntem: normal kâğıda yazdırıp aktarın",
+          "blocks": [
+            {
+              "p": "Normal bir yazıcı stencil çizgilerini düz kâğıda basabilir. Sonra çizgileri elle bir alıştırma yüzeyine taşıyabilirsiniz."
+            },
+            {
+              "ol": [
+                "Çizgi çizimini ölçeklemeden yüzde 100'de yazdırın.",
+                "Boyutu cetvelle kontrol edin. Basılı genişlik seçtiğiniz genişlikle eşleşmeli.",
+                "Çıktıyı alıştırma yüzeyinin üzerine koyun ve çizgileri, karbon ya da transfer kâğıdından geçecek şekilde bir kalemle izleyin.",
+                "Kâğıdı kaldırıp sonuca bakın. Kaçan çizgileri kurşun kalemle düzeltin."
+              ]
+            },
+            {
+              "p": "Kâğıdın arkasından aktarıldığında stencil'in son tasarımın ayna görüntüsü olduğunu unutmayın. Özellikle yazıda, başlamadan önce yönü kontrol edin."
+            }
+          ]
+        },
+        {
+          "h2": "3. yöntem: temiz çizgi dosyası ve bir yazıcı",
+          "blocks": [
+            {
+              "p": "Çizgi dosyası ne kadar temizse diğer her adım o kadar kolaylaşır. İyi bir dosyada beyaz zemin üzerinde ince, dolu siyah çizgiler vardır; gri pus ve başıboş nokta yoktur."
+            },
+            {
+              "p": "[Studio](studio) kendi çiziminizi, flaşınızı ya da fotoğrafınızı cihazınızda stencil'e çevirir, hiçbir şey yüklenmez. Milimetre olarak belirlediğiniz boyutta, normal bir yazıcıda yazdırabileceğiniz temiz bir çizgi sürümü üretir."
+            },
+            {
+              "p": "Fotoğraftan başlıyorsanız [fotoğraftan stencil](guide:tattoo-stencil-from-photo) rehberimiz net bir sonucu nasıl alacağınızı anlatıyor. Ana sayfadaki yapay zeka üretici de bir tarif veya örnek resimden tasarım yapabilir ve gerçek boyutta (300 dpi) yazdırabileceğiniz bir stencil çıkarabilir. Denemek ücretsizdir. Ücretsiz indirmelerde filigran bulunur, günlük geçiş veya Pro onu kaldırır."
+            }
+          ]
+        },
+        {
+          "h2": "Boyutu doğru ayarlayın",
+          "blocks": [
+            {
+              "p": "Yanlış boyuttaki stencil, yaptığınız her şeyi boşa çıkarır. Önce boyutu milimetre olarak belirleyin ve dosyanın da yazıcının da buna uyduğundan emin olun."
+            },
+            {
+              "ul": [
+                "Stencil'i 300 dpi'de dışa aktarın.",
+                "Yüzde 100'de yazdırın. Sayfaya sığdır ya da küçülterek sığdır gibi seçenekleri kapatın.",
+                "Çıktıyı cetvelle ölçün ve hedefinizle karşılaştırın.",
+                "Tutmuyorsa baskı ölçeğini kontrol edip yeniden yazdırın."
+              ]
+            },
+            {
+              "p": "[Gerçek boyutta yazdırma](guide:tattoo-stencil-size-true-size-print) rehberimiz hesapları daha ayrıntılı anlatıyor, [dövme boyutları tablosu](guide:tattoo-size-chart-by-body-part) da her vücut bölgesi için tipik ölçüleri gösteriyor."
+            }
+          ]
+        },
+        {
+          "h2": "Daha temiz sonuç için ipuçları",
+          "blocks": [
+            {
+              "ul": [
+                "Daha az, daha temiz çizgi kullanın. Fazla ayrıntı, aktarırken leke olur.",
+                "Orijinalin bir kopyasını saklayın ve kopyayla çalışın.",
+                "Hafif elle ve keskin araçlarla çalışın.",
+                "Son tabakanızı kullanmadan önce müsvedde kâğıtta deneyin.",
+                "Yazıcı mürekkebini koyu tutun. Soluk çizgileri takip etmek zordur.",
+                "Hangi sürümü yaptığınızı bilmek için her tabakaya boyutu ve tarihi yazın."
+              ]
+            },
+            {
+              "p": "Bir stencil gerçek bir müşteri içinse işi yapacak dövmeci onu onaylamalıdır. Kendi tekniğini ve cildin neye izin vereceğini o bilir."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Termal yazıcı olmadan dövme stencil yapabilir miyim?",
+          "a": "Evet. Tasarımı aydınger kâğıdına geçirebilir, karbon ya da transfer kâğıdı kullanabilir ya da çizgileri normal yazıcıda basıp elle aktarabilirsiniz."
+        },
+        {
+          "q": "Evde yapılan dövme stencil için hangi kâğıt kullanılır?",
+          "a": "El ile geçirmek için ince aydınger iyi çalışır, basılı stencil için düz yazıcı kâğıdı yeter. Düz kalan ve yırtılmayan bir kâğıt seçin."
+        },
+        {
+          "q": "Stencil'in doğru boyutta olduğundan nasıl emin olurum?",
+          "a": "Genişliği milimetre olarak ayarlayın, 300 dpi'de dışa aktarın ve yüzde 100'de yazdırın. Sonra çıktıyı cetvelle ölçün."
+        },
+        {
+          "q": "Stencil kullanarak kendime dövme yapmak güvenli mi?",
+          "a": "Hayır. Gerçek dövme, ruhsatlı bir stüdyoda eğitimli bir dövmeci tarafından yapılmalıdır. Stencil kâğıt üzerinde alıştırma, geçici yöntemler ya da profesyoneller içindir."
+        },
+        {
+          "q": "Stencil'im neden bulanık çıkıyor?",
+          "a": "Kaynak dosya büyük olasılıkla fazla küçük ya da fazla yumuşak. Temiz, yüksek çözünürlüklü bir çizgi dosyasıyla başlayın ve 300 dpi'de yazdırın."
+        }
+      ],
+      "cta": "Çiziminizi seçtiğiniz boyutta temiz bir stencil'e çevirmek için Studio'yu açın, evde yazdırmaya hazır olsun."
+    },
+    "free-tattoo-stencil-maker-guide": {
+      "title": "Ücretsiz dövme stencil oluşturucu: nelere bakmalı",
+      "short": "Ücretsiz dövme stencil oluşturucu: nelere bakmalı",
+      "blurb": "Herhangi bir ücretsiz dövme stencil oluşturucuyu değerlendirmek için kontrol listesi, ücretsiz sürümlerin genelde neyi sınırladığı ve beş dakikalık bir test.",
+      "metaTitle": "Ücretsiz Dövme Stencil Oluşturucu: Kontrol Listesi",
+      "metaDesc": "Ücretsiz dövme stencil oluşturucu nasıl değerlendirilir: temiz çizgi, mm cinsinden boyut, gerçek boyutta baskı, gizlilik ve beş dakikalık test.",
+      "updated": "2026-11-26",
+      "answer": "İyi bir ücretsiz dövme stencil oluşturucu size temiz siyah çizgiler verir, boyutu milimetre olarak ayarlamanıza izin verir, gerçek boyutta yazdırır, cilt üzerinde önizleme gösterir ve gizliliğinize saygı duyar. Herhangi bir aracı kendi çiziminizle beş dakikada deneyin ve ücretsiz sürümün neyi sınırladığını okuyun.",
+      "sections": [
+        {
+          "h2": "Ücretsiz dövme stencil oluşturucu ne yapmalı",
+          "blocks": [
+            {
+              "p": "Ücretsiz dövme stencil oluşturucu, bir görseli yazdırıp kılavuz olarak kullanabileceğiniz bir çizgi çizimine çevirir. Kulağa basit gelir, ama sonuçlar araçlar arasında çok değişir. Bazıları doğru boyutta net çizgiler verir. Diğerleri yanlış boyutta, ortasından filigran geçen gri bir leke verir."
+            },
+            {
+              "p": "Herhangi bir araca zaman harcamadan önce, iyi bir aracın ne yaptığını bilin. Sonraki bölümler temel özellikleri sıralıyor ve her araca uygulayabileceğiniz bir kontrol listesi veriyor."
+            }
+          ]
+        },
+        {
+          "h2": "Temiz çizgiler",
+          "blocks": [
+            {
+              "p": "Stencil bir çizgiler kümesidir, bu yüzden çizgi kalitesi değerlendirilecek ilk şeydir. Beyaz zemin üzerinde dolu, eşit siyah çizgiler istersiniz. İyi bir sonucun şu işaretlerine bakın:"
+            },
+            {
+              "ul": [
+                "Tırtıksız, pürüzsüz eğriler.",
+                "Çizgilerin çevresinde gri pus ya da benekli gürültü yok.",
+                "Dönüştürmeden sonra hâlâ görünen, kaybolmamış ya da ikilenmemiş ayrıntılar.",
+                "Sonucu ayarlayabilmeniz için eşiği veya çizgi gücünü değiştirme imkânı."
+              ]
+            },
+            {
+              "p": "Tek sabit filtre sunan bir araç bazı görsellerde işe yarayıp diğerlerinde başarısız olabilir. Ayar kontrolleri olan bir araç, kendi çiziminizle temiz sonuç alma şansınızı artırır."
+            }
+          ]
+        },
+        {
+          "h2": "Milimetre cinsinden boyut ve gerçek boyutta baskı",
+          "blocks": [
+            {
+              "p": "Yanlış boyutta basılan stencil işe yaramaz, bu yüzden boyut kontrolü neredeyse her özellikten daha önemlidir. İyi bir araç genişliği ya da yüksekliği milimetre olarak yazmanıza izin verir ve bunun 300 dpi'de kaç piksel ettiğini söyler."
+            },
+            {
+              "p": "300 dpi, yakından bakılacak bir baskı için olağan hedeftir. Bu yoğunlukta ince bir çizgi kâğıtta temiz kalır. Araç ayrıca yüzde 100'de sürpriz olmadan yazdıran bir dosya vermeli. Hesapları isterseniz [gerçek boyutta yazdırma](guide:tattoo-stencil-size-true-size-print) rehberimize bakın."
+            },
+            {
+              "p": "Vücut bölgesine göre tipik boyutlar için [dövme boyutları tablosunu](guide:tattoo-size-chart-by-body-part) kullanın."
+            }
+          ]
+        },
+        {
+          "h2": "Cilt üzerinde önizleme ve gizlilik",
+          "blocks": [
+            {
+              "h3": "Önizleme"
+            },
+            {
+              "p": "Bir tasarımı vücut bölgesinde görmek, yazdırmadan önce ölçeği ve yerleşimi değerlendirmenize yardım eder. Farklı vücut bölgelerinde ve ten renklerinde önizleme gösteren araçlar sizi çok tahminden kurtarır. [Yerleşim rehberimiz](guide:tattoo-placement-guide) bunu bir yer seçmek için nasıl kullanacağınızı anlatıyor."
+            },
+            {
+              "h3": "Gizlilik"
+            },
+            {
+              "p": "Çizimleriniz ve fotoğraflarınız kişisel olabilir. Aracın görselinizi bir sunucuya yükleyip yüklemediğine ya da kendi cihazınızda işleyip işlemediğine bakın. Cihazınızda işleyen bir araç görseli sizde tutar. Yüklüyorsa dosyanın ne kadar süre saklandığı ve kimin görebildiği hakkında açık bir ifade arayın."
+            }
+          ]
+        },
+        {
+          "h2": "Skinstencil dahil, her araç için kontrol listesi",
+          "blocks": [
+            {
+              "p": "Bu listeyi herhangi bir ücretsiz dövme stencil oluşturucuyu değerlendirmek için kullanın. Birine güvenmeden önce her satırı işaretleyin."
+            },
+            {
+              "ul": [
+                "Kendi görselinizden temiz, dolu çizgiler veriyor mu?",
+                "Boyutu milimetre olarak ayarlayabiliyor musunuz?",
+                "Gerçek boyutta baskı için 300 dpi'de dışa aktarıyor mu?",
+                "Bir vücut bölgesinde önizleme var mı?",
+                "Görselinize ne olduğunu açıkça söylüyor mu?",
+                "Neyin ücretsiz, neyin olmadığı net mi?",
+                "İstemediğiniz bir hesap açmadan indirebiliyor musunuz?",
+                "Çizimlerin yanı sıra fotoğraflar için de çalışıyor mu?"
+              ]
+            },
+            {
+              "p": "Skinstencil, aynı listeden geçirebileceğiniz bir örnektir. [Studio](studio) kendi çiziminizi, flaşınızı veya fotoğrafınızı cihazınızda stencil'e çevirir, hiçbir şey yüklenmez. Ana sayfadaki yapay zeka üretici bir tarif veya örnek resimden tasarım yapar, onu 8 vücut bölgesinde (kürek kemiği, sırt, ön kol, üst kol, göğüs, kaburgalar, uyluk ve baldır) ve 6 ten renginde gösterir ve gerçek boyutta (300 dpi) yazdırabileceğiniz bir stencil çıkarır. Onu da diğer araçlar gibi değerlendirin."
+            }
+          ]
+        },
+        {
+          "h2": "Ücretsiz sürümler genelde neyi sınırlar",
+          "blocks": [
+            {
+              "p": "Çoğu ücretsiz aracın sınırları vardır ve bunlara önceden bakmak makuldür. Yaygın olanlar:"
+            },
+            {
+              "ul": [
+                "İndirilen dosyalarda filigran.",
+                "Dönüştürme veya indirme sayısında üst sınır.",
+                "Ücretsiz planda daha düşük çözünürlüklü çıktı.",
+                "Daha az ayar kontrolü.",
+                "Hesap gerektiren özellikler."
+              ]
+            },
+            {
+              "p": "Bunların hiçbiri kendi başına kötü değildir. Ücretsiz katman, karar vermeden önce bir aracı denemenizi sağlar. Önemli olan sınırın açık olmasıdır, böylece neyi aldığınızı bilirsiniz. Skinstencil'i denemek ücretsizdir. Ücretsiz indirmelerde filigran bulunur, günlük geçiş veya Pro onu kaldırır. Güncel planı sitede kontrol edin."
+            }
+          ]
+        },
+        {
+          "h2": "Herhangi bir aracı beş dakikada test edin",
+          "blocks": [
+            {
+              "p": "Uzun bir incelemeye gerek yok. Kendi çiziminizi kullanın ve şu adımları izleyin."
+            },
+            {
+              "ol": [
+                "Çizgileri net, basit bir çiziminizi seçin. Bir tarama ya da bir eskiz fotoğrafı olur.",
+                "Aracı yükleyin ve ne kadar sürdüğüne dikkat edin.",
+                "Çizgi kalitesini tam yakınlaştırmada kontrol edin.",
+                "Milimetre olarak bir boyut ayarlayın, örneğin 100 mm.",
+                "Sonucu indirin ve yüzde 100'de yazdırın.",
+                "Çıktıyı cetvelle ölçün.",
+                "Varsa filigran dahil, indirmenin nasıl göründüğüne bakın."
+              ]
+            },
+            {
+              "p": "Çıktı ayarladığınız boyutla eşleşiyorsa ve çizgiler temiz görünüyorsa araç temel sınavı geçer. Geçmiyorsa bir başkasına geçin."
+            }
+          ]
+        },
+        {
+          "h2": "Fotoğraf ne zaman Fotoğraf moduna ihtiyaç duyar",
+          "blocks": [
+            {
+              "p": "Beyaz kâğıt üzerindeki çizim kolay dönüşür, çünkü çizgiler zaten koyu ve zemin sadedir. Fotoğraf daha zordur. Gölgeler, renkler, dokular ve yumuşak kenarlar vardır ve basit bir filtre bunları gürültüye çevirir."
+            },
+            {
+              "p": "Kaynağınız bir fotoğrafsa özel bir fotoğraf moduna sahip bir araç arayın. Tonları sadeleştirmeli ve ana konturları seçmeli ki sonuç stencil gibi okunsun. [Fotoğraftan stencil](guide:tattoo-stencil-from-photo) rehberimiz en iyi sonucu nasıl alacağınızı anlatıyor."
+            },
+            {
+              "p": "Her fotoğraf için bir ipucu: mümkün olduğunda iyi ışık, net bir görsel ve sade bir arka plan kullanın. Daha iyi girdi daha temiz stencil verir."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ücretsiz bir dövme stencil oluşturucu var mı?",
+          "a": "Evet, birkaç araç ücretsiz katman sunar. Birine güvenmeden önce filigran, indirme sınırı ya da düşük çözünürlük gibi sınırlara bakın."
+        },
+        {
+          "q": "Fotoğraftan ücretsiz dövme stencil yapabilir miyim?",
+          "a": "Çoğunlukla evet, ama fotoğraflar çizimlerden daha fazla özen ister. Fotoğraf modu olan bir araç ve net, iyi aydınlatılmış bir kaynak görsel kullanın."
+        },
+        {
+          "q": "Stencil hangi boyutta dışa aktarılmalı?",
+          "a": "Ciltte istediğiniz boyutu milimetre olarak seçin ve 300 dpi'de dışa aktarın. Sonra yüzde 100'de yazdırın ve sonucu ölçün."
+        },
+        {
+          "q": "Görsellerim çevrimiçi stencil oluşturucuda güvende mi?",
+          "a": "Araca bağlıdır. Görselleri cihazınızda işleyen ya da dosyaların ne kadar süre saklandığını ve kimin görebildiğini açıkça belirten bir araç arayın."
+        },
+        {
+          "q": "Ücretsiz stencil indirmelerinde neden filigran var?",
+          "a": "Filigran, ücretsiz planlarda yaygın bir sınırdır. Birçok araç onu ücretli bir seçenekle kaldırır, o yüzden aracın ne sunduğuna bakın."
+        }
+      ],
+      "cta": "Skinstencil Studio'yu kendi çiziminizle deneyin ve kontrol listesinden kendiniz geçirin."
     }
   }
 }
