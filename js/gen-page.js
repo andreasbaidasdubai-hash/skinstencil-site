@@ -152,10 +152,8 @@
   /* ---------- the generator service ---------- */
   var busy = false, st = $('genStatus'), REF = '', REFMODE = 'inspire';
   function say(k, cls, v) { st.textContent = k ? t(k, v) : ''; st.className = 'wnote' + (cls ? ' ' + cls : ''); }
-  function route() {
-    var m = $('model');
-    if (REF) { m.innerHTML = t('gen.w.modelRef'); $('genStyle').classList.add('dim'); }
-    else { $('genStyle').classList.remove('dim'); m.innerHTML = t(S.style === 'bold' ? 'gen.w.modelBold' : 'gen.w.modelDetail'); }
+  function route() {   // with a picture the style is chosen for us (the picture-aware model), so the choice is not drawn
+    $('genStyle').hidden = !!REF;
   }
   [].forEach.call($('genStyle').querySelectorAll('button'), function (b) { b.addEventListener('click', function () { S.style = b.getAttribute('data-v'); [].forEach.call($('genStyle').querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', String(x === b)); }); route(); }); });
   $('attBtn').addEventListener('click', function () { $('ref').click(); });

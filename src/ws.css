@@ -24,7 +24,6 @@ textarea{width:100%;font:500 16px var(--body);background:#fff;color:var(--ink);b
 .attbtn{display:inline-flex;gap:8px;align-items:center;font:600 13px var(--body);background:#fff;color:var(--ink);border:1.5px dashed rgba(29,27,25,.4);border-radius:8px;padding:9px 13px;cursor:pointer;transition:border-color .15s,transform .15s}.attbtn:hover{border-color:var(--stencil)}.attbtn:active{transform:scale(.98)}
 .thumbw{position:relative;width:54px;height:54px;border:1px solid var(--line);background:#fff}.thumbw img{width:100%;height:100%;object-fit:cover;display:block}
 .thumbw button{position:absolute;inset-inline-end:-8px;top:-8px;width:22px;height:22px;border-radius:50%;border:0;background:var(--ink);color:#fff;font:700 14px/1 var(--body);cursor:pointer;padding:0}
-.model{font:500 13px/1.4 var(--body);margin:0;color:#4A463F;background:#fff;border-inline-start:3px solid var(--stencil);padding:8px 11px}.model b{color:var(--ink)}
 .wnote{font-size:13px;color:var(--muted);margin:0}.wnote.err{color:var(--bad)}.wnote.ok{color:var(--ok)}
 .btnrow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 /* body map */
