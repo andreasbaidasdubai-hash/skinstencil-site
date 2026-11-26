@@ -8,9 +8,11 @@ window.SkinConfig = {
   checkout: {
     day: "https://buy.polar.sh/polar_cl_eYCpTIZMJdV1Hg8DtuQBDDustzUCEqY4JZ1za4SxBX7",
     month: "https://buy.polar.sh/polar_cl_M548UXCzOIvSF2ns2K3POQKIEerMIGVogcOmh0WygHc",
-    year: "https://buy.polar.sh/polar_cl_RtlAFQ4fBXdVCVJiYUtHcVmwqlGmTetAxMO8p1IRBAX"
+    year: "https://buy.polar.sh/polar_cl_RtlAFQ4fBXdVCVJiYUtHcVmwqlGmTetAxMO8p1IRBAX",
+    /* 7-day pass: create the product in Polar (key expires after 7 days), then paste its checkout link here. Until then the button says checkout opens soon. */
+    week: ""
   },
-  prices: { currency: "USD", day: "14.99", month: "29", year: "199" },
+  prices: { currency: "USD", day: "7.99", week: "14.99", month: "19", year: "149" },
   analyticsToken: "87fa69765dd849aaa207fe3e48dfd3e8",
   notifyEmail: "hello@skinstencil.com",
   /* Address of the design-generator Worker (worker/README.md). Empty = the generator is not drawn on the page. */

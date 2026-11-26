@@ -80,11 +80,11 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 .sec .in{max-width:1060px;margin:0 auto}
 .sec h2{font-weight:800;font-size:clamp(30px,4.2vw,52px);line-height:1.05;margin:0 0 12px}
 .sec .sub{font-size:18px;color:#4A463F;margin:0 0 34px;max-width:46ch}
-.plans3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
-.pl{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:28px 26px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px}
+.plans3{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+.pl{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:26px 22px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px}
 .pl.hl{border-color:var(--stencil);background:var(--stencil-soft);box-shadow:0 30px 60px -36px rgba(79,53,200,.55)}
 .pl h3{font:800 19px var(--display)}
-.pl .pr{font:800 clamp(38px,4vw,50px)/1 var(--display);letter-spacing:-.02em}
+.pl .pr{font:800 clamp(34px,3.4vw,44px)/1 var(--display);letter-spacing:-.02em}
 .pl .pr small{font:500 15px var(--body);color:var(--muted);letter-spacing:0;margin-inline-start:8px}
 .pl ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;align-content:start}
 .pl li{padding-inline-start:26px;position:relative;font-size:15.5px;line-height:1.4}
@@ -94,7 +94,8 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 .pl .btn.alt{border-color:rgba(29,27,25,.5)}
 .pl .or{font-size:14px;color:var(--muted);margin:-8px 0 0}
 .fine{font-size:13.5px;color:var(--muted);margin:22px 0 0}
-@media (max-width:860px){.plans3{grid-template-columns:1fr;max-width:460px}}
+@media (max-width:1020px){.plans3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.plans3{grid-template-columns:1fr;max-width:460px}}
 /* questions */
 .qa{display:grid;gap:10px;max-width:760px}
 .qa details{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:4px 22px}
@@ -258,7 +259,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 
 
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/fr/","inLanguage":"fr","description":"Décrivez un tatouage, voyez-le sur votre peau, imprimez-le en pochoir taille réelle. Gratuit à essayer ; retirez le filigrane avec un pass journée ou Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"14.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"29","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"199","priceCurrency":"USD"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/fr/","inLanguage":"fr","description":"Décrivez un tatouage, voyez-le sur votre peau, imprimez-le en pochoir taille réelle. Gratuit à essayer ; retirez le filigrane avec un pass journée ou Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"7.99","priceCurrency":"USD"},{"@type":"Offer","name":"7-day pass","price":"14.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"19","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"149","priceCurrency":"USD"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Le générateur de tatouage IA est-il gratuit ?","acceptedAnswer":{"@type":"Answer","text":"Tu peux l’essayer gratuitement : les visiteurs obtiennent quelques motifs par jour sans compte. Un pass jour ou Pro relève fortement la limite quotidienne. Transformer un motif en pochoir fonctionne comme dans le Studio : les téléchargements gratuits portent un filigrane, qu’une clé de licence supprime."}},{"@type":"Question","name":"Comment retirer le filigrane ?","acceptedAnswer":{"@type":"Answer","text":"Choisissez un pass journée ou Pro et payez sur la page de paiement sécurisée. Vous recevez une clé de licence par e-mail. Collez-la dans le studio et le filigrane disparaît. La clé est vérifiée auprès de notre prestataire de paiement et conservée uniquement dans votre navigateur."}},{"@type":"Question","name":"Puis-je utiliser le motif pour un vrai tatouage ?","acceptedAnswer":{"@type":"Answer","text":"Vois-le comme un point de départ. Montre-le à ton tatoueur ou ta tatoueuse : c’est à lui ou elle de juger s’il convient à la zone et à la taille, et de vérifier qu’il ne copie pas le travail de quelqu’un d’autre."}},{"@type":"Question","name":"Comment imprimer un stencil ?","acceptedAnswer":{"@type":"Answer","text":"Téléchargez le PNG et imprimez-le à la taille que vous avez réglée. Les fichiers payants portent la taille 300 dpi, donc le logiciel d'impression utilise la taille réelle. Les imprimantes thermiques à stencil impriment sur du papier de transfert thermique. Les imprimantes à jet d'encre demandent de l'encre à stencil et du papier de transfert pour jet d'encre."}},{"@type":"Question","name":"Que devient ma description ?","acceptedAnswer":{"@type":"Answer","text":"Elle est envoyée à notre service de génération et au fournisseur d’images qui dessine le motif, selon leurs propres conditions. Nous ne conservons ni ta description ni le motif. N’y écris ni données personnelles ni noms. L’étape du pochoir s’exécute sur ton propre appareil."}},{"@type":"Question","name":"Puis-je être remboursé ?","acceptedAnswer":{"@type":"Answer","text":"Le pass d'un jour n'est pas remboursable, car la clé de licence fonctionne dès réception. Pro est remboursé intégralement dans les 14 jours suivant le premier paiement : écrivez à hello@skinstencil.com. Les renouvellements ne sont pas remboursés, et vous pouvez annuler avant le suivant à tout moment. Vos droits légaux ne sont pas affectés."}}]}</script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -331,12 +332,15 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
     <div class="pl"><h3>Gratuit</h3><div class="pr">$0</div>
       <ul><li>Stencils illimités</li><li>2 designs francs par jour et 1 aperçu réaliste par semaine</li><li>Filigrane sur les téléchargements, jusqu'à 800 px</li></ul>
       <div class="acts"><a class="btn alt" href="#ws">Ouvrir l'outil gratuit</a></div></div>
-    <div class="pl"><h3>Pass journée</h3><div class="pr">$14.99<small>24 heures</small></div>
-      <ul><li>Sans filigrane</li><li>20 designs et 6 aperçus réalistes</li><li>Détails fins et vos propres images d'exemple</li></ul>
+    <div class="pl"><h3>Pass journée</h3><div class="pr">$7.99<small>24 heures</small></div>
+      <ul><li>Sans filigrane</li><li>15 designs et 5 aperçus réalistes</li><li>Détails fins et vos propres images d'exemple</li></ul>
       <div class="acts"><a class="btn alt buy" data-plan="day" href="#">Retirer le filigrane pour une journée</a></div></div>
-    <div class="pl hl"><h3>Pro</h3><div class="pr">$29<small>par mois</small></div>
+    <div class="pl"><h3>Pass 7 jours</h3><div class="pr">$14.99<small>7 jours</small></div>
+      <ul><li>Sans filigrane</li><li>30 designs et 10 aperçus réalistes</li><li>Détails fins et vos propres images d'exemple</li></ul>
+      <div class="acts"><a class="btn alt buy" data-plan="week" href="#">Obtenir le pass 7 jours</a></div></div>
+    <div class="pl hl"><h3>Pro</h3><div class="pr">$19<small>par mois</small></div>
       <ul><li>Tout ce que contient le pass journée</li><li>60 designs et 15 aperçus réalistes par mois</li><li>Résiliable à tout moment</li></ul>
-      <div class="acts"><a class="btn buy" data-plan="month" href="#">Passer Pro, mensuel</a><p class="or">ou $199 par an</p><a class="btn alt buy" data-plan="year" href="#">Passer Pro, annuel</a></div></div>
+      <div class="acts"><a class="btn buy" data-plan="month" href="#">Passer Pro, mensuel</a><p class="or">ou $149 par an</p><a class="btn alt buy" data-plan="year" href="#">Passer Pro, annuel</a></div></div>
   </div>
   <p class="fine">Prix en dollars américains. Les taxes sont gérées au paiement par notre prestataire de paiement.</p>
   <p class="fine" id="soonNote" hidden>Le paiement ouvre bientôt. Prévenez-moi quand ce sera le cas.</p>

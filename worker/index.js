@@ -2,7 +2,7 @@
    The provider key lives only here (a Worker secret), never in the page. Every request is limited, so a bad day cannot become a big bill
    and every paid plan keeps a high margin even for its heaviest user. The numbers are in LIMITS and BUDGET below; the arithmetic is in the pricing study.
      free   no license: 2 Bold designs per UTC day and 1 realistic preview per week, counted per network address. No Fine detail, no example picture.
-     pass   a day-pass license key (it expires within a few days): DESIGNS + PREVIEWS for the whole life of the key, not per day.
+     pass1  a day-pass key (valid 1 to 2 days) and pass7 a 7-day-pass key (valid up to 9 days): DESIGNS + PREVIEWS for the whole life of the key, not per day.
      pro    a Pro license key (monthly or yearly): a monthly pool, per calendar month (UTC).
    Two spending pools per UTC day, so free traffic can never block a customer who paid: BUDGET.free and BUDGET.paid (USD).
    Counters are kept in Workers KV, which is eventually consistent: the limits are firm to within a few requests, not to the cent.
@@ -15,13 +15,16 @@ const STYLES = {
 };
 const REF = { model: 'openai/gpt-image-2/edit', body: { image_size: 'square_hd', quality: 'medium' }, cost: 0.08 };
 const PLACE = { model: 'openai/gpt-image-2/edit', body: { image_size: 'portrait_4_3', quality: 'medium' }, cost: 0.10 };
-/* Worst case per customer = designs x 0.08 + previews x 0.10. Pass: 20 x 0.08 + 6 x 0.10 = 2.20. Pro: 60 x 0.08 + 15 x 0.10 = 6.30 a month. */
+/* Worst case per customer = designs x 0.08 + previews x 0.10.
+   Day pass (7.99): 15 x 0.08 + 5 x 0.10 = 1.70. 7-day pass (14.99): 30 x 0.08 + 10 x 0.10 = 3.40. Pro (19 a month / 149 a year): 60 x 0.08 + 15 x 0.10 = 6.30 a month. */
 const LIMITS = {
-  free: { designs: 2, previews: 1 },    // designs per UTC day, previews per week
-  pass: { designs: 20, previews: 6 },   // per pass
-  pro: { designs: 60, previews: 15 },   // per calendar month
+  free: { designs: 2, previews: 1 },     // designs per UTC day, previews per week
+  pass1: { designs: 15, previews: 5 },   // per day pass
+  pass7: { designs: 30, previews: 10 },  // per 7-day pass
+  pro: { designs: 60, previews: 15 },    // per calendar month
 };
-const PASS_MAX_DAYS = 9;   // a license key that lives at most this long is a pass; anything longer is Pro
+const DAY_PASS_MAX_DAYS = 2;   // a license key that lives at most this long is a day pass
+const PASS_MAX_DAYS = 9;       // up to this long it is a 7-day pass; anything longer is Pro
 const BUDGET = { free: 4, paid: 8 };    // USD per UTC day, each pool (env FREE_BUDGET_USD / PAID_BUDGET_USD override)
 const PARTS = { shoulder: 'the shoulder blade', back: 'the middle of the upper back', forearm: 'the middle of the forearm, running along the arm', arm: 'the upper arm', chest: 'the centre of the chest', ribs: 'the ribs', thigh: 'the thigh', calf: 'the calf' };
 const SITE = 'https://skinstencil.com';
@@ -40,7 +43,7 @@ function json(req, status, obj) { return new Response(JSON.stringify(obj), { sta
 async function count(kv, k) { return parseInt((await kv.get(k)) || '0', 10) || 0; }
 async function bump(kv, k, by, ttl) { const v = Math.max(0, (await count(kv, k)) + by); await kv.put(k, String(v), { expirationTtl: ttl }); return v; }
 
-/* Polar's public license check. Returns the plan too: a key that is valid for at most PASS_MAX_DAYS in total is a day pass, a longer one is Pro.
+/* Polar's public license check. Returns the plan too: a key that is valid for at most DAY_PASS_MAX_DAYS in total is a day pass, up to PASS_MAX_DAYS a 7-day pass, a longer one is Pro.
    (Polar's response carries expires_at and, we expect, created_at. Without created_at the time left decides. Check this with the first real keys.) */
 async function licenseInfo(env, key) {
   if (!key || !env.POLAR_ORG_ID) return null;
@@ -52,7 +55,8 @@ async function licenseInfo(env, key) {
     let plan = 'pro';
     if (j.expires_at) {
       const end = new Date(j.expires_at).getTime(), start = j.created_at ? new Date(j.created_at).getTime() : Date.now();
-      if ((end - start) / 86400000 <= PASS_MAX_DAYS) plan = 'pass';
+      const days = (end - start) / 86400000;
+      if (days <= DAY_PASS_MAX_DAYS) plan = 'pass1'; else if (days <= PASS_MAX_DAYS) plan = 'pass7';
     }
     return { plan };
   } catch (e) { return null; }
@@ -73,7 +77,7 @@ async function humanOk(env, token, ip) {
 function allowance(plan, placing, who) {
   const kind = placing ? 'p' : 'd', cap = LIMITS[plan][placing ? 'previews' : 'designs'];
   if (plan === 'free') return placing ? { k: `f:p:${who}:${week()}`, cap, ttl: 9 * 86400 } : { k: `f:d:${who}:${day()}`, cap, ttl: 2 * 86400 };
-  if (plan === 'pass') return { k: `s:${kind}:${who}`, cap, ttl: (PASS_MAX_DAYS + 1) * 86400 };
+  if (plan === 'pass1' || plan === 'pass7') return { k: `s:${kind}:${who}`, cap, ttl: (PASS_MAX_DAYS + 1) * 86400 };
   return { k: `m:${kind}:${who}:${month()}`, cap, ttl: 35 * 86400 };
 }
 

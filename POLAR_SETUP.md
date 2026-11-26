@@ -22,21 +22,29 @@ Create a benefit of type "License Keys":
 ### Product 1: Day pass
 - Name: `Skinstencil day pass`
 - Description: `24 hours without the watermark. Download and print clean stencils at true size, up to 4000 px, with the 300 dpi size inside the file. One payment, no subscription.`
-- Pricing: one-time, USD 14.99 (changed from 4.99 on 26 Nov 2026: edit the existing product price in Polar, or create a new product and a new checkout link and paste it into `js/config.js`)
+- Pricing: one-time, USD 7.99 (changed from 4.99 on 26 Nov 2026: edit the existing product price in Polar, or create a new product and a new checkout link and paste it into `js/config.js`)
 - Benefit: License Keys, expiration 1 day after purchase
+- Checkout link success URL: `https://skinstencil.com/studio/?thanks=1`
+
+### Product 1b: 7-day pass (new, 26 Nov 2026)
+- Name: `Skinstencil 7-day pass`
+- Description: `7 days without the watermark. Download and print clean stencils at true size, up to 4000 px, with the 300 dpi size inside the file. 30 AI designs and 10 realistic previews. One payment, no subscription.`
+- Pricing: one-time, USD 14.99
+- Benefit: License Keys, expiration 7 days after purchase (the Worker reads the key's lifetime to pick the plan limits)
+- Paste its checkout link into `js/config.js` as `checkout.week`
 - Checkout link success URL: `https://skinstencil.com/studio/?thanks=1`
 
 ### Product 2: Pro, monthly
 - Name: `Skinstencil Pro, monthly`
 - Description: `No watermark for as long as you subscribe. Clean downloads and prints at true size, up to 4000 px, 300 dpi size inside the file. New features first, such as AI cleanup and PDF export. Cancel any time.`
-- Pricing: recurring monthly, USD 29 (changed from 12 on 26 Nov 2026)
+- Pricing: recurring monthly, USD 19 (changed from 12 on 26 Nov 2026)
 - Benefit: License Keys, no fixed expiry (the key is revoked automatically when the subscription ends)
 - Success URL: `https://skinstencil.com/studio/?thanks=1`
 
 ### Product 3: Pro, yearly
 - Name: `Skinstencil Pro, yearly`
 - Description: same as monthly, plus: `Billed once a year.`
-- Pricing: recurring yearly, USD 199
+- Pricing: recurring yearly, USD 149 (changed from 79 on 26 Nov 2026)
 - Benefit: License Keys, no fixed expiry
 - Success URL: `https://skinstencil.com/studio/?thanks=1`
 
@@ -61,7 +69,7 @@ Commit and push `js/config.js`. All buy buttons (landing pages in every language
 - Subscription changes and cancellation: through the Polar customer portal.
 
 ## 7. Fees you will pay (new organisation, Starter plan) [M]
-5% + USD 0.50 per transaction, plus 1.5% for international cards. Examples before the international surcharge: day pass USD 14.99 costs about USD 1.25 (8%); Pro monthly USD 29 about USD 1.95 (7%); Pro yearly USD 199 about USD 10.45 (5%). Payouts: Stripe fees of USD 2 a month while active plus 0.25% + USD 0.25 per payout. A dispute costs USD 15.
+5% + USD 0.50 per transaction, plus 1.5% for international cards. Examples before the international surcharge: day pass USD 7.99 costs about USD 0.90 (11%); 7-day pass USD 14.99 about USD 1.25 (8%); Pro monthly USD 19 about USD 1.45 (8%); Pro yearly USD 149 about USD 7.95 (5%). Payouts: Stripe fees of USD 2 a month while active plus 0.25% + USD 0.25 per payout. A dispute costs USD 15.
 At the prices set on 26 Nov 2026 the fixed USD 0.50 matters much less than before.
 
 ## The Stripe question: can we use the existing Stripe account?

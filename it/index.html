@@ -80,11 +80,11 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 .sec .in{max-width:1060px;margin:0 auto}
 .sec h2{font-weight:800;font-size:clamp(30px,4.2vw,52px);line-height:1.05;margin:0 0 12px}
 .sec .sub{font-size:18px;color:#4A463F;margin:0 0 34px;max-width:46ch}
-.plans3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
-.pl{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:28px 26px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px}
+.plans3{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+.pl{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:26px 22px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px}
 .pl.hl{border-color:var(--stencil);background:var(--stencil-soft);box-shadow:0 30px 60px -36px rgba(79,53,200,.55)}
 .pl h3{font:800 19px var(--display)}
-.pl .pr{font:800 clamp(38px,4vw,50px)/1 var(--display);letter-spacing:-.02em}
+.pl .pr{font:800 clamp(34px,3.4vw,44px)/1 var(--display);letter-spacing:-.02em}
 .pl .pr small{font:500 15px var(--body);color:var(--muted);letter-spacing:0;margin-inline-start:8px}
 .pl ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;align-content:start}
 .pl li{padding-inline-start:26px;position:relative;font-size:15.5px;line-height:1.4}
@@ -94,7 +94,8 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 .pl .btn.alt{border-color:rgba(29,27,25,.5)}
 .pl .or{font-size:14px;color:var(--muted);margin:-8px 0 0}
 .fine{font-size:13.5px;color:var(--muted);margin:22px 0 0}
-@media (max-width:860px){.plans3{grid-template-columns:1fr;max-width:460px}}
+@media (max-width:1020px){.plans3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.plans3{grid-template-columns:1fr;max-width:460px}}
 /* questions */
 .qa{display:grid;gap:10px;max-width:760px}
 .qa details{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:4px 22px}
@@ -258,7 +259,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 
 
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/it/","inLanguage":"it","description":"Descrivi un tatuaggio, guardalo sulla pelle e stampalo come stencil a misura reale. Gratis da provare; togli la filigrana con un pass giornaliero o Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"14.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"29","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"199","priceCurrency":"USD"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/it/","inLanguage":"it","description":"Descrivi un tatuaggio, guardalo sulla pelle e stampalo come stencil a misura reale. Gratis da provare; togli la filigrana con un pass giornaliero o Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"7.99","priceCurrency":"USD"},{"@type":"Offer","name":"7-day pass","price":"14.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"19","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"149","priceCurrency":"USD"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Il generatore di tatuaggi con IA è gratuito?","acceptedAnswer":{"@type":"Answer","text":"Puoi provarlo gratis: i visitatori ottengono alcuni disegni al giorno senza account. Un pass giornaliero o Pro alza molto il limite quotidiano. Trasformare un disegno in stencil funziona come nello Studio: i download gratuiti hanno una filigrana, che una chiave di licenza rimuove."}},{"@type":"Question","name":"Come tolgo la filigrana?","acceptedAnswer":{"@type":"Answer","text":"Scegli un pass giornaliero o Pro e paga al checkout sicuro. Ricevi una chiave di licenza via email. Incollala nello studio e la filigrana sparisce. La chiave viene verificata con il nostro fornitore di pagamenti e resta salvata solo nel tuo browser."}},{"@type":"Question","name":"Posso usare il disegno per un tatuaggio vero?","acceptedAnswer":{"@type":"Answer","text":"Consideralo un punto di partenza. Mostralo al tuo tatuatore o alla tua tatuatrice: è lui o lei a decidere se funziona per la zona e la dimensione, e a verificare che non copi il lavoro di qualcun altro."}},{"@type":"Question","name":"Come stampo uno stencil?","acceptedAnswer":{"@type":"Answer","text":"Scarica il PNG e stampalo alla misura che hai impostato. I file a pagamento portano la misura a 300 dpi, così il software di stampa usa la misura reale. Le stampanti termiche per stencil stampano su carta transfer termica. Le stampanti a getto d'inchiostro richiedono inchiostro per stencil e carta transfer per inkjet."}},{"@type":"Question","name":"Cosa succede alla mia descrizione?","acceptedAnswer":{"@type":"Answer","text":"Viene inviata al nostro servizio di generazione e al fornitore di immagini che disegna il soggetto, secondo i loro termini. Non conserviamo né la tua descrizione né il disegno. Non scrivere dati personali o nomi. Il passaggio dello stencil avviene sul tuo dispositivo."}},{"@type":"Question","name":"Posso avere un rimborso?","acceptedAnswer":{"@type":"Answer","text":"Il pass giornaliero non è rimborsabile, perché la chiave di licenza funziona appena la ricevi. Pro è rimborsabile per intero entro 14 giorni dal primo pagamento: scrivi a hello@skinstencil.com. I rinnovi non vengono rimborsati e puoi disdire prima del successivo in qualsiasi momento. I tuoi diritti di legge restano invariati."}}]}</script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -331,12 +332,15 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
     <div class="pl"><h3>Gratis</h3><div class="pr">$0</div>
       <ul><li>Stencil illimitati</li><li>2 design decisi al giorno e 1 anteprima realistica a settimana</li><li>Filigrana sui download, fino a 800 px</li></ul>
       <div class="acts"><a class="btn alt" href="#ws">Apri lo strumento gratuito</a></div></div>
-    <div class="pl"><h3>Pass giornaliero</h3><div class="pr">$14.99<small>24 ore</small></div>
-      <ul><li>Senza filigrana</li><li>20 design e 6 anteprime realistiche</li><li>Dettaglio fine e le tue immagini di esempio</li></ul>
+    <div class="pl"><h3>Pass giornaliero</h3><div class="pr">$7.99<small>24 ore</small></div>
+      <ul><li>Senza filigrana</li><li>15 design e 5 anteprime realistiche</li><li>Dettaglio fine e le tue immagini di esempio</li></ul>
       <div class="acts"><a class="btn alt buy" data-plan="day" href="#">Togli la filigrana per un giorno</a></div></div>
-    <div class="pl hl"><h3>Pro</h3><div class="pr">$29<small>al mese</small></div>
+    <div class="pl"><h3>Pass 7 giorni</h3><div class="pr">$14.99<small>7 giorni</small></div>
+      <ul><li>Senza filigrana</li><li>30 design e 10 anteprime realistiche</li><li>Dettaglio fine e le tue immagini di esempio</li></ul>
+      <div class="acts"><a class="btn alt buy" data-plan="week" href="#">Ottieni il pass 7 giorni</a></div></div>
+    <div class="pl hl"><h3>Pro</h3><div class="pr">$19<small>al mese</small></div>
       <ul><li>Tutto ciò che include il pass giornaliero</li><li>60 design e 15 anteprime realistiche al mese</li><li>Disdici quando vuoi</li></ul>
-      <div class="acts"><a class="btn buy" data-plan="month" href="#">Passa a Pro, mensile</a><p class="or">oppure $199 all'anno</p><a class="btn alt buy" data-plan="year" href="#">Passa a Pro, annuale</a></div></div>
+      <div class="acts"><a class="btn buy" data-plan="month" href="#">Passa a Pro, mensile</a><p class="or">oppure $149 all'anno</p><a class="btn alt buy" data-plan="year" href="#">Passa a Pro, annuale</a></div></div>
   </div>
   <p class="fine">Prezzi in dollari statunitensi. Le tasse sono gestite al pagamento dal nostro fornitore di pagamenti.</p>
   <p class="fine" id="soonNote" hidden>Il checkout apre presto. Avvisami quando apre.</p>

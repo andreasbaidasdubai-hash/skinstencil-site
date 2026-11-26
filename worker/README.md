@@ -16,11 +16,12 @@ Wrangler prints the Worker address (`https://skinstencil-generate.<you>.workers.
 
 Limits (changed 26 Nov 2026, see the pricing study): the numbers are in `index.js` (`LIMITS`, `BUDGET`), the two spending pools can be overridden in `wrangler.toml` (`FREE_BUDGET_USD`, `PAID_BUDGET_USD`).
 - Free (no license): 2 Bold designs per UTC day and 1 realistic preview per week, per network address. No Fine detail and no example picture (the Worker answers `paid_only`).
-- Day pass: 20 designs and 6 realistic previews for the whole life of the key, not per day.
-- Pro (monthly or yearly): 60 designs and 15 realistic previews per calendar month.
-- Pools per UTC day: free 4 USD, paid 8 USD. When the free pool is empty, paying customers are still served.
-- Plan detection: a license key valid for 9 days or less in total (expires_at minus created_at, else the time left) is a day pass, anything longer is Pro. So the day pass benefit in Polar must expire the key, and Pro keys must not. Check this with the first real keys; if Polar does not return created_at, a Pro key that has an expiry set in the last 9 days of its period would be treated as a pass.
-- Worst case per customer: day pass 2.20 USD of AI against 13.63 net; Pro monthly 6.30 against 26.83; Pro yearly 6.30 a month against 15.6.
+- Day pass (7.99 USD): 15 designs and 5 realistic previews for the whole life of the key, not per day.
+- 7-day pass (14.99 USD): 30 designs and 10 realistic previews for the whole pass.
+- Pro (19 USD a month or 149 a year): 60 designs and 15 realistic previews per calendar month.
+- Pools per UTC day: free 4 USD, paid 8 USD. When the free pool is empty, paying customers are still served. A paid pool of 8 USD is about 2 customers spending their whole allowance in one day; typical use is far lower. Raise `PAID_BUDGET_USD` as paying customers grow, and watch the number of `budget` answers to paid keys (target zero).
+- Plan detection: a license key valid for 2 days or less in total (expires_at minus created_at, else the time left) is a day pass, up to 9 days a 7-day pass, longer is Pro. So the pass benefits in Polar must expire their keys, and Pro keys must not. Check this with the first real keys.
+- Worst case per customer (all allowance used): day pass 1.70 USD of AI against 7.03 net; 7-day pass 3.40 against 13.63; Pro monthly 6.30 against 17.41; Pro yearly 6.30 a month against 11.7.
 
 Costs per call: bold (Recraft vector) 0.08 USD, detail (GPT Image 2) about 0.06 USD (priced by tokens, so the real figure can differ slightly; check the fal dashboard).
 

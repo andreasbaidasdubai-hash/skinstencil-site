@@ -80,11 +80,11 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 .sec .in{max-width:1060px;margin:0 auto}
 .sec h2{font-weight:800;font-size:clamp(30px,4.2vw,52px);line-height:1.05;margin:0 0 12px}
 .sec .sub{font-size:18px;color:#4A463F;margin:0 0 34px;max-width:46ch}
-.plans3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
-.pl{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:28px 26px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px}
+.plans3{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+.pl{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:26px 22px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px}
 .pl.hl{border-color:var(--stencil);background:var(--stencil-soft);box-shadow:0 30px 60px -36px rgba(79,53,200,.55)}
 .pl h3{font:800 19px var(--display)}
-.pl .pr{font:800 clamp(38px,4vw,50px)/1 var(--display);letter-spacing:-.02em}
+.pl .pr{font:800 clamp(34px,3.4vw,44px)/1 var(--display);letter-spacing:-.02em}
 .pl .pr small{font:500 15px var(--body);color:var(--muted);letter-spacing:0;margin-inline-start:8px}
 .pl ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;align-content:start}
 .pl li{padding-inline-start:26px;position:relative;font-size:15.5px;line-height:1.4}
@@ -94,7 +94,8 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 .pl .btn.alt{border-color:rgba(29,27,25,.5)}
 .pl .or{font-size:14px;color:var(--muted);margin:-8px 0 0}
 .fine{font-size:13.5px;color:var(--muted);margin:22px 0 0}
-@media (max-width:860px){.plans3{grid-template-columns:1fr;max-width:460px}}
+@media (max-width:1020px){.plans3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.plans3{grid-template-columns:1fr;max-width:460px}}
 /* questions */
 .qa{display:grid;gap:10px;max-width:760px}
 .qa details{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:4px 22px}
@@ -258,7 +259,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 
 
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/nl/","inLanguage":"nl","description":"Beschrijf een tattoo, zie hem op je huid, maak er een stencil van en print op ware grootte. Gratis proberen; verwijder het watermerk met een dagpas of Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"14.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"29","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"199","priceCurrency":"USD"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/nl/","inLanguage":"nl","description":"Beschrijf een tattoo, zie hem op je huid, maak er een stencil van en print op ware grootte. Gratis proberen; verwijder het watermerk met een dagpas of Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"7.99","priceCurrency":"USD"},{"@type":"Offer","name":"7-day pass","price":"14.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"19","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"149","priceCurrency":"USD"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is de AI-tattoogenerator gratis?","acceptedAnswer":{"@type":"Answer","text":"Je kunt hem gratis proberen: bezoekers krijgen zonder account een paar ontwerpen per dag. Met een dagpas of Pro ligt de daglimiet veel hoger. Van een ontwerp een stencil maken werkt zoals in de Studio: gratis downloads hebben een watermerk en een licentiesleutel haalt dat weg."}},{"@type":"Question","name":"Hoe verwijder ik het watermerk?","acceptedAnswer":{"@type":"Answer","text":"Kies een dagpas of Pro en betaal bij de beveiligde kassa. Je krijgt een licentiesleutel per e-mail. Plak die in de studio en het watermerk is weg. De sleutel wordt gecontroleerd bij onze betaalprovider en alleen in je browser bewaard."}},{"@type":"Question","name":"Kan ik het ontwerp voor een echte tattoo gebruiken?","acceptedAnswer":{"@type":"Answer","text":"Zie het als een startpunt. Laat het je tatoeëerder zien: die beslist of het past bij de plek en de maat, en moet controleren dat het niet het werk van een ander kopieert."}},{"@type":"Question","name":"Hoe print ik een stencil?","acceptedAnswer":{"@type":"Answer","text":"Download de PNG en print hem op de maat die je hebt ingesteld. Betaalde bestanden bevatten de 300 dpi-maat, dus printsoftware gebruikt de ware grootte. Thermische stencilprinters printen op thermisch transferpapier. Inkjetprinters hebben stencilinkt en inkjet-transferpapier nodig."}},{"@type":"Question","name":"Wat gebeurt er met mijn beschrijving?","acceptedAnswer":{"@type":"Answer","text":"Die wordt verstuurd naar onze generatordienst en naar de beeldleverancier die het ontwerp tekent, volgens hun eigen voorwaarden. Wij bewaren je beschrijving en het ontwerp niet. Schrijf er geen persoonlijke gegevens of namen in. De stencilstap draait op je eigen apparaat."}},{"@type":"Question","name":"Kan ik mijn geld terugkrijgen?","acceptedAnswer":{"@type":"Answer","text":"De dagpas is niet terugbetaalbaar, omdat de licentiesleutel meteen werkt zodra je hem ontvangt. Pro wordt binnen 14 dagen na je eerste betaling volledig terugbetaald: mail naar hello@skinstencil.com. Verlengingen worden niet terugbetaald, en je kunt altijd opzeggen vóór de volgende. Je wettelijke rechten blijven onverkort gelden."}}]}</script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -331,12 +332,15 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
     <div class="pl"><h3>Gratis</h3><div class="pr">$0</div>
       <ul><li>Onbeperkt stencils</li><li>2 krachtige designs per dag en 1 realistische preview per week</li><li>Watermerk op downloads, tot 800 px</li></ul>
       <div class="acts"><a class="btn alt" href="#ws">Open de gratis tool</a></div></div>
-    <div class="pl"><h3>Dagpas</h3><div class="pr">$14.99<small>24 uur</small></div>
-      <ul><li>Geen watermerk</li><li>20 designs en 6 realistische previews</li><li>Fijn detail en je eigen voorbeeldafbeeldingen</li></ul>
+    <div class="pl"><h3>Dagpas</h3><div class="pr">$7.99<small>24 uur</small></div>
+      <ul><li>Geen watermerk</li><li>15 designs en 5 realistische previews</li><li>Fijn detail en je eigen voorbeeldafbeeldingen</li></ul>
       <div class="acts"><a class="btn alt buy" data-plan="day" href="#">Verwijder het watermerk voor een dag</a></div></div>
-    <div class="pl hl"><h3>Pro</h3><div class="pr">$29<small>per maand</small></div>
+    <div class="pl"><h3>7-dagenpas</h3><div class="pr">$14.99<small>7 dagen</small></div>
+      <ul><li>Geen watermerk</li><li>30 designs en 10 realistische previews</li><li>Fijn detail en je eigen voorbeeldafbeeldingen</li></ul>
+      <div class="acts"><a class="btn alt buy" data-plan="week" href="#">Neem de 7-dagenpas</a></div></div>
+    <div class="pl hl"><h3>Pro</h3><div class="pr">$19<small>per maand</small></div>
       <ul><li>Alles uit de dagpas</li><li>60 designs en 15 realistische previews per maand</li><li>Op elk moment opzegbaar</li></ul>
-      <div class="acts"><a class="btn buy" data-plan="month" href="#">Ga Pro, maandelijks</a><p class="or">of $199 per jaar</p><a class="btn alt buy" data-plan="year" href="#">Ga Pro, jaarlijks</a></div></div>
+      <div class="acts"><a class="btn buy" data-plan="month" href="#">Ga Pro, maandelijks</a><p class="or">of $149 per jaar</p><a class="btn alt buy" data-plan="year" href="#">Ga Pro, jaarlijks</a></div></div>
   </div>
   <p class="fine">Prijzen in Amerikaanse dollars. Belasting wordt bij het afrekenen afgehandeld door onze betaalprovider.</p>
   <p class="fine" id="soonNote" hidden>Afrekenen opent binnenkort. Laat het me weten als het zover is.</p>

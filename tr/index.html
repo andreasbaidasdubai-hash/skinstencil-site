@@ -80,11 +80,11 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 .sec .in{max-width:1060px;margin:0 auto}
 .sec h2{font-weight:800;font-size:clamp(30px,4.2vw,52px);line-height:1.05;margin:0 0 12px}
 .sec .sub{font-size:18px;color:#4A463F;margin:0 0 34px;max-width:46ch}
-.plans3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
-.pl{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:28px 26px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px}
+.plans3{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+.pl{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:26px 22px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px}
 .pl.hl{border-color:var(--stencil);background:var(--stencil-soft);box-shadow:0 30px 60px -36px rgba(79,53,200,.55)}
 .pl h3{font:800 19px var(--display)}
-.pl .pr{font:800 clamp(38px,4vw,50px)/1 var(--display);letter-spacing:-.02em}
+.pl .pr{font:800 clamp(34px,3.4vw,44px)/1 var(--display);letter-spacing:-.02em}
 .pl .pr small{font:500 15px var(--body);color:var(--muted);letter-spacing:0;margin-inline-start:8px}
 .pl ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;align-content:start}
 .pl li{padding-inline-start:26px;position:relative;font-size:15.5px;line-height:1.4}
@@ -94,7 +94,8 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 .pl .btn.alt{border-color:rgba(29,27,25,.5)}
 .pl .or{font-size:14px;color:var(--muted);margin:-8px 0 0}
 .fine{font-size:13.5px;color:var(--muted);margin:22px 0 0}
-@media (max-width:860px){.plans3{grid-template-columns:1fr;max-width:460px}}
+@media (max-width:1020px){.plans3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.plans3{grid-template-columns:1fr;max-width:460px}}
 /* questions */
 .qa{display:grid;gap:10px;max-width:760px}
 .qa details{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:4px 22px}
@@ -258,7 +259,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 
 
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/tr/","inLanguage":"tr","description":"Bir dövmeyi anlat, derinde gör, stencil’e çevir ve gerçek boyutta yazdır. Denemek ücretsiz; filigranı günlük geçiş veya Pro ile kaldır.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"14.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"29","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"199","priceCurrency":"USD"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/tr/","inLanguage":"tr","description":"Bir dövmeyi anlat, derinde gör, stencil’e çevir ve gerçek boyutta yazdır. Denemek ücretsiz; filigranı günlük geçiş veya Pro ile kaldır.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"7.99","priceCurrency":"USD"},{"@type":"Offer","name":"7-day pass","price":"14.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"19","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"149","priceCurrency":"USD"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Yapay zeka dövme üretici ücretsiz mi?","acceptedAnswer":{"@type":"Answer","text":"Ücretsiz deneyebilirsin: ziyaretçiler hesap olmadan günde birkaç tasarım alır. Günlük geçiş veya Pro günlük sınırı çok yükseltir. Tasarımı şablona çevirmek Studio’daki gibi çalışır: ücretsiz indirmelerde filigran olur, lisans anahtarı onu kaldırır."}},{"@type":"Question","name":"Filigranı nasıl kaldırırım?","acceptedAnswer":{"@type":"Answer","text":"Günlük geçiş veya Pro seçin ve güvenli ödeme sayfasında ödeyin. E-postayla bir lisans anahtarı alırsınız. Anahtarı stüdyoya yapıştırın, filigran kalkar. Anahtar ödeme sağlayıcımızla doğrulanır ve yalnızca tarayıcınızda saklanır."}},{"@type":"Question","name":"Tasarımı gerçek bir dövme için kullanabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Başlangıç noktası olarak gör. Dövmecine göster: vücut bölgesi ve boyut için uygun olup olmadığına o karar verir, başkasının işini kopyalamadığını da o kontrol etmelidir."}},{"@type":"Question","name":"Stencil'i nasıl yazdırırım?","acceptedAnswer":{"@type":"Answer","text":"PNG'yi indirin ve belirlediğiniz boyutta yazdırın. Ücretli dosyalar 300 dpi boyutunu taşır, böylece baskı yazılımı gerçek boyutu kullanır. Termal stencil yazıcılar termal transfer kağıdına basar. Mürekkep püskürtmeli yazıcılar stencil mürekkebi ve inkjet transfer kağıdı ister."}},{"@type":"Question","name":"Açıklamama ne olur?","acceptedAnswer":{"@type":"Answer","text":"Üretici hizmetimize ve tasarımı çizen görsel sağlayıcıya, onların kendi koşullarıyla gönderilir. Açıklamanı ve tasarımı saklamayız. İçine kişisel bilgi veya isim yazma. Şablon adımı kendi cihazında çalışır."}},{"@type":"Question","name":"İade alabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Günlük geçiş iade edilmez, çünkü lisans anahtarı elinize geçtiği anda çalışır. Pro, ilk ödemeden sonraki 14 gün içinde tam olarak iade edilir: hello@skinstencil.com adresine yazın. Yenilemeler iade edilmez ve bir sonrakinden önce istediğiniz zaman iptal edebilirsiniz. Yasal haklarınız saklıdır."}}]}</script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -331,12 +332,15 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
     <div class="pl"><h3>Ücretsiz</h3><div class="pr">$0</div>
       <ul><li>Sınırsız stencil</li><li>Günde 2 belirgin tasarım ve haftada 1 gerçekçi önizleme</li><li>İndirmelerde filigran, en fazla 800 px</li></ul>
       <div class="acts"><a class="btn alt" href="#ws">Ücretsiz aracı aç</a></div></div>
-    <div class="pl"><h3>Günlük geçiş</h3><div class="pr">$14.99<small>24 saat</small></div>
-      <ul><li>Filigran yok</li><li>20 tasarım ve 6 gerçekçi önizleme</li><li>İnce detay ve kendi örnek görselleriniz</li></ul>
+    <div class="pl"><h3>Günlük geçiş</h3><div class="pr">$7.99<small>24 saat</small></div>
+      <ul><li>Filigran yok</li><li>15 tasarım ve 5 gerçekçi önizleme</li><li>İnce detay ve kendi örnek görselleriniz</li></ul>
       <div class="acts"><a class="btn alt buy" data-plan="day" href="#">Filigranı bir günlüğüne kaldır</a></div></div>
-    <div class="pl hl"><h3>Pro</h3><div class="pr">$29<small>aylık</small></div>
+    <div class="pl"><h3>7 günlük geçiş</h3><div class="pr">$14.99<small>7 gün</small></div>
+      <ul><li>Filigran yok</li><li>30 tasarım ve 10 gerçekçi önizleme</li><li>İnce detay ve kendi örnek görselleriniz</li></ul>
+      <div class="acts"><a class="btn alt buy" data-plan="week" href="#">7 günlük geçişi al</a></div></div>
+    <div class="pl hl"><h3>Pro</h3><div class="pr">$19<small>aylık</small></div>
       <ul><li>Günlük geçişteki her şey</li><li>Ayda 60 tasarım ve 15 gerçekçi önizleme</li><li>İstediğiniz zaman iptal</li></ul>
-      <div class="acts"><a class="btn buy" data-plan="month" href="#">Pro'ya geç, aylık</a><p class="or">veya yıllık $199</p><a class="btn alt buy" data-plan="year" href="#">Pro'ya geç, yıllık</a></div></div>
+      <div class="acts"><a class="btn buy" data-plan="month" href="#">Pro'ya geç, aylık</a><p class="or">veya yıllık $149</p><a class="btn alt buy" data-plan="year" href="#">Pro'ya geç, yıllık</a></div></div>
   </div>
   <p class="fine">Fiyatlar ABD doları cinsindendir. Vergi, ödeme sırasında ödeme sağlayıcımız tarafından halledilir.</p>
   <p class="fine" id="soonNote" hidden>Ödeme yakında açılıyor. Açıldığında haber verin.</p>
