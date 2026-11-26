@@ -261,10 +261,12 @@ for (const l of LANGS) {
     };
     const fill = t => t.replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => { if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in workstation`); return vars[k]; });
     vars.siteHead = siteHead(l, S, page === 'gen' ? 'home' : page, vars.langSelect); vars.siteFoot = siteFoot(l, S);
-    vars.wsCss = WS_CSS; vars.wsMarkup = ''; vars.wsScenes = '';
-    if (page === 'gen' || page === 'index') {   // the tool, and the scenes that come after it (the homepage puts pricing in between)
-      const full = fill(read('src/ws.part.html')), cut = full.indexOf('<!--SCENES-->'), open = full.slice(0, full.indexOf('>') + 1);
-      vars.wsMarkup = full.slice(0, cut) + '</div>\n'; vars.wsScenes = open + '\n' + full.slice(cut + '<!--SCENES-->'.length);
+    vars.wsCss = WS_CSS; vars.wsMarkup = ''; vars.wsScenes = ''; vars.wsEnd = '';
+    if (page === 'gen' || page === 'index') {   // the tool, the first scene, and the last scene with the Studio line (the homepage puts pricing and the questions in between)
+      const full = fill(read('src/ws.part.html')), c1 = full.indexOf('<!--SCENES-->'), c2 = full.indexOf('<!--END-->'), open = full.slice(0, full.indexOf('>') + 1);
+      vars.wsMarkup = full.slice(0, c1) + '</div>\n';
+      vars.wsScenes = open + '\n' + full.slice(c1 + '<!--SCENES-->'.length, c2) + '</div>\n';
+      vars.wsEnd = open + '\n' + full.slice(c2 + '<!--END-->'.length);
     }
     let html = TPL[page].replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {
       if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in ${page} template`);
