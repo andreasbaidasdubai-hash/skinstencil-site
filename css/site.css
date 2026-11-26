@@ -1,0 +1,33 @@
+/* Shared look for every page: one light "paper" palette, one type pair, squircle buttons and cards.
+   Loaded after each page's own style so these tokens win; the pages keep only their own layout. */
+:root{
+  --paper:#F4F1EA;--card:#FBFAF6;--ink:#1D1B19;--muted:#6F6A63;--line:rgba(29,27,25,.16);
+  --stencil:#4F35C8;--stencil-soft:#E9E5F9;--ok:#1F7A4C;--good:#1F7A4C;--bad:#B42318;--lost:#D2362B;--added:#1B6FE0;--warn:#9A5B00;--warn-bg:#FFF1D6;
+  --display:'Archivo','Arial Narrow',system-ui,sans-serif;--body:'Hanken Grotesk',system-ui,sans-serif;
+  --r-btn:16px;--r-card:22px;color-scheme:light}
+body{background:var(--paper);color:var(--ink)}
+/* squircle: the real superellipse corner where the browser has it, a generous radius where it does not */
+.btn,.cta,button.btn,a.btn,.chip,.tabs button,.langsel,.themebtn,.seg button{border-radius:var(--r-btn)}
+.card,.panel,.box,.plan,.plans,.plansbox,.endcta,details.plans,.stage{border-radius:var(--r-card)}
+@supports (corner-shape:squircle){
+  .btn,.cta,button.btn,a.btn,.chip,.tabs button,.langsel,.themebtn,.seg button{corner-shape:squircle;border-radius:34px}
+  .card,.panel,.box,.plan,.plans,.plansbox,.endcta,details.plans,.stage{corner-shape:squircle;border-radius:48px}
+}
+.btn{background:var(--stencil);border-color:var(--stencil);color:#fff}
+.btn.alt{background:none;color:var(--ink);border-color:rgba(29,27,25,.5)}
+.themebtn{display:none}
+/* header and footer, the same on every page */
+.sh{position:relative;z-index:20}
+.sh .wrap{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px max(18px,env(safe-area-inset-left,0px))}
+.sh .mark{font:800 22px var(--display);font-stretch:84%;letter-spacing:-.01em;text-decoration:none;color:var(--ink);direction:ltr}
+.sh .mark span{color:var(--stencil)}
+.sh nav{display:flex;align-items:center;gap:4px}
+.sh nav a{color:#4A463F;text-decoration:none;font:600 14.5px var(--body);padding:9px 14px;border-radius:var(--r-btn)}
+.sh nav a:hover,.sh nav a[aria-current]{color:var(--ink);background:rgba(29,27,25,.07)}
+.sh .langsel{margin-inline-start:8px}
+@media (max-width:760px){.sh nav a{display:none}.sh .wrap{padding-block:12px}}
+.sf{border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;line-height:1.6}
+.sf .wrap{max-width:1160px;margin:0 auto;padding:30px max(18px,env(safe-area-inset-left,0px));display:grid;gap:12px}
+.sf .links{display:flex;gap:6px 22px;flex-wrap:wrap}
+.sf .links a{color:var(--ink);font-weight:600;text-decoration:none}
+.sf a{color:inherit}

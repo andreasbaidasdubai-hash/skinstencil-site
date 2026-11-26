@@ -7,7 +7,6 @@
 <meta name="description" content="{{brow.desc}}">
 <link rel="canonical" href="{{canonical}}">
 {{hreflang}}
-<script src="/js/theme.js"></script>
 <meta property="og:title" content="{{brow.title}}">
 <meta property="og:description" content="{{brow.desc}}">
 <meta property="og:type" content="website">
@@ -23,12 +22,6 @@
   --stencil:#4F35C8; --stencil-soft:#E6E2F8; --c1:#1B6FE0; --c2:#D2362B; --c3:#1F7A4C; --ok:#1F7A4C; --warn:#9A5B00; --warn-bg:#FFF1D6; --bad:#B42318;
   --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
-  --stencil:#A99BFF; --stencil-soft:#2A2547; --c1:#6FA8FF; --c2:#FF7A6E; --c3:#6FD3A0; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
-  --stencil:#A99BFF; --stencil-soft:#2A2547; --c1:#6FA8FF; --c2:#FF7A6E; --c3:#6FD3A0; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --bad:#FF8A80; color-scheme:dark}
 .themebtn{font:500 15px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 9px;cursor:pointer;line-height:1.2}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
@@ -119,10 +112,11 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}footer
 [hidden]{display:none!important}
 </style>
 {{ldjson}}
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
 
-<header><div class="wrap"><a class="mark" href="{{base}}">skin<span>stencil</span></a><label class="vh" for="langSel">{{lang.label}}</label>{{langSelect}}</div></header>
+{{siteHead}}
 
 <main>
 <div class="wrap">
@@ -237,16 +231,6 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}footer
   </div>
 
   <section class="content">
-    <h2>{{brow.about.h}}</h2>
-    <p>{{brow.about.p1}}</p>
-    <p>{{brow.about.p2}}</p>
-    <h2>{{brow.lines.h}}</h2>
-    <ul>
-      <li>{{brow.lines.1}}</li>
-      <li>{{brow.lines.2}}</li>
-      <li>{{brow.lines.3}}</li>
-      <li>{{brow.lines.4}}</li>
-    </ul>
     <h2>{{brow.limits.h}}</h2>
     <ul>
       <li>{{brow.limits.1}}</li>
@@ -261,13 +245,12 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}footer
       <details class="q"><summary>{{brow.q4.h}}</summary><p>{{brow.q4.p}}</p></details>
       <details class="q"><summary>{{brow.q5.h}}</summary><p>{{brow.q5.p}}</p></details>
     </div>
-    {{browGuides}}
     <p style="margin-top:28px"><a href="{{base}}studio/">{{brow.otherTool}}</a></p>
   </section>
 </div>
 </main>
 
-<footer><div class="wrap"><a href="/privacy.html">{{ft.privacy}}</a> &middot; <a href="/terms.html">{{ft.terms}}</a> &middot; <a href="mailto:{{notifyEmail}}">{{notifyEmail}}</a><br>{{ft.note}}{{ftMt}}</div></footer>
+{{siteFoot}}
 
 <script>window.I18N={{i18n_json}};</script>
 <script src="/js/config.js"></script>

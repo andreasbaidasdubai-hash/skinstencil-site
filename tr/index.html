@@ -53,7 +53,6 @@
 <link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/">
 <link rel="alternate" hreflang="pl-PL" href="https://skinstencil.com/pl/">
 <link rel="alternate" hreflang="x-default" href="https://skinstencil.com/">
-<script src="/js/theme.js"></script>
 <meta property="og:title" content="Dövme şablonu oluşturucu, gerçek boyutta | Skinstencil">
 <meta property="og:description" content="Tarayıcında ücretsiz dövme stencil oluşturucu. Çizimi veya fotoğrafı çizgi şablonuna çevir, gerçek boyutta yazdır. Hiçbir şey yüklenmez.">
 <meta property="og:type" content="website">
@@ -62,144 +61,50 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317161C'/%3E%3Cpath d='M16 5 L21 18 L16 22 L11 18 Z M14 23 H18 V28 H14 Z' fill='none' stroke='%23A99BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="/fonts/fonts.css">
 <style>
-/* Layout: a worksheet. Every picture on this page is real output of the free tool, drawn in your browser from sample designs. Ink-purple is the stencil colour; red marks lost lines and blue marks added lines in the drift check. Logical (inline-start/end) properties are used so right-to-left languages mirror correctly. */
-:root{
-  --paper:#F1F2EF; --card:#FAFAF8; --ink:#17161C; --muted:#5E5C68; --line:#D6D5DD;
-  --stencil:#4F35C8; --stencil-soft:#E6E2F8; --lost:#D2362B; --added:#1B6FE0; --ok:#1F7A4C; --warn:#9A5B00; --warn-bg:#FFF1D6; --good:#1F7A4C; --bad:#B42318;
-  --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
-  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --good:#6FD3A0; --bad:#FF8A80; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
-  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --good:#6FD3A0; --bad:#FF8A80; color-scheme:dark}
-.themebtn{font:500 15px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 9px;cursor:pointer;line-height:1.2}.themebtn:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
-.seg{display:flex;gap:6px;margin:12px 0 0}
+/* The homepage is the tool (the workstation, shared with the generator page), then two short sections: pricing and questions. Everything else lives on its own page. */
+:root{--display:'Archivo','Arial Narrow',system-ui,sans-serif;--body:'Hanken Grotesk',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace}
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--body);font-size:17px;line-height:1.6;margin:0;overflow-x:clip}
 html[lang="ar"] body{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
-.lostc{color:var(--lost)} .addc{color:var(--added)}
-.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.preview{background:var(--warn-bg);color:var(--warn);font-size:13px;border-bottom:1px solid var(--line)}
-.preview .wrap{padding-block:8px}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;flex-wrap:wrap}
-.mark{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:inherit;direction:ltr}
-.mark span{color:var(--stencil)}
-.topnav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.topnav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
-.topnav a:hover{color:var(--ink)}
+a{color:var(--stencil)}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.015em;margin:0;text-wrap:balance}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif;letter-spacing:0;line-height:1.35}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.langsel{font:500 13px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
-nav.tabs{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:3px}
-nav.tabs button{font:500 14px var(--body);color:var(--muted);background:none;border:0;border-radius:7px;padding:7px 14px;cursor:pointer}
-nav.tabs button[aria-pressed="true"]{background:var(--stencil-soft);color:var(--ink)}
-nav.tabs button:focus-visible,.btn:focus-visible,summary:focus-visible,.chip:focus-visible,.langsel:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
-h1,h2,h3{font-family:var(--display);font-stretch:84%;letter-spacing:-.012em;line-height:1.1;margin:0;text-wrap:balance}
-html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif;font-stretch:100%;letter-spacing:0;line-height:1.3}
-h1{font-size:clamp(36px,6.2vw,64px);font-weight:800}
-h2{font-size:clamp(26px,3.8vw,38px);font-weight:700}
-h3{font-size:20px;font-weight:700;letter-spacing:-.01em}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;padding-block:40px 56px}
-.sub{font-size:19px;color:var(--muted);max-width:34em;margin:18px 0 26px}
-.lead{font-size:18px;color:var(--muted);max-width:40em;margin:12px 0 0}
-.ctas{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;text-align:center;text-decoration:none;font:600 15px var(--body);border-radius:10px;padding:13px 20px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
-.btn.alt{background:none;color:var(--ink)}
-.note{font-size:13px;color:var(--muted);margin-top:14px;font-family:var(--mono)}
-.facts{display:flex;gap:10px 18px;flex-wrap:wrap;margin:22px 0 0;padding:0;list-style:none;font-size:14px;color:var(--muted)}
-.facts li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--stencil);margin-inline-end:8px;vertical-align:middle}
-.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-.caption{font:400 12px var(--mono);color:var(--muted);margin:10px 2px 0}
-section{padding-block:56px}
-section+section{border-top:1px solid var(--line)}
-.eyebrow{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--stencil);margin-bottom:10px}
-.stage{position:relative;width:100%;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;touch-action:none;direction:ltr}
-.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.handle{position:absolute;top:0;bottom:0;width:2px;background:var(--stencil);pointer-events:none;box-shadow:0 0 0 1px rgba(255,255,255,.7)}
-.tagL,.tagR{position:absolute;top:8px;font:500 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:rgba(20,19,24,.78);color:#fff;border-radius:5px;padding:2px 6px;pointer-events:none}
-.tagL{left:8px}.tagR{right:8px}
-input[type=range]{width:100%;accent-color:var(--stencil)}
-.chips{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 4px}
-.chip{font:500 13px var(--body);color:var(--muted);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:6px 11px;cursor:pointer}
-.chip[aria-pressed="true"]{background:var(--stencil-soft);color:var(--ink);border-color:var(--stencil)}
-.ctl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
-.ctl label{display:flex;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:2px}
-.ctl label span{font:500 11px var(--mono);color:var(--muted)}
-.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:28px}
-.gcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
-.gcard .pr{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.gcard canvas,.mini canvas{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:#fff;image-rendering:auto}
-.gcard h3{font-size:16px;margin:10px 0 2px}
-.gcard p{margin:0;font-size:13px;color:var(--muted)}
-.cap2{font:500 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.feat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;margin-top:44px}
-.feat.rev .ftext{order:2}
-.ftext p{color:var(--muted);margin:10px 0 0}
-.ftext ul{margin:12px 0 0;padding-inline-start:18px;color:var(--muted)}
-.ftext li{margin-bottom:4px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
-.stat{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
-.stat b{display:block;font:600 18px var(--mono)}
-.stat span{font-size:12px;color:var(--muted)}
-.skins{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
-.dd{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
-.ddc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
-.ddc h3{font-size:16px;margin-bottom:10px}
-.pair2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.cell .tg{font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
-.cell.do .tg{color:var(--good)}.cell.dont .tg{color:var(--bad)}
-.cell .two{display:grid;grid-template-columns:1fr 1fr;gap:4px}
-.cell p{font-size:12px;color:var(--muted);margin:6px 0 0}
-.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px;position:relative}
-.steps::before{content:"";position:absolute;left:0;right:0;top:10px;height:8px;background:repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 12px);}
-.step{padding-top:30px}
-.step .tick{font:500 12px var(--mono);color:var(--stencil)}
-.step p{color:var(--muted);margin:8px 0 0}
-.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:26px}
-.three div{border-inline-start:2px solid var(--stencil);padding-inline-start:16px}
-.three p{color:var(--muted);margin:8px 0 0}
-.tag{display:inline-block;font:500 11px var(--mono);background:var(--stencil-soft);color:var(--ink);border-radius:5px;padding:2px 7px;margin-inline-start:6px;vertical-align:middle}
-.road{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:26px}
-.road .col{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
-.road ul{margin:10px 0 0;padding:0;list-style:none;color:var(--muted)}
-.road li{padding:5px 0;padding-inline-start:22px;position:relative}
-.road .now li::before{content:"";position:absolute;inset-inline-start:3px;top:11px;width:10px;height:6px;border-inline-start:2px solid var(--good);border-bottom:2px solid var(--good);transform:rotate(-45deg)}
-.road .next li::before{content:"";position:absolute;inset-inline-start:3px;top:11px;width:9px;height:9px;border:2px dashed var(--muted);border-radius:50%}
-.plans4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:26px}
-.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column}
-.plan.hl{border-color:var(--stencil);box-shadow:0 0 0 2px var(--stencil-soft)}
-.plan .price{font:700 32px var(--display);letter-spacing:-.02em;margin:10px 0 2px;direction:ltr;text-align:start}
-.plan .per{font-size:14px;color:var(--muted)}
-.plan .alt{font-size:13px;color:var(--muted);margin-top:2px}
-.plan ul{margin:14px 0 18px;padding-inline-start:18px;color:var(--muted);flex:1}
-.seo{display:grid;gap:8px 40px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:18px}.seo h3{font-size:18px;margin:14px 0 0}.seo p{color:var(--muted);margin:6px 0 0}
-details{border-bottom:1px solid var(--line);padding:14px 0}
-summary{font-weight:600;cursor:pointer}
-details p{color:var(--muted);margin:8px 0 0;max-width:46em}
-footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-footer a{color:inherit}
-footer .wrap{padding-block:28px}
-.view[hidden]{display:none!important}
-@media (max-width:1000px){.plans4{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:900px){
-  .hero .wrap,.feat{grid-template-columns:minmax(0,1fr);gap:28px}
-  .feat.rev .ftext{order:0}
-  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .dd,.road{grid-template-columns:minmax(0,1fr)}
-  .steps,.three{grid-template-columns:minmax(0,1fr)}
-  .steps::before{display:none}.step{padding-top:0}
-}
-@media (max-width:560px){.plans4{grid-template-columns:minmax(0,1fr)}.topnav{gap:8px;width:100%;justify-content:space-between}.topnav>a{display:none}header .wrap{padding-block:12px}.topnav{flex-wrap:nowrap}nav.tabs button{padding:7px 9px;font-size:13px}.langsel{max-width:96px}}
-@media (prefers-reduced-motion:no-preference){nav.tabs button{transition:background .15s}}
-.gl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px}
-.glink{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
-.glink:hover{border-color:var(--stencil)}.glink h3{font-size:17px}.glink p{margin:6px 0 0;font-size:14px;color:var(--muted)}
-#guides .note a{color:var(--stencil)}
-@media (max-width:900px){.gl{grid-template-columns:minmax(0,1fr)}}
+button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,[role=button]:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
 [hidden]{display:none!important}
+.wsx{--wspad:8px}
+/* pricing: three plain cards, the middle one is the one most people want */
+.sec{padding:clamp(56px,8vw,104px) max(18px,env(safe-area-inset-left,0px))}
+.sec .in{max-width:1060px;margin:0 auto}
+.sec h2{font-weight:800;font-size:clamp(30px,4.2vw,52px);line-height:1.05;margin:0 0 12px}
+.sec .sub{font-size:18px;color:#4A463F;margin:0 0 34px;max-width:46ch}
+.plans3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.pl{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:28px 26px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px}
+.pl.hl{border-color:var(--stencil);background:var(--stencil-soft);box-shadow:0 30px 60px -36px rgba(79,53,200,.55)}
+.pl h3{font:800 19px var(--display)}
+.pl .pr{font:800 clamp(38px,4vw,50px)/1 var(--display);letter-spacing:-.02em}
+.pl .pr small{font:500 15px var(--body);color:var(--muted);letter-spacing:0;margin-inline-start:8px}
+.pl ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;align-content:start}
+.pl li{padding-inline-start:26px;position:relative;font-size:15.5px;line-height:1.4}
+.pl li::before{content:"";position:absolute;inset-inline-start:2px;top:.42em;width:12px;height:7px;border-inline-start:2.5px solid var(--stencil);border-bottom:2.5px solid var(--stencil);transform:rotate(-45deg)}
+.pl .acts{display:grid;gap:8px}
+.pl .btn{display:block;text-align:center;text-decoration:none;font:700 15px var(--body);padding:14px 18px;border:1.5px solid var(--stencil);cursor:pointer}
+.pl .btn.alt{border-color:rgba(29,27,25,.5)}
+.pl .or{font-size:14px;color:var(--muted);margin:-8px 0 0}
+.fine{font-size:13.5px;color:var(--muted);margin:22px 0 0}
+@media (max-width:860px){.plans3{grid-template-columns:1fr;max-width:460px}}
+/* questions */
+.qa{display:grid;gap:10px;max-width:760px}
+.qa details{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:4px 22px}
+.qa summary{font:700 17px var(--body);cursor:pointer;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font:500 24px/1 var(--body);color:var(--stencil)}
+.qa details[open] summary::after{content:"\2212"}
+.qa p{margin:0 0 16px;color:#4A463F}
 .wsx{--paper:#F4F1EA;--card:#FBFAF6;--ink:#1D1B19;--muted:#6F6A63;--line:rgba(29,27,25,.16);--stencil:#4F35C8;--stencil-soft:#E9E5F9;--ok:#1F7A4C;--bad:#B42318;color:var(--ink);background:var(--paper);color-scheme:light;font-size:17px;line-height:1.6}
-.wsx .cta{display:inline-block;font:700 14px var(--body);letter-spacing:.03em;text-decoration:none;text-align:center;background:var(--stencil);color:#fff;border:1.5px solid var(--stencil);padding:13px 24px;border-radius:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.wsx .cta{display:inline-block;font:700 14px var(--body);letter-spacing:.03em;text-decoration:none;text-align:center;background:var(--stencil);color:#fff;border:1.5px solid var(--stencil);padding:13px 24px;border-radius:var(--r-btn);cursor:pointer;transition:transform .15s,box-shadow .15s}
 .wsx .cta:hover{box-shadow:0 10px 24px -12px rgba(79,53,200,.7)}
 .wsx .cta:active{transform:translateY(1px) scale(.99)}
 .wsx .cta.ghost{background:none;color:var(--ink);border-color:var(--ink)}
@@ -322,29 +227,31 @@ footer .wrap{padding-block:28px}
 @media (max-width:620px){
 .wsx .pair{grid-template-columns:1fr}
 }
+.wsx .wstage .stagetag{display:flex;gap:10px;align-items:center}
+.wsx .wstage .stagetag .rm{font:700 12px var(--body);color:#fff;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:3px 10px;cursor:pointer;white-space:nowrap}
+.wsx .wstage .stagetag .rm:hover{background:rgba(255,255,255,.3)}
+.wsx .wstage{border-radius:var(--r-card)}
+.wsx textarea,.wsx .attbtn,.wsx .wseg button,.wsx .mmrow input{border-radius:14px}
+.wsx @supports (corner-shape:squircle){.cta{corner-shape:squircle;border-radius:34px}
+.wsx textarea,.wsx .attbtn,.wsx .wseg button,.wsx .mmrow input{corner-shape:squircle;border-radius:28px}
+.wsx .wstage{corner-shape:squircle;border-radius:56px}
+.wsx }
+.fine-tune{border:1.5px solid var(--line);border-radius:var(--r-btn);padding:2px 16px;background:rgba(255,255,255,.6)}
+.wsx .fine-tune summary{font:700 14px var(--body);cursor:pointer;padding:11px 0;list-style:none;display:flex;justify-content:space-between}
+.wsx .fine-tune summary::-webkit-details-marker{display:none}
+.wsx .fine-tune summary::after{content:"+";color:var(--stencil);font:500 20px/1 var(--body)}
+.wsx .fine-tune[open] summary::after{content:"2"}
+.wsx .fine-tune .ft{display:grid;gap:12px;padding:2px 0 16px}
 
 
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/tr/","inLanguage":"tr","description":"Tarayıcında ücretsiz dövme stencil oluşturucu. Çizimi veya fotoğrafı çizgi şablonuna çevir, gerçek boyutta yazdır. Hiçbir şey yüklenmez.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"12","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"79","priceCurrency":"USD"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Gerçekten ücretsiz mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Stüdyodaki araç ücretsizdir ve kayıt gerektirmez. Ücretsiz araçtan yapılan indirmelerde küçük bir filigran bulunur ve 800 pikselle sınırlıdır. Günlük geçiş veya Pro filigranı kaldırır ve tam boyutu açar."}},{"@type":"Question","name":"Filigranı nasıl kaldırırım?","acceptedAnswer":{"@type":"Answer","text":"Günlük geçiş veya Pro seçin ve güvenli ödeme sayfasında ödeyin. E-postayla bir lisans anahtarı alırsınız. Anahtarı stüdyoya yapıştırın, filigran kalkar. Anahtar ödeme sağlayıcımızla doğrulanır ve yalnızca tarayıcınızda saklanır."}},{"@type":"Question","name":"Bu yapay zeka mı?","acceptedAnswer":{"@type":"Answer","text":"Şablon filtresi klasik görüntü işlemedir: çizgileri kenarlardan ve parlaklıktan bulur, lekeleri temizler ve çizgi kalınlığını ayarlar. Bu da onu temiz çizimlerde hızlı, gizli ve öngörülebilir yapar."}},{"@type":"Question","name":"Tasarımlarımı saklıyor musunuz?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Ücretsiz araç tarayıcınızda çalışır ve görsellerinizi yüklemez. Sayfayı kapattığınızda silinirler."}},{"@type":"Question","name":"Herhangi bir dövmeyi yükleyebilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Yalnızca kendi yaptığınız veya kullanma hakkınız olan tasarımları. Hak sahibi isterse içeriği kaldırırız."}},{"@type":"Question","name":"Hangi dosyalar çalışır?","acceptedAnswer":{"@type":"Answer","text":"JPG, PNG ve WebP. Aracın hızlı kalması için büyük görseller küçültülür. Bir çizimin düz ve iyi aydınlatılmış fotoğrafı iyi sonuç verir."}},{"@type":"Question","name":"Stencil'i nasıl yazdırırım?","acceptedAnswer":{"@type":"Answer","text":"PNG'yi indirin ve belirlediğiniz boyutta yazdırın. Ücretli dosyalar 300 dpi boyutunu taşır, böylece baskı yazılımı gerçek boyutu kullanır. Termal stencil yazıcılar termal transfer kağıdına basar. Mürekkep püskürtmeli yazıcılar stencil mürekkebi ve inkjet transfer kağıdı ister."}},{"@type":"Question","name":"Tam kol veya büyük bir iş için ne yapmalı?","acceptedAnswer":{"@type":"Answer","text":"Motif motif çalışın. Küçük parçalar, tek bir dev görsele göre ayrıntılarını çok daha iyi korur."}},{"@type":"Question","name":"Tablette veya telefonda çalışır mı?","acceptedAnswer":{"@type":"Answer","text":"Evet, tarayıcıda. Bir telefon uygulaması gelebilir."}},{"@type":"Question","name":"İnce taramamı neden düşürüyor?","acceptedAnswer":{"@type":"Answer","text":"Düşük hassasiyet ve yüksek leke temizleme, ince çizgileri bilerek düşürür. Hassasiyeti yükseltin, leke temizlemeyi düşürün ve neyin kaybolduğunu görmek için sapma bindirmesine bakın."}},{"@type":"Question","name":"İade alabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Günlük geçiş iade edilmez, çünkü lisans anahtarı elinize geçtiği anda çalışır. Pro, ilk ödemeden sonraki 14 gün içinde tam olarak iade edilir: hello@skinstencil.com adresine yazın. Yenilemeler iade edilmez ve bir sonrakinden önce istediğiniz zaman iptal edebilirsiniz. Yasal haklarınız saklıdır."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Yapay zeka dövme üretici ücretsiz mi?","acceptedAnswer":{"@type":"Answer","text":"Ücretsiz deneyebilirsin: ziyaretçiler hesap olmadan günde birkaç tasarım alır. Günlük geçiş veya Pro günlük sınırı çok yükseltir. Tasarımı şablona çevirmek Studio’daki gibi çalışır: ücretsiz indirmelerde filigran olur, lisans anahtarı onu kaldırır."}},{"@type":"Question","name":"Filigranı nasıl kaldırırım?","acceptedAnswer":{"@type":"Answer","text":"Günlük geçiş veya Pro seçin ve güvenli ödeme sayfasında ödeyin. E-postayla bir lisans anahtarı alırsınız. Anahtarı stüdyoya yapıştırın, filigran kalkar. Anahtar ödeme sağlayıcımızla doğrulanır ve yalnızca tarayıcınızda saklanır."}},{"@type":"Question","name":"Tasarımı gerçek bir dövme için kullanabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Başlangıç noktası olarak gör. Dövmecine göster: vücut bölgesi ve boyut için uygun olup olmadığına o karar verir, başkasının işini kopyalamadığını da o kontrol etmelidir."}},{"@type":"Question","name":"Stencil'i nasıl yazdırırım?","acceptedAnswer":{"@type":"Answer","text":"PNG'yi indirin ve belirlediğiniz boyutta yazdırın. Ücretli dosyalar 300 dpi boyutunu taşır, böylece baskı yazılımı gerçek boyutu kullanır. Termal stencil yazıcılar termal transfer kağıdına basar. Mürekkep püskürtmeli yazıcılar stencil mürekkebi ve inkjet transfer kağıdı ister."}},{"@type":"Question","name":"Açıklamama ne olur?","acceptedAnswer":{"@type":"Answer","text":"Üretici hizmetimize ve tasarımı çizen görsel sağlayıcıya, onların kendi koşullarıyla gönderilir. Açıklamanı ve tasarımı saklamayız. İçine kişisel bilgi veya isim yazma. Şablon adımı kendi cihazında çalışır."}},{"@type":"Question","name":"İade alabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Günlük geçiş iade edilmez, çünkü lisans anahtarı elinize geçtiği anda çalışır. Pro, ilk ödemeden sonraki 14 gün içinde tam olarak iade edilir: hello@skinstencil.com adresine yazın. Yenilemeler iade edilmez ve bir sonrakinden önce istediğiniz zaman iptal edebilirsiniz. Yasal haklarınız saklıdır."}}]}</script>
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
-
-<header><div class="wrap">
-  <a class="mark" href="/tr/">skin<span>stencil</span></a>
-  <div class="topnav">
-    <a href="/tr/ai-tattoo-generator/">Yapay zeka üretici</a><a href="#examples">Örnekler</a><a href="#pricing">Fiyatlar</a><a href="#guides">Rehberler</a><a href="#faq">Sorular</a>
-    <label class="vh" for="langSel">Dil</label>
-    <select class="langsel" id="langSel" aria-label="Dil"><option value="/" lang="en">English</option><option value="/de/" lang="de">Deutsch</option><option value="/fr/" lang="fr">Français</option><option value="/es/" lang="es">Español</option><option value="/pt/" lang="pt">Português</option><option value="/it/" lang="it">Italiano</option><option value="/nl/" lang="nl">Nederlands</option><option value="/tr/" selected lang="tr">Türkçe</option><option value="/ar/" lang="ar">العربية</option><option value="/pl/" lang="pl">Polski</option></select>
-    <nav class="tabs" aria-label="Product">
-      <button id="t-tattoo" aria-pressed="true" type="button">Dövme</button>
-      <button id="t-brow" aria-pressed="false" type="button">Kaş haritalama</button>
-    </nav>
-  </div>
-</div></header>
-
-<!-- ============ TATTOO ============ -->
-<main id="v-tattoo" class="view">
+<div class="sh"><div class="wrap"><a class="mark" href="/tr/">skin<span>stencil</span></a><nav><a href="/tr/studio/">Studio</a><a href="/tr/brow/">Kaş haritalama</a><a href="/tr/guides/">Rehberler</a><a href="/tr/#pricing">Fiyatlar</a><select class="langsel" id="langSel" aria-label="Dil"><option value="/" lang="en">English</option><option value="/de/" lang="de">Deutsch</option><option value="/fr/" lang="fr">Français</option><option value="/es/" lang="es">Español</option><option value="/pt/" lang="pt">Português</option><option value="/it/" lang="it">Italiano</option><option value="/nl/" lang="nl">Nederlands</option><option value="/tr/" selected lang="tr">Türkçe</option><option value="/ar/" lang="ar">العربية</option><option value="/pl/" lang="pl">Polski</option></select></nav></div></div>
+<main>
 <div class="wsx l-tr d-ltr">
 <div class="ws" id="ws" role="region" aria-label="Dövme ve kaşlar için yapay zeka üretici ve stencil hazırlayıcı"><div class="hbg" aria-hidden="true"><video id="vDoor" muted loop playsinline preload="metadata" poster="/assets/scenes/door.jpg" src="/assets/door.mp4"></video></div>
 <div class="wsin" id="genBox" data-studio="/tr/studio/">
@@ -359,7 +266,6 @@ footer .wrap{padding-block:28px}
    <div class="btnrow"><button class="cta" id="genBtn" type="button">Tasarım oluştur</button></div>
    <div id="genTs"></div>
    <p class="wnote" id="genStatus" role="status" aria-live="polite"></p>
-   <p class="wnote">Bir yapay zekâ sözlerinden çizer, burada şablona dönüşür. Ziyaretçilere günde birkaç tasarım verilir; günlük geçiş veya Pro ile çok daha fazlası.</p>
   </div>
   <div class="stp" id="st2"><h3><i>2</i>Yeri seçin</h3>
    <div class="map"><div><div class="vw" id="vw"><button type="button" aria-pressed="false" data-v="front">Ön</button><button type="button" aria-pressed="true" data-v="back">Arka</button></div><svg id="bmap" viewBox="0 0 160 340" role="group" aria-label="Vücut haritası"></svg></div>
@@ -372,13 +278,14 @@ footer .wrap{padding-block:28px}
    <div class="btnrow"><button class="cta ghost" id="real" type="button">Gerçekçi göster</button><button class="cta" id="toSheet" type="button">Stencil'i hazırla</button></div>
    <p class="wnote" id="rnote">Yerleştirmek için dövmeyi ciltte sürükleyin.</p>
   </div>
-  <div class="stp" id="st4"><h3><i>4</i>Stencil'i hazırlayın</h3>
-   <div class="wseg" id="smode"><button type="button" aria-pressed="true" data-v="draw"><b>Çizgi çizim</b><span>Çizimler ve tasarımlar için.</span></button><button type="button" aria-pressed="false" data-v="photo"><b>Fotoğraf</b><span>Fotoğrafın kenarlarını bulur.</span></button></div>
+  <div class="stp off" id="st4"><h3><i>4</i>Stencil'i hazırlayın</h3>
    <div class="row"><label for="sens">Ayrıntı <span id="sensV">68</span></label><input id="sens" type="range" min="1" max="100" value="68"></div>
+   <details class="fine-tune"><summary>İnce ayar</summary><div class="ft"><div class="wseg" id="smode"><button type="button" aria-pressed="true" data-v="draw"><b>Çizgi çizim</b><span>Çizimler ve tasarımlar için.</span></button><button type="button" aria-pressed="false" data-v="photo"><b>Fotoğraf</b><span>Fotoğrafın kenarlarını bulur.</span></button></div>
    <div class="row"><label for="smooth">Yumuşatma <span id="smoothV">0</span></label><input id="smooth" type="range" min="0" max="4" value="0"></div>
    <div class="row"><label for="weight">Çizgi kalınlığı <span id="weightV">2</span></label><input id="weight" type="range" min="1" max="6" value="2"></div>
    <div class="row"><label for="specks">Lekeleri temizle <span id="specksV">30</span></label><input id="specks" type="range" min="0" max="300" value="30"></div>
-   <div class="row"><label for="split">Tasarımı ve stencil'i karşılaştır</label><input id="split" type="range" min="0" max="100" value="50"></div>
+   
+   <div class="row"><label for="split">Tasarımı ve stencil'i karşılaştır</label><input id="split" type="range" min="0" max="100" value="50"></div></div></details>
    <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
    <div class="wstats"><span><u style="background:#1F7A4C"></u>Korunan <b id="kept">-</b></span><span><u style="background:#B42318"></u>Kaybolan <b id="lost">-</b></span><span><u style="background:#C98A00"></u>Eklenen <b id="added">-</b></span></div>
    <div class="mmrow"><label for="mm">Kağıttaki genişlik (mm)</label><input id="mm" type="number" min="10" max="600" step="1" value="88"><span class="wnote" id="sizeOut"></span></div>
@@ -403,277 +310,52 @@ footer .wrap{padding-block:28px}
  <div class="pair"><figure><img alt="Avuç içine kına çizilirken" loading="lazy" src="/assets/scenes/henna.jpg"><a href="/tr/studio/">Stencil studio</a></figure><figure><img alt="Cetvel ve kalemle haritalanan bir kaş" loading="lazy" src="/assets/scenes/brow.jpg"><a href="/tr/brow/">Kaş haritalama</a></figure></div></div></div>
 </div>
 
-<div class="hero"><div class="wrap">
-  <div>
-    <div class="eyebrow">Dövme sanatçıları ve stüdyolar için</div>
-    <h1>Çizgisine uyan, baskıya hazır stencil'ler.</h1>
-    <p class="sub">Kendi tasarımınızı, eskizinizi veya flash'ınızı saniyeler içinde temiz bir stencil'e dönüştürün. Kullanımı ücretsiz, kurulum yok, hiçbir şey yüklenmez. Filigranı kaldırana kadar indirmelerde küçük bir filigran bulunur.</p>
-    <div class="ctas">
-      <a class="btn" href="/tr/studio/">Ücretsiz aracı aç</a>
-      <a class="btn alt" href="#pricing">Fiyatlara bak</a>
-    </div>
-    <ul class="facts"><li>Tarayıcınızda çalışır</li><li>Kayıt gerekmez</li><li>Görselleriniz cihazınızdan çıkmaz</li></ul>
-  </div>
-  <div class="panel" id="demo">
-    <div class="stage" id="dStage" style="aspect-ratio:7/9">
-      <canvas id="dOrig"></canvas><canvas id="dOut"></canvas>
-      <div class="handle" id="dHandle" style="left:calc(50% - 1px)"></div>
-      <span class="tagL">Fotoğraf</span><span class="tagR">Stencil</span>
-    </div>
-    <input id="dSplit" type="range" min="0" max="100" value="50" aria-label="Çizimi stencil ile karşılaştırmak için kaydırın">
-    <div class="seg" id="dSurface" role="group" aria-label="Şablonu şurada göster"><button type="button" class="chip" data-s="skin" aria-pressed="true">Ciltte</button><button type="button" class="chip" data-s="paper" aria-pressed="false">Kağıtta</button></div>
-    <div class="chips" id="dChips" role="group" aria-label="Örnek tasarımlar"></div>
-    <div class="ctl">
-      <div><label for="dWeight">Çizgi kalınlığı <span id="dWeightV">2</span></label><input id="dWeight" type="range" min="1" max="6" value="2"></div>
-      <div><label for="dSens">Hassasiyet <span id="dSensV">55</span></label><input id="dSens" type="range" min="1" max="100" value="55"></div>
-    </div>
-    <p class="caption">Canlı: ücretsiz araç, düzensiz ışıkta fotoğraflanmış bir çizimde. Kaydırıcıları oynat.</p>
-  </div>
-</div></div>
 
-<section id="examples"><div class="wrap">
-  <div class="eyebrow">Gerçek çıktı</div>
-  <h2>Maket değil. Buradaki her görsel, şu anda tarayıcınızda araç tarafından üretiliyor.</h2>
-  <p class="lead">Kodla çizilmiş dört örnek tasarım, herkes kullanabilsin diye, stüdyoda aldığınız aynı filtreden geçiriliyor. Solda tasarım, sağda stencil var.</p>
-  <div class="gallery" id="gallery"></div>
-  <p class="note">Filtre klasik görüntü işlemedir (kenarlar ve eşikler), bir yapay zekâ modeli değildir. Temiz çizimlerde güçlüdür, yumuşak gölgeli fotoğraflarda daha zayıftır.</p>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Neler sunuyor</div>
-  <h2>Çizgilerinize ne olduğunu gösteren araçlar.</h2>
-
-  <div class="feat">
-    <div class="ftext">
-      <h3>Sapma kontrolü: değişen her çizgiyi görün</h3>
-      <p>Stencil, ancak hâlâ sizin tasarımınızsa işe yarar. Sapma kontrolü stencil'i orijinalinizde bulunan çizgilerle karşılaştırır ve farkı boyar.</p>
-      <ul><li><b class="lostc">Kırmızı</b> kaybolan çizgiyi gösterir.</li><li><b class="addc">Mavi</b> eklenen mürekkebi gösterir.</li><li>Sayılar korunan, kaybolan ve eklenen payı gösterir.</li></ul>
-    </div>
-    <div class="panel"><div class="mini"><canvas id="driftC"></canvas></div>
-      <div class="stats"><div class="stat"><b id="dKept">-</b><span>korunan çizgi</span></div><div class="stat"><b id="dLost">-</b><span>kaybolan çizgi</span></div><div class="stat"><b id="dAdded">-</b><span>eklenen mürekkep</span></div></div>
-      <p class="caption">Burada hassasiyet düşük ayarlandı, bu yüzden ince tarama düştü. Kontrol bunun tam olarak nerede olduğunu gösterir.</p></div>
-  </div>
-
-  <div class="feat rev">
-    <div class="ftext">
-      <h3>Cilt önizlemesi: gerçek bir tonda değerlendirin</h3>
-      <p>Beyaz üzerinde iyi okunan çizgiler ciltte kaybolabilir. Yazdırmadan önce aynı stencil'i altı cilt tonunda önizleyin.</p>
-      <ul><li>Çizgiler, bir transfer gibi, tonla kaynaşır.</li><li>Soluk görünüyorsa daha kalın bir çizgi seçin.</li></ul>
-    </div>
-    <div class="panel"><div class="skins" id="skins"></div><p class="caption">Aynı stencil altı tonda, canlı çizildi.</p></div>
-  </div>
-
-  <div class="feat">
-    <div class="ftext">
-      <h3>Gerçek boyut, milimetre cinsinden</h3>
-      <p>Ciltteki genişliği ayarlayın. Araç tam boyutu ve 300 dpi için gereken pikseli gösterir, görselin yanında bir cetvel bulunur. Ücretli indirmeler 300 dpi boyutunu dosyanın içinde taşır, böylece baskı yazılımınız planladığınız boyutta yazdırır.</p>
-      <ul><li>Girdi mm cinsinden genişlik, çıktı yükseklik ve piksel boyutu.</li><li>PNG indirme ve gerçek boyutta yazdırma.</li></ul>
-    </div>
-    <div class="panel">
-      <svg viewBox="0 0 360 250" role="img" aria-label="Milimetre işaretli bir cetvelle birlikte 88 x 113 milimetre boyutunda bir stencil" style="display:block;width:100%;height:auto;direction:ltr">
-        <g fill="none" stroke="var(--stencil)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M180 20 L200 110 L180 132 L160 110 Z"/><path d="M180 20 V132" stroke-width="1.6"/><rect x="146" y="132" width="68" height="9" rx="4"/><rect x="174" y="141" width="12" height="50" rx="3"/><circle cx="180" cy="203" r="10"/></g>
-        <g stroke="currentColor" fill="none" stroke-width="1"><path d="M40 226 H320"/></g>
-        <g id="rl" stroke="currentColor" stroke-width="1"></g>
-        <text x="180" y="246" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" text-anchor="middle">88 mm</text>
-        <g stroke="currentColor" opacity=".7" stroke-width="1"><path d="M270 20 V214 M265 20 H275 M265 214 H275"/></g>
-        <text x="284" y="120" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" transform="rotate(90 284 120)" text-anchor="middle">113 mm</text>
-      </svg>
-      <p class="caption">88 x 113 mm, 300 dpi'da 1039 x 1336 px eder.</p>
-    </div>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Daha iyi girdi, daha iyi stencil</div>
-  <h2>Yapın ve yapmayın, aracın kendisiyle gösterildi.</h2>
-  <p class="lead">Her çift, araca aynı tasarımın iyi ve kötü bir sürümünü verir. Kötü sürümler bilerek hazırlandı, böylece neyin ters gittiğini görebilirsiniz.</p>
-  <div class="dd" id="dd"></div>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Nasıl çalışır</div>
-  <h2>Yükleyin, kontrol edin, indirin.</h2>
-  <div class="steps">
-    <div class="step"><div class="tick">0 mm</div><h3>Tasarımınızı yükleyin</h3><p>Kendi yaptığınız veya kullanma hakkınız olan bir tasarım. Bir çizimin fotoğrafı da olur.</p></div>
-    <div class="step"><div class="tick">40 mm</div><h3>Orijinalle karşılaştırın</h3><p>Çizgi kalınlığını ve hassasiyeti ayarlayın, sapmayı kontrol edin, bir cilt tonu deneyin, boyutu milimetre olarak belirleyin.</p></div>
-    <div class="step"><div class="tick">88 mm</div><h3>İndirin</h3><p>Ücretsiz indirmelerde filigran bulunur. Bir müşteri için yazdırmaya hazır olduğunuzda tek tıkla kaldırın.</p></div>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Sanatçıların şikayet ettiği şeylere göre tasarlandı</div>
-  <h2>Tasarımdan gelen dürüstlük.</h2>
-  <div class="three">
-    <div><h3>Tasarımınıza sadık</h3><p>Sapma kontrolü neyin değiştiğini gösterir, böylece stencil sessizce çizgi eklemez veya silmez.</p></div>
-    <div><h3>Fiyatı önce görürsünüz</h3><p>Ücretsiz sürümün size maliyeti yalnızca filigrandır. Fiyatlar ödemeden önce gösterilir ve istediğiniz zaman iptal edebilirsiniz.</p></div>
-    <div><h3>Stüdyolar için tasarlandı <span class="tag">geliştirme aşamasında</span></h3><p>Birkaç sanatçı, tek abonelik, her stencil ile birlikte kaydedilen müşteri onayı ve izni.</p></div>
-  </div>
-</div></section>
-
-<section id="pricing"><div class="wrap">
-  <div class="eyebrow">Fiyatlar</div>
+<section class="sec" id="pricing"><div class="in">
   <h2>Filigranlı ücretsiz. Yalnızca kaldırmak için ödeyin.</h2>
-  <p class="lead">Araç ücretsizdir. Ücretsiz indirmelerde küçük bir filigran bulunur ve 800 pikselde durur. Filigranı kaldırmak ve tam boyutlu, gerçek boyutlu dosyayı almak için ödeyin.</p>
-  <div class="plans4">
-    <div class="plan"><h3>Ücretsiz</h3><div class="price">$0</div><div class="per">&nbsp;</div>
+  <p class="sub">Araç ücretsizdir. Ücretsiz indirmelerde küçük bir filigran bulunur ve 800 pikselde durur. Filigranı kaldırmak ve tam boyutlu, gerçek boyutlu dosyayı almak için ödeyin.</p>
+  <div class="plans3">
+    <div class="pl"><h3>Ücretsiz</h3><div class="pr">$0</div>
       <ul><li>Sınırsız stencil</li><li>Tüm kontroller, sapma kontrolü, cilt önizlemesi</li><li>İndirmelerde filigran, en fazla 800 px</li></ul>
-      <a class="btn" href="/tr/studio/">Ücretsiz aracı aç</a></div>
-    <div class="plan"><h3>Günlük geçiş</h3><div class="price">$4.99</div><div class="per">24 saat</div>
+      <div class="acts"><a class="btn alt" href="#ws">Ücretsiz aracı aç</a></div></div>
+    <div class="pl"><h3>Günlük geçiş</h3><div class="pr">$4.99<small>24 saat</small></div>
       <ul><li>Filigran yok</li><li>En fazla 4000 px, 300 dpi boyutu dosyanın içinde</li><li>Tek ödeme, abonelik yok</li></ul>
-      <a class="btn alt buy" data-plan="day" href="#">Filigranı bir günlüğüne kaldır</a></div>
-    <div class="plan hl"><h3>Pro</h3><div class="price">$12</div><div class="per">aylık</div><div class="alt">veya yıllık $79</div>
+      <div class="acts"><a class="btn alt buy" data-plan="day" href="#">Filigranı bir günlüğüne kaldır</a></div></div>
+    <div class="pl hl"><h3>Pro</h3><div class="pr">$12<small>aylık</small></div>
       <ul><li>Günlük geçişteki her şey</li><li>Yeni özellikler eklendikçe</li><li>İstediğiniz zaman iptal</li></ul>
-      <a class="btn buy" data-plan="month" href="#">Pro'ya geç, aylık</a>
-      <a class="btn alt buy" data-plan="year" href="#" style="margin-top:8px">Pro'ya geç, yıllık</a></div>
-    <div class="plan"><h3>Stüdyo <span class="tag">geliştirme aşamasında</span></h3><div class="price">$49'dan başlayan</div><div class="per">aylık</div>
-      <ul><li>Birkaç sanatçı, tek fatura</li><li>Müşteri onayı ve izni</li></ul>
-      <a class="btn alt" href="mailto:hello@skinstencil.com?subject=Studio%20pricing%20interest">Açıldığında haber verin</a></div>
+      <div class="acts"><a class="btn buy" data-plan="month" href="#">Pro'ya geç, aylık</a><p class="or">veya yıllık $79</p><a class="btn alt buy" data-plan="year" href="#">Pro'ya geç, yıllık</a></div></div>
   </div>
-  <p class="note">Fiyatlar ABD doları cinsindendir. Vergi, ödeme sırasında ödeme sağlayıcımız tarafından halledilir.</p>
-  <p class="note" id="soonNote" hidden>Ödeme yakında açılıyor. Açıldığında haber verin.</p>
+  <p class="fine">Fiyatlar ABD doları cinsindendir. Vergi, ödeme sırasında ödeme sağlayıcımız tarafından halledilir.</p>
+  <p class="fine" id="soonNote" hidden>Ödeme yakında açılıyor. Açıldığında haber verin.</p>
 </div></section>
 
-<section id="about"><div class="wrap">
-  <div class="eyebrow">Dövme şablonu nedir, nasıl yapılır</div>
-  <h2>Çizgini bozmayan bir dövme şablonu oluşturucu.</h2>
-  <div class="seo">
-    <div><h3>Dövme şablonu (stencil) nedir?</h3><p>Dövme şablonu, yani dövme stencil, bir dövme tasarımının dış hatlarının kâğıda basılmış halidir. Dövmeci ilk iğne deriye değmeden tasarımı cilde bu şablonla yerleştirir. İyi bir şablon orijinal çizginin kalınlığını korur, kâğıt dokusunu ve gölgeleri atar ve dövmenin olacağı boyutla birebir aynıdır.</p></div>
-    <div><h3>Çizimi veya fotoğrafı dövme şablonuna çevirmek</h3><p>Taranmış bir çizimi, flash sayfasını ya da tasarımının telefonla çekilmiş fotoğrafını yükle. Skinstencil çizgileri tarayıcında takip eder; önizleme çizimine uyana kadar hassasiyeti, yumuşatmayı ve çizgi kalınlığını ayarlarsın. Kâğıt üstüne mürekkep için çizim modu, tonlu görseller için fotoğraf modu var. Sonuç beyaz zemin üzerinde temiz siyah bir çizgi, dışa aktarmaya hazır.</p></div>
-    <div><h3>Gerçek boyutta yazdır, termal ya da normal kâğıda</h3><p>Genişliği milimetre olarak gir, yazdırma sayfası dövme tasarımını tam o boyutta açar. Kilidi açılmış indirmeler 4000 piksele kadar çıkar ve PNG içinde 300 dpi boyut bilgisi taşır, böylece doğru ölçü yazdırma programına geçer. Termal stencil yazıcıyla kullan ya da yazdırıp transfer kâğıdına kalemle geçir.</p></div>
-    <div><h3>Dövmeciler, çıraklar ve kendi tasarımı olan müşteriler için</h3><p>Flash, yazı, çizgi işi, mandala ve özel dövme tasarımları için kullanabilirsin. Şablonlar cihazında hazırlanır, görsellerin yüklenmez. Ücretsiz sürümde filigran vardır ve indirmeler 800 piksele kadardır; günlük geçiş veya Pro filigranı kaldırır ve boyut sınırını açar.</p></div>
-  </div>
-</div></section>
-
-<section id="guides"><div class="wrap">
-  <h2>Dövme şablonu rehberleri</h2>
-  <p class="lead">Şablon nasıl hazırlanır, gerçek boyutta nasıl yazdırılır, kâğıda nasıl aktarılır.</p>
-  <div class="gl"><a class="glink" href="/tr/guides/tattoo-stencil-from-photo/"><h3>Fotoğraftan veya çizimden dövme şablonu nasıl yapılır</h3><p>Net bir kaynaktan temiz çizgili bir şablona, nelerin kaybolduğunu gösteren sapma kontrolüyle.</p></a><a class="glink" href="/tr/guides/tattoo-stencil-size-true-size-print/"><h3>Dövme şablonu boyutu: gerçek boyutta yazdırma</h3><p>300 dpi'de milimetreden piksele, küçük bir tablo ve çıktının nasıl kontrol edileceği.</p></a><a class="glink" href="/tr/guides/tattoo-stencil-transfer-methods/"><h3>Şablonu kâğıda aktarma yolları: termal, elle çizim, baskı</h3><p>Yaygın aktarım yöntemlerine tarafsız bir bakış ve temiz çizgili bir dosyanın ne zaman önem kazandığı.</p></a></div>
-  <p class="note"><a href="/tr/guides/">Rehberler</a></p>
-</div></section>
-<section id="faq"><div class="wrap">
-  <div class="eyebrow">Sorular</div>
+<section class="sec" id="faq" style="padding-top:0"><div class="in">
   <h2>Denemeden önce.</h2>
-  <div style="margin-top:18px">
-    <details><summary>Gerçekten ücretsiz mi?</summary><p>Evet. Stüdyodaki araç ücretsizdir ve kayıt gerektirmez. Ücretsiz araçtan yapılan indirmelerde küçük bir filigran bulunur ve 800 pikselle sınırlıdır. Günlük geçiş veya Pro filigranı kaldırır ve tam boyutu açar.</p></details>
+  <div class="qa">
+    <details><summary>Yapay zeka dövme üretici ücretsiz mi?</summary><p>Ücretsiz deneyebilirsin: ziyaretçiler hesap olmadan günde birkaç tasarım alır. Günlük geçiş veya Pro günlük sınırı çok yükseltir. Tasarımı şablona çevirmek Studio’daki gibi çalışır: ücretsiz indirmelerde filigran olur, lisans anahtarı onu kaldırır.</p></details>
     <details><summary>Filigranı nasıl kaldırırım?</summary><p>Günlük geçiş veya Pro seçin ve güvenli ödeme sayfasında ödeyin. E-postayla bir lisans anahtarı alırsınız. Anahtarı stüdyoya yapıştırın, filigran kalkar. Anahtar ödeme sağlayıcımızla doğrulanır ve yalnızca tarayıcınızda saklanır.</p></details>
-    <details><summary>Bu yapay zeka mı?</summary><p>Şablon filtresi klasik görüntü işlemedir: çizgileri kenarlardan ve parlaklıktan bulur, lekeleri temizler ve çizgi kalınlığını ayarlar. Bu da onu temiz çizimlerde hızlı, gizli ve öngörülebilir yapar.</p></details>
-    <details><summary>Tasarımlarımı saklıyor musunuz?</summary><p>Hayır. Ücretsiz araç tarayıcınızda çalışır ve görsellerinizi yüklemez. Sayfayı kapattığınızda silinirler.</p></details>
-    <details><summary>Herhangi bir dövmeyi yükleyebilir miyim?</summary><p>Yalnızca kendi yaptığınız veya kullanma hakkınız olan tasarımları. Hak sahibi isterse içeriği kaldırırız.</p></details>
-    <details><summary>Hangi dosyalar çalışır?</summary><p>JPG, PNG ve WebP. Aracın hızlı kalması için büyük görseller küçültülür. Bir çizimin düz ve iyi aydınlatılmış fotoğrafı iyi sonuç verir.</p></details>
+    <details><summary>Tasarımı gerçek bir dövme için kullanabilir miyim?</summary><p>Başlangıç noktası olarak gör. Dövmecine göster: vücut bölgesi ve boyut için uygun olup olmadığına o karar verir, başkasının işini kopyalamadığını da o kontrol etmelidir.</p></details>
     <details><summary>Stencil'i nasıl yazdırırım?</summary><p>PNG'yi indirin ve belirlediğiniz boyutta yazdırın. Ücretli dosyalar 300 dpi boyutunu taşır, böylece baskı yazılımı gerçek boyutu kullanır. Termal stencil yazıcılar termal transfer kağıdına basar. Mürekkep püskürtmeli yazıcılar stencil mürekkebi ve inkjet transfer kağıdı ister.</p></details>
-    <details><summary>Tam kol veya büyük bir iş için ne yapmalı?</summary><p>Motif motif çalışın. Küçük parçalar, tek bir dev görsele göre ayrıntılarını çok daha iyi korur.</p></details>
-    <details><summary>Tablette veya telefonda çalışır mı?</summary><p>Evet, tarayıcıda. Bir telefon uygulaması gelebilir.</p></details>
-    <details><summary>İnce taramamı neden düşürüyor?</summary><p>Düşük hassasiyet ve yüksek leke temizleme, ince çizgileri bilerek düşürür. Hassasiyeti yükseltin, leke temizlemeyi düşürün ve neyin kaybolduğunu görmek için sapma bindirmesine bakın.</p></details>
+    <details><summary>Açıklamama ne olur?</summary><p>Üretici hizmetimize ve tasarımı çizen görsel sağlayıcıya, onların kendi koşullarıyla gönderilir. Açıklamanı ve tasarımı saklamayız. İçine kişisel bilgi veya isim yazma. Şablon adımı kendi cihazında çalışır.</p></details>
     <details><summary>İade alabilir miyim?</summary><p>Günlük geçiş iade edilmez, çünkü lisans anahtarı elinize geçtiği anda çalışır. Pro, ilk ödemeden sonraki 14 gün içinde tam olarak iade edilir: hello@skinstencil.com adresine yazın. Yenilemeler iade edilmez ve bir sonrakinden önce istediğiniz zaman iptal edebilirsiniz. Yasal haklarınız saklıdır.</p></details>
   </div>
 </div></section>
 </main>
+<div class="sf"><div class="wrap"><div class="links"><a href="/tr/studio/">Studio</a><a href="/tr/brow/">Kaş haritalama</a><a href="/tr/guides/">Rehberler</a><a href="/tr/#pricing">Fiyatlar</a></div><div><a href="/privacy.html">Gizlilik</a> &middot; <a href="/terms.html">Koşullar</a> &middot; <a href="mailto:hello@skinstencil.com">hello@skinstencil.com</a></div><div>Gizlilik ve şartlar İngilizcedir.<br>Bu sayfa otomatik olarak çevrildi. Yanlış okunan bir yer olursa bize bildirin.</div></div></div>
 
-<!-- ============ BROW ============ -->
-<main id="v-brow" class="view" hidden>
-<div class="hero"><div class="wrap">
-  <div>
-    <div class="eyebrow">Kaş ve kalıcı makyaj sanatçıları için</div>
-    <h1>Kaşları müşteri fotoğrafında haritalayın, kılavuzu gerçek boyutta yazdırın.</h1>
-    <p class="sub">Karşıdan çekilmiş bir fotoğraf yükleyin. Yüz cihazınızda bulunur ve başlangıç, kavis ve bitiş kılavuzları yerine sürüklemeniz için görünür. Ölçüleri milimetre olarak okuyun ve kılavuzu gerçek boyutta yazdırın.</p>
-    <div class="ctas">
-      <a class="btn" href="/tr/brow/">Kaş haritalamayı aç</a>
-      <a class="btn alt" href="#brow-how">Nasıl çalışır</a>
-    </div>
-    <p class="note">Denemesi ücretsiz. Fotoğraflar cihazınızda kalır.</p>
-  </div>
-  <div class="panel">
-    <svg viewBox="0 0 400 300" role="img" aria-label="Çizim: göz ve kaşın sadeleştirilmiş taslağında burun kanadından çıkan üç kaş haritalama çizgisi; başlangıç, kavis ve bitiş S, A ve E ile işaretli." style="display:block;width:100%;height:auto;direction:ltr">
-      <title>Çizim: göz ve kaşın sadeleştirilmiş taslağında burun kanadından çıkan üç kaş haritalama çizgisi; başlangıç, kavis ve bitiş S, A ve E ile işaretli.</title>
-      <g fill="none" stroke="currentColor" stroke-width="1" opacity=".3"><path d="M20 150 H380" stroke-dasharray="2 5"/><path d="M200 60 V282"/></g>
-      <g id="brow-half" fill="none">
-        <g stroke="currentColor" stroke-width="1.6" opacity=".7">
-          <path d="M62 150 Q107 122 152 150 Q107 172 62 150 Z"/>
-          <circle cx="108" cy="150" r="12"/>
-          <path d="M152 252 Q176 270 200 264"/>
-        </g>
-        <g stroke="currentColor" stroke-width="1.4" opacity=".8"><path d="M101 150 H115 M108 143 V157"/></g>
-        <path d="M152 252 V90" stroke="#1B6FE0" stroke-width="2"/>
-        <path d="M152 252 L63 90" stroke="#D2362B" stroke-width="2" stroke-dasharray="9 5"/>
-        <path d="M152 252 L9 90" stroke="#1F7A4C" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"/>
-        <path d="M168 111 H12" stroke="var(--stencil)" stroke-width="1.4" stroke-dasharray="2 4" stroke-linecap="round"/>
-        <path d="M152 111 Q100 90 65 93 Q42 96 28 111" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
-        <circle cx="152" cy="252" r="4.5" fill="var(--card)" stroke="currentColor" stroke-width="1.6"/>
-        <circle cx="152" cy="111" r="9" fill="#1B6FE0"/><circle cx="65" cy="93" r="9" fill="#D2362B"/><circle cx="28" cy="111" r="9" fill="#1F7A4C"/>
-      </g>
-      <use href="#brow-half" transform="translate(400 0) scale(-1 1)"/>
-      <g font-family="IBM Plex Mono, monospace" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">
-        <text x="152" y="115">S</text><text x="65" y="97">A</text><text x="28" y="115">E</text>
-        <text x="248" y="115">S</text><text x="335" y="97">A</text><text x="372" y="115">E</text>
-      </g>
-      <g font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" text-anchor="middle">
-        <text x="152" y="80" fill="#1B6FE0">1</text><text x="63" y="80" fill="#D2362B">2</text><text x="9" y="80" fill="#1F7A4C">3</text>
-        <text x="248" y="80" fill="#1B6FE0">1</text><text x="337" y="80" fill="#D2362B">2</text><text x="391" y="80" fill="#1F7A4C">3</text>
-      </g>
-    </svg>
-    <p class="caption"><b>Çizim.</b> Kılavuz çizgileri sadeleştirilmiş bir taslak üzerinde; gerçek bir müşteri fotoğrafı değildir.</p>
-  </div>
-</div></div>
-
-<section id="brow-how"><div class="wrap">
-  <div class="eyebrow">Nasıl çalışır</div>
-  <h2>Fotoğraf, ayarla, yazdır.</h2>
-  <div class="steps">
-    <div class="step"><div class="tick">1</div><h3>Karşıdan çekilmiş fotoğraf yükleyin</h3><p>Müşterinin onay verdiğini doğrulayın. Yüz cihazınızda bulunur ve kılavuzlar üzerine çizilir.</p></div>
-    <div class="step"><div class="tick">2</div><h3>Noktaları sürükleyin</h3><p>Başlangıcı, kavisi ve bitişi ya da herhangi bir referans noktasını taşıyın; çizgiler ve ölçüler onu izler.</p></div>
-    <div class="step"><div class="tick">3</div><h3>Gerçek boyutta yazdırın</h3><p>Gözbebeği mesafesini girin veya bir kart yerleştirin, sonra PNG indirin ya da kılavuzu milimetre cinsinden genişliğinde yazdırın.</p></div>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <h2>Klasik çizgiler, ölçülmüş.</h2>
-  <p class="sub" style="margin-bottom:0">Burun kanadından üç çizgi: başlangıç için dümdüz yukarı, kavis için irisin dış kenarından, bitiş için gözün dış köşesinden. Araç genişliği, kavis yüksekliğini, kuyruk açısını ve yükseklik farkını milimetre olarak gösterir. Bunlar standart çizim kılavuzlarıdır ve karar sizindir.</p>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Gizlilik</div>
-  <h2>Fotoğraf cihazınızda kalır.</h2>
-  <p class="sub" style="margin-bottom:0">Yüz modeli tarayıcınızda çalışır ve bu siteden sunulur. Fotoğraf yüklenmez veya saklanmaz, çerez de yoktur. Müşterinin fotoğrafın kullanılmasını kabul ettiğini doğrulamanızı isteriz. Tıbbi veya sonuç iddiasında bulunmayız: haritalama bir çizim yardımcısıdır.</p>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Fiyatlar</div>
-  <h2>İki araç için tek plan.</h2>
-  <p class="sub">Kaş haritalamayı denemek ücretsizdir. Ücretsiz indirmelerde filigran vardır ve boyut sınırlıdır. Günlük geçiş veya Pro filigranı hem bu araçta hem dövme şablon aracında kaldırır.</p>
-  <div class="ctas"><a class="btn alt" href="#pricing">Planları gör</a><a class="btn" href="/tr/brow/">Kaş haritalamayı aç</a></div>
-</div></section>
-
-<section id="guides-brow"><div class="wrap">
-  <h2>Kaş haritalama rehberleri</h2>
-  <p class="lead">Bir fotoğrafta başlangıç, kavis ve bitiş noktaları nasıl işaretlenir; nasıl ölçeklenir ve gerçek boyutta yazdırılır.</p>
-  <div class="gl"><a class="glink" href="/tr/guides/brow-mapping-on-a-photo-start-arch-end/"><h3>Fotoğraf üzerinde kaş haritalama nasıl yapılır</h3><p>Burun kanadından çıkan üç klasik çizgi ve müşteri fotoğrafında başlangıç, kavis ve bitişin yerleştirilmesi.</p></a><a class="glink" href="/tr/guides/brow-mapping-measurements-scale-and-print-true-size/"><h3>Kaş haritalama ölçüleri ve gerçek boyutta yazdırma</h3><p>Ölçek için gözbebekleri arası mesafe ya da kart, her ölçünün anlamı ve kılavuzun gerçek boyutta yazdırılması.</p></a></div>
-  <p class="note"><a href="/tr/guides/">Rehberler</a></p>
-</div></section>
-</main>
-
-<footer><div class="wrap"><a href="/privacy.html">Gizlilik</a> &middot; <a href="/terms.html">Koşullar</a> &middot; <a href="mailto:hello@skinstencil.com">hello@skinstencil.com</a><br>Gizlilik ve şartlar İngilizcedir.<br>Bu sayfa otomatik olarak çevrildi. Yanlış okunan bir yer olursa bize bildirin.</div></footer>
-
-<script>window.I18N={"sample.dagger":"Hançer","sample.mandala":"Mandala","sample.lettering":"Yazı","sample.orb":"Gölgeli küre","g.design":"Tasarım","g.stencil":"Stencil","g.modeDraw":"Çizim modu","g.modePhoto":"Fotoğraf modu","g.n.dagger":"Konturlar korunur, gölgeler tarama çizgilerine dönüşür.","g.n.mandala":"İnce yapraklar ve taranmış bir merkez.","g.n.lettering":"Yazı ve süslemeler temiz bir kalınlıkta.","g.n.orb":"Fotoğraf modu yumuşak gölgelerdeki form kenarlarını bulur.","d.eyebrow":"Daha iyi girdi, daha iyi stencil","d.h2":"Yapın ve yapmayın, aracın kendisiyle gösterildi.","d.lead":"Her çift, araca aynı tasarımın iyi ve kötü bir sürümünü verir. Kötü sürümler bilerek hazırlandı, böylece neyin ters gittiğini görebilirsiniz.","d.do":"Yapın","d.dont":"Yapmayın","d.or":"veya","d.p1.do":"Net, yüksek çözünürlük","d.p1.dont":"Bulanık","d.p1.note":"Yumuşak bir görsel önce ince çizgilerini kaybeder.","d.p2.do":"İyi kontrast","d.p2.dont":"Düşük kontrast","d.p2.note":"Soluk zemindeki soluk çizgiler kaybolur veya kopar.","d.p3.do":"Sıkı kadraj","d.p3.dont":"Çok boş alan","d.p3.note":"Küçük konular ayrıntı kaybeder. Yakınlaştırarak kırpın.","s.gen.h":"Tasarım oluştur","s.gen.label":"Dövmeyi anlat","s.gen.ph":"ince çizgili, hilal aylı bir kurt","s.gen.bold":"Belirgin","s.gen.detail":"İnce detay","s.gen.btn":"Tasarım oluştur","s.gen.busy":"Tasarımın çiziliyor, yaklaşık 20 saniye...","s.gen.hint":"Bir yapay zekâ sözlerinden çizer, burada şablona dönüşür. Ziyaretçilere günde birkaç tasarım verilir; günlük geçiş veya Pro ile çok daha fazlası.","s.gen.left":"Bugün {n} hakkın kaldı","s.gen.errShort":"Önce birkaç kelimeyle anlat.","s.gen.errLimitFree":"Bugünkü ücretsiz tasarımlarını kullandın. Günlük geçiş veya Pro çok daha fazlasını verir.","s.gen.errLimitPaid":"Bugünkü sınıra ulaştın. Yarın yenilenir.","s.gen.errBudget":"Oluşturucu bugünlük durduruldu. Yarın tekrar dene.","s.gen.errUpstream":"Tasarım oluşturulamadı ve hakkından bir şey düşülmedi. Tekrar dene.","s.gen.errNetwork":"Oluşturucuya bağlanılamadı. Tekrar dene.","s.gen.errBot":"Bir insan olduğunu doğrulayamadık. Sayfayı yenileyip tekrar dene.","gen.w.browNav":"Kaşlar","gen.w.s1":"Tarif edin","gen.w.s2":"Yeri seçin","gen.w.s3":"Size göre ayarlayın","gen.w.s4":"Stencil'i hazırlayın","gen.w.attach":"Örnek olarak bir resim ekleyin","gen.w.attachAlt":"Örnek resminiz","gen.w.attachRemove":"Resmi kaldır","gen.w.refInspire":"İlham olarak kullan","gen.w.refInspireHint":"Aynı havada yeni bir tasarım.","gen.w.refTrace":"Çizgi olarak yeniden çiz","gen.w.refTraceHint":"Resminizi korur, çizgileri temizler.","gen.w.errBig":"12 MB'tan küçük bir resim seçin.","gen.w.errImg":"Bu dosya okuyabildiğimiz bir resim değil.","gen.w.front":"Ön","gen.w.back":"Arka","gen.w.bodyMap":"Vücut haritası","gen.w.tapPart":"Bir vücut bölgesine dokunun","gen.w.p.shoulder":"Kürek kemiği","gen.w.p.back":"Sırt","gen.w.p.forearm":"Ön kol","gen.w.p.arm":"Üst kol","gen.w.p.chest":"Göğüs","gen.w.p.ribs":"Kaburgalar","gen.w.p.thigh":"Uyluk","gen.w.p.calf":"Baldır","gen.w.toneLabel":"Cilt tonu","gen.w.t.t1":"Çok açık","gen.w.t.t2":"Açık","gen.w.t.t3":"Açık zeytin","gen.w.t.t4":"Bronz","gen.w.t.t5":"Koyu kahve","gen.w.t.t6":"Çok koyu","gen.w.size":"Boyut","gen.w.turn":"Döndür","gen.w.dragHint":"Yerleştirmek için dövmeyi ciltte sürükleyin.","gen.w.real":"Gerçekçi göster","gen.w.realBack":"Yerleşimime dön","gen.w.realTag":"Gerçekçi önizleme","gen.w.realBusy":"Cilde yerleştiriliyor, yaklaşık 30 saniye...","gen.w.realNote":"Gerçekçilik modeli tarafından bu fotoğrafa çizildi.","gen.w.errPlaceLimit":"Bugünkü gerçekçi önizleme hakkınızı kullandınız. Günlük geçiş veya Pro daha fazlasını verir.","gen.w.toSheet":"Stencil'i hazırla","gen.w.vTattoo":"Dövme","gen.w.vStencil":"Stencil","gen.w.vSheet":"Baskı sayfası","gen.w.viewLabel":"Görünüm","gen.w.designL":"Tasarım","gen.w.stencilL":"Stencil","gen.w.empty":"Burada görmek için bir tasarım oluşturun","gen.w.example":"Örnek tasarım. Sizinki burada görünür.","gen.w.skinAlt":"Dövmeyi yerleştirmek için çıplak cilt","gen.w.modeDraw":"Çizgi çizim","gen.w.modeDrawHint":"Çizimler ve tasarımlar için.","gen.w.modePhoto":"Fotoğraf","gen.w.modePhotoHint":"Fotoğrafın kenarlarını bulur.","gen.w.detail":"Ayrıntı","gen.w.smooth":"Yumuşatma","gen.w.weight":"Çizgi kalınlığı","gen.w.specks":"Lekeleri temizle","gen.w.compare":"Tasarımı ve stencil'i karşılaştır","gen.w.kept":"Korunan","gen.w.lost":"Kaybolan","gen.w.added":"Eklenen","gen.w.width":"Kağıttaki genişlik (mm)","gen.w.sizeOut":"{inch} inç, 300 dpi'de {px} px","gen.w.dl":"PNG indir","gen.w.print":"Gerçek boyutta yazdır","gen.w.saved":"{mm} mm genişliğinde, 300 dpi olarak kaydedildi.","gen.w.popup":"Yazdırmak için açılır pencerelere izin verin, ya da PNG'yi indirip %100 ölçekte yazdırın.","gen.w.wm":"Ücretsiz indirmelerde küçük bir filigran bulunur.","gen.w.wmLink":"Günlük geçiş veya Pro bunu kaldırır.","gen.w.studioLink":"Daha fazla kontrole mi ihtiyacınız var? Studio'da açın","gen.w.a3h":"Yapıştırıldı. Bitti.","gen.w.a3p":"Koltuğa oturduğunuzda geriye yalnızca dövme kalır.","gen.w.a4h":"Şimdi kolay kısım geliyor.","gen.w.a4p":"Dövme sanatçınız zaten kararlaştırılmış, çizilmiş ve yerleştirilmiş bir planla başlar.","gen.w.cta":"Tasarımınızı oluşturun","gen.w.handsAlt":"Eldivenli eller omuza bir transfer stencil'i bastırıyor","gen.w.artistAlt":"Bir dövme sanatçısı stencil'li bir tasarımın üstünde dövme makinesi tutuyor","gen.w.machineAlt":"Bir stencil çizgisi üzerinde dövme makinesi iğnesinin yakın çekimi","gen.w.artH":"Sanatçılar için, aynı oda","gen.w.artP":"Kınayı tasarlayın ya da kaşları haritalayın, gerçek boyutta yazdırın; müşteriniz boş bir sayfaya değil, bir plana gelsin.","gen.w.hennaAlt":"Avuç içine kına çizilirken","gen.w.browAlt":"Cetvel ve kalemle haritalanan bir kaş","gen.w.hennaLink":"Stencil studio","gen.w.browLink":"Kaş haritalama"};</script>
+<script>window.I18N={"s.gen.h":"Tasarım oluştur","s.gen.label":"Dövmeyi anlat","s.gen.ph":"ince çizgili, hilal aylı bir kurt","s.gen.bold":"Belirgin","s.gen.detail":"İnce detay","s.gen.btn":"Tasarım oluştur","s.gen.busy":"Tasarımın çiziliyor, yaklaşık 20 saniye...","s.gen.hint":"Bir yapay zekâ sözlerinden çizer, burada şablona dönüşür. Ziyaretçilere günde birkaç tasarım verilir; günlük geçiş veya Pro ile çok daha fazlası.","s.gen.left":"Bugün {n} hakkın kaldı","s.gen.errShort":"Önce birkaç kelimeyle anlat.","s.gen.errLimitFree":"Bugünkü ücretsiz tasarımlarını kullandın. Günlük geçiş veya Pro çok daha fazlasını verir.","s.gen.errLimitPaid":"Bugünkü sınıra ulaştın. Yarın yenilenir.","s.gen.errBudget":"Oluşturucu bugünlük durduruldu. Yarın tekrar dene.","s.gen.errUpstream":"Tasarım oluşturulamadı ve hakkından bir şey düşülmedi. Tekrar dene.","s.gen.errNetwork":"Oluşturucuya bağlanılamadı. Tekrar dene.","s.gen.errBot":"Bir insan olduğunu doğrulayamadık. Sayfayı yenileyip tekrar dene.","gen.w.browNav":"Kaşlar","gen.w.s1":"Tarif edin","gen.w.s2":"Yeri seçin","gen.w.s3":"Size göre ayarlayın","gen.w.s4":"Stencil'i hazırlayın","gen.w.attach":"Örnek olarak bir resim ekleyin","gen.w.attachAlt":"Örnek resminiz","gen.w.attachRemove":"Resmi kaldır","gen.w.refInspire":"İlham olarak kullan","gen.w.refInspireHint":"Aynı havada yeni bir tasarım.","gen.w.refTrace":"Çizgi olarak yeniden çiz","gen.w.refTraceHint":"Resminizi korur, çizgileri temizler.","gen.w.errBig":"12 MB'tan küçük bir resim seçin.","gen.w.errImg":"Bu dosya okuyabildiğimiz bir resim değil.","gen.w.front":"Ön","gen.w.back":"Arka","gen.w.bodyMap":"Vücut haritası","gen.w.tapPart":"Bir vücut bölgesine dokunun","gen.w.p.shoulder":"Kürek kemiği","gen.w.p.back":"Sırt","gen.w.p.forearm":"Ön kol","gen.w.p.arm":"Üst kol","gen.w.p.chest":"Göğüs","gen.w.p.ribs":"Kaburgalar","gen.w.p.thigh":"Uyluk","gen.w.p.calf":"Baldır","gen.w.toneLabel":"Cilt tonu","gen.w.t.t1":"Çok açık","gen.w.t.t2":"Açık","gen.w.t.t3":"Açık zeytin","gen.w.t.t4":"Bronz","gen.w.t.t5":"Koyu kahve","gen.w.t.t6":"Çok koyu","gen.w.size":"Boyut","gen.w.turn":"Döndür","gen.w.dragHint":"Yerleştirmek için dövmeyi ciltte sürükleyin.","gen.w.real":"Gerçekçi göster","gen.w.realBack":"Yerleşimime dön","gen.w.realTag":"Gerçekçi önizleme","gen.w.realBusy":"Cilde yerleştiriliyor, yaklaşık 30 saniye...","gen.w.realNote":"Gerçekçilik modeli tarafından bu fotoğrafa çizildi.","gen.w.errPlaceLimit":"Bugünkü gerçekçi önizleme hakkınızı kullandınız. Günlük geçiş veya Pro daha fazlasını verir.","gen.w.toSheet":"Stencil'i hazırla","gen.w.vTattoo":"Dövme","gen.w.vStencil":"Stencil","gen.w.vSheet":"Baskı sayfası","gen.w.viewLabel":"Görünüm","gen.w.designL":"Tasarım","gen.w.stencilL":"Stencil","gen.w.empty":"Burada görmek için bir tasarım oluşturun","gen.w.example":"Örnek tasarım. Sizinki burada görünür.","gen.w.skinAlt":"Dövmeyi yerleştirmek için çıplak cilt","gen.w.modeDraw":"Çizgi çizim","gen.w.modeDrawHint":"Çizimler ve tasarımlar için.","gen.w.modePhoto":"Fotoğraf","gen.w.modePhotoHint":"Fotoğrafın kenarlarını bulur.","gen.w.detail":"Ayrıntı","gen.w.smooth":"Yumuşatma","gen.w.weight":"Çizgi kalınlığı","gen.w.specks":"Lekeleri temizle","gen.w.compare":"Tasarımı ve stencil'i karşılaştır","gen.w.kept":"Korunan","gen.w.lost":"Kaybolan","gen.w.added":"Eklenen","gen.w.width":"Kağıttaki genişlik (mm)","gen.w.sizeOut":"{inch} inç, 300 dpi'de {px} px","gen.w.dl":"PNG indir","gen.w.print":"Gerçek boyutta yazdır","gen.w.saved":"{mm} mm genişliğinde, 300 dpi olarak kaydedildi.","gen.w.popup":"Yazdırmak için açılır pencerelere izin verin, ya da PNG'yi indirip %100 ölçekte yazdırın.","gen.w.wm":"Ücretsiz indirmelerde küçük bir filigran bulunur.","gen.w.wmLink":"Günlük geçiş veya Pro bunu kaldırır.","gen.w.studioLink":"Daha fazla kontrole mi ihtiyacınız var? Studio'da açın","gen.w.a3h":"Yapıştırıldı. Bitti.","gen.w.a3p":"Koltuğa oturduğunuzda geriye yalnızca dövme kalır.","gen.w.a4h":"Şimdi kolay kısım geliyor.","gen.w.a4p":"Dövme sanatçınız zaten kararlaştırılmış, çizilmiş ve yerleştirilmiş bir planla başlar.","gen.w.cta":"Tasarımınızı oluşturun","gen.w.handsAlt":"Eldivenli eller omuza bir transfer stencil'i bastırıyor","gen.w.artistAlt":"Bir dövme sanatçısı stencil'li bir tasarımın üstünde dövme makinesi tutuyor","gen.w.machineAlt":"Bir stencil çizgisi üzerinde dövme makinesi iğnesinin yakın çekimi","gen.w.artH":"Sanatçılar için, aynı oda","gen.w.artP":"Kınayı tasarlayın ya da kaşları haritalayın, gerçek boyutta yazdırın; müşteriniz boş bir sayfaya değil, bir plana gelsin.","gen.w.hennaAlt":"Avuç içine kına çizilirken","gen.w.browAlt":"Cetvel ve kalemle haritalanan bir kaş","gen.w.hennaLink":"Stencil studio","gen.w.browLink":"Kaş haritalama","gen.w.removeExample":"Kaldır","gen.w.fineTune":"İnce ayar"};</script>
 <script src="/js/config.js"></script>
 <script src="/js/analytics.js"></script>
-<script src="/js/engine.js"></script>
 <script src="/js/unlock.js"></script>
 <script src="/js/png-util.js"></script>
 <script src="/js/gen-page.js"></script>
 <script>
 (function(){
-  var T=window.I18N||{}, C=window.SkinConfig||{};
-  /* ---------- tabs ---------- */
-  var views={tattoo:document.getElementById('v-tattoo'),brow:document.getElementById('v-brow')};
-  var tabs={tattoo:document.getElementById('t-tattoo'),brow:document.getElementById('t-brow')};
-  function show(n){ if(!views[n]) n='tattoo'; for(var k in views){ views[k].hidden=(k!==n); tabs[k].setAttribute('aria-pressed',String(k===n)); } }
-  function fromHash(){ var h=(location.hash||'').replace('#',''); if(h==='brow'||h==='tattoo'){ show(h); return; } var el=h&&document.getElementById(h); if(!el) return; for(var k in views){ if(views[k].contains(el)){ show(k); el.scrollIntoView(); } } }
-  tabs.tattoo.addEventListener('click',function(){ show('tattoo'); history.replaceState(null,'','#tattoo'); });
-  tabs.brow.addEventListener('click',function(){ show('brow'); history.replaceState(null,'','#brow'); });
-  window.addEventListener('hashchange',fromHash); fromHash();
+  var C=window.SkinConfig||{};
+  /* the brow tool used to be a tab here; old links to #brow go to its own page */
+  if(location.hash==='#brow') location.replace('/tr/brow/');
   var sel=document.getElementById('langSel'); if(sel) sel.addEventListener('change',function(){ location.href=sel.value; });
-
-  /* ---------- checkout buttons: real links when configured, else "opens soon" ---------- */
+  /* checkout buttons: real links when configured, else "opens soon" */
   var anyLive=false;
   [].forEach.call(document.querySelectorAll('a.buy'),function(a){
     var url=(C.checkout||{})[a.getAttribute('data-plan')];
@@ -681,108 +363,7 @@ footer .wrap{padding-block:28px}
     else { a.href='mailto:'+(C.notifyEmail||'')+'?subject=Checkout%20interest%20'+a.getAttribute('data-plan'); }
   });
   if(!anyLive){ var sn=document.getElementById('soonNote'); if(sn) sn.hidden=false; }
-
-  var E=window.SkinEngine; if(!E) return;
-  var ORDER=['dagger','mandala','lettering','orb'];
-  var cache={};
-  function label(n){ return T['sample.'+n]||E.samples[n].label; }
-  function prep(name,maxSide){
-    var key=name+'@'+maxSide; if(cache[key]) return cache[key];
-    var s=E.samples[name], big=s.draw(), c=E.fitToCanvas(big,big.width,big.height,maxSide), g=E.grayFromCanvas(c);
-    return (cache[key]={canvas:c,gray:g.gray,w:g.w,h:g.h,mode:s.mode});
-  }
-  function run(p,o){ return E.makeStencil(p.gray,p.w,p.h,o); }
-  function drawOrig(canvas,p){ canvas.width=p.w; canvas.height=p.h; canvas.getContext('2d').drawImage(p.canvas,0,0); }
-
-  /* ---------- hero demo ---------- */
-  /* The "before" is a sample drawing made to look like a phone photo (uneven light, tinted paper, grain), and the stencil is made from THAT image,
-     so the demo shows the engine coping with a real-world input rather than a perfect file. */
-  var cur='dagger', surface='skin', SKIN='#E2B08A', dOrig=document.getElementById('dOrig'), dOut=document.getElementById('dOut'), dStage=document.getElementById('dStage');
-  var dW=document.getElementById('dWeight'), dS=document.getElementById('dSens'), dSplit=document.getElementById('dSplit'), chips=document.getElementById('dChips');
-  var busy=false, photoCache={};
-  function photoLook(p){
-    var key=cur+'@'+p.w+'x'+p.h; if(photoCache[key]) return photoCache[key];
-    var c=document.createElement('canvas'); c.width=p.w; c.height=p.h; var x=c.getContext('2d'); x.drawImage(p.canvas,0,0);
-    var im=x.getImageData(0,0,p.w,p.h), d=im.data, seed=12345;
-    for(var yy=0;yy<p.h;yy++) for(var xx=0;xx<p.w;xx++){
-      var i=(yy*p.w+xx)*4, u=xx/p.w, v=yy/p.h, light=0.80+0.20*u-0.10*v;
-      var dx=u-0.5, dy=v-0.5, vig=1-0.5*(dx*dx+dy*dy);
-      seed=(seed*1664525+1013904223)>>>0; var n=((seed>>>16)&255)/255-0.5;
-      var ink=(255-d[i])/255, base=232-ink*205; /* paper is off-white and ink is dark grey, not pure black */
-      var val=(base*light*vig)+n*9;
-      d[i]=Math.max(0,Math.min(255,val+6)); d[i+1]=Math.max(0,Math.min(255,val+1)); d[i+2]=Math.max(0,Math.min(255,val-10));
-    }
-    x.putImageData(im,0,0);
-    var g=E.grayFromCanvas(c); return (photoCache[key]={canvas:c,gray:g.gray,w:g.w,h:g.h,mode:p.mode});
-  }
-  function demo(){
-    var p=photoLook(prep(cur,900)); drawOrig(dOrig,p); dStage.style.aspectRatio=p.w+'/'+p.h;
-    var r=run(p,{mode:p.mode,sens:+dS.value,smooth:0,weight:+dW.value,specks:30}); E.renderStencil(dOut,r.final,p.w,p.h,surface==='skin'?SKIN:null,null,r.alpha); E.crisp(dOrig); E.crisp(dOut); split();
-  }
-  var surf=document.getElementById('dSurface');
-  [].forEach.call(surf.children,function(b){ b.addEventListener('click',function(){ surface=b.getAttribute('data-s'); [].forEach.call(surf.children,function(x){ x.setAttribute('aria-pressed',String(x===b)); }); sched(); }); });
-  function split(){ var v=+dSplit.value; dOut.style.clipPath='inset(0 0 0 '+v+'%)'; document.getElementById('dHandle').style.left='calc('+v+'% - 1px)'; }
-  function sched(){ if(busy) return; busy=true; requestAnimationFrame(function(){ busy=false; demo(); }); }
-  ORDER.forEach(function(n,i){ var b=document.createElement('button'); b.type='button'; b.className='chip'; b.textContent=label(n); b.setAttribute('aria-pressed',String(i===0));
-    b.addEventListener('click',function(){ cur=n; [].forEach.call(chips.children,function(x){ x.setAttribute('aria-pressed','false'); }); b.setAttribute('aria-pressed','true');
-      dS.value=(E.samples[n].mode==='photo')?60:55; document.getElementById('dSensV').textContent=dS.value; sched(); }); chips.appendChild(b); });
-  dW.addEventListener('input',function(){ document.getElementById('dWeightV').textContent=dW.value; sched(); });
-  dS.addEventListener('input',function(){ document.getElementById('dSensV').textContent=dS.value; sched(); });
-  dSplit.addEventListener('input',split);
-  demo();
-
-  /* ---------- gallery ---------- */
-  var gal=document.getElementById('gallery');
-  ORDER.forEach(function(n){
-    var p=prep(n,1000), r=run(p,{mode:p.mode,sens:p.mode==='photo'?60:55,smooth:p.mode==='photo'?1:0,weight:3,specks:60});
-    var card=document.createElement('div'); card.className='gcard';
-    card.innerHTML='<div class="pr"><div><div class="cap2"></div><canvas></canvas></div><div><div class="cap2"></div><canvas></canvas></div></div><h3></h3><p></p>';
-    var cs=card.querySelectorAll('canvas'), caps=card.querySelectorAll('.cap2'); drawOrig(cs[0],p); E.renderStencil(cs[1],r.final,p.w,p.h,null,null,r.alpha);
-    caps[0].textContent=T['g.design']||'Design'; caps[1].textContent=T['g.stencil']||'Stencil';
-    card.querySelector('h3').textContent=label(n)+' ('+(p.mode==='photo'?T['g.modePhoto']:T['g.modeDraw'])+')'; card.querySelector('p').textContent=T['g.n.'+n]||''; gal.appendChild(card);
-  });
-
-  /* ---------- drift check ---------- */
-  (function(){
-    var p=prep('dagger',700), o={mode:'draw',sens:22,smooth:0,weight:2,specks:140}, r=run(p,o), c=document.getElementById('driftC');
-    E.renderStencil(c,r.final,p.w,p.h,null,null,r.alpha);
-    var d=E.driftCheck(E.referenceMask(p.gray,p.w,p.h,'draw'),r.final,p.w,p.h,2,true), tmp=document.createElement('canvas'); tmp.width=p.w; tmp.height=p.h; tmp.getContext('2d').putImageData(d.image,0,0);
-    c.getContext('2d').drawImage(tmp,0,0);
-    document.getElementById('dKept').textContent=d.kept.toFixed(1)+'%'; document.getElementById('dLost').textContent=d.lost.toFixed(1)+'%'; document.getElementById('dAdded').textContent=d.added.toFixed(1)+'%';
-  })();
-
-  /* ---------- skin tones ---------- */
-  (function(){
-    var p=prep('dagger',420), r=run(p,{mode:'draw',sens:55,smooth:0,weight:2,specks:40}), box=document.getElementById('skins');
-    ['#F6DCC9','#E8B98F','#C98E5F','#9A6240','#6B4126','#46281A'].forEach(function(t){ var c=document.createElement('canvas'); c.style.cssText='width:100%;height:auto;border-radius:6px;border:1px solid var(--line)'; E.renderStencil(c,r.final,p.w,p.h,t,null,r.alpha); box.appendChild(c); });
-  })();
-
-  /* ---------- true-size ruler ticks ---------- */
-  (function(){
-    var g=document.getElementById('rl'), ns='http://www.w3.org/2000/svg';
-    for(var i=0;i<=28;i++){ var x=40+i*10, ln=document.createElementNS(ns,'path'); ln.setAttribute('d','M'+x+' 226 V'+(i%5===0?216:221)); g.appendChild(ln); }
-  })();
-
-  /* ---------- do and don't, made with the tool ---------- */
-  (function(){
-    var box=document.getElementById('dd'), base=prep('dagger',520);
-    var PAIRS=[['d.p1.do','d.p1.dont','blur','d.p1.note'],['d.p2.do','d.p2.dont','lowcontrast','d.p2.note'],['d.p3.do','d.p3.dont','padded','d.p3.note']];
-    PAIRS.forEach(function(P){
-      var bad=E.degrade(base.canvas,P[2]), bg=E.grayFromCanvas(bad), o={mode:'draw',sens:55,smooth:0,weight:2,specks:40};
-      var good=E.makeStencil(base.gray,base.w,base.h,o), poor=E.makeStencil(bg.gray,bg.w,bg.h,o);
-      var card=document.createElement('div'); card.className='ddc'; card.innerHTML='<h3></h3><div class="pair2"><div class="cell do"><div class="tg"></div><div class="two"><canvas></canvas><canvas></canvas></div><p></p></div><div class="cell dont"><div class="tg"></div><div class="two"><canvas></canvas><canvas></canvas></div><p></p></div></div>';
-      var cs=card.querySelectorAll('canvas'), tg=card.querySelectorAll('.tg'), ps=card.querySelectorAll('p');
-      drawOrig(cs[0],base); E.renderStencil(cs[1],good.final,base.w,base.h,null,null,good.alpha);
-      cs[2].width=bg.w; cs[2].height=bg.h; cs[2].getContext('2d').drawImage(bad,0,0); E.renderStencil(cs[3],poor.final,bg.w,bg.h,null,null,poor.alpha);
-      for(var k=0;k<4;k++){ cs[k].style.cssText='width:100%;height:auto;border:1px solid var(--line);border-radius:5px;background:#fff'; }
-      card.querySelector('h3').textContent=T[P[0]]+' / '+T[P[1]];
-      tg[0].textContent=T['d.do']; tg[1].textContent=T['d.dont']; ps[0].textContent=T[P[0]]; ps[1].textContent=T[P[1]]+'. '+T[P[3]]; box.appendChild(card);
-    });
-  })();
-  /* once the page has laid out, redraw every picture at the size it is shown (see SkinEngine.crisp) */
-  requestAnimationFrame(function(){ [].forEach.call(document.querySelectorAll('canvas'),function(c){ if(!c.closest('.wsx')) E.crisp(c); });   /* the workstation canvases keep their size: they are redrawn by their own script */ });
 })();
 </script>
-
 </body>
 </html>

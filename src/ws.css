@@ -1,5 +1,5 @@
 /* buttons */
-.cta{display:inline-block;font:700 14px var(--body);letter-spacing:.03em;text-decoration:none;text-align:center;background:var(--stencil);color:#fff;border:1.5px solid var(--stencil);padding:13px 24px;border-radius:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.cta{display:inline-block;font:700 14px var(--body);letter-spacing:.03em;text-decoration:none;text-align:center;background:var(--stencil);color:#fff;border:1.5px solid var(--stencil);padding:13px 24px;border-radius:var(--r-btn);cursor:pointer;transition:transform .15s,box-shadow .15s}
 .cta:hover{box-shadow:0 10px 24px -12px rgba(79,53,200,.7)}.cta:active{transform:translateY(1px) scale(.99)}
 .cta.ghost{background:none;color:var(--ink);border-color:var(--ink)}.cta.ghost:hover{box-shadow:none;background:rgba(29,27,25,.05)}.cta.big{font-size:16px;padding:16px 30px}
 .cta:disabled{opacity:.45;cursor:default;transform:none;box-shadow:none}
@@ -73,3 +73,16 @@ input[type=range]{width:100%;accent-color:var(--stencil)}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}.pair figure{margin:0;position:relative}.pair img{width:100%;height:auto;display:block;aspect-ratio:4/5;object-fit:cover}
 .pair a{position:absolute;inset-inline:12px;bottom:12px;background:#fff;color:var(--ink);text-decoration:none;font:700 14px var(--body);padding:10px 14px}
 @media (max-width:620px){.pair{grid-template-columns:1fr}}
+
+.wstage .stagetag{display:flex;gap:10px;align-items:center}
+.wstage .stagetag .rm{font:700 12px var(--body);color:#fff;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:3px 10px;cursor:pointer;white-space:nowrap}
+.wstage .stagetag .rm:hover{background:rgba(255,255,255,.3)}
+.wstage{border-radius:var(--r-card)}
+textarea,.attbtn,.wseg button,.mmrow input{border-radius:14px}
+@supports (corner-shape:squircle){.cta{corner-shape:squircle;border-radius:34px}textarea,.attbtn,.wseg button,.mmrow input{corner-shape:squircle;border-radius:28px}.wstage{corner-shape:squircle;border-radius:56px}}
+.fine-tune{border:1.5px solid var(--line);border-radius:var(--r-btn);padding:2px 16px;background:rgba(255,255,255,.6)}
+.fine-tune summary{font:700 14px var(--body);cursor:pointer;padding:11px 0;list-style:none;display:flex;justify-content:space-between}
+.fine-tune summary::-webkit-details-marker{display:none}
+.fine-tune summary::after{content:"+";color:var(--stencil);font:500 20px/1 var(--body)}
+.fine-tune[open] summary::after{content:"2"}
+.fine-tune .ft{display:grid;gap:12px;padding:2px 0 16px}

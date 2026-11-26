@@ -12,7 +12,6 @@
    <div class="btnrow"><button class="cta" id="genBtn" type="button">{{s.gen.btn}}</button></div>
    <div id="genTs"></div>
    <p class="wnote" id="genStatus" role="status" aria-live="polite"></p>
-   <p class="wnote">{{s.gen.hint}}</p>
   </div>
   <div class="stp" id="st2"><h3><i>2</i>{{gen.w.s2}}</h3>
    <div class="map"><div><div class="vw" id="vw"><button type="button" aria-pressed="false" data-v="front">{{gen.w.front}}</button><button type="button" aria-pressed="true" data-v="back">{{gen.w.back}}</button></div><svg id="bmap" viewBox="0 0 160 340" role="group" aria-label="{{gen.w.bodyMap}}"></svg></div>
@@ -25,13 +24,14 @@
    <div class="btnrow"><button class="cta ghost" id="real" type="button">{{gen.w.real}}</button><button class="cta" id="toSheet" type="button">{{gen.w.toSheet}}</button></div>
    <p class="wnote" id="rnote">{{gen.w.dragHint}}</p>
   </div>
-  <div class="stp" id="st4"><h3><i>4</i>{{gen.w.s4}}</h3>
-   <div class="wseg" id="smode"><button type="button" aria-pressed="true" data-v="draw"><b>{{gen.w.modeDraw}}</b><span>{{gen.w.modeDrawHint}}</span></button><button type="button" aria-pressed="false" data-v="photo"><b>{{gen.w.modePhoto}}</b><span>{{gen.w.modePhotoHint}}</span></button></div>
+  <div class="stp off" id="st4"><h3><i>4</i>{{gen.w.s4}}</h3>
    <div class="row"><label for="sens">{{gen.w.detail}} <span id="sensV">68</span></label><input id="sens" type="range" min="1" max="100" value="68"></div>
+   <details class="fine-tune"><summary>{{gen.w.fineTune}}</summary><div class="ft"><div class="wseg" id="smode"><button type="button" aria-pressed="true" data-v="draw"><b>{{gen.w.modeDraw}}</b><span>{{gen.w.modeDrawHint}}</span></button><button type="button" aria-pressed="false" data-v="photo"><b>{{gen.w.modePhoto}}</b><span>{{gen.w.modePhotoHint}}</span></button></div>
    <div class="row"><label for="smooth">{{gen.w.smooth}} <span id="smoothV">0</span></label><input id="smooth" type="range" min="0" max="4" value="0"></div>
    <div class="row"><label for="weight">{{gen.w.weight}} <span id="weightV">2</span></label><input id="weight" type="range" min="1" max="6" value="2"></div>
    <div class="row"><label for="specks">{{gen.w.specks}} <span id="specksV">30</span></label><input id="specks" type="range" min="0" max="300" value="30"></div>
-   <div class="row"><label for="split">{{gen.w.compare}}</label><input id="split" type="range" min="0" max="100" value="50"></div>
+   
+   <div class="row"><label for="split">{{gen.w.compare}}</label><input id="split" type="range" min="0" max="100" value="50"></div></div></details>
    <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
    <div class="wstats"><span><u style="background:#1F7A4C"></u>{{gen.w.kept}} <b id="kept">-</b></span><span><u style="background:#B42318"></u>{{gen.w.lost}} <b id="lost">-</b></span><span><u style="background:#C98A00"></u>{{gen.w.added}} <b id="added">-</b></span></div>
    <div class="mmrow"><label for="mm">{{gen.w.width}}</label><input id="mm" type="number" min="10" max="600" step="1" value="88"><span class="wnote" id="sizeOut"></span></div>

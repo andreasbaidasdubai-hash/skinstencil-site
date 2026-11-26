@@ -107,6 +107,20 @@ function scopeCss(css, scope) {
 }
 const WS_TOKENS = '.wsx{--paper:#F4F1EA;--card:#FBFAF6;--ink:#1D1B19;--muted:#6F6A63;--line:rgba(29,27,25,.16);--stencil:#4F35C8;--stencil-soft:#E9E5F9;--ok:#1F7A4C;--bad:#B42318;color:var(--ink);background:var(--paper);color-scheme:light;font-size:17px;line-height:1.6}';
 const WS_CSS = WS_TOKENS + '\n' + scopeCss(read('src/ws.css'), '.wsx');
+// One header and one footer for every page, so the site reads as one site.
+function siteHead(l, S, page, lsel) {
+  const G = GUIDES[l.code], cur = k => (page === k ? ' aria-current="page"' : '');
+  return `<div class="sh"><div class="wrap"><a class="mark" href="${baseOf(l)}">skin<span>stencil</span></a><nav>` +
+    `<a href="${urlOf(l, 'studio')}"${cur('studio')}>Studio</a><a href="${urlOf(l, 'brow')}"${cur('brow')}>${ent(S['tab.brow'])}</a>` +
+    (G ? `<a href="${urlOf(l, 'guides')}"${cur('guides')}>${ent(G.ui.guides)}</a>` : '') +
+    `<a href="${baseOf(l)}#pricing">${ent(S['nav.pricing'])}</a>${lsel}</nav></div></div>`;
+}
+function siteFoot(l, S) {
+  const G = GUIDES[l.code];
+  return `<div class="sf"><div class="wrap"><div class="links"><a href="${urlOf(l, 'studio')}">Studio</a><a href="${urlOf(l, 'brow')}">${ent(S['tab.brow'])}</a>` +
+    (G ? `<a href="${urlOf(l, 'guides')}">${ent(G.ui.guides)}</a>` : '') + `<a href="${baseOf(l)}#pricing">${ent(S['nav.pricing'])}</a></div>` +
+    `<div><a href="/privacy.html">${S['ft.privacy']}</a> &middot; <a href="/terms.html">${S['ft.terms']}</a> &middot; <a href="mailto:${NOTIFY}">${NOTIFY}</a></div><div>${S['ft.note']}${l.code === 'en' ? '' : '<br>' + S['ft.mt']}</div></div></div>`;
+}
 const plain = s => String(s).replace(/<[^>]+>/g, '');
 const OFFERS = [{ '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Day pass', price: '4.99', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro monthly', price: '12', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro yearly', price: '79', priceCurrency: 'USD' }];
 function ldjsonBrow(S, l) {
@@ -133,7 +147,7 @@ function ldjson(S, l, page) {
   if (page === 'brow') return ldjsonBrow(S, l);
   if (page === 'gen') return ldjsonGen(S, l);
   if (page !== 'index') return '';
-  const faq = []; for (let i = 1; i <= 11; i++) if (S['q' + i + '.h']) faq.push({ '@type': 'Question', name: plain(S['q' + i + '.h']), acceptedAnswer: { '@type': 'Answer', text: plain(S['q' + i + '.p']) } });
+  const faq = ['gen.q1', 'q2', 'gen.q2', 'q7', 'gen.q4', 'q11'].filter(k => S[k + '.h']).map(k => ({ '@type': 'Question', name: plain(S[k + '.h']), acceptedAnswer: { '@type': 'Answer', text: plain(S[k + '.p']) } }));
   const app = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: 'Skinstencil', applicationCategory: 'DesignApplication', operatingSystem: 'Any (web browser)', url: SITE + urlOf(l, 'index'), inLanguage: l.code, description: plain(S['meta.desc']),
     offers: OFFERS };
   const wrap = o => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, '\\u003c') + '</script>';
@@ -236,9 +250,10 @@ for (const l of LANGS) {
       ldjson: ldjson(S, l, page),
       guidesNav: page === 'index' ? guidesNav(l) : '', guidesSection: page === 'index' ? guidesSection(l, 'tattoo', S) : '', guidesSectionBrow: page === 'index' ? guidesSection(l, 'brow', S) : '',
       browGuides: page === 'brow' ? browGuidesBlock(l, S) : '',
-      i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.', 'gen.w.', 's.gen.'] : page === 'brow' ? ['brow.', 's.dl.', 's.thanks', 'theme.'] : page === 'gen' ? ['s.gen.', 'gen.w.'] : ['s.', 'sample.']),
+      i18n_json: i18nJson(S, page === 'index' ? ['gen.w.', 's.gen.'] : page === 'brow' ? ['brow.', 's.dl.', 's.thanks', 'theme.'] : page === 'gen' ? ['s.gen.', 'gen.w.'] : ['s.', 'sample.']),
     };
     const fill = t => t.replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => { if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in workstation`); return vars[k]; });
+    vars.siteHead = siteHead(l, S, page === 'gen' ? 'home' : page, vars.langSelect); vars.siteFoot = siteFoot(l, S);
     vars.wsCss = WS_CSS; vars.wsMarkup = (page === 'gen' || page === 'index') ? fill(read('src/ws.part.html')) : '';
     let html = TPL[page].replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {
       if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in ${page} template`);
@@ -265,6 +280,7 @@ for (const l of LANGS) {
       guidesUrl: urlOf(l, 'guides'), guidesCurrent: r.page === 'guides' ? ' aria-current="page"' : '', uiGuides: ent(G.ui.guides), uiLanguage: ent(G.ui.language),
       i18n_json: JSON.stringify({ 'theme.label': G.ui.theme }).replace(/</g, '\u003c'),
     };
+    vars.siteHead = siteHead(l, S, r.page === 'guides' ? 'guides' : 'x', vars.langSelect); vars.siteFoot = siteFoot(l, S);
     const html = TPL.guide.replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {
       if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in guide template`);
       return vars[k];

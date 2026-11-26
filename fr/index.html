@@ -53,7 +53,6 @@
 <link rel="alternate" hreflang="pl" href="https://skinstencil.com/pl/">
 <link rel="alternate" hreflang="pl-PL" href="https://skinstencil.com/pl/">
 <link rel="alternate" hreflang="x-default" href="https://skinstencil.com/">
-<script src="/js/theme.js"></script>
 <meta property="og:title" content="Pochoir tatouage : dessin ou photo en calque | Skinstencil">
 <meta property="og:description" content="Générateur de pochoir gratuit dans votre navigateur. Transformez un dessin ou une photo en calque de tatouage net, imprimé en taille réelle. Rien n'est envoyé.">
 <meta property="og:type" content="website">
@@ -62,144 +61,50 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317161C'/%3E%3Cpath d='M16 5 L21 18 L16 22 L11 18 Z M14 23 H18 V28 H14 Z' fill='none' stroke='%23A99BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="/fonts/fonts.css">
 <style>
-/* Layout: a worksheet. Every picture on this page is real output of the free tool, drawn in your browser from sample designs. Ink-purple is the stencil colour; red marks lost lines and blue marks added lines in the drift check. Logical (inline-start/end) properties are used so right-to-left languages mirror correctly. */
-:root{
-  --paper:#F1F2EF; --card:#FAFAF8; --ink:#17161C; --muted:#5E5C68; --line:#D6D5DD;
-  --stencil:#4F35C8; --stencil-soft:#E6E2F8; --lost:#D2362B; --added:#1B6FE0; --ok:#1F7A4C; --warn:#9A5B00; --warn-bg:#FFF1D6; --good:#1F7A4C; --bad:#B42318;
-  --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
-  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --good:#6FD3A0; --bad:#FF8A80; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E;
-  --stencil:#A99BFF; --stencil-soft:#2A2547; --lost:#FF7A6E; --added:#6FA8FF; --ok:#6FD3A0; --warn:#F0B35A; --warn-bg:#33270F; --good:#6FD3A0; --bad:#FF8A80; color-scheme:dark}
-.themebtn{font:500 15px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 9px;cursor:pointer;line-height:1.2}.themebtn:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
-.seg{display:flex;gap:6px;margin:12px 0 0}
+/* The homepage is the tool (the workstation, shared with the generator page), then two short sections: pricing and questions. Everything else lives on its own page. */
+:root{--display:'Archivo','Arial Narrow',system-ui,sans-serif;--body:'Hanken Grotesk',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace}
 *{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--body);font-size:17px;line-height:1.6;margin:0;overflow-x:clip}
 html[lang="ar"] body{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
-.lostc{color:var(--lost)} .addc{color:var(--added)}
-.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.preview{background:var(--warn-bg);color:var(--warn);font-size:13px;border-bottom:1px solid var(--line)}
-.preview .wrap{padding-block:8px}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;flex-wrap:wrap}
-.mark{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:inherit;direction:ltr}
-.mark span{color:var(--stencil)}
-.topnav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.topnav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
-.topnav a:hover{color:var(--ink)}
+a{color:var(--stencil)}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.015em;margin:0;text-wrap:balance}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif;letter-spacing:0;line-height:1.35}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.langsel{font:500 13px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
-nav.tabs{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:3px}
-nav.tabs button{font:500 14px var(--body);color:var(--muted);background:none;border:0;border-radius:7px;padding:7px 14px;cursor:pointer}
-nav.tabs button[aria-pressed="true"]{background:var(--stencil-soft);color:var(--ink)}
-nav.tabs button:focus-visible,.btn:focus-visible,summary:focus-visible,.chip:focus-visible,.langsel:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
-h1,h2,h3{font-family:var(--display);font-stretch:84%;letter-spacing:-.012em;line-height:1.1;margin:0;text-wrap:balance}
-html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif;font-stretch:100%;letter-spacing:0;line-height:1.3}
-h1{font-size:clamp(36px,6.2vw,64px);font-weight:800}
-h2{font-size:clamp(26px,3.8vw,38px);font-weight:700}
-h3{font-size:20px;font-weight:700;letter-spacing:-.01em}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;padding-block:40px 56px}
-.sub{font-size:19px;color:var(--muted);max-width:34em;margin:18px 0 26px}
-.lead{font-size:18px;color:var(--muted);max-width:40em;margin:12px 0 0}
-.ctas{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;text-align:center;text-decoration:none;font:600 15px var(--body);border-radius:10px;padding:13px 20px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
-.btn.alt{background:none;color:var(--ink)}
-.note{font-size:13px;color:var(--muted);margin-top:14px;font-family:var(--mono)}
-.facts{display:flex;gap:10px 18px;flex-wrap:wrap;margin:22px 0 0;padding:0;list-style:none;font-size:14px;color:var(--muted)}
-.facts li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--stencil);margin-inline-end:8px;vertical-align:middle}
-.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-.caption{font:400 12px var(--mono);color:var(--muted);margin:10px 2px 0}
-section{padding-block:56px}
-section+section{border-top:1px solid var(--line)}
-.eyebrow{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--stencil);margin-bottom:10px}
-.stage{position:relative;width:100%;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;touch-action:none;direction:ltr}
-.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.handle{position:absolute;top:0;bottom:0;width:2px;background:var(--stencil);pointer-events:none;box-shadow:0 0 0 1px rgba(255,255,255,.7)}
-.tagL,.tagR{position:absolute;top:8px;font:500 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:rgba(20,19,24,.78);color:#fff;border-radius:5px;padding:2px 6px;pointer-events:none}
-.tagL{left:8px}.tagR{right:8px}
-input[type=range]{width:100%;accent-color:var(--stencil)}
-.chips{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 4px}
-.chip{font:500 13px var(--body);color:var(--muted);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:6px 11px;cursor:pointer}
-.chip[aria-pressed="true"]{background:var(--stencil-soft);color:var(--ink);border-color:var(--stencil)}
-.ctl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
-.ctl label{display:flex;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:2px}
-.ctl label span{font:500 11px var(--mono);color:var(--muted)}
-.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:28px}
-.gcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
-.gcard .pr{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.gcard canvas,.mini canvas{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:#fff;image-rendering:auto}
-.gcard h3{font-size:16px;margin:10px 0 2px}
-.gcard p{margin:0;font-size:13px;color:var(--muted)}
-.cap2{font:500 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.feat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;margin-top:44px}
-.feat.rev .ftext{order:2}
-.ftext p{color:var(--muted);margin:10px 0 0}
-.ftext ul{margin:12px 0 0;padding-inline-start:18px;color:var(--muted)}
-.ftext li{margin-bottom:4px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
-.stat{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
-.stat b{display:block;font:600 18px var(--mono)}
-.stat span{font-size:12px;color:var(--muted)}
-.skins{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
-.dd{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
-.ddc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
-.ddc h3{font-size:16px;margin-bottom:10px}
-.pair2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.cell .tg{font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
-.cell.do .tg{color:var(--good)}.cell.dont .tg{color:var(--bad)}
-.cell .two{display:grid;grid-template-columns:1fr 1fr;gap:4px}
-.cell p{font-size:12px;color:var(--muted);margin:6px 0 0}
-.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px;position:relative}
-.steps::before{content:"";position:absolute;left:0;right:0;top:10px;height:8px;background:repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 12px);}
-.step{padding-top:30px}
-.step .tick{font:500 12px var(--mono);color:var(--stencil)}
-.step p{color:var(--muted);margin:8px 0 0}
-.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:26px}
-.three div{border-inline-start:2px solid var(--stencil);padding-inline-start:16px}
-.three p{color:var(--muted);margin:8px 0 0}
-.tag{display:inline-block;font:500 11px var(--mono);background:var(--stencil-soft);color:var(--ink);border-radius:5px;padding:2px 7px;margin-inline-start:6px;vertical-align:middle}
-.road{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:26px}
-.road .col{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
-.road ul{margin:10px 0 0;padding:0;list-style:none;color:var(--muted)}
-.road li{padding:5px 0;padding-inline-start:22px;position:relative}
-.road .now li::before{content:"";position:absolute;inset-inline-start:3px;top:11px;width:10px;height:6px;border-inline-start:2px solid var(--good);border-bottom:2px solid var(--good);transform:rotate(-45deg)}
-.road .next li::before{content:"";position:absolute;inset-inline-start:3px;top:11px;width:9px;height:9px;border:2px dashed var(--muted);border-radius:50%}
-.plans4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:26px}
-.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column}
-.plan.hl{border-color:var(--stencil);box-shadow:0 0 0 2px var(--stencil-soft)}
-.plan .price{font:700 32px var(--display);letter-spacing:-.02em;margin:10px 0 2px;direction:ltr;text-align:start}
-.plan .per{font-size:14px;color:var(--muted)}
-.plan .alt{font-size:13px;color:var(--muted);margin-top:2px}
-.plan ul{margin:14px 0 18px;padding-inline-start:18px;color:var(--muted);flex:1}
-.seo{display:grid;gap:8px 40px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:18px}.seo h3{font-size:18px;margin:14px 0 0}.seo p{color:var(--muted);margin:6px 0 0}
-details{border-bottom:1px solid var(--line);padding:14px 0}
-summary{font-weight:600;cursor:pointer}
-details p{color:var(--muted);margin:8px 0 0;max-width:46em}
-footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-footer a{color:inherit}
-footer .wrap{padding-block:28px}
-.view[hidden]{display:none!important}
-@media (max-width:1000px){.plans4{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:900px){
-  .hero .wrap,.feat{grid-template-columns:minmax(0,1fr);gap:28px}
-  .feat.rev .ftext{order:0}
-  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .dd,.road{grid-template-columns:minmax(0,1fr)}
-  .steps,.three{grid-template-columns:minmax(0,1fr)}
-  .steps::before{display:none}.step{padding-top:0}
-}
-@media (max-width:560px){.plans4{grid-template-columns:minmax(0,1fr)}.topnav{gap:8px;width:100%;justify-content:space-between}.topnav>a{display:none}header .wrap{padding-block:12px}.topnav{flex-wrap:nowrap}nav.tabs button{padding:7px 9px;font-size:13px}.langsel{max-width:96px}}
-@media (prefers-reduced-motion:no-preference){nav.tabs button{transition:background .15s}}
-.gl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px}
-.glink{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
-.glink:hover{border-color:var(--stencil)}.glink h3{font-size:17px}.glink p{margin:6px 0 0;font-size:14px;color:var(--muted)}
-#guides .note a{color:var(--stencil)}
-@media (max-width:900px){.gl{grid-template-columns:minmax(0,1fr)}}
+button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,[role=button]:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
 [hidden]{display:none!important}
+.wsx{--wspad:8px}
+/* pricing: three plain cards, the middle one is the one most people want */
+.sec{padding:clamp(56px,8vw,104px) max(18px,env(safe-area-inset-left,0px))}
+.sec .in{max-width:1060px;margin:0 auto}
+.sec h2{font-weight:800;font-size:clamp(30px,4.2vw,52px);line-height:1.05;margin:0 0 12px}
+.sec .sub{font-size:18px;color:#4A463F;margin:0 0 34px;max-width:46ch}
+.plans3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.pl{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:28px 26px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px}
+.pl.hl{border-color:var(--stencil);background:var(--stencil-soft);box-shadow:0 30px 60px -36px rgba(79,53,200,.55)}
+.pl h3{font:800 19px var(--display)}
+.pl .pr{font:800 clamp(38px,4vw,50px)/1 var(--display);letter-spacing:-.02em}
+.pl .pr small{font:500 15px var(--body);color:var(--muted);letter-spacing:0;margin-inline-start:8px}
+.pl ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;align-content:start}
+.pl li{padding-inline-start:26px;position:relative;font-size:15.5px;line-height:1.4}
+.pl li::before{content:"";position:absolute;inset-inline-start:2px;top:.42em;width:12px;height:7px;border-inline-start:2.5px solid var(--stencil);border-bottom:2.5px solid var(--stencil);transform:rotate(-45deg)}
+.pl .acts{display:grid;gap:8px}
+.pl .btn{display:block;text-align:center;text-decoration:none;font:700 15px var(--body);padding:14px 18px;border:1.5px solid var(--stencil);cursor:pointer}
+.pl .btn.alt{border-color:rgba(29,27,25,.5)}
+.pl .or{font-size:14px;color:var(--muted);margin:-8px 0 0}
+.fine{font-size:13.5px;color:var(--muted);margin:22px 0 0}
+@media (max-width:860px){.plans3{grid-template-columns:1fr;max-width:460px}}
+/* questions */
+.qa{display:grid;gap:10px;max-width:760px}
+.qa details{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:4px 22px}
+.qa summary{font:700 17px var(--body);cursor:pointer;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font:500 24px/1 var(--body);color:var(--stencil)}
+.qa details[open] summary::after{content:"\2212"}
+.qa p{margin:0 0 16px;color:#4A463F}
 .wsx{--paper:#F4F1EA;--card:#FBFAF6;--ink:#1D1B19;--muted:#6F6A63;--line:rgba(29,27,25,.16);--stencil:#4F35C8;--stencil-soft:#E9E5F9;--ok:#1F7A4C;--bad:#B42318;color:var(--ink);background:var(--paper);color-scheme:light;font-size:17px;line-height:1.6}
-.wsx .cta{display:inline-block;font:700 14px var(--body);letter-spacing:.03em;text-decoration:none;text-align:center;background:var(--stencil);color:#fff;border:1.5px solid var(--stencil);padding:13px 24px;border-radius:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.wsx .cta{display:inline-block;font:700 14px var(--body);letter-spacing:.03em;text-decoration:none;text-align:center;background:var(--stencil);color:#fff;border:1.5px solid var(--stencil);padding:13px 24px;border-radius:var(--r-btn);cursor:pointer;transition:transform .15s,box-shadow .15s}
 .wsx .cta:hover{box-shadow:0 10px 24px -12px rgba(79,53,200,.7)}
 .wsx .cta:active{transform:translateY(1px) scale(.99)}
 .wsx .cta.ghost{background:none;color:var(--ink);border-color:var(--ink)}
@@ -322,29 +227,31 @@ footer .wrap{padding-block:28px}
 @media (max-width:620px){
 .wsx .pair{grid-template-columns:1fr}
 }
+.wsx .wstage .stagetag{display:flex;gap:10px;align-items:center}
+.wsx .wstage .stagetag .rm{font:700 12px var(--body);color:#fff;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:3px 10px;cursor:pointer;white-space:nowrap}
+.wsx .wstage .stagetag .rm:hover{background:rgba(255,255,255,.3)}
+.wsx .wstage{border-radius:var(--r-card)}
+.wsx textarea,.wsx .attbtn,.wsx .wseg button,.wsx .mmrow input{border-radius:14px}
+.wsx @supports (corner-shape:squircle){.cta{corner-shape:squircle;border-radius:34px}
+.wsx textarea,.wsx .attbtn,.wsx .wseg button,.wsx .mmrow input{corner-shape:squircle;border-radius:28px}
+.wsx .wstage{corner-shape:squircle;border-radius:56px}
+.wsx }
+.fine-tune{border:1.5px solid var(--line);border-radius:var(--r-btn);padding:2px 16px;background:rgba(255,255,255,.6)}
+.wsx .fine-tune summary{font:700 14px var(--body);cursor:pointer;padding:11px 0;list-style:none;display:flex;justify-content:space-between}
+.wsx .fine-tune summary::-webkit-details-marker{display:none}
+.wsx .fine-tune summary::after{content:"+";color:var(--stencil);font:500 20px/1 var(--body)}
+.wsx .fine-tune[open] summary::after{content:"2"}
+.wsx .fine-tune .ft{display:grid;gap:12px;padding:2px 0 16px}
 
 
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/fr/","inLanguage":"fr","description":"Générateur de pochoir gratuit dans votre navigateur. Transformez un dessin ou une photo en calque de tatouage net, imprimé en taille réelle. Rien n'est envoyé.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"12","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"79","priceCurrency":"USD"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"C'est vraiment gratuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui. L'outil du studio est gratuit et sans inscription. Les téléchargements de l'outil gratuit portent un petit filigrane et sont limités à 800 pixels. Un pass journée ou Pro retire le filigrane et débloque la pleine taille."}},{"@type":"Question","name":"Comment retirer le filigrane ?","acceptedAnswer":{"@type":"Answer","text":"Choisissez un pass journée ou Pro et payez sur la page de paiement sécurisée. Vous recevez une clé de licence par e-mail. Collez-la dans le studio et le filigrane disparaît. La clé est vérifiée auprès de notre prestataire de paiement et conservée uniquement dans votre navigateur."}},{"@type":"Question","name":"C'est de l'IA ?","acceptedAnswer":{"@type":"Answer","text":"Le filtre du pochoir est du traitement d'image classique : il trouve les lignes par les contours et la luminosité, retire les taches et règle l'épaisseur du trait. Il reste rapide, privé et prévisible sur les dessins nets."}},{"@type":"Question","name":"Conservez-vous mes dessins ?","acceptedAnswer":{"@type":"Answer","text":"Non. L'outil gratuit fonctionne dans votre navigateur et n'envoie pas vos images. Fermer la page les efface."}},{"@type":"Question","name":"Puis-je importer n'importe quel tatouage ?","acceptedAnswer":{"@type":"Answer","text":"Seulement des dessins que vous avez réalisés ou dont vous avez le droit de vous servir. Nous retirons un contenu quand un titulaire de droits le demande."}},{"@type":"Question","name":"Quels fichiers fonctionnent ?","acceptedAnswer":{"@type":"Answer","text":"JPG, PNG et WebP. Les grandes images sont réduites pour garder l'outil rapide. Une photo à plat et bien éclairée d'un dessin donne de bons résultats."}},{"@type":"Question","name":"Comment imprimer un stencil ?","acceptedAnswer":{"@type":"Answer","text":"Téléchargez le PNG et imprimez-le à la taille que vous avez réglée. Les fichiers payants portent la taille 300 dpi, donc le logiciel d'impression utilise la taille réelle. Les imprimantes thermiques à stencil impriment sur du papier de transfert thermique. Les imprimantes à jet d'encre demandent de l'encre à stencil et du papier de transfert pour jet d'encre."}},{"@type":"Question","name":"Et pour une manche complète ou une grande pièce ?","acceptedAnswer":{"@type":"Answer","text":"Travaillez motif par motif. Les petites parties gardent bien mieux leur détail qu'une seule image énorme."}},{"@type":"Question","name":"Est-ce que ça marche sur tablette ou téléphone ?","acceptedAnswer":{"@type":"Answer","text":"Oui, dans le navigateur. Une application mobile pourrait suivre."}},{"@type":"Question","name":"Pourquoi mes hachures fines disparaissent-elles ?","acceptedAnswer":{"@type":"Answer","text":"Une sensibilité basse et une forte suppression des impuretés suppriment volontairement les lignes fines. Augmentez la sensibilité, réduisez la suppression des impuretés, et regardez le calque de dérive pour voir ce qui a été perdu."}},{"@type":"Question","name":"Puis-je être remboursé ?","acceptedAnswer":{"@type":"Answer","text":"Le pass d'un jour n'est pas remboursable, car la clé de licence fonctionne dès réception. Pro est remboursé intégralement dans les 14 jours suivant le premier paiement : écrivez à hello@skinstencil.com. Les renouvellements ne sont pas remboursés, et vous pouvez annuler avant le suivant à tout moment. Vos droits légaux ne sont pas affectés."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Le générateur de tatouage IA est-il gratuit ?","acceptedAnswer":{"@type":"Answer","text":"Tu peux l’essayer gratuitement : les visiteurs obtiennent quelques motifs par jour sans compte. Un pass jour ou Pro relève fortement la limite quotidienne. Transformer un motif en pochoir fonctionne comme dans le Studio : les téléchargements gratuits portent un filigrane, qu’une clé de licence supprime."}},{"@type":"Question","name":"Comment retirer le filigrane ?","acceptedAnswer":{"@type":"Answer","text":"Choisissez un pass journée ou Pro et payez sur la page de paiement sécurisée. Vous recevez une clé de licence par e-mail. Collez-la dans le studio et le filigrane disparaît. La clé est vérifiée auprès de notre prestataire de paiement et conservée uniquement dans votre navigateur."}},{"@type":"Question","name":"Puis-je utiliser le motif pour un vrai tatouage ?","acceptedAnswer":{"@type":"Answer","text":"Vois-le comme un point de départ. Montre-le à ton tatoueur ou ta tatoueuse : c’est à lui ou elle de juger s’il convient à la zone et à la taille, et de vérifier qu’il ne copie pas le travail de quelqu’un d’autre."}},{"@type":"Question","name":"Comment imprimer un stencil ?","acceptedAnswer":{"@type":"Answer","text":"Téléchargez le PNG et imprimez-le à la taille que vous avez réglée. Les fichiers payants portent la taille 300 dpi, donc le logiciel d'impression utilise la taille réelle. Les imprimantes thermiques à stencil impriment sur du papier de transfert thermique. Les imprimantes à jet d'encre demandent de l'encre à stencil et du papier de transfert pour jet d'encre."}},{"@type":"Question","name":"Que devient ma description ?","acceptedAnswer":{"@type":"Answer","text":"Elle est envoyée à notre service de génération et au fournisseur d’images qui dessine le motif, selon leurs propres conditions. Nous ne conservons ni ta description ni le motif. N’y écris ni données personnelles ni noms. L’étape du pochoir s’exécute sur ton propre appareil."}},{"@type":"Question","name":"Puis-je être remboursé ?","acceptedAnswer":{"@type":"Answer","text":"Le pass d'un jour n'est pas remboursable, car la clé de licence fonctionne dès réception. Pro est remboursé intégralement dans les 14 jours suivant le premier paiement : écrivez à hello@skinstencil.com. Les renouvellements ne sont pas remboursés, et vous pouvez annuler avant le suivant à tout moment. Vos droits légaux ne sont pas affectés."}}]}</script>
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
-
-<header><div class="wrap">
-  <a class="mark" href="/fr/">skin<span>stencil</span></a>
-  <div class="topnav">
-    <a href="/fr/ai-tattoo-generator/">Générateur IA</a><a href="#examples">Exemples</a><a href="#pricing">Tarifs</a><a href="#guides">Guides</a><a href="#faq">Questions</a>
-    <label class="vh" for="langSel">Langue</label>
-    <select class="langsel" id="langSel" aria-label="Langue"><option value="/" lang="en">English</option><option value="/de/" lang="de">Deutsch</option><option value="/fr/" selected lang="fr">Français</option><option value="/es/" lang="es">Español</option><option value="/pt/" lang="pt">Português</option><option value="/it/" lang="it">Italiano</option><option value="/nl/" lang="nl">Nederlands</option><option value="/tr/" lang="tr">Türkçe</option><option value="/ar/" lang="ar">العربية</option><option value="/pl/" lang="pl">Polski</option></select>
-    <nav class="tabs" aria-label="Product">
-      <button id="t-tattoo" aria-pressed="true" type="button">Tatouage</button>
-      <button id="t-brow" aria-pressed="false" type="button">Mapping des sourcils</button>
-    </nav>
-  </div>
-</div></header>
-
-<!-- ============ TATTOO ============ -->
-<main id="v-tattoo" class="view">
+<div class="sh"><div class="wrap"><a class="mark" href="/fr/">skin<span>stencil</span></a><nav><a href="/fr/studio/">Studio</a><a href="/fr/brow/">Mapping des sourcils</a><a href="/fr/guides/">Guides</a><a href="/fr/#pricing">Tarifs</a><select class="langsel" id="langSel" aria-label="Langue"><option value="/" lang="en">English</option><option value="/de/" lang="de">Deutsch</option><option value="/fr/" selected lang="fr">Français</option><option value="/es/" lang="es">Español</option><option value="/pt/" lang="pt">Português</option><option value="/it/" lang="it">Italiano</option><option value="/nl/" lang="nl">Nederlands</option><option value="/tr/" lang="tr">Türkçe</option><option value="/ar/" lang="ar">العربية</option><option value="/pl/" lang="pl">Polski</option></select></nav></div></div>
+<main>
 <div class="wsx l-fr d-ltr">
 <div class="ws" id="ws" role="region" aria-label="Le générateur IA et créateur de stencils pour tatouages et sourcils"><div class="hbg" aria-hidden="true"><video id="vDoor" muted loop playsinline preload="metadata" poster="/assets/scenes/door.jpg" src="/assets/door.mp4"></video></div>
 <div class="wsin" id="genBox" data-studio="/fr/studio/">
@@ -359,7 +266,6 @@ footer .wrap{padding-block:28px}
    <div class="btnrow"><button class="cta" id="genBtn" type="button">Créer le motif</button></div>
    <div id="genTs"></div>
    <p class="wnote" id="genStatus" role="status" aria-live="polite"></p>
-   <p class="wnote">Une IA le dessine à partir de tes mots, puis il devient un pochoir ici. Les visiteurs ont quelques motifs par jour ; un pass jour ou Pro en donne bien plus.</p>
   </div>
   <div class="stp" id="st2"><h3><i>2</i>Choisir où</h3>
    <div class="map"><div><div class="vw" id="vw"><button type="button" aria-pressed="false" data-v="front">Face</button><button type="button" aria-pressed="true" data-v="back">Dos</button></div><svg id="bmap" viewBox="0 0 160 340" role="group" aria-label="Schéma du corps"></svg></div>
@@ -372,13 +278,14 @@ footer .wrap{padding-block:28px}
    <div class="btnrow"><button class="cta ghost" id="real" type="button">Voir en réaliste</button><button class="cta" id="toSheet" type="button">Créer le stencil</button></div>
    <p class="wnote" id="rnote">Faites glisser le tatouage sur la peau pour le placer.</p>
   </div>
-  <div class="stp" id="st4"><h3><i>4</i>Créer le stencil</h3>
-   <div class="wseg" id="smode"><button type="button" aria-pressed="true" data-v="draw"><b>Dessin au trait</b><span>Pour les dessins et les motifs.</span></button><button type="button" aria-pressed="false" data-v="photo"><b>Photo</b><span>Repère les contours d'une photo.</span></button></div>
+  <div class="stp off" id="st4"><h3><i>4</i>Créer le stencil</h3>
    <div class="row"><label for="sens">Détail <span id="sensV">68</span></label><input id="sens" type="range" min="1" max="100" value="68"></div>
+   <details class="fine-tune"><summary>Réglages fins</summary><div class="ft"><div class="wseg" id="smode"><button type="button" aria-pressed="true" data-v="draw"><b>Dessin au trait</b><span>Pour les dessins et les motifs.</span></button><button type="button" aria-pressed="false" data-v="photo"><b>Photo</b><span>Repère les contours d'une photo.</span></button></div>
    <div class="row"><label for="smooth">Lissage <span id="smoothV">0</span></label><input id="smooth" type="range" min="0" max="4" value="0"></div>
    <div class="row"><label for="weight">Épaisseur du trait <span id="weightV">2</span></label><input id="weight" type="range" min="1" max="6" value="2"></div>
    <div class="row"><label for="specks">Supprimer les impuretés <span id="specksV">30</span></label><input id="specks" type="range" min="0" max="300" value="30"></div>
-   <div class="row"><label for="split">Comparer le dessin et le stencil</label><input id="split" type="range" min="0" max="100" value="50"></div>
+   
+   <div class="row"><label for="split">Comparer le dessin et le stencil</label><input id="split" type="range" min="0" max="100" value="50"></div></div></details>
    <div class="meter" aria-hidden="true"><i id="meterFill"></i></div>
    <div class="wstats"><span><u style="background:#1F7A4C"></u>Conservé <b id="kept">-</b></span><span><u style="background:#B42318"></u>Perdu <b id="lost">-</b></span><span><u style="background:#C98A00"></u>Ajouté <b id="added">-</b></span></div>
    <div class="mmrow"><label for="mm">Largeur sur papier (mm)</label><input id="mm" type="number" min="10" max="600" step="1" value="88"><span class="wnote" id="sizeOut"></span></div>
@@ -403,277 +310,52 @@ footer .wrap{padding-block:28px}
  <div class="pair"><figure><img alt="Henné dessiné sur une paume" loading="lazy" src="/assets/scenes/henna.jpg"><a href="/fr/studio/">Studio de stencils</a></figure><figure><img alt="Un sourcil mappé à la règle et au crayon" loading="lazy" src="/assets/scenes/brow.jpg"><a href="/fr/brow/">Mapping des sourcils</a></figure></div></div></div>
 </div>
 
-<div class="hero"><div class="wrap">
-  <div>
-    <div class="eyebrow">Pour les tatoueurs et les studios</div>
-    <h1>Des stencils fidèles à votre trait, prêts à imprimer.</h1>
-    <p class="sub">Transformez votre propre dessin, croquis ou flash en stencil net en quelques secondes. Gratuit, rien à installer, rien n'est envoyé. Les téléchargements portent un petit filigrane tant que vous ne le retirez pas.</p>
-    <div class="ctas">
-      <a class="btn" href="/fr/studio/">Ouvrir l'outil gratuit</a>
-      <a class="btn alt" href="#pricing">Voir les tarifs</a>
-    </div>
-    <ul class="facts"><li>Fonctionne dans votre navigateur</li><li>Sans inscription</li><li>Vos images ne quittent jamais votre appareil</li></ul>
-  </div>
-  <div class="panel" id="demo">
-    <div class="stage" id="dStage" style="aspect-ratio:7/9">
-      <canvas id="dOrig"></canvas><canvas id="dOut"></canvas>
-      <div class="handle" id="dHandle" style="left:calc(50% - 1px)"></div>
-      <span class="tagL">Photo</span><span class="tagR">Stencil</span>
-    </div>
-    <input id="dSplit" type="range" min="0" max="100" value="50" aria-label="Faites glisser pour comparer le dessin et le stencil">
-    <div class="seg" id="dSurface" role="group" aria-label="Afficher le pochoir sur"><button type="button" class="chip" data-s="skin" aria-pressed="true">Sur la peau</button><button type="button" class="chip" data-s="paper" aria-pressed="false">Sur papier</button></div>
-    <div class="chips" id="dChips" role="group" aria-label="Dessins d'exemple"></div>
-    <div class="ctl">
-      <div><label for="dWeight">Épaisseur du trait <span id="dWeightV">2</span></label><input id="dWeight" type="range" min="1" max="6" value="2"></div>
-      <div><label for="dSens">Sensibilité <span id="dSensV">55</span></label><input id="dSens" type="range" min="1" max="100" value="55"></div>
-    </div>
-    <p class="caption">En direct : l'outil gratuit sur un dessin photographié sous une lumière inégale. Bougez les curseurs.</p>
-  </div>
-</div></div>
 
-<section id="examples"><div class="wrap">
-  <div class="eyebrow">Résultats réels</div>
-  <h2>Pas de maquettes. Chaque image ici est produite par l'outil, maintenant, dans votre navigateur.</h2>
-  <p class="lead">Quatre dessins d'exemple, créés en code pour que chacun puisse les utiliser, passés dans le même filtre que celui du studio. À gauche le dessin, à droite le stencil.</p>
-  <div class="gallery" id="gallery"></div>
-  <p class="note">Le filtre est du traitement d'image classique (contours et seuils), pas un modèle d'IA. Il est fort sur les dessins nets et plus faible sur les photos aux ombres douces.</p>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Ce que vous obtenez</div>
-  <h2>Des outils qui vous disent ce qui est arrivé à vos lignes.</h2>
-
-  <div class="feat">
-    <div class="ftext">
-      <h3>Contrôle de dérive : voyez chaque ligne modifiée</h3>
-      <p>Un stencil n'est utile que s'il reste fidèle à votre dessin. Le contrôle de dérive compare le stencil aux lignes détectées dans votre original et colore la différence.</p>
-      <ul><li>Le <b class="lostc">rouge</b> marque une ligne perdue.</li><li>Le <b class="addc">bleu</b> marque de l'encre ajoutée.</li><li>Les chiffres indiquent la part conservée, perdue et ajoutée.</li></ul>
-    </div>
-    <div class="panel"><div class="mini"><canvas id="driftC"></canvas></div>
-      <div class="stats"><div class="stat"><b id="dKept">-</b><span>lignes conservées</span></div><div class="stat"><b id="dLost">-</b><span>lignes perdues</span></div><div class="stat"><b id="dAdded">-</b><span>encre ajoutée</span></div></div>
-      <p class="caption">Ici la sensibilité est réglée bas, donc les hachures fines ont disparu. Le contrôle montre exactement où.</p></div>
-  </div>
-
-  <div class="feat rev">
-    <div class="ftext">
-      <h3>Aperçu sur la peau : jugez sur une vraie carnation</h3>
-      <p>Des lignes bien lisibles sur du blanc peuvent disparaître sur la peau. Voyez le même stencil sur six carnations avant d'imprimer.</p>
-      <ul><li>Les lignes se fondent dans la carnation comme le ferait un transfert.</li><li>Choisissez un trait plus épais si elles paraissent pâles.</li></ul>
-    </div>
-    <div class="panel"><div class="skins" id="skins"></div><p class="caption">Le même stencil sur six carnations, dessiné en direct.</p></div>
-  </div>
-
-  <div class="feat">
-    <div class="ftext">
-      <h3>Taille réelle, en millimètres</h3>
-      <p>Réglez la largeur sur la peau : l'outil affiche la taille exacte et les pixels nécessaires à 300 dpi, avec une règle le long de l'image. Les téléchargements payants intègrent la taille 300 dpi dans le fichier, donc votre logiciel d'impression l'imprime à la taille prévue.</p>
-      <ul><li>Largeur en mm en entrée, hauteur et taille en pixels en sortie.</li><li>Téléchargement PNG et impression à taille réelle.</li></ul>
-    </div>
-    <div class="panel">
-      <svg viewBox="0 0 360 250" role="img" aria-label="Un stencil avec une règle graduée en millimètres et la taille 88 par 113 millimètres" style="display:block;width:100%;height:auto;direction:ltr">
-        <g fill="none" stroke="var(--stencil)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M180 20 L200 110 L180 132 L160 110 Z"/><path d="M180 20 V132" stroke-width="1.6"/><rect x="146" y="132" width="68" height="9" rx="4"/><rect x="174" y="141" width="12" height="50" rx="3"/><circle cx="180" cy="203" r="10"/></g>
-        <g stroke="currentColor" fill="none" stroke-width="1"><path d="M40 226 H320"/></g>
-        <g id="rl" stroke="currentColor" stroke-width="1"></g>
-        <text x="180" y="246" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" text-anchor="middle">88 mm</text>
-        <g stroke="currentColor" opacity=".7" stroke-width="1"><path d="M270 20 V214 M265 20 H275 M265 214 H275"/></g>
-        <text x="284" y="120" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" transform="rotate(90 284 120)" text-anchor="middle">113 mm</text>
-      </svg>
-      <p class="caption">88 x 113 mm font 1039 x 1336 px à 300 dpi.</p>
-    </div>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Meilleure source, meilleur stencil</div>
-  <h2>À faire et à éviter, montré avec l'outil lui-même.</h2>
-  <p class="lead">Chaque paire donne à l'outil une bonne et une mauvaise version du même dessin. Les mauvaises versions sont faites exprès, pour que vous voyiez ce qui se passe.</p>
-  <div class="dd" id="dd"></div>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Comment ça marche</div>
-  <h2>Importer, vérifier, télécharger.</h2>
-  <div class="steps">
-    <div class="step"><div class="tick">0 mm</div><h3>Importez votre dessin</h3><p>Un dessin que vous avez réalisé ou dont vous avez le droit de vous servir. Une photo d'un dessin convient.</p></div>
-    <div class="step"><div class="tick">40 mm</div><h3>Comparez avec votre original</h3><p>Réglez l'épaisseur du trait et la sensibilité, contrôlez la dérive, essayez une carnation, fixez la taille en millimètres.</p></div>
-    <div class="step"><div class="tick">88 mm</div><h3>Téléchargez</h3><p>Les téléchargements gratuits portent un filigrane. Retirez-le en un clic quand vous êtes prêt à imprimer pour un client.</p></div>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Conçu autour de ce dont les artistes se plaignent</div>
-  <h2>Honnête par conception.</h2>
-  <div class="three">
-    <div><h3>Fidèle à votre dessin</h3><p>Le contrôle de dérive montre ce qui a changé, donc un stencil n'ajoute ni ne retire jamais une ligne en silence.</p></div>
-    <div><h3>Le prix d'abord</h3><p>Le filigrane est la seule chose que le gratuit vous coûte. Les prix s'affichent avant de payer, et vous pouvez résilier à tout moment.</p></div>
-    <div><h3>Pensé pour les studios <span class="tag">en développement</span></h3><p>Plusieurs artistes, un seul abonnement, et l'accord du client et son consentement enregistrés avec chaque stencil.</p></div>
-  </div>
-</div></section>
-
-<section id="pricing"><div class="wrap">
-  <div class="eyebrow">Tarifs</div>
+<section class="sec" id="pricing"><div class="in">
   <h2>Gratuit avec filigrane. Ne payez que pour le retirer.</h2>
-  <p class="lead">L'outil est gratuit. Les téléchargements gratuits portent un petit filigrane et s'arrêtent à 800 pixels. Payez pour retirer le filigrane et obtenir le fichier pleine taille, à taille réelle.</p>
-  <div class="plans4">
-    <div class="plan"><h3>Gratuit</h3><div class="price">$0</div><div class="per">&nbsp;</div>
+  <p class="sub">L'outil est gratuit. Les téléchargements gratuits portent un petit filigrane et s'arrêtent à 800 pixels. Payez pour retirer le filigrane et obtenir le fichier pleine taille, à taille réelle.</p>
+  <div class="plans3">
+    <div class="pl"><h3>Gratuit</h3><div class="pr">$0</div>
       <ul><li>Stencils illimités</li><li>Tous les réglages, contrôle de dérive, aperçu sur la peau</li><li>Filigrane sur les téléchargements, jusqu'à 800 px</li></ul>
-      <a class="btn" href="/fr/studio/">Ouvrir l'outil gratuit</a></div>
-    <div class="plan"><h3>Pass journée</h3><div class="price">$4.99</div><div class="per">24 heures</div>
+      <div class="acts"><a class="btn alt" href="#ws">Ouvrir l'outil gratuit</a></div></div>
+    <div class="pl"><h3>Pass journée</h3><div class="pr">$4.99<small>24 heures</small></div>
       <ul><li>Sans filigrane</li><li>Jusqu'à 4000 px, taille 300 dpi intégrée au fichier</li><li>Un seul paiement, sans abonnement</li></ul>
-      <a class="btn alt buy" data-plan="day" href="#">Retirer le filigrane pour une journée</a></div>
-    <div class="plan hl"><h3>Pro</h3><div class="price">$12</div><div class="per">par mois</div><div class="alt">ou $79 par an</div>
+      <div class="acts"><a class="btn alt buy" data-plan="day" href="#">Retirer le filigrane pour une journée</a></div></div>
+    <div class="pl hl"><h3>Pro</h3><div class="pr">$12<small>par mois</small></div>
       <ul><li>Tout ce que contient le pass journée</li><li>Les nouvelles fonctions au fur et à mesure</li><li>Résiliable à tout moment</li></ul>
-      <a class="btn buy" data-plan="month" href="#">Passer Pro, mensuel</a>
-      <a class="btn alt buy" data-plan="year" href="#" style="margin-top:8px">Passer Pro, annuel</a></div>
-    <div class="plan"><h3>Studio <span class="tag">en développement</span></h3><div class="price">à partir de $49</div><div class="per">par mois</div>
-      <ul><li>Plusieurs artistes, une seule facture</li><li>Accord et consentement du client</li></ul>
-      <a class="btn alt" href="mailto:hello@skinstencil.com?subject=Studio%20pricing%20interest">Prévenez-moi à l'ouverture</a></div>
+      <div class="acts"><a class="btn buy" data-plan="month" href="#">Passer Pro, mensuel</a><p class="or">ou $79 par an</p><a class="btn alt buy" data-plan="year" href="#">Passer Pro, annuel</a></div></div>
   </div>
-  <p class="note">Prix en dollars américains. Les taxes sont gérées au paiement par notre prestataire de paiement.</p>
-  <p class="note" id="soonNote" hidden>Le paiement ouvre bientôt. Prévenez-moi quand ce sera le cas.</p>
+  <p class="fine">Prix en dollars américains. Les taxes sont gérées au paiement par notre prestataire de paiement.</p>
+  <p class="fine" id="soonNote" hidden>Le paiement ouvre bientôt. Prévenez-moi quand ce sera le cas.</p>
 </div></section>
 
-<section id="about"><div class="wrap">
-  <div class="eyebrow">Le pochoir de tatouage, expliqué</div>
-  <h2>Un générateur de pochoir qui garde votre trait.</h2>
-  <div class="seo">
-    <div><h3>Qu'est-ce qu'un pochoir de tatouage ?</h3><p>Un pochoir de tatouage, aussi appelé calque de tatouage ou transfert, est le contour d'un dessin imprimé pour que le tatoueur puisse le poser sur la peau avant la première aiguille. Un bon calque garde l'épaisseur de trait de l'original, supprime la texture du papier et les ombres, et fait exactement la taille du futur tatouage.</p></div>
-    <div><h3>Comment transformer un dessin ou une photo en pochoir de tatouage</h3><p>Importez un scan, une planche de flash ou une photo de votre dessin prise au téléphone. Skinstencil trace les lignes dans votre navigateur, et vous réglez la sensibilité, le lissage et l'épaisseur du trait jusqu'à ce que l'aperçu corresponde à votre dessin. Passez du mode dessin, pour l'encre sur papier, au mode photo, pour les images avec des tons. Le résultat est un trait noir net sur fond blanc, prêt à exporter.</p></div>
-    <div><h3>Imprimez en taille réelle, sur papier thermique ou classique</h3><p>Indiquez la largeur en millimètres et la page d'impression ouvre le calque exactement à cette taille. Les téléchargements débloqués vont jusqu'à 4000 px et portent une taille de 300 dpi dans le PNG, pour que la bonne taille arrive dans votre logiciel d'impression. Utilisez-le avec une imprimante thermique de pochoirs, ou imprimez-le et repassez-le sur du papier de transfert.</p></div>
-    <div><h3>Pour les tatoueurs, les apprentis et les clients qui ont leur propre dessin</h3><p>Utilisez-le pour du flash, du lettering, du linework, des mandalas et des créations sur mesure. Les pochoirs sont créés sur votre appareil et vos images ne sont pas envoyées. L'outil gratuit ajoute un filigrane et télécharge jusqu'à 800 px. Un pass jour ou Pro retire le filigrane et lève la limite de taille.</p></div>
-  </div>
-</div></section>
-
-<section id="guides"><div class="wrap">
-  <h2>Guides du pochoir de tatouage</h2>
-  <p class="lead">Comment créer un pochoir, l'imprimer à taille réelle et le mettre sur papier.</p>
-  <div class="gl"><a class="glink" href="/fr/guides/tattoo-stencil-from-photo/"><h3>Créer un pochoir de tatouage depuis une photo ou un dessin</h3><p>D'une source nette à un pochoir au trait propre, avec le contrôle d'écart pour voir ce qui a été perdu.</p></a><a class="glink" href="/fr/guides/tattoo-stencil-size-true-size-print/"><h3>Taille du pochoir : imprimer à taille réelle</h3><p>Des millimètres aux pixels à 300 dpi, un petit tableau, et comment vérifier l'impression.</p></a><a class="glink" href="/fr/guides/tattoo-stencil-transfer-methods/"><h3>Mettre un pochoir sur papier : thermique, calque, impression</h3><p>Un aperçu neutre des approches de transfert courantes et de quand un fichier au trait propre compte.</p></a></div>
-  <p class="note"><a href="/fr/guides/">Guides</a></p>
-</div></section>
-<section id="faq"><div class="wrap">
-  <div class="eyebrow">Questions</div>
+<section class="sec" id="faq" style="padding-top:0"><div class="in">
   <h2>Avant d'essayer.</h2>
-  <div style="margin-top:18px">
-    <details><summary>C'est vraiment gratuit ?</summary><p>Oui. L'outil du studio est gratuit et sans inscription. Les téléchargements de l'outil gratuit portent un petit filigrane et sont limités à 800 pixels. Un pass journée ou Pro retire le filigrane et débloque la pleine taille.</p></details>
+  <div class="qa">
+    <details><summary>Le générateur de tatouage IA est-il gratuit ?</summary><p>Tu peux l’essayer gratuitement : les visiteurs obtiennent quelques motifs par jour sans compte. Un pass jour ou Pro relève fortement la limite quotidienne. Transformer un motif en pochoir fonctionne comme dans le Studio : les téléchargements gratuits portent un filigrane, qu’une clé de licence supprime.</p></details>
     <details><summary>Comment retirer le filigrane ?</summary><p>Choisissez un pass journée ou Pro et payez sur la page de paiement sécurisée. Vous recevez une clé de licence par e-mail. Collez-la dans le studio et le filigrane disparaît. La clé est vérifiée auprès de notre prestataire de paiement et conservée uniquement dans votre navigateur.</p></details>
-    <details><summary>C'est de l'IA ?</summary><p>Le filtre du pochoir est du traitement d'image classique : il trouve les lignes par les contours et la luminosité, retire les taches et règle l'épaisseur du trait. Il reste rapide, privé et prévisible sur les dessins nets.</p></details>
-    <details><summary>Conservez-vous mes dessins ?</summary><p>Non. L'outil gratuit fonctionne dans votre navigateur et n'envoie pas vos images. Fermer la page les efface.</p></details>
-    <details><summary>Puis-je importer n'importe quel tatouage ?</summary><p>Seulement des dessins que vous avez réalisés ou dont vous avez le droit de vous servir. Nous retirons un contenu quand un titulaire de droits le demande.</p></details>
-    <details><summary>Quels fichiers fonctionnent ?</summary><p>JPG, PNG et WebP. Les grandes images sont réduites pour garder l'outil rapide. Une photo à plat et bien éclairée d'un dessin donne de bons résultats.</p></details>
+    <details><summary>Puis-je utiliser le motif pour un vrai tatouage ?</summary><p>Vois-le comme un point de départ. Montre-le à ton tatoueur ou ta tatoueuse : c’est à lui ou elle de juger s’il convient à la zone et à la taille, et de vérifier qu’il ne copie pas le travail de quelqu’un d’autre.</p></details>
     <details><summary>Comment imprimer un stencil ?</summary><p>Téléchargez le PNG et imprimez-le à la taille que vous avez réglée. Les fichiers payants portent la taille 300 dpi, donc le logiciel d'impression utilise la taille réelle. Les imprimantes thermiques à stencil impriment sur du papier de transfert thermique. Les imprimantes à jet d'encre demandent de l'encre à stencil et du papier de transfert pour jet d'encre.</p></details>
-    <details><summary>Et pour une manche complète ou une grande pièce ?</summary><p>Travaillez motif par motif. Les petites parties gardent bien mieux leur détail qu'une seule image énorme.</p></details>
-    <details><summary>Est-ce que ça marche sur tablette ou téléphone ?</summary><p>Oui, dans le navigateur. Une application mobile pourrait suivre.</p></details>
-    <details><summary>Pourquoi mes hachures fines disparaissent-elles ?</summary><p>Une sensibilité basse et une forte suppression des impuretés suppriment volontairement les lignes fines. Augmentez la sensibilité, réduisez la suppression des impuretés, et regardez le calque de dérive pour voir ce qui a été perdu.</p></details>
+    <details><summary>Que devient ma description ?</summary><p>Elle est envoyée à notre service de génération et au fournisseur d’images qui dessine le motif, selon leurs propres conditions. Nous ne conservons ni ta description ni le motif. N’y écris ni données personnelles ni noms. L’étape du pochoir s’exécute sur ton propre appareil.</p></details>
     <details><summary>Puis-je être remboursé ?</summary><p>Le pass d'un jour n'est pas remboursable, car la clé de licence fonctionne dès réception. Pro est remboursé intégralement dans les 14 jours suivant le premier paiement : écrivez à hello@skinstencil.com. Les renouvellements ne sont pas remboursés, et vous pouvez annuler avant le suivant à tout moment. Vos droits légaux ne sont pas affectés.</p></details>
   </div>
 </div></section>
 </main>
+<div class="sf"><div class="wrap"><div class="links"><a href="/fr/studio/">Studio</a><a href="/fr/brow/">Mapping des sourcils</a><a href="/fr/guides/">Guides</a><a href="/fr/#pricing">Tarifs</a></div><div><a href="/privacy.html">Confidentialité</a> &middot; <a href="/terms.html">Conditions</a> &middot; <a href="mailto:hello@skinstencil.com">hello@skinstencil.com</a></div><div>La confidentialité et les conditions sont en anglais.<br>Cette page a été traduite automatiquement. Si quelque chose se lit mal, dites-le-nous.</div></div></div>
 
-<!-- ============ BROW ============ -->
-<main id="v-brow" class="view" hidden>
-<div class="hero"><div class="wrap">
-  <div>
-    <div class="eyebrow">Pour les professionnels du sourcil et du maquillage permanent</div>
-    <h1>Cartographiez les sourcils sur la photo de la cliente et imprimez le guide grandeur nature.</h1>
-    <p class="sub">Chargez une photo de face. Le visage est détecté sur votre appareil et les repères de départ, d'arc et de fin apparaissent, prêts à être déplacés. Lisez les mesures en millimètres et imprimez le guide grandeur nature.</p>
-    <div class="ctas">
-      <a class="btn" href="/fr/brow/">Ouvrir le mapping sourcils</a>
-      <a class="btn alt" href="#brow-how">Comment ça marche</a>
-    </div>
-    <p class="note">Gratuit à l'essai. Les photos restent sur votre appareil.</p>
-  </div>
-  <div class="panel">
-    <svg viewBox="0 0 400 300" role="img" aria-label="Illustration : les trois lignes du mapping des sourcils tracées depuis l'aile du nez sur un contour simplifié d'œil et de sourcil, avec le départ, l'arc et la fin repérés par S, A et E." style="display:block;width:100%;height:auto;direction:ltr">
-      <title>Illustration : les trois lignes du mapping des sourcils tracées depuis l'aile du nez sur un contour simplifié d'œil et de sourcil, avec le départ, l'arc et la fin repérés par S, A et E.</title>
-      <g fill="none" stroke="currentColor" stroke-width="1" opacity=".3"><path d="M20 150 H380" stroke-dasharray="2 5"/><path d="M200 60 V282"/></g>
-      <g id="brow-half" fill="none">
-        <g stroke="currentColor" stroke-width="1.6" opacity=".7">
-          <path d="M62 150 Q107 122 152 150 Q107 172 62 150 Z"/>
-          <circle cx="108" cy="150" r="12"/>
-          <path d="M152 252 Q176 270 200 264"/>
-        </g>
-        <g stroke="currentColor" stroke-width="1.4" opacity=".8"><path d="M101 150 H115 M108 143 V157"/></g>
-        <path d="M152 252 V90" stroke="#1B6FE0" stroke-width="2"/>
-        <path d="M152 252 L63 90" stroke="#D2362B" stroke-width="2" stroke-dasharray="9 5"/>
-        <path d="M152 252 L9 90" stroke="#1F7A4C" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"/>
-        <path d="M168 111 H12" stroke="var(--stencil)" stroke-width="1.4" stroke-dasharray="2 4" stroke-linecap="round"/>
-        <path d="M152 111 Q100 90 65 93 Q42 96 28 111" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
-        <circle cx="152" cy="252" r="4.5" fill="var(--card)" stroke="currentColor" stroke-width="1.6"/>
-        <circle cx="152" cy="111" r="9" fill="#1B6FE0"/><circle cx="65" cy="93" r="9" fill="#D2362B"/><circle cx="28" cy="111" r="9" fill="#1F7A4C"/>
-      </g>
-      <use href="#brow-half" transform="translate(400 0) scale(-1 1)"/>
-      <g font-family="IBM Plex Mono, monospace" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">
-        <text x="152" y="115">S</text><text x="65" y="97">A</text><text x="28" y="115">E</text>
-        <text x="248" y="115">S</text><text x="335" y="97">A</text><text x="372" y="115">E</text>
-      </g>
-      <g font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" text-anchor="middle">
-        <text x="152" y="80" fill="#1B6FE0">1</text><text x="63" y="80" fill="#D2362B">2</text><text x="9" y="80" fill="#1F7A4C">3</text>
-        <text x="248" y="80" fill="#1B6FE0">1</text><text x="337" y="80" fill="#D2362B">2</text><text x="391" y="80" fill="#1F7A4C">3</text>
-      </g>
-    </svg>
-    <p class="caption"><b>Illustration.</b> Les lignes de repère sur un contour simplifié, pas une vraie photo de cliente.</p>
-  </div>
-</div></div>
-
-<section id="brow-how"><div class="wrap">
-  <div class="eyebrow">Comment ça marche</div>
-  <h2>Photo, ajuster, imprimer.</h2>
-  <div class="steps">
-    <div class="step"><div class="tick">1</div><h3>Charger une photo de face</h3><p>Confirmez que le client a donné son accord. Le visage est détecté sur votre appareil et les repères sont tracés dessus.</p></div>
-    <div class="step"><div class="tick">2</div><h3>Faire glisser les points</h3><p>Déplacez le départ, l'arc et la fin, ou n'importe quel repère, et les lignes et les mesures suivent.</p></div>
-    <div class="step"><div class="tick">3</div><h3>Imprimer grandeur nature</h3><p>Saisissez l'écart pupillaire ou placez une carte, puis téléchargez un PNG ou imprimez le guide à sa largeur en millimètres.</p></div>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <h2>Les lignes classiques, mesurées.</h2>
-  <p class="sub" style="margin-bottom:0">Trois lignes depuis l'aile du nez : droit vers le haut pour le départ, par le bord externe de l'iris pour l'arc, et par le coin externe de l'œil pour la fin. L'outil indique largeur, hauteur d'arc, angle de la queue et écart de niveau en millimètres. Ce sont des repères de dessin classiques et c'est vous qui décidez.</p>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Confidentialité</div>
-  <h2>La photo reste sur votre appareil.</h2>
-  <p class="sub" style="margin-bottom:0">Le modèle de visage s'exécute dans votre navigateur et est servi par ce site. La photo n'est ni envoyée ni conservée, et il n'y a aucun cookie. Nous vous demandons de confirmer que le client a accepté l'utilisation de la photo. Nous ne faisons aucune promesse médicale ou de résultat : le mapping est une aide au dessin.</p>
-</div></section>
-
-<section><div class="wrap">
-  <div class="eyebrow">Tarifs</div>
-  <h2>Une seule offre pour les deux outils.</h2>
-  <p class="sub">Le mapping des sourcils est gratuit à l'essai. Les téléchargements gratuits portent un filigrane et sont limités en taille. Un pass journée ou Pro retire le filigrane, dans cet outil et dans l'outil de pochoirs de tatouage.</p>
-  <div class="ctas"><a class="btn alt" href="#pricing">Voir les offres</a><a class="btn" href="/fr/brow/">Ouvrir le mapping sourcils</a></div>
-</div></section>
-
-<section id="guides-brow"><div class="wrap">
-  <h2>Guides sur la cartographie des sourcils</h2>
-  <p class="lead">Comment placer départ, arc et fin sur une photo, puis mettre à l'échelle et imprimer grandeur nature.</p>
-  <div class="gl"><a class="glink" href="/fr/guides/brow-mapping-on-a-photo-start-arch-end/"><h3>Cartographie des sourcils sur photo</h3><p>Les trois lignes classiques depuis la narine, et comment placer le départ, l'arc et la fin sur la photo d'une cliente.</p></a><a class="glink" href="/fr/guides/brow-mapping-measurements-scale-and-print-true-size/"><h3>Mesures du mapping sourcils et impression à taille réelle</h3><p>L'écart pupillaire ou une carte pour l'échelle, ce que signifie chaque mesure et comment imprimer le guide à sa taille réelle.</p></a></div>
-  <p class="note"><a href="/fr/guides/">Guides</a></p>
-</div></section>
-</main>
-
-<footer><div class="wrap"><a href="/privacy.html">Confidentialité</a> &middot; <a href="/terms.html">Conditions</a> &middot; <a href="mailto:hello@skinstencil.com">hello@skinstencil.com</a><br>La confidentialité et les conditions sont en anglais.<br>Cette page a été traduite automatiquement. Si quelque chose se lit mal, dites-le-nous.</div></footer>
-
-<script>window.I18N={"sample.dagger":"Dague","sample.mandala":"Mandala","sample.lettering":"Lettering","sample.orb":"Sphère ombrée","g.design":"Dessin","g.stencil":"Stencil","g.modeDraw":"Mode Dessin","g.modePhoto":"Mode Photo","g.n.dagger":"Contours conservés, ombres converties en hachures.","g.n.mandala":"Pétales fins et centre hachuré.","g.n.lettering":"Écriture et fioritures avec une épaisseur propre.","g.n.orb":"Le mode Photo repère les contours des formes dans les ombres douces.","d.eyebrow":"Meilleure source, meilleur stencil","d.h2":"À faire et à éviter, montré avec l'outil lui-même.","d.lead":"Chaque paire donne à l'outil une bonne et une mauvaise version du même dessin. Les mauvaises versions sont faites exprès, pour que vous voyiez ce qui se passe.","d.do":"À faire","d.dont":"À éviter","d.or":"ou","d.p1.do":"Net, haute résolution","d.p1.dont":"Flou","d.p1.note":"Une image floue perd d'abord ses lignes fines.","d.p2.do":"Bon contraste","d.p2.dont":"Faible contraste","d.p2.note":"Des lignes pâles sur fond pâle sont perdues ou brisées.","d.p3.do":"Bien cadré","d.p3.dont":"Beaucoup de vide","d.p3.note":"Les petits sujets perdent du détail. Recadrez.","s.gen.h":"Créer un motif","s.gen.label":"Décris le tatouage","s.gen.ph":"un loup au trait fin avec un croissant de lune","s.gen.bold":"Franc","s.gen.detail":"Détails fins","s.gen.btn":"Créer le motif","s.gen.busy":"Ton motif est en cours de dessin, environ 20 secondes...","s.gen.hint":"Une IA le dessine à partir de tes mots, puis il devient un pochoir ici. Les visiteurs ont quelques motifs par jour ; un pass jour ou Pro en donne bien plus.","s.gen.left":"Encore {n} aujourd’hui","s.gen.errShort":"Décris-le d’abord en quelques mots.","s.gen.errLimitFree":"Tu as utilisé les motifs gratuits du jour. Un pass jour ou Pro en donne bien plus.","s.gen.errLimitPaid":"Tu as atteint la limite du jour. Elle se renouvelle demain.","s.gen.errBudget":"Le générateur est en pause pour aujourd’hui. Réessaie demain.","s.gen.errUpstream":"Le motif n’a pas pu être créé et rien n’a été décompté. Réessaie.","s.gen.errNetwork":"Pas de connexion au générateur. Réessaie.","s.gen.errBot":"Nous n’avons pas pu confirmer que tu es une personne. Recharge la page et réessaie.","gen.w.browNav":"Sourcils","gen.w.s1":"Décrire","gen.w.s2":"Choisir où","gen.w.s3":"Personnaliser","gen.w.s4":"Créer le stencil","gen.w.attach":"Ajouter une image en exemple","gen.w.attachAlt":"Votre image d'exemple","gen.w.attachRemove":"Retirer l'image","gen.w.refInspire":"S'en inspirer","gen.w.refInspireHint":"Un nouveau motif dans le même esprit.","gen.w.refTrace":"La refaire en traits","gen.w.refTraceHint":"Garde votre image et nettoie les traits.","gen.w.errBig":"Choisissez une image de moins de 12 Mo.","gen.w.errImg":"Ce fichier n'est pas une image que nous pouvons lire.","gen.w.front":"Face","gen.w.back":"Dos","gen.w.bodyMap":"Schéma du corps","gen.w.tapPart":"Touchez une partie du corps","gen.w.p.shoulder":"Omoplate","gen.w.p.back":"Dos","gen.w.p.forearm":"Avant-bras","gen.w.p.arm":"Bras","gen.w.p.chest":"Poitrine","gen.w.p.ribs":"Côtes","gen.w.p.thigh":"Cuisse","gen.w.p.calf":"Mollet","gen.w.toneLabel":"Carnation","gen.w.t.t1":"Très claire","gen.w.t.t2":"Claire","gen.w.t.t3":"Olive claire","gen.w.t.t4":"Hâlée","gen.w.t.t5":"Brun profond","gen.w.t.t6":"Très foncée","gen.w.size":"Taille","gen.w.turn":"Pivoter","gen.w.dragHint":"Faites glisser le tatouage sur la peau pour le placer.","gen.w.real":"Voir en réaliste","gen.w.realBack":"Revenir à mon placement","gen.w.realTag":"Aperçu réaliste","gen.w.realBusy":"Placement sur la peau, environ 30 secondes...","gen.w.realNote":"Dessiné par le modèle de réalisme sur cette photo.","gen.w.errPlaceLimit":"Vous avez utilisé l'aperçu réaliste du jour. Un pass journée ou Pro en donne plus.","gen.w.toSheet":"Créer le stencil","gen.w.vTattoo":"Tatouage","gen.w.vStencil":"Stencil","gen.w.vSheet":"Planche","gen.w.viewLabel":"Vue","gen.w.designL":"Dessin","gen.w.stencilL":"Stencil","gen.w.empty":"Créez un dessin pour le voir ici","gen.w.example":"Dessin d'exemple. Le vôtre apparaît ici.","gen.w.skinAlt":"Peau nue pour placer le tatouage","gen.w.modeDraw":"Dessin au trait","gen.w.modeDrawHint":"Pour les dessins et les motifs.","gen.w.modePhoto":"Photo","gen.w.modePhotoHint":"Repère les contours d'une photo.","gen.w.detail":"Détail","gen.w.smooth":"Lissage","gen.w.weight":"Épaisseur du trait","gen.w.specks":"Supprimer les impuretés","gen.w.compare":"Comparer le dessin et le stencil","gen.w.kept":"Conservé","gen.w.lost":"Perdu","gen.w.added":"Ajouté","gen.w.width":"Largeur sur papier (mm)","gen.w.sizeOut":"{inch} po, {px} px à 300 dpi","gen.w.dl":"Télécharger le PNG","gen.w.print":"Imprimer à taille réelle","gen.w.saved":"Enregistré en {mm} mm de large, 300 dpi.","gen.w.popup":"Autorisez les fenêtres surgissantes pour imprimer, ou téléchargez le PNG et imprimez-le à 100 %.","gen.w.wm":"Les téléchargements gratuits portent un petit filigrane.","gen.w.wmLink":"Un pass journée ou Pro le retire.","gen.w.studioLink":"Besoin de plus de contrôle ? Ouvrez-le dans le Studio","gen.w.a3h":"Appliqué. Terminé.","gen.w.a3p":"Quand vous vous installez sur le fauteuil, il ne reste que le tatouage.","gen.w.a4h":"Place à la partie facile.","gen.w.a4p":"Votre tatoueur part d'un plan déjà validé, dessiné et placé.","gen.w.cta":"Créer votre dessin","gen.w.handsAlt":"Mains gantées pressant un stencil de transfert sur une épaule","gen.w.artistAlt":"Un tatoueur tenant une machine à tatouer au-dessus d'un motif stencilé","gen.w.machineAlt":"Gros plan de l'aiguille d'une machine à tatouer sur un trait de stencil","gen.w.artH":"Pour les artistes, la même pièce","gen.w.artP":"Dessinez le henné ou mappez les sourcils, imprimez à taille réelle, et votre client arrive devant un plan, pas devant une page blanche.","gen.w.hennaAlt":"Henné dessiné sur une paume","gen.w.browAlt":"Un sourcil mappé à la règle et au crayon","gen.w.hennaLink":"Studio de stencils","gen.w.browLink":"Mapping des sourcils"};</script>
+<script>window.I18N={"s.gen.h":"Créer un motif","s.gen.label":"Décris le tatouage","s.gen.ph":"un loup au trait fin avec un croissant de lune","s.gen.bold":"Franc","s.gen.detail":"Détails fins","s.gen.btn":"Créer le motif","s.gen.busy":"Ton motif est en cours de dessin, environ 20 secondes...","s.gen.hint":"Une IA le dessine à partir de tes mots, puis il devient un pochoir ici. Les visiteurs ont quelques motifs par jour ; un pass jour ou Pro en donne bien plus.","s.gen.left":"Encore {n} aujourd’hui","s.gen.errShort":"Décris-le d’abord en quelques mots.","s.gen.errLimitFree":"Tu as utilisé les motifs gratuits du jour. Un pass jour ou Pro en donne bien plus.","s.gen.errLimitPaid":"Tu as atteint la limite du jour. Elle se renouvelle demain.","s.gen.errBudget":"Le générateur est en pause pour aujourd’hui. Réessaie demain.","s.gen.errUpstream":"Le motif n’a pas pu être créé et rien n’a été décompté. Réessaie.","s.gen.errNetwork":"Pas de connexion au générateur. Réessaie.","s.gen.errBot":"Nous n’avons pas pu confirmer que tu es une personne. Recharge la page et réessaie.","gen.w.browNav":"Sourcils","gen.w.s1":"Décrire","gen.w.s2":"Choisir où","gen.w.s3":"Personnaliser","gen.w.s4":"Créer le stencil","gen.w.attach":"Ajouter une image en exemple","gen.w.attachAlt":"Votre image d'exemple","gen.w.attachRemove":"Retirer l'image","gen.w.refInspire":"S'en inspirer","gen.w.refInspireHint":"Un nouveau motif dans le même esprit.","gen.w.refTrace":"La refaire en traits","gen.w.refTraceHint":"Garde votre image et nettoie les traits.","gen.w.errBig":"Choisissez une image de moins de 12 Mo.","gen.w.errImg":"Ce fichier n'est pas une image que nous pouvons lire.","gen.w.front":"Face","gen.w.back":"Dos","gen.w.bodyMap":"Schéma du corps","gen.w.tapPart":"Touchez une partie du corps","gen.w.p.shoulder":"Omoplate","gen.w.p.back":"Dos","gen.w.p.forearm":"Avant-bras","gen.w.p.arm":"Bras","gen.w.p.chest":"Poitrine","gen.w.p.ribs":"Côtes","gen.w.p.thigh":"Cuisse","gen.w.p.calf":"Mollet","gen.w.toneLabel":"Carnation","gen.w.t.t1":"Très claire","gen.w.t.t2":"Claire","gen.w.t.t3":"Olive claire","gen.w.t.t4":"Hâlée","gen.w.t.t5":"Brun profond","gen.w.t.t6":"Très foncée","gen.w.size":"Taille","gen.w.turn":"Pivoter","gen.w.dragHint":"Faites glisser le tatouage sur la peau pour le placer.","gen.w.real":"Voir en réaliste","gen.w.realBack":"Revenir à mon placement","gen.w.realTag":"Aperçu réaliste","gen.w.realBusy":"Placement sur la peau, environ 30 secondes...","gen.w.realNote":"Dessiné par le modèle de réalisme sur cette photo.","gen.w.errPlaceLimit":"Vous avez utilisé l'aperçu réaliste du jour. Un pass journée ou Pro en donne plus.","gen.w.toSheet":"Créer le stencil","gen.w.vTattoo":"Tatouage","gen.w.vStencil":"Stencil","gen.w.vSheet":"Planche","gen.w.viewLabel":"Vue","gen.w.designL":"Dessin","gen.w.stencilL":"Stencil","gen.w.empty":"Créez un dessin pour le voir ici","gen.w.example":"Dessin d'exemple. Le vôtre apparaît ici.","gen.w.skinAlt":"Peau nue pour placer le tatouage","gen.w.modeDraw":"Dessin au trait","gen.w.modeDrawHint":"Pour les dessins et les motifs.","gen.w.modePhoto":"Photo","gen.w.modePhotoHint":"Repère les contours d'une photo.","gen.w.detail":"Détail","gen.w.smooth":"Lissage","gen.w.weight":"Épaisseur du trait","gen.w.specks":"Supprimer les impuretés","gen.w.compare":"Comparer le dessin et le stencil","gen.w.kept":"Conservé","gen.w.lost":"Perdu","gen.w.added":"Ajouté","gen.w.width":"Largeur sur papier (mm)","gen.w.sizeOut":"{inch} po, {px} px à 300 dpi","gen.w.dl":"Télécharger le PNG","gen.w.print":"Imprimer à taille réelle","gen.w.saved":"Enregistré en {mm} mm de large, 300 dpi.","gen.w.popup":"Autorisez les fenêtres surgissantes pour imprimer, ou téléchargez le PNG et imprimez-le à 100 %.","gen.w.wm":"Les téléchargements gratuits portent un petit filigrane.","gen.w.wmLink":"Un pass journée ou Pro le retire.","gen.w.studioLink":"Besoin de plus de contrôle ? Ouvrez-le dans le Studio","gen.w.a3h":"Appliqué. Terminé.","gen.w.a3p":"Quand vous vous installez sur le fauteuil, il ne reste que le tatouage.","gen.w.a4h":"Place à la partie facile.","gen.w.a4p":"Votre tatoueur part d'un plan déjà validé, dessiné et placé.","gen.w.cta":"Créer votre dessin","gen.w.handsAlt":"Mains gantées pressant un stencil de transfert sur une épaule","gen.w.artistAlt":"Un tatoueur tenant une machine à tatouer au-dessus d'un motif stencilé","gen.w.machineAlt":"Gros plan de l'aiguille d'une machine à tatouer sur un trait de stencil","gen.w.artH":"Pour les artistes, la même pièce","gen.w.artP":"Dessinez le henné ou mappez les sourcils, imprimez à taille réelle, et votre client arrive devant un plan, pas devant une page blanche.","gen.w.hennaAlt":"Henné dessiné sur une paume","gen.w.browAlt":"Un sourcil mappé à la règle et au crayon","gen.w.hennaLink":"Studio de stencils","gen.w.browLink":"Mapping des sourcils","gen.w.removeExample":"Retirer","gen.w.fineTune":"Réglages fins"};</script>
 <script src="/js/config.js"></script>
 <script src="/js/analytics.js"></script>
-<script src="/js/engine.js"></script>
 <script src="/js/unlock.js"></script>
 <script src="/js/png-util.js"></script>
 <script src="/js/gen-page.js"></script>
 <script>
 (function(){
-  var T=window.I18N||{}, C=window.SkinConfig||{};
-  /* ---------- tabs ---------- */
-  var views={tattoo:document.getElementById('v-tattoo'),brow:document.getElementById('v-brow')};
-  var tabs={tattoo:document.getElementById('t-tattoo'),brow:document.getElementById('t-brow')};
-  function show(n){ if(!views[n]) n='tattoo'; for(var k in views){ views[k].hidden=(k!==n); tabs[k].setAttribute('aria-pressed',String(k===n)); } }
-  function fromHash(){ var h=(location.hash||'').replace('#',''); if(h==='brow'||h==='tattoo'){ show(h); return; } var el=h&&document.getElementById(h); if(!el) return; for(var k in views){ if(views[k].contains(el)){ show(k); el.scrollIntoView(); } } }
-  tabs.tattoo.addEventListener('click',function(){ show('tattoo'); history.replaceState(null,'','#tattoo'); });
-  tabs.brow.addEventListener('click',function(){ show('brow'); history.replaceState(null,'','#brow'); });
-  window.addEventListener('hashchange',fromHash); fromHash();
+  var C=window.SkinConfig||{};
+  /* the brow tool used to be a tab here; old links to #brow go to its own page */
+  if(location.hash==='#brow') location.replace('/fr/brow/');
   var sel=document.getElementById('langSel'); if(sel) sel.addEventListener('change',function(){ location.href=sel.value; });
-
-  /* ---------- checkout buttons: real links when configured, else "opens soon" ---------- */
+  /* checkout buttons: real links when configured, else "opens soon" */
   var anyLive=false;
   [].forEach.call(document.querySelectorAll('a.buy'),function(a){
     var url=(C.checkout||{})[a.getAttribute('data-plan')];
@@ -681,108 +363,7 @@ footer .wrap{padding-block:28px}
     else { a.href='mailto:'+(C.notifyEmail||'')+'?subject=Checkout%20interest%20'+a.getAttribute('data-plan'); }
   });
   if(!anyLive){ var sn=document.getElementById('soonNote'); if(sn) sn.hidden=false; }
-
-  var E=window.SkinEngine; if(!E) return;
-  var ORDER=['dagger','mandala','lettering','orb'];
-  var cache={};
-  function label(n){ return T['sample.'+n]||E.samples[n].label; }
-  function prep(name,maxSide){
-    var key=name+'@'+maxSide; if(cache[key]) return cache[key];
-    var s=E.samples[name], big=s.draw(), c=E.fitToCanvas(big,big.width,big.height,maxSide), g=E.grayFromCanvas(c);
-    return (cache[key]={canvas:c,gray:g.gray,w:g.w,h:g.h,mode:s.mode});
-  }
-  function run(p,o){ return E.makeStencil(p.gray,p.w,p.h,o); }
-  function drawOrig(canvas,p){ canvas.width=p.w; canvas.height=p.h; canvas.getContext('2d').drawImage(p.canvas,0,0); }
-
-  /* ---------- hero demo ---------- */
-  /* The "before" is a sample drawing made to look like a phone photo (uneven light, tinted paper, grain), and the stencil is made from THAT image,
-     so the demo shows the engine coping with a real-world input rather than a perfect file. */
-  var cur='dagger', surface='skin', SKIN='#E2B08A', dOrig=document.getElementById('dOrig'), dOut=document.getElementById('dOut'), dStage=document.getElementById('dStage');
-  var dW=document.getElementById('dWeight'), dS=document.getElementById('dSens'), dSplit=document.getElementById('dSplit'), chips=document.getElementById('dChips');
-  var busy=false, photoCache={};
-  function photoLook(p){
-    var key=cur+'@'+p.w+'x'+p.h; if(photoCache[key]) return photoCache[key];
-    var c=document.createElement('canvas'); c.width=p.w; c.height=p.h; var x=c.getContext('2d'); x.drawImage(p.canvas,0,0);
-    var im=x.getImageData(0,0,p.w,p.h), d=im.data, seed=12345;
-    for(var yy=0;yy<p.h;yy++) for(var xx=0;xx<p.w;xx++){
-      var i=(yy*p.w+xx)*4, u=xx/p.w, v=yy/p.h, light=0.80+0.20*u-0.10*v;
-      var dx=u-0.5, dy=v-0.5, vig=1-0.5*(dx*dx+dy*dy);
-      seed=(seed*1664525+1013904223)>>>0; var n=((seed>>>16)&255)/255-0.5;
-      var ink=(255-d[i])/255, base=232-ink*205; /* paper is off-white and ink is dark grey, not pure black */
-      var val=(base*light*vig)+n*9;
-      d[i]=Math.max(0,Math.min(255,val+6)); d[i+1]=Math.max(0,Math.min(255,val+1)); d[i+2]=Math.max(0,Math.min(255,val-10));
-    }
-    x.putImageData(im,0,0);
-    var g=E.grayFromCanvas(c); return (photoCache[key]={canvas:c,gray:g.gray,w:g.w,h:g.h,mode:p.mode});
-  }
-  function demo(){
-    var p=photoLook(prep(cur,900)); drawOrig(dOrig,p); dStage.style.aspectRatio=p.w+'/'+p.h;
-    var r=run(p,{mode:p.mode,sens:+dS.value,smooth:0,weight:+dW.value,specks:30}); E.renderStencil(dOut,r.final,p.w,p.h,surface==='skin'?SKIN:null,null,r.alpha); E.crisp(dOrig); E.crisp(dOut); split();
-  }
-  var surf=document.getElementById('dSurface');
-  [].forEach.call(surf.children,function(b){ b.addEventListener('click',function(){ surface=b.getAttribute('data-s'); [].forEach.call(surf.children,function(x){ x.setAttribute('aria-pressed',String(x===b)); }); sched(); }); });
-  function split(){ var v=+dSplit.value; dOut.style.clipPath='inset(0 0 0 '+v+'%)'; document.getElementById('dHandle').style.left='calc('+v+'% - 1px)'; }
-  function sched(){ if(busy) return; busy=true; requestAnimationFrame(function(){ busy=false; demo(); }); }
-  ORDER.forEach(function(n,i){ var b=document.createElement('button'); b.type='button'; b.className='chip'; b.textContent=label(n); b.setAttribute('aria-pressed',String(i===0));
-    b.addEventListener('click',function(){ cur=n; [].forEach.call(chips.children,function(x){ x.setAttribute('aria-pressed','false'); }); b.setAttribute('aria-pressed','true');
-      dS.value=(E.samples[n].mode==='photo')?60:55; document.getElementById('dSensV').textContent=dS.value; sched(); }); chips.appendChild(b); });
-  dW.addEventListener('input',function(){ document.getElementById('dWeightV').textContent=dW.value; sched(); });
-  dS.addEventListener('input',function(){ document.getElementById('dSensV').textContent=dS.value; sched(); });
-  dSplit.addEventListener('input',split);
-  demo();
-
-  /* ---------- gallery ---------- */
-  var gal=document.getElementById('gallery');
-  ORDER.forEach(function(n){
-    var p=prep(n,1000), r=run(p,{mode:p.mode,sens:p.mode==='photo'?60:55,smooth:p.mode==='photo'?1:0,weight:3,specks:60});
-    var card=document.createElement('div'); card.className='gcard';
-    card.innerHTML='<div class="pr"><div><div class="cap2"></div><canvas></canvas></div><div><div class="cap2"></div><canvas></canvas></div></div><h3></h3><p></p>';
-    var cs=card.querySelectorAll('canvas'), caps=card.querySelectorAll('.cap2'); drawOrig(cs[0],p); E.renderStencil(cs[1],r.final,p.w,p.h,null,null,r.alpha);
-    caps[0].textContent=T['g.design']||'Design'; caps[1].textContent=T['g.stencil']||'Stencil';
-    card.querySelector('h3').textContent=label(n)+' ('+(p.mode==='photo'?T['g.modePhoto']:T['g.modeDraw'])+')'; card.querySelector('p').textContent=T['g.n.'+n]||''; gal.appendChild(card);
-  });
-
-  /* ---------- drift check ---------- */
-  (function(){
-    var p=prep('dagger',700), o={mode:'draw',sens:22,smooth:0,weight:2,specks:140}, r=run(p,o), c=document.getElementById('driftC');
-    E.renderStencil(c,r.final,p.w,p.h,null,null,r.alpha);
-    var d=E.driftCheck(E.referenceMask(p.gray,p.w,p.h,'draw'),r.final,p.w,p.h,2,true), tmp=document.createElement('canvas'); tmp.width=p.w; tmp.height=p.h; tmp.getContext('2d').putImageData(d.image,0,0);
-    c.getContext('2d').drawImage(tmp,0,0);
-    document.getElementById('dKept').textContent=d.kept.toFixed(1)+'%'; document.getElementById('dLost').textContent=d.lost.toFixed(1)+'%'; document.getElementById('dAdded').textContent=d.added.toFixed(1)+'%';
-  })();
-
-  /* ---------- skin tones ---------- */
-  (function(){
-    var p=prep('dagger',420), r=run(p,{mode:'draw',sens:55,smooth:0,weight:2,specks:40}), box=document.getElementById('skins');
-    ['#F6DCC9','#E8B98F','#C98E5F','#9A6240','#6B4126','#46281A'].forEach(function(t){ var c=document.createElement('canvas'); c.style.cssText='width:100%;height:auto;border-radius:6px;border:1px solid var(--line)'; E.renderStencil(c,r.final,p.w,p.h,t,null,r.alpha); box.appendChild(c); });
-  })();
-
-  /* ---------- true-size ruler ticks ---------- */
-  (function(){
-    var g=document.getElementById('rl'), ns='http://www.w3.org/2000/svg';
-    for(var i=0;i<=28;i++){ var x=40+i*10, ln=document.createElementNS(ns,'path'); ln.setAttribute('d','M'+x+' 226 V'+(i%5===0?216:221)); g.appendChild(ln); }
-  })();
-
-  /* ---------- do and don't, made with the tool ---------- */
-  (function(){
-    var box=document.getElementById('dd'), base=prep('dagger',520);
-    var PAIRS=[['d.p1.do','d.p1.dont','blur','d.p1.note'],['d.p2.do','d.p2.dont','lowcontrast','d.p2.note'],['d.p3.do','d.p3.dont','padded','d.p3.note']];
-    PAIRS.forEach(function(P){
-      var bad=E.degrade(base.canvas,P[2]), bg=E.grayFromCanvas(bad), o={mode:'draw',sens:55,smooth:0,weight:2,specks:40};
-      var good=E.makeStencil(base.gray,base.w,base.h,o), poor=E.makeStencil(bg.gray,bg.w,bg.h,o);
-      var card=document.createElement('div'); card.className='ddc'; card.innerHTML='<h3></h3><div class="pair2"><div class="cell do"><div class="tg"></div><div class="two"><canvas></canvas><canvas></canvas></div><p></p></div><div class="cell dont"><div class="tg"></div><div class="two"><canvas></canvas><canvas></canvas></div><p></p></div></div>';
-      var cs=card.querySelectorAll('canvas'), tg=card.querySelectorAll('.tg'), ps=card.querySelectorAll('p');
-      drawOrig(cs[0],base); E.renderStencil(cs[1],good.final,base.w,base.h,null,null,good.alpha);
-      cs[2].width=bg.w; cs[2].height=bg.h; cs[2].getContext('2d').drawImage(bad,0,0); E.renderStencil(cs[3],poor.final,bg.w,bg.h,null,null,poor.alpha);
-      for(var k=0;k<4;k++){ cs[k].style.cssText='width:100%;height:auto;border:1px solid var(--line);border-radius:5px;background:#fff'; }
-      card.querySelector('h3').textContent=T[P[0]]+' / '+T[P[1]];
-      tg[0].textContent=T['d.do']; tg[1].textContent=T['d.dont']; ps[0].textContent=T[P[0]]; ps[1].textContent=T[P[1]]+'. '+T[P[3]]; box.appendChild(card);
-    });
-  })();
-  /* once the page has laid out, redraw every picture at the size it is shown (see SkinEngine.crisp) */
-  requestAnimationFrame(function(){ [].forEach.call(document.querySelectorAll('canvas'),function(c){ if(!c.closest('.wsx')) E.crisp(c); });   /* the workstation canvases keep their size: they are redrawn by their own script */ });
 })();
 </script>
-
 </body>
 </html>

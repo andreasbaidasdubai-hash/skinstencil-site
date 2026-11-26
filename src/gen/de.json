@@ -129,5 +129,7 @@
   "w.hennaAlt": "Henna wird auf eine Handfläche gezeichnet",
   "w.browAlt": "Eine Braue wird mit Lineal und Stift gemappt",
   "w.hennaLink": "Stencil-Studio",
-  "w.browLink": "Brauen-Mapping"
+  "w.browLink": "Brauen-Mapping",
+  "w.removeExample": "Entfernen",
+  "w.fineTune": "Feinabstimmung"
 }

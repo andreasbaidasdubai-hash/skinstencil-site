@@ -7,7 +7,6 @@
 <meta name="description" content="{{metaDesc}}">
 <link rel="canonical" href="{{canonical}}">
 {{hreflang}}
-<script src="/js/theme.js"></script>
 <meta property="og:title" content="{{metaTitle}}">
 <meta property="og:description" content="{{metaDesc}}">
 <meta property="og:type" content="{{ogType}}">
@@ -23,10 +22,6 @@
   --stencil:#4F35C8; --stencil-soft:#E6E2F8;
   --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E; --stencil:#A99BFF; --stencil-soft:#2A2547; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#141318; --card:#1C1B22; --ink:#ECEAF3; --muted:#A09EAE; --line:#34323E; --stencil:#A99BFF; --stencil-soft:#2A2547; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;margin:0}
 html[lang="ar"] body{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
@@ -89,20 +84,14 @@ footer .wrap{padding-block:28px}
 @media (max-width:560px){body{font-size:16px}.topnav{gap:10px}.langsel{max-width:110px}header .wrap{padding-block:12px}}
 </style>
 {{ldjson}}
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
-<header><div class="wrap">
-  <a class="mark" href="{{base}}">skin<span>stencil</span></a>
-  <div class="topnav">
-    <a href="{{guidesUrl}}"{{guidesCurrent}}>{{uiGuides}}</a>
-    <label class="vh" for="langSel">{{uiLanguage}}</label>
-    {{langSelect}}
-  </div>
-</div></header>
+{{siteHead}}
 <main><div class="wrap">
 {{body}}
 </div></main>
-<footer><div class="wrap"><a href="/privacy.html">{{ft.privacy}}</a> &middot; <a href="/terms.html">{{ft.terms}}</a> &middot; <a href="mailto:{{notifyEmail}}">{{notifyEmail}}</a><br>{{ft.note}}{{ftMt}}</div></footer>
+{{siteFoot}}
 <script>window.I18N={{i18n_json}};</script>
 <script src="/js/config.js"></script>
 <script src="/js/analytics.js"></script>

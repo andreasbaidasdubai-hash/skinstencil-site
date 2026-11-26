@@ -31,15 +31,8 @@ html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,[role=button]:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
 [hidden]{display:none!important}
-.bar{position:fixed;z-index:31;inset-inline-start:0;top:0;height:3px;width:0;background:var(--stencil)}
-/* top bar */
-.top{position:fixed;z-index:30;inset-inline:0;top:0;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px max(18px,env(safe-area-inset-left,0px));background:linear-gradient(var(--paper),rgba(244,241,234,0))}
-.mark{font:800 21px var(--display);font-stretch:84%;letter-spacing:-.01em;text-decoration:none;color:var(--ink);direction:ltr}.mark span{color:var(--stencil)}
-.topnav{display:flex;gap:16px;align-items:center}.topnav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}.topnav a:hover{color:var(--ink)}
-.langsel{font:500 13px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
-@media (max-width:700px){.mark{background:rgba(244,241,234,.92);padding:5px 11px;border-radius:999px}.topnav a{display:none}.langsel{max-width:112px}}
 {{wsCss}}
-.wsx{--stk:52px;--wspad:92px}
+.wsx{--wspad:8px}
 /* text sections */
 .txt{max-width:760px;margin:0 auto;padding:8px max(16px,env(safe-area-inset-left,0px)) 56px}
 .txt h2{font-size:clamp(23px,3.4vw,31px);font-weight:700;margin-top:44px}
@@ -48,15 +41,12 @@ ol.how li{counter-increment:s;background:var(--card);border:1px solid var(--line
 ol.how li::before{content:counter(s);display:inline-block;font:600 13px var(--mono);color:var(--stencil);margin-inline-end:10px}
 details{border-bottom:1px solid var(--line);padding:14px 0}summary{font-weight:600;cursor:pointer}details p{color:var(--muted);margin:8px 0 0}
 .endcta{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:44px}.endcta p{margin:0 0 14px}
-footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}footer a{color:inherit}footer .wrap{max-width:1120px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-left,0px))}
-.dock{display:none}@media (max-width:700px){.dock{display:block;position:fixed;z-index:40;inset-inline:max(14px,env(safe-area-inset-left,0px));bottom:max(12px,env(safe-area-inset-bottom,0px))}.dock .cta{display:block;box-shadow:0 14px 30px -12px rgba(0,0,0,.6)}.wsx .a3 .cap .cta,.wsx .artists .artlead+.cta{display:none}}
 </style>
 {{ldjson}}
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
-<div class="bar" id="bar"></div>
-<div class="top"><a class="mark" href="{{base}}">skin<span>stencil</span></a>
-  <div class="topnav"><a href="{{base}}studio/">Studio</a><a href="{{base}}brow/">{{gen.w.browNav}}</a><label class="vh" for="langSel">{{lang.label}}</label>{{langSelect}}</div></div>
+{{siteHead}}
 
 <main>
 {{wsMarkup}}
@@ -78,8 +68,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}footer
 <div class="endcta"><p>{{gen.cta.p}}</p><a class="cta alt" href="{{base}}studio/">{{gen.cta.btn}}</a></div>
 </div>
 </main>
-<div class="dock"><a class="cta big" href="#ws">{{gen.w.cta}}</a></div>
-<footer><div class="wrap"><a href="/privacy.html">{{ft.privacy}}</a> &middot; <a href="/terms.html">{{ft.terms}}</a> &middot; <a href="mailto:{{notifyEmail}}">{{notifyEmail}}</a><br>{{ft.note}}{{ftMt}}</div></footer>
+{{siteFoot}}
 <script>window.I18N={{i18n_json}};</script>
 <script src="/js/config.js"></script>
 <script src="/js/analytics.js"></script>

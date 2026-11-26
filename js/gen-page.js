@@ -46,8 +46,19 @@
   }
   function setDesign(im, example) {
     fitDesign(im); did++; S.design = true; S.example = !!example; clearReal();
-    $('wempty').hidden = true; $('wtag').hidden = !example; if (example) $('wtag').textContent = t('gen.w.example');
+    $('wempty').hidden = true; $('wart').style.visibility = ''; $('st4').classList.remove('off'); exampleTag(!!example);
     makeStencil();
+  }
+  /* the example wolf can be binned: the stage goes back to bare skin, and the stencil step waits for a real design */
+  function exampleTag(on) {
+    var tg = $('wtag'); tg.textContent = ''; tg.hidden = !on; if (!on) return;
+    var sp = document.createElement('span'), bn = document.createElement('button'); sp.textContent = t('gen.w.example'); bn.type = 'button'; bn.className = 'rm'; bn.textContent = t('gen.w.removeExample');
+    bn.addEventListener('click', function (e) { e.stopPropagation(); clearExample(); }); bn.addEventListener('pointerdown', function (e) { e.stopPropagation(); });
+    tg.appendChild(sp); tg.appendChild(bn);
+  }
+  function clearExample() {
+    S.design = null; S.example = false; clearReal(); setView('art'); exampleTag(false);
+    $('wart').style.visibility = 'hidden'; $('wempty').hidden = false; $('st4').classList.add('off');
   }
   function blur3(a, passes) { var o = new Float32Array(a.length), tmp; for (var p = 0; p < passes; p++) { for (var y = 0; y < NN; y++) for (var x = 0; x < NN; x++) { var i = y * NN + x, l = x > 0 ? a[i - 1] : a[i], r = x < NN - 1 ? a[i + 1] : a[i]; o[i] = (l + a[i] + r) / 3; } tmp = a; a = o; o = tmp; for (var y2 = 0; y2 < NN; y2++) for (var x2 = 0; x2 < NN; x2++) { var j = y2 * NN + x2, u = y2 > 0 ? a[j - NN] : a[j], d = y2 < NN - 1 ? a[j + NN] : a[j]; o[j] = (u + a[j] + d) / 3; } tmp = a; a = o; o = tmp; } return a; }
   function dil(m, grow) { var o = new Uint8Array(m.length); for (var y = 0; y < NN; y++) for (var x = 0; x < NN; x++) { var i = y * NN + x, v = grow ? 0 : 1; for (var dy = -1; dy <= 1; dy++) for (var dx = -1; dx <= 1; dx++) { var X = x + dx, Y = y + dy; if (X < 0 || Y < 0 || X >= NN || Y >= NN) continue; var q = m[Y * NN + X]; if (grow) { if (q) v = 1; } else if (!q) v = 0; } o[i] = v; } return o; }
@@ -223,7 +234,7 @@
 
   /* ---------- "Show it realistic": the AI places the finished design on this stock photo ---------- */
   function realKey() { return S.part + '|' + S.tone + '|' + did + '|' + S.x + '|' + S.y + '|' + S.s + '|' + S.r; }
-  function showReal(on) { $('wreal').style.opacity = on ? 1 : 0; if (on) { $('wtag').textContent = t('gen.w.realTag'); $('wtag').hidden = false; } else { $('wtag').hidden = !S.example || vmode !== 'art'; if (S.example) $('wtag').textContent = t('gen.w.example'); } $('real').textContent = t(on ? 'gen.w.realBack' : 'gen.w.real'); }
+  function showReal(on) { $('wreal').style.opacity = on ? 1 : 0; if (on) { var tg = $('wtag'); tg.textContent = t('gen.w.realTag'); tg.hidden = false; } else exampleTag(S.example && vmode === 'art'); $('real').textContent = t(on ? 'gen.w.realBack' : 'gen.w.real'); }
   function clearReal() { if (realFor) { realFor = ''; showReal(false); } }
   $('real').addEventListener('click', function () {
     if (!S.design || busy) return;
