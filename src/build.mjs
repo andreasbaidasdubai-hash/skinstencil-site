@@ -215,7 +215,7 @@ for (const l of LANGS) {
       ldjson: ldjson(S, l, page),
       guidesNav: page === 'index' ? guidesNav(l) : '', guidesSection: page === 'index' ? guidesSection(l, 'tattoo', S) : '', guidesSectionBrow: page === 'index' ? guidesSection(l, 'brow', S) : '',
       browGuides: page === 'brow' ? browGuidesBlock(l, S) : '',
-      i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.'] : page === 'brow' ? ['brow.', 's.dl.', 's.thanks', 'theme.'] : page === 'gen' ? ['s.gen.', 'theme.'] : ['s.', 'sample.']),
+      i18n_json: i18nJson(S, page === 'index' ? ['sample.', 'g.', 'd.'] : page === 'brow' ? ['brow.', 's.dl.', 's.thanks', 'theme.'] : page === 'gen' ? ['s.gen.', 'gen.w.'] : ['s.', 'sample.']),
     };
     let html = TPL[page].replace(/\{\{([A-Za-z0-9_.\-]+)\}\}/g, (m, k) => {
       if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in ${page} template`);

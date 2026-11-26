@@ -25,3 +25,12 @@ Costs per design: bold (Recraft vector) 0.08 USD, detail (GPT Image 2) about 0.0
 3. Put the site key in `js/config.js` as `turnstileSiteKey`, run `node src/build.mjs`, commit, push.
 
 Order with no gap: (1) push the page with `turnstileSiteKey` set (the old Worker ignores the extra token), (2) `npx wrangler deploy` to publish the Worker with the check, (3) `npx wrangler secret put TURNSTILE_SECRET`. If the secret is set before the page has the site key, the generator shows "could not confirm you are a person" until the push lands.
+
+## Example picture and "Show it realistic" (added with the workstation page)
+
+Two things now go through the Worker besides the text prompt, both with the same Turnstile check, license lookup and daily budget:
+
+- `POST /generate` accepts `ref` (a data: URL of a picture, at most about 2 MB, png/jpeg/webp) and `refMode` (`inspire` or `trace`). With a picture the Worker always uses `openai/gpt-image-2/edit` (about 0.08 USD), because Recraft cannot see a picture. The page shrinks and re-encodes the picture first, which also removes its metadata.
+- `POST /place` draws a finished design onto one of the stock skin photos (`https://skinstencil.com/assets/lib/<part>_<tone>.jpg`, 48 files in this repo) with `openai/gpt-image-2/edit` (about 0.10 USD). Its own allowance: 1 per day without a license, 10 with one (`PLACE_PER_DAY` in `index.js`); it also counts against `DAILY_BUDGET_USD`.
+
+Deploy order with no gap: (1) push the site (the new page then calls `/place`, which the old Worker answers with 404, so the "realistic" button shows a failure message until step 2), (2) `cd worker && npx wrangler deploy`. The stock photos must be live on skinstencil.com before `/place` can fetch them, so push first.
