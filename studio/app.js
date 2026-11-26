@@ -70,6 +70,7 @@
     stage.style.aspectRatio = FULL.w + '/' + FULL.h;
     $('ph').hidden = true; $('handle').hidden = false; $('tagL').hidden = false; $('tagR').hidden = false;
     updateSize(); process(FULL);
+    setTimeout(function () { var rb = $('recBtn'); if (rb && !rb.disabled) rb.click(); }, 0);   // open with the settings that suit this picture, not the defaults; every control stays adjustable
   }
 
   /* ---------- processing ---------- */
@@ -148,15 +149,20 @@
     dv.setUint32(0, 9); chunk.set([0x70, 0x48, 0x59, 0x73], 4); dv.setUint32(8, ppm); dv.setUint32(12, ppm); chunk[16] = 1; dv.setUint32(17, crc32(chunk.subarray(4, 17)));
     var out = new Uint8Array(bytes.length + 21); out.set(bytes.subarray(0, 33), 0); out.set(chunk, 33); out.set(bytes.subarray(33), 54); return out;
   }
-  function watermark(x, w, h, a) {
-    // two crossing diagonals of large text in the stencil purple: it cannot be cropped away and is hard to separate from the lines
-    var fs = Math.max(26, Math.round(Math.max(w, h) / 9)), txt = 'skinstencil.com', step = fs * 1.7, ext = Math.hypot(w, h);
-    x.save(); x.globalAlpha = a == null ? 0.55 : a; x.fillStyle = '#4F35C8'; x.font = '800 ' + fs + 'px Archivo, Arial, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
-    [-Math.PI / 6, Math.PI / 6].forEach(function (ang) {
-      x.save(); x.translate(w / 2, h / 2); x.rotate(ang);
-      var row = 0; for (var yy = -ext; yy < ext; yy += step, row++) { for (var xx = -ext; xx < ext; xx += fs * 8) x.fillText(txt, xx + (row % 2 ? fs * 4 : 0), yy); }
-      x.restore();
-    });
+  function watermark(x, w, h, a, strong) {
+    var txt = 'skinstencil.com', ext = Math.hypot(w, h);
+    x.save(); x.fillStyle = '#4F35C8'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    if (!strong) {
+      // on screen: one quiet diagonal, so the stencil can still be judged
+      var fs0 = Math.max(18, Math.round(Math.max(w, h) / 13)), step0 = fs0 * 2.1;
+      x.globalAlpha = a == null ? 0.3 : a; x.font = '700 ' + fs0 + 'px Archivo, Arial, sans-serif'; x.translate(w / 2, h / 2); x.rotate(-Math.PI / 6);
+      var row0 = 0; for (var y0 = -ext; y0 < ext; y0 += step0, row0++) { for (var x0 = -ext; x0 < ext; x0 += fs0 * 9) x.fillText(txt, x0 + (row0 % 2 ? fs0 * 4.5 : 0), y0); }
+    } else {
+      // the free file you take away: two crossing diagonals of large text in the stencil purple, it cannot be cropped away and is hard to separate from the lines
+      var fs = Math.max(26, Math.round(Math.max(w, h) / 9)), step = fs * 1.7;
+      x.globalAlpha = a == null ? 0.55 : a; x.font = '800 ' + fs + 'px Archivo, Arial, sans-serif';
+      [-Math.PI / 6, Math.PI / 6].forEach(function (ang) { x.save(); x.translate(w / 2, h / 2); x.rotate(ang); var row = 0; for (var yy = -ext; yy < ext; yy += step, row++) { for (var xx = -ext; xx < ext; xx += fs * 8) x.fillText(txt, xx + (row % 2 ? fs * 4 : 0), yy); } x.restore(); });
+    }
     x.restore();
   }
   function setDl(k, cls, vars) { var s = $('dlStatus'); s.textContent = t(k, vars); s.className = 'status' + (cls ? ' ' + cls : ''); }
@@ -174,7 +180,7 @@
     var tmp = document.createElement('canvas'); E.renderStencil(tmp, last.r.final, FULL.w, FULL.h, null, [23, 22, 28], last.r.alpha);
     var out = document.createElement('canvas'); out.width = tw; out.height = th;
     var x = out.getContext('2d'); x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high'; x.fillStyle = '#fff'; x.fillRect(0, 0, tw, th); x.drawImage(tmp, 0, 0, tw, th);
-    if (!un) watermark(x, tw, th);
+    if (!un) watermark(x, tw, th, null, true);
     return { canvas: out, un: un, mm: mm };
   }
   function download() {

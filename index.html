@@ -265,7 +265,16 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 .wsx .stagecol.min{padding-bottom:8px}
 .wsx .stagecol.big .pvt{display:none}
 }
-
+.wsx .studiochip{display:flex;align-items:center;justify-content:space-between;gap:14px;max-width:440px;text-decoration:none;color:var(--ink);background:#fff;border:1.5px solid var(--stencil);border-radius:var(--r-card);padding:13px 16px;margin:-4px 0 18px;transition:box-shadow .15s,transform .15s}
+.wsx .studiochip:hover{box-shadow:0 12px 28px -16px rgba(79,53,200,.6)}
+.wsx .studiochip:active{transform:scale(.99)}
+.wsx .studiochip .sc-t{display:grid;gap:1px}
+.wsx .studiochip b{font:800 16px var(--display)}
+.wsx .studiochip i{font:500 13.5px/1.35 var(--body);font-style:normal;color:var(--muted)}
+.wsx .studiochip svg{flex:none;width:22px;height:22px;fill:none;stroke:var(--stencil);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.wsx .d-rtl .studiochip svg{transform:scaleX(-1)}
+.wsx @supports (corner-shape:squircle){.studiochip{corner-shape:squircle;border-radius:48px}
+}
 
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Skinstencil","applicationCategory":"DesignApplication","operatingSystem":"Any (web browser)","url":"https://skinstencil.com/","inLanguage":"en","description":"Describe a tattoo, see it on your skin, turn it into a stencil and print it at true size. Free to try; remove the watermark with a day pass or Pro.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Day pass","price":"7.99","priceCurrency":"USD"},{"@type":"Offer","name":"7-day pass","price":"14.99","priceCurrency":"USD"},{"@type":"Offer","name":"Pro monthly","price":"19","priceCurrency":"USD"},{"@type":"Offer","name":"Pro yearly","price":"149","priceCurrency":"USD"}]}</script>
@@ -280,6 +289,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 <div class="wsin" id="genBox" data-studio="/studio/">
  <div>
   <h1 class="pitch">The AI generator and stencil maker for tattoos</h1><p class="psub">Describe it. See it on your skin. Print it at true size.</p>
+  <a class="studiochip" href="/studio/"><span class="sc-t"><b>Turn your drawing into a stencil</b><i>Load a drawing, flash or photo, check what the stencil kept and print it at true size.</i></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
   <div class="stp" id="st1"><h3><i>1</i>Describe it</h3>
    <label class="vh" for="genPrompt">Describe the tattoo</label>
    <textarea id="genPrompt" maxlength="200" placeholder="a fine-line wolf with a crescent moon"></textarea>
