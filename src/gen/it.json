@@ -112,7 +112,7 @@
   "w.print": "Stampa a misura reale",
   "w.saved": "Salvato a {mm} mm di larghezza, 300 dpi.",
   "w.popup": "Consenti i pop-up per stampare, oppure scarica il PNG e stampalo al 100%.",
-  "w.wm": "I download gratuiti hanno una piccola filigrana.",
+  "w.wm": "I download gratuiti hanno una filigrana.",
   "w.wmLink": "Un pass giornaliero o Pro la toglie.",
   "w.studioLink": "Ti serve più controllo? Aprilo nello Studio",
   "w.a3h": "Applicato. Fatto.",
@@ -130,5 +130,6 @@
   "w.totop": "Torna su",
   "w.paidOnly": "Il dettaglio fine e le immagini di esempio sono inclusi con un pass giornaliero o Pro.",
   "w.errPaidCap": "Hai usato tutti i design del tuo piano per ora.",
-  "w.leftPlan": "{n} design rimasti nel tuo piano"
+  "w.leftPlan": "{n} design rimasti nel tuo piano",
+  "w.menu": "Menu"
 }

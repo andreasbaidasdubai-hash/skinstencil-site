@@ -112,7 +112,7 @@
   "w.print": "Drukuj w prawdziwej skali",
   "w.saved": "Zapisano w szerokości {mm} mm, 300 dpi.",
   "w.popup": "Zezwól na wyskakujące okna, żeby drukować, albo pobierz PNG i wydrukuj go w 100%.",
-  "w.wm": "Darmowe pliki mają mały znak wodny.",
+  "w.wm": "Darmowe pliki mają znak wodny.",
   "w.wmLink": "Karnet dzienny lub Pro go usuwa.",
   "w.studioLink": "Potrzebujesz więcej kontroli? Otwórz w Studio",
   "w.a3h": "Przyłożone. Gotowe.",
@@ -130,5 +130,6 @@
   "w.totop": "Wróć na górę",
   "w.paidOnly": "Drobne detale i obrazy przykładowe są w karnecie dziennym lub Pro.",
   "w.errPaidCap": "Wykorzystano na razie wszystkie projekty z Twojego planu.",
-  "w.leftPlan": "Zostało {n} projektów w Twoim planie"
+  "w.leftPlan": "Zostało {n} projektów w Twoim planie",
+  "w.menu": "Menu"
 }

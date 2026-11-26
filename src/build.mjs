@@ -115,7 +115,9 @@ function siteHead(l, S, page, lsel) {
   return `<div class="sh"><div class="wrap"><a class="mark" href="${baseOf(l)}">skin<span>stencil</span></a><nav>` +
     `<a href="${urlOf(l, 'studio')}"${cur('studio')}>Studio</a>` + (SHOW_BROW ? `<a href="${urlOf(l, 'brow')}"${cur('brow')}>${ent(S['tab.brow'])}</a>` : '') +
     (G ? `<a href="${urlOf(l, 'guides')}"${cur('guides')}>${ent(G.ui.guides)}</a>` : '') +
-    `<a href="${baseOf(l)}#pricing">${ent(S['nav.pricing'])}</a></nav>${lsel}</div></div>`;
+    `<a href="${baseOf(l)}#pricing">${ent(S['nav.pricing'])}</a></nav>${lsel}` +
+    `<button class="shbtn" type="button" aria-expanded="false" aria-label="${esc(S['gen.w.menu'] || 'Menu')}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div></div>` +
+    `<script>(function(){var h=document.querySelector('.sh'),b=h&&h.querySelector('.shbtn');if(!b)return;function set(o){h.classList.toggle('open',o);b.setAttribute('aria-expanded',String(o))}b.addEventListener('click',function(e){e.stopPropagation();set(!h.classList.contains('open'))});h.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){set(false)})});document.addEventListener('click',function(e){if(!h.contains(e.target))set(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)})})();<\/script>`;
 }
 function siteFoot(l, S) {
   const G = GUIDES[l.code];

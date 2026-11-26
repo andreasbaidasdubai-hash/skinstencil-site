@@ -112,7 +112,7 @@
   "w.print": "Gerçek boyutta yazdır",
   "w.saved": "{mm} mm genişliğinde, 300 dpi olarak kaydedildi.",
   "w.popup": "Yazdırmak için açılır pencerelere izin verin, ya da PNG'yi indirip %100 ölçekte yazdırın.",
-  "w.wm": "Ücretsiz indirmelerde küçük bir filigran bulunur.",
+  "w.wm": "Ücretsiz indirmelerde bir filigran bulunur.",
   "w.wmLink": "Günlük geçiş veya Pro bunu kaldırır.",
   "w.studioLink": "Daha fazla kontrole mi ihtiyacınız var? Studio'da açın",
   "w.a3h": "Yapıştırıldı. Bitti.",
@@ -130,5 +130,6 @@
   "w.totop": "Başa dön",
   "w.paidOnly": "İnce detay ve örnek görseller günlük geçiş veya Pro ile gelir.",
   "w.errPaidCap": "Planınızdaki tüm tasarımları şimdilik kullandınız.",
-  "w.leftPlan": "Planınızda {n} tasarım kaldı"
+  "w.leftPlan": "Planınızda {n} tasarım kaldı",
+  "w.menu": "Menü"
 }

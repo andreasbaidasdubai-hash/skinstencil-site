@@ -112,7 +112,7 @@
   "w.print": "Print at true size",
   "w.saved": "Saved at {mm} mm wide, 300 dpi.",
   "w.popup": "Allow pop-ups to print, or download the PNG and print it at 100%.",
-  "w.wm": "Free downloads carry a small watermark.",
+  "w.wm": "Free downloads carry a watermark.",
   "w.wmLink": "A day pass or Pro removes it.",
   "w.studioLink": "Need more control? Open it in the Studio",
   "w.a3h": "Pressed on. Done.",
@@ -130,5 +130,6 @@
   "w.totop": "Back to top",
   "w.paidOnly": "Fine detail and example pictures come with a day pass or Pro.",
   "w.errPaidCap": "You have used all the designs in your plan for now.",
-  "w.leftPlan": "{n} designs left in your plan"
+  "w.leftPlan": "{n} designs left in your plan",
+  "w.menu": "Menu"
 }

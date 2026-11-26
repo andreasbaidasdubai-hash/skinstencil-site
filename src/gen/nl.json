@@ -112,7 +112,7 @@
   "w.print": "Print op ware grootte",
   "w.saved": "Opgeslagen op {mm} mm breed, 300 dpi.",
   "w.popup": "Sta pop-ups toe om te printen, of download de PNG en print hem op 100%.",
-  "w.wm": "Gratis downloads hebben een klein watermerk.",
+  "w.wm": "Gratis downloads hebben een watermerk.",
   "w.wmLink": "Met een dagpas of Pro verdwijnt het.",
   "w.studioLink": "Meer controle nodig? Open het in de Studio",
   "w.a3h": "Aangebracht. Klaar.",
@@ -130,5 +130,6 @@
   "w.totop": "Terug naar boven",
   "w.paidOnly": "Fijn detail en voorbeeldafbeeldingen horen bij een dagpas of Pro.",
   "w.errPaidCap": "Je hebt alle designs van je abonnement voorlopig gebruikt.",
-  "w.leftPlan": "Nog {n} designs in je abonnement"
+  "w.leftPlan": "Nog {n} designs in je abonnement",
+  "w.menu": "Menu"
 }

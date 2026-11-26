@@ -112,7 +112,7 @@
   "w.print": "Imprimir em tamanho real",
   "w.saved": "Salvo com {mm} mm de largura, 300 dpi.",
   "w.popup": "Permita pop-ups para imprimir, ou baixe o PNG e imprima a 100%.",
-  "w.wm": "Os downloads grátis têm uma pequena marca d'água.",
+  "w.wm": "Os downloads grátis têm uma marca d'água.",
   "w.wmLink": "Um passe diário ou Pro remove.",
   "w.studioLink": "Precisa de mais controle? Abra no Studio",
   "w.a3h": "Aplicado. Pronto.",
@@ -130,5 +130,6 @@
   "w.totop": "Voltar ao topo",
   "w.paidOnly": "Detalhe fino e imagens de exemplo vêm com um passe diário ou Pro.",
   "w.errPaidCap": "Você já usou todos os designs do seu plano por enquanto.",
-  "w.leftPlan": "{n} designs restantes no seu plano"
+  "w.leftPlan": "{n} designs restantes no seu plano",
+  "w.menu": "Menu"
 }

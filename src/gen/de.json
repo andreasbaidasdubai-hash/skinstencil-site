@@ -112,7 +112,7 @@
   "w.print": "In Originalgröße drucken",
   "w.saved": "Gespeichert mit {mm} mm Breite, 300 dpi.",
   "w.popup": "Erlaube Pop-ups zum Drucken oder lade das PNG herunter und drucke es mit 100 %.",
-  "w.wm": "Kostenlose Downloads tragen ein kleines Wasserzeichen.",
+  "w.wm": "Kostenlose Downloads tragen ein Wasserzeichen.",
   "w.wmLink": "Mit Tagespass oder Pro entfällt es.",
   "w.studioLink": "Mehr Kontrolle? Öffne es im Studio",
   "w.a3h": "Aufgedrückt. Fertig.",
@@ -130,5 +130,6 @@
   "w.totop": "Nach oben",
   "w.paidOnly": "Feine Details und Beispielbilder gibt es mit Tagespass oder Pro.",
   "w.errPaidCap": "Du hast alle Designs deines Plans vorerst genutzt.",
-  "w.leftPlan": "Noch {n} Designs in deinem Plan"
+  "w.leftPlan": "Noch {n} Designs in deinem Plan",
+  "w.menu": "Menü"
 }

@@ -112,7 +112,7 @@
   "w.print": "Imprimer à taille réelle",
   "w.saved": "Enregistré en {mm} mm de large, 300 dpi.",
   "w.popup": "Autorisez les fenêtres surgissantes pour imprimer, ou téléchargez le PNG et imprimez-le à 100 %.",
-  "w.wm": "Les téléchargements gratuits portent un petit filigrane.",
+  "w.wm": "Les téléchargements gratuits portent un filigrane.",
   "w.wmLink": "Un pass journée ou Pro le retire.",
   "w.studioLink": "Besoin de plus de contrôle ? Ouvrez-le dans le Studio",
   "w.a3h": "Appliqué. Terminé.",
@@ -130,5 +130,6 @@
   "w.totop": "Retour en haut",
   "w.paidOnly": "Les détails fins et les images d'exemple sont inclus avec un pass journée ou Pro.",
   "w.errPaidCap": "Vous avez utilisé tous les designs de votre offre pour le moment.",
-  "w.leftPlan": "{n} designs restants dans votre offre"
+  "w.leftPlan": "{n} designs restants dans votre offre",
+  "w.menu": "Menu"
 }

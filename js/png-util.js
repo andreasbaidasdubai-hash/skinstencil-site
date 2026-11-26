@@ -15,10 +15,14 @@
   }
   /* Same look as the studio's free-download watermark: diagonal "skinstencil.com" in the stencil purple. */
   function watermark(x, w, h, a) {
-    var fs = Math.max(18, Math.round(Math.max(w, h) / 13)), txt = 'skinstencil.com', step = fs * 2.1, ext = Math.hypot(w, h);
-    x.save(); x.globalAlpha = a == null ? 0.5 : a; x.fillStyle = '#4F35C8'; x.font = '700 ' + fs + 'px Archivo, Arial, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
-    x.translate(w / 2, h / 2); x.rotate(-Math.PI / 6);
-    var row = 0; for (var yy = -ext; yy < ext; yy += step, row++) { for (var xx = -ext; xx < ext; xx += fs * 9) x.fillText(txt, xx + (row % 2 ? fs * 4.5 : 0), yy); }
+    // two crossing diagonals of large text in the stencil purple: it cannot be cropped away and is hard to separate from the lines
+    var fs = Math.max(26, Math.round(Math.max(w, h) / 9)), txt = 'skinstencil.com', step = fs * 1.7, ext = Math.hypot(w, h);
+    x.save(); x.globalAlpha = a == null ? 0.55 : a; x.fillStyle = '#4F35C8'; x.font = '800 ' + fs + 'px Archivo, Arial, sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    [-Math.PI / 6, Math.PI / 6].forEach(function (ang) {
+      x.save(); x.translate(w / 2, h / 2); x.rotate(ang);
+      var row = 0; for (var yy = -ext; yy < ext; yy += step, row++) { for (var xx = -ext; xx < ext; xx += fs * 8) x.fillText(txt, xx + (row % 2 ? fs * 4 : 0), yy); }
+      x.restore();
+    });
     x.restore();
   }
   g.SkinPng = { crc32: crc32, withDpi: withDpi, watermark: watermark };
