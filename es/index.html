@@ -365,8 +365,6 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 <script>
 (function(){
   var C=window.SkinConfig||{};
-  /* the brow tool used to be a tab here; old links to #brow go to its own page */
-  if(location.hash==='#brow') location.replace('/es/brow/');
   var sel=document.getElementById('langSel'); if(sel) sel.addEventListener('change',function(){ location.href=sel.value; });
   /* checkout buttons: real links when configured, else "opens soon" */
   var anyLive=false;
