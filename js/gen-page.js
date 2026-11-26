@@ -197,8 +197,8 @@
   function route() {   // with a picture the style is chosen for us (the picture-aware model), so the choice is not drawn
     $('genStyle').hidden = !!REF;
   }
-  [].forEach.call($('genStyle').querySelectorAll('button'), function (b) { b.addEventListener('click', function () { S.style = b.getAttribute('data-v'); [].forEach.call($('genStyle').querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', String(x === b)); }); route(); }); });
-  $('attBtn').addEventListener('click', function () { $('ref').click(); });
+  [].forEach.call($('genStyle').querySelectorAll('button'), function (b) { b.addEventListener('click', function () { if (b.getAttribute('data-v') === 'detail' && !unlocked()) { say('gen.w.paidOnly', 'err'); return; } S.style = b.getAttribute('data-v'); [].forEach.call($('genStyle').querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', String(x === b)); }); route(); }); });
+  $('attBtn').addEventListener('click', function () { if (!unlocked()) { say('gen.w.paidOnly', 'err'); return; } $('ref').click(); });
   $('ref').addEventListener('change', function () {
     var f = this.files && this.files[0]; if (!f) return;
     if (f.size > 12e6) { say('gen.w.errBig', 'err'); return; }
@@ -233,7 +233,7 @@
     });
   }
   function licenseKey() { try { var s = JSON.parse(localStorage.getItem('skinstencil.license') || 'null'); return s && unlocked() ? s.key : ''; } catch (e) { return ''; } }
-  var ERR = { limit_free: 's.gen.errLimitFree', limit_paid: 's.gen.errLimitPaid', budget: 's.gen.errBudget', bot: 's.gen.errBot' };
+  var ERR = { limit_free: 's.gen.errLimitFree', limit_plan: 'gen.w.errPaidCap', paid_only: 'gen.w.paidOnly', budget: 's.gen.errBudget', bot: 's.gen.errBot' };
   /* one call to the Worker: returns the picture as a blob, or throws {key} with the message to show */
   function ask(path, body) {
     var h = { 'Content-Type': 'application/json' }, key = licenseKey(); if (key) h['X-License'] = key;
@@ -242,8 +242,8 @@
       body.turnstile = hu.tok;
       return fetch(base + path, { method: 'POST', headers: h, body: JSON.stringify(body) });
     }).then(function (r) {
-      if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) { throw { key: (path === '/place' && (j.error === 'limit_free' || j.error === 'limit_paid')) ? 'gen.w.errPlaceLimit' : (ERR[j.error] || 's.gen.errUpstream') }; });
-      var left = r.headers.get('X-Remaining'); return r.blob().then(function (b) { return { blob: b, left: left }; });
+      if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) { throw { key: (path === '/place' && j.error === 'limit_free') ? 'gen.w.errPlaceLimit' : (ERR[j.error] || 's.gen.errUpstream') }; });
+      var left = r.headers.get('X-Remaining'), plan = r.headers.get('X-Plan'); return r.blob().then(function (b) { return { blob: b, left: left, plan: plan }; });
     }, function (e) { throw { key: e && e.message === 'bot' ? 's.gen.errBot' : 's.gen.errNetwork' }; });
   }
   function blobImg(blob) { return new Promise(function (ok, no) { var u = URL.createObjectURL(blob), im = new Image(); im.onload = function () { ok({ im: im, u: u }); }; im.onerror = function () { URL.revokeObjectURL(u); no({ key: 's.gen.errUpstream' }); }; im.src = u; }); }
@@ -254,7 +254,7 @@
     if (p.length < 3 && !REF) { say('s.gen.errShort', 'err'); return; }
     busy = true; $('genBtn').disabled = true; say('s.gen.busy');
     var body = { prompt: p, style: S.style }; if (REF) { body.ref = REF; body.refMode = REFMODE; }
-    ask('/generate', body).then(function (r) { return blobImg(r.blob).then(function (o) { setDesign(o.im, false); URL.revokeObjectURL(o.u); SET.mode = 'draw'; dflt(); develop(); say(r.left != null ? 's.gen.left' : '', 'ok', { n: r.left }); $('wstage').scrollIntoView({ block: 'nearest' }); }); })
+    ask('/generate', body).then(function (r) { return blobImg(r.blob).then(function (o) { setDesign(o.im, false); URL.revokeObjectURL(o.u); SET.mode = 'draw'; dflt(); develop(); say(r.left == null ? '' : (r.plan && r.plan !== 'free') ? 'gen.w.leftPlan' : 's.gen.left', 'ok', { n: r.left }); $('wstage').scrollIntoView({ block: 'nearest' }); }); })
       .catch(function (e) { say(e && e.key ? e.key : 's.gen.errNetwork', 'err'); })
       .then(function () { busy = false; $('genBtn').disabled = false; });
   }

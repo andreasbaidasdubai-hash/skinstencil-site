@@ -3,9 +3,10 @@
 The site is built so checkout can be switched on by editing ONE file: `js/config.js`. Until then every "buy" button honestly says checkout opens soon and offers an email link.
 
 ## The model
-- Free: unlimited stencils, all controls. Downloads carry a diagonal "skinstencil.com" watermark and are capped at 800 px.
-- Day pass (test price USD 4.99): 24 hours, no watermark, up to 4000 px, PNG carries 300 dpi so print software uses true size.
-- Pro (test prices USD 12 a month, USD 79 a year): same, for as long as the subscription runs.
+- Free: unlimited stencils, all controls. Downloads carry a diagonal "skinstencil.com" watermark and are capped at 800 px. AI: 2 Bold designs a day and 1 realistic preview a week, no Fine detail, no example pictures.
+- Day pass (USD 14.99, set 26 Nov 2026): 24 hours, no watermark, up to 4000 px, PNG carries 300 dpi so print software uses true size. AI: 20 designs and 6 realistic previews per pass (not per day), Fine detail and example pictures included.
+- Pro (USD 29 a month, USD 199 a year, set 26 Nov 2026): same, for as long as the subscription runs. AI: a pool of 60 designs and 15 realistic previews per calendar month.
+- The limits live in `worker/index.js` (LIMITS, BUDGET) and are explained in the pricing study. The Worker tells a day pass from Pro by how long the license key lives (9 days or less = pass), so the day pass benefit MUST expire the key and Pro keys must live longer.
 - Studio (from USD 49 a month): in development; email interest only.
 Why this shape: the preview stays clean so the tool sells itself; only the file you take away is gated. A day pass is the "one click, one time" option for an artist who needs a single clean stencil; Pro is for daily users.
 

@@ -83,7 +83,7 @@
   "w.realTag": "Realistische preview",
   "w.realBusy": "Wordt op de huid geplaatst, ongeveer 30 seconden...",
   "w.realNote": "Door het realismemodel op deze foto getekend.",
-  "w.errPlaceLimit": "Je realistische preview van vandaag is gebruikt. Met een dagpas of Pro krijg je meer.",
+  "w.errPlaceLimit": "Je gratis realistische preview van deze week is gebruikt. Met een dagpas of Pro krijg je meer.",
   "w.toSheet": "Maak de stencil",
   "w.vTattoo": "Tattoo",
   "w.vStencil": "Stencil",
@@ -127,5 +127,8 @@
   "w.fineTune": "Fijn afstellen",
   "w.expand": "Afbeelding vergroten",
   "w.collapse": "Sluiten",
-  "w.totop": "Terug naar boven"
+  "w.totop": "Terug naar boven",
+  "w.paidOnly": "Fijn detail en voorbeeldafbeeldingen horen bij een dagpas of Pro.",
+  "w.errPaidCap": "Je hebt alle designs van je abonnement voorlopig gebruikt.",
+  "w.leftPlan": "Nog {n} designs in je abonnement"
 }

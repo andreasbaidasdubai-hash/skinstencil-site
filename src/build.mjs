@@ -126,7 +126,7 @@ function siteFoot(l, S) {
     `<script>(function(){var b=document.querySelector('.totop');if(!b)return;function f(){b.classList.toggle('on',window.scrollY>900)}window.addEventListener('scroll',f,{passive:true});f();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})})})();<\/script>`;
 }
 const plain = s => String(s).replace(/<[^>]+>/g, '');
-const OFFERS = [{ '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Day pass', price: '4.99', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro monthly', price: '12', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro yearly', price: '79', priceCurrency: 'USD' }];
+const OFFERS = [{ '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Day pass', price: '14.99', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro monthly', price: '29', priceCurrency: 'USD' }, { '@type': 'Offer', name: 'Pro yearly', price: '199', priceCurrency: 'USD' }];
 function ldjsonBrow(S, l) {
   const faq = []; for (let i = 1; i <= 5; i++) if (S['brow.q' + i + '.h']) faq.push({ '@type': 'Question', name: plain(S['brow.q' + i + '.h']), acceptedAnswer: { '@type': 'Answer', text: plain(S['brow.q' + i + '.p']) } });
   const url = SITE + urlOf(l, 'brow');

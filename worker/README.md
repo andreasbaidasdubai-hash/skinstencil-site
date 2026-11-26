@@ -14,9 +14,15 @@ npx wrangler deploy
 
 Wrangler prints the Worker address (`https://skinstencil-generate.<you>.workers.dev`). Put it in `js/config.js` as `generatorUrl`, run `node src/build.mjs`, commit, push. Until `generatorUrl` is set the generator is not drawn on the page.
 
-Limits live in `wrangler.toml`: `FREE_PER_DAY` (visitors without a license), `PAID_PER_DAY` (with a valid key), `DAILY_BUDGET_USD` (everyone together; the Worker refuses once it is reached). Change a value, run `npx wrangler deploy`.
+Limits (changed 26 Nov 2026, see the pricing study): the numbers are in `index.js` (`LIMITS`, `BUDGET`), the two spending pools can be overridden in `wrangler.toml` (`FREE_BUDGET_USD`, `PAID_BUDGET_USD`).
+- Free (no license): 2 Bold designs per UTC day and 1 realistic preview per week, per network address. No Fine detail and no example picture (the Worker answers `paid_only`).
+- Day pass: 20 designs and 6 realistic previews for the whole life of the key, not per day.
+- Pro (monthly or yearly): 60 designs and 15 realistic previews per calendar month.
+- Pools per UTC day: free 4 USD, paid 8 USD. When the free pool is empty, paying customers are still served.
+- Plan detection: a license key valid for 9 days or less in total (expires_at minus created_at, else the time left) is a day pass, anything longer is Pro. So the day pass benefit in Polar must expire the key, and Pro keys must not. Check this with the first real keys; if Polar does not return created_at, a Pro key that has an expiry set in the last 9 days of its period would be treated as a pass.
+- Worst case per customer: day pass 2.20 USD of AI against 13.63 net; Pro monthly 6.30 against 26.83; Pro yearly 6.30 a month against 15.6.
 
-Costs per design: bold (Recraft vector) 0.08 USD, detail (GPT Image 2) about 0.06 USD (priced by tokens, so the real figure can differ slightly; check the fal dashboard).
+Costs per call: bold (Recraft vector) 0.08 USD, detail (GPT Image 2) about 0.06 USD (priced by tokens, so the real figure can differ slightly; check the fal dashboard).
 
 ## Bot check (Cloudflare Turnstile, free)
 

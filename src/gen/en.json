@@ -83,7 +83,7 @@
   "w.realTag": "Realistic preview",
   "w.realBusy": "Placing it on the skin, about 30 seconds...",
   "w.realNote": "Drawn by the realism model onto this photo.",
-  "w.errPlaceLimit": "You have used today's realistic preview. A day pass or Pro gives more.",
+  "w.errPlaceLimit": "You have used your free realistic preview for this week. A day pass or Pro has more.",
   "w.toSheet": "Make the stencil",
   "w.vTattoo": "Tattoo",
   "w.vStencil": "Stencil",
@@ -127,5 +127,8 @@
   "w.fineTune": "Fine-tune",
   "w.expand": "Expand the picture",
   "w.collapse": "Close",
-  "w.totop": "Back to top"
+  "w.totop": "Back to top",
+  "w.paidOnly": "Fine detail and example pictures come with a day pass or Pro.",
+  "w.errPaidCap": "You have used all the designs in your plan for now.",
+  "w.leftPlan": "{n} designs left in your plan"
 }

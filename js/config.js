@@ -10,7 +10,7 @@ window.SkinConfig = {
     month: "https://buy.polar.sh/polar_cl_M548UXCzOIvSF2ns2K3POQKIEerMIGVogcOmh0WygHc",
     year: "https://buy.polar.sh/polar_cl_RtlAFQ4fBXdVCVJiYUtHcVmwqlGmTetAxMO8p1IRBAX"
   },
-  prices: { currency: "USD", day: "4.99", month: "12", year: "79" },
+  prices: { currency: "USD", day: "14.99", month: "29", year: "199" },
   analyticsToken: "87fa69765dd849aaa207fe3e48dfd3e8",
   notifyEmail: "hello@skinstencil.com",
   /* Address of the design-generator Worker (worker/README.md). Empty = the generator is not drawn on the page. */

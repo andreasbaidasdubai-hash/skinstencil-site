@@ -83,7 +83,7 @@
   "w.realTag": "Vista previa realista",
   "w.realBusy": "Colocándolo sobre la piel, unos 30 segundos...",
   "w.realNote": "Dibujado por el modelo de realismo sobre esta foto.",
-  "w.errPlaceLimit": "Ya usaste la vista previa realista de hoy. Un pase de un día o Pro da más.",
+  "w.errPlaceLimit": "Ya usaste la vista previa realista gratis de esta semana. Un pase de un día o Pro da más.",
   "w.toSheet": "Crear el stencil",
   "w.vTattoo": "Tatuaje",
   "w.vStencil": "Stencil",
@@ -127,5 +127,8 @@
   "w.fineTune": "Ajustes finos",
   "w.expand": "Ampliar la imagen",
   "w.collapse": "Cerrar",
-  "w.totop": "Volver arriba"
+  "w.totop": "Volver arriba",
+  "w.paidOnly": "El detalle fino y las imágenes de ejemplo vienen con un pase de un día o Pro.",
+  "w.errPaidCap": "Ya usaste todos los diseños de tu plan por ahora.",
+  "w.leftPlan": "Te quedan {n} diseños en tu plan"
 }

@@ -4,9 +4,9 @@ compatibility_date = "2026-11-01"
 
 [vars]
 POLAR_ORG_ID = "9ef14326-9d33-47d5-b4b8-17d92fd67b47"
-FREE_PER_DAY = "2"
-PAID_PER_DAY = "30"
-DAILY_BUDGET_USD = "10"
+# Spending pools per UTC day (USD). Free traffic can never use up the paid pool. Limits per plan are in index.js (LIMITS).
+FREE_BUDGET_USD = "4"
+PAID_BUDGET_USD = "8"
 
 # Create the namespace once with:  npx wrangler kv namespace create LIMITS   and paste the id it prints here.
 [[kv_namespaces]]

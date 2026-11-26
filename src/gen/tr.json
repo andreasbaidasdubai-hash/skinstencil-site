@@ -83,7 +83,7 @@
   "w.realTag": "Gerçekçi önizleme",
   "w.realBusy": "Cilde yerleştiriliyor, yaklaşık 30 saniye...",
   "w.realNote": "Gerçekçilik modeli tarafından bu fotoğrafa çizildi.",
-  "w.errPlaceLimit": "Bugünkü gerçekçi önizleme hakkınızı kullandınız. Günlük geçiş veya Pro daha fazlasını verir.",
+  "w.errPlaceLimit": "Bu haftaki ücretsiz gerçekçi önizleme hakkınızı kullandınız. Günlük geçiş veya Pro daha fazlasını verir.",
   "w.toSheet": "Stencil'i hazırla",
   "w.vTattoo": "Dövme",
   "w.vStencil": "Stencil",
@@ -127,5 +127,8 @@
   "w.fineTune": "İnce ayar",
   "w.expand": "Resmi büyüt",
   "w.collapse": "Kapat",
-  "w.totop": "Başa dön"
+  "w.totop": "Başa dön",
+  "w.paidOnly": "İnce detay ve örnek görseller günlük geçiş veya Pro ile gelir.",
+  "w.errPaidCap": "Planınızdaki tüm tasarımları şimdilik kullandınız.",
+  "w.leftPlan": "Planınızda {n} tasarım kaldı"
 }

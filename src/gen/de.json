@@ -83,7 +83,7 @@
   "w.realTag": "Realistische Vorschau",
   "w.realBusy": "Wird auf die Haut gesetzt, etwa 30 Sekunden...",
   "w.realNote": "Vom Realismus-Modell auf dieses Foto gezeichnet.",
-  "w.errPlaceLimit": "Du hast die realistische Vorschau für heute genutzt. Mit Tagespass oder Pro gibt es mehr.",
+  "w.errPlaceLimit": "Du hast die kostenlose realistische Vorschau für diese Woche genutzt. Mit Tagespass oder Pro gibt es mehr.",
   "w.toSheet": "Stencil erstellen",
   "w.vTattoo": "Tattoo",
   "w.vStencil": "Stencil",
@@ -127,5 +127,8 @@
   "w.fineTune": "Feinabstimmung",
   "w.expand": "Bild vergrößern",
   "w.collapse": "Schließen",
-  "w.totop": "Nach oben"
+  "w.totop": "Nach oben",
+  "w.paidOnly": "Feine Details und Beispielbilder gibt es mit Tagespass oder Pro.",
+  "w.errPaidCap": "Du hast alle Designs deines Plans vorerst genutzt.",
+  "w.leftPlan": "Noch {n} Designs in deinem Plan"
 }

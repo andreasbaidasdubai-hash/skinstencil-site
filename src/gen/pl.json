@@ -83,7 +83,7 @@
   "w.realTag": "Podgląd realistyczny",
   "w.realBusy": "Nakładanie na skórę, około 30 sekund...",
   "w.realNote": "Narysowane przez model realizmu na tym zdjęciu.",
-  "w.errPlaceLimit": "Dzisiejszy podgląd realistyczny został wykorzystany. Karnet dzienny lub Pro daje więcej.",
+  "w.errPlaceLimit": "Darmowy podgląd realistyczny na ten tydzień został wykorzystany. Karnet dzienny lub Pro daje więcej.",
   "w.toSheet": "Zrób stencil",
   "w.vTattoo": "Tatuaż",
   "w.vStencil": "Stencil",
@@ -127,5 +127,8 @@
   "w.fineTune": "Dopracuj",
   "w.expand": "Powiększ obraz",
   "w.collapse": "Zamknij",
-  "w.totop": "Wróć na górę"
+  "w.totop": "Wróć na górę",
+  "w.paidOnly": "Drobne detale i obrazy przykładowe są w karnecie dziennym lub Pro.",
+  "w.errPaidCap": "Wykorzystano na razie wszystkie projekty z Twojego planu.",
+  "w.leftPlan": "Zostało {n} projektów w Twoim planie"
 }
