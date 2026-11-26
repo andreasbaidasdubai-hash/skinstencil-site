@@ -33,16 +33,17 @@
     chest: { d: { x: 50, y: 46, s: 42, r: 0 } }, ribs: { d: { x: 52, y: 50, s: 46, r: -8 } }, thigh: { d: { x: 50, y: 50, s: 42, r: 0 } }, calf: { d: { x: 50, y: 50, s: 38, r: 0 } } };
   var TONES = [['t1', '#F1D3BE'], ['t2', '#E2B999'], ['t3', '#C99A74'], ['t4', '#A06A47'], ['t5', '#6A412B'], ['t6', '#3E2618']];
   var S = { design: null, part: 'shoulder', tone: 't3', view: 'back', x: 54, y: 50, s: 50, r: -8, style: 'bold', example: false };
-  var D = document.createElement('canvas'); D.width = D.height = 800;      // the design: black on white
-  var SC = document.createElement('canvas'); SC.width = SC.height = 800;   // the stencil
-  var NN = 800, SET = { mode: 'draw', sens: 68, smooth: 0, weight: 2, specks: 30, mm: 88 }, vmode = 'art', did = 0, realFor = '';
+  var Z = 1200;   // working size of the design and the stencil: big enough that thin hatching is still more than a pixel wide
+  var D = document.createElement('canvas'); D.width = D.height = Z;      // the design: black on white
+  var SC = document.createElement('canvas'); SC.width = SC.height = Z;   // the stencil
+  var NN = Z, SET = { mode: 'draw', sens: 72, smooth: 0, weight: 2, specks: 30, mm: 88 }, vmode = 'art', did = 0, realFor = '';
   function unlocked() { try { return !!(U && U.isUnlocked()); } catch (e) { return false; } }
 
   /* ---------- design in, stencil out ---------- */
   function fitDesign(im) {
-    var c = D.getContext('2d'); c.fillStyle = '#fff'; c.fillRect(0, 0, 800, 800); c.imageSmoothingQuality = 'high';
-    var w = im.naturalWidth || im.width || 800, h = im.naturalHeight || im.height || 800, k = Math.min(680 / w, 680 / h);
-    c.drawImage(im, 400 - w * k / 2, 400 - h * k / 2, w * k, h * k);
+    var c = D.getContext('2d'); c.fillStyle = '#fff'; c.fillRect(0, 0, Z, Z); c.imageSmoothingQuality = 'high';
+    var w = im.naturalWidth || im.width || Z, h = im.naturalHeight || im.height || Z, k = Math.min(Z * .85 / w, Z * .85 / h);
+    c.drawImage(im, Z / 2 - w * k / 2, Z / 2 - h * k / 2, w * k, h * k);
   }
   function setDesign(im, example) {
     fitDesign(im); did++; S.design = true; S.example = !!example; clearReal();
@@ -64,24 +65,51 @@
   function dil(m, grow) { var o = new Uint8Array(m.length); for (var y = 0; y < NN; y++) for (var x = 0; x < NN; x++) { var i = y * NN + x, v = grow ? 0 : 1; for (var dy = -1; dy <= 1; dy++) for (var dx = -1; dx <= 1; dx++) { var X = x + dx, Y = y + dy; if (X < 0 || Y < 0 || X >= NN || Y >= NN) continue; var q = m[Y * NN + X]; if (grow) { if (q) v = 1; } else if (!q) v = 0; } o[i] = v; } return o; }
   function majority(m) { var f = new Float32Array(m.length); for (var i = 0; i < m.length; i++) f[i] = m[i]; f = blur3(f, 1); var o = new Uint8Array(m.length); for (i = 0; i < m.length; i++) o[i] = f[i] > .5 ? 1 : 0; return o; }
   function despeck(m, min) { if (min <= 0) return m; var seen = new Uint8Array(m.length), stack = [], comp; for (var i = 0; i < m.length; i++) { if (!m[i] || seen[i]) continue; comp = []; stack.length = 0; stack.push(i); seen[i] = 1; while (stack.length) { var p = stack.pop(); comp.push(p); var x = p % NN, y = (p / NN) | 0; if (x > 0 && m[p - 1] && !seen[p - 1]) { seen[p - 1] = 1; stack.push(p - 1); } if (x < NN - 1 && m[p + 1] && !seen[p + 1]) { seen[p + 1] = 1; stack.push(p + 1); } if (y > 0 && m[p - NN] && !seen[p - NN]) { seen[p - NN] = 1; stack.push(p - NN); } if (y < NN - 1 && m[p + NN] && !seen[p + NN]) { seen[p + NN] = 1; stack.push(p + NN); } } if (comp.length < min) for (var k = 0; k < comp.length; k++) m[comp[k]] = 0; } return m; }
-  function makeStencil() {
-    if (!S.design) return;
+  /* the stencil, from the design and a set of controls. Thin strokes are first made crisper (unsharp mask), then the line mask is cut, smoothed, thickened and cleaned of specks. */
+  function stencilCore(set) {
     var d = D.getContext('2d').getImageData(0, 0, NN, NN).data, g = new Float32Array(NN * NN), orig = new Uint8Array(NN * NN), ink = new Uint8Array(NN * NN), i;
     for (i = 0; i < NN * NN; i++) { g[i] = .299 * d[i * 4] + .587 * d[i * 4 + 1] + .114 * d[i * 4 + 2]; orig[i] = g[i] < 128 ? 1 : 0; }
-    if (SET.mode === 'draw') { var thr = 50 + SET.sens * 1.7; for (i = 0; i < NN * NN; i++) ink[i] = g[i] < thr ? 1 : 0; }
-    else { var b = blur3(g, 2), TT = 230 - SET.sens * 2.1; for (var y = 1; y < NN - 1; y++) for (var x = 1; x < NN - 1; x++) { var k = y * NN + x, gx = -b[k - NN - 1] - 2 * b[k - 1] - b[k + NN - 1] + b[k - NN + 1] + 2 * b[k + 1] + b[k + NN + 1], gy = -b[k - NN - 1] - 2 * b[k - NN] - b[k - NN + 1] + b[k + NN - 1] + 2 * b[k + NN] + b[k + NN + 1]; ink[k] = Math.sqrt(gx * gx + gy * gy) > TT ? 1 : 0; } ink = dil(ink, true); }
-    for (i = 0; i < SET.smooth; i++) ink = majority(ink);
-    if (SET.weight < 2) ink = dil(ink, false); else for (i = 2; i < SET.weight; i++) ink = dil(ink, true);
-    ink = despeck(ink, SET.specks);
-    var c = SC.getContext('2d'), im = c.createImageData(NN, NN), kept = 0, oc = 0, ic = 0, add = 0;
-    // the mask is softened by one blur and boosted, so line edges are anti-aliased instead of stair-stepped; the counts below still use the hard mask
+    if (set.mode === 'draw') {
+      var bl = blur3(new Float32Array(g), 1), thr = 50 + set.sens * 1.7;
+      for (i = 0; i < NN * NN; i++) { var sh = g[i] + 1.4 * (g[i] - bl[i]); ink[i] = sh < thr ? 1 : 0; }
+    } else {
+      var b = blur3(new Float32Array(g), 2), TT = 230 - set.sens * 2.1;
+      for (var y = 1; y < NN - 1; y++) for (var x = 1; x < NN - 1; x++) { var k = y * NN + x, gx = -b[k - NN - 1] - 2 * b[k - 1] - b[k + NN - 1] + b[k - NN + 1] + 2 * b[k + 1] + b[k + NN + 1], gy = -b[k - NN - 1] - 2 * b[k - NN] - b[k - NN + 1] + b[k + NN - 1] + 2 * b[k + NN] + b[k + NN + 1]; ink[k] = Math.sqrt(gx * gx + gy * gy) > TT ? 1 : 0; }
+      ink = dil(ink, true);
+    }
+    for (i = 0; i < set.smooth; i++) ink = majority(ink);
+    if (set.weight < 2) ink = dil(ink, false); else for (i = 2; i < set.weight; i++) ink = dil(ink, true);
+    ink = despeck(ink, set.specks * 2);   // specks are counted in pixels of the 1200 px working size
+    var kept = 0, oc = 0, ic = 0, add = 0;
+    for (i = 0; i < NN * NN; i++) { if (ink[i]) { ic++; if (orig[i]) kept++; else add++; } if (orig[i]) oc++; }
+    return { ink: ink, orig: orig, kp: oc ? Math.round(100 * kept / oc) : 0, ad: ic ? Math.round(100 * add / ic) : 0 };
+  }
+  function makeStencil() {
+    if (!S.design) return;
+    var r = stencilCore(SET), ink = r.ink, i, c = SC.getContext('2d'), im = c.createImageData(NN, NN);
+    // the mask is softened by one blur and boosted, so line edges are anti-aliased instead of stair-stepped
     var soft = new Float32Array(NN * NN); for (i = 0; i < NN * NN; i++) soft[i] = ink[i]; soft = blur3(soft, 1);
-    for (i = 0; i < NN * NN; i++) { var o = i * 4, a = soft[i] < .06 ? 0 : Math.min(1, soft[i] * 1.7); if (ink[i]) { ic++; if (orig[i]) kept++; else add++; } im.data[o] = 255 - 176 * a; im.data[o + 1] = 255 - 202 * a; im.data[o + 2] = 255 - 55 * a; im.data[o + 3] = 255; if (orig[i]) oc++; }
+    for (i = 0; i < NN * NN; i++) { var o = i * 4, a = soft[i] < .06 ? 0 : Math.min(1, soft[i] * 1.7); im.data[o] = 255 - 176 * a; im.data[o + 1] = 255 - 202 * a; im.data[o + 2] = 255 - 55 * a; im.data[o + 3] = 255; }
     c.putImageData(im, 0, 0);
-    var kp = oc ? Math.round(100 * kept / oc) : 0, ad = ic ? Math.round(100 * add / ic) : 0;
-    $('kept').textContent = kp + '%'; $('lost').textContent = (100 - kp) + '%'; $('added').textContent = ad + '%'; $('meterFill').style.width = kp + '%';
+    $('kept').textContent = r.kp + '%'; $('lost').textContent = (100 - r.kp) + '%'; $('added').textContent = r.ad + '%'; $('meterFill').style.width = r.kp + '%';
     $('cO').getContext('2d').drawImage(D, 0, 0); $('cS').getContext('2d').drawImage(SC, 0, 0); paintView(); sizeOut();
   }
+  /* "Recommended": look at the design, pick line art or photo mode, then try a few detail values and keep the one that keeps the most lines without adding any */
+  function recommend() {
+    if (!S.design) return;
+    var d = D.getContext('2d').getImageData(0, 0, NN, NN).data, dark = 0, n = NN * NN, i;
+    for (i = 0; i < n; i += 7) { var v = .299 * d[i * 4] + .587 * d[i * 4 + 1] + .114 * d[i * 4 + 2]; if (v < 235) dark++; }
+    var photo = dark / (n / 7) > .5, best = null, cand = [56, 64, 72, 80, 88];
+    $('recNote').textContent = '...';
+    setTimeout(function () {
+      cand.forEach(function (sv) { var st = { mode: photo ? 'photo' : 'draw', sens: sv, smooth: 0, weight: 2, specks: 30 }, r = stencilCore(st), score = r.kp - 0.25 * r.ad; if (!best || score > best.score) best = { score: score, sens: sv }; });
+      SET.mode = photo ? 'photo' : 'draw'; SET.sens = best.sens; SET.smooth = 0; SET.weight = 2; SET.specks = 30;
+      [['sens', 'sensV'], ['smooth', 'smoothV'], ['weight', 'weightV'], ['specks', 'specksV']].forEach(function (p) { $(p[0]).value = SET[p[0]]; $(p[1]).textContent = SET[p[0]]; });
+      [].forEach.call($('smode').children, function (x) { x.setAttribute('aria-pressed', String(x.dataset.v === SET.mode)); });
+      makeStencil(); $('recNote').textContent = t('s.recommendedDone');
+    }, 30);
+  }
+  $('recBtn').addEventListener('click', recommend);
   var sT = 0; function later() { cancelAnimationFrame(sT); sT = requestAnimationFrame(makeStencil); }
   [['sens', 'sensV'], ['smooth', 'smoothV'], ['weight', 'weightV'], ['specks', 'specksV']].forEach(function (p) { $(p[0]).addEventListener('input', function () { SET[p[0]] = +this.value; $(p[1]).textContent = this.value; later(); }); });
   $('smode').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; SET.mode = b.dataset.v; [].forEach.call($('smode').children, function (x) { x.setAttribute('aria-pressed', String(x === b)); }); later(); });
@@ -89,7 +117,7 @@
   $('mm').addEventListener('input', function () { SET.mm = Math.max(10, Math.min(600, +this.value || 88)); sizeOut(); });
 
   /* ---------- views: tattoo on skin / stencil on skin / print sheet ---------- */
-  function paintView() { var c = $('wc2').getContext('2d'); c.clearRect(0, 0, 800, 800); c.drawImage(vmode === 'stencil' ? SC : D, 0, 0); }
+  function paintView() { var c = $('wc2').getContext('2d'); c.clearRect(0, 0, Z, Z); c.drawImage(vmode === 'stencil' ? SC : D, 0, 0); }
   function setView(m) {
     vmode = m; [].forEach.call($('vt').children, function (b) { b.setAttribute('aria-pressed', String(b.dataset.m === m)); });
     $('sheet').hidden = m !== 'sheet'; $('wart').style.visibility = m === 'sheet' ? 'hidden' : '';
@@ -264,6 +292,16 @@
   });
   $('toStudio').addEventListener('click', function (e) { if (!S.design) return; e.preventDefault(); try { sessionStorage.setItem('skinstencil.handoff', D.toDataURL('image/png')); } catch (er) { /* storage full or blocked: the Studio then opens with its sample */ } location.href = $('genBox').getAttribute('data-studio') + '?from=ai'; });
   if (unlocked()) $('wmNote').hidden = true;
+
+  /* phones: the preview is small so the form stays usable; this opens it full screen */
+  function setBig(on) {
+    var sc = document.querySelector('.stagecol'), x = $('xp'); sc.classList.toggle('big', on); document.documentElement.style.overflow = on ? 'hidden' : '';
+    x.setAttribute('aria-label', x.getAttribute(on ? 'data-collapse' : 'data-expand')); setTimeout(apply, 30);
+  }
+  $('xp').addEventListener('click', function (e) { e.stopPropagation(); setBig(!document.querySelector('.stagecol').classList.contains('big')); });
+  $('xp').addEventListener('pointerdown', function (e) { e.stopPropagation(); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 860) setBig(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setBig(false); });
 
   /* ---------- start ---------- */
   if (!base) { $('st1').hidden = true; $('real').hidden = true; }   // a control that cannot be used is not drawn

@@ -25,7 +25,8 @@
    <p class="wnote" id="rnote">{{gen.w.dragHint}}</p>
   </div>
   <div class="stp off" id="st4"><h3><i>4</i>{{gen.w.s4}}</h3>
-   <div class="row"><label for="sens">{{gen.w.detail}} <span id="sensV">68</span></label><input id="sens" type="range" min="1" max="100" value="68"></div>
+   <div class="btnrow"><button class="cta ghost" id="recBtn" type="button">{{s.recommended}}</button><span class="wnote" id="recNote"></span></div>
+   <div class="row"><label for="sens">{{gen.w.detail}} <span id="sensV">72</span></label><input id="sens" type="range" min="1" max="100" value="72"></div>
    <details class="fine-tune"><summary>{{gen.w.fineTune}}</summary><div class="ft"><div class="wseg" id="smode"><button type="button" aria-pressed="true" data-v="draw"><b>{{gen.w.modeDraw}}</b><span>{{gen.w.modeDrawHint}}</span></button><button type="button" aria-pressed="false" data-v="photo"><b>{{gen.w.modePhoto}}</b><span>{{gen.w.modePhotoHint}}</span></button></div>
    <div class="row"><label for="smooth">{{gen.w.smooth}} <span id="smoothV">0</span></label><input id="smooth" type="range" min="0" max="4" value="0"></div>
    <div class="row"><label for="weight">{{gen.w.weight}} <span id="weightV">2</span></label><input id="weight" type="range" min="1" max="6" value="2"></div>
@@ -42,16 +43,15 @@
    <p class="wnote"><a href="{{base}}studio/" id="toStudio">{{gen.w.studioLink}}</a></p>
   </div>
  </div>
- <div class="stagecol"><div class="wstage" id="wstage"><img id="wskin" alt="{{gen.w.skinAlt}}" src="/assets/lib/shoulder_t3.jpg"><div id="wart"><canvas id="wc2" width="800" height="800" role="img" aria-label="{{gen.resultAlt}}"></canvas></div><img id="wreal" alt="{{gen.w.realTag}}" style="opacity:0"><div class="lamp" id="lamp"></div>
-  <div class="sheet" id="sheet" hidden><canvas id="cO" width="800" height="800"></canvas><canvas id="cS" width="800" height="800"></canvas><div class="hd" id="hd"></div><span class="sl l">{{gen.w.designL}}</span><span class="sl r">{{gen.w.stencilL}}</span></div>
+ <div class="stagecol"><div class="wstage" id="wstage"><img id="wskin" alt="{{gen.w.skinAlt}}" src="/assets/lib/shoulder_t3.jpg"><div id="wart"><canvas id="wc2" width="1200" height="1200" role="img" aria-label="{{gen.resultAlt}}"></canvas></div><img id="wreal" alt="{{gen.w.realTag}}" style="opacity:0"><div class="lamp" id="lamp"></div>
+  <div class="sheet" id="sheet" hidden><canvas id="cO" width="1200" height="1200"></canvas><canvas id="cS" width="1200" height="1200"></canvas><div class="hd" id="hd"></div><span class="sl l">{{gen.w.designL}}</span><span class="sl r">{{gen.w.stencilL}}</span></div>
   <div class="vt" id="vt" role="group" aria-label="{{gen.w.viewLabel}}"><button type="button" aria-pressed="true" data-m="art">{{gen.w.vTattoo}}</button><button type="button" aria-pressed="false" data-m="stencil">{{gen.w.vStencil}}</button><button type="button" aria-pressed="false" data-m="sheet">{{gen.w.vSheet}}</button></div>
-  <div class="stagetag" id="wtag" hidden></div><div class="empty" id="wempty">{{gen.w.empty}}</div></div></div>
+  <div class="stagetag" id="wtag" hidden></div><button class="xp" id="xp" type="button" aria-label="{{gen.w.expand}}" data-expand="{{gen.w.expand}}" data-collapse="{{gen.w.collapse}}"><svg class="ic-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg><svg class="ic-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div class="empty" id="wempty">{{gen.w.empty}}</div></div></div>
 </div></div>
 
 <div class="a3" id="a3" role="region" aria-label="{{gen.w.a3h}}"><div class="sticky"><div class="bk" style="background-image:url(/assets/scenes/hands.jpg)"></div><img id="handsImg" alt="{{gen.w.handsAlt}}" loading="lazy" src="/assets/scenes/hands.jpg"><video id="vHands" muted loop playsinline preload="none" src="/assets/hands.mp4"></video><div class="sc"></div><div class="cap"><h2>{{gen.w.a3h}}</h2><p>{{gen.w.a3p}}</p><a class="cta big" href="#ws">{{gen.w.cta}}</a></div></div></div>
 
 <div class="a3" id="a3b" role="region" aria-label="{{gen.w.a4h}}"><div class="sticky"><div class="bk" style="background-image:url(/assets/scenes/artist.jpg)"></div><img id="artistImg" alt="{{gen.w.artistAlt}}" loading="lazy" src="/assets/scenes/artist.jpg"><img id="machineImg" alt="{{gen.w.machineAlt}}" loading="lazy" src="/assets/scenes/machine.jpg"><div class="sc"></div><div class="cap"><h2>{{gen.w.a4h}}</h2><p>{{gen.w.a4p}}</p><a class="cta big" href="#ws">{{gen.w.cta}}</a></div></div></div>
 
-<div class="artists"><div class="in"><h2>{{gen.w.artH}}</h2><p class="artlead">{{gen.w.artP}}</p><a class="cta big" href="#ws">{{gen.w.cta}}</a>
- <div class="pair"><figure><img alt="{{gen.w.hennaAlt}}" loading="lazy" src="/assets/scenes/henna.jpg"><a href="{{base}}studio/">{{gen.w.hennaLink}}</a></figure><figure><img alt="{{gen.w.browAlt}}" loading="lazy" src="/assets/scenes/brow.jpg"><a href="{{base}}brow/">{{gen.w.browLink}}</a></figure></div></div></div>
+<div class="artists"><div class="in"><p class="artlead">{{gen.cta.p}}</p><a class="cta ghost big" href="{{base}}studio/">{{gen.cta.btn}}</a></div></div>
 </div>

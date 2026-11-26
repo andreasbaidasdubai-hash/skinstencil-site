@@ -8,9 +8,9 @@
     "updated": "Laatst bijgewerkt",
     "answerLabel": "Het korte antwoord",
     "faq": "Vragen",
-    "indexTitle": "Gidsen voor tattoo stencils en wenkbrauw mapping",
-    "indexMetaTitle": "Gidsen: tattoo stencils en wenkbrauw mapping | Skinstencil",
-    "indexMetaDesc": "Praktische gidsen voor tatoeëerders en wenkbrauwartiesten: stencil maken van een foto, wenkbrauwen ontwerpen op een klantfoto en beide op ware grootte printen.",
+    "indexTitle": "Gidsen voor tattoo stencils",
+    "indexMetaTitle": "Gidsen: tattoo stencils | Skinstencil",
+    "indexMetaDesc": "Praktische gidsen voor tatoeëerders: maak een stencil van een foto en print hem op ware grootte.",
     "indexLead": "Korte, praktische gidsen voor tatoeëerders en wenkbrauwartiesten. Elke gids eindigt bij de gratis tool, die in je browser draait en niets uploadt.",
     "readGuide": "Lees de gids",
     "homeSectionTitle": "Gidsen voor tattoo stencils",
@@ -19,7 +19,13 @@
     "theme": "Licht of donker",
     "language": "Taal"
   },
-  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods", "brow-mapping-on-a-photo-start-arch-end", "brow-mapping-measurements-scale-and-print-true-size"],
+  "order": [
+    "tattoo-stencil-from-photo",
+    "tattoo-stencil-size-true-size-print",
+    "tattoo-stencil-transfer-methods",
+    "brow-mapping-on-a-photo-start-arch-end",
+    "brow-mapping-measurements-scale-and-print-true-size"
+  ],
   "guides": {
     "tattoo-stencil-from-photo": {
       "howto": true,
@@ -34,85 +40,167 @@
         {
           "h2": "Wat een tattoo stencil generator echt doet",
           "blocks": [
-            { "p": "Een stencil is de omlijning van een ontwerp, teruggebracht tot strakke lijnen zodat het op de huid overgebracht kan worden. Een tattoo stencil generator neemt een afbeelding en houdt de randen die ertoe doen, terwijl tinten, papiertextuur en ruis wegvallen. Het resultaat is donkere lijnen op een witte achtergrond, de vorm die de meeste overdrachtsmethoden nodig hebben." },
-            { "p": "Skinstencil doet dit met gewone beeldverwerking in je browser. Je bestand wordt op je eigen apparaat gelezen en niet geüpload. Dat is belangrijk als een ontwerp van een klant is. Het betekent ook dat de tool werkt zodra de pagina geladen is, zonder account." }
+            {
+              "p": "Een stencil is de omlijning van een ontwerp, teruggebracht tot strakke lijnen zodat het op de huid overgebracht kan worden. Een tattoo stencil generator neemt een afbeelding en houdt de randen die ertoe doen, terwijl tinten, papiertextuur en ruis wegvallen. Het resultaat is donkere lijnen op een witte achtergrond, de vorm die de meeste overdrachtsmethoden nodig hebben."
+            },
+            {
+              "p": "Skinstencil doet dit met gewone beeldverwerking in je browser. Je bestand wordt op je eigen apparaat gelezen en niet geüpload. Dat is belangrijk als een ontwerp van een klant is. Het betekent ook dat de tool werkt zodra de pagina geladen is, zonder account."
+            }
           ]
         },
         {
           "h2": "Kies een bron die goed omzet",
           "blocks": [
-            { "p": "Goede bronnen hebben een paar kenmerken gemeen. Gebruik er een die aan zoveel mogelijk voldoet:" },
-            { "ul": [
-              "Duidelijk contrast tussen de lijnen en de achtergrond, zoals inkt op wit papier.",
-              "Het ontwerp vult het beeld in plaats van klein in een hoek te staan.",
-              "Vlak en recht ten opzichte van de camera of scanner, zonder krul of perspectief.",
-              "Gelijkmatig licht, zonder schaduw van je hand of telefoon over het papier.",
-              "Genoeg resolutie zodat dunne lijnen nog meerdere pixels breed zijn."
-            ] },
-            { "p": "Een flatbedscanner is de makkelijkste manier om dat allemaal te halen. Fotografeer je liever, werk dan bij een raam in daglicht, houd de telefoon evenwijdig aan het papier en vermijd de flits, die een heldere vlek in het midden achterlaat. Gebruik alleen ontwerpen die je zelf hebt gemaakt of waarvan je het recht hebt om ze te gebruiken." }
+            {
+              "p": "Goede bronnen hebben een paar kenmerken gemeen. Gebruik er een die aan zoveel mogelijk voldoet:"
+            },
+            {
+              "ul": [
+                "Duidelijk contrast tussen de lijnen en de achtergrond, zoals inkt op wit papier.",
+                "Het ontwerp vult het beeld in plaats van klein in een hoek te staan.",
+                "Vlak en recht ten opzichte van de camera of scanner, zonder krul of perspectief.",
+                "Gelijkmatig licht, zonder schaduw van je hand of telefoon over het papier.",
+                "Genoeg resolutie zodat dunne lijnen nog meerdere pixels breed zijn."
+              ]
+            },
+            {
+              "p": "Een flatbedscanner is de makkelijkste manier om dat allemaal te halen. Fotografeer je liever, werk dan bij een raam in daglicht, houd de telefoon evenwijdig aan het papier en vermijd de flits, die een heldere vlek in het midden achterlaat. Gebruik alleen ontwerpen die je zelf hebt gemaakt of waarvan je het recht hebt om ze te gebruiken."
+            }
           ]
         },
         {
           "h2": "Modus Tekening of modus Foto",
           "blocks": [
-            { "p": "De tool vraagt wat voor bron je laadt, want een lijntekening en een foto vragen om een andere aanpak." },
-            { "h3": "Tekening" },
-            { "p": "Gebruik Tekening voor schetsen, flash, lettering en alles wat al uit lijnen bestaat. Donkere streken op een lichte pagina zijn het ontwerp, en het doel is ze zo dicht mogelijk bij je eigen tekening te houden." },
-            { "h3": "Foto" },
-            { "p": "Gebruik Foto voor beelden met zachte schaduwen, zoals een portret of een dier. Een foto heeft geen omlijning om te bewaren, dus randen waar de tint verandert moeten voor lijnen doorgaan. Reken erop dat je bij foto's meer tijd aan de schuiven kwijt bent, en dat je zelf beslist welke details je liever met de hand tekent." }
+            {
+              "p": "De tool vraagt wat voor bron je laadt, want een lijntekening en een foto vragen om een andere aanpak."
+            },
+            {
+              "h3": "Tekening"
+            },
+            {
+              "p": "Gebruik Tekening voor schetsen, flash, lettering en alles wat al uit lijnen bestaat. Donkere streken op een lichte pagina zijn het ontwerp, en het doel is ze zo dicht mogelijk bij je eigen tekening te houden."
+            },
+            {
+              "h3": "Foto"
+            },
+            {
+              "p": "Gebruik Foto voor beelden met zachte schaduwen, zoals een portret of een dier. Een foto heeft geen omlijning om te bewaren, dus randen waar de tint verandert moeten voor lijnen doorgaan. Reken erop dat je bij foto's meer tijd aan de schuiven kwijt bent, en dat je zelf beslist welke details je liever met de hand tekent."
+            }
           ]
         },
         {
           "h2": "Een tattoo stencil online maken, stap voor stap",
           "stepsIntro": "Dit zijn de stappen op volgorde. De secties hieronder leggen de bediening uitgebreider uit.",
           "steps": [
-            { "name": "Kies een duidelijke bron", "text": "Pak de tekening of foto met het beste contrast en de minste rommel. Heb je twee versies, gebruik dan die met de donkerste, meest gelijkmatige pen." },
-            { "name": "Scan of fotografeer in gelijkmatig licht", "text": "Scan plat als het kan. Fotografeer anders in daglicht, evenwijdig aan het papier, met het ontwerp beeldvullend en zonder schaduwen of flits." },
-            { "name": "Laad het in de tool", "text": "Open de gratis tool en sleep een JPG-, PNG- of WebP-bestand erin, of klik om er een te kiezen. Het wordt in je browser verwerkt en niet geüpload." },
-            { "name": "Kies de modus Tekening of Foto", "text": "Kies Tekening voor lijnwerk en flash, Foto voor beelden met zachte schaduwen." },
-            { "name": "Pas de gevoeligheid aan", "text": "Gevoeligheid bepaalt hoe zwak een streek mag zijn om nog een lijn te worden. Verlaag haar als schaduw in lijnen verandert. Verhoog haar als dunne lijnen ontbreken." },
-            { "name": "Pas afvlakking en lijndikte aan", "text": "Afvlakking rondt hoekige pixelranden af. Lijndikte maakt lijnen dikker of dunner. Als lijnen bij het printen te zwak lijken, helpt een grotere lijndikte meestal." },
-            { "name": "Verwijder spikkels", "text": "Verhoog Spikkels verwijderen om kleine puntjes van papierkorrel of stof weg te halen, tot alleen bewuste streken overblijven." },
-            { "name": "Controleer met de afwijkingscheck wat er verloren ging", "text": "Zet de afwijkingscheck aan. Verloren lijnen verschijnen rood en toegevoegde lijnen blauw, zodat je ziet wat je instellingen hebben veranderd ten opzichte van een vaste, gevoelige lezing van je origineel." },
-            { "name": "Stel de breedte in millimeters in", "text": "Voer de breedte in die je op de huid wilt. De tool toont het bijbehorende formaat op 300 dpi en een liniaal op ware grootte." },
-            { "name": "Download of print op ware grootte", "text": "Download de PNG en print hem zo dat de afdruk de ingestelde breedte heeft. Controleer met een liniaal voordat hij in de buurt van iemand komt." }
+            {
+              "name": "Kies een duidelijke bron",
+              "text": "Pak de tekening of foto met het beste contrast en de minste rommel. Heb je twee versies, gebruik dan die met de donkerste, meest gelijkmatige pen."
+            },
+            {
+              "name": "Scan of fotografeer in gelijkmatig licht",
+              "text": "Scan plat als het kan. Fotografeer anders in daglicht, evenwijdig aan het papier, met het ontwerp beeldvullend en zonder schaduwen of flits."
+            },
+            {
+              "name": "Laad het in de tool",
+              "text": "Open de gratis tool en sleep een JPG-, PNG- of WebP-bestand erin, of klik om er een te kiezen. Het wordt in je browser verwerkt en niet geüpload."
+            },
+            {
+              "name": "Kies de modus Tekening of Foto",
+              "text": "Kies Tekening voor lijnwerk en flash, Foto voor beelden met zachte schaduwen."
+            },
+            {
+              "name": "Pas de gevoeligheid aan",
+              "text": "Gevoeligheid bepaalt hoe zwak een streek mag zijn om nog een lijn te worden. Verlaag haar als schaduw in lijnen verandert. Verhoog haar als dunne lijnen ontbreken."
+            },
+            {
+              "name": "Pas afvlakking en lijndikte aan",
+              "text": "Afvlakking rondt hoekige pixelranden af. Lijndikte maakt lijnen dikker of dunner. Als lijnen bij het printen te zwak lijken, helpt een grotere lijndikte meestal."
+            },
+            {
+              "name": "Verwijder spikkels",
+              "text": "Verhoog Spikkels verwijderen om kleine puntjes van papierkorrel of stof weg te halen, tot alleen bewuste streken overblijven."
+            },
+            {
+              "name": "Controleer met de afwijkingscheck wat er verloren ging",
+              "text": "Zet de afwijkingscheck aan. Verloren lijnen verschijnen rood en toegevoegde lijnen blauw, zodat je ziet wat je instellingen hebben veranderd ten opzichte van een vaste, gevoelige lezing van je origineel."
+            },
+            {
+              "name": "Stel de breedte in millimeters in",
+              "text": "Voer de breedte in die je op de huid wilt. De tool toont het bijbehorende formaat op 300 dpi en een liniaal op ware grootte."
+            },
+            {
+              "name": "Download of print op ware grootte",
+              "text": "Download de PNG en print hem zo dat de afdruk de ingestelde breedte heeft. Controleer met een liniaal voordat hij in de buurt van iemand komt."
+            }
           ]
         },
         {
           "h2": "De bediening gebruiken zonder het ontwerp te verliezen",
           "blocks": [
-            { "p": "Zie de schuiven als een gesprek en niet als een recept. Verander er een, kijk, en zet hem terug als hij meer kwaad dan goed deed." },
-            { "ul": [
-              "Gevoeligheid is de grootste hefboom. Te hoog, en elke veeg wordt een lijn. Te laag, en fijn detail verdwijnt.",
-              "Afvlakking helpt het meest bij scans van kleine tekeningen, waar lijnen trapsgewijs lijken als je ze vergroot. Te veel afvlakking rondt scherpe hoeken en kleine openingen af.",
-              "Lijndikte is een kwestie van smaak en van je overdrachtsmethode. Hele dunne haarlijnen kunnen bij het printen of overbrengen verdwijnen, dus test eerst op papier.",
-              "Spikkels verwijderen is de opruimknop. Verhoog hem tot het stof weg is en stop voordat hij punten weghaalt die bij het ontwerp horen, zoals stippelwerk."
-            ] },
-            { "p": "Stippelwerk en piepkleine dotwork zijn meestal de slachtoffers. Hangt je ontwerp ervan af, houd Spikkels dan laag en bekijk het resultaat van dichtbij." }
+            {
+              "p": "Zie de schuiven als een gesprek en niet als een recept. Verander er een, kijk, en zet hem terug als hij meer kwaad dan goed deed."
+            },
+            {
+              "ul": [
+                "Gevoeligheid is de grootste hefboom. Te hoog, en elke veeg wordt een lijn. Te laag, en fijn detail verdwijnt.",
+                "Afvlakking helpt het meest bij scans van kleine tekeningen, waar lijnen trapsgewijs lijken als je ze vergroot. Te veel afvlakking rondt scherpe hoeken en kleine openingen af.",
+                "Lijndikte is een kwestie van smaak en van je overdrachtsmethode. Hele dunne haarlijnen kunnen bij het printen of overbrengen verdwijnen, dus test eerst op papier.",
+                "Spikkels verwijderen is de opruimknop. Verhoog hem tot het stof weg is en stop voordat hij punten weghaalt die bij het ontwerp horen, zoals stippelwerk."
+              ]
+            },
+            {
+              "p": "Stippelwerk en piepkleine dotwork zijn meestal de slachtoffers. Hangt je ontwerp ervan af, houd Spikkels dan laag en bekijk het resultaat van dichtbij."
+            }
           ]
         },
         {
           "h2": "Waarom de afwijkingscheck ertoe doet",
           "blocks": [
-            { "p": "Een stencil die er netjes uitziet kan toch iets missen. Een fijne lijn laten vallen gaat makkelijk als je een opgeruimd resultaat najaagt, en op een klein scherm zie je het snel over het hoofd." },
-            { "p": "De afwijkingscheck vergelijkt de stencil met de lijnen die in je origineel zijn gevonden. Rood markeert een lijn die verloren ging. Blauw markeert een lijn die is toegevoegd. De referentie is een vaste, gevoelige lezing van het origineel, dus als je de gevoeligheid verlaagt of Spikkels verwijderen verhoogt, zie je met opzet rood. Rood is niet altijd een fout, maar altijd een blik waard voordat je een formaat vastlegt." }
+            {
+              "p": "Een stencil die er netjes uitziet kan toch iets missen. Een fijne lijn laten vallen gaat makkelijk als je een opgeruimd resultaat najaagt, en op een klein scherm zie je het snel over het hoofd."
+            },
+            {
+              "p": "De afwijkingscheck vergelijkt de stencil met de lijnen die in je origineel zijn gevonden. Rood markeert een lijn die verloren ging. Blauw markeert een lijn die is toegevoegd. De referentie is een vaste, gevoelige lezing van het origineel, dus als je de gevoeligheid verlaagt of Spikkels verwijderen verhoogt, zie je met opzet rood. Rood is niet altijd een fout, maar altijd een blik waard voordat je een formaat vastlegt."
+            }
           ]
         },
         {
           "h2": "Formaat, download en print",
           "blocks": [
-            { "p": "Stel de breedte in millimeters in voordat je downloadt, want hetzelfde ontwerp op 60 mm en op 200 mm heeft een ander aantal pixels nodig om scherp te blijven. Onze bijbehorende gids over [printformaat](guide:tattoo-stencil-size-true-size-print) geeft de cijfers." },
-            { "p": "Gratis downloads hebben een watermerk en zijn beperkt tot 800 px. Met een dagpas of Pro verdwijnt het watermerk, zijn tot 4000 px mogelijk en wordt het formaat van 300 dpi in de PNG opgeslagen, zodat printsoftware het bestand opent op de breedte die je koos. Heb je het bestand, lees dan [manieren om een stencil op papier te krijgen](guide:tattoo-stencil-transfer-methods) voor wat er daarna gebeurt." }
+            {
+              "p": "Stel de breedte in millimeters in voordat je downloadt, want hetzelfde ontwerp op 60 mm en op 200 mm heeft een ander aantal pixels nodig om scherp te blijven. Onze bijbehorende gids over [printformaat](guide:tattoo-stencil-size-true-size-print) geeft de cijfers."
+            },
+            {
+              "p": "Gratis downloads hebben een watermerk en zijn beperkt tot 800 px. Met een dagpas of Pro verdwijnt het watermerk, zijn tot 4000 px mogelijk en wordt het formaat van 300 dpi in de PNG opgeslagen, zodat printsoftware het bestand opent op de breedte die je koos. Heb je het bestand, lees dan [manieren om een stencil op papier te krijgen](guide:tattoo-stencil-transfer-methods) voor wat er daarna gebeurt."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Kan ik een tattoo stencil van een foto maken?", "a": "Ja. Laad een foto, kies de modus Foto en pas de gevoeligheid aan tot de randen die je wilt lijnen worden. Foto's met zachte schaduwen vragen meer bijstellen dan lijntekeningen, en misschien wil je sommige details met de hand tekenen." },
-        { "q": "Is de tattoo stencil maker gratis?", "a": "Ja. Hij is gratis te gebruiken in de browser. Gratis downloads hebben een watermerk en zijn beperkt tot 800 px. Met een dagpas of Pro verdwijnt het watermerk en zijn tot 4000 px mogelijk." },
-        { "q": "Wordt mijn ontwerp ergens geüpload?", "a": "Nee. De afbeelding wordt in je browser op je eigen apparaat verwerkt en er wordt niets geüpload." },
-        { "q": "Welke bestandstypen kan ik gebruiken?", "a": "JPG-, PNG- en WebP-afbeeldingen. Gebruik de scherpste, best belichte versie die je hebt." },
-        { "q": "Waarom ontbreken er lijnen in mijn stencil?", "a": "De gevoeligheid kan te laag zijn, of Spikkels verwijderen te hoog, waardoor zwakke lijnen als ruis zijn behandeld. Zet de afwijkingscheck aan: verloren lijnen verschijnen rood. Verhoog de gevoeligheid of verlaag Spikkels verwijderen en controleer opnieuw." },
-        { "q": "Hoe print ik de stencil op het juiste formaat?", "a": "Stel de breedte in millimeters in de tool in, download de PNG en print op 100 procent zonder aanpassen aan de pagina. Controleer de afdruk met een liniaal." }
+        {
+          "q": "Kan ik een tattoo stencil van een foto maken?",
+          "a": "Ja. Laad een foto, kies de modus Foto en pas de gevoeligheid aan tot de randen die je wilt lijnen worden. Foto's met zachte schaduwen vragen meer bijstellen dan lijntekeningen, en misschien wil je sommige details met de hand tekenen."
+        },
+        {
+          "q": "Is de tattoo stencil maker gratis?",
+          "a": "Ja. Hij is gratis te gebruiken in de browser. Gratis downloads hebben een watermerk en zijn beperkt tot 800 px. Met een dagpas of Pro verdwijnt het watermerk en zijn tot 4000 px mogelijk."
+        },
+        {
+          "q": "Wordt mijn ontwerp ergens geüpload?",
+          "a": "Nee. De afbeelding wordt in je browser op je eigen apparaat verwerkt en er wordt niets geüpload."
+        },
+        {
+          "q": "Welke bestandstypen kan ik gebruiken?",
+          "a": "JPG-, PNG- en WebP-afbeeldingen. Gebruik de scherpste, best belichte versie die je hebt."
+        },
+        {
+          "q": "Waarom ontbreken er lijnen in mijn stencil?",
+          "a": "De gevoeligheid kan te laag zijn, of Spikkels verwijderen te hoog, waardoor zwakke lijnen als ruis zijn behandeld. Zet de afwijkingscheck aan: verloren lijnen verschijnen rood. Verhoog de gevoeligheid of verlaag Spikkels verwijderen en controleer opnieuw."
+        },
+        {
+          "q": "Hoe print ik de stencil op het juiste formaat?",
+          "a": "Stel de breedte in millimeters in de tool in, download de PNG en print op 100 procent zonder aanpassen aan de pagina. Controleer de afdruk met een liniaal."
+        }
       ],
       "cta": "Probeer het op je eigen ontwerp. Het draait in je browser en er wordt niets geüpload."
     },
@@ -128,79 +216,167 @@
         {
           "h2": "Waarom het formaat van een stencil makkelijk misgaat",
           "blocks": [
-            { "p": "Een digitale afbeelding heeft geen eigen fysiek formaat. Het is een raster van pixels, en het formaat op papier hangt af van hoeveel pixels er in elke inch zitten. Dat is de dpi, kort voor dots per inch, punten per inch. Hetzelfde bestand kan als postzegel of als poster uit de printer komen." },
-            { "p": "Voor een tattoo stencil is dat een probleem, want het ontwerp moet op de huid landen op precies het formaat dat met de klant is afgesproken. Printsoftware gokt vaak, schaalt de afbeelding naar de pagina, of opent het bestand op 72 of 96 dpi en maakt het veel groter dan je verwachtte. Het formaat goed krijgen betekent dat je het één keer vastlegt, in millimeters, en zorgt dat het bestand het doorgeeft aan de printer." }
+            {
+              "p": "Een digitale afbeelding heeft geen eigen fysiek formaat. Het is een raster van pixels, en het formaat op papier hangt af van hoeveel pixels er in elke inch zitten. Dat is de dpi, kort voor dots per inch, punten per inch. Hetzelfde bestand kan als postzegel of als poster uit de printer komen."
+            },
+            {
+              "p": "Voor een tattoo stencil is dat een probleem, want het ontwerp moet op de huid landen op precies het formaat dat met de klant is afgesproken. Printsoftware gokt vaak, schaalt de afbeelding naar de pagina, of opent het bestand op 72 of 96 dpi en maakt het veel groter dan je verwachtte. Het formaat goed krijgen betekent dat je het één keer vastlegt, in millimeters, en zorgt dat het bestand het doorgeeft aan de printer."
+            }
           ]
         },
         {
           "h2": "Millimeters naar pixels op 300 dpi",
           "blocks": [
-            { "p": "Een inch is 25,4 millimeter. De pixelbreedte die je nodig hebt is dus:" },
-            { "p": "**pixels = millimeters ÷ 25,4 × 300**" },
-            { "p": "Hier is het resultaat voor gangbare breedtes, afgerond op de dichtstbijzijnde pixel:" },
-            { "table": {
-              "head": ["Breedte op de huid", "Pixels op 300 dpi"],
-              "rows": [
-                ["50 mm", "591 px"],
-                ["80 mm", "945 px"],
-                ["100 mm", "1181 px"],
-                ["150 mm", "1772 px"],
-                ["200 mm", "2362 px"],
-                ["250 mm", "2953 px"],
-                ["300 mm", "3543 px"]
-              ]
-            } },
-            { "p": "Je hoeft dit niet met de hand te doen. In de tool typ je de breedte in millimeters en ernaast zie je het formaat op 300 dpi. De tabel staat hier zodat je ziet waarom een klein bestand niet groot geprint kan worden zonder dat het wazig wordt." }
+            {
+              "p": "Een inch is 25,4 millimeter. De pixelbreedte die je nodig hebt is dus:"
+            },
+            {
+              "p": "**pixels = millimeters ÷ 25,4 × 300**"
+            },
+            {
+              "p": "Hier is het resultaat voor gangbare breedtes, afgerond op de dichtstbijzijnde pixel:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Breedte op de huid",
+                  "Pixels op 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "50 mm",
+                    "591 px"
+                  ],
+                  [
+                    "80 mm",
+                    "945 px"
+                  ],
+                  [
+                    "100 mm",
+                    "1181 px"
+                  ],
+                  [
+                    "150 mm",
+                    "1772 px"
+                  ],
+                  [
+                    "200 mm",
+                    "2362 px"
+                  ],
+                  [
+                    "250 mm",
+                    "2953 px"
+                  ],
+                  [
+                    "300 mm",
+                    "3543 px"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Je hoeft dit niet met de hand te doen. In de tool typ je de breedte in millimeters en ernaast zie je het formaat op 300 dpi. De tabel staat hier zodat je ziet waarom een klein bestand niet groot geprint kan worden zonder dat het wazig wordt."
+            }
           ]
         },
         {
           "h2": "Waarom 300 dpi",
           "blocks": [
-            { "p": "300 dpi is het gebruikelijke doel voor geprinte afbeeldingen die van dichtbij bekeken worden. Bij die dichtheid wordt een dunne lijn nog steeds een strakke, doorlopende streek. Lagere dichtheden gaan trapjes in bochten laten zien, en een stencil bestaat bijna alleen uit bochten." },
-            { "p": "Meer is niet altijd beter. Grotere bestanden openen en printen langzamer, en een dunne stencillijn wordt niet scherper dan je printer hem kan tekenen. 300 dpi is een verstandig evenwicht voor stencilwerk en is wat Skinstencil gebruikt voor de uitvoer op ware grootte." }
+            {
+              "p": "300 dpi is het gebruikelijke doel voor geprinte afbeeldingen die van dichtbij bekeken worden. Bij die dichtheid wordt een dunne lijn nog steeds een strakke, doorlopende streek. Lagere dichtheden gaan trapjes in bochten laten zien, en een stencil bestaat bijna alleen uit bochten."
+            },
+            {
+              "p": "Meer is niet altijd beter. Grotere bestanden openen en printen langzamer, en een dunne stencillijn wordt niet scherper dan je printer hem kan tekenen. 300 dpi is een verstandig evenwicht voor stencilwerk en is wat Skinstencil gebruikt voor de uitvoer op ware grootte."
+            }
           ]
         },
         {
           "h2": "Hoe de 300 dpi in de PNG helpt",
           "blocks": [
-            { "p": "Een PNG-bestand kan een fysiek formaat meedragen, opgeslagen als pixels per meter in een klein blokje gegevens in het bestand. Veel programma's lezen dat en openen de afbeelding op dat formaat. Staat er 300 dpi, dan opent een afbeelding van 1181 px breed op ongeveer 100 mm breed, zonder handmatig aanpassen." },
-            { "p": "Ontbreekt de waarde, dan vallen programma's terug op een standaard, vaak 72 of 96 dpi. Op 72 dpi zou diezelfde afbeelding van 1181 px ongeveer 416 mm breed openen, ruim vier keer zo groot. Dat is een veelvoorkomende reden dat een stencil veel te groot uit de printer komt." },
-            { "p": "Met een dagpas of Pro slaat Skinstencil het formaat van 300 dpi in de PNG op, zodat printsoftware hem kan openen op de breedte die je instelde. Bij een gratis download stel je de printbreedte zelf in het printvenster in." }
+            {
+              "p": "Een PNG-bestand kan een fysiek formaat meedragen, opgeslagen als pixels per meter in een klein blokje gegevens in het bestand. Veel programma's lezen dat en openen de afbeelding op dat formaat. Staat er 300 dpi, dan opent een afbeelding van 1181 px breed op ongeveer 100 mm breed, zonder handmatig aanpassen."
+            },
+            {
+              "p": "Ontbreekt de waarde, dan vallen programma's terug op een standaard, vaak 72 of 96 dpi. Op 72 dpi zou diezelfde afbeelding van 1181 px ongeveer 416 mm breed openen, ruim vier keer zo groot. Dat is een veelvoorkomende reden dat een stencil veel te groot uit de printer komt."
+            },
+            {
+              "p": "Met een dagpas of Pro slaat Skinstencil het formaat van 300 dpi in de PNG op, zodat printsoftware hem kan openen op de breedte die je instelde. Bij een gratis download stel je de printbreedte zelf in het printvenster in."
+            }
           ]
         },
         {
           "h2": "Op ware grootte printen",
           "stepsIntro": "Een korte routine die verrassingen voorkomt:",
           "steps": [
-            { "name": "Stel de breedte in de tool in", "text": "Voer de breedte op de huid in millimeters in. De tool toont het gelijkwaardige formaat op 300 dpi." },
-            { "name": "Download de PNG", "text": "Met een dagpas of Pro bewaart het bestand het formaat van 300 dpi, dus de meeste programma's openen het op de juiste breedte." },
-            { "name": "Open het in je printvenster", "text": "Kies werkelijke grootte of 100 procent. Zet aanpassen aan pagina, verkleinen tot passend en pagina vullen uit." },
-            { "name": "Print een test op gewoon papier", "text": "Gebruik gewoon papier voor de test, niet je overdrachtsmateriaal." },
-            { "name": "Meet de afdruk", "text": "Leg een liniaal over het breedste deel en vergelijk met de breedte die je instelde. Pas aan en print opnieuw als het afwijkt." }
+            {
+              "name": "Stel de breedte in de tool in",
+              "text": "Voer de breedte op de huid in millimeters in. De tool toont het gelijkwaardige formaat op 300 dpi."
+            },
+            {
+              "name": "Download de PNG",
+              "text": "Met een dagpas of Pro bewaart het bestand het formaat van 300 dpi, dus de meeste programma's openen het op de juiste breedte."
+            },
+            {
+              "name": "Open het in je printvenster",
+              "text": "Kies werkelijke grootte of 100 procent. Zet aanpassen aan pagina, verkleinen tot passend en pagina vullen uit."
+            },
+            {
+              "name": "Print een test op gewoon papier",
+              "text": "Gebruik gewoon papier voor de test, niet je overdrachtsmateriaal."
+            },
+            {
+              "name": "Meet de afdruk",
+              "text": "Leg een liniaal over het breedste deel en vergelijk met de breedte die je instelde. Pas aan en print opnieuw als het afwijkt."
+            }
           ]
         },
         {
           "h2": "Controleer met een liniaal, elke keer",
           "blocks": [
-            { "p": "Printers en stuurprogramma's veranderen instellingen zonder het te melden, vooral na een update of op een gedeelde computer. Een liniaal haalt het giswerk weg. Meet de volledige breedte van het ontwerp op de afdruk, van rand tot rand van het beeld en niet van het papier, en vergelijk met de millimeters die je instelde." },
-            { "p": "De tool tekent ook een liniaal op ware grootte die de ingestelde printbreedte volgt, zodat je de bedoelde schaal op het scherm ziet. Schermen verschillen, dus die liniaal is slechts een richtlijn en de liniaal op de afdruk telt." },
-            { "p": "Wijkt de afdruk met een vast percentage af, dan staat er waarschijnlijk een schaalinstelling aan. Wijkt hij met een grote factor af, dan heeft het programma het bestand waarschijnlijk op 72 of 96 dpi geopend." }
+            {
+              "p": "Printers en stuurprogramma's veranderen instellingen zonder het te melden, vooral na een update of op een gedeelde computer. Een liniaal haalt het giswerk weg. Meet de volledige breedte van het ontwerp op de afdruk, van rand tot rand van het beeld en niet van het papier, en vergelijk met de millimeters die je instelde."
+            },
+            {
+              "p": "De tool tekent ook een liniaal op ware grootte die de ingestelde printbreedte volgt, zodat je de bedoelde schaal op het scherm ziet. Schermen verschillen, dus die liniaal is slechts een richtlijn en de liniaal op de afdruk telt."
+            },
+            {
+              "p": "Wijkt de afdruk met een vast percentage af, dan staat er waarschijnlijk een schaalinstelling aan. Wijkt hij met een grote factor af, dan heeft het programma het bestand waarschijnlijk op 72 of 96 dpi geopend."
+            }
           ]
         },
         {
           "h2": "Waarom gratis downloads beperkt zijn tot 800 px",
           "blocks": [
-            { "p": "Gratis downloads hebben een watermerk en zijn beperkt tot 800 px. Op 300 dpi is 800 px ongeveer 68 mm, genoeg om een ontwerp te beoordelen maar klein voor een stencil op de huid. Grotere stencils hebben meer pixels nodig om scherp te blijven, en dat ontgrendelt een dagpas of Pro: geen watermerk, tot 4000 px, ongeveer 339 mm breed op 300 dpi, en het formaat van 300 dpi in het bestand opgeslagen." },
-            { "p": "De gratis tool blijft handig om de lijnen en de afwijkingscheck te bekijken voordat je besluit een formaat te ontgrendelen. Onze gids over [een stencil maken van een foto of tekening](guide:tattoo-stencil-from-photo) behandelt dat deel." }
+            {
+              "p": "Gratis downloads hebben een watermerk en zijn beperkt tot 800 px. Op 300 dpi is 800 px ongeveer 68 mm, genoeg om een ontwerp te beoordelen maar klein voor een stencil op de huid. Grotere stencils hebben meer pixels nodig om scherp te blijven, en dat ontgrendelt een dagpas of Pro: geen watermerk, tot 4000 px, ongeveer 339 mm breed op 300 dpi, en het formaat van 300 dpi in het bestand opgeslagen."
+            },
+            {
+              "p": "De gratis tool blijft handig om de lijnen en de afwijkingscheck te bekijken voordat je besluit een formaat te ontgrendelen. Onze gids over [een stencil maken van een foto of tekening](guide:tattoo-stencil-from-photo) behandelt dat deel."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Hoeveel pixels heb ik nodig voor een stencil van 100 mm?", "a": "Ongeveer 1181 pixels breed op 300 dpi. De formule is millimeters gedeeld door 25,4, maal 300." },
-        { "q": "Waarom print mijn stencil te groot?", "a": "Vaak opende het programma de PNG op 72 of 96 dpi omdat er geen formaat in het bestand stond, of een optie als aanpassen aan pagina schaalde hem op. Print op 100 procent en stel de breedte zelf in, of gebruik een bestand met het formaat van 300 dpi erin opgeslagen." },
-        { "q": "Wat doet de waarde van 300 dpi in de PNG?", "a": "Ze vertelt printsoftware het fysieke formaat van de afbeelding, zodat die opent op de breedte die je instelde in plaats van te gokken. Downloads met dagpas en Pro bevatten haar." },
-        { "q": "Wat is de grootste stencil die ik kan downloaden?", "a": "Gratis downloads zijn beperkt tot 800 px. Met een dagpas of Pro zijn tot 4000 px mogelijk, ongeveer 339 mm breed op 300 dpi." },
-        { "q": "Moet ik de afdruk met een liniaal controleren?", "a": "Ja, elke keer. Meet het ontwerp van rand tot rand en vergelijk het met de breedte die je instelde voordat de stencil gebruikt wordt." }
+        {
+          "q": "Hoeveel pixels heb ik nodig voor een stencil van 100 mm?",
+          "a": "Ongeveer 1181 pixels breed op 300 dpi. De formule is millimeters gedeeld door 25,4, maal 300."
+        },
+        {
+          "q": "Waarom print mijn stencil te groot?",
+          "a": "Vaak opende het programma de PNG op 72 of 96 dpi omdat er geen formaat in het bestand stond, of een optie als aanpassen aan pagina schaalde hem op. Print op 100 procent en stel de breedte zelf in, of gebruik een bestand met het formaat van 300 dpi erin opgeslagen."
+        },
+        {
+          "q": "Wat doet de waarde van 300 dpi in de PNG?",
+          "a": "Ze vertelt printsoftware het fysieke formaat van de afbeelding, zodat die opent op de breedte die je instelde in plaats van te gokken. Downloads met dagpas en Pro bevatten haar."
+        },
+        {
+          "q": "Wat is de grootste stencil die ik kan downloaden?",
+          "a": "Gratis downloads zijn beperkt tot 800 px. Met een dagpas of Pro zijn tot 4000 px mogelijk, ongeveer 339 mm breed op 300 dpi."
+        },
+        {
+          "q": "Moet ik de afdruk met een liniaal controleren?",
+          "a": "Ja, elke keer. Meet het ontwerp van rand tot rand en vergelijk het met de breedte die je instelde voordat de stencil gebruikt wordt."
+        }
       ],
       "cta": "Stel een breedte in millimeters in en zie het formaat op 300 dpi."
     },
@@ -216,86 +392,139 @@
         {
           "h2": "Drie gangbare aanpakken",
           "blocks": [
-            { "p": "Een tattoo stencil begint als tekening en eindigt als een patroon van lijnen op een transfervel dat tegen de huid gedrukt kan worden. Er zijn meerdere manieren om van het een naar het ander te komen. Deze gids beschrijft er drie gangbare in neutrale termen. Hij rangschikt ze niet, want de juiste keuze hangt af van je volume, je budget, je studio en je eigen gewoonten." },
-            { "p": "Hij behandelt ook geen aanbrengen of nazorg. Welke methode je ook gebruikt, volg de hygiënevoorschriften van je studio." }
+            {
+              "p": "Een tattoo stencil begint als tekening en eindigt als een patroon van lijnen op een transfervel dat tegen de huid gedrukt kan worden. Er zijn meerdere manieren om van het een naar het ander te komen. Deze gids beschrijft er drie gangbare in neutrale termen. Hij rangschikt ze niet, want de juiste keuze hangt af van je volume, je budget, je studio en je eigen gewoonten."
+            },
+            {
+              "p": "Hij behandelt ook geen aanbrengen of nazorg. Welke methode je ook gebruikt, volg de hygiënevoorschriften van je studio."
+            }
           ]
         },
         {
           "h2": "Met de hand overtrekken",
           "blocks": [
-            { "p": "De oudste methode is het ontwerp zelf overtrekken. Je legt overtrekpapier, of een transfervel dat bedoeld is voor handtekenen, over het ontwerp en volgt de lijnen met een pen. Sommige tatoeëerders tekenen direct op het transfermateriaal. Anderen gebruiken een lichtbak of een raam om het ontwerp door het papier te zien." },
-            { "ul": [
-              "Nodig: de originele tekening, het transfermateriaal en een pen die erbij past.",
-              "Sterk punt: geen apparatuur behalve papier en pennen, en elke lijn gaat door je eigen hand, dus je neemt onderweg kleine beslissingen.",
-              "Beperking: het kost tijd, het ontwerp groter of kleiner maken vraagt een aparte stap en een ontwerp herhalen gaat langzaam."
-            ] },
-            { "p": "Een bestand met strakke lijnen helpt hier ook. Je kunt een lichte kopie op gewoon papier op het juiste formaat printen en daaroverheen trekken, zodat het formaat vaststaat zonder tweede hulpmiddel." }
+            {
+              "p": "De oudste methode is het ontwerp zelf overtrekken. Je legt overtrekpapier, of een transfervel dat bedoeld is voor handtekenen, over het ontwerp en volgt de lijnen met een pen. Sommige tatoeëerders tekenen direct op het transfermateriaal. Anderen gebruiken een lichtbak of een raam om het ontwerp door het papier te zien."
+            },
+            {
+              "ul": [
+                "Nodig: de originele tekening, het transfermateriaal en een pen die erbij past.",
+                "Sterk punt: geen apparatuur behalve papier en pennen, en elke lijn gaat door je eigen hand, dus je neemt onderweg kleine beslissingen.",
+                "Beperking: het kost tijd, het ontwerp groter of kleiner maken vraagt een aparte stap en een ontwerp herhalen gaat langzaam."
+              ]
+            },
+            {
+              "p": "Een bestand met strakke lijnen helpt hier ook. Je kunt een lichte kopie op gewoon papier op het juiste formaat printen en daaroverheen trekken, zodat het formaat vaststaat zonder tweede hulpmiddel."
+            }
           ]
         },
         {
           "h2": "Thermische printers",
           "blocks": [
-            { "p": "Thermische stencilprinters gebruiken warmte, geen inkt, om het patroon te maken op speciaal transferpapier met meerdere lagen. De printer leest een digitale afbeelding of een papieren origineel en maakt de stencil in één keer. Modellen verschillen in hoe ze verbinden, dus kijk wat die van jou accepteert, of dat nu een usb-kabel, een aangesloten computer of een telefoon-app is." },
-            { "ul": [
-              "Nodig: een thermische printer, thermisch transferpapier dat erbij past en een bestand of origineel om van te printen.",
-              "Sterk punt: snel en consistent zodra het is ingesteld, en extra kopieën van hetzelfde ontwerp zijn makkelijk.",
-              "Beperking: printer en papier kosten geld, en een bestand dat net te zwak, te zwaar of van het verkeerde formaat is, wordt precies zo geprint."
-            ] },
-            { "p": "Hier telt een bestand met strakke lijnen het meest. Een thermische printer print de lijnen die hij krijgt. Grijstinten, achtergrondtextuur en dunne haarlijnen kunnen slecht of helemaal niet printen, en een bestand dat op het verkeerde formaat is geopend, print op het verkeerde formaat. Zwarte lijnen op een effen witte achtergrond, op een bekende breedte, geven de printer het minste om fout te doen." }
+            {
+              "p": "Thermische stencilprinters gebruiken warmte, geen inkt, om het patroon te maken op speciaal transferpapier met meerdere lagen. De printer leest een digitale afbeelding of een papieren origineel en maakt de stencil in één keer. Modellen verschillen in hoe ze verbinden, dus kijk wat die van jou accepteert, of dat nu een usb-kabel, een aangesloten computer of een telefoon-app is."
+            },
+            {
+              "ul": [
+                "Nodig: een thermische printer, thermisch transferpapier dat erbij past en een bestand of origineel om van te printen.",
+                "Sterk punt: snel en consistent zodra het is ingesteld, en extra kopieën van hetzelfde ontwerp zijn makkelijk.",
+                "Beperking: printer en papier kosten geld, en een bestand dat net te zwak, te zwaar of van het verkeerde formaat is, wordt precies zo geprint."
+              ]
+            },
+            {
+              "p": "Hier telt een bestand met strakke lijnen het meest. Een thermische printer print de lijnen die hij krijgt. Grijstinten, achtergrondtextuur en dunne haarlijnen kunnen slecht of helemaal niet printen, en een bestand dat op het verkeerde formaat is geopend, print op het verkeerde formaat. Zwarte lijnen op een effen witte achtergrond, op een bekende breedte, geven de printer het minste om fout te doen."
+            }
           ]
         },
         {
           "h2": "Geprinte overdrachten op gewone printers",
           "blocks": [
-            { "p": "Sommige tatoeëerders printen de stencil met een gewone inkjet- of laserprinter op papier dat als overdrachtslaag werkt, of printen op gewoon papier en gebruiken het als referentie of om over te trekken. Wat werkt hangt af van het printertype en het papier, dus volg de instructies bij het materiaal en test een vel voordat je het echt gebruikt." },
-            { "ul": [
-              "Nodig: een gewone printer, geschikt overdrachtspapier als je direct wilt overbrengen, en een bestand op het juiste formaat.",
-              "Sterk punt: je hebt de printer misschien al, en hij print in hoge resolutie.",
-              "Beperking: het materiaal moet voor dit gebruik gemaakt zijn, gewoon kantoorpapier is geen transfermateriaal, en printerinstellingen zoals schalen kunnen het formaat veranderen."
-            ] },
-            { "p": "Zoals bij elke digitale methode zet je het printvenster op werkelijke grootte en meet je het resultaat. De gids over [op ware grootte printen](guide:tattoo-stencil-size-true-size-print) legt uit hoe." }
+            {
+              "p": "Sommige tatoeëerders printen de stencil met een gewone inkjet- of laserprinter op papier dat als overdrachtslaag werkt, of printen op gewoon papier en gebruiken het als referentie of om over te trekken. Wat werkt hangt af van het printertype en het papier, dus volg de instructies bij het materiaal en test een vel voordat je het echt gebruikt."
+            },
+            {
+              "ul": [
+                "Nodig: een gewone printer, geschikt overdrachtspapier als je direct wilt overbrengen, en een bestand op het juiste formaat.",
+                "Sterk punt: je hebt de printer misschien al, en hij print in hoge resolutie.",
+                "Beperking: het materiaal moet voor dit gebruik gemaakt zijn, gewoon kantoorpapier is geen transfermateriaal, en printerinstellingen zoals schalen kunnen het formaat veranderen."
+              ]
+            },
+            {
+              "p": "Zoals bij elke digitale methode zet je het printvenster op werkelijke grootte en meet je het resultaat. De gids over [op ware grootte printen](guide:tattoo-stencil-size-true-size-print) legt uit hoe."
+            }
           ]
         },
         {
           "h2": "Wanneer een stencilbestand met strakke lijnen ertoe doet",
           "blocks": [
-            { "p": "Elke methode die van een digitaal bestand uitgaat, heeft baat bij een bestand dat voor de taak is gemaakt. Een stencilbestand verschilt op een paar punten van een foto:" },
-            { "ul": [
-              "Het bestaat alleen uit lijnen, zonder schaduw, papiertextuur of achtergrond.",
-              "De lijnen zijn donker en doorlopend, zodat warmte of inkt iets stevigs heeft om te reproduceren.",
-              "Het heeft een bekende breedte, dus het print op het formaat dat met de klant is afgesproken.",
-              "Zwakke spikkels zijn verwijderd, zodat ze geen vlekjes op de transfer worden."
-            ] },
-            { "p": "Een tattoo stencil maker maakt dat soort bestand van een foto of tekening. Onze gids over [een stencil maken van een foto of tekening](guide:tattoo-stencil-from-photo) loopt de bediening door." }
+            {
+              "p": "Elke methode die van een digitaal bestand uitgaat, heeft baat bij een bestand dat voor de taak is gemaakt. Een stencilbestand verschilt op een paar punten van een foto:"
+            },
+            {
+              "ul": [
+                "Het bestaat alleen uit lijnen, zonder schaduw, papiertextuur of achtergrond.",
+                "De lijnen zijn donker en doorlopend, zodat warmte of inkt iets stevigs heeft om te reproduceren.",
+                "Het heeft een bekende breedte, dus het print op het formaat dat met de klant is afgesproken.",
+                "Zwakke spikkels zijn verwijderd, zodat ze geen vlekjes op de transfer worden."
+              ]
+            },
+            {
+              "p": "Een tattoo stencil maker maakt dat soort bestand van een foto of tekening. Onze gids over [een stencil maken van een foto of tekening](guide:tattoo-stencil-from-photo) loopt de bediening door."
+            }
           ]
         },
         {
           "h2": "Kiezen tussen de methoden",
           "blocks": [
-            { "p": "Een paar vragen beslissen het meestal:" },
-            { "ul": [
-              "Hoeveel stencils maak je per week? Hoger volume past bij apparatuur die snel herhaalt.",
-              "Hoe vaak schaal je een ontwerp om? Digitale methoden maken formaatwijzigingen makkelijk, bij overtrekken met de hand is het een aparte klus.",
-              "Hoeveel van het lijnwerk wil je zelf opnieuw tekenen? Overtrekken geeft je dat standaard.",
-              "Wat heb je al? Een bestaande printer is de goedkoopste plek om te beginnen, mits het papier erbij past."
-            ] },
-            { "p": "Veel tatoeëerders gebruiken meer dan één methode, bijvoorbeeld een geprinte omlijning voor de hoofdvormen en overtrekken met de hand voor fijn detail. Niets hier vraagt om een keuze voor het een of het ander." }
+            {
+              "p": "Een paar vragen beslissen het meestal:"
+            },
+            {
+              "ul": [
+                "Hoeveel stencils maak je per week? Hoger volume past bij apparatuur die snel herhaalt.",
+                "Hoe vaak schaal je een ontwerp om? Digitale methoden maken formaatwijzigingen makkelijk, bij overtrekken met de hand is het een aparte klus.",
+                "Hoeveel van het lijnwerk wil je zelf opnieuw tekenen? Overtrekken geeft je dat standaard.",
+                "Wat heb je al? Een bestaande printer is de goedkoopste plek om te beginnen, mits het papier erbij past."
+              ]
+            },
+            {
+              "p": "Veel tatoeëerders gebruiken meer dan één methode, bijvoorbeeld een geprinte omlijning voor de hoofdvormen en overtrekken met de hand voor fijn detail. Niets hier vraagt om een keuze voor het een of het ander."
+            }
           ]
         },
         {
           "h2": "Het bestand voorbereiden, welke methode je ook kiest",
           "blocks": [
-            { "p": "Welke route je ook kiest, de voorbereiding van het bestand is dezelfde. Maak een versie met strakke lijnen, stel de breedte in millimeters in, download het op een formaat dat scherp genoeg is voor die breedte en print een test op gewoon papier. Skinstencil is gratis te gebruiken in de browser en er wordt niets geüpload. Gratis downloads hebben een watermerk en zijn beperkt tot 800 px. Met een dagpas of Pro verdwijnt het watermerk, zijn tot 4000 px mogelijk en wordt het formaat van 300 dpi in de PNG opgeslagen." },
-            { "p": "Meet daarna de testafdruk met een liniaal voordat je je transfermateriaal gebruikt." }
+            {
+              "p": "Welke route je ook kiest, de voorbereiding van het bestand is dezelfde. Maak een versie met strakke lijnen, stel de breedte in millimeters in, download het op een formaat dat scherp genoeg is voor die breedte en print een test op gewoon papier. Skinstencil is gratis te gebruiken in de browser en er wordt niets geüpload. Gratis downloads hebben een watermerk en zijn beperkt tot 800 px. Met een dagpas of Pro verdwijnt het watermerk, zijn tot 4000 px mogelijk en wordt het formaat van 300 dpi in de PNG opgeslagen."
+            },
+            {
+              "p": "Meet daarna de testafdruk met een liniaal voordat je je transfermateriaal gebruikt."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Wat is het verschil tussen een stencilbestand en een foto?", "a": "Een stencilbestand bevat alleen strakke donkere lijnen op een effen achtergrond, op een bekend formaat. Een foto heeft tint, textuur en achtergrond die de meeste overdrachtsmethoden niet kunnen gebruiken." },
-        { "q": "Heb ik een thermische printer nodig voor een stencilbestand?", "a": "Nee. Een bestand kan op gewoon papier geprint en met de hand overgetrokken worden, of met een gewone printer op overdrachtspapier geprint worden. Een thermische printer is een van de opties." },
-        { "q": "Kan ik een stencil op gewoon papier printen en overtrekken?", "a": "Ja. Een lichte afdruk op ware grootte is een gangbare manier om over te trekken, omdat het formaat al vaststaat." },
-        { "q": "Welke methode moet ik gebruiken?", "a": "Dat hangt af van hoeveel stencils je maakt, welke apparatuur je hebt en hoe je graag werkt. Veel tatoeëerders combineren methoden." },
-        { "q": "Moet het bestand een bepaald formaat hebben?", "a": "Het moet scherp genoeg zijn voor de breedte die je print. Op 300 dpi heeft een stencil van 100 mm ongeveer 1181 pixels nodig. Stel de breedte in millimeters in de tool in en hij toont het pixelformaat." }
+        {
+          "q": "Wat is het verschil tussen een stencilbestand en een foto?",
+          "a": "Een stencilbestand bevat alleen strakke donkere lijnen op een effen achtergrond, op een bekend formaat. Een foto heeft tint, textuur en achtergrond die de meeste overdrachtsmethoden niet kunnen gebruiken."
+        },
+        {
+          "q": "Heb ik een thermische printer nodig voor een stencilbestand?",
+          "a": "Nee. Een bestand kan op gewoon papier geprint en met de hand overgetrokken worden, of met een gewone printer op overdrachtspapier geprint worden. Een thermische printer is een van de opties."
+        },
+        {
+          "q": "Kan ik een stencil op gewoon papier printen en overtrekken?",
+          "a": "Ja. Een lichte afdruk op ware grootte is een gangbare manier om over te trekken, omdat het formaat al vaststaat."
+        },
+        {
+          "q": "Welke methode moet ik gebruiken?",
+          "a": "Dat hangt af van hoeveel stencils je maakt, welke apparatuur je hebt en hoe je graag werkt. Veel tatoeëerders combineren methoden."
+        },
+        {
+          "q": "Moet het bestand een bepaald formaat hebben?",
+          "a": "Het moet scherp genoeg zijn voor de breedte die je print. Op 300 dpi heeft een stencil van 100 mm ongeveer 1181 pixels nodig. Stel de breedte in millimeters in de tool in en hij toont het pixelformaat."
+        }
       ],
       "cta": "Maak een stencilbestand met strakke lijnen en print het met de methode die je gebruikt."
     },

@@ -54,8 +54,8 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible,
 .qa details{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:4px 22px}
 .qa summary{font:700 17px var(--body);cursor:pointer;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
 .qa summary::-webkit-details-marker{display:none}
-.qa summary::after{content:"+";font:500 24px/1 var(--body);color:var(--stencil)}
-.qa details[open] summary::after{content:"\2212"}
+.qa summary::after{content:"+";font:500 24px/1 var(--body);color:var(--stencil);transition:transform .2s}
+.qa details[open] summary::after{transform:rotate(45deg)}
 .qa p{margin:0 0 16px;color:#4A463F}
 {{wsCss}}
 </style>

@@ -8,9 +8,9 @@
     "updated": "Ostatnia aktualizacja",
     "answerLabel": "Krótka odpowiedź",
     "faq": "Pytania",
-    "indexTitle": "Poradniki o szablonach tatuażu i mapowaniu brwi",
-    "indexMetaTitle": "Poradniki: szablony tatuażu i mapowanie brwi | Skinstencil",
-    "indexMetaDesc": "Praktyczne poradniki dla tatuatorów i stylistek brwi: zrób szablon ze zdjęcia, wykonaj mapowanie brwi na zdjęciu klientki i wydrukuj oba w skali 1:1.",
+    "indexTitle": "Poradniki o szablonach tatuażu",
+    "indexMetaTitle": "Poradniki: szablony tatuażu | Skinstencil",
+    "indexMetaDesc": "Praktyczne poradniki dla tatuatorów: zrób szablon ze zdjęcia i wydrukuj go w skali 1:1.",
     "indexLead": "Krótkie, praktyczne poradniki dla artystów. Każdy kończy się darmowym narzędziem, które działa w przeglądarce i niczego nie wysyła.",
     "readGuide": "Czytaj poradnik",
     "homeSectionTitle": "Poradniki o szablonach tatuażu",
@@ -19,7 +19,13 @@
     "theme": "Jasny lub ciemny",
     "language": "Język"
   },
-  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods", "brow-mapping-on-a-photo-start-arch-end", "brow-mapping-measurements-scale-and-print-true-size"],
+  "order": [
+    "tattoo-stencil-from-photo",
+    "tattoo-stencil-size-true-size-print",
+    "tattoo-stencil-transfer-methods",
+    "brow-mapping-on-a-photo-start-arch-end",
+    "brow-mapping-measurements-scale-and-print-true-size"
+  ],
   "guides": {
     "tattoo-stencil-from-photo": {
       "howto": true,
@@ -34,85 +40,167 @@
         {
           "h2": "Co właściwie robi generator stencili do tatuażu",
           "blocks": [
-            { "p": "Stencil to kontur projektu sprowadzony do czystych linii, które da się przenieść na skórę. Generator stencili do tatuażu bierze obraz, zachowuje ważne krawędzie, a odrzuca tonalność, fakturę papieru i szum. Wynik to ciemne linie na białym tle, czyli forma, której wymaga większość metod przenoszenia." },
-            { "p": "Skinstencil robi to zwykłą obróbką obrazu w przeglądarce. Plik jest czytany na Twoim urządzeniu i nie jest nigdzie wysyłany. To ważne, gdy projekt należy do klienta. Narzędzie działa też od razu po załadowaniu strony, bez konta." }
+            {
+              "p": "Stencil to kontur projektu sprowadzony do czystych linii, które da się przenieść na skórę. Generator stencili do tatuażu bierze obraz, zachowuje ważne krawędzie, a odrzuca tonalność, fakturę papieru i szum. Wynik to ciemne linie na białym tle, czyli forma, której wymaga większość metod przenoszenia."
+            },
+            {
+              "p": "Skinstencil robi to zwykłą obróbką obrazu w przeglądarce. Plik jest czytany na Twoim urządzeniu i nie jest nigdzie wysyłany. To ważne, gdy projekt należy do klienta. Narzędzie działa też od razu po załadowaniu strony, bez konta."
+            }
           ]
         },
         {
           "h2": "Wybierz źródło, które dobrze się przekonwertuje",
           "blocks": [
-            { "p": "Dobre źródła mają kilka wspólnych cech. Wybierz takie, które spełnia jak najwięcej z nich:" },
-            { "ul": [
-              "Wyraźny kontrast między liniami a tłem, na przykład tusz na białym papierze.",
-              "Projekt wypełnia kadr, a nie siedzi małym znaczkiem w rogu.",
-              "Płasko i prosto do aparatu lub skanera, bez zagięć i perspektywy.",
-              "Równe światło, bez cienia dłoni lub telefonu na kartce.",
-              "Rozdzielczość wystarczająca, by cienkie linie miały nadal kilka pikseli szerokości."
-            ] },
-            { "p": "Skaner płaski to najłatwiejszy sposób, by to wszystko uzyskać. Jeśli fotografujesz, pracuj przy oknie w świetle dziennym, trzymaj telefon równolegle do kartki i unikaj lampy błyskowej, która zostawia jasną plamę pośrodku. Używaj tylko projektów, które sam zrobiłeś lub do których masz prawa." }
+            {
+              "p": "Dobre źródła mają kilka wspólnych cech. Wybierz takie, które spełnia jak najwięcej z nich:"
+            },
+            {
+              "ul": [
+                "Wyraźny kontrast między liniami a tłem, na przykład tusz na białym papierze.",
+                "Projekt wypełnia kadr, a nie siedzi małym znaczkiem w rogu.",
+                "Płasko i prosto do aparatu lub skanera, bez zagięć i perspektywy.",
+                "Równe światło, bez cienia dłoni lub telefonu na kartce.",
+                "Rozdzielczość wystarczająca, by cienkie linie miały nadal kilka pikseli szerokości."
+              ]
+            },
+            {
+              "p": "Skaner płaski to najłatwiejszy sposób, by to wszystko uzyskać. Jeśli fotografujesz, pracuj przy oknie w świetle dziennym, trzymaj telefon równolegle do kartki i unikaj lampy błyskowej, która zostawia jasną plamę pośrodku. Używaj tylko projektów, które sam zrobiłeś lub do których masz prawa."
+            }
           ]
         },
         {
           "h2": "Tryb Rysunek czy tryb Zdjęcie",
           "blocks": [
-            { "p": "Narzędzie pyta, jakie źródło wczytujesz, bo rysunek liniowy i fotografia wymagają innego traktowania." },
-            { "h3": "Rysunek" },
-            { "p": "Tryb Rysunek wybierz do szkiców, flashów, liternictwa i wszystkiego, co już składa się z linii. Ciemne ślady na jasnej kartce to projekt, a celem jest zachować je blisko tego, jak je narysowano." },
-            { "h3": "Zdjęcie" },
-            { "p": "Tryb Zdjęcie wybierz do obrazów z miękkim cieniowaniem, takich jak portret czy zwierzę. Zdjęcie nie ma konturu do zachowania, więc linie muszą zastąpić krawędzie, na których zmienia się ton. Przy zdjęciach spodziewaj się dłuższej zabawy suwakami i decyzji, które detale wolisz dorysować ręcznie." }
+            {
+              "p": "Narzędzie pyta, jakie źródło wczytujesz, bo rysunek liniowy i fotografia wymagają innego traktowania."
+            },
+            {
+              "h3": "Rysunek"
+            },
+            {
+              "p": "Tryb Rysunek wybierz do szkiców, flashów, liternictwa i wszystkiego, co już składa się z linii. Ciemne ślady na jasnej kartce to projekt, a celem jest zachować je blisko tego, jak je narysowano."
+            },
+            {
+              "h3": "Zdjęcie"
+            },
+            {
+              "p": "Tryb Zdjęcie wybierz do obrazów z miękkim cieniowaniem, takich jak portret czy zwierzę. Zdjęcie nie ma konturu do zachowania, więc linie muszą zastąpić krawędzie, na których zmienia się ton. Przy zdjęciach spodziewaj się dłuższej zabawy suwakami i decyzji, które detale wolisz dorysować ręcznie."
+            }
           ]
         },
         {
           "h2": "Jak zrobić stencil do tatuażu online, krok po kroku",
           "stepsIntro": "Oto kroki po kolei. Kolejne sekcje opisują ustawienia dokładniej.",
           "steps": [
-            { "name": "Wybierz czytelne źródło", "text": "Weź rysunek lub zdjęcie z najlepszym kontrastem i najmniejszym bałaganem. Jeśli masz dwie wersje, użyj tej narysowanej ciemniejszym, równiejszym piórem." },
-            { "name": "Zeskanuj lub sfotografuj przy równym świetle", "text": "Jeśli możesz, zeskanuj na płasko. Jeśli nie, fotografuj w świetle dziennym, równolegle do kartki, tak by projekt wypełniał kadr, bez cieni i lampy błyskowej." },
-            { "name": "Wczytaj plik do narzędzia", "text": "Otwórz darmowe narzędzie i upuść plik JPG, PNG lub WebP albo kliknij, by go wybrać. Jest przetwarzany w przeglądarce i nie jest wysyłany." },
-            { "name": "Wybierz tryb Rysunek lub Zdjęcie", "text": "Rysunek wybierz do kresek i flashów, Zdjęcie do obrazów z miękkim cieniowaniem." },
-            { "name": "Ustaw czułość", "text": "Czułość decyduje, jak słaby ślad może jeszcze stać się linią. Zmniejsz ją, jeśli cieniowanie zamienia się w linie. Zwiększ, jeśli brakuje cienkich linii." },
-            { "name": "Ustaw wygładzanie i grubość linii", "text": "Wygładzanie zaokrągla poszarpane krawędzie pikseli. Grubość linii pogrubia lub pocienia kreski. Jeśli linie wyglądają blado po wydruku, zwykle pomaga większa grubość." },
-            { "name": "Usuń plamki", "text": "Zwiększaj Usuń plamki, aż znikną małe kropki z ziarna papieru lub kurzu i zostaną tylko zamierzone ślady." },
-            { "name": "Sprawdź, co zginęło, kontrolą różnic", "text": "Włącz kontrolę różnic. Utracone linie pokazują się na czerwono, dodane na niebiesko, więc widzisz, co zmieniły Twoje ustawienia w porównaniu ze stałym, czułym odczytem oryginału." },
-            { "name": "Ustaw szerokość w milimetrach", "text": "Wpisz szerokość, jaką chcesz mieć na skórze. Narzędzie pokaże odpowiadający jej rozmiar w 300 dpi i linijkę w rzeczywistym rozmiarze." },
-            { "name": "Pobierz lub wydrukuj w rzeczywistym rozmiarze", "text": "Pobierz PNG i wydrukuj tak, by wydruk miał ustawioną szerokość. Sprawdź go linijką, zanim trafi w pobliże kogokolwiek." }
+            {
+              "name": "Wybierz czytelne źródło",
+              "text": "Weź rysunek lub zdjęcie z najlepszym kontrastem i najmniejszym bałaganem. Jeśli masz dwie wersje, użyj tej narysowanej ciemniejszym, równiejszym piórem."
+            },
+            {
+              "name": "Zeskanuj lub sfotografuj przy równym świetle",
+              "text": "Jeśli możesz, zeskanuj na płasko. Jeśli nie, fotografuj w świetle dziennym, równolegle do kartki, tak by projekt wypełniał kadr, bez cieni i lampy błyskowej."
+            },
+            {
+              "name": "Wczytaj plik do narzędzia",
+              "text": "Otwórz darmowe narzędzie i upuść plik JPG, PNG lub WebP albo kliknij, by go wybrać. Jest przetwarzany w przeglądarce i nie jest wysyłany."
+            },
+            {
+              "name": "Wybierz tryb Rysunek lub Zdjęcie",
+              "text": "Rysunek wybierz do kresek i flashów, Zdjęcie do obrazów z miękkim cieniowaniem."
+            },
+            {
+              "name": "Ustaw czułość",
+              "text": "Czułość decyduje, jak słaby ślad może jeszcze stać się linią. Zmniejsz ją, jeśli cieniowanie zamienia się w linie. Zwiększ, jeśli brakuje cienkich linii."
+            },
+            {
+              "name": "Ustaw wygładzanie i grubość linii",
+              "text": "Wygładzanie zaokrągla poszarpane krawędzie pikseli. Grubość linii pogrubia lub pocienia kreski. Jeśli linie wyglądają blado po wydruku, zwykle pomaga większa grubość."
+            },
+            {
+              "name": "Usuń plamki",
+              "text": "Zwiększaj Usuń plamki, aż znikną małe kropki z ziarna papieru lub kurzu i zostaną tylko zamierzone ślady."
+            },
+            {
+              "name": "Sprawdź, co zginęło, kontrolą różnic",
+              "text": "Włącz kontrolę różnic. Utracone linie pokazują się na czerwono, dodane na niebiesko, więc widzisz, co zmieniły Twoje ustawienia w porównaniu ze stałym, czułym odczytem oryginału."
+            },
+            {
+              "name": "Ustaw szerokość w milimetrach",
+              "text": "Wpisz szerokość, jaką chcesz mieć na skórze. Narzędzie pokaże odpowiadający jej rozmiar w 300 dpi i linijkę w rzeczywistym rozmiarze."
+            },
+            {
+              "name": "Pobierz lub wydrukuj w rzeczywistym rozmiarze",
+              "text": "Pobierz PNG i wydrukuj tak, by wydruk miał ustawioną szerokość. Sprawdź go linijką, zanim trafi w pobliże kogokolwiek."
+            }
           ]
         },
         {
           "h2": "Jak używać ustawień, nie gubiąc projektu",
           "blocks": [
-            { "p": "Traktuj suwaki jak rozmowę, a nie przepis. Zmień jeden, zobacz efekt i cofnij, jeśli zaszkodził bardziej, niż pomógł." },
-            { "ul": [
-              "Czułość to najważniejsza dźwignia. Za wysoka zamienia każdą plamkę w linię. Za niska gubi drobne detale.",
-              "Wygładzanie pomaga najbardziej przy skanach małych rysunków, gdzie po powiększeniu linie wyglądają schodkowo. Zbyt duże zaokrągla ostre rogi i małe szczeliny.",
-              "Grubość linii to kwestia gustu i metody przenoszenia. Włosowate linie mogą zniknąć przy druku lub przeniesieniu, więc najpierw sprawdź na papierze.",
-              "Usuń plamki to porządkowanie. Zwiększaj, aż kurz zniknie, i przestań, zanim zacznie usuwać kropki należące do projektu, na przykład punktowanie."
-            ] },
-            { "p": "Punktowanie i drobny dotwork giną zwykle pierwsze. Jeśli Twój projekt na nich polega, trzymaj plamki nisko i dokładnie obejrzyj wynik." }
+            {
+              "p": "Traktuj suwaki jak rozmowę, a nie przepis. Zmień jeden, zobacz efekt i cofnij, jeśli zaszkodził bardziej, niż pomógł."
+            },
+            {
+              "ul": [
+                "Czułość to najważniejsza dźwignia. Za wysoka zamienia każdą plamkę w linię. Za niska gubi drobne detale.",
+                "Wygładzanie pomaga najbardziej przy skanach małych rysunków, gdzie po powiększeniu linie wyglądają schodkowo. Zbyt duże zaokrągla ostre rogi i małe szczeliny.",
+                "Grubość linii to kwestia gustu i metody przenoszenia. Włosowate linie mogą zniknąć przy druku lub przeniesieniu, więc najpierw sprawdź na papierze.",
+                "Usuń plamki to porządkowanie. Zwiększaj, aż kurz zniknie, i przestań, zanim zacznie usuwać kropki należące do projektu, na przykład punktowanie."
+              ]
+            },
+            {
+              "p": "Punktowanie i drobny dotwork giną zwykle pierwsze. Jeśli Twój projekt na nich polega, trzymaj plamki nisko i dokładnie obejrzyj wynik."
+            }
           ]
         },
         {
           "h2": "Dlaczego kontrola różnic ma znaczenie",
           "blocks": [
-            { "p": "Stencil, który wygląda czysto, nadal może czegoś brakować. Łatwo zgubić cienką linię, goniąc za porządnym efektem, i łatwo tego nie zauważyć na małym ekranie." },
-            { "p": "Kontrola różnic porównuje stencil z liniami znalezionymi w oryginale. Czerwony oznacza utraconą linię, niebieski dodaną. Odniesieniem jest stały, czuły odczyt oryginału, więc zmniejszenie czułości lub zwiększenie Usuń plamki celowo pokaże czerwień. Czerwony nie zawsze jest błędem, ale zawsze warto na niego spojrzeć, zanim zdecydujesz się na rozmiar." }
+            {
+              "p": "Stencil, który wygląda czysto, nadal może czegoś brakować. Łatwo zgubić cienką linię, goniąc za porządnym efektem, i łatwo tego nie zauważyć na małym ekranie."
+            },
+            {
+              "p": "Kontrola różnic porównuje stencil z liniami znalezionymi w oryginale. Czerwony oznacza utraconą linię, niebieski dodaną. Odniesieniem jest stały, czuły odczyt oryginału, więc zmniejszenie czułości lub zwiększenie Usuń plamki celowo pokaże czerwień. Czerwony nie zawsze jest błędem, ale zawsze warto na niego spojrzeć, zanim zdecydujesz się na rozmiar."
+            }
           ]
         },
         {
           "h2": "Rozmiar, pobieranie i druk",
           "blocks": [
-            { "p": "Ustaw szerokość w milimetrach przed pobraniem, bo ten sam projekt przy 60 mm i przy 200 mm potrzebuje innej liczby pikseli, by pozostać ostry. Liczby znajdziesz w poradniku o [rozmiarze wydruku](guide:tattoo-stencil-size-true-size-print)." },
-            { "p": "Darmowe pliki mają znak wodny i są ograniczone do 800 px. Karnet dzienny lub Pro usuwa znak wodny, pozwala na do 4000 px i zapisuje w PNG rozmiar 300 dpi, dzięki czemu program do druku otwiera plik w wybranej szerokości. Co dalej, gdy masz już plik, opisują [sposoby przeniesienia szablonu na papier](guide:tattoo-stencil-transfer-methods)." }
+            {
+              "p": "Ustaw szerokość w milimetrach przed pobraniem, bo ten sam projekt przy 60 mm i przy 200 mm potrzebuje innej liczby pikseli, by pozostać ostry. Liczby znajdziesz w poradniku o [rozmiarze wydruku](guide:tattoo-stencil-size-true-size-print)."
+            },
+            {
+              "p": "Darmowe pliki mają znak wodny i są ograniczone do 800 px. Karnet dzienny lub Pro usuwa znak wodny, pozwala na do 4000 px i zapisuje w PNG rozmiar 300 dpi, dzięki czemu program do druku otwiera plik w wybranej szerokości. Co dalej, gdy masz już plik, opisują [sposoby przeniesienia szablonu na papier](guide:tattoo-stencil-transfer-methods)."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Czy mogę zrobić szablon tatuażu ze zdjęcia?", "a": "Tak. Wczytaj zdjęcie, wybierz tryb Zdjęcie i dopasuj czułość, aż potrzebne krawędzie staną się liniami. Zdjęcia z miękkim cieniowaniem wymagają więcej poprawek niż rysunki liniowe i część detali możesz chcieć dorysować ręcznie." },
-        { "q": "Czy generator stencili do tatuażu jest darmowy?", "a": "Tak. Można go używać w przeglądarce za darmo. Darmowe pliki mają znak wodny i są ograniczone do 800 px. Karnet dzienny lub Pro usuwa znak wodny i pozwala na do 4000 px." },
-        { "q": "Czy mój projekt jest gdzieś wysyłany?", "a": "Nie. Obraz jest przetwarzany w przeglądarce, na Twoim urządzeniu, i nic nie jest wysyłane." },
-        { "q": "Jakich typów plików mogę użyć?", "a": "Obrazów JPG, PNG i WebP. Użyj najostrzejszej, najlepiej oświetlonej wersji, jaką masz." },
-        { "q": "Dlaczego w moim stencilu brakuje niektórych linii?", "a": "Czułość może być za niska albo Usuń plamki za wysokie, więc słabe linie uznano za szum. Włącz kontrolę różnic: utracone linie są czerwone. Zwiększ czułość lub zmniejsz Usuń plamki i sprawdź ponownie." },
-        { "q": "Jak wydrukować stencil w odpowiednim rozmiarze?", "a": "Ustaw szerokość w milimetrach w narzędziu, pobierz PNG i drukuj w 100 procentach, bez skalowania do strony. Sprawdź wydruk linijką." }
+        {
+          "q": "Czy mogę zrobić szablon tatuażu ze zdjęcia?",
+          "a": "Tak. Wczytaj zdjęcie, wybierz tryb Zdjęcie i dopasuj czułość, aż potrzebne krawędzie staną się liniami. Zdjęcia z miękkim cieniowaniem wymagają więcej poprawek niż rysunki liniowe i część detali możesz chcieć dorysować ręcznie."
+        },
+        {
+          "q": "Czy generator stencili do tatuażu jest darmowy?",
+          "a": "Tak. Można go używać w przeglądarce za darmo. Darmowe pliki mają znak wodny i są ograniczone do 800 px. Karnet dzienny lub Pro usuwa znak wodny i pozwala na do 4000 px."
+        },
+        {
+          "q": "Czy mój projekt jest gdzieś wysyłany?",
+          "a": "Nie. Obraz jest przetwarzany w przeglądarce, na Twoim urządzeniu, i nic nie jest wysyłane."
+        },
+        {
+          "q": "Jakich typów plików mogę użyć?",
+          "a": "Obrazów JPG, PNG i WebP. Użyj najostrzejszej, najlepiej oświetlonej wersji, jaką masz."
+        },
+        {
+          "q": "Dlaczego w moim stencilu brakuje niektórych linii?",
+          "a": "Czułość może być za niska albo Usuń plamki za wysokie, więc słabe linie uznano za szum. Włącz kontrolę różnic: utracone linie są czerwone. Zwiększ czułość lub zmniejsz Usuń plamki i sprawdź ponownie."
+        },
+        {
+          "q": "Jak wydrukować stencil w odpowiednim rozmiarze?",
+          "a": "Ustaw szerokość w milimetrach w narzędziu, pobierz PNG i drukuj w 100 procentach, bez skalowania do strony. Sprawdź wydruk linijką."
+        }
       ],
       "cta": "Wypróbuj na własnym projekcie. Działa w przeglądarce i niczego nie wysyła."
     },
@@ -128,79 +216,167 @@
         {
           "h2": "Dlaczego łatwo pomylić rozmiar szablonu",
           "blocks": [
-            { "p": "Obraz cyfrowy nie ma własnego rozmiaru fizycznego. To siatka pikseli, a rozmiar na papierze zależy od tego, ile pikseli przypada na cal. To właśnie dpi, czyli punkty na cal. Ten sam plik może wydrukować się jak znaczek albo jak plakat." },
-            { "p": "Dla szablonu tatuażu to problem, bo wzór musi trafić na skórę dokładnie w rozmiarze uzgodnionym z klientem. Programy do druku często zgadują, skalują obraz do strony albo otwierają plik w 72 lub 96 dpi i robią go znacznie większym, niż się spodziewasz. Dobry rozmiar szablonu to ustalenie go raz, w milimetrach, i upewnienie się, że plik przeniesie go do drukarki." }
+            {
+              "p": "Obraz cyfrowy nie ma własnego rozmiaru fizycznego. To siatka pikseli, a rozmiar na papierze zależy od tego, ile pikseli przypada na cal. To właśnie dpi, czyli punkty na cal. Ten sam plik może wydrukować się jak znaczek albo jak plakat."
+            },
+            {
+              "p": "Dla szablonu tatuażu to problem, bo wzór musi trafić na skórę dokładnie w rozmiarze uzgodnionym z klientem. Programy do druku często zgadują, skalują obraz do strony albo otwierają plik w 72 lub 96 dpi i robią go znacznie większym, niż się spodziewasz. Dobry rozmiar szablonu to ustalenie go raz, w milimetrach, i upewnienie się, że plik przeniesie go do drukarki."
+            }
           ]
         },
         {
           "h2": "Milimetry na piksele przy 300 dpi",
           "blocks": [
-            { "p": "W calu jest 25,4 milimetra. Potrzebną szerokość w pikselach liczysz więc tak:" },
-            { "p": "**piksele = milimetry ÷ 25,4 × 300**" },
-            { "p": "Oto wynik dla typowych szerokości, zaokrąglony do najbliższego piksela:" },
-            { "table": {
-              "head": ["Szerokość na skórze", "Piksele przy 300 dpi"],
-              "rows": [
-                ["50 mm", "591 px"],
-                ["80 mm", "945 px"],
-                ["100 mm", "1181 px"],
-                ["150 mm", "1772 px"],
-                ["200 mm", "2362 px"],
-                ["250 mm", "2953 px"],
-                ["300 mm", "3543 px"]
-              ]
-            } },
-            { "p": "Nie musisz liczyć tego ręcznie. W narzędziu wpisujesz szerokość w milimetrach, a obok widzisz rozmiar przy 300 dpi. Tabela jest po to, byś zobaczył, dlaczego mały plik wydrukowany duży wygląda miękko." }
+            {
+              "p": "W calu jest 25,4 milimetra. Potrzebną szerokość w pikselach liczysz więc tak:"
+            },
+            {
+              "p": "**piksele = milimetry ÷ 25,4 × 300**"
+            },
+            {
+              "p": "Oto wynik dla typowych szerokości, zaokrąglony do najbliższego piksela:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Szerokość na skórze",
+                  "Piksele przy 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "50 mm",
+                    "591 px"
+                  ],
+                  [
+                    "80 mm",
+                    "945 px"
+                  ],
+                  [
+                    "100 mm",
+                    "1181 px"
+                  ],
+                  [
+                    "150 mm",
+                    "1772 px"
+                  ],
+                  [
+                    "200 mm",
+                    "2362 px"
+                  ],
+                  [
+                    "250 mm",
+                    "2953 px"
+                  ],
+                  [
+                    "300 mm",
+                    "3543 px"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Nie musisz liczyć tego ręcznie. W narzędziu wpisujesz szerokość w milimetrach, a obok widzisz rozmiar przy 300 dpi. Tabela jest po to, byś zobaczył, dlaczego mały plik wydrukowany duży wygląda miękko."
+            }
           ]
         },
         {
           "h2": "Dlaczego 300 dpi",
           "blocks": [
-            { "p": "300 dpi to zwykły cel dla wydruków oglądanych z bliska. Przy takiej gęstości cienka linia nadal drukuje się jako czysta, ciągła kreska. Niższe gęstości zaczynają pokazywać schodkowe krawędzie na krzywiznach, a stencil to niemal same krzywizny." },
-            { "p": "Więcej nie zawsze znaczy lepiej. Większe pliki wolniej się otwierają i drukują, a cienka linia stencila nie będzie ostrzejsza, niż potrafi narysować drukarka. 300 dpi to rozsądny kompromis dla stencili i tyle właśnie Skinstencil używa w wyjściu w rzeczywistym rozmiarze." }
+            {
+              "p": "300 dpi to zwykły cel dla wydruków oglądanych z bliska. Przy takiej gęstości cienka linia nadal drukuje się jako czysta, ciągła kreska. Niższe gęstości zaczynają pokazywać schodkowe krawędzie na krzywiznach, a stencil to niemal same krzywizny."
+            },
+            {
+              "p": "Więcej nie zawsze znaczy lepiej. Większe pliki wolniej się otwierają i drukują, a cienka linia stencila nie będzie ostrzejsza, niż potrafi narysować drukarka. 300 dpi to rozsądny kompromis dla stencili i tyle właśnie Skinstencil używa w wyjściu w rzeczywistym rozmiarze."
+            }
           ]
         },
         {
           "h2": "Jak pomaga wartość 300 dpi zapisana w PNG",
           "blocks": [
-            { "p": "Plik PNG może zawierać rozmiar fizyczny, zapisany jako piksele na metr w małym bloku danych. Wiele programów go odczytuje i otwiera obraz w tym rozmiarze. Jeśli wartość to 300 dpi, obraz o szerokości 1181 px otwiera się w szerokości około 100 mm, bez ręcznej zmiany rozmiaru." },
-            { "p": "Gdy wartości brakuje, programy wracają do domyślnej, często 72 lub 96 dpi. Przy 72 dpi ten sam obraz 1181 px otworzyłby się w szerokości około 416 mm, ponad cztery razy większy. To częsty powód, dla którego stencil wychodzi z drukarki o wiele za duży." },
-            { "p": "Z karnetem dziennym lub Pro Skinstencil zapisuje w PNG rozmiar 300 dpi, więc program do druku może otworzyć plik w ustawionej szerokości. Przy darmowym pliku szerokość wydruku ustawiasz sam w oknie drukowania." }
+            {
+              "p": "Plik PNG może zawierać rozmiar fizyczny, zapisany jako piksele na metr w małym bloku danych. Wiele programów go odczytuje i otwiera obraz w tym rozmiarze. Jeśli wartość to 300 dpi, obraz o szerokości 1181 px otwiera się w szerokości około 100 mm, bez ręcznej zmiany rozmiaru."
+            },
+            {
+              "p": "Gdy wartości brakuje, programy wracają do domyślnej, często 72 lub 96 dpi. Przy 72 dpi ten sam obraz 1181 px otworzyłby się w szerokości około 416 mm, ponad cztery razy większy. To częsty powód, dla którego stencil wychodzi z drukarki o wiele za duży."
+            },
+            {
+              "p": "Z karnetem dziennym lub Pro Skinstencil zapisuje w PNG rozmiar 300 dpi, więc program do druku może otworzyć plik w ustawionej szerokości. Przy darmowym pliku szerokość wydruku ustawiasz sam w oknie drukowania."
+            }
           ]
         },
         {
           "h2": "Druk w rzeczywistym rozmiarze",
           "stepsIntro": "Krótka rutyna, która oszczędza niespodzianek:",
           "steps": [
-            { "name": "Ustaw szerokość w narzędziu", "text": "Wpisz szerokość na skórze w milimetrach. Narzędzie pokaże odpowiadający jej rozmiar przy 300 dpi." },
-            { "name": "Pobierz PNG", "text": "Z karnetem dziennym lub Pro plik zawiera rozmiar 300 dpi, więc większość programów otworzy go w dobrej szerokości." },
-            { "name": "Otwórz go w oknie drukowania", "text": "Wybierz rozmiar rzeczywisty lub 100 procent. Wyłącz dopasuj do strony, zmniejsz do rozmiaru strony i wypełnij stronę." },
-            { "name": "Zrób próbny wydruk na zwykłym papierze", "text": "Do próby użyj zwykłego papieru, a nie materiału do przenoszenia." },
-            { "name": "Zmierz wydruk", "text": "Przyłóż linijkę w najszerszym miejscu i porównaj z ustawioną szerokością. Jeśli się różni, popraw i wydrukuj ponownie." }
+            {
+              "name": "Ustaw szerokość w narzędziu",
+              "text": "Wpisz szerokość na skórze w milimetrach. Narzędzie pokaże odpowiadający jej rozmiar przy 300 dpi."
+            },
+            {
+              "name": "Pobierz PNG",
+              "text": "Z karnetem dziennym lub Pro plik zawiera rozmiar 300 dpi, więc większość programów otworzy go w dobrej szerokości."
+            },
+            {
+              "name": "Otwórz go w oknie drukowania",
+              "text": "Wybierz rozmiar rzeczywisty lub 100 procent. Wyłącz dopasuj do strony, zmniejsz do rozmiaru strony i wypełnij stronę."
+            },
+            {
+              "name": "Zrób próbny wydruk na zwykłym papierze",
+              "text": "Do próby użyj zwykłego papieru, a nie materiału do przenoszenia."
+            },
+            {
+              "name": "Zmierz wydruk",
+              "text": "Przyłóż linijkę w najszerszym miejscu i porównaj z ustawioną szerokością. Jeśli się różni, popraw i wydrukuj ponownie."
+            }
           ]
         },
         {
           "h2": "Sprawdzaj linijką za każdym razem",
           "blocks": [
-            { "p": "Drukarki i sterowniki zmieniają ustawienia bez uprzedzenia, zwłaszcza po aktualizacji albo na wspólnym komputerze. Linijka kończy zgadywanie. Zmierz pełną szerokość projektu na wydruku, od krawędzi do krawędzi rysunku, a nie papieru, i porównaj z ustawionymi milimetrami." },
-            { "p": "Narzędzie rysuje też linijkę w rzeczywistym rozmiarze, która podąża za ustawioną szerokością wydruku, więc widzisz zamierzoną skalę na ekranie. Ekrany się różnią, więc ta linijka to tylko wskazówka, a liczy się ta przyłożona do wydruku." },
-            { "p": "Jeśli wydruk różni się o stały procent, prawdopodobnie włączona jest opcja skalowania. Jeśli o duży współczynnik, program najpewniej otworzył plik w 72 lub 96 dpi." }
+            {
+              "p": "Drukarki i sterowniki zmieniają ustawienia bez uprzedzenia, zwłaszcza po aktualizacji albo na wspólnym komputerze. Linijka kończy zgadywanie. Zmierz pełną szerokość projektu na wydruku, od krawędzi do krawędzi rysunku, a nie papieru, i porównaj z ustawionymi milimetrami."
+            },
+            {
+              "p": "Narzędzie rysuje też linijkę w rzeczywistym rozmiarze, która podąża za ustawioną szerokością wydruku, więc widzisz zamierzoną skalę na ekranie. Ekrany się różnią, więc ta linijka to tylko wskazówka, a liczy się ta przyłożona do wydruku."
+            },
+            {
+              "p": "Jeśli wydruk różni się o stały procent, prawdopodobnie włączona jest opcja skalowania. Jeśli o duży współczynnik, program najpewniej otworzył plik w 72 lub 96 dpi."
+            }
           ]
         },
         {
           "h2": "Dlaczego darmowe pliki mają limit 800 px",
           "blocks": [
-            { "p": "Darmowe pliki mają znak wodny i są ograniczone do 800 px. Przy 300 dpi 800 px to około 68 mm, co wystarcza do oceny projektu, ale jest mało na stencil na skórze. Większe stencile potrzebują więcej pikseli, by zostać ostre, i to odblokowuje karnet dzienny lub Pro: brak znaku wodnego, do 4000 px, czyli około 339 mm szerokości przy 300 dpi, oraz rozmiar 300 dpi zapisany w pliku." },
-            { "p": "Darmowe narzędzie nadal przydaje się do sprawdzenia linii i kontroli różnic, zanim zdecydujesz się odblokować rozmiar. Tę część opisuje nasz poradnik o [robieniu szablonu ze zdjęcia lub rysunku](guide:tattoo-stencil-from-photo)." }
+            {
+              "p": "Darmowe pliki mają znak wodny i są ograniczone do 800 px. Przy 300 dpi 800 px to około 68 mm, co wystarcza do oceny projektu, ale jest mało na stencil na skórze. Większe stencile potrzebują więcej pikseli, by zostać ostre, i to odblokowuje karnet dzienny lub Pro: brak znaku wodnego, do 4000 px, czyli około 339 mm szerokości przy 300 dpi, oraz rozmiar 300 dpi zapisany w pliku."
+            },
+            {
+              "p": "Darmowe narzędzie nadal przydaje się do sprawdzenia linii i kontroli różnic, zanim zdecydujesz się odblokować rozmiar. Tę część opisuje nasz poradnik o [robieniu szablonu ze zdjęcia lub rysunku](guide:tattoo-stencil-from-photo)."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Ile pikseli potrzeba na stencil 100 mm?", "a": "Około 1181 pikseli szerokości przy 300 dpi. Wzór to milimetry podzielone przez 25,4 i pomnożone przez 300." },
-        { "q": "Dlaczego mój stencil drukuje się za duży?", "a": "Często program otworzył PNG w 72 lub 96 dpi, bo w pliku nie zapisano rozmiaru, albo opcja dopasowania do strony powiększyła obraz. Drukuj w 100 procentach i ustaw szerokość sam albo użyj pliku z zapisanym rozmiarem 300 dpi." },
-        { "q": "Co robi wartość 300 dpi zapisana w PNG?", "a": "Mówi programowi do druku, jaki jest fizyczny rozmiar obrazu, żeby otworzył go w ustawionej szerokości zamiast zgadywać. Pliki z karnetu dziennego i Pro ją zawierają." },
-        { "q": "Jaki największy stencil mogę pobrać?", "a": "Darmowe pliki są ograniczone do 800 px. Karnet dzienny lub Pro pozwala na do 4000 px, czyli około 339 mm szerokości przy 300 dpi." },
-        { "q": "Czy sprawdzać wydruk linijką?", "a": "Tak, za każdym razem. Zmierz rysunek od krawędzi do krawędzi i porównaj z ustawioną szerokością, zanim stencil zostanie użyty." }
+        {
+          "q": "Ile pikseli potrzeba na stencil 100 mm?",
+          "a": "Około 1181 pikseli szerokości przy 300 dpi. Wzór to milimetry podzielone przez 25,4 i pomnożone przez 300."
+        },
+        {
+          "q": "Dlaczego mój stencil drukuje się za duży?",
+          "a": "Często program otworzył PNG w 72 lub 96 dpi, bo w pliku nie zapisano rozmiaru, albo opcja dopasowania do strony powiększyła obraz. Drukuj w 100 procentach i ustaw szerokość sam albo użyj pliku z zapisanym rozmiarem 300 dpi."
+        },
+        {
+          "q": "Co robi wartość 300 dpi zapisana w PNG?",
+          "a": "Mówi programowi do druku, jaki jest fizyczny rozmiar obrazu, żeby otworzył go w ustawionej szerokości zamiast zgadywać. Pliki z karnetu dziennego i Pro ją zawierają."
+        },
+        {
+          "q": "Jaki największy stencil mogę pobrać?",
+          "a": "Darmowe pliki są ograniczone do 800 px. Karnet dzienny lub Pro pozwala na do 4000 px, czyli około 339 mm szerokości przy 300 dpi."
+        },
+        {
+          "q": "Czy sprawdzać wydruk linijką?",
+          "a": "Tak, za każdym razem. Zmierz rysunek od krawędzi do krawędzi i porównaj z ustawioną szerokością, zanim stencil zostanie użyty."
+        }
       ],
       "cta": "Ustaw szerokość w milimetrach i zobacz rozmiar przy 300 dpi."
     },
@@ -216,86 +392,139 @@
         {
           "h2": "Trzy popularne podejścia",
           "blocks": [
-            { "p": "Szablon tatuażu zaczyna jako rysunek, a kończy jako układ linii na arkuszu transferowym, który można przycisnąć do skóry. Z jednego do drugiego prowadzi kilka dróg. Ten poradnik opisuje trzy popularne, neutralnie. Nie ustawia ich w rankingu, bo właściwy wybór zależy od liczby zleceń, budżetu, studia i Twoich nawyków." },
-            { "p": "Nie omawia też aplikacji ani pielęgnacji. Niezależnie od metody przestrzegaj zasad higieny swojego studia." }
+            {
+              "p": "Szablon tatuażu zaczyna jako rysunek, a kończy jako układ linii na arkuszu transferowym, który można przycisnąć do skóry. Z jednego do drugiego prowadzi kilka dróg. Ten poradnik opisuje trzy popularne, neutralnie. Nie ustawia ich w rankingu, bo właściwy wybór zależy od liczby zleceń, budżetu, studia i Twoich nawyków."
+            },
+            {
+              "p": "Nie omawia też aplikacji ani pielęgnacji. Niezależnie od metody przestrzegaj zasad higieny swojego studia."
+            }
           ]
         },
         {
           "h2": "Kalkowanie ręczne",
           "blocks": [
-            { "p": "Najstarsza metoda to samodzielne kalkowanie projektu. Kładziesz kalkę lub arkusz transferowy do rysowania ręcznego na rysunku i obrysowujesz linie piórem. Część artystów rysuje bezpośrednio na materiale transferowym. Inni używają stołu świetlnego albo okna, by widzieć rysunek przez papier." },
-            { "ul": [
-              "Potrzebne: oryginalny rysunek, materiał transferowy i pióro do niego pasujące.",
-              "Zaleta: żadnego sprzętu poza papierem i piórami, a każda linia przechodzi przez Twoją rękę, więc po drodze podejmujesz drobne decyzje.",
-              "Ograniczenie: to zajmuje czas, powiększenie lub zmniejszenie projektu to osobny krok, a powtarzanie wzoru jest wolne."
-            ] },
-            { "p": "Czysty plik z liniami przydaje się i tu. Możesz wydrukować jasną kopię na zwykłym papierze w odpowiednim rozmiarze i kalkować po niej, co ustala rozmiar bez drugiego narzędzia." }
+            {
+              "p": "Najstarsza metoda to samodzielne kalkowanie projektu. Kładziesz kalkę lub arkusz transferowy do rysowania ręcznego na rysunku i obrysowujesz linie piórem. Część artystów rysuje bezpośrednio na materiale transferowym. Inni używają stołu świetlnego albo okna, by widzieć rysunek przez papier."
+            },
+            {
+              "ul": [
+                "Potrzebne: oryginalny rysunek, materiał transferowy i pióro do niego pasujące.",
+                "Zaleta: żadnego sprzętu poza papierem i piórami, a każda linia przechodzi przez Twoją rękę, więc po drodze podejmujesz drobne decyzje.",
+                "Ograniczenie: to zajmuje czas, powiększenie lub zmniejszenie projektu to osobny krok, a powtarzanie wzoru jest wolne."
+              ]
+            },
+            {
+              "p": "Czysty plik z liniami przydaje się i tu. Możesz wydrukować jasną kopię na zwykłym papierze w odpowiednim rozmiarze i kalkować po niej, co ustala rozmiar bez drugiego narzędzia."
+            }
           ]
         },
         {
           "h2": "Drukarki termiczne",
           "blocks": [
-            { "p": "Termiczne drukarki stencili używają ciepła, a nie tuszu, by stworzyć wzór na specjalnym wielowarstwowym papierze transferowym. Drukarka czyta obraz cyfrowy lub papierowy oryginał i tworzy stencil w jednym przebiegu. Modele różnią się sposobem połączenia, więc sprawdź, co przyjmuje Twój: kabel USB, podłączony komputer czy aplikację w telefonie." },
-            { "ul": [
-              "Potrzebne: drukarka termiczna, pasujący do niej papier termotransferowy i plik lub oryginał do wydruku.",
-              "Zaleta: szybko i powtarzalnie po ustawieniu, a kolejne kopie tego samego wzoru są łatwe.",
-              "Ograniczenie: drukarka i papier to koszt, a plik odrobinę za blady, za gruby albo w złym rozmiarze wydrukuje się dokładnie taki."
-            ] },
-            { "p": "Tu czysty plik stencila z liniami liczy się najbardziej. Drukarka termiczna drukuje linie, które dostaje. Szare tony, faktura tła i włosowate linie mogą wydrukować się słabo albo wcale, a plik otwarty w złym rozmiarze drukuje się w złym rozmiarze. Czarne linie na gładkim białym tle w znanej szerokości dają drukarce najmniej okazji do pomyłki." }
+            {
+              "p": "Termiczne drukarki stencili używają ciepła, a nie tuszu, by stworzyć wzór na specjalnym wielowarstwowym papierze transferowym. Drukarka czyta obraz cyfrowy lub papierowy oryginał i tworzy stencil w jednym przebiegu. Modele różnią się sposobem połączenia, więc sprawdź, co przyjmuje Twój: kabel USB, podłączony komputer czy aplikację w telefonie."
+            },
+            {
+              "ul": [
+                "Potrzebne: drukarka termiczna, pasujący do niej papier termotransferowy i plik lub oryginał do wydruku.",
+                "Zaleta: szybko i powtarzalnie po ustawieniu, a kolejne kopie tego samego wzoru są łatwe.",
+                "Ograniczenie: drukarka i papier to koszt, a plik odrobinę za blady, za gruby albo w złym rozmiarze wydrukuje się dokładnie taki."
+              ]
+            },
+            {
+              "p": "Tu czysty plik stencila z liniami liczy się najbardziej. Drukarka termiczna drukuje linie, które dostaje. Szare tony, faktura tła i włosowate linie mogą wydrukować się słabo albo wcale, a plik otwarty w złym rozmiarze drukuje się w złym rozmiarze. Czarne linie na gładkim białym tle w znanej szerokości dają drukarce najmniej okazji do pomyłki."
+            }
           ]
         },
         {
           "h2": "Wydruki transferowe na zwykłych drukarkach",
           "blocks": [
-            { "p": "Niektórzy artyści drukują stencil na standardowej drukarce atramentowej lub laserowej na papierze, który działa jako warstwa transferowa, albo drukują na zwykłym papierze i używają go jako wzoru lub podkładu do kalkowania. Co zadziała, zależy od typu drukarki i papieru, więc stosuj się do instrukcji materiału i przetestuj arkusz, zanim użyjesz go naprawdę." },
-            { "ul": [
-              "Potrzebne: zwykła drukarka, odpowiedni papier gotowy do transferu, jeśli chcesz przenosić bezpośrednio, i plik w dobrym rozmiarze.",
-              "Zaleta: drukarkę możesz już mieć, a drukuje w wysokiej rozdzielczości.",
-              "Ograniczenie: materiał musi być przeznaczony do tego celu, zwykły papier biurowy nie jest materiałem transferowym, a ustawienia drukarki, takie jak skalowanie, mogą zmienić rozmiar."
-            ] },
-            { "p": "Jak przy każdej metodzie cyfrowej, ustaw okno drukowania na rozmiar rzeczywisty i zmierz wynik. Poradnik o [druku w rzeczywistym rozmiarze](guide:tattoo-stencil-size-true-size-print) wyjaśnia jak." }
+            {
+              "p": "Niektórzy artyści drukują stencil na standardowej drukarce atramentowej lub laserowej na papierze, który działa jako warstwa transferowa, albo drukują na zwykłym papierze i używają go jako wzoru lub podkładu do kalkowania. Co zadziała, zależy od typu drukarki i papieru, więc stosuj się do instrukcji materiału i przetestuj arkusz, zanim użyjesz go naprawdę."
+            },
+            {
+              "ul": [
+                "Potrzebne: zwykła drukarka, odpowiedni papier gotowy do transferu, jeśli chcesz przenosić bezpośrednio, i plik w dobrym rozmiarze.",
+                "Zaleta: drukarkę możesz już mieć, a drukuje w wysokiej rozdzielczości.",
+                "Ograniczenie: materiał musi być przeznaczony do tego celu, zwykły papier biurowy nie jest materiałem transferowym, a ustawienia drukarki, takie jak skalowanie, mogą zmienić rozmiar."
+              ]
+            },
+            {
+              "p": "Jak przy każdej metodzie cyfrowej, ustaw okno drukowania na rozmiar rzeczywisty i zmierz wynik. Poradnik o [druku w rzeczywistym rozmiarze](guide:tattoo-stencil-size-true-size-print) wyjaśnia jak."
+            }
           ]
         },
         {
           "h2": "Kiedy liczy się czysty plik stencila z liniami",
           "blocks": [
-            { "p": "Każda metoda zaczynająca od pliku cyfrowego zyskuje na pliku przygotowanym do tego zadania. Plik stencila różni się od zdjęcia kilkoma cechami:" },
-            { "ul": [
-              "Składa się wyłącznie z linii, bez cieniowania, faktury papieru i tła.",
-              "Linie są ciemne i ciągłe, więc ciepło lub tusz mają co odtworzyć.",
-              "Ma znaną szerokość, więc drukuje się w rozmiarze uzgodnionym z klientem.",
-              "Blade plamki są usunięte, więc nie zamienią się w ślady na transferze."
-            ] },
-            { "p": "Generator stencili do tatuażu robi taki plik ze zdjęcia lub rysunku. Nasz poradnik o [robieniu szablonu ze zdjęcia lub rysunku](guide:tattoo-stencil-from-photo) przeprowadza przez ustawienia." }
+            {
+              "p": "Każda metoda zaczynająca od pliku cyfrowego zyskuje na pliku przygotowanym do tego zadania. Plik stencila różni się od zdjęcia kilkoma cechami:"
+            },
+            {
+              "ul": [
+                "Składa się wyłącznie z linii, bez cieniowania, faktury papieru i tła.",
+                "Linie są ciemne i ciągłe, więc ciepło lub tusz mają co odtworzyć.",
+                "Ma znaną szerokość, więc drukuje się w rozmiarze uzgodnionym z klientem.",
+                "Blade plamki są usunięte, więc nie zamienią się w ślady na transferze."
+              ]
+            },
+            {
+              "p": "Generator stencili do tatuażu robi taki plik ze zdjęcia lub rysunku. Nasz poradnik o [robieniu szablonu ze zdjęcia lub rysunku](guide:tattoo-stencil-from-photo) przeprowadza przez ustawienia."
+            }
           ]
         },
         {
           "h2": "Wybór między nimi",
           "blocks": [
-            { "p": "Zwykle rozstrzyga kilka pytań:" },
-            { "ul": [
-              "Ile stencili robisz tygodniowo? Większa liczba przemawia za sprzętem, który szybko powtarza.",
-              "Jak często zmieniasz skalę projektu? Metody cyfrowe ułatwiają zmianę rozmiaru, a przy kalkowaniu to osobne zadanie.",
-              "Ile linii chcesz przerysować sam? Kalkowanie daje to domyślnie.",
-              "Co już masz? Istniejąca drukarka to najtańszy start, o ile papier do niej pasuje."
-            ] },
-            { "p": "Wielu artystów łączy metody, na przykład drukowany kontur głównych kształtów i kalkowanie ręczne drobnych detali. Nic tu nie wymaga wyboru albo-albo." }
+            {
+              "p": "Zwykle rozstrzyga kilka pytań:"
+            },
+            {
+              "ul": [
+                "Ile stencili robisz tygodniowo? Większa liczba przemawia za sprzętem, który szybko powtarza.",
+                "Jak często zmieniasz skalę projektu? Metody cyfrowe ułatwiają zmianę rozmiaru, a przy kalkowaniu to osobne zadanie.",
+                "Ile linii chcesz przerysować sam? Kalkowanie daje to domyślnie.",
+                "Co już masz? Istniejąca drukarka to najtańszy start, o ile papier do niej pasuje."
+              ]
+            },
+            {
+              "p": "Wielu artystów łączy metody, na przykład drukowany kontur głównych kształtów i kalkowanie ręczne drobnych detali. Nic tu nie wymaga wyboru albo-albo."
+            }
           ]
         },
         {
           "h2": "Przygotowanie pliku, którąkolwiek metodę wybierzesz",
           "blocks": [
-            { "p": "Którą drogę wybierzesz, przygotowanie pliku jest takie samo. Zrób czystą wersję z liniami, ustaw szerokość w milimetrach, pobierz ją w rozmiarze dość ostrym dla tej szerokości i wydrukuj próbę na zwykłym papierze. Skinstencil jest darmowy w przeglądarce i niczego nie wysyła. Darmowe pliki mają znak wodny i są ograniczone do 800 px. Karnet dzienny lub Pro usuwa znak wodny, pozwala na do 4000 px i zapisuje w PNG rozmiar 300 dpi." },
-            { "p": "Potem zmierz próbny wydruk linijką, zanim użyjesz materiału transferowego." }
+            {
+              "p": "Którą drogę wybierzesz, przygotowanie pliku jest takie samo. Zrób czystą wersję z liniami, ustaw szerokość w milimetrach, pobierz ją w rozmiarze dość ostrym dla tej szerokości i wydrukuj próbę na zwykłym papierze. Skinstencil jest darmowy w przeglądarce i niczego nie wysyła. Darmowe pliki mają znak wodny i są ograniczone do 800 px. Karnet dzienny lub Pro usuwa znak wodny, pozwala na do 4000 px i zapisuje w PNG rozmiar 300 dpi."
+            },
+            {
+              "p": "Potem zmierz próbny wydruk linijką, zanim użyjesz materiału transferowego."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Czym różni się plik stencila od zdjęcia?", "a": "Plik stencila zawiera tylko czyste ciemne linie na gładkim tle, w znanym rozmiarze. Zdjęcie ma ton, fakturę i tło, których większość metod przenoszenia nie wykorzysta." },
-        { "q": "Czy potrzebuję drukarki termicznej, by używać pliku stencila?", "a": "Nie. Plik można wydrukować na zwykłym papierze i kalkować ręcznie albo wydrukować zwykłą drukarką na papierze gotowym do transferu. Drukarka termiczna to jedna z kilku opcji." },
-        { "q": "Czy mogę wydrukować stencil na zwykłym papierze i go odrysować?", "a": "Tak. Jasny wydruk w rzeczywistym rozmiarze to częsty sposób kalkowania, bo rozmiar jest już ustalony." },
-        { "q": "Której metody powinienem użyć?", "a": "Zależy to od liczby stencili, posiadanego sprzętu i tego, jak lubisz pracować. Wielu artystów łączy metody." },
-        { "q": "Czy plik musi mieć określony rozmiar?", "a": "Musi być dość ostry dla szerokości, w której drukujesz. Przy 300 dpi stencil 100 mm potrzebuje około 1181 pikseli. Ustaw szerokość w milimetrach w narzędziu, a ono pokaże rozmiar w pikselach." }
+        {
+          "q": "Czym różni się plik stencila od zdjęcia?",
+          "a": "Plik stencila zawiera tylko czyste ciemne linie na gładkim tle, w znanym rozmiarze. Zdjęcie ma ton, fakturę i tło, których większość metod przenoszenia nie wykorzysta."
+        },
+        {
+          "q": "Czy potrzebuję drukarki termicznej, by używać pliku stencila?",
+          "a": "Nie. Plik można wydrukować na zwykłym papierze i kalkować ręcznie albo wydrukować zwykłą drukarką na papierze gotowym do transferu. Drukarka termiczna to jedna z kilku opcji."
+        },
+        {
+          "q": "Czy mogę wydrukować stencil na zwykłym papierze i go odrysować?",
+          "a": "Tak. Jasny wydruk w rzeczywistym rozmiarze to częsty sposób kalkowania, bo rozmiar jest już ustalony."
+        },
+        {
+          "q": "Której metody powinienem użyć?",
+          "a": "Zależy to od liczby stencili, posiadanego sprzętu i tego, jak lubisz pracować. Wielu artystów łączy metody."
+        },
+        {
+          "q": "Czy plik musi mieć określony rozmiar?",
+          "a": "Musi być dość ostry dla szerokości, w której drukujesz. Przy 300 dpi stencil 100 mm potrzebuje około 1181 pikseli. Ustaw szerokość w milimetrach w narzędziu, a ono pokaże rozmiar w pikselach."
+        }
       ],
       "cta": "Zrób czysty plik stencila z liniami, a potem wydrukuj go wybraną metodą."
     },

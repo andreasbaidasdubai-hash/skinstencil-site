@@ -66,7 +66,7 @@ input[type=range]{width:100%;accent-color:var(--stencil)}
 .a3 .cta{background:#fff;color:var(--ink);border-color:#fff;margin-top:18px}
 #a3b img#machineImg{opacity:0}
 @media (prefers-reduced-motion:reduce){.a3{height:auto}.a3 .sticky{position:relative;height:80svh}}
-.artists{padding:clamp(56px,9vw,110px) max(22px,env(safe-area-inset-left,0px))}
+.artists{padding:clamp(28px,4vw,56px) max(18px,env(safe-area-inset-left,0px)) clamp(48px,6vw,88px)}
 .artists .in{max-width:1060px;margin:0 auto}
 .artists h2{font-weight:800;font-size:clamp(30px,4.6vw,58px);line-height:1.02;margin-bottom:14px}
 .artists .artlead{font-size:19px;max-width:44ch;color:#4A463F;margin:0 0 22px}
@@ -83,6 +83,19 @@ textarea,.attbtn,.wseg button,.mmrow input{border-radius:14px}
 .fine-tune{border:1.5px solid var(--line);border-radius:var(--r-btn);padding:2px 16px;background:rgba(255,255,255,.6)}
 .fine-tune summary{font:700 14px var(--body);cursor:pointer;padding:11px 0;list-style:none;display:flex;justify-content:space-between}
 .fine-tune summary::-webkit-details-marker{display:none}
-.fine-tune summary::after{content:"+";color:var(--stencil);font:500 20px/1 var(--body)}
-.fine-tune[open] summary::after{content:"2"}
+.fine-tune summary::after{content:"+";color:var(--stencil);font:500 22px/1 var(--body);transition:transform .2s}
+.fine-tune[open] summary::after{transform:rotate(45deg)}
 .fine-tune .ft{display:grid;gap:12px;padding:2px 0 16px}
+
+.artists .in{display:flex;gap:16px 28px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-card);padding:24px 30px}
+.artists .artlead{margin:0;font-size:18px;max-width:46ch;color:#4A463F}
+.xp{display:none;position:absolute;z-index:7;inset-inline-end:10px;bottom:10px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;cursor:pointer;place-items:center;backdrop-filter:blur(6px)}
+.xp svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.xp .ic-close{display:none}
+@media (max-width:860px){
+  .xp{display:grid}
+  .wstage .stagetag{max-width:calc(100% - 66px)}
+  .stagecol.big{position:fixed;inset:0;z-index:200;top:0;margin:0;padding:12px;background:var(--paper);align-content:center;box-shadow:none}
+  .stagecol.big .wstage{height:min(88svh,calc((100vw - 24px) * 4 / 3));width:auto;max-width:100%}
+  .stagecol.big .xp .ic-open{display:none}.stagecol.big .xp .ic-close{display:block}
+}

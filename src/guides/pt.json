@@ -8,9 +8,9 @@
     "updated": "Última atualização",
     "answerLabel": "A resposta curta",
     "faq": "Perguntas",
-    "indexTitle": "Guias de stencil de tatuagem e mapeamento de sobrancelhas",
-    "indexMetaTitle": "Guias de stencil e mapeamento de sobrancelhas | Skinstencil",
-    "indexMetaDesc": "Guias práticos para tatuadores e designers de sobrancelhas: stencil a partir de foto, mapeamento de sobrancelhas em foto e impressão em tamanho real.",
+    "indexTitle": "Guias de stencil de tatuagem",
+    "indexMetaTitle": "Guias de stencil de tatuagem | Skinstencil",
+    "indexMetaDesc": "Guias práticos para tatuadores: crie um stencil a partir de uma foto e imprima em tamanho real.",
     "indexLead": "Guias curtos e práticos para quem trabalha com tatuagem e sobrancelhas. Cada um termina na ferramenta grátis, que roda no seu navegador e não envia nada.",
     "readGuide": "Ler o guia",
     "homeSectionTitle": "Guias de decalque de tatuagem",
@@ -19,7 +19,13 @@
     "theme": "Claro ou escuro",
     "language": "Idioma"
   },
-  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods", "brow-mapping-on-a-photo-start-arch-end", "brow-mapping-measurements-scale-and-print-true-size"],
+  "order": [
+    "tattoo-stencil-from-photo",
+    "tattoo-stencil-size-true-size-print",
+    "tattoo-stencil-transfer-methods",
+    "brow-mapping-on-a-photo-start-arch-end",
+    "brow-mapping-measurements-scale-and-print-true-size"
+  ],
   "guides": {
     "tattoo-stencil-from-photo": {
       "howto": true,
@@ -34,85 +40,167 @@
         {
           "h2": "O que um gerador de decalque de tatuagem realmente faz",
           "blocks": [
-            { "p": "Um stencil é o contorno de um desenho, reduzido a linhas limpas para poder ser transferido para a pele. Um gerador de decalque de tatuagem pega uma imagem e mantém as bordas que importam, descartando tons, textura do papel e ruído. O resultado são linhas escuras sobre fundo branco, que é o formato que a maioria dos métodos de transferência exige." },
-            { "p": "O Skinstencil faz isso com processamento de imagem comum, dentro do seu navegador. O arquivo é lido no seu próprio aparelho e não é enviado para lugar nenhum. Isso importa quando o desenho pertence a um cliente. Também significa que a ferramenta funciona assim que a página carrega, sem cadastro." }
+            {
+              "p": "Um stencil é o contorno de um desenho, reduzido a linhas limpas para poder ser transferido para a pele. Um gerador de decalque de tatuagem pega uma imagem e mantém as bordas que importam, descartando tons, textura do papel e ruído. O resultado são linhas escuras sobre fundo branco, que é o formato que a maioria dos métodos de transferência exige."
+            },
+            {
+              "p": "O Skinstencil faz isso com processamento de imagem comum, dentro do seu navegador. O arquivo é lido no seu próprio aparelho e não é enviado para lugar nenhum. Isso importa quando o desenho pertence a um cliente. Também significa que a ferramenta funciona assim que a página carrega, sem cadastro."
+            }
           ]
         },
         {
           "h2": "Escolha uma origem que converta bem",
           "blocks": [
-            { "p": "As boas origens têm algumas coisas em comum. Use a que reunir o maior número possível delas:" },
-            { "ul": [
-              "Contraste claro entre as linhas e o fundo, como tinta sobre papel branco.",
-              "O desenho ocupa o quadro inteiro, em vez de ficar pequeno num canto.",
-              "Plano e reto em relação à câmera ou ao scanner, sem dobra nem perspectiva.",
-              "Luz uniforme, sem a sombra da sua mão ou do celular sobre a folha.",
-              "Resolução suficiente para que as linhas finas ainda tenham vários pixels de largura."
-            ] },
-            { "p": "O scanner de mesa é a forma mais fácil de conseguir tudo isso. Se for fotografar, fique perto de uma janela com luz do dia, segure o celular paralelo à folha e evite o flash, que deixa uma mancha clara no meio. Use apenas desenhos que você criou ou que tem o direito de usar." }
+            {
+              "p": "As boas origens têm algumas coisas em comum. Use a que reunir o maior número possível delas:"
+            },
+            {
+              "ul": [
+                "Contraste claro entre as linhas e o fundo, como tinta sobre papel branco.",
+                "O desenho ocupa o quadro inteiro, em vez de ficar pequeno num canto.",
+                "Plano e reto em relação à câmera ou ao scanner, sem dobra nem perspectiva.",
+                "Luz uniforme, sem a sombra da sua mão ou do celular sobre a folha.",
+                "Resolução suficiente para que as linhas finas ainda tenham vários pixels de largura."
+              ]
+            },
+            {
+              "p": "O scanner de mesa é a forma mais fácil de conseguir tudo isso. Se for fotografar, fique perto de uma janela com luz do dia, segure o celular paralelo à folha e evite o flash, que deixa uma mancha clara no meio. Use apenas desenhos que você criou ou que tem o direito de usar."
+            }
           ]
         },
         {
           "h2": "Modo Desenho ou modo Foto",
           "blocks": [
-            { "p": "A ferramenta pergunta que tipo de origem você está carregando, porque um desenho de linhas e uma fotografia pedem tratamentos diferentes." },
-            { "h3": "Desenho" },
-            { "p": "Use Desenho para esboços, flash, lettering e tudo o que já é feito de linhas. As marcas escuras sobre a folha clara são o desenho, e o objetivo é mantê-las o mais próximo possível de como você desenhou." },
-            { "h3": "Foto" },
-            { "p": "Use Foto para imagens com sombreado suave, como um retrato ou um animal. Uma foto não tem contorno para preservar, então as bordas onde o tom muda precisam fazer o papel das linhas. Espere gastar mais tempo nos controles com fotos e espere decidir quais detalhes você prefere desenhar à mão." }
+            {
+              "p": "A ferramenta pergunta que tipo de origem você está carregando, porque um desenho de linhas e uma fotografia pedem tratamentos diferentes."
+            },
+            {
+              "h3": "Desenho"
+            },
+            {
+              "p": "Use Desenho para esboços, flash, lettering e tudo o que já é feito de linhas. As marcas escuras sobre a folha clara são o desenho, e o objetivo é mantê-las o mais próximo possível de como você desenhou."
+            },
+            {
+              "h3": "Foto"
+            },
+            {
+              "p": "Use Foto para imagens com sombreado suave, como um retrato ou um animal. Uma foto não tem contorno para preservar, então as bordas onde o tom muda precisam fazer o papel das linhas. Espere gastar mais tempo nos controles com fotos e espere decidir quais detalhes você prefere desenhar à mão."
+            }
           ]
         },
         {
           "h2": "Como criar um stencil de tatuagem online, passo a passo",
           "stepsIntro": "Estes são os passos em ordem. As seções seguintes explicam os controles com mais detalhe.",
           "steps": [
-            { "name": "Escolha uma origem nítida", "text": "Pegue o desenho ou a foto com melhor contraste e menos poluição visual. Se tiver duas versões, use a feita com a caneta mais escura e uniforme." },
-            { "name": "Escaneie ou fotografe com luz uniforme", "text": "Escaneie na horizontal, se puder. Senão, fotografe com luz do dia, paralelo à folha, com o desenho preenchendo o quadro e sem sombras nem flash." },
-            { "name": "Carregue na ferramenta", "text": "Abra a ferramenta grátis e solte um arquivo JPG, PNG ou WebP, ou clique para escolher um. Ele é processado no seu navegador e não é enviado." },
-            { "name": "Escolha o modo Desenho ou Foto", "text": "Escolha Desenho para arte em linhas e flash, Foto para imagens com sombreado suave." },
-            { "name": "Ajuste a sensibilidade", "text": "A sensibilidade define o quão fraca uma marca pode ser e ainda virar linha. Diminua se o sombreado virar linhas. Aumente se faltarem linhas finas." },
-            { "name": "Ajuste a suavização e a espessura da linha", "text": "A suavização arredonda as bordas serrilhadas dos pixels. A espessura deixa as linhas mais grossas ou mais finas. Se as linhas saírem fracas na impressão, uma espessura maior costuma ajudar." },
-            { "name": "Remova os pontinhos", "text": "Aumente Remover pontinhos para limpar manchas pequenas da granulação do papel ou da poeira, até sobrarem só as marcas intencionais." },
-            { "name": "Veja o que se perdeu com a checagem de desvio", "text": "Ative a checagem de desvio. As linhas perdidas aparecem em vermelho e as acrescentadas em azul, e assim você vê o que seus ajustes mudaram em relação a uma leitura fixa e sensível do original." },
-            { "name": "Defina a largura em milímetros", "text": "Digite a largura que você quer na pele. A ferramenta mostra o tamanho correspondente a 300 dpi e uma régua em tamanho real." },
-            { "name": "Baixe ou imprima em tamanho real", "text": "Baixe o PNG e imprima de modo que a folha tenha a largura que você definiu. Confira com uma régua antes de chegar perto de alguém." }
+            {
+              "name": "Escolha uma origem nítida",
+              "text": "Pegue o desenho ou a foto com melhor contraste e menos poluição visual. Se tiver duas versões, use a feita com a caneta mais escura e uniforme."
+            },
+            {
+              "name": "Escaneie ou fotografe com luz uniforme",
+              "text": "Escaneie na horizontal, se puder. Senão, fotografe com luz do dia, paralelo à folha, com o desenho preenchendo o quadro e sem sombras nem flash."
+            },
+            {
+              "name": "Carregue na ferramenta",
+              "text": "Abra a ferramenta grátis e solte um arquivo JPG, PNG ou WebP, ou clique para escolher um. Ele é processado no seu navegador e não é enviado."
+            },
+            {
+              "name": "Escolha o modo Desenho ou Foto",
+              "text": "Escolha Desenho para arte em linhas e flash, Foto para imagens com sombreado suave."
+            },
+            {
+              "name": "Ajuste a sensibilidade",
+              "text": "A sensibilidade define o quão fraca uma marca pode ser e ainda virar linha. Diminua se o sombreado virar linhas. Aumente se faltarem linhas finas."
+            },
+            {
+              "name": "Ajuste a suavização e a espessura da linha",
+              "text": "A suavização arredonda as bordas serrilhadas dos pixels. A espessura deixa as linhas mais grossas ou mais finas. Se as linhas saírem fracas na impressão, uma espessura maior costuma ajudar."
+            },
+            {
+              "name": "Remova os pontinhos",
+              "text": "Aumente Remover pontinhos para limpar manchas pequenas da granulação do papel ou da poeira, até sobrarem só as marcas intencionais."
+            },
+            {
+              "name": "Veja o que se perdeu com a checagem de desvio",
+              "text": "Ative a checagem de desvio. As linhas perdidas aparecem em vermelho e as acrescentadas em azul, e assim você vê o que seus ajustes mudaram em relação a uma leitura fixa e sensível do original."
+            },
+            {
+              "name": "Defina a largura em milímetros",
+              "text": "Digite a largura que você quer na pele. A ferramenta mostra o tamanho correspondente a 300 dpi e uma régua em tamanho real."
+            },
+            {
+              "name": "Baixe ou imprima em tamanho real",
+              "text": "Baixe o PNG e imprima de modo que a folha tenha a largura que você definiu. Confira com uma régua antes de chegar perto de alguém."
+            }
           ]
         },
         {
           "h2": "Usando os controles sem perder o desenho",
           "blocks": [
-            { "p": "Trate os controles como uma conversa, não como uma receita. Mude um, olhe o resultado e desfaça se atrapalhou mais do que ajudou." },
-            { "ul": [
-              "A sensibilidade é a alavanca mais forte. Alta demais, e cada borrão vira linha. Baixa demais, e o detalhe fino desaparece.",
-              "A suavização ajuda mais em escaneamentos de desenhos pequenos, em que as linhas ficam em degraus quando ampliadas. Suavização demais arredonda cantos vivos e pequenos vãos.",
-              "A espessura da linha é questão de gosto e do seu método de transferência. Linhas muito finas podem sumir na impressão ou na transferência, então teste no papel primeiro.",
-              "Remover pontinhos é o controle de limpeza. Aumente até a poeira sumir e pare antes que ele comece a tirar pontos que fazem parte do desenho, como o pontilhismo."
-            ] },
-            { "p": "O pontilhismo e o dotwork miúdo são as perdas mais comuns. Se o seu desenho depende deles, mantenha os pontinhos baixos e confira o resultado de perto." }
+            {
+              "p": "Trate os controles como uma conversa, não como uma receita. Mude um, olhe o resultado e desfaça se atrapalhou mais do que ajudou."
+            },
+            {
+              "ul": [
+                "A sensibilidade é a alavanca mais forte. Alta demais, e cada borrão vira linha. Baixa demais, e o detalhe fino desaparece.",
+                "A suavização ajuda mais em escaneamentos de desenhos pequenos, em que as linhas ficam em degraus quando ampliadas. Suavização demais arredonda cantos vivos e pequenos vãos.",
+                "A espessura da linha é questão de gosto e do seu método de transferência. Linhas muito finas podem sumir na impressão ou na transferência, então teste no papel primeiro.",
+                "Remover pontinhos é o controle de limpeza. Aumente até a poeira sumir e pare antes que ele comece a tirar pontos que fazem parte do desenho, como o pontilhismo."
+              ]
+            },
+            {
+              "p": "O pontilhismo e o dotwork miúdo são as perdas mais comuns. Se o seu desenho depende deles, mantenha os pontinhos baixos e confira o resultado de perto."
+            }
           ]
         },
         {
           "h2": "Por que a checagem de desvio importa",
           "blocks": [
-            { "p": "Um stencil de aparência limpa ainda pode estar faltando alguma coisa. É fácil perder uma linha fina quando se persegue um resultado arrumado, e fácil não notar numa tela pequena." },
-            { "p": "A checagem de desvio compara o stencil com as linhas encontradas no original. O vermelho marca uma linha que se perdeu. O azul marca uma linha que foi acrescentada. A referência é uma leitura fixa e sensível do original, então reduzir a sensibilidade ou aumentar Remover pontinhos mostrará vermelho de propósito. Vermelho nem sempre é erro, mas sempre vale uma olhada antes de você fechar um tamanho." }
+            {
+              "p": "Um stencil de aparência limpa ainda pode estar faltando alguma coisa. É fácil perder uma linha fina quando se persegue um resultado arrumado, e fácil não notar numa tela pequena."
+            },
+            {
+              "p": "A checagem de desvio compara o stencil com as linhas encontradas no original. O vermelho marca uma linha que se perdeu. O azul marca uma linha que foi acrescentada. A referência é uma leitura fixa e sensível do original, então reduzir a sensibilidade ou aumentar Remover pontinhos mostrará vermelho de propósito. Vermelho nem sempre é erro, mas sempre vale uma olhada antes de você fechar um tamanho."
+            }
           ]
         },
         {
           "h2": "Tamanho, download e impressão",
           "blocks": [
-            { "p": "Defina a largura em milímetros antes de baixar, porque o mesmo desenho com 60 mm e com 200 mm precisa de números de pixels diferentes para continuar nítido. Nosso guia complementar sobre [tamanho de impressão](guide:tattoo-stencil-size-true-size-print) traz os números." },
-            { "p": "Os downloads grátis têm marca d'água e ficam limitados a 800 px. O passe do dia ou o Pro tira a marca d'água, permite até 4000 px e grava o tamanho de 300 dpi dentro do PNG, para que o programa de impressão abra o arquivo na largura que você escolheu. Com o arquivo em mãos, [formas de levar o stencil ao papel](guide:tattoo-stencil-transfer-methods) explica o que vem depois." }
+            {
+              "p": "Defina a largura em milímetros antes de baixar, porque o mesmo desenho com 60 mm e com 200 mm precisa de números de pixels diferentes para continuar nítido. Nosso guia complementar sobre [tamanho de impressão](guide:tattoo-stencil-size-true-size-print) traz os números."
+            },
+            {
+              "p": "Os downloads grátis têm marca d'água e ficam limitados a 800 px. O passe do dia ou o Pro tira a marca d'água, permite até 4000 px e grava o tamanho de 300 dpi dentro do PNG, para que o programa de impressão abra o arquivo na largura que você escolheu. Com o arquivo em mãos, [formas de levar o stencil ao papel](guide:tattoo-stencil-transfer-methods) explica o que vem depois."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Posso criar um stencil de tatuagem a partir de uma foto?", "a": "Sim. Carregue uma foto, escolha o modo Foto e ajuste a sensibilidade até as bordas que você quer virarem linhas. Fotos com sombreado suave exigem mais ajuste do que desenhos de linhas, e talvez você queira desenhar alguns detalhes à mão." },
-        { "q": "A ferramenta de stencil de tatuagem é grátis?", "a": "Sim. É grátis no navegador. Os downloads grátis têm marca d'água e ficam limitados a 800 px. O passe do dia ou o Pro tira a marca d'água e permite até 4000 px." },
-        { "q": "Meu desenho é enviado para algum lugar?", "a": "Não. A imagem é processada no seu navegador, no seu próprio aparelho, e nada é enviado." },
-        { "q": "Que tipos de arquivo posso usar?", "a": "Imagens JPG, PNG e WebP. Use a versão mais nítida e melhor iluminada que tiver." },
-        { "q": "Por que faltam linhas no meu stencil?", "a": "A sensibilidade pode estar baixa demais, ou Remover pontinhos alto demais, e as linhas fracas foram tratadas como ruído. Ative a checagem de desvio: as linhas perdidas aparecem em vermelho. Aumente a sensibilidade ou diminua Remover pontinhos e confira de novo." },
-        { "q": "Como imprimir o stencil no tamanho certo?", "a": "Defina a largura em milímetros na ferramenta, baixe o PNG e imprima em 100 por cento, sem ajustar à página. Confira a folha impressa com uma régua." }
+        {
+          "q": "Posso criar um stencil de tatuagem a partir de uma foto?",
+          "a": "Sim. Carregue uma foto, escolha o modo Foto e ajuste a sensibilidade até as bordas que você quer virarem linhas. Fotos com sombreado suave exigem mais ajuste do que desenhos de linhas, e talvez você queira desenhar alguns detalhes à mão."
+        },
+        {
+          "q": "A ferramenta de stencil de tatuagem é grátis?",
+          "a": "Sim. É grátis no navegador. Os downloads grátis têm marca d'água e ficam limitados a 800 px. O passe do dia ou o Pro tira a marca d'água e permite até 4000 px."
+        },
+        {
+          "q": "Meu desenho é enviado para algum lugar?",
+          "a": "Não. A imagem é processada no seu navegador, no seu próprio aparelho, e nada é enviado."
+        },
+        {
+          "q": "Que tipos de arquivo posso usar?",
+          "a": "Imagens JPG, PNG e WebP. Use a versão mais nítida e melhor iluminada que tiver."
+        },
+        {
+          "q": "Por que faltam linhas no meu stencil?",
+          "a": "A sensibilidade pode estar baixa demais, ou Remover pontinhos alto demais, e as linhas fracas foram tratadas como ruído. Ative a checagem de desvio: as linhas perdidas aparecem em vermelho. Aumente a sensibilidade ou diminua Remover pontinhos e confira de novo."
+        },
+        {
+          "q": "Como imprimir o stencil no tamanho certo?",
+          "a": "Defina a largura em milímetros na ferramenta, baixe o PNG e imprima em 100 por cento, sem ajustar à página. Confira a folha impressa com uma régua."
+        }
       ],
       "cta": "Experimente com o seu próprio desenho. Roda no seu navegador e nada é enviado."
     },
@@ -128,79 +216,167 @@
         {
           "h2": "Por que é fácil errar o tamanho do stencil",
           "blocks": [
-            { "p": "Uma imagem digital não tem tamanho físico próprio. É uma grade de pixels, e o tamanho no papel depende de quantos pixels entram em cada polegada. Isso é o dpi, de dots per inch, pontos por polegada. O mesmo arquivo pode sair como um selo ou como um pôster." },
-            { "p": "Para um decalque de tatuagem isso é um problema, porque o desenho precisa chegar à pele exatamente no tamanho combinado com o cliente. O programa de impressão muitas vezes adivinha, reduz ou amplia a imagem para caber na página, ou abre o arquivo a 72 ou 96 dpi e o deixa muito maior do que você esperava. Acertar o tamanho do stencil é definir o tamanho uma vez, em milímetros, e garantir que o arquivo leve essa informação até a impressora." }
+            {
+              "p": "Uma imagem digital não tem tamanho físico próprio. É uma grade de pixels, e o tamanho no papel depende de quantos pixels entram em cada polegada. Isso é o dpi, de dots per inch, pontos por polegada. O mesmo arquivo pode sair como um selo ou como um pôster."
+            },
+            {
+              "p": "Para um decalque de tatuagem isso é um problema, porque o desenho precisa chegar à pele exatamente no tamanho combinado com o cliente. O programa de impressão muitas vezes adivinha, reduz ou amplia a imagem para caber na página, ou abre o arquivo a 72 ou 96 dpi e o deixa muito maior do que você esperava. Acertar o tamanho do stencil é definir o tamanho uma vez, em milímetros, e garantir que o arquivo leve essa informação até a impressora."
+            }
           ]
         },
         {
           "h2": "Milímetros em pixels a 300 dpi",
           "blocks": [
-            { "p": "Uma polegada tem 25,4 milímetros. Então a largura em pixels de que você precisa é:" },
-            { "p": "**pixels = milímetros ÷ 25,4 × 300**" },
-            { "p": "Aqui está o resultado para larguras comuns, arredondado para o pixel mais próximo:" },
-            { "table": {
-              "head": ["Largura na pele", "Pixels a 300 dpi"],
-              "rows": [
-                ["50 mm", "591 px"],
-                ["80 mm", "945 px"],
-                ["100 mm", "1181 px"],
-                ["150 mm", "1772 px"],
-                ["200 mm", "2362 px"],
-                ["250 mm", "2953 px"],
-                ["300 mm", "3543 px"]
-              ]
-            } },
-            { "p": "Você não precisa fazer essa conta à mão. Na ferramenta, você digita a largura em milímetros e ela mostra ao lado o tamanho a 300 dpi. A tabela está aqui para você ver por que um arquivo pequeno não pode ser impresso em tamanho grande sem ficar borrado." }
+            {
+              "p": "Uma polegada tem 25,4 milímetros. Então a largura em pixels de que você precisa é:"
+            },
+            {
+              "p": "**pixels = milímetros ÷ 25,4 × 300**"
+            },
+            {
+              "p": "Aqui está o resultado para larguras comuns, arredondado para o pixel mais próximo:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Largura na pele",
+                  "Pixels a 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "50 mm",
+                    "591 px"
+                  ],
+                  [
+                    "80 mm",
+                    "945 px"
+                  ],
+                  [
+                    "100 mm",
+                    "1181 px"
+                  ],
+                  [
+                    "150 mm",
+                    "1772 px"
+                  ],
+                  [
+                    "200 mm",
+                    "2362 px"
+                  ],
+                  [
+                    "250 mm",
+                    "2953 px"
+                  ],
+                  [
+                    "300 mm",
+                    "3543 px"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Você não precisa fazer essa conta à mão. Na ferramenta, você digita a largura em milímetros e ela mostra ao lado o tamanho a 300 dpi. A tabela está aqui para você ver por que um arquivo pequeno não pode ser impresso em tamanho grande sem ficar borrado."
+            }
           ]
         },
         {
           "h2": "Por que 300 dpi",
           "blocks": [
-            { "p": "300 dpi é a meta usual para imagens impressas que serão vistas de perto. Nessa densidade, uma linha fina ainda sai como um traço limpo e contínuo. Densidades menores começam a mostrar bordas em degraus nas curvas, e um stencil é quase só curvas." },
-            { "p": "Mais nem sempre é melhor. Arquivos maiores demoram mais para abrir e imprimir, e uma linha fina de stencil não fica mais nítida do que a sua impressora consegue traçar. 300 dpi é um equilíbrio sensato para o trabalho com stencil e é o que o Skinstencil usa na saída em tamanho real." }
+            {
+              "p": "300 dpi é a meta usual para imagens impressas que serão vistas de perto. Nessa densidade, uma linha fina ainda sai como um traço limpo e contínuo. Densidades menores começam a mostrar bordas em degraus nas curvas, e um stencil é quase só curvas."
+            },
+            {
+              "p": "Mais nem sempre é melhor. Arquivos maiores demoram mais para abrir e imprimir, e uma linha fina de stencil não fica mais nítida do que a sua impressora consegue traçar. 300 dpi é um equilíbrio sensato para o trabalho com stencil e é o que o Skinstencil usa na saída em tamanho real."
+            }
           ]
         },
         {
           "h2": "Como o valor de 300 dpi dentro do PNG ajuda",
           "blocks": [
-            { "p": "Um arquivo PNG pode carregar um tamanho físico, guardado como pixels por metro num pequeno bloco de dados do arquivo. Muitos programas o leem e abrem a imagem nesse tamanho. Se o valor diz 300 dpi, uma imagem de 1181 px de largura abre com cerca de 100 mm, sem redimensionar à mão." },
-            { "p": "Quando o valor não existe, os programas recorrem a um padrão, que muitas vezes é 72 ou 96 dpi. A 72 dpi, essa mesma imagem de 1181 px abriria com cerca de 416 mm de largura, mais de quatro vezes maior. Esse é um motivo comum de o stencil sair da impressora grande demais." },
-            { "p": "Com o passe do dia ou o Pro, o Skinstencil grava o tamanho de 300 dpi dentro do PNG, para que o programa de impressão abra o arquivo na largura que você definiu. Com um download grátis, defina você mesmo a largura de impressão na caixa de diálogo." }
+            {
+              "p": "Um arquivo PNG pode carregar um tamanho físico, guardado como pixels por metro num pequeno bloco de dados do arquivo. Muitos programas o leem e abrem a imagem nesse tamanho. Se o valor diz 300 dpi, uma imagem de 1181 px de largura abre com cerca de 100 mm, sem redimensionar à mão."
+            },
+            {
+              "p": "Quando o valor não existe, os programas recorrem a um padrão, que muitas vezes é 72 ou 96 dpi. A 72 dpi, essa mesma imagem de 1181 px abriria com cerca de 416 mm de largura, mais de quatro vezes maior. Esse é um motivo comum de o stencil sair da impressora grande demais."
+            },
+            {
+              "p": "Com o passe do dia ou o Pro, o Skinstencil grava o tamanho de 300 dpi dentro do PNG, para que o programa de impressão abra o arquivo na largura que você definiu. Com um download grátis, defina você mesmo a largura de impressão na caixa de diálogo."
+            }
           ]
         },
         {
           "h2": "Imprimir em tamanho real",
           "stepsIntro": "Uma rotina curta que evita surpresas:",
           "steps": [
-            { "name": "Defina a largura na ferramenta", "text": "Digite a largura na pele em milímetros. A ferramenta mostra o tamanho equivalente a 300 dpi." },
-            { "name": "Baixe o PNG", "text": "Com o passe do dia ou o Pro, o arquivo guarda o tamanho de 300 dpi, então a maioria dos programas o abre na largura certa." },
-            { "name": "Abra na caixa de diálogo de impressão", "text": "Escolha tamanho real ou 100 por cento. Desative ajustar à página, reduzir para caber e preencher a página." },
-            { "name": "Imprima um teste em papel comum", "text": "Use papel comum para o teste, não o seu material de transferência." },
-            { "name": "Meça a folha impressa", "text": "Apoie uma régua na parte mais larga e compare com a largura que você definiu. Ajuste e imprima de novo se estiver diferente." }
+            {
+              "name": "Defina a largura na ferramenta",
+              "text": "Digite a largura na pele em milímetros. A ferramenta mostra o tamanho equivalente a 300 dpi."
+            },
+            {
+              "name": "Baixe o PNG",
+              "text": "Com o passe do dia ou o Pro, o arquivo guarda o tamanho de 300 dpi, então a maioria dos programas o abre na largura certa."
+            },
+            {
+              "name": "Abra na caixa de diálogo de impressão",
+              "text": "Escolha tamanho real ou 100 por cento. Desative ajustar à página, reduzir para caber e preencher a página."
+            },
+            {
+              "name": "Imprima um teste em papel comum",
+              "text": "Use papel comum para o teste, não o seu material de transferência."
+            },
+            {
+              "name": "Meça a folha impressa",
+              "text": "Apoie uma régua na parte mais larga e compare com a largura que você definiu. Ajuste e imprima de novo se estiver diferente."
+            }
           ]
         },
         {
           "h2": "Confira com uma régua, sempre",
           "blocks": [
-            { "p": "Impressoras e drivers mudam configurações sem avisar, principalmente depois de uma atualização ou num computador compartilhado. A régua tira o palpite da jogada. Meça a largura total do desenho na folha impressa, de ponta a ponta da arte e não do papel, e compare com os milímetros que você definiu." },
-            { "p": "A ferramenta também desenha uma régua em tamanho real que acompanha a largura de impressão definida, para você ver a escala pretendida na tela. As telas variam, então essa régua é só uma referência, e a que vale é a régua na folha impressa." },
-            { "p": "Se a impressão está errada por uma porcentagem constante, provavelmente há uma opção de escala ligada. Se está errada por um fator grande, o programa provavelmente abriu o arquivo a 72 ou 96 dpi." }
+            {
+              "p": "Impressoras e drivers mudam configurações sem avisar, principalmente depois de uma atualização ou num computador compartilhado. A régua tira o palpite da jogada. Meça a largura total do desenho na folha impressa, de ponta a ponta da arte e não do papel, e compare com os milímetros que você definiu."
+            },
+            {
+              "p": "A ferramenta também desenha uma régua em tamanho real que acompanha a largura de impressão definida, para você ver a escala pretendida na tela. As telas variam, então essa régua é só uma referência, e a que vale é a régua na folha impressa."
+            },
+            {
+              "p": "Se a impressão está errada por uma porcentagem constante, provavelmente há uma opção de escala ligada. Se está errada por um fator grande, o programa provavelmente abriu o arquivo a 72 ou 96 dpi."
+            }
           ]
         },
         {
           "h2": "Por que os downloads grátis ficam limitados a 800 px",
           "blocks": [
-            { "p": "Os downloads grátis têm marca d'água e são limitados a 800 px. A 300 dpi, 800 px dão cerca de 68 mm, o que serve para avaliar um desenho, mas é pouco para um stencil na pele. Stencils maiores precisam de mais pixels para continuar nítidos, e é isso que o passe do dia ou o Pro libera: sem marca d'água, até 4000 px, que são cerca de 339 mm de largura a 300 dpi, e o tamanho de 300 dpi gravado no arquivo." },
-            { "p": "A ferramenta grátis continua útil para conferir as linhas e a checagem de desvio antes de você decidir liberar um tamanho. Nosso guia para [criar um stencil a partir de uma foto ou desenho](guide:tattoo-stencil-from-photo) cobre essa parte." }
+            {
+              "p": "Os downloads grátis têm marca d'água e são limitados a 800 px. A 300 dpi, 800 px dão cerca de 68 mm, o que serve para avaliar um desenho, mas é pouco para um stencil na pele. Stencils maiores precisam de mais pixels para continuar nítidos, e é isso que o passe do dia ou o Pro libera: sem marca d'água, até 4000 px, que são cerca de 339 mm de largura a 300 dpi, e o tamanho de 300 dpi gravado no arquivo."
+            },
+            {
+              "p": "A ferramenta grátis continua útil para conferir as linhas e a checagem de desvio antes de você decidir liberar um tamanho. Nosso guia para [criar um stencil a partir de uma foto ou desenho](guide:tattoo-stencil-from-photo) cobre essa parte."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Quantos pixels preciso para um stencil de 100 mm?", "a": "Cerca de 1181 pixels de largura a 300 dpi. A fórmula é milímetros divididos por 25,4, multiplicados por 300." },
-        { "q": "Por que meu stencil está saindo grande demais?", "a": "Em geral o programa abriu o PNG a 72 ou 96 dpi porque o arquivo não trazia tamanho gravado, ou uma opção de ajustar à página ampliou a imagem. Imprima em 100 por cento e defina a largura você mesmo, ou use um arquivo com o tamanho de 300 dpi gravado." },
-        { "q": "Para que serve o valor de 300 dpi dentro do PNG?", "a": "Ele informa ao programa de impressão o tamanho físico da imagem, para que ela abra na largura que você definiu em vez de ser adivinhada. Os downloads do passe do dia e do Pro incluem esse valor." },
-        { "q": "Qual é o maior stencil que posso baixar?", "a": "Os downloads grátis ficam limitados a 800 px. O passe do dia ou o Pro permite até 4000 px, cerca de 339 mm de largura a 300 dpi." },
-        { "q": "Devo conferir a impressão com uma régua?", "a": "Sim, sempre. Meça a arte de ponta a ponta e compare com a largura que você definiu antes de usar o stencil." }
+        {
+          "q": "Quantos pixels preciso para um stencil de 100 mm?",
+          "a": "Cerca de 1181 pixels de largura a 300 dpi. A fórmula é milímetros divididos por 25,4, multiplicados por 300."
+        },
+        {
+          "q": "Por que meu stencil está saindo grande demais?",
+          "a": "Em geral o programa abriu o PNG a 72 ou 96 dpi porque o arquivo não trazia tamanho gravado, ou uma opção de ajustar à página ampliou a imagem. Imprima em 100 por cento e defina a largura você mesmo, ou use um arquivo com o tamanho de 300 dpi gravado."
+        },
+        {
+          "q": "Para que serve o valor de 300 dpi dentro do PNG?",
+          "a": "Ele informa ao programa de impressão o tamanho físico da imagem, para que ela abra na largura que você definiu em vez de ser adivinhada. Os downloads do passe do dia e do Pro incluem esse valor."
+        },
+        {
+          "q": "Qual é o maior stencil que posso baixar?",
+          "a": "Os downloads grátis ficam limitados a 800 px. O passe do dia ou o Pro permite até 4000 px, cerca de 339 mm de largura a 300 dpi."
+        },
+        {
+          "q": "Devo conferir a impressão com uma régua?",
+          "a": "Sim, sempre. Meça a arte de ponta a ponta e compare com a largura que você definiu antes de usar o stencil."
+        }
       ],
       "cta": "Defina uma largura em milímetros e veja o tamanho a 300 dpi."
     },
@@ -216,86 +392,139 @@
         {
           "h2": "Três abordagens comuns",
           "blocks": [
-            { "p": "Um stencil de tatuagem começa como um desenho e termina como um padrão de linhas numa folha de transferência que pode ser pressionada contra a pele. Há várias formas de ir de um ao outro. Este guia descreve três das mais comuns em termos neutros. Ele não faz ranking, porque a escolha certa depende do seu volume, do seu orçamento, do seu estúdio e dos seus próprios hábitos." },
-            { "p": "Ele também não trata de aplicação nem de cuidados posteriores. Seja qual for o método, siga as regras de higiene do seu estúdio." }
+            {
+              "p": "Um stencil de tatuagem começa como um desenho e termina como um padrão de linhas numa folha de transferência que pode ser pressionada contra a pele. Há várias formas de ir de um ao outro. Este guia descreve três das mais comuns em termos neutros. Ele não faz ranking, porque a escolha certa depende do seu volume, do seu orçamento, do seu estúdio e dos seus próprios hábitos."
+            },
+            {
+              "p": "Ele também não trata de aplicação nem de cuidados posteriores. Seja qual for o método, siga as regras de higiene do seu estúdio."
+            }
           ]
         },
         {
           "h2": "Decalque à mão",
           "blocks": [
-            { "p": "O método mais antigo é copiar o desenho você mesmo. Você coloca papel vegetal, ou uma folha de transferência feita para desenho à mão, sobre a arte e segue as linhas com uma caneta. Alguns artistas desenham direto no material de transferência. Outros usam uma mesa de luz ou uma janela para enxergar a arte através do papel." },
-            { "ul": [
-              "Precisa de: o desenho original, o material de transferência e uma caneta adequada a ele.",
-              "Ponto forte: nenhum equipamento além de papel e canetas, e cada linha passa pela sua mão, então você toma pequenas decisões ao longo do caminho.",
-              "Limite: leva tempo, ampliar ou reduzir o desenho exige uma etapa à parte e repetir um desenho é lento."
-            ] },
-            { "p": "Um arquivo de linhas limpas ainda ajuda aqui. Você pode imprimir uma cópia clara em papel comum no tamanho certo e decalcar por cima, o que resolve o tamanho sem precisar de outra ferramenta." }
+            {
+              "p": "O método mais antigo é copiar o desenho você mesmo. Você coloca papel vegetal, ou uma folha de transferência feita para desenho à mão, sobre a arte e segue as linhas com uma caneta. Alguns artistas desenham direto no material de transferência. Outros usam uma mesa de luz ou uma janela para enxergar a arte através do papel."
+            },
+            {
+              "ul": [
+                "Precisa de: o desenho original, o material de transferência e uma caneta adequada a ele.",
+                "Ponto forte: nenhum equipamento além de papel e canetas, e cada linha passa pela sua mão, então você toma pequenas decisões ao longo do caminho.",
+                "Limite: leva tempo, ampliar ou reduzir o desenho exige uma etapa à parte e repetir um desenho é lento."
+              ]
+            },
+            {
+              "p": "Um arquivo de linhas limpas ainda ajuda aqui. Você pode imprimir uma cópia clara em papel comum no tamanho certo e decalcar por cima, o que resolve o tamanho sem precisar de outra ferramenta."
+            }
           ]
         },
         {
           "h2": "Impressoras térmicas",
           "blocks": [
-            { "p": "As impressoras térmicas de stencil usam calor, não tinta, para formar o padrão num papel de transferência especial de várias camadas. A impressora lê uma imagem digital ou um original em papel e produz o stencil de uma só vez. Os modelos variam na forma de conexão, então confira o que o seu aceita, seja cabo USB, um computador conectado ou um aplicativo de celular." },
-            { "ul": [
-              "Precisa de: uma impressora térmica, papel de transferência térmica compatível e um arquivo ou original para imprimir.",
-              "Ponto forte: rápida e consistente depois de configurada, e cópias repetidas do mesmo desenho são fáceis.",
-              "Limite: a impressora e o papel têm custo, e um arquivo um pouco fraco demais, pesado demais ou do tamanho errado sai exatamente assim."
-            ] },
-            { "p": "É aqui que um arquivo de stencil com linhas limpas mais importa. Uma impressora térmica imprime as linhas que recebe. Tons de cinza, textura de fundo e linhas muito finas podem sair mal ou nem sair, e um arquivo aberto no tamanho errado é impresso no tamanho errado. Linhas pretas sobre fundo branco liso, numa largura conhecida, dão à impressora o mínimo de chances de errar." }
+            {
+              "p": "As impressoras térmicas de stencil usam calor, não tinta, para formar o padrão num papel de transferência especial de várias camadas. A impressora lê uma imagem digital ou um original em papel e produz o stencil de uma só vez. Os modelos variam na forma de conexão, então confira o que o seu aceita, seja cabo USB, um computador conectado ou um aplicativo de celular."
+            },
+            {
+              "ul": [
+                "Precisa de: uma impressora térmica, papel de transferência térmica compatível e um arquivo ou original para imprimir.",
+                "Ponto forte: rápida e consistente depois de configurada, e cópias repetidas do mesmo desenho são fáceis.",
+                "Limite: a impressora e o papel têm custo, e um arquivo um pouco fraco demais, pesado demais ou do tamanho errado sai exatamente assim."
+              ]
+            },
+            {
+              "p": "É aqui que um arquivo de stencil com linhas limpas mais importa. Uma impressora térmica imprime as linhas que recebe. Tons de cinza, textura de fundo e linhas muito finas podem sair mal ou nem sair, e um arquivo aberto no tamanho errado é impresso no tamanho errado. Linhas pretas sobre fundo branco liso, numa largura conhecida, dão à impressora o mínimo de chances de errar."
+            }
           ]
         },
         {
           "h2": "Impressão para transferência em impressoras comuns",
           "blocks": [
-            { "p": "Alguns artistas imprimem o stencil numa impressora jato de tinta ou laser comum, em papel feito para funcionar como camada de transferência, ou imprimem em papel comum e usam como referência ou base para decalcar. O que funciona depende do tipo de impressora e do papel, então siga as instruções que acompanham o material e teste uma folha antes de usar para valer." },
-            { "ul": [
-              "Precisa de: uma impressora comum, papel próprio para transferência se quiser transferir direto, e um arquivo no tamanho certo.",
-              "Ponto forte: talvez você já tenha a impressora, e ela imprime em alta resolução.",
-              "Limite: o material precisa ser feito para esse uso, papel de escritório comum não é material de transferência, e configurações da impressora como a escala podem mudar o tamanho."
-            ] },
-            { "p": "Como em qualquer método digital, deixe a caixa de impressão em tamanho real e meça o resultado. O guia sobre [imprimir em tamanho real](guide:tattoo-stencil-size-true-size-print) explica como." }
+            {
+              "p": "Alguns artistas imprimem o stencil numa impressora jato de tinta ou laser comum, em papel feito para funcionar como camada de transferência, ou imprimem em papel comum e usam como referência ou base para decalcar. O que funciona depende do tipo de impressora e do papel, então siga as instruções que acompanham o material e teste uma folha antes de usar para valer."
+            },
+            {
+              "ul": [
+                "Precisa de: uma impressora comum, papel próprio para transferência se quiser transferir direto, e um arquivo no tamanho certo.",
+                "Ponto forte: talvez você já tenha a impressora, e ela imprime em alta resolução.",
+                "Limite: o material precisa ser feito para esse uso, papel de escritório comum não é material de transferência, e configurações da impressora como a escala podem mudar o tamanho."
+              ]
+            },
+            {
+              "p": "Como em qualquer método digital, deixe a caixa de impressão em tamanho real e meça o resultado. O guia sobre [imprimir em tamanho real](guide:tattoo-stencil-size-true-size-print) explica como."
+            }
           ]
         },
         {
           "h2": "Quando um arquivo de stencil com linhas limpas faz diferença",
           "blocks": [
-            { "p": "Qualquer método que parta de um arquivo digital se beneficia de um arquivo feito para o trabalho. Um arquivo de stencil é diferente de uma foto em alguns pontos:" },
-            { "ul": [
-              "É feito só de linhas, sem sombreado, textura de papel nem fundo.",
-              "As linhas são escuras e contínuas, para que o calor ou a tinta tenham algo sólido a reproduzir.",
-              "Tem uma largura conhecida, então imprime no tamanho combinado com o cliente.",
-              "Os pontinhos fracos foram removidos, para não virarem marcas na transferência."
-            ] },
-            { "p": "Um gerador de stencil de tatuagem produz esse tipo de arquivo a partir de uma foto ou de um desenho. Nosso guia sobre [como criar um stencil a partir de uma foto ou desenho](guide:tattoo-stencil-from-photo) percorre os controles." }
+            {
+              "p": "Qualquer método que parta de um arquivo digital se beneficia de um arquivo feito para o trabalho. Um arquivo de stencil é diferente de uma foto em alguns pontos:"
+            },
+            {
+              "ul": [
+                "É feito só de linhas, sem sombreado, textura de papel nem fundo.",
+                "As linhas são escuras e contínuas, para que o calor ou a tinta tenham algo sólido a reproduzir.",
+                "Tem uma largura conhecida, então imprime no tamanho combinado com o cliente.",
+                "Os pontinhos fracos foram removidos, para não virarem marcas na transferência."
+              ]
+            },
+            {
+              "p": "Um gerador de stencil de tatuagem produz esse tipo de arquivo a partir de uma foto ou de um desenho. Nosso guia sobre [como criar um stencil a partir de uma foto ou desenho](guide:tattoo-stencil-from-photo) percorre os controles."
+            }
           ]
         },
         {
           "h2": "Escolhendo entre eles",
           "blocks": [
-            { "p": "Algumas perguntas costumam resolver:" },
-            { "ul": [
-              "Quantos stencils você faz por semana? Volume maior favorece equipamento que repete rápido.",
-              "Com que frequência você muda o tamanho de um desenho? Os métodos digitais tornam isso fácil, e o decalque à mão faz disso um trabalho à parte.",
-              "Quanto do traço você quer redesenhar você mesmo? O decalque à mão dá isso por padrão.",
-              "O que você já tem? Uma impressora que você já possui é o jeito mais barato de começar, desde que o papel combine com ela."
-            ] },
-            { "p": "Muitos artistas usam mais de um método, por exemplo um contorno impresso para as formas principais e decalque à mão para o detalhe fino. Nada aqui exige uma escolha de um ou outro." }
+            {
+              "p": "Algumas perguntas costumam resolver:"
+            },
+            {
+              "ul": [
+                "Quantos stencils você faz por semana? Volume maior favorece equipamento que repete rápido.",
+                "Com que frequência você muda o tamanho de um desenho? Os métodos digitais tornam isso fácil, e o decalque à mão faz disso um trabalho à parte.",
+                "Quanto do traço você quer redesenhar você mesmo? O decalque à mão dá isso por padrão.",
+                "O que você já tem? Uma impressora que você já possui é o jeito mais barato de começar, desde que o papel combine com ela."
+              ]
+            },
+            {
+              "p": "Muitos artistas usam mais de um método, por exemplo um contorno impresso para as formas principais e decalque à mão para o detalhe fino. Nada aqui exige uma escolha de um ou outro."
+            }
           ]
         },
         {
           "h2": "Preparando o arquivo, seja qual for o método",
           "blocks": [
-            { "p": "Qualquer que seja o caminho, a preparação do arquivo é a mesma. Faça uma versão só de linhas limpas, defina a largura em milímetros, baixe num tamanho nítido o bastante para essa largura e imprima um teste em papel comum. O Skinstencil é grátis no navegador e nada é enviado. Os downloads grátis têm marca d'água e ficam limitados a 800 px. O passe do dia ou o Pro tira a marca d'água, permite até 4000 px e grava o tamanho de 300 dpi no PNG." },
-            { "p": "Depois meça a impressão de teste com uma régua antes de usar o seu material de transferência." }
+            {
+              "p": "Qualquer que seja o caminho, a preparação do arquivo é a mesma. Faça uma versão só de linhas limpas, defina a largura em milímetros, baixe num tamanho nítido o bastante para essa largura e imprima um teste em papel comum. O Skinstencil é grátis no navegador e nada é enviado. Os downloads grátis têm marca d'água e ficam limitados a 800 px. O passe do dia ou o Pro tira a marca d'água, permite até 4000 px e grava o tamanho de 300 dpi no PNG."
+            },
+            {
+              "p": "Depois meça a impressão de teste com uma régua antes de usar o seu material de transferência."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Qual a diferença entre um arquivo de stencil e uma foto?", "a": "Um arquivo de stencil contém apenas linhas escuras e limpas sobre fundo liso, num tamanho conhecido. Uma foto tem tom, textura e fundo que a maioria dos métodos de transferência não consegue usar." },
-        { "q": "Preciso de uma impressora térmica para usar um arquivo de stencil?", "a": "Não. O arquivo pode ser impresso em papel comum e decalcado à mão, ou impresso em papel próprio para transferência com uma impressora comum. A impressora térmica é uma opção entre várias." },
-        { "q": "Posso imprimir o stencil em papel comum e decalcar?", "a": "Sim. Uma impressão clara em tamanho real é uma forma comum de decalcar, porque o tamanho já está resolvido." },
-        { "q": "Qual método devo usar?", "a": "Depende de quantos stencils você faz, do equipamento que tem e do jeito como gosta de trabalhar. Muitos artistas combinam métodos." },
-        { "q": "O arquivo precisa ter um tamanho específico?", "a": "Precisa ser nítido o bastante para a largura que você vai imprimir. A 300 dpi, um stencil de 100 mm precisa de cerca de 1181 pixels. Defina a largura em milímetros na ferramenta e ela mostra o tamanho em pixels." }
+        {
+          "q": "Qual a diferença entre um arquivo de stencil e uma foto?",
+          "a": "Um arquivo de stencil contém apenas linhas escuras e limpas sobre fundo liso, num tamanho conhecido. Uma foto tem tom, textura e fundo que a maioria dos métodos de transferência não consegue usar."
+        },
+        {
+          "q": "Preciso de uma impressora térmica para usar um arquivo de stencil?",
+          "a": "Não. O arquivo pode ser impresso em papel comum e decalcado à mão, ou impresso em papel próprio para transferência com uma impressora comum. A impressora térmica é uma opção entre várias."
+        },
+        {
+          "q": "Posso imprimir o stencil em papel comum e decalcar?",
+          "a": "Sim. Uma impressão clara em tamanho real é uma forma comum de decalcar, porque o tamanho já está resolvido."
+        },
+        {
+          "q": "Qual método devo usar?",
+          "a": "Depende de quantos stencils você faz, do equipamento que tem e do jeito como gosta de trabalhar. Muitos artistas combinam métodos."
+        },
+        {
+          "q": "O arquivo precisa ter um tamanho específico?",
+          "a": "Precisa ser nítido o bastante para a largura que você vai imprimir. A 300 dpi, um stencil de 100 mm precisa de cerca de 1181 pixels. Defina a largura em milímetros na ferramenta e ela mostra o tamanho em pixels."
+        }
       ],
       "cta": "Crie um arquivo de stencil com linhas limpas e imprima com o método que você usa."
     },

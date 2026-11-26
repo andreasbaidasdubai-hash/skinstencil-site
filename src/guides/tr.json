@@ -8,9 +8,9 @@
     "updated": "Son güncelleme",
     "answerLabel": "Kısa cevap",
     "faq": "Sık sorulanlar",
-    "indexTitle": "Dövme şablonu ve kaş haritalama rehberleri",
-    "indexMetaTitle": "Rehberler: dövme şablonu ve kaş haritalama | Skinstencil",
-    "indexMetaDesc": "Dövme ve kaş sanatçıları için pratik rehberler: fotoğraftan şablon yapın, müşteri fotoğrafında kaş haritalama çıkarın, ikisini de gerçek boyutta yazdırın.",
+    "indexTitle": "Dövme şablonu rehberleri",
+    "indexMetaTitle": "Rehberler: dövme şablonu | Skinstencil",
+    "indexMetaDesc": "Dövme sanatçıları için pratik rehberler: fotoğraftan şablon yapın ve gerçek boyutta yazdırın.",
     "indexLead": "Sanatçılar için kısa ve pratik rehberler. Her biri, tarayıcınızda çalışan ve hiçbir şey yüklemeyen ücretsiz araçla biter.",
     "readGuide": "Rehberi oku",
     "homeSectionTitle": "Dövme şablonu rehberleri",
@@ -19,7 +19,13 @@
     "theme": "Açık veya koyu",
     "language": "Dil"
   },
-  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods", "brow-mapping-on-a-photo-start-arch-end", "brow-mapping-measurements-scale-and-print-true-size"],
+  "order": [
+    "tattoo-stencil-from-photo",
+    "tattoo-stencil-size-true-size-print",
+    "tattoo-stencil-transfer-methods",
+    "brow-mapping-on-a-photo-start-arch-end",
+    "brow-mapping-measurements-scale-and-print-true-size"
+  ],
   "guides": {
     "tattoo-stencil-from-photo": {
       "howto": true,
@@ -34,85 +40,167 @@
         {
           "h2": "Dövme stencil oluşturucu aslında ne yapar",
           "blocks": [
-            { "p": "Şablon, bir tasarımın ciltte aktarılabilecek kadar sadeleştirilmiş çizgilerden oluşan hâlidir. Dövme stencil oluşturucu bir resmi alır, önemli kenarları korur, ton geçişlerini, kâğıt dokusunu ve gürültüyü atar. Ortaya beyaz zemin üzerinde koyu çizgiler çıkar. Çoğu aktarım yöntemi tam olarak bunu ister." },
-            { "p": "Skinstencil bunu tarayıcınızda, sıradan görüntü işleme ile yapar. Dosyanız kendi cihazınızda okunur, hiçbir yere yüklenmez. Tasarım müşterinize aitse bu önemlidir. Ayrıca sayfa açılır açılmaz, hesap gerekmeden çalışır." }
+            {
+              "p": "Şablon, bir tasarımın ciltte aktarılabilecek kadar sadeleştirilmiş çizgilerden oluşan hâlidir. Dövme stencil oluşturucu bir resmi alır, önemli kenarları korur, ton geçişlerini, kâğıt dokusunu ve gürültüyü atar. Ortaya beyaz zemin üzerinde koyu çizgiler çıkar. Çoğu aktarım yöntemi tam olarak bunu ister."
+            },
+            {
+              "p": "Skinstencil bunu tarayıcınızda, sıradan görüntü işleme ile yapar. Dosyanız kendi cihazınızda okunur, hiçbir yere yüklenmez. Tasarım müşterinize aitse bu önemlidir. Ayrıca sayfa açılır açılmaz, hesap gerekmeden çalışır."
+            }
           ]
         },
         {
           "h2": "Temiz dönüşecek bir kaynak seçin",
           "blocks": [
-            { "p": "İyi kaynakların birkaç ortak özelliği vardır. Mümkün olduğunca çoğuna uyan bir görsel seçin:" },
-            { "ul": [
-              "Çizgilerle zemin arasında net bir kontrast, örneğin beyaz kâğıt üzerinde mürekkep.",
-              "Tasarım köşede küçücük durmak yerine kareyi dolduruyor.",
-              "Kameraya veya tarayıcıya düz ve dik, kıvrılma ya da perspektif yok.",
-              "Eşit ışık, elinizin veya telefonun gölgesi sayfaya düşmüyor.",
-              "İnce çizgilerin hâlâ birkaç piksel genişliğinde kalacağı kadar çözünürlük."
-            ] },
-            { "p": "Düz yataklı tarayıcı bunların hepsini sağlamanın en kolay yoludur. Fotoğraf çekiyorsanız gün ışığında pencere kenarında çalışın, telefonu sayfaya paralel tutun ve ortada parlak bir leke bırakan flaştan kaçının. Yalnızca kendi yaptığınız ya da kullanma hakkınız olan tasarımları kullanın." }
+            {
+              "p": "İyi kaynakların birkaç ortak özelliği vardır. Mümkün olduğunca çoğuna uyan bir görsel seçin:"
+            },
+            {
+              "ul": [
+                "Çizgilerle zemin arasında net bir kontrast, örneğin beyaz kâğıt üzerinde mürekkep.",
+                "Tasarım köşede küçücük durmak yerine kareyi dolduruyor.",
+                "Kameraya veya tarayıcıya düz ve dik, kıvrılma ya da perspektif yok.",
+                "Eşit ışık, elinizin veya telefonun gölgesi sayfaya düşmüyor.",
+                "İnce çizgilerin hâlâ birkaç piksel genişliğinde kalacağı kadar çözünürlük."
+              ]
+            },
+            {
+              "p": "Düz yataklı tarayıcı bunların hepsini sağlamanın en kolay yoludur. Fotoğraf çekiyorsanız gün ışığında pencere kenarında çalışın, telefonu sayfaya paralel tutun ve ortada parlak bir leke bırakan flaştan kaçının. Yalnızca kendi yaptığınız ya da kullanma hakkınız olan tasarımları kullanın."
+            }
           ]
         },
         {
           "h2": "Çizim modu mu, Fotoğraf modu mu",
           "blocks": [
-            { "p": "Araç ne tür bir kaynak yüklediğinizi sorar, çünkü çizgi çizim ile fotoğraf farklı işlem ister." },
-            { "h3": "Çizim" },
-            { "p": "Eskizler, flash tasarımlar, yazılar ve zaten çizgilerden oluşan her şey için Çizim modunu kullanın. Açık sayfadaki koyu izler tasarımın kendisidir ve amaç onları çizdiğiniz hâle yakın tutmaktır." },
-            { "h3": "Fotoğraf" },
-            { "p": "Portre veya hayvan gibi yumuşak gölgeli resimler için Fotoğraf modunu kullanın. Fotoğrafta korunacak bir dış çizgi yoktur, bu yüzden tonun değiştiği kenarlar çizgi yerine geçer. Fotoğraflarda kaydırıcılarla daha çok uğraşmanız ve hangi ayrıntıları elle çizmek istediğinize karar vermeniz gerekir." }
+            {
+              "p": "Araç ne tür bir kaynak yüklediğinizi sorar, çünkü çizgi çizim ile fotoğraf farklı işlem ister."
+            },
+            {
+              "h3": "Çizim"
+            },
+            {
+              "p": "Eskizler, flash tasarımlar, yazılar ve zaten çizgilerden oluşan her şey için Çizim modunu kullanın. Açık sayfadaki koyu izler tasarımın kendisidir ve amaç onları çizdiğiniz hâle yakın tutmaktır."
+            },
+            {
+              "h3": "Fotoğraf"
+            },
+            {
+              "p": "Portre veya hayvan gibi yumuşak gölgeli resimler için Fotoğraf modunu kullanın. Fotoğrafta korunacak bir dış çizgi yoktur, bu yüzden tonun değiştiği kenarlar çizgi yerine geçer. Fotoğraflarda kaydırıcılarla daha çok uğraşmanız ve hangi ayrıntıları elle çizmek istediğinize karar vermeniz gerekir."
+            }
           ]
         },
         {
           "h2": "Dövme stencil oluşturma: adım adım",
           "stepsIntro": "Adımlar sırasıyla şöyle. Aşağıdaki bölümler kontrolleri daha ayrıntılı anlatıyor.",
           "steps": [
-            { "name": "Net bir kaynak seçin", "text": "En iyi kontrasta sahip ve en az karmaşık olan çizimi ya da fotoğrafı seçin. İki sürümünüz varsa daha koyu ve daha düzgün bir kalemle çizileni kullanın." },
-            { "name": "Eşit ışıkta tarayın veya fotoğraflayın", "text": "Mümkünse düz tarayın. Olmuyorsa gün ışığında, sayfaya paralel çekin; tasarım kareyi doldursun, gölge ve flaş olmasın." },
-            { "name": "Araca yükleyin", "text": "Ücretsiz aracı açın, bir JPG, PNG veya WebP dosyasını bırakın ya da tıklayıp seçin. Dosya tarayıcınızda işlenir, yüklenmez." },
-            { "name": "Çizim veya Fotoğraf modunu seçin", "text": "Çizgi işleri ve flash için Çizim, yumuşak gölgeli resimler için Fotoğraf modunu seçin." },
-            { "name": "Hassasiyeti ayarlayın", "text": "Hassasiyet, bir izin ne kadar silik olsa da çizgiye dönüşeceğini belirler. Gölgeler çizgi oluyorsa düşürün. İnce çizgiler eksikse yükseltin." },
-            { "name": "Yumuşatmayı ve çizgi kalınlığını ayarlayın", "text": "Yumuşatma pikselli, tırtıklı kenarları yuvarlar. Çizgi kalınlığı çizgileri kalınlaştırır veya inceltir. Çıktıda çizgiler silik görünüyorsa daha kalın bir çizgi genellikle işe yarar." },
-            { "name": "Lekeleri temizleyin", "text": "Kâğıt dokusundan veya tozdan gelen küçük noktalar gidene, geriye yalnızca bilerek yapılmış izler kalana kadar Lekeleri temizle ayarını yükseltin." },
-            { "name": "Sapma kontrolüyle nelerin kaybolduğuna bakın", "text": "Sapma kontrolünü açın. Kaybolan çizgiler kırmızı, eklenen çizgiler mavi görünür. Böylece ayarlarınızın, orijinalin sabit ve hassas bir okumasına göre neyi değiştirdiğini görürsünüz." },
-            { "name": "Genişliği milimetre olarak girin", "text": "Ciltte istediğiniz genişliği yazın. Araç, 300 dpi'deki karşılık gelen boyutu ve gerçek boyutlu bir cetveli gösterir." },
-            { "name": "İndirin veya gerçek boyutta yazdırın", "text": "PNG'yi indirin ve çıktının, girdiğiniz genişliği ölçecek şekilde basılmasını sağlayın. Kimseye yaklaşmadan önce çıktıyı cetvelle kontrol edin." }
+            {
+              "name": "Net bir kaynak seçin",
+              "text": "En iyi kontrasta sahip ve en az karmaşık olan çizimi ya da fotoğrafı seçin. İki sürümünüz varsa daha koyu ve daha düzgün bir kalemle çizileni kullanın."
+            },
+            {
+              "name": "Eşit ışıkta tarayın veya fotoğraflayın",
+              "text": "Mümkünse düz tarayın. Olmuyorsa gün ışığında, sayfaya paralel çekin; tasarım kareyi doldursun, gölge ve flaş olmasın."
+            },
+            {
+              "name": "Araca yükleyin",
+              "text": "Ücretsiz aracı açın, bir JPG, PNG veya WebP dosyasını bırakın ya da tıklayıp seçin. Dosya tarayıcınızda işlenir, yüklenmez."
+            },
+            {
+              "name": "Çizim veya Fotoğraf modunu seçin",
+              "text": "Çizgi işleri ve flash için Çizim, yumuşak gölgeli resimler için Fotoğraf modunu seçin."
+            },
+            {
+              "name": "Hassasiyeti ayarlayın",
+              "text": "Hassasiyet, bir izin ne kadar silik olsa da çizgiye dönüşeceğini belirler. Gölgeler çizgi oluyorsa düşürün. İnce çizgiler eksikse yükseltin."
+            },
+            {
+              "name": "Yumuşatmayı ve çizgi kalınlığını ayarlayın",
+              "text": "Yumuşatma pikselli, tırtıklı kenarları yuvarlar. Çizgi kalınlığı çizgileri kalınlaştırır veya inceltir. Çıktıda çizgiler silik görünüyorsa daha kalın bir çizgi genellikle işe yarar."
+            },
+            {
+              "name": "Lekeleri temizleyin",
+              "text": "Kâğıt dokusundan veya tozdan gelen küçük noktalar gidene, geriye yalnızca bilerek yapılmış izler kalana kadar Lekeleri temizle ayarını yükseltin."
+            },
+            {
+              "name": "Sapma kontrolüyle nelerin kaybolduğuna bakın",
+              "text": "Sapma kontrolünü açın. Kaybolan çizgiler kırmızı, eklenen çizgiler mavi görünür. Böylece ayarlarınızın, orijinalin sabit ve hassas bir okumasına göre neyi değiştirdiğini görürsünüz."
+            },
+            {
+              "name": "Genişliği milimetre olarak girin",
+              "text": "Ciltte istediğiniz genişliği yazın. Araç, 300 dpi'deki karşılık gelen boyutu ve gerçek boyutlu bir cetveli gösterir."
+            },
+            {
+              "name": "İndirin veya gerçek boyutta yazdırın",
+              "text": "PNG'yi indirin ve çıktının, girdiğiniz genişliği ölçecek şekilde basılmasını sağlayın. Kimseye yaklaşmadan önce çıktıyı cetvelle kontrol edin."
+            }
           ]
         },
         {
           "h2": "Tasarımı kaybetmeden kontrolleri kullanmak",
           "blocks": [
-            { "p": "Kaydırıcılara tarif gibi değil, bir konuşma gibi yaklaşın. Birini değiştirin, bakın, yarardan çok zarar verdiyse geri alın." },
-            { "ul": [
-              "Hassasiyet en büyük kaldıraçtır. Çok yüksekse her leke çizgi olur. Çok düşükse ince ayrıntılar kaybolur.",
-              "Yumuşatma, büyütüldüğünde çizgileri basamaklı görünen küçük çizimlerin taramalarında en çok işe yarar. Fazlası keskin köşeleri ve küçük boşlukları yuvarlar.",
-              "Çizgi kalınlığı zevk meselesidir ve aktarım yönteminize bağlıdır. Kıl gibi ince çizgiler baskıda veya aktarımda kaybolabilir, bu yüzden önce kâğıtta deneyin.",
-              "Lekeleri temizle temizlik ayarıdır. Toz gidene kadar yükseltin, noktalı gölgelendirme gibi tasarıma ait noktaları silmeye başlamadan durun."
-            ] },
-            { "p": "Noktalı gölgelendirme ve çok küçük nokta işi genelde ilk kaybolanlardır. Tasarımınız onlara dayanıyorsa lekeleri düşük tutun ve sonuca yakından bakın." }
+            {
+              "p": "Kaydırıcılara tarif gibi değil, bir konuşma gibi yaklaşın. Birini değiştirin, bakın, yarardan çok zarar verdiyse geri alın."
+            },
+            {
+              "ul": [
+                "Hassasiyet en büyük kaldıraçtır. Çok yüksekse her leke çizgi olur. Çok düşükse ince ayrıntılar kaybolur.",
+                "Yumuşatma, büyütüldüğünde çizgileri basamaklı görünen küçük çizimlerin taramalarında en çok işe yarar. Fazlası keskin köşeleri ve küçük boşlukları yuvarlar.",
+                "Çizgi kalınlığı zevk meselesidir ve aktarım yönteminize bağlıdır. Kıl gibi ince çizgiler baskıda veya aktarımda kaybolabilir, bu yüzden önce kâğıtta deneyin.",
+                "Lekeleri temizle temizlik ayarıdır. Toz gidene kadar yükseltin, noktalı gölgelendirme gibi tasarıma ait noktaları silmeye başlamadan durun."
+              ]
+            },
+            {
+              "p": "Noktalı gölgelendirme ve çok küçük nokta işi genelde ilk kaybolanlardır. Tasarımınız onlara dayanıyorsa lekeleri düşük tutun ve sonuca yakından bakın."
+            }
           ]
         },
         {
           "h2": "Sapma kontrolü neden önemli",
           "blocks": [
-            { "p": "Temiz görünen bir şablonda yine de bir şey eksik olabilir. Düzgün bir sonuç kovalarken ince bir çizgiyi düşürmek kolaydır, küçük bir ekranda fark etmemek de öyle." },
-            { "p": "Sapma kontrolü şablonu orijinalde bulunan çizgilerle karşılaştırır. Kırmızı kaybolan bir çizgiyi, mavi eklenen bir çizgiyi gösterir. Referans, orijinalin sabit ve hassas bir okumasıdır; bu yüzden hassasiyeti düşürmek ya da Lekeleri temizle'yi yükseltmek bilerek kırmızı gösterecektir. Kırmızı her zaman hata değildir, ama bir boyuta karar vermeden önce her zaman bakmaya değer." }
+            {
+              "p": "Temiz görünen bir şablonda yine de bir şey eksik olabilir. Düzgün bir sonuç kovalarken ince bir çizgiyi düşürmek kolaydır, küçük bir ekranda fark etmemek de öyle."
+            },
+            {
+              "p": "Sapma kontrolü şablonu orijinalde bulunan çizgilerle karşılaştırır. Kırmızı kaybolan bir çizgiyi, mavi eklenen bir çizgiyi gösterir. Referans, orijinalin sabit ve hassas bir okumasıdır; bu yüzden hassasiyeti düşürmek ya da Lekeleri temizle'yi yükseltmek bilerek kırmızı gösterecektir. Kırmızı her zaman hata değildir, ama bir boyuta karar vermeden önce her zaman bakmaya değer."
+            }
           ]
         },
         {
           "h2": "Boyut, indirme ve yazdırma",
           "blocks": [
-            { "p": "İndirmeden önce genişliği milimetre olarak ayarlayın, çünkü aynı tasarım 60 mm'de ve 200 mm'de keskin kalmak için farklı sayıda piksel ister. Eşlik eden [yazdırma boyutu](guide:tattoo-stencil-size-true-size-print) rehberinde rakamlar var." },
-            { "p": "Ücretsiz indirmelerde filigran bulunur ve 800 px ile sınırlıdır. Günlük geçiş veya Pro filigranı kaldırır, 4000 px'e kadar izin verir ve 300 dpi boyutunu PNG'nin içine kaydeder; böylece yazdırma yazılımı dosyayı seçtiğiniz genişlikte açar. Dosya elinize geçince sırada ne olduğunu [şablonu kâğıda aktarma yöntemleri](guide:tattoo-stencil-transfer-methods) anlatıyor." }
+            {
+              "p": "İndirmeden önce genişliği milimetre olarak ayarlayın, çünkü aynı tasarım 60 mm'de ve 200 mm'de keskin kalmak için farklı sayıda piksel ister. Eşlik eden [yazdırma boyutu](guide:tattoo-stencil-size-true-size-print) rehberinde rakamlar var."
+            },
+            {
+              "p": "Ücretsiz indirmelerde filigran bulunur ve 800 px ile sınırlıdır. Günlük geçiş veya Pro filigranı kaldırır, 4000 px'e kadar izin verir ve 300 dpi boyutunu PNG'nin içine kaydeder; böylece yazdırma yazılımı dosyayı seçtiğiniz genişlikte açar. Dosya elinize geçince sırada ne olduğunu [şablonu kâğıda aktarma yöntemleri](guide:tattoo-stencil-transfer-methods) anlatıyor."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Fotoğraftan dövme şablonu yapabilir miyim?", "a": "Evet. Bir fotoğraf yükleyin, Fotoğraf modunu seçin ve istediğiniz kenarlar çizgiye dönüşene kadar hassasiyeti ayarlayın. Yumuşak gölgeli fotoğraflar çizim işlerinden daha fazla ayar ister ve bazı ayrıntıları elle çizmek isteyebilirsiniz." },
-        { "q": "Dövme stencil aracı ücretsiz mi?", "a": "Evet, tarayıcıda ücretsiz kullanılır. Ücretsiz indirmelerde filigran bulunur ve 800 px ile sınırlıdır. Günlük geçiş veya Pro filigranı kaldırır ve 4000 px'e kadar izin verir." },
-        { "q": "Tasarımım bir yere yükleniyor mu?", "a": "Hayır. Görsel tarayıcınızda, kendi cihazınızda işlenir ve hiçbir şey yüklenmez." },
-        { "q": "Hangi dosya türlerini kullanabilirim?", "a": "JPG, PNG ve WebP görseller. Elinizdeki en net, en iyi aydınlatılmış sürümü kullanın." },
-        { "q": "Şablonumdan neden bazı çizgiler eksik?", "a": "Hassasiyet çok düşük ya da Lekeleri temizle çok yüksek olabilir; silik çizgiler gürültü sayılmış olur. Sapma kontrolünü açın: kaybolan çizgiler kırmızı görünür. Hassasiyeti yükseltin veya Lekeleri temizle'yi düşürün, sonra tekrar bakın." },
-        { "q": "Şablonu doğru boyutta nasıl yazdırırım?", "a": "Araçta genişliği milimetre olarak ayarlayın, PNG'yi indirin ve sayfaya sığdırma ölçeklemesi olmadan yüzde 100'de yazdırın. Çıktıyı cetvelle kontrol edin." }
+        {
+          "q": "Fotoğraftan dövme şablonu yapabilir miyim?",
+          "a": "Evet. Bir fotoğraf yükleyin, Fotoğraf modunu seçin ve istediğiniz kenarlar çizgiye dönüşene kadar hassasiyeti ayarlayın. Yumuşak gölgeli fotoğraflar çizim işlerinden daha fazla ayar ister ve bazı ayrıntıları elle çizmek isteyebilirsiniz."
+        },
+        {
+          "q": "Dövme stencil aracı ücretsiz mi?",
+          "a": "Evet, tarayıcıda ücretsiz kullanılır. Ücretsiz indirmelerde filigran bulunur ve 800 px ile sınırlıdır. Günlük geçiş veya Pro filigranı kaldırır ve 4000 px'e kadar izin verir."
+        },
+        {
+          "q": "Tasarımım bir yere yükleniyor mu?",
+          "a": "Hayır. Görsel tarayıcınızda, kendi cihazınızda işlenir ve hiçbir şey yüklenmez."
+        },
+        {
+          "q": "Hangi dosya türlerini kullanabilirim?",
+          "a": "JPG, PNG ve WebP görseller. Elinizdeki en net, en iyi aydınlatılmış sürümü kullanın."
+        },
+        {
+          "q": "Şablonumdan neden bazı çizgiler eksik?",
+          "a": "Hassasiyet çok düşük ya da Lekeleri temizle çok yüksek olabilir; silik çizgiler gürültü sayılmış olur. Sapma kontrolünü açın: kaybolan çizgiler kırmızı görünür. Hassasiyeti yükseltin veya Lekeleri temizle'yi düşürün, sonra tekrar bakın."
+        },
+        {
+          "q": "Şablonu doğru boyutta nasıl yazdırırım?",
+          "a": "Araçta genişliği milimetre olarak ayarlayın, PNG'yi indirin ve sayfaya sığdırma ölçeklemesi olmadan yüzde 100'de yazdırın. Çıktıyı cetvelle kontrol edin."
+        }
       ],
       "cta": "Kendi tasarımınızda deneyin. Tarayıcınızda çalışır ve hiçbir şey yüklenmez."
     },
@@ -128,79 +216,167 @@
         {
           "h2": "Şablon boyutu neden kolay yanlış çıkar",
           "blocks": [
-            { "p": "Dijital bir görselin kendi fiziksel boyutu yoktur. O bir piksel ızgarasıdır ve kâğıttaki boyutu, her inçe kaç piksel yerleştirildiğine bağlıdır. Buna dpi denir, yani inç başına nokta. Aynı dosya pul gibi de çıkabilir, afiş gibi de." },
-            { "p": "Dövme şablonu için bu bir sorundur, çünkü tasarımın ciltte müşteriyle anlaşılan boyutta olması gerekir. Yazdırma yazılımları çoğu zaman tahmin yürütür, görseli sayfaya sığdırmak için ölçekler ya da dosyayı 72 veya 96 dpi ile açıp beklediğinizden çok daha büyük basar. Şablon boyutunu doğru yapmak, boyutu bir kez milimetreyle belirlemek ve dosyanın bunu yazıcıya taşıdığından emin olmak demektir." }
+            {
+              "p": "Dijital bir görselin kendi fiziksel boyutu yoktur. O bir piksel ızgarasıdır ve kâğıttaki boyutu, her inçe kaç piksel yerleştirildiğine bağlıdır. Buna dpi denir, yani inç başına nokta. Aynı dosya pul gibi de çıkabilir, afiş gibi de."
+            },
+            {
+              "p": "Dövme şablonu için bu bir sorundur, çünkü tasarımın ciltte müşteriyle anlaşılan boyutta olması gerekir. Yazdırma yazılımları çoğu zaman tahmin yürütür, görseli sayfaya sığdırmak için ölçekler ya da dosyayı 72 veya 96 dpi ile açıp beklediğinizden çok daha büyük basar. Şablon boyutunu doğru yapmak, boyutu bir kez milimetreyle belirlemek ve dosyanın bunu yazıcıya taşıdığından emin olmak demektir."
+            }
           ]
         },
         {
           "h2": "300 dpi'de milimetreden piksele",
           "blocks": [
-            { "p": "Bir inçte 25,4 milimetre vardır. Yani gereken piksel genişliği şöyle bulunur:" },
-            { "p": "**piksel = milimetre ÷ 25,4 × 300**" },
-            { "p": "Yaygın genişlikler için sonuçlar, en yakın piksele yuvarlanmış hâlde:" },
-            { "table": {
-              "head": ["Ciltteki genişlik", "300 dpi'de piksel"],
-              "rows": [
-                ["50 mm", "591 px"],
-                ["80 mm", "945 px"],
-                ["100 mm", "1181 px"],
-                ["150 mm", "1772 px"],
-                ["200 mm", "2362 px"],
-                ["250 mm", "2953 px"],
-                ["300 mm", "3543 px"]
-              ]
-            } },
-            { "p": "Bunu elle hesaplamanız gerekmez. Araçta genişliği milimetre olarak yazarsınız, yanında 300 dpi'deki boyutu görürsünüz. Tablo, küçük bir dosyanın neden büyük basıldığında bulanık göründüğünü göstermek için burada." }
+            {
+              "p": "Bir inçte 25,4 milimetre vardır. Yani gereken piksel genişliği şöyle bulunur:"
+            },
+            {
+              "p": "**piksel = milimetre ÷ 25,4 × 300**"
+            },
+            {
+              "p": "Yaygın genişlikler için sonuçlar, en yakın piksele yuvarlanmış hâlde:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Ciltteki genişlik",
+                  "300 dpi'de piksel"
+                ],
+                "rows": [
+                  [
+                    "50 mm",
+                    "591 px"
+                  ],
+                  [
+                    "80 mm",
+                    "945 px"
+                  ],
+                  [
+                    "100 mm",
+                    "1181 px"
+                  ],
+                  [
+                    "150 mm",
+                    "1772 px"
+                  ],
+                  [
+                    "200 mm",
+                    "2362 px"
+                  ],
+                  [
+                    "250 mm",
+                    "2953 px"
+                  ],
+                  [
+                    "300 mm",
+                    "3543 px"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "Bunu elle hesaplamanız gerekmez. Araçta genişliği milimetre olarak yazarsınız, yanında 300 dpi'deki boyutu görürsünüz. Tablo, küçük bir dosyanın neden büyük basıldığında bulanık göründüğünü göstermek için burada."
+            }
           ]
         },
         {
           "h2": "Neden 300 dpi",
           "blocks": [
-            { "p": "300 dpi, yakından bakılacak baskılar için olağan hedeftir. Bu yoğunlukta ince bir çizgi hâlâ temiz ve kesintisiz bir hat olarak basılır. Daha düşük yoğunluklarda eğrilerde basamaklı kenarlar görünmeye başlar, bir şablon ise neredeyse baştan sona eğridir." },
-            { "p": "Daha fazlası her zaman daha iyi değildir. Büyük dosyalar daha geç açılır ve basılır, ince bir şablon çizgisi de yazıcınızın çizebileceğinden daha keskin olmaz. 300 dpi şablon işi için makul bir dengedir ve Skinstencil'in gerçek boyutlu çıktısında kullandığı değerdir." }
+            {
+              "p": "300 dpi, yakından bakılacak baskılar için olağan hedeftir. Bu yoğunlukta ince bir çizgi hâlâ temiz ve kesintisiz bir hat olarak basılır. Daha düşük yoğunluklarda eğrilerde basamaklı kenarlar görünmeye başlar, bir şablon ise neredeyse baştan sona eğridir."
+            },
+            {
+              "p": "Daha fazlası her zaman daha iyi değildir. Büyük dosyalar daha geç açılır ve basılır, ince bir şablon çizgisi de yazıcınızın çizebileceğinden daha keskin olmaz. 300 dpi şablon işi için makul bir dengedir ve Skinstencil'in gerçek boyutlu çıktısında kullandığı değerdir."
+            }
           ]
         },
         {
           "h2": "PNG içindeki 300 dpi değeri nasıl yardımcı olur",
           "blocks": [
-            { "p": "Bir PNG dosyası, içindeki küçük bir veri bloğunda metre başına piksel olarak saklanan fiziksel bir boyut taşıyabilir. Pek çok program bunu okur ve görseli o boyutta açar. Değer 300 dpi diyorsa, 1181 px genişliğindeki bir görsel elle yeniden boyutlandırmadan yaklaşık 100 mm genişliğinde açılır." },
-            { "p": "Değer yoksa programlar çoğunlukla 72 veya 96 dpi olan bir varsayılana döner. 72 dpi'de aynı 1181 px'lik görsel yaklaşık 416 mm genişliğinde, yani dört kattan fazla büyük açılır. Şablonun yazıcıdan çok büyük çıkmasının yaygın nedeni budur." },
-            { "p": "Günlük geçiş veya Pro ile Skinstencil 300 dpi boyutunu PNG'nin içine kaydeder; böylece yazdırma yazılımı dosyayı sizin belirlediğiniz genişlikte açabilir. Ücretsiz indirmede yazdırma genişliğini kendiniz, yazdırma penceresinden ayarlarsınız." }
+            {
+              "p": "Bir PNG dosyası, içindeki küçük bir veri bloğunda metre başına piksel olarak saklanan fiziksel bir boyut taşıyabilir. Pek çok program bunu okur ve görseli o boyutta açar. Değer 300 dpi diyorsa, 1181 px genişliğindeki bir görsel elle yeniden boyutlandırmadan yaklaşık 100 mm genişliğinde açılır."
+            },
+            {
+              "p": "Değer yoksa programlar çoğunlukla 72 veya 96 dpi olan bir varsayılana döner. 72 dpi'de aynı 1181 px'lik görsel yaklaşık 416 mm genişliğinde, yani dört kattan fazla büyük açılır. Şablonun yazıcıdan çok büyük çıkmasının yaygın nedeni budur."
+            },
+            {
+              "p": "Günlük geçiş veya Pro ile Skinstencil 300 dpi boyutunu PNG'nin içine kaydeder; böylece yazdırma yazılımı dosyayı sizin belirlediğiniz genişlikte açabilir. Ücretsiz indirmede yazdırma genişliğini kendiniz, yazdırma penceresinden ayarlarsınız."
+            }
           ]
         },
         {
           "h2": "Gerçek boyutta yazdırma",
           "stepsIntro": "Sürprizleri önleyen kısa bir rutin:",
           "steps": [
-            { "name": "Genişliği araçta ayarlayın", "text": "Ciltteki genişliği milimetre olarak girin. Araç 300 dpi'deki karşılığını gösterir." },
-            { "name": "PNG'yi indirin", "text": "Günlük geçiş veya Pro ile dosya 300 dpi boyutunu saklar, bu yüzden çoğu program doğru genişlikte açar." },
-            { "name": "Yazdırma penceresinde açın", "text": "Gerçek boyut veya yüzde 100'ü seçin. Sayfaya sığdır, küçülterek sığdır ve sayfayı doldur seçeneklerini kapatın." },
-            { "name": "Düz kâğıda deneme çıktısı alın", "text": "Deneme için sıradan kâğıt kullanın, aktarım malzemenizi değil." },
-            { "name": "Çıktıyı ölçün", "text": "Cetveli en geniş yerin üzerine koyun ve girdiğiniz genişlikle karşılaştırın. Farklıysa ayarlayıp yeniden yazdırın." }
+            {
+              "name": "Genişliği araçta ayarlayın",
+              "text": "Ciltteki genişliği milimetre olarak girin. Araç 300 dpi'deki karşılığını gösterir."
+            },
+            {
+              "name": "PNG'yi indirin",
+              "text": "Günlük geçiş veya Pro ile dosya 300 dpi boyutunu saklar, bu yüzden çoğu program doğru genişlikte açar."
+            },
+            {
+              "name": "Yazdırma penceresinde açın",
+              "text": "Gerçek boyut veya yüzde 100'ü seçin. Sayfaya sığdır, küçülterek sığdır ve sayfayı doldur seçeneklerini kapatın."
+            },
+            {
+              "name": "Düz kâğıda deneme çıktısı alın",
+              "text": "Deneme için sıradan kâğıt kullanın, aktarım malzemenizi değil."
+            },
+            {
+              "name": "Çıktıyı ölçün",
+              "text": "Cetveli en geniş yerin üzerine koyun ve girdiğiniz genişlikle karşılaştırın. Farklıysa ayarlayıp yeniden yazdırın."
+            }
           ]
         },
         {
           "h2": "Her seferinde cetvelle kontrol edin",
           "blocks": [
-            { "p": "Yazıcılar ve sürücüler, özellikle bir güncellemeden sonra ya da ortak bir bilgisayarda, size söylemeden ayar değiştirir. Cetvel tahmini ortadan kaldırır. Çıktıdaki tasarımın tam genişliğini, kâğıdın değil çizimin kenarından kenarına ölçün ve girdiğiniz milimetreyle karşılaştırın." },
-            { "p": "Araç ayrıca, girdiğiniz yazdırma genişliğini izleyen gerçek boyutlu bir cetvel çizer; böylece hedeflenen ölçeği ekranda görebilirsiniz. Ekranlar farklıdır, bu yüzden o cetvel yalnızca bir rehberdir ve geçerli olan çıktıdaki cetveldir." },
-            { "p": "Çıktı tutarlı bir yüzdeyle sapıyorsa muhtemelen bir ölçekleme seçeneği açıktır. Büyük bir katla sapıyorsa program büyük ihtimalle dosyayı 72 veya 96 dpi ile açmıştır." }
+            {
+              "p": "Yazıcılar ve sürücüler, özellikle bir güncellemeden sonra ya da ortak bir bilgisayarda, size söylemeden ayar değiştirir. Cetvel tahmini ortadan kaldırır. Çıktıdaki tasarımın tam genişliğini, kâğıdın değil çizimin kenarından kenarına ölçün ve girdiğiniz milimetreyle karşılaştırın."
+            },
+            {
+              "p": "Araç ayrıca, girdiğiniz yazdırma genişliğini izleyen gerçek boyutlu bir cetvel çizer; böylece hedeflenen ölçeği ekranda görebilirsiniz. Ekranlar farklıdır, bu yüzden o cetvel yalnızca bir rehberdir ve geçerli olan çıktıdaki cetveldir."
+            },
+            {
+              "p": "Çıktı tutarlı bir yüzdeyle sapıyorsa muhtemelen bir ölçekleme seçeneği açıktır. Büyük bir katla sapıyorsa program büyük ihtimalle dosyayı 72 veya 96 dpi ile açmıştır."
+            }
           ]
         },
         {
           "h2": "Ücretsiz indirmeler neden 800 px ile sınırlı",
           "blocks": [
-            { "p": "Ücretsiz indirmelerde filigran bulunur ve 800 px ile sınırlıdır. 300 dpi'de 800 px yaklaşık 68 mm eder; bir tasarımı değerlendirmek için yeterli, ciltteki bir şablon için küçüktür. Daha büyük şablonlar keskin kalmak için daha çok piksel ister; günlük geçiş veya Pro'nun açtığı da budur: filigran yok, 4000 px'e kadar, yani 300 dpi'de yaklaşık 339 mm genişlik ve dosyada saklanan 300 dpi boyutu." },
-            { "p": "Ücretsiz araç, bir boyutu açmaya karar vermeden önce çizgileri ve sapma kontrolünü görmek için yine de işe yarar. O kısmı [fotoğraftan veya çizimden şablon yapma](guide:tattoo-stencil-from-photo) rehberimiz anlatıyor." }
+            {
+              "p": "Ücretsiz indirmelerde filigran bulunur ve 800 px ile sınırlıdır. 300 dpi'de 800 px yaklaşık 68 mm eder; bir tasarımı değerlendirmek için yeterli, ciltteki bir şablon için küçüktür. Daha büyük şablonlar keskin kalmak için daha çok piksel ister; günlük geçiş veya Pro'nun açtığı da budur: filigran yok, 4000 px'e kadar, yani 300 dpi'de yaklaşık 339 mm genişlik ve dosyada saklanan 300 dpi boyutu."
+            },
+            {
+              "p": "Ücretsiz araç, bir boyutu açmaya karar vermeden önce çizgileri ve sapma kontrolünü görmek için yine de işe yarar. O kısmı [fotoğraftan veya çizimden şablon yapma](guide:tattoo-stencil-from-photo) rehberimiz anlatıyor."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "100 mm'lik bir şablon için kaç piksel gerekir?", "a": "300 dpi'de yaklaşık 1181 piksel genişlik. Formül: milimetre bölü 25,4, çarpı 300." },
-        { "q": "Şablonum neden çok büyük basılıyor?", "a": "Çoğu zaman dosyada boyut saklı olmadığı için program PNG'yi 72 veya 96 dpi ile açmıştır ya da sayfaya sığdırma seçeneği görseli büyütmüştür. Yüzde 100'de yazdırın ve genişliği kendiniz ayarlayın, ya da 300 dpi boyutu saklanmış bir dosya kullanın." },
-        { "q": "PNG içindeki 300 dpi değeri ne işe yarar?", "a": "Yazdırma yazılımına görselin fiziksel boyutunu söyler; böylece tahmin yürütmek yerine sizin belirlediğiniz genişlikte açılır. Günlük geçiş ve Pro indirmelerinde bulunur." },
-        { "q": "İndirebileceğim en büyük şablon nedir?", "a": "Ücretsiz indirmeler 800 px ile sınırlıdır. Günlük geçiş veya Pro 4000 px'e kadar izin verir, bu 300 dpi'de yaklaşık 339 mm genişlik eder." },
-        { "q": "Çıktıyı cetvelle kontrol etmeli miyim?", "a": "Evet, her seferinde. Şablon kullanılmadan önce çizimi kenardan kenara ölçün ve girdiğiniz genişlikle karşılaştırın." }
+        {
+          "q": "100 mm'lik bir şablon için kaç piksel gerekir?",
+          "a": "300 dpi'de yaklaşık 1181 piksel genişlik. Formül: milimetre bölü 25,4, çarpı 300."
+        },
+        {
+          "q": "Şablonum neden çok büyük basılıyor?",
+          "a": "Çoğu zaman dosyada boyut saklı olmadığı için program PNG'yi 72 veya 96 dpi ile açmıştır ya da sayfaya sığdırma seçeneği görseli büyütmüştür. Yüzde 100'de yazdırın ve genişliği kendiniz ayarlayın, ya da 300 dpi boyutu saklanmış bir dosya kullanın."
+        },
+        {
+          "q": "PNG içindeki 300 dpi değeri ne işe yarar?",
+          "a": "Yazdırma yazılımına görselin fiziksel boyutunu söyler; böylece tahmin yürütmek yerine sizin belirlediğiniz genişlikte açılır. Günlük geçiş ve Pro indirmelerinde bulunur."
+        },
+        {
+          "q": "İndirebileceğim en büyük şablon nedir?",
+          "a": "Ücretsiz indirmeler 800 px ile sınırlıdır. Günlük geçiş veya Pro 4000 px'e kadar izin verir, bu 300 dpi'de yaklaşık 339 mm genişlik eder."
+        },
+        {
+          "q": "Çıktıyı cetvelle kontrol etmeli miyim?",
+          "a": "Evet, her seferinde. Şablon kullanılmadan önce çizimi kenardan kenara ölçün ve girdiğiniz genişlikle karşılaştırın."
+        }
       ],
       "cta": "Milimetre cinsinden bir genişlik girin ve 300 dpi'deki boyutu görün."
     },
@@ -216,86 +392,139 @@
         {
           "h2": "Üç yaygın yaklaşım",
           "blocks": [
-            { "p": "Dövme şablonu bir çizim olarak başlar, cilde bastırılabilecek bir aktarım yaprağındaki çizgi desenine dönüşerek biter. Birinden ötekine geçmenin birkaç yolu var. Bu rehber üç yaygın yolu tarafsızca anlatır. Sıralama yapmaz, çünkü doğru seçim hacminize, bütçenize, stüdyonuza ve kendi alışkanlıklarınıza bağlıdır." },
-            { "p": "Uygulamayı ve bakımı da kapsamaz. Hangi yöntemi kullanırsanız kullanın, stüdyonuzun hijyen kurallarına uyun." }
+            {
+              "p": "Dövme şablonu bir çizim olarak başlar, cilde bastırılabilecek bir aktarım yaprağındaki çizgi desenine dönüşerek biter. Birinden ötekine geçmenin birkaç yolu var. Bu rehber üç yaygın yolu tarafsızca anlatır. Sıralama yapmaz, çünkü doğru seçim hacminize, bütçenize, stüdyonuza ve kendi alışkanlıklarınıza bağlıdır."
+            },
+            {
+              "p": "Uygulamayı ve bakımı da kapsamaz. Hangi yöntemi kullanırsanız kullanın, stüdyonuzun hijyen kurallarına uyun."
+            }
           ]
         },
         {
           "h2": "Elle kalkaj",
           "blocks": [
-            { "p": "En eski yöntem, tasarımı kendiniz kalkaj etmektir. Çizimin üzerine aşırma kâğıdı ya da elle çizim için yapılmış bir aktarım yaprağı koyar, çizgileri kalemle izlersiniz. Bazı sanatçılar doğrudan aktarım malzemesinin üzerine çizer. Bazıları çizimi kâğıdın arkasından görmek için ışık masası ya da pencere kullanır." },
-            { "ul": [
-              "Gerekenler: orijinal çizim, aktarım malzemesi ve ona uygun bir kalem.",
-              "Güçlü yanı: kâğıt ve kalem dışında ekipman gerekmez, her çizgi kendi elinizden geçtiği için ilerlerken küçük kararlar verirsiniz.",
-              "Sınırı: zaman alır, tasarımı büyütmek ya da küçültmek ayrı bir adımdır ve bir tasarımı tekrarlamak yavaştır."
-            ] },
-            { "p": "Temiz bir çizgi dosyası burada da işe yarar. Doğru boyutta düz kâğıda açık renkli bir kopya basıp üzerinden geçebilirsiniz; bu, ikinci bir araca gerek kalmadan boyutu kesinleştirir." }
+            {
+              "p": "En eski yöntem, tasarımı kendiniz kalkaj etmektir. Çizimin üzerine aşırma kâğıdı ya da elle çizim için yapılmış bir aktarım yaprağı koyar, çizgileri kalemle izlersiniz. Bazı sanatçılar doğrudan aktarım malzemesinin üzerine çizer. Bazıları çizimi kâğıdın arkasından görmek için ışık masası ya da pencere kullanır."
+            },
+            {
+              "ul": [
+                "Gerekenler: orijinal çizim, aktarım malzemesi ve ona uygun bir kalem.",
+                "Güçlü yanı: kâğıt ve kalem dışında ekipman gerekmez, her çizgi kendi elinizden geçtiği için ilerlerken küçük kararlar verirsiniz.",
+                "Sınırı: zaman alır, tasarımı büyütmek ya da küçültmek ayrı bir adımdır ve bir tasarımı tekrarlamak yavaştır."
+              ]
+            },
+            {
+              "p": "Temiz bir çizgi dosyası burada da işe yarar. Doğru boyutta düz kâğıda açık renkli bir kopya basıp üzerinden geçebilirsiniz; bu, ikinci bir araca gerek kalmadan boyutu kesinleştirir."
+            }
           ]
         },
         {
           "h2": "Termal yazıcılar",
           "blocks": [
-            { "p": "Termal şablon yazıcıları, çok katmanlı özel bir aktarım kâğıdında deseni mürekkeple değil ısıyla oluşturur. Yazıcı dijital bir görseli ya da kâğıt bir orijinali okur ve şablonu tek geçişte üretir. Modeller bağlantı biçimiyle ayrışır; sizinkinin USB kablosu, bağlı bir bilgisayar ya da telefon uygulaması gibi neyi kabul ettiğine bakın." },
-            { "ul": [
-              "Gerekenler: termal yazıcı, ona uyan termal aktarım kâğıdı ve basılacak bir dosya ya da orijinal.",
-              "Güçlü yanı: kurulumdan sonra hızlı ve tutarlı, aynı tasarımın kopyaları kolay.",
-              "Sınırı: yazıcı ve kâğıt bir maliyettir, biraz fazla silik, fazla kalın ya da yanlış boyuttaki dosya tam olarak öyle basılır."
-            ] },
-            { "p": "Temiz çizgili bir şablon dosyasının en çok önem kazandığı yer burasıdır. Termal yazıcı kendisine verilen çizgileri basar. Gri tonlar, zemin dokusu ve kıl gibi ince çizgiler kötü basılabilir ya da hiç basılmayabilir, yanlış boyutta açılan dosya da yanlış boyutta çıkar. Düz beyaz zemin üzerinde siyah çizgiler ve bilinen bir genişlik, yazıcının yanlış yapabileceği en az şeyi bırakır." }
+            {
+              "p": "Termal şablon yazıcıları, çok katmanlı özel bir aktarım kâğıdında deseni mürekkeple değil ısıyla oluşturur. Yazıcı dijital bir görseli ya da kâğıt bir orijinali okur ve şablonu tek geçişte üretir. Modeller bağlantı biçimiyle ayrışır; sizinkinin USB kablosu, bağlı bir bilgisayar ya da telefon uygulaması gibi neyi kabul ettiğine bakın."
+            },
+            {
+              "ul": [
+                "Gerekenler: termal yazıcı, ona uyan termal aktarım kâğıdı ve basılacak bir dosya ya da orijinal.",
+                "Güçlü yanı: kurulumdan sonra hızlı ve tutarlı, aynı tasarımın kopyaları kolay.",
+                "Sınırı: yazıcı ve kâğıt bir maliyettir, biraz fazla silik, fazla kalın ya da yanlış boyuttaki dosya tam olarak öyle basılır."
+              ]
+            },
+            {
+              "p": "Temiz çizgili bir şablon dosyasının en çok önem kazandığı yer burasıdır. Termal yazıcı kendisine verilen çizgileri basar. Gri tonlar, zemin dokusu ve kıl gibi ince çizgiler kötü basılabilir ya da hiç basılmayabilir, yanlış boyutta açılan dosya da yanlış boyutta çıkar. Düz beyaz zemin üzerinde siyah çizgiler ve bilinen bir genişlik, yazıcının yanlış yapabileceği en az şeyi bırakır."
+            }
           ]
         },
         {
           "h2": "Sıradan yazıcıyla baskı aktarımlar",
           "blocks": [
-            { "p": "Bazı sanatçılar şablonu standart bir mürekkep püskürtmeli ya da lazer yazıcıyla aktarım katmanı olarak çalışan kâğıda basar, ya da düz kâğıda basıp referans veya kalkaj zemini olarak kullanır. Neyin işe yaradığı yazıcı türüne ve kâğıda bağlıdır; malzemenin talimatını izleyin ve gerçek iş için kullanmadan önce bir yaprakla deneyin." },
-            { "ul": [
-              "Gerekenler: normal bir yazıcı, doğrudan aktaracaksanız uygun aktarıma hazır kâğıt ve doğru boyutta bir dosya.",
-              "Güçlü yanı: yazıcıya zaten sahip olabilirsiniz ve yüksek çözünürlükte basar.",
-              "Sınırı: malzemenin bu iş için yapılmış olması gerekir, sıradan ofis kâğıdı bir aktarım malzemesi değildir ve ölçekleme gibi yazıcı ayarları boyutu değiştirebilir."
-            ] },
-            { "p": "Her dijital yöntemde olduğu gibi yazdırma penceresini gerçek boyuta ayarlayın ve sonucu ölçün. [gerçek boyutta yazdırma](guide:tattoo-stencil-size-true-size-print) rehberi bunun nasıl yapılacağını anlatıyor." }
+            {
+              "p": "Bazı sanatçılar şablonu standart bir mürekkep püskürtmeli ya da lazer yazıcıyla aktarım katmanı olarak çalışan kâğıda basar, ya da düz kâğıda basıp referans veya kalkaj zemini olarak kullanır. Neyin işe yaradığı yazıcı türüne ve kâğıda bağlıdır; malzemenin talimatını izleyin ve gerçek iş için kullanmadan önce bir yaprakla deneyin."
+            },
+            {
+              "ul": [
+                "Gerekenler: normal bir yazıcı, doğrudan aktaracaksanız uygun aktarıma hazır kâğıt ve doğru boyutta bir dosya.",
+                "Güçlü yanı: yazıcıya zaten sahip olabilirsiniz ve yüksek çözünürlükte basar.",
+                "Sınırı: malzemenin bu iş için yapılmış olması gerekir, sıradan ofis kâğıdı bir aktarım malzemesi değildir ve ölçekleme gibi yazıcı ayarları boyutu değiştirebilir."
+              ]
+            },
+            {
+              "p": "Her dijital yöntemde olduğu gibi yazdırma penceresini gerçek boyuta ayarlayın ve sonucu ölçün. [gerçek boyutta yazdırma](guide:tattoo-stencil-size-true-size-print) rehberi bunun nasıl yapılacağını anlatıyor."
+            }
           ]
         },
         {
           "h2": "Temiz çizgili bir şablon dosyası ne zaman önemlidir",
           "blocks": [
-            { "p": "Dijital dosyayla başlayan her yöntem, o iş için hazırlanmış bir dosyadan yarar görür. Şablon dosyası bir fotoğraftan birkaç noktada ayrılır:" },
-            { "ul": [
-              "Yalnızca çizgilerden oluşur, gölge, kâğıt dokusu ya da zemin yoktur.",
-              "Çizgiler koyu ve kesintisizdir, böylece ısının ya da mürekkebin çoğaltacağı sağlam bir şey olur.",
-              "Bilinen bir genişliği vardır, bu yüzden müşteriyle anlaşılan boyutta basılır.",
-              "Silik lekeler temizlenmiştir, böylece aktarımda iz olarak çıkmazlar."
-            ] },
-            { "p": "Dövme stencil aracı, bir fotoğraftan ya da çizimden bu tür bir dosya üretir. [fotoğraftan veya çizimden şablon yapma](guide:tattoo-stencil-from-photo) rehberimiz kontrolleri adım adım anlatıyor." }
+            {
+              "p": "Dijital dosyayla başlayan her yöntem, o iş için hazırlanmış bir dosyadan yarar görür. Şablon dosyası bir fotoğraftan birkaç noktada ayrılır:"
+            },
+            {
+              "ul": [
+                "Yalnızca çizgilerden oluşur, gölge, kâğıt dokusu ya da zemin yoktur.",
+                "Çizgiler koyu ve kesintisizdir, böylece ısının ya da mürekkebin çoğaltacağı sağlam bir şey olur.",
+                "Bilinen bir genişliği vardır, bu yüzden müşteriyle anlaşılan boyutta basılır.",
+                "Silik lekeler temizlenmiştir, böylece aktarımda iz olarak çıkmazlar."
+              ]
+            },
+            {
+              "p": "Dövme stencil aracı, bir fotoğraftan ya da çizimden bu tür bir dosya üretir. [fotoğraftan veya çizimden şablon yapma](guide:tattoo-stencil-from-photo) rehberimiz kontrolleri adım adım anlatıyor."
+            }
           ]
         },
         {
           "h2": "Aralarında seçim yapmak",
           "blocks": [
-            { "p": "Birkaç soru genellikle işi çözer:" },
-            { "ul": [
-              "Haftada kaç şablon hazırlıyorsunuz? Yüksek hacim, hızlı tekrar eden ekipmanı öne çıkarır.",
-              "Bir tasarımı ne sıklıkla yeniden ölçeklersiniz? Dijital yöntemler boyut değişikliğini kolaylaştırır, elle çizimde bu ayrı bir iştir.",
-              "Çizgi işinin ne kadarını kendiniz yeniden çizmek istersiniz? Elle çizim bunu varsayılan olarak verir.",
-              "Elinizde ne var? Mevcut bir yazıcı, kâğıt ona uyuyorsa başlamanın en ucuz yeridir."
-            ] },
-            { "p": "Birçok sanatçı birden fazla yöntem kullanır, örneğin ana şekiller için basılı bir taslak, ince ayrıntılar için elle çizim. Burada ya o ya bu demek gerekmiyor." }
+            {
+              "p": "Birkaç soru genellikle işi çözer:"
+            },
+            {
+              "ul": [
+                "Haftada kaç şablon hazırlıyorsunuz? Yüksek hacim, hızlı tekrar eden ekipmanı öne çıkarır.",
+                "Bir tasarımı ne sıklıkla yeniden ölçeklersiniz? Dijital yöntemler boyut değişikliğini kolaylaştırır, elle çizimde bu ayrı bir iştir.",
+                "Çizgi işinin ne kadarını kendiniz yeniden çizmek istersiniz? Elle çizim bunu varsayılan olarak verir.",
+                "Elinizde ne var? Mevcut bir yazıcı, kâğıt ona uyuyorsa başlamanın en ucuz yeridir."
+              ]
+            },
+            {
+              "p": "Birçok sanatçı birden fazla yöntem kullanır, örneğin ana şekiller için basılı bir taslak, ince ayrıntılar için elle çizim. Burada ya o ya bu demek gerekmiyor."
+            }
           ]
         },
         {
           "h2": "Hangi yöntemi seçerseniz seçin dosyayı hazırlamak",
           "blocks": [
-            { "p": "Hangi yolu seçerseniz seçin dosya hazırlığı aynıdır. Temiz bir çizgi sürümü yapın, genişliği milimetre olarak ayarlayın, o genişlik için yeterince keskin bir boyutta indirin ve düz kâğıda deneme çıktısı alın. Skinstencil tarayıcıda ücretsiz kullanılır ve hiçbir şey yüklenmez. Ücretsiz indirmelerde filigran bulunur ve 800 px ile sınırlıdır. Günlük geçiş veya Pro filigranı kaldırır, 4000 px'e kadar izin verir ve 300 dpi boyutunu PNG'nin içine kaydeder." },
-            { "p": "Sonra aktarım malzemenizi kullanmadan önce deneme çıktısını cetvelle ölçün." }
+            {
+              "p": "Hangi yolu seçerseniz seçin dosya hazırlığı aynıdır. Temiz bir çizgi sürümü yapın, genişliği milimetre olarak ayarlayın, o genişlik için yeterince keskin bir boyutta indirin ve düz kâğıda deneme çıktısı alın. Skinstencil tarayıcıda ücretsiz kullanılır ve hiçbir şey yüklenmez. Ücretsiz indirmelerde filigran bulunur ve 800 px ile sınırlıdır. Günlük geçiş veya Pro filigranı kaldırır, 4000 px'e kadar izin verir ve 300 dpi boyutunu PNG'nin içine kaydeder."
+            },
+            {
+              "p": "Sonra aktarım malzemenizi kullanmadan önce deneme çıktısını cetvelle ölçün."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Şablon dosyası ile fotoğraf arasındaki fark nedir?", "a": "Şablon dosyası, bilinen bir boyutta, düz bir zemin üzerinde yalnızca temiz koyu çizgiler içerir. Fotoğrafta ton, doku ve zemin vardır; çoğu aktarım yöntemi bunları kullanamaz." },
-        { "q": "Şablon dosyasını kullanmak için termal yazıcıya ihtiyacım var mı?", "a": "Hayır. Dosya düz kâğıda basılıp elle kalkaj edilebilir ya da sıradan bir yazıcıyla aktarıma hazır kâğıda basılabilir. Termal yazıcı birkaç seçenekten yalnızca biridir." },
-        { "q": "Şablonu düz kâğıda basıp üzerinden geçebilir miyim?", "a": "Evet. Gerçek boyutta açık renkli bir çıktı, boyut zaten belli olduğu için kalkaj etmenin yaygın bir yoludur." },
-        { "q": "Hangi yöntemi kullanmalıyım?", "a": "Kaç şablon hazırladığınıza, hangi ekipmanınız olduğuna ve nasıl çalışmayı sevdiğinize bağlı. Birçok sanatçı yöntemleri birleştirir." },
-        { "q": "Dosyanın belirli bir boyutta olması gerekir mi?", "a": "Bastığınız genişlik için yeterince keskin olmalıdır. 300 dpi'de 100 mm'lik bir şablon yaklaşık 1181 piksel ister. Araçta genişliği milimetre olarak ayarlayın, piksel boyutunu o gösterir." }
+        {
+          "q": "Şablon dosyası ile fotoğraf arasındaki fark nedir?",
+          "a": "Şablon dosyası, bilinen bir boyutta, düz bir zemin üzerinde yalnızca temiz koyu çizgiler içerir. Fotoğrafta ton, doku ve zemin vardır; çoğu aktarım yöntemi bunları kullanamaz."
+        },
+        {
+          "q": "Şablon dosyasını kullanmak için termal yazıcıya ihtiyacım var mı?",
+          "a": "Hayır. Dosya düz kâğıda basılıp elle kalkaj edilebilir ya da sıradan bir yazıcıyla aktarıma hazır kâğıda basılabilir. Termal yazıcı birkaç seçenekten yalnızca biridir."
+        },
+        {
+          "q": "Şablonu düz kâğıda basıp üzerinden geçebilir miyim?",
+          "a": "Evet. Gerçek boyutta açık renkli bir çıktı, boyut zaten belli olduğu için kalkaj etmenin yaygın bir yoludur."
+        },
+        {
+          "q": "Hangi yöntemi kullanmalıyım?",
+          "a": "Kaç şablon hazırladığınıza, hangi ekipmanınız olduğuna ve nasıl çalışmayı sevdiğinize bağlı. Birçok sanatçı yöntemleri birleştirir."
+        },
+        {
+          "q": "Dosyanın belirli bir boyutta olması gerekir mi?",
+          "a": "Bastığınız genişlik için yeterince keskin olmalıdır. 300 dpi'de 100 mm'lik bir şablon yaklaşık 1181 piksel ister. Araçta genişliği milimetre olarak ayarlayın, piksel boyutunu o gösterir."
+        }
       ],
       "cta": "Temiz çizgili bir şablon dosyası hazırlayın, sonra hangi yöntemi kullanıyorsanız onunla yazdırın."
     },

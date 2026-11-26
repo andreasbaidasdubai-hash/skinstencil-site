@@ -8,9 +8,9 @@
     "updated": "Last updated",
     "answerLabel": "The short answer",
     "faq": "Questions",
-    "indexTitle": "Guides for tattoo stencils and brow mapping",
-    "indexMetaTitle": "Guides: tattoo stencils and brow mapping | Skinstencil",
-    "indexMetaDesc": "Practical guides for tattoo and brow artists: make a stencil from a photo, map brows on a client photo, and print both at true size.",
+    "indexTitle": "Guides for tattoo stencils",
+    "indexMetaTitle": "Guides: tattoo stencils | Skinstencil",
+    "indexMetaDesc": "Practical guides for tattoo artists: make a stencil from a photo and print it at true size.",
     "indexLead": "Short, practical guides for artists. Each one ends with the matching free tool, which runs in your browser and uploads nothing.",
     "readGuide": "Read the guide",
     "homeSectionTitle": "Guides for tattoo stencils",
@@ -19,7 +19,13 @@
     "theme": "Light or dark",
     "language": "Language"
   },
-  "order": ["tattoo-stencil-from-photo", "tattoo-stencil-size-true-size-print", "tattoo-stencil-transfer-methods", "brow-mapping-on-a-photo-start-arch-end", "brow-mapping-measurements-scale-and-print-true-size"],
+  "order": [
+    "tattoo-stencil-from-photo",
+    "tattoo-stencil-size-true-size-print",
+    "tattoo-stencil-transfer-methods",
+    "brow-mapping-on-a-photo-start-arch-end",
+    "brow-mapping-measurements-scale-and-print-true-size"
+  ],
   "guides": {
     "tattoo-stencil-from-photo": {
       "howto": true,
@@ -34,85 +40,167 @@
         {
           "h2": "What a tattoo stencil generator actually does",
           "blocks": [
-            { "p": "A stencil is the outline of a design, reduced to clean lines so it can be transferred to skin. A tattoo stencil generator takes a picture and keeps the edges that matter while dropping tone, paper texture and noise. The result is dark lines on a white background, which is the form most transfer methods need." },
-            { "p": "Skinstencil does this with ordinary image processing in your browser. Your file is read on your own device and is not uploaded. That matters when a design belongs to a client. It also means the tool works as soon as the page has loaded, with no account." }
+            {
+              "p": "A stencil is the outline of a design, reduced to clean lines so it can be transferred to skin. A tattoo stencil generator takes a picture and keeps the edges that matter while dropping tone, paper texture and noise. The result is dark lines on a white background, which is the form most transfer methods need."
+            },
+            {
+              "p": "Skinstencil does this with ordinary image processing in your browser. Your file is read on your own device and is not uploaded. That matters when a design belongs to a client. It also means the tool works as soon as the page has loaded, with no account."
+            }
           ]
         },
         {
           "h2": "Choose a source that will convert cleanly",
           "blocks": [
-            { "p": "Good sources share a few traits. Use one that matches as many of these as you can:" },
-            { "ul": [
-              "Clear contrast between the lines and the background, such as ink on white paper.",
-              "The design fills the frame instead of sitting small in a corner.",
-              "Flat and square to the camera or scanner, with no curl or perspective.",
-              "Even light with no shadow of your hand or phone across the page.",
-              "Enough resolution that thin lines are still several pixels wide."
-            ] },
-            { "p": "A flatbed scan is the easiest way to get all of that. If you photograph instead, work near a window in daylight, hold the phone parallel to the page, and avoid the flash, which leaves a bright patch in the middle. Only use designs you made or have the right to use." }
+            {
+              "p": "Good sources share a few traits. Use one that matches as many of these as you can:"
+            },
+            {
+              "ul": [
+                "Clear contrast between the lines and the background, such as ink on white paper.",
+                "The design fills the frame instead of sitting small in a corner.",
+                "Flat and square to the camera or scanner, with no curl or perspective.",
+                "Even light with no shadow of your hand or phone across the page.",
+                "Enough resolution that thin lines are still several pixels wide."
+              ]
+            },
+            {
+              "p": "A flatbed scan is the easiest way to get all of that. If you photograph instead, work near a window in daylight, hold the phone parallel to the page, and avoid the flash, which leaves a bright patch in the middle. Only use designs you made or have the right to use."
+            }
           ]
         },
         {
           "h2": "Drawing mode or Photo mode",
           "blocks": [
-            { "p": "The tool asks what kind of source you are loading, because a line drawing and a photograph need different treatment." },
-            { "h3": "Drawing" },
-            { "p": "Use Drawing for sketches, flash, lettering and anything already made of lines. Dark marks on a light page are the design, and the aim is to keep them close to how you drew them." },
-            { "h3": "Photo" },
-            { "p": "Use Photo for pictures with soft shading, such as a portrait or an animal. A photo has no outline to keep, so edges where tone changes have to stand in for lines. Expect to spend more time on the sliders with photos, and expect to decide which details you want to draw by hand." }
+            {
+              "p": "The tool asks what kind of source you are loading, because a line drawing and a photograph need different treatment."
+            },
+            {
+              "h3": "Drawing"
+            },
+            {
+              "p": "Use Drawing for sketches, flash, lettering and anything already made of lines. Dark marks on a light page are the design, and the aim is to keep them close to how you drew them."
+            },
+            {
+              "h3": "Photo"
+            },
+            {
+              "p": "Use Photo for pictures with soft shading, such as a portrait or an animal. A photo has no outline to keep, so edges where tone changes have to stand in for lines. Expect to spend more time on the sliders with photos, and expect to decide which details you want to draw by hand."
+            }
           ]
         },
         {
           "h2": "How to make a tattoo stencil online, step by step",
           "stepsIntro": "These are the steps in order. The sections below explain the controls in more detail.",
           "steps": [
-            { "name": "Choose a clear source", "text": "Pick the drawing or photo with the best contrast and the least clutter. If you have two versions, use the one drawn with a darker, more even pen." },
-            { "name": "Scan or photograph it in even light", "text": "Scan flat if you can. Otherwise photograph in daylight, parallel to the page, with the design filling the frame and no shadows or flash." },
-            { "name": "Load it into the tool", "text": "Open the free tool and drop in a JPG, PNG or WebP file, or click to choose one. It is processed in your browser and not uploaded." },
-            { "name": "Pick Drawing or Photo mode", "text": "Choose Drawing for line art and flash, Photo for pictures with soft shading." },
-            { "name": "Adjust sensitivity", "text": "Sensitivity decides how faint a mark can be and still become a line. Lower it if shading turns into lines. Raise it if thin lines are missing." },
-            { "name": "Adjust smoothing and line weight", "text": "Smoothing rounds off jagged pixel edges. Line weight makes lines thicker or thinner. If lines look faint when printed, a heavier line weight usually helps." },
-            { "name": "Remove specks", "text": "Raise Remove specks to clear small dots from paper grain or dust until only deliberate marks are left." },
-            { "name": "Check what was lost with the drift check", "text": "Turn on the drift check. Lost lines show in red and added lines in blue, so you can see what your settings changed against a fixed, sensitive reading of your original." },
-            { "name": "Set the width in millimetres", "text": "Enter the width you want on skin. The tool shows the matching size at 300 dpi and a true-size ruler." },
-            { "name": "Download or print at true size", "text": "Download the PNG and print it so the printout measures the width you set. Check it against a ruler before it goes near anyone." }
+            {
+              "name": "Choose a clear source",
+              "text": "Pick the drawing or photo with the best contrast and the least clutter. If you have two versions, use the one drawn with a darker, more even pen."
+            },
+            {
+              "name": "Scan or photograph it in even light",
+              "text": "Scan flat if you can. Otherwise photograph in daylight, parallel to the page, with the design filling the frame and no shadows or flash."
+            },
+            {
+              "name": "Load it into the tool",
+              "text": "Open the free tool and drop in a JPG, PNG or WebP file, or click to choose one. It is processed in your browser and not uploaded."
+            },
+            {
+              "name": "Pick Drawing or Photo mode",
+              "text": "Choose Drawing for line art and flash, Photo for pictures with soft shading."
+            },
+            {
+              "name": "Adjust sensitivity",
+              "text": "Sensitivity decides how faint a mark can be and still become a line. Lower it if shading turns into lines. Raise it if thin lines are missing."
+            },
+            {
+              "name": "Adjust smoothing and line weight",
+              "text": "Smoothing rounds off jagged pixel edges. Line weight makes lines thicker or thinner. If lines look faint when printed, a heavier line weight usually helps."
+            },
+            {
+              "name": "Remove specks",
+              "text": "Raise Remove specks to clear small dots from paper grain or dust until only deliberate marks are left."
+            },
+            {
+              "name": "Check what was lost with the drift check",
+              "text": "Turn on the drift check. Lost lines show in red and added lines in blue, so you can see what your settings changed against a fixed, sensitive reading of your original."
+            },
+            {
+              "name": "Set the width in millimetres",
+              "text": "Enter the width you want on skin. The tool shows the matching size at 300 dpi and a true-size ruler."
+            },
+            {
+              "name": "Download or print at true size",
+              "text": "Download the PNG and print it so the printout measures the width you set. Check it against a ruler before it goes near anyone."
+            }
           ]
         },
         {
           "h2": "Using the controls without losing the design",
           "blocks": [
-            { "p": "Treat the sliders as a conversation rather than a recipe. Change one, look, and change it back if it hurt more than it helped." },
-            { "ul": [
-              "Sensitivity is the biggest lever. Too high and every smudge becomes a line. Too low and fine detail disappears.",
-              "Smoothing helps most on scans of small drawings, where lines look stair-stepped when enlarged. Too much smoothing rounds off sharp corners and small gaps.",
-              "Line weight is a matter of taste and of your transfer method. Thin hairlines can disappear when printed or transferred, so test on paper first.",
-              "Remove specks is the cleanup control. Raise it until the dust goes, and stop before it starts removing dots that belong to the design, such as stippling."
-            ] },
-            { "p": "Stippling and tiny dotwork are the usual casualties. If your design depends on them, keep specks low and check the result closely." }
+            {
+              "p": "Treat the sliders as a conversation rather than a recipe. Change one, look, and change it back if it hurt more than it helped."
+            },
+            {
+              "ul": [
+                "Sensitivity is the biggest lever. Too high and every smudge becomes a line. Too low and fine detail disappears.",
+                "Smoothing helps most on scans of small drawings, where lines look stair-stepped when enlarged. Too much smoothing rounds off sharp corners and small gaps.",
+                "Line weight is a matter of taste and of your transfer method. Thin hairlines can disappear when printed or transferred, so test on paper first.",
+                "Remove specks is the cleanup control. Raise it until the dust goes, and stop before it starts removing dots that belong to the design, such as stippling."
+              ]
+            },
+            {
+              "p": "Stippling and tiny dotwork are the usual casualties. If your design depends on them, keep specks low and check the result closely."
+            }
           ]
         },
         {
           "h2": "Why the drift check matters",
           "blocks": [
-            { "p": "A stencil that looks clean can still be missing something. Dropping a fine line is easy when you are chasing a tidy result, and easy to miss on a small screen." },
-            { "p": "The drift check compares the stencil with the lines found in your original. Red marks a line that was lost. Blue marks a line that was added. The reference is a fixed, sensitive reading of the original, so lowering sensitivity or raising Remove specks will show red on purpose. Red is not always a mistake, but it is always worth a look before you commit to a size." }
+            {
+              "p": "A stencil that looks clean can still be missing something. Dropping a fine line is easy when you are chasing a tidy result, and easy to miss on a small screen."
+            },
+            {
+              "p": "The drift check compares the stencil with the lines found in your original. Red marks a line that was lost. Blue marks a line that was added. The reference is a fixed, sensitive reading of the original, so lowering sensitivity or raising Remove specks will show red on purpose. Red is not always a mistake, but it is always worth a look before you commit to a size."
+            }
           ]
         },
         {
           "h2": "Size, download and print",
           "blocks": [
-            { "p": "Set the width in millimetres before you download, because the same design at 60 mm and at 200 mm needs a different number of pixels to stay sharp. Our companion guide on [print size](guide:tattoo-stencil-size-true-size-print) has the numbers." },
-            { "p": "Free downloads carry a watermark and are capped at 800 px. A day pass or Pro removes the watermark, allows up to 4000 px, and stores the 300 dpi size inside the PNG so print software opens it at the width you chose. Once you have the file, [ways to get a stencil onto paper](guide:tattoo-stencil-transfer-methods) covers what happens next." }
+            {
+              "p": "Set the width in millimetres before you download, because the same design at 60 mm and at 200 mm needs a different number of pixels to stay sharp. Our companion guide on [print size](guide:tattoo-stencil-size-true-size-print) has the numbers."
+            },
+            {
+              "p": "Free downloads carry a watermark and are capped at 800 px. A day pass or Pro removes the watermark, allows up to 4000 px, and stores the 300 dpi size inside the PNG so print software opens it at the width you chose. Once you have the file, [ways to get a stencil onto paper](guide:tattoo-stencil-transfer-methods) covers what happens next."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "Can I make a tattoo stencil from a photo?", "a": "Yes. Load a photo, choose Photo mode and adjust sensitivity until the edges you want become lines. Photos with soft shading need more adjustment than line drawings, and you may want to draw some detail by hand." },
-        { "q": "Is the tattoo stencil maker free?", "a": "Yes. It is free to use in the browser. Free downloads carry a watermark and are capped at 800 px. A day pass or Pro removes the watermark and allows up to 4000 px." },
-        { "q": "Is my design uploaded anywhere?", "a": "No. The image is processed in your browser on your own device, and nothing is uploaded." },
-        { "q": "What file types can I use?", "a": "JPG, PNG and WebP images. Use the sharpest, best lit version you have." },
-        { "q": "Why are some lines missing from my stencil?", "a": "Sensitivity may be too low, or Remove specks too high, so faint lines were treated as noise. Turn on the drift check: lost lines show in red. Raise sensitivity or lower Remove specks and check again." },
-        { "q": "How do I print the stencil at the right size?", "a": "Set the width in millimetres in the tool, download the PNG and print at 100 percent with no fit-to-page scaling. Check the printout with a ruler." }
+        {
+          "q": "Can I make a tattoo stencil from a photo?",
+          "a": "Yes. Load a photo, choose Photo mode and adjust sensitivity until the edges you want become lines. Photos with soft shading need more adjustment than line drawings, and you may want to draw some detail by hand."
+        },
+        {
+          "q": "Is the tattoo stencil maker free?",
+          "a": "Yes. It is free to use in the browser. Free downloads carry a watermark and are capped at 800 px. A day pass or Pro removes the watermark and allows up to 4000 px."
+        },
+        {
+          "q": "Is my design uploaded anywhere?",
+          "a": "No. The image is processed in your browser on your own device, and nothing is uploaded."
+        },
+        {
+          "q": "What file types can I use?",
+          "a": "JPG, PNG and WebP images. Use the sharpest, best lit version you have."
+        },
+        {
+          "q": "Why are some lines missing from my stencil?",
+          "a": "Sensitivity may be too low, or Remove specks too high, so faint lines were treated as noise. Turn on the drift check: lost lines show in red. Raise sensitivity or lower Remove specks and check again."
+        },
+        {
+          "q": "How do I print the stencil at the right size?",
+          "a": "Set the width in millimetres in the tool, download the PNG and print at 100 percent with no fit-to-page scaling. Check the printout with a ruler."
+        }
       ],
       "cta": "Try it on your own design. It runs in your browser and nothing is uploaded."
     },
@@ -128,79 +216,167 @@
         {
           "h2": "Why stencil size is easy to get wrong",
           "blocks": [
-            { "p": "A digital image has no physical size of its own. It is a grid of pixels, and the size on paper depends on how many pixels are placed in each inch. That is the dpi, short for dots per inch. The same file can print as a stamp or as a poster." },
-            { "p": "For a tattoo stencil that is a problem, because the artwork has to land on skin at exactly the size the client agreed. Print software often guesses, scales the image to fit the page, or opens the file at 72 or 96 dpi and makes it much bigger than you expected. Getting stencil size right means settling the size once, in millimetres, and making sure the file carries it through to the printer." }
+            {
+              "p": "A digital image has no physical size of its own. It is a grid of pixels, and the size on paper depends on how many pixels are placed in each inch. That is the dpi, short for dots per inch. The same file can print as a stamp or as a poster."
+            },
+            {
+              "p": "For a tattoo stencil that is a problem, because the artwork has to land on skin at exactly the size the client agreed. Print software often guesses, scales the image to fit the page, or opens the file at 72 or 96 dpi and makes it much bigger than you expected. Getting stencil size right means settling the size once, in millimetres, and making sure the file carries it through to the printer."
+            }
           ]
         },
         {
           "h2": "Millimetres to pixels at 300 dpi",
           "blocks": [
-            { "p": "There are 25.4 millimetres in an inch. So the pixel width you need is:" },
-            { "p": "**pixels = millimetres ÷ 25.4 × 300**" },
-            { "p": "Here is the result for common widths, rounded to the nearest pixel:" },
-            { "table": {
-              "head": ["Width on skin", "Pixels at 300 dpi"],
-              "rows": [
-                ["50 mm", "591 px"],
-                ["80 mm", "945 px"],
-                ["100 mm", "1181 px"],
-                ["150 mm", "1772 px"],
-                ["200 mm", "2362 px"],
-                ["250 mm", "2953 px"],
-                ["300 mm", "3543 px"]
-              ]
-            } },
-            { "p": "You do not need to do this by hand. In the tool you type the width in millimetres and it shows the size at 300 dpi next to it. The table is here so you can see why a small file cannot be printed large without looking soft." }
+            {
+              "p": "There are 25.4 millimetres in an inch. So the pixel width you need is:"
+            },
+            {
+              "p": "**pixels = millimetres ÷ 25.4 × 300**"
+            },
+            {
+              "p": "Here is the result for common widths, rounded to the nearest pixel:"
+            },
+            {
+              "table": {
+                "head": [
+                  "Width on skin",
+                  "Pixels at 300 dpi"
+                ],
+                "rows": [
+                  [
+                    "50 mm",
+                    "591 px"
+                  ],
+                  [
+                    "80 mm",
+                    "945 px"
+                  ],
+                  [
+                    "100 mm",
+                    "1181 px"
+                  ],
+                  [
+                    "150 mm",
+                    "1772 px"
+                  ],
+                  [
+                    "200 mm",
+                    "2362 px"
+                  ],
+                  [
+                    "250 mm",
+                    "2953 px"
+                  ],
+                  [
+                    "300 mm",
+                    "3543 px"
+                  ]
+                ]
+              }
+            },
+            {
+              "p": "You do not need to do this by hand. In the tool you type the width in millimetres and it shows the size at 300 dpi next to it. The table is here so you can see why a small file cannot be printed large without looking soft."
+            }
           ]
         },
         {
           "h2": "Why 300 dpi",
           "blocks": [
-            { "p": "300 dpi is the usual target for printed images that will be looked at closely. At that density a thin line still prints as a clean, continuous stroke. Lower densities start to show stair-stepped edges on curves, and a stencil is almost all curves." },
-            { "p": "More is not always better. Bigger files are slower to open and print, and a thin stencil line gets no sharper than your printer can draw it. 300 dpi is a sensible balance for stencil work and is what Skinstencil uses for its true-size output." }
+            {
+              "p": "300 dpi is the usual target for printed images that will be looked at closely. At that density a thin line still prints as a clean, continuous stroke. Lower densities start to show stair-stepped edges on curves, and a stencil is almost all curves."
+            },
+            {
+              "p": "More is not always better. Bigger files are slower to open and print, and a thin stencil line gets no sharper than your printer can draw it. 300 dpi is a sensible balance for stencil work and is what Skinstencil uses for its true-size output."
+            }
           ]
         },
         {
           "h2": "How the 300 dpi value inside the PNG helps",
           "blocks": [
-            { "p": "A PNG file can carry a physical size, stored as pixels per metre in a small block of data in the file. Many programs read it and use it to open the image at that size. If the value says 300 dpi, a 1181 px wide image opens at about 100 mm wide, with no manual resizing." },
-            { "p": "When the value is missing, programs fall back on a default, which is often 72 or 96 dpi. At 72 dpi that same 1181 px image would open about 416 mm wide, more than four times as large. That is a common reason a stencil comes out of the printer far too big." },
-            { "p": "With a day pass or Pro, Skinstencil stores the 300 dpi size inside the PNG, so print software can open it at the width you set. With a free download, set the print width yourself in your print dialog." }
+            {
+              "p": "A PNG file can carry a physical size, stored as pixels per metre in a small block of data in the file. Many programs read it and use it to open the image at that size. If the value says 300 dpi, a 1181 px wide image opens at about 100 mm wide, with no manual resizing."
+            },
+            {
+              "p": "When the value is missing, programs fall back on a default, which is often 72 or 96 dpi. At 72 dpi that same 1181 px image would open about 416 mm wide, more than four times as large. That is a common reason a stencil comes out of the printer far too big."
+            },
+            {
+              "p": "With a day pass or Pro, Skinstencil stores the 300 dpi size inside the PNG, so print software can open it at the width you set. With a free download, set the print width yourself in your print dialog."
+            }
           ]
         },
         {
           "h2": "Printing at true size",
           "stepsIntro": "A short routine that avoids surprises:",
           "steps": [
-            { "name": "Set the width in the tool", "text": "Enter the width on skin in millimetres. The tool shows the equivalent size at 300 dpi." },
-            { "name": "Download the PNG", "text": "With a day pass or Pro, the file stores the 300 dpi size, so most programs open it at the right width." },
-            { "name": "Open it in your print dialog", "text": "Choose actual size or 100 percent. Turn off fit to page, shrink to fit and fill page." },
-            { "name": "Print a test on plain paper", "text": "Use ordinary paper for the test, not your transfer material." },
-            { "name": "Measure the printout", "text": "Lay a ruler across the widest part and compare it with the width you set. Adjust and reprint if it is off." }
+            {
+              "name": "Set the width in the tool",
+              "text": "Enter the width on skin in millimetres. The tool shows the equivalent size at 300 dpi."
+            },
+            {
+              "name": "Download the PNG",
+              "text": "With a day pass or Pro, the file stores the 300 dpi size, so most programs open it at the right width."
+            },
+            {
+              "name": "Open it in your print dialog",
+              "text": "Choose actual size or 100 percent. Turn off fit to page, shrink to fit and fill page."
+            },
+            {
+              "name": "Print a test on plain paper",
+              "text": "Use ordinary paper for the test, not your transfer material."
+            },
+            {
+              "name": "Measure the printout",
+              "text": "Lay a ruler across the widest part and compare it with the width you set. Adjust and reprint if it is off."
+            }
           ]
         },
         {
           "h2": "Check with a ruler, every time",
           "blocks": [
-            { "p": "Printers and drivers change settings without telling you, especially after an update or on a shared computer. A ruler removes the guesswork. Measure the full width of the design on the printout, edge to edge of the artwork and not the paper, and compare it with the millimetres you set." },
-            { "p": "The tool also draws a true-size ruler that follows the print width you set, so you can see the intended scale on screen. Screens differ, so that ruler is only a guide and the ruler on the printout is the one that counts." },
-            { "p": "If the printout is off by a consistent percentage, a scaling option is probably switched on. If it is off by a large factor, the program probably opened the file at 72 or 96 dpi." }
+            {
+              "p": "Printers and drivers change settings without telling you, especially after an update or on a shared computer. A ruler removes the guesswork. Measure the full width of the design on the printout, edge to edge of the artwork and not the paper, and compare it with the millimetres you set."
+            },
+            {
+              "p": "The tool also draws a true-size ruler that follows the print width you set, so you can see the intended scale on screen. Screens differ, so that ruler is only a guide and the ruler on the printout is the one that counts."
+            },
+            {
+              "p": "If the printout is off by a consistent percentage, a scaling option is probably switched on. If it is off by a large factor, the program probably opened the file at 72 or 96 dpi."
+            }
           ]
         },
         {
           "h2": "Why free downloads are capped at 800 px",
           "blocks": [
-            { "p": "Free downloads carry a watermark and are limited to 800 px. At 300 dpi, 800 px is about 68 mm, which is fine to judge a design but small for a stencil on skin. Larger stencils need more pixels to stay sharp, and that is what a day pass or Pro unlocks: no watermark, up to 4000 px, which is about 339 mm wide at 300 dpi, and the 300 dpi size stored in the file." },
-            { "p": "The free tool is still useful for checking the lines and the drift check before you decide to unlock a size. Our guide to [making a stencil from a photo or drawing](guide:tattoo-stencil-from-photo) covers that part." }
+            {
+              "p": "Free downloads carry a watermark and are limited to 800 px. At 300 dpi, 800 px is about 68 mm, which is fine to judge a design but small for a stencil on skin. Larger stencils need more pixels to stay sharp, and that is what a day pass or Pro unlocks: no watermark, up to 4000 px, which is about 339 mm wide at 300 dpi, and the 300 dpi size stored in the file."
+            },
+            {
+              "p": "The free tool is still useful for checking the lines and the drift check before you decide to unlock a size. Our guide to [making a stencil from a photo or drawing](guide:tattoo-stencil-from-photo) covers that part."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "How many pixels do I need for a 100 mm stencil?", "a": "About 1181 pixels wide at 300 dpi. The formula is millimetres divided by 25.4, multiplied by 300." },
-        { "q": "Why is my stencil printing too big?", "a": "Often the program opened the PNG at 72 or 96 dpi because no size was stored in the file, or a fit to page option scaled it up. Print at 100 percent and set the width yourself, or use a file with the 300 dpi size stored in it." },
-        { "q": "What does the 300 dpi value inside the PNG do?", "a": "It tells print software the physical size of the image, so it can open at the width you set instead of guessing. Day pass and Pro downloads include it." },
-        { "q": "What is the largest stencil I can download?", "a": "Free downloads are capped at 800 px. A day pass or Pro allows up to 4000 px, which is about 339 mm wide at 300 dpi." },
-        { "q": "Should I check the printout with a ruler?", "a": "Yes, every time. Measure the artwork edge to edge and compare it with the width you set before the stencil is used." }
+        {
+          "q": "How many pixels do I need for a 100 mm stencil?",
+          "a": "About 1181 pixels wide at 300 dpi. The formula is millimetres divided by 25.4, multiplied by 300."
+        },
+        {
+          "q": "Why is my stencil printing too big?",
+          "a": "Often the program opened the PNG at 72 or 96 dpi because no size was stored in the file, or a fit to page option scaled it up. Print at 100 percent and set the width yourself, or use a file with the 300 dpi size stored in it."
+        },
+        {
+          "q": "What does the 300 dpi value inside the PNG do?",
+          "a": "It tells print software the physical size of the image, so it can open at the width you set instead of guessing. Day pass and Pro downloads include it."
+        },
+        {
+          "q": "What is the largest stencil I can download?",
+          "a": "Free downloads are capped at 800 px. A day pass or Pro allows up to 4000 px, which is about 339 mm wide at 300 dpi."
+        },
+        {
+          "q": "Should I check the printout with a ruler?",
+          "a": "Yes, every time. Measure the artwork edge to edge and compare it with the width you set before the stencil is used."
+        }
       ],
       "cta": "Set a width in millimetres and see the size at 300 dpi."
     },
@@ -216,86 +392,139 @@
         {
           "h2": "Three common approaches",
           "blocks": [
-            { "p": "A tattoo stencil starts as a drawing and ends as a pattern of lines on a transfer sheet that can be pressed to the skin. There are several ways to get from one to the other. This guide describes three common ones in neutral terms. It does not rank them, because the right choice depends on your volume, your budget, your studio and your own habits." },
-            { "p": "It also does not cover application or aftercare. Whatever method you use, follow your studio's hygiene rules." }
+            {
+              "p": "A tattoo stencil starts as a drawing and ends as a pattern of lines on a transfer sheet that can be pressed to the skin. There are several ways to get from one to the other. This guide describes three common ones in neutral terms. It does not rank them, because the right choice depends on your volume, your budget, your studio and your own habits."
+            },
+            {
+              "p": "It also does not cover application or aftercare. Whatever method you use, follow your studio's hygiene rules."
+            }
           ]
         },
         {
           "h2": "Tracing by hand",
           "blocks": [
-            { "p": "The oldest method is to trace the design yourself. You put tracing paper, or a transfer sheet made for hand drawing, over the artwork and follow the lines with a pen. Some artists draw directly on the transfer material. Others use a light box or a window to see the artwork through the paper." },
-            { "ul": [
-              "Needs: the original drawing, the transfer material and a pen suited to it.",
-              "Strength: no equipment beyond paper and pens, and every line passes through your own hand, so you make small decisions as you go.",
-              "Limit: it takes time, scaling the design up or down needs a separate step, and repeating a design is slow."
-            ] },
-            { "p": "A clean line file still helps here. You can print a light copy on plain paper at the right size and trace over that, which settles the size without a second tool." }
+            {
+              "p": "The oldest method is to trace the design yourself. You put tracing paper, or a transfer sheet made for hand drawing, over the artwork and follow the lines with a pen. Some artists draw directly on the transfer material. Others use a light box or a window to see the artwork through the paper."
+            },
+            {
+              "ul": [
+                "Needs: the original drawing, the transfer material and a pen suited to it.",
+                "Strength: no equipment beyond paper and pens, and every line passes through your own hand, so you make small decisions as you go.",
+                "Limit: it takes time, scaling the design up or down needs a separate step, and repeating a design is slow."
+              ]
+            },
+            {
+              "p": "A clean line file still helps here. You can print a light copy on plain paper at the right size and trace over that, which settles the size without a second tool."
+            }
           ]
         },
         {
           "h2": "Thermal printers",
           "blocks": [
-            { "p": "Thermal stencil printers use heat, not ink, to make the pattern on a special multi-layer transfer paper. The printer reads a digital image or a paper original and produces the stencil in one pass. Models differ in how they connect, so check what yours accepts, whether that is a USB cable, a connected computer or a phone app." },
-            { "ul": [
-              "Needs: a thermal printer, thermal transfer paper that fits it, and a file or original to print from.",
-              "Strength: fast and consistent once set up, and repeat copies of the same design are easy.",
-              "Limit: the printer and paper are a cost, and a file that is slightly too faint, too heavy or the wrong size prints exactly that way."
-            ] },
-            { "p": "This is where a clean line stencil file matters most. A thermal printer prints the lines it is given. Grey tones, background texture and thin hairlines may print poorly or not at all, and a file opened at the wrong size prints at the wrong size. Black lines on a plain white background, at a known width, give the printer the least to get wrong." }
+            {
+              "p": "Thermal stencil printers use heat, not ink, to make the pattern on a special multi-layer transfer paper. The printer reads a digital image or a paper original and produces the stencil in one pass. Models differ in how they connect, so check what yours accepts, whether that is a USB cable, a connected computer or a phone app."
+            },
+            {
+              "ul": [
+                "Needs: a thermal printer, thermal transfer paper that fits it, and a file or original to print from.",
+                "Strength: fast and consistent once set up, and repeat copies of the same design are easy.",
+                "Limit: the printer and paper are a cost, and a file that is slightly too faint, too heavy or the wrong size prints exactly that way."
+              ]
+            },
+            {
+              "p": "This is where a clean line stencil file matters most. A thermal printer prints the lines it is given. Grey tones, background texture and thin hairlines may print poorly or not at all, and a file opened at the wrong size prints at the wrong size. Black lines on a plain white background, at a known width, give the printer the least to get wrong."
+            }
           ]
         },
         {
           "h2": "Printed transfers on ordinary printers",
           "blocks": [
-            { "p": "Some artists print the stencil with a standard inkjet or laser printer onto paper made to work as a transfer layer, or print on plain paper and use it as a reference or a tracing base. What works depends on the printer type and the paper, so follow the instructions that come with the material and test a sheet before using it for real." },
-            { "ul": [
-              "Needs: a regular printer, suitable transfer-ready paper if you want to transfer directly, and a file at the right size.",
-              "Strength: you may already own the printer, and it prints at high resolution.",
-              "Limit: the material must be made for this use, plain office paper is not a transfer material, and printer settings such as scaling can change the size."
-            ] },
-            { "p": "As with any digital method, set the print dialog to actual size and measure the result. The guide to [printing at true size](guide:tattoo-stencil-size-true-size-print) explains how." }
+            {
+              "p": "Some artists print the stencil with a standard inkjet or laser printer onto paper made to work as a transfer layer, or print on plain paper and use it as a reference or a tracing base. What works depends on the printer type and the paper, so follow the instructions that come with the material and test a sheet before using it for real."
+            },
+            {
+              "ul": [
+                "Needs: a regular printer, suitable transfer-ready paper if you want to transfer directly, and a file at the right size.",
+                "Strength: you may already own the printer, and it prints at high resolution.",
+                "Limit: the material must be made for this use, plain office paper is not a transfer material, and printer settings such as scaling can change the size."
+              ]
+            },
+            {
+              "p": "As with any digital method, set the print dialog to actual size and measure the result. The guide to [printing at true size](guide:tattoo-stencil-size-true-size-print) explains how."
+            }
           ]
         },
         {
           "h2": "When a clean line stencil file matters",
           "blocks": [
-            { "p": "Any method that starts from a digital file benefits from a file made for the job. A stencil file is different from a photo in a few ways:" },
-            { "ul": [
-              "It is made of lines only, with no shading, paper texture or background.",
-              "The lines are dark and continuous, so heat or ink has something solid to reproduce.",
-              "It has a known width, so it prints at the size the client agreed.",
-              "Faint specks are removed, so they do not turn into marks on the transfer."
-            ] },
-            { "p": "A tattoo stencil maker produces that kind of file from a photo or a drawing. Our guide on [making a stencil from a photo or drawing](guide:tattoo-stencil-from-photo) walks through the controls." }
+            {
+              "p": "Any method that starts from a digital file benefits from a file made for the job. A stencil file is different from a photo in a few ways:"
+            },
+            {
+              "ul": [
+                "It is made of lines only, with no shading, paper texture or background.",
+                "The lines are dark and continuous, so heat or ink has something solid to reproduce.",
+                "It has a known width, so it prints at the size the client agreed.",
+                "Faint specks are removed, so they do not turn into marks on the transfer."
+              ]
+            },
+            {
+              "p": "A tattoo stencil maker produces that kind of file from a photo or a drawing. Our guide on [making a stencil from a photo or drawing](guide:tattoo-stencil-from-photo) walks through the controls."
+            }
           ]
         },
         {
           "h2": "Choosing between them",
           "blocks": [
-            { "p": "A few questions usually settle it:" },
-            { "ul": [
-              "How many stencils do you make in a week? Higher volume favours equipment that repeats quickly.",
-              "How often do you rescale a design? Digital methods make size changes easy, and hand tracing makes them a separate job.",
-              "How much of the line work do you want to redraw yourself? Tracing gives you that by default.",
-              "What do you already own? An existing printer is the cheapest place to start, provided the paper suits it."
-            ] },
-            { "p": "Many artists use more than one method, for example a printed outline for the main shapes and hand tracing for fine detail. Nothing here requires an either-or choice." }
+            {
+              "p": "A few questions usually settle it:"
+            },
+            {
+              "ul": [
+                "How many stencils do you make in a week? Higher volume favours equipment that repeats quickly.",
+                "How often do you rescale a design? Digital methods make size changes easy, and hand tracing makes them a separate job.",
+                "How much of the line work do you want to redraw yourself? Tracing gives you that by default.",
+                "What do you already own? An existing printer is the cheapest place to start, provided the paper suits it."
+              ]
+            },
+            {
+              "p": "Many artists use more than one method, for example a printed outline for the main shapes and hand tracing for fine detail. Nothing here requires an either-or choice."
+            }
           ]
         },
         {
           "h2": "Preparing the file, whichever method you choose",
           "blocks": [
-            { "p": "Whichever route you pick, the file preparation is the same. Make a clean line version, set the width in millimetres, download it at a size that is sharp enough for that width, and print a test on plain paper. Skinstencil is free to use in the browser and nothing is uploaded. Free downloads carry a watermark and are capped at 800 px. A day pass or Pro removes the watermark, allows up to 4000 px and stores the 300 dpi size in the PNG." },
-            { "p": "Then measure the test print with a ruler before you use your transfer material." }
+            {
+              "p": "Whichever route you pick, the file preparation is the same. Make a clean line version, set the width in millimetres, download it at a size that is sharp enough for that width, and print a test on plain paper. Skinstencil is free to use in the browser and nothing is uploaded. Free downloads carry a watermark and are capped at 800 px. A day pass or Pro removes the watermark, allows up to 4000 px and stores the 300 dpi size in the PNG."
+            },
+            {
+              "p": "Then measure the test print with a ruler before you use your transfer material."
+            }
           ]
         }
       ],
       "faq": [
-        { "q": "What is the difference between a stencil file and a photo?", "a": "A stencil file contains only clean dark lines on a plain background, at a known size. A photo has tone, texture and background that most transfer methods cannot use." },
-        { "q": "Do I need a thermal printer to use a stencil file?", "a": "No. A file can be printed on plain paper and traced by hand, or printed on transfer-ready paper with an ordinary printer. A thermal printer is one option among several." },
-        { "q": "Can I print a stencil on plain paper and trace it?", "a": "Yes. A light printout at true size is a common way to trace, because the size is already settled." },
-        { "q": "Which method should I use?", "a": "It depends on how many stencils you make, what equipment you own and how you like to work. Many artists combine methods." },
-        { "q": "Does the file need to be a certain size?", "a": "It needs to be sharp enough for the width you print. At 300 dpi a 100 mm stencil needs about 1181 pixels. Set the width in millimetres in the tool and it shows the pixel size." }
+        {
+          "q": "What is the difference between a stencil file and a photo?",
+          "a": "A stencil file contains only clean dark lines on a plain background, at a known size. A photo has tone, texture and background that most transfer methods cannot use."
+        },
+        {
+          "q": "Do I need a thermal printer to use a stencil file?",
+          "a": "No. A file can be printed on plain paper and traced by hand, or printed on transfer-ready paper with an ordinary printer. A thermal printer is one option among several."
+        },
+        {
+          "q": "Can I print a stencil on plain paper and trace it?",
+          "a": "Yes. A light printout at true size is a common way to trace, because the size is already settled."
+        },
+        {
+          "q": "Which method should I use?",
+          "a": "It depends on how many stencils you make, what equipment you own and how you like to work. Many artists combine methods."
+        },
+        {
+          "q": "Does the file need to be a certain size?",
+          "a": "It needs to be sharp enough for the width you print. At 300 dpi a 100 mm stencil needs about 1181 pixels. Set the width in millimetres in the tool and it shows the pixel size."
+        }
       ],
       "cta": "Make a clean line stencil file, then print it with whichever method you use."
     },
