@@ -131,5 +131,7 @@
   "w.paidOnly": "Drobne detale i obrazy przykładowe są w karnecie dziennym lub Pro.",
   "w.errPaidCap": "Wykorzystano na razie wszystkie projekty z Twojego planu.",
   "w.leftPlan": "Zostało {n} projektów w Twoim planie",
-  "w.menu": "Menu"
+  "w.menu": "Menu",
+  "w.showPreview": "Pokaż podgląd",
+  "w.hidePreview": "Ukryj podgląd"
 }

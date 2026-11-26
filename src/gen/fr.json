@@ -131,5 +131,7 @@
   "w.paidOnly": "Les détails fins et les images d'exemple sont inclus avec un pass journée ou Pro.",
   "w.errPaidCap": "Vous avez utilisé tous les designs de votre offre pour le moment.",
   "w.leftPlan": "{n} designs restants dans votre offre",
-  "w.menu": "Menu"
+  "w.menu": "Menu",
+  "w.showPreview": "Afficher l’aperçu",
+  "w.hidePreview": "Masquer l’aperçu"
 }

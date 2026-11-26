@@ -131,5 +131,7 @@
   "w.paidOnly": "El detalle fino y las imágenes de ejemplo vienen con un pase de un día o Pro.",
   "w.errPaidCap": "Ya usaste todos los diseños de tu plan por ahora.",
   "w.leftPlan": "Te quedan {n} diseños en tu plan",
-  "w.menu": "Menú"
+  "w.menu": "Menú",
+  "w.showPreview": "Mostrar vista previa",
+  "w.hidePreview": "Ocultar vista previa"
 }

@@ -131,5 +131,7 @@
   "w.paidOnly": "Fijn detail en voorbeeldafbeeldingen horen bij een dagpas of Pro.",
   "w.errPaidCap": "Je hebt alle designs van je abonnement voorlopig gebruikt.",
   "w.leftPlan": "Nog {n} designs in je abonnement",
-  "w.menu": "Menu"
+  "w.menu": "Menu",
+  "w.showPreview": "Voorbeeld tonen",
+  "w.hidePreview": "Voorbeeld verbergen"
 }

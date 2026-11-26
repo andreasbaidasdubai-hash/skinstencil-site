@@ -109,7 +109,7 @@
   }
   $('vt').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b && S.design) setView(b.dataset.m); });
   $('vt').addEventListener('pointerdown', function (e) { e.stopPropagation(); });
-  $('toSheet').addEventListener('click', function () { setView('sheet'); $('st4').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); });
+  $('toSheet').addEventListener('click', function () { setMin(false); setView('sheet'); $('st4').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); });
   function split(x) { var r = $('sheet').getBoundingClientRect(), p = Math.max(0, Math.min(100, (x - r.left) / r.width * 100)); $('split').value = p; $('hd').style.left = p + '%'; $('cS').style.clipPath = 'inset(0 0 0 ' + p + '%)'; }
   $('cS').style.clipPath = 'inset(0 0 0 50%)';
   $('split').addEventListener('input', function () { var r = $('sheet').getBoundingClientRect(); split(r.left + this.value / 100 * r.width); });
@@ -238,7 +238,7 @@
     if (p.length < 3 && !REF) { say('s.gen.errShort', 'err'); return; }
     busy = true; $('genBtn').disabled = true; say('s.gen.busy');
     var body = { prompt: p, style: S.style }; if (REF) { body.ref = REF; body.refMode = REFMODE; }
-    ask('/generate', body).then(function (r) { return blobImg(r.blob).then(function (o) { setDesign(o.im, false); URL.revokeObjectURL(o.u); SET.mode = 'draw'; dflt(); develop(); say(r.left == null ? '' : (r.plan && r.plan !== 'free') ? 'gen.w.leftPlan' : 's.gen.left', 'ok', { n: r.left }); $('wstage').scrollIntoView({ block: 'nearest' }); }); })
+    ask('/generate', body).then(function (r) { return blobImg(r.blob).then(function (o) { setMin(false); setDesign(o.im, false); URL.revokeObjectURL(o.u); SET.mode = 'draw'; dflt(); develop(); say(r.left == null ? '' : (r.plan && r.plan !== 'free') ? 'gen.w.leftPlan' : 's.gen.left', 'ok', { n: r.left }); $('wstage').scrollIntoView({ block: 'nearest' }); }); })
       .catch(function (e) { say(e && e.key ? e.key : 's.gen.errNetwork', 'err'); })
       .then(function () { busy = false; $('genBtn').disabled = false; });
   }
@@ -277,6 +277,12 @@
   $('toStudio').addEventListener('click', function (e) { if (!S.design) return; e.preventDefault(); try { sessionStorage.setItem('skinstencil.handoff', D.toDataURL('image/png')); } catch (er) { /* storage full or blocked: the Studio then opens with its sample */ } location.href = $('genBox').getAttribute('data-studio') + '?from=ai'; });
   if (unlocked()) $('wmNote').hidden = true;
 
+  /* phones: fold the preview away while scrolling, one tap to bring it back */
+  function setMin(on) {
+    var sc = document.querySelector('.stagecol'), b = $('pvt'); sc.classList.toggle('min', on); b.setAttribute('aria-expanded', String(!on));
+    b.firstElementChild.textContent = b.getAttribute(on ? 'data-show' : 'data-hide'); if (!on) setTimeout(apply, 30);
+  }
+  $('pvt').addEventListener('click', function () { setMin(!document.querySelector('.stagecol').classList.contains('min')); });
   /* phones: the preview is small so the form stays usable; this opens it full screen */
   function setBig(on) {
     var sc = document.querySelector('.stagecol'), x = $('xp'); sc.classList.toggle('big', on); document.documentElement.style.overflow = on ? 'hidden' : '';

@@ -131,5 +131,7 @@
   "w.paidOnly": "Feine Details und Beispielbilder gibt es mit Tagespass oder Pro.",
   "w.errPaidCap": "Du hast alle Designs deines Plans vorerst genutzt.",
   "w.leftPlan": "Noch {n} Designs in deinem Plan",
-  "w.menu": "Menü"
+  "w.menu": "Menü",
+  "w.showPreview": "Vorschau zeigen",
+  "w.hidePreview": "Vorschau ausblenden"
 }

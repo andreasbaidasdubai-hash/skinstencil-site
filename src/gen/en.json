@@ -131,5 +131,7 @@
   "w.paidOnly": "Fine detail and example pictures come with a day pass or Pro.",
   "w.errPaidCap": "You have used all the designs in your plan for now.",
   "w.leftPlan": "{n} designs left in your plan",
-  "w.menu": "Menu"
+  "w.menu": "Menu",
+  "w.showPreview": "Show preview",
+  "w.hidePreview": "Hide preview"
 }

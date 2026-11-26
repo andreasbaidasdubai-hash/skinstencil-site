@@ -99,3 +99,14 @@ textarea,.attbtn,.wseg button,.mmrow input{border-radius:14px}
   .stagecol.big .wstage{height:min(88svh,calc((100vw - 24px) * 4 / 3));width:auto;max-width:100%}
   .stagecol.big .xp .ic-open{display:none}.stagecol.big .xp .ic-close{display:block}
 }
+
+/* phones: the preview can be folded away while you scroll, and brought back with one tap */
+.pvt{display:none}
+@media (max-width:860px){
+  .pvt{display:flex;align-items:center;gap:6px;justify-self:center;font:700 13px var(--body);color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:6px 14px 6px 16px;cursor:pointer;margin:0 0 6px}
+  .pvt svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+  .stagecol.min .pvt svg{transform:rotate(180deg)}
+  .stagecol.min .wstage{display:none}
+  .stagecol.min{padding-bottom:8px}
+  .stagecol.big .pvt{display:none}
+}

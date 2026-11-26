@@ -131,5 +131,7 @@
   "w.paidOnly": "İnce detay ve örnek görseller günlük geçiş veya Pro ile gelir.",
   "w.errPaidCap": "Planınızdaki tüm tasarımları şimdilik kullandınız.",
   "w.leftPlan": "Planınızda {n} tasarım kaldı",
-  "w.menu": "Menü"
+  "w.menu": "Menü",
+  "w.showPreview": "Önizlemeyi göster",
+  "w.hidePreview": "Önizlemeyi gizle"
 }
