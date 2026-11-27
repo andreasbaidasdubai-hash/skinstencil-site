@@ -123,7 +123,7 @@ function siteFoot(l, S) {
   const G = GUIDES[l.code];
   return `<div class="sf"><div class="wrap"><div class="links"><a href="${urlOf(l, 'studio')}">Studio</a>` + (SHOW_BROW ? `<a href="${urlOf(l, 'brow')}">${ent(S['tab.brow'])}</a>` : '') +
     (G ? `<a href="${urlOf(l, 'guides')}">${ent(G.ui.guides)}</a>` : '') + `<a href="${baseOf(l)}#pricing">${ent(S['nav.pricing'])}</a>` + (l.code === 'en' ? '<a href="/submit/">Submit your tattoo</a>' : '') + `</div>` +
-    `<div><a href="/privacy.html">${S['ft.privacy']}</a> &middot; <a href="/terms.html">${S['ft.terms']}</a> &middot; <a href="mailto:${NOTIFY}">${NOTIFY}</a></div><div>${S['ft.note']}${l.code === 'en' ? '' : '<br>' + S['ft.mt']}</div></div></div>` +
+    `<div><a href="/privacy.html">${S['ft.privacy']}</a>&emsp;<a href="/terms.html">${S['ft.terms']}</a>&emsp;<a href="mailto:${NOTIFY}">${NOTIFY}</a></div><div>${S['ft.note']}${l.code === 'en' ? '' : '<br>' + S['ft.mt']}</div></div></div>` +
     `<script src="/js/fx.js" defer></scr` + `ipt>` +
     `<button class="totop" type="button" aria-label="${esc(S['gen.w.totop'])}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>` +
     `<script>(function(){var b=document.querySelector('.totop');if(!b)return;function f(){b.classList.toggle('on',window.scrollY>900)}window.addEventListener('scroll',f,{passive:true});f();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})})})();<\/script>`;
