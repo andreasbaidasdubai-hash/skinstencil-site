@@ -41,3 +41,14 @@ Two things now go through the Worker besides the text prompt, both with the same
 - `POST /place` draws a finished design onto one of the stock skin photos (`https://skinstencil.com/assets/lib/<part>_<tone>.jpg`, 48 files in this repo) with `openai/gpt-image-2/edit` (about 0.10 USD). Its own allowance: 1 per day without a license, 10 with one (`PLACE_PER_DAY` in `index.js`); it also counts against `DAILY_BUDGET_USD`.
 
 Deploy order with no gap: (1) push the site (the new page then calls `/place`, which the old Worker answers with 404, so the "realistic" button shows a failure message until step 2), (2) `cd worker && npx wrangler deploy`. The stock photos must be live on skinstencil.com before `/place` can fetch them, so push first.
+
+## Tattoo submissions
+
+The Submit your tattoo page (`/submit/`) posts to `POST /submit`. The Worker checks the fields, the bot check and a limit of 5 per network address per day, then stores one KV entry per submission under `sub:<date>:<code>` in the same `LIMITS` namespace. Nothing is uploaded: the sender links to their own Instagram post. The entry keeps the permission wording the sender ticked (`consent`), so we can show we asked.
+
+Read them (no secret needed, only your Cloudflare login):
+
+```
+npx wrangler kv key list --binding LIMITS --prefix sub:20
+npx wrangler kv key get --binding LIMITS "<key from the list>"
+```

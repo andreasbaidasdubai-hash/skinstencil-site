@@ -122,7 +122,7 @@ function siteHead(l, S, page, lsel) {
 function siteFoot(l, S) {
   const G = GUIDES[l.code];
   return `<div class="sf"><div class="wrap"><div class="links"><a href="${urlOf(l, 'studio')}">Studio</a>` + (SHOW_BROW ? `<a href="${urlOf(l, 'brow')}">${ent(S['tab.brow'])}</a>` : '') +
-    (G ? `<a href="${urlOf(l, 'guides')}">${ent(G.ui.guides)}</a>` : '') + `<a href="${baseOf(l)}#pricing">${ent(S['nav.pricing'])}</a></div>` +
+    (G ? `<a href="${urlOf(l, 'guides')}">${ent(G.ui.guides)}</a>` : '') + `<a href="${baseOf(l)}#pricing">${ent(S['nav.pricing'])}</a>` + (l.code === 'en' ? '<a href="/submit/">Submit your tattoo</a>' : '') + `</div>` +
     `<div><a href="/privacy.html">${S['ft.privacy']}</a> &middot; <a href="/terms.html">${S['ft.terms']}</a> &middot; <a href="mailto:${NOTIFY}">${NOTIFY}</a></div><div>${S['ft.note']}${l.code === 'en' ? '' : '<br>' + S['ft.mt']}</div></div></div>` +
     `<script src="/js/fx.js" defer></scr` + `ipt>` +
     `<button class="totop" type="button" aria-label="${esc(S['gen.w.totop'])}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>` +
@@ -306,6 +306,17 @@ for (const l of LANGS) {
   }
 }
 
+// the submit page (English only): artists and clients send us the link to a tattoo post, with a permission tick box
+{
+  const l = LANGS.find(x => x.code === 'en'), S = strings(l);
+  const vars = { ...S, lang: l.code, dir: l.dir, base: baseOf(l), canonical: SITE + '/submit/', ogLocale: l.locale, hreflang: '', langSelect: '', notifyEmail: NOTIFY, ftMt: '', ldjson: '',
+    metaTitle: 'Submit your tattoo | Skinstencil', metaDesc: 'Share your tattoo with our community. Send the link to your Instagram post and we invite you to collaborate, with full credit.', ogType: 'website',
+    body: read('src/submit.body.html'), i18n_json: '{}' };
+  vars.siteHead = siteHead(l, S, 'x', ''); vars.siteFoot = siteFoot(l, S);
+  const html = TPL.guide.replace(/{{([A-Za-z0-9_.-]+)}}/g, (m, k) => { if (!(k in vars)) throw new Error(`Unknown placeholder {{${k}}} in submit page`); return vars[k]; });
+  mkdirSync(path.join(ROOT, 'submit'), { recursive: true }); writeFileSync(path.join(ROOT, 'submit', 'index.html'), html); count++;
+}
+
 // sitemap with language alternates
 const urls = [];
 const entry = (l, page, langs) => {
@@ -315,5 +326,8 @@ const entry = (l, page, langs) => {
 };
 for (const page of ['index', 'studio', 'brow', 'gen'].filter(x => SHOW_BROW || x !== 'brow')) for (const l of LANGS) urls.push(entry(l, page, LANGS));
 for (const { l, r } of guidePages) urls.push(entry(l, r.page, r.langs));
+urls.push(`  <url>
+    <loc>${SITE}/submit/</loc>
+  </url>`);
 writeFileSync(path.join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`);
 console.log(`built ${count} pages in ${LANGS.length} languages (${Object.keys(GUIDES).length} with guides), plus sitemap.xml`);

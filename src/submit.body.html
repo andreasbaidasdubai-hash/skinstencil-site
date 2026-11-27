@@ -1,0 +1,87 @@
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Skinstencil</a></li><li>Submit your tattoo</li></ol></nav>
+<h1>Submit your tattoo</h1>
+<p class="lead">Made a tattoo you are proud of? Send us the link to your Instagram post and we will invite you to share it as a collab on our page, with your name on it.</p>
+
+<ul class="subpts">
+<li><b>You stay the author.</b> We never download or repost your video. We send a collab invite on your own post.</li>
+<li><b>Credit on every post</b> and a link to your page.</li>
+<li><b>Your choice, any time.</b> Tell us and we take it down.</li>
+</ul>
+
+<form id="subForm" class="subform" novalidate>
+<div class="f"><label for="sRole">You are</label>
+<select id="sRole" name="role"><option value="artist">The tattoo artist</option><option value="client">The person with the tattoo</option><option value="studio">A studio sharing an artist's work</option></select></div>
+<div class="f"><label for="sName">Your name</label><input id="sName" name="name" maxlength="80" autocomplete="name" required></div>
+<div class="f"><label for="sEmail">Email, so we can reply</label><input id="sEmail" name="email" type="email" maxlength="254" autocomplete="email" required></div>
+<div class="f"><label for="sArtist">Tattoo artist's Instagram</label><input id="sArtist" name="artist" maxlength="31" placeholder="@handle" autocapitalize="none" required></div>
+<div class="f"><label for="sLink">Link to the Instagram post or reel</label><input id="sLink" name="link" type="url" maxlength="300" placeholder="https://www.instagram.com/reel/..." required></div>
+<div class="f"><label for="sBy">Your own Instagram (optional)</label><input id="sBy" name="by" maxlength="31" placeholder="@handle" autocapitalize="none"></div>
+<div class="f"><label for="sNote">Anything we should know (optional)</label><textarea id="sNote" name="note" maxlength="500" rows="3"></textarea></div>
+<div class="f hp" aria-hidden="true"><label for="sWeb">Leave this empty</label><input id="sWeb" name="website" tabindex="-1" autocomplete="off"></div>
+<label class="consent"><input id="sConsent" name="consent" type="checkbox" required> <span>I made this tattoo or have the artist's permission. I allow Skinstencil to post it on Instagram with credit. I can ask for it to be removed at any time.</span></label>
+<div id="subTs"></div>
+<p id="subMsg" class="submsg" role="status" aria-live="polite"></p>
+<button class="btn" id="subGo" type="submit">Send</button>
+<p class="fine">We keep your name, email, links and this permission note so we can show we asked. Nothing else, and we never sell it. See the <a href="/privacy.html">privacy policy</a>.</p>
+</form>
+
+<style>
+.subpts{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.subpts li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0}
+.subform{margin-top:28px;display:grid;gap:14px;max-width:560px}
+.subform .f{display:grid;gap:5px}
+.subform label{font-weight:600;font-size:15px}
+.subform input,.subform select,.subform textarea{font:400 16px var(--body);color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 12px;width:100%}
+.subform input:focus-visible,.subform select:focus-visible,.subform textarea:focus-visible{outline:2px solid var(--stencil);outline-offset:1px}
+.subform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.subform .consent{display:flex;gap:10px;align-items:flex-start;font-weight:400;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.subform .consent input{width:20px;height:20px;margin-top:3px;flex:none}
+.subform .btn{justify-self:start;cursor:pointer}
+.subform .btn[disabled]{opacity:.55;cursor:default}
+.subform .fine{font:400 12px var(--mono);color:var(--muted);margin:0}
+.submsg{margin:0;min-height:1.4em;font-weight:500}
+.submsg.err{color:#B42318}.submsg.ok{color:#1F7A4C}
+</style>
+<script>
+(function () {
+  var f = document.getElementById('subForm'), msg = document.getElementById('subMsg'), go = document.getElementById('subGo');
+  var C = window.SkinConfig || {};
+  function say(t, c) { msg.textContent = t; msg.className = 'submsg ' + (c || ''); }
+  var tsLoad = null;
+  function tsToken() {
+    var key = (window.SkinConfig || {}).turnstileSiteKey;
+    if (!key) return Promise.resolve('');
+    if (!tsLoad) tsLoad = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'; s.async = true; s.onload = ok; s.onerror = no; document.head.appendChild(s); });
+    return tsLoad.then(function () {
+      return new Promise(function (ok, no) {
+        var done = false, id, to = setTimeout(function () { if (!done) { done = true; try { window.turnstile.remove(id); } catch (e) {} no(new Error('bot')); } }, 25000);
+        id = window.turnstile.render(document.getElementById('subTs'), { sitekey: key, appearance: 'interaction-only',
+          callback: function (t) { if (!done) { done = true; clearTimeout(to); ok(t); } },
+          'error-callback': function () { if (!done) { done = true; clearTimeout(to); no(new Error('bot')); } } });
+      });
+    });
+  }
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var base = (window.SkinConfig || {}).generatorUrl;
+    if (!base) { say('Submissions open soon. Please email us instead.', 'err'); return; }
+    var d = { role: f.role.value, name: f.name.value, email: f.email.value, artist: f.artist.value, link: f.link.value, by: f.by.value, note: f.note.value, website: f.website.value, consent: f.consent.checked };
+    if (!d.name.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email)) { say('Please enter your name and a valid email.', 'err'); return; }
+    if (!/^@?[A-Za-z0-9._]{1,30}$/.test(d.artist.trim())) { say('The artist\'s Instagram should look like @handle.', 'err'); return; }
+    if (!/^https:\/\/(www\.)?instagram\.com\/(p|reel|reels|tv)\/[A-Za-z0-9_-]{4,}/.test(d.link.trim())) { say('Paste the link to the Instagram post or reel (instagram.com/p/... or /reel/...).', 'err'); return; }
+    if (!d.consent) { say('Please tick the box so we know we have your permission.', 'err'); return; }
+    go.disabled = true; say('Sending...');
+    tsToken().catch(function () { return ''; }).then(function (tok) {
+      d.turnstile = tok;
+      return fetch(base.replace(/\/$/, '') + '/submit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) });
+    }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { r: r, j: j }; }); })
+      .then(function (x) {
+        if (x.r.ok && x.j.ok) { f.reset(); say('Thank you. We will email you with the collab invite.', 'ok'); }
+        else if (x.j.error === 'limit') say('That is a lot of submissions for today. Please try again tomorrow.', 'err');
+        else if (x.j.error === 'bot') say('We could not check you are human. Please reload and try again.', 'err');
+        else say('Something in the form needs a look. Check each field and try again.', 'err');
+        go.disabled = false;
+      }).catch(function () { say('We could not send that. Check your connection and try again.', 'err'); go.disabled = false; });
+  });
+})();
+</script>

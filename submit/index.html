@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Submit your tattoo | Skinstencil</title>
+<meta name="description" content="Share your tattoo with our community. Send the link to your Instagram post and we invite you to collaborate, with full credit.">
+<link rel="canonical" href="https://skinstencil.com/submit/">
+
+<meta property="og:title" content="Submit your tattoo | Skinstencil">
+<meta property="og:description" content="Share your tattoo with our community. Send the link to your Instagram post and we invite you to collaborate, with full credit.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://skinstencil.com/submit/">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Skinstencil">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317161C'/%3E%3Cpath d='M16 5 L21 18 L16 22 L11 18 Z M14 23 H18 V28 H14 Z' fill='none' stroke='%23A99BFF' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<style>
+/* Guide pages share the landing page tokens so light and dark match. Logical properties keep right-to-left languages correct. */
+:root{
+  --paper:#F1F2EF; --card:#FAFAF8; --ink:#17161C; --muted:#5E5C68; --line:#D6D5DD;
+  --stencil:#4F35C8; --stencil-soft:#E6E2F8;
+  --display:'Archivo','Arial Narrow',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;margin:0}
+html[lang="ar"] body{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:inherit;direction:ltr}
+.mark span{color:var(--stencil)}
+.topnav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.topnav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+.topnav a:hover,.topnav a[aria-current]{color:var(--ink)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.langsel{font:500 13px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.themebtn{font:500 15px var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 9px;cursor:pointer;line-height:1.2}
+.themebtn:focus-visible,.btn:focus-visible,.langsel:focus-visible,a:focus-visible{outline:2px solid var(--stencil);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);font-stretch:84%;letter-spacing:-.012em;line-height:1.15;margin:0;text-wrap:balance}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:'Segoe UI',Tahoma,'Noto Sans Arabic',system-ui,sans-serif;font-stretch:100%;letter-spacing:0;line-height:1.35}
+h1{font-size:clamp(30px,5.4vw,50px);font-weight:800}
+h2{font-size:clamp(23px,3.4vw,31px);font-weight:700;margin-top:44px}
+h3{font-size:19px;font-weight:700;margin-top:24px}
+main .wrap{max-width:760px;padding-block:8px 56px}
+.crumbs{font-size:13px;color:var(--muted);margin:18px 0 22px}
+.crumbs ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px}
+.crumbs li+li::before{content:"/";margin-inline-end:8px;color:var(--line)}
+.crumbs a{color:var(--muted)}
+.meta{font:400 12px var(--mono);color:var(--muted);margin:14px 0 0}
+.answer{background:var(--card);border:1px solid var(--line);border-inline-start:3px solid var(--stencil);border-radius:10px;padding:16px 18px;margin:24px 0 0}
+.answer b{display:block;font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--stencil);margin-bottom:6px}
+.answer p{margin:0}
+p,ul,ol{margin:14px 0 0}
+ul,ol{padding-inline-start:22px}
+li{margin-top:6px}
+a{color:var(--stencil)}
+.tbl{overflow-x:auto;margin-top:16px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border:1px solid var(--line);padding:8px 12px;text-align:start}
+th{background:var(--card);font-weight:600}
+td{font-family:var(--mono);font-size:14px}
+ol.how{list-style:none;padding:0;counter-reset:s}
+ol.how li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px 12px 14px;margin-top:10px}
+ol.how li::before{content:counter(s);display:inline-block;font:600 13px var(--mono);color:var(--stencil);margin-inline-end:10px}
+ol.how b{font-weight:600}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{font-weight:600;cursor:pointer}
+details p{color:var(--muted);margin:8px 0 0}
+.btn{display:inline-block;text-align:center;text-decoration:none;font:600 15px var(--body);border-radius:10px;padding:13px 20px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper)}
+.cta{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:44px}
+.cta p{margin:0 0 14px}
+.cta .fine{font:400 12px var(--mono);color:var(--muted);margin:14px 0 0}
+.cards{display:grid;gap:14px;margin-top:22px}
+.card{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.card:hover{border-color:var(--stencil)}
+.card h2,.card h3{font-size:19px;margin:0;font-weight:700}
+.card p{margin:6px 0 0;color:var(--muted);font-size:15px}
+.related{margin-top:44px}
+.related h2{margin-top:0;font-size:22px}
+.lead{color:var(--muted);font-size:18px;margin-top:12px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer a{color:inherit}
+footer .wrap{padding-block:28px}
+@media (max-width:560px){body{font-size:16px}.topnav{gap:10px}.langsel{max-width:110px}header .wrap{padding-block:12px}}
+</style>
+
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<div class="sh"><div class="wrap"><a class="mark" href="/">skin<span>stencil</span></a><nav><a href="/studio/">Studio</a><a href="/guides/">Guides</a><a href="/#pricing">Pricing</a></nav><button class="shbtn" type="button" aria-expanded="false" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div></div><script>(function(){var h=document.querySelector('.sh'),b=h&&h.querySelector('.shbtn');if(!b)return;function set(o){h.classList.toggle('open',o);b.setAttribute('aria-expanded',String(o))}b.addEventListener('click',function(e){e.stopPropagation();set(!h.classList.contains('open'))});h.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){set(false)})});document.addEventListener('click',function(e){if(!h.contains(e.target))set(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)})})();</script>
+<main><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Skinstencil</a></li><li>Submit your tattoo</li></ol></nav>
+<h1>Submit your tattoo</h1>
+<p class="lead">Made a tattoo you are proud of? Send us the link to your Instagram post and we will invite you to share it as a collab on our page, with your name on it.</p>
+
+<ul class="subpts">
+<li><b>You stay the author.</b> We never download or repost your video. We send a collab invite on your own post.</li>
+<li><b>Credit on every post</b> and a link to your page.</li>
+<li><b>Your choice, any time.</b> Tell us and we take it down.</li>
+</ul>
+
+<form id="subForm" class="subform" novalidate>
+<div class="f"><label for="sRole">You are</label>
+<select id="sRole" name="role"><option value="artist">The tattoo artist</option><option value="client">The person with the tattoo</option><option value="studio">A studio sharing an artist's work</option></select></div>
+<div class="f"><label for="sName">Your name</label><input id="sName" name="name" maxlength="80" autocomplete="name" required></div>
+<div class="f"><label for="sEmail">Email, so we can reply</label><input id="sEmail" name="email" type="email" maxlength="254" autocomplete="email" required></div>
+<div class="f"><label for="sArtist">Tattoo artist's Instagram</label><input id="sArtist" name="artist" maxlength="31" placeholder="@handle" autocapitalize="none" required></div>
+<div class="f"><label for="sLink">Link to the Instagram post or reel</label><input id="sLink" name="link" type="url" maxlength="300" placeholder="https://www.instagram.com/reel/..." required></div>
+<div class="f"><label for="sBy">Your own Instagram (optional)</label><input id="sBy" name="by" maxlength="31" placeholder="@handle" autocapitalize="none"></div>
+<div class="f"><label for="sNote">Anything we should know (optional)</label><textarea id="sNote" name="note" maxlength="500" rows="3"></textarea></div>
+<div class="f hp" aria-hidden="true"><label for="sWeb">Leave this empty</label><input id="sWeb" name="website" tabindex="-1" autocomplete="off"></div>
+<label class="consent"><input id="sConsent" name="consent" type="checkbox" required> <span>I made this tattoo or have the artist's permission. I allow Skinstencil to post it on Instagram with credit. I can ask for it to be removed at any time.</span></label>
+<div id="subTs"></div>
+<p id="subMsg" class="submsg" role="status" aria-live="polite"></p>
+<button class="btn" id="subGo" type="submit">Send</button>
+<p class="fine">We keep your name, email, links and this permission note so we can show we asked. Nothing else, and we never sell it. See the <a href="/privacy.html">privacy policy</a>.</p>
+</form>
+
+<style>
+.subpts{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.subpts li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0}
+.subform{margin-top:28px;display:grid;gap:14px;max-width:560px}
+.subform .f{display:grid;gap:5px}
+.subform label{font-weight:600;font-size:15px}
+.subform input,.subform select,.subform textarea{font:400 16px var(--body);color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 12px;width:100%}
+.subform input:focus-visible,.subform select:focus-visible,.subform textarea:focus-visible{outline:2px solid var(--stencil);outline-offset:1px}
+.subform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.subform .consent{display:flex;gap:10px;align-items:flex-start;font-weight:400;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.subform .consent input{width:20px;height:20px;margin-top:3px;flex:none}
+.subform .btn{justify-self:start;cursor:pointer}
+.subform .btn[disabled]{opacity:.55;cursor:default}
+.subform .fine{font:400 12px var(--mono);color:var(--muted);margin:0}
+.submsg{margin:0;min-height:1.4em;font-weight:500}
+.submsg.err{color:#B42318}.submsg.ok{color:#1F7A4C}
+</style>
+<script>
+(function () {
+  var f = document.getElementById('subForm'), msg = document.getElementById('subMsg'), go = document.getElementById('subGo');
+  var C = window.SkinConfig || {};
+  function say(t, c) { msg.textContent = t; msg.className = 'submsg ' + (c || ''); }
+  var tsLoad = null;
+  function tsToken() {
+    var key = (window.SkinConfig || {}).turnstileSiteKey;
+    if (!key) return Promise.resolve('');
+    if (!tsLoad) tsLoad = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'; s.async = true; s.onload = ok; s.onerror = no; document.head.appendChild(s); });
+    return tsLoad.then(function () {
+      return new Promise(function (ok, no) {
+        var done = false, id, to = setTimeout(function () { if (!done) { done = true; try { window.turnstile.remove(id); } catch (e) {} no(new Error('bot')); } }, 25000);
+        id = window.turnstile.render(document.getElementById('subTs'), { sitekey: key, appearance: 'interaction-only',
+          callback: function (t) { if (!done) { done = true; clearTimeout(to); ok(t); } },
+          'error-callback': function () { if (!done) { done = true; clearTimeout(to); no(new Error('bot')); } } });
+      });
+    });
+  }
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var base = (window.SkinConfig || {}).generatorUrl;
+    if (!base) { say('Submissions open soon. Please email us instead.', 'err'); return; }
+    var d = { role: f.role.value, name: f.name.value, email: f.email.value, artist: f.artist.value, link: f.link.value, by: f.by.value, note: f.note.value, website: f.website.value, consent: f.consent.checked };
+    if (!d.name.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email)) { say('Please enter your name and a valid email.', 'err'); return; }
+    if (!/^@?[A-Za-z0-9._]{1,30}$/.test(d.artist.trim())) { say('The artist\'s Instagram should look like @handle.', 'err'); return; }
+    if (!/^https:\/\/(www\.)?instagram\.com\/(p|reel|reels|tv)\/[A-Za-z0-9_-]{4,}/.test(d.link.trim())) { say('Paste the link to the Instagram post or reel (instagram.com/p/... or /reel/...).', 'err'); return; }
+    if (!d.consent) { say('Please tick the box so we know we have your permission.', 'err'); return; }
+    go.disabled = true; say('Sending...');
+    tsToken().catch(function () { return ''; }).then(function (tok) {
+      d.turnstile = tok;
+      return fetch(base.replace(/\/$/, '') + '/submit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) });
+    }).then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { r: r, j: j }; }); })
+      .then(function (x) {
+        if (x.r.ok && x.j.ok) { f.reset(); say('Thank you. We will email you with the collab invite.', 'ok'); }
+        else if (x.j.error === 'limit') say('That is a lot of submissions for today. Please try again tomorrow.', 'err');
+        else if (x.j.error === 'bot') say('We could not check you are human. Please reload and try again.', 'err');
+        else say('Something in the form needs a look. Check each field and try again.', 'err');
+        go.disabled = false;
+      }).catch(function () { say('We could not send that. Check your connection and try again.', 'err'); go.disabled = false; });
+  });
+})();
+</script>
+
+</div></main>
+<div class="sf"><div class="wrap"><div class="links"><a href="/studio/">Studio</a><a href="/guides/">Guides</a><a href="/#pricing">Pricing</a><a href="/submit/">Submit your tattoo</a></div><div><a href="/privacy.html">Privacy</a> &middot; <a href="/terms.html">Terms</a> &middot; <a href="mailto:hello@skinstencil.com">hello@skinstencil.com</a></div><div>Privacy and terms are in English.</div></div></div><script src="/js/fx.js" defer></script><button class="totop" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button><script>(function(){var b=document.querySelector('.totop');if(!b)return;function f(){b.classList.toggle('on',window.scrollY>900)}window.addEventListener('scroll',f,{passive:true});f();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})})})();</script>
+<script>window.I18N={};</script>
+<script src="/js/config.js"></script>
+<script src="/js/analytics.js"></script>
+<script>var s=document.getElementById('langSel');if(s)s.addEventListener('change',function(){location.href=s.value;});</script>
+</body>
+</html>

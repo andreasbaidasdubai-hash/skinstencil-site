@@ -73,6 +73,31 @@ async function humanOk(env, token, ip) {
   } catch (e) { return false; }
 }
 
+/* Tattoo submissions (the "submit your tattoo" page). Nothing is uploaded: the sender links to their own Instagram post and we invite them to collaborate on it.
+   What is kept is the permission record: who said yes, to what, when, and the exact wording they ticked. Read the list with
+   `npx wrangler kv key list --binding LIMITS --prefix sub:20` and `... kv key get --binding LIMITS "<key>"` (worker/README.md). */
+const CONSENT_V = 'v1: I made this tattoo or have the artist\'s permission. I allow Skinstencil to post it on Instagram with credit. I can ask for it to be removed at any time.';
+const SUB_ROLES = ['artist', 'client', 'studio'];
+const IG_HANDLE = /^@?[A-Za-z0-9._]{1,30}$/;
+const IG_LINK = /^https:\/\/(www\.)?instagram\.com\/(p|reel|reels|tv)\/[A-Za-z0-9_-]{4,}\/?(\?[^\s]*)?$/;
+const MAIL = /^[^\s@]{1,64}@[^\s@]{1,190}\.[^\s@]{2,}$/;
+const clean = (v, n) => String(v == null ? '' : v).replace(/[\u0000-\u001f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, n);
+async function submit(req, env) {
+  if (!ORIGINS.includes(req.headers.get('Origin'))) return json(req, 403, { error: 'origin' });
+  let b; try { b = await req.json(); } catch (e) { return json(req, 400, { error: 'bad' }); }
+  if (b.website) return json(req, 200, { ok: true });   // the hidden field only a script fills in: say thanks, keep nothing
+  const role = clean(b.role, 10), name = clean(b.name, 80), email = clean(b.email, 254), artist = clean(b.artist, 31), link = clean(b.link, 300), note = clean(b.note, 500), by = clean(b.by, 31);
+  if (!SUB_ROLES.includes(role) || !name || !MAIL.test(email) || !IG_HANDLE.test(artist) || !IG_LINK.test(link) || (by && !IG_HANDLE.test(by))) return json(req, 400, { error: 'bad' });
+  if (b.consent !== true) return json(req, 400, { error: 'consent' });
+  if (env.TURNSTILE_SECRET && !(await humanOk(env, String(b.turnstile || ''), req.headers.get('CF-Connecting-IP')))) return json(req, 403, { error: 'bot' });
+  const kv = env.LIMITS, ip = await sha(req.headers.get('CF-Connecting-IP') || 'x'), rl = `sub:rl:${ip}:${day()}`;
+  if (await count(kv, rl) >= 5) return json(req, 429, { error: 'limit' });
+  await bump(kv, rl, 1, 2 * 86400);
+  const at = new Date().toISOString(), id = `sub:${at}:${(await sha(link + email)).slice(0, 8)}`;
+  await kv.put(id, JSON.stringify({ at, role, name, email, artist: artist.replace(/^@/, ''), link, by: by.replace(/^@/, ''), note, consent: CONSENT_V, ipHash: ip }));
+  return json(req, 200, { ok: true });
+}
+
 /* Which counter applies, how big it is and how long it is kept. */
 function allowance(plan, placing, who) {
   const kind = placing ? 'p' : 'd', cap = LIMITS[plan][placing ? 'previews' : 'designs'];
@@ -86,6 +111,7 @@ export default {
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors(req) });
     const url = new URL(req.url);
     if (req.method === 'GET' && url.pathname === '/health') return json(req, 200, { ok: true });
+    if (req.method === 'POST' && url.pathname === '/submit') return submit(req, env);
     if (req.method !== 'POST' || (url.pathname !== '/generate' && url.pathname !== '/place')) return json(req, 404, { error: 'not_found' });
     if (!ORIGINS.includes(req.headers.get('Origin'))) return json(req, 403, { error: 'origin' });
 
